@@ -471,6 +471,7 @@ def plumbing():
     open(os.path.join(ROOT, 'assets', 'favicon.svg'), 'w').write(LOGO.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" '))
     os.makedirs(os.path.join(ROOT, 'deploy'), exist_ok=True)
     open(os.path.join(ROOT, 'deploy', 'CNAME'), 'w').write('sellerfee.app\n')
+    open(os.path.join(ROOT, 'CNAME'), 'w').write('sellerfee.app\n')
     open(os.path.join(ROOT, '.nojekyll'), 'w').write('')
 
 if __name__ == '__main__':
