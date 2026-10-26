@@ -1,0 +1,3376 @@
+[
+ {
+  "g": "Electronics",
+  "n": "Audio › Amplifiers & Mixers",
+  "r": {
+   "old.mp.scp": 8.1,
+   "old.mp.non": 13.5,
+   "new.mp.scp": 11.34,
+   "new.mp.non": 13.5,
+   "old.mall.scp": 11.34,
+   "old.mall.non": 16.74,
+   "new.mall.scp": 14.58,
+   "new.mall.non": 16.74
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Audio › Earphones, Headphones & Headsets",
+  "r": {
+   "old.mp.scp": 8.1,
+   "old.mp.non": 13.5,
+   "new.mp.scp": 11.34,
+   "new.mp.non": 13.5,
+   "old.mall.scp": 11.34,
+   "old.mall.non": 16.74,
+   "new.mall.scp": 14.58,
+   "new.mall.non": 16.74
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Audio › Home Audio & Speakers",
+  "r": {
+   "old.mp.scp": 8.1,
+   "old.mp.non": 13.5,
+   "new.mp.scp": 11.34,
+   "new.mp.non": 13.5,
+   "old.mall.scp": 11.34,
+   "old.mall.non": 16.74,
+   "new.mall.scp": 14.58,
+   "new.mall.non": 16.74
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Audio › Media Players",
+  "r": {
+   "old.mp.scp": 8.1,
+   "old.mp.non": 13.5,
+   "new.mp.scp": 11.34,
+   "new.mp.non": 13.5,
+   "old.mall.scp": 11.34,
+   "old.mall.non": 16.74,
+   "new.mall.scp": 14.58,
+   "new.mall.non": 16.74
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Audio › Microphones",
+  "r": {
+   "old.mp.scp": 8.1,
+   "old.mp.non": 13.5,
+   "new.mp.scp": 11.34,
+   "new.mp.non": 13.5,
+   "old.mall.scp": 11.34,
+   "old.mall.non": 16.74,
+   "new.mall.scp": 14.58,
+   "new.mall.non": 16.74
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Audio & Video Cables & Converters › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Cameras & Drones › Cameras",
+  "r": {
+   "old.mp.scp": 6.48,
+   "old.mp.non": 11.88,
+   "new.mp.scp": 8.1,
+   "new.mp.non": 11.88,
+   "old.mall.scp": 9.72,
+   "old.mall.non": 15.12,
+   "new.mall.scp": 11.34,
+   "new.mall.non": 15.12
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Cameras & Drones › Drones",
+  "r": {
+   "old.mp.scp": 6.48,
+   "old.mp.non": 11.88,
+   "new.mp.scp": 8.1,
+   "new.mp.non": 11.88,
+   "old.mall.scp": 9.72,
+   "old.mall.non": 15.12,
+   "new.mall.scp": 11.34,
+   "new.mall.non": 15.12
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Cameras & Drones › Lenses",
+  "r": {
+   "old.mp.scp": 6.48,
+   "old.mp.non": 11.88,
+   "new.mp.scp": 8.1,
+   "new.mp.non": 11.88,
+   "old.mall.scp": 9.72,
+   "old.mall.non": 15.12,
+   "new.mall.scp": 11.34,
+   "new.mall.non": 15.12
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Cameras & Drones › Security Cameras & Systems",
+  "r": {
+   "old.mp.scp": 7.56,
+   "old.mp.non": 12.96,
+   "new.mp.scp": 10.8,
+   "new.mp.non": 12.96,
+   "old.mall.scp": 10.8,
+   "old.mall.non": 16.2,
+   "new.mall.scp": 14.04,
+   "new.mall.non": 16.2
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Camera Accessories › Camera Care",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Camera Accessories › Drone Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Camera Accessories › Lens Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Computers & Accessories › Data Storage",
+  "r": {
+   "old.mp.scp": 7.02,
+   "old.mp.non": 12.42,
+   "new.mp.scp": 10.26,
+   "new.mp.non": 12.42,
+   "old.mall.scp": 10.26,
+   "old.mall.non": 15.66,
+   "new.mall.scp": 13.5,
+   "new.mall.non": 15.66
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Computers & Accessories › Desktop & Laptop Components",
+  "r": {
+   "old.mp.scp": 7.02,
+   "old.mp.non": 12.42,
+   "new.mp.scp": 10.26,
+   "new.mp.non": 12.42,
+   "old.mall.scp": 10.26,
+   "old.mall.non": 15.66,
+   "new.mall.scp": 13.5,
+   "new.mall.non": 15.66
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Desktop Computers › Laptops",
+  "r": {
+   "old.mp.scp": 7.02,
+   "old.mp.non": 12.42,
+   "new.mp.scp": 8.64,
+   "new.mp.non": 12.42,
+   "old.mall.scp": 10.26,
+   "old.mall.non": 15.66,
+   "new.mall.scp": 11.88,
+   "new.mall.non": 15.66
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Desktop Computers › Monitors",
+  "r": {
+   "old.mp.scp": 8.64,
+   "old.mp.non": 14.04,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 14.04,
+   "old.mall.scp": 11.88,
+   "old.mall.non": 17.28,
+   "new.mall.scp": 15.12,
+   "new.mall.non": 17.28
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Desktop Computers › Network Components",
+  "r": {
+   "old.mp.scp": 7.02,
+   "old.mp.non": 12.42,
+   "new.mp.scp": 10.26,
+   "new.mp.non": 12.42,
+   "old.mall.scp": 10.26,
+   "old.mall.non": 15.66,
+   "new.mall.scp": 13.5,
+   "new.mall.non": 15.66
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Desktop Computers › Printers & Scanners",
+  "r": {
+   "old.mp.scp": 8.64,
+   "old.mp.non": 14.04,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 14.04,
+   "old.mall.scp": 11.88,
+   "old.mall.non": 17.28,
+   "new.mall.scp": 15.12,
+   "new.mall.non": 17.28
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Desktop Computers › Office Equipment",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Desktop Computers › Keyboards & Mice",
+  "r": {
+   "old.mp.scp": 8.64,
+   "old.mp.non": 14.04,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 14.04,
+   "old.mall.scp": 11.88,
+   "old.mall.non": 17.28,
+   "new.mall.scp": 15.12,
+   "new.mall.non": 17.28
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Desktop Computers › Peripherals & Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Gaming & Consoles › Console Machines",
+  "r": {
+   "old.mp.scp": 7.56,
+   "old.mp.non": 12.96,
+   "new.mp.scp": 10.8,
+   "new.mp.non": 12.96,
+   "old.mall.scp": 10.8,
+   "old.mall.non": 16.2,
+   "new.mall.scp": 14.04,
+   "new.mall.non": 16.2
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Gaming & Consoles › Video Games",
+  "r": {
+   "old.mp.scp": 7.56,
+   "old.mp.non": 12.96,
+   "new.mp.scp": 10.8,
+   "new.mp.non": 12.96,
+   "old.mall.scp": 10.8,
+   "old.mall.non": 16.2,
+   "new.mall.scp": 14.04,
+   "new.mall.non": 16.2
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Gaming & Consoles › Console Accessories",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Home Appliances › Kitchen Appliances",
+  "r": {
+   "old.mp.scp": 8.64,
+   "old.mp.non": 14.04,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 14.04,
+   "old.mall.scp": 11.88,
+   "old.mall.non": 17.28,
+   "new.mall.scp": 15.12,
+   "new.mall.non": 17.28
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Home Appliances › Large Household Appliances",
+  "r": {
+   "old.mp.scp": 8.64,
+   "old.mp.non": 14.04,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 14.04,
+   "old.mall.scp": 11.88,
+   "old.mall.non": 17.28,
+   "new.mall.scp": 15.12,
+   "new.mall.non": 17.28
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Home Appliances › Projectors & Accessories",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Small Household Appliances › TVs & Accessories",
+  "r": {
+   "old.mp.scp": 8.64,
+   "old.mp.non": 14.04,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 14.04,
+   "old.mall.scp": 11.88,
+   "old.mall.non": 17.28,
+   "new.mall.scp": 15.12,
+   "new.mall.non": 17.28
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Electrical Circuitry & Parts › Remote Controls",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Electrical Circuitry & Parts › Batteries",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "E-Cigarettes › Others",
+  "r": {
+   "old.mp.scp": 11.88,
+   "old.mp.non": 17.28,
+   "new.mp.scp": 15.12,
+   "new.mp.non": 17.28,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Mobile & Gadgets › Mobile Phones",
+  "r": {
+   "old.mp.scp": 6.48,
+   "old.mp.non": 11.88,
+   "new.mp.scp": 8.1,
+   "new.mp.non": 11.88,
+   "old.mall.scp": 9.72,
+   "old.mall.non": 15.12,
+   "new.mall.scp": 11.34,
+   "new.mall.non": 15.12
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Mobile & Gadgets › Tablets",
+  "r": {
+   "old.mp.scp": 6.48,
+   "old.mp.non": 11.88,
+   "new.mp.scp": 8.1,
+   "new.mp.non": 11.88,
+   "old.mall.scp": 9.72,
+   "old.mall.non": 15.12,
+   "new.mall.scp": 11.34,
+   "new.mall.non": 15.12
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Mobile & Gadgets › Walkie Talkies",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Mobile & Gadgets › Wearable Devices",
+  "r": {
+   "old.mp.scp": 6.48,
+   "old.mp.non": 11.88,
+   "new.mp.scp": 9.72,
+   "new.mp.non": 11.88,
+   "old.mall.scp": 9.72,
+   "old.mall.non": 15.12,
+   "new.mall.scp": 12.96,
+   "new.mall.non": 15.12
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Mobile & Gadgets › Accessories",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Mobile & Gadgets › Sim Cards",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Baby & Kids Fashion › Baby & Kids Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Baby & Kids Fashion › Baby Clothes",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Baby & Kids Fashion › Baby Mittens & Footwear",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Baby & Kids Fashion › Boy Clothes",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Baby & Kids Fashion › Boy Shoes",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Baby & Kids Fashion › Girl Clothes",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Baby & Kids Fashion › Girl Shoes",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Baby & Kids Fashion › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion Accessories › Accessories Sets & Packages",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion Accessories › Fine Jewelry",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion Accessories › Additional Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion Accessories › Gloves",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion Accessories › Belts",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion Accessories › Hats & Caps",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion Accessories › Eyewear",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion Accessories › Hair Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion Accessories › Investment Precious Metals",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 14.58,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Neckties, Bow Ties & Cravats › Scarves & Shawls",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Neckties, Bow Ties & Cravats › Rings",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Neckties, Bow Ties & Cravats › Earrings",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Neckties, Bow Ties & Cravats › Bracelets & Bangles",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Neckties, Bow Ties & Cravats › Anklets",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Neckties, Bow Ties & Cravats › Necklaces",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Neckties, Bow Ties & Cravats › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Bags › Backpacks",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Bags › Briefcases",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Bags › Clutches",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Bags › Crossbody & Shoulder Bags",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Bags › Laptop Bags",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Bags › Others",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Bags › Tote Bags",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Bags › Waist Bags & Chest Bags",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Bags › Wallets",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Costumes",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Hoodies & Sweatshirts",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Innerwear & Underwear",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Jackets, Coats & Vests",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Jeans",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Occupational Attire",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Others",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Pants",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Sets",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Shorts",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Sleepwear",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Socks",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Suits",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Sweaters & Cardigans",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Tops",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Clothes › Traditional Wear",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Shoes › Boots",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Shoes › Loafers & Boat Shoes",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Shoes › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Shoes › Oxfords & Lace-Ups",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Shoes › Sandals & Flip Flops",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Shoes › Shoe Care & Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Shoes › Slip Ons & Mules",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Men Shoes › Sneakers",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Muslim Fashion › Kid Muslim Wear",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Muslim Fashion › Men Muslim Wear",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Muslim Fashion › Others",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Muslim Fashion › Prayer Attire & Equipment",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Muslim Fashion › Women Muslim Wear",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Travel & Luggage › Luggage",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Travel & Luggage › Others",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Travel & Luggage › Travel Accessories",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Travel & Luggage › Travel Bags",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Watches › Men Watches",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Watches › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Watches › Set & Couple Watches",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Watches › Watches Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Watches › Women Watches",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Backpacks",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Bag Accessories",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Clutches & Wristlets",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Crossbody & Shoulder Bags",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Laptop Bags",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Others",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Top-handle Bags",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Tote Bags",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Waist Bags & Chest Bags",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Bags › Wallets",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Costumes",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Dresses",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Fabric",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Hoodies & Sweatshirts",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Jackets, Coats & Vests",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Jeans",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Jumpsuits, Playsuits & Overalls",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Lingerie & Underwear",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Maternity Wear",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Others",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Pants & Leggings",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Sets",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Shorts",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Skirts",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Sleepwear & Pajamas",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Socks & Stockings",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Sweaters & Cardigans",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Tops",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Traditional Wear",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Clothes › Wedding Dresses",
+  "r": {
+   "old.mp.scp": 9.72,
+   "old.mp.non": 15.12,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 15.12,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Shoes › Boots",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Shoes › Flat Sandals & Flip Flops",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Shoes › Flats",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Shoes › Heels",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Shoes › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Shoes › Shoe Care & Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Shoes › Sneakers",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women Shoes › Wedges",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Automobiles › Automotive Oils & Lubes",
+  "r": {
+   "old.mp.scp": 9.18,
+   "old.mp.non": 14.58,
+   "new.mp.scp": 12.42,
+   "new.mp.non": 14.58,
+   "old.mall.scp": 12.42,
+   "old.mall.non": 17.82,
+   "new.mall.scp": 15.66,
+   "new.mall.non": 17.82
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Automobiles › Automobiles",
+  "r": {
+   "old.mp.scp": 9.18,
+   "old.mp.non": 14.58,
+   "new.mp.scp": 12.42,
+   "new.mp.non": 14.58,
+   "old.mall.scp": 12.42,
+   "old.mall.non": 17.82,
+   "new.mall.scp": 15.66,
+   "new.mall.non": 17.82
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Automobile Exterior Accessories › Automobile Interior Accessories",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Automobile Exterior Accessories › Automobile Spare Parts",
+  "r": {
+   "old.mp.scp": 9.18,
+   "old.mp.non": 14.58,
+   "new.mp.scp": 12.42,
+   "new.mp.non": 14.58,
+   "old.mall.scp": 12.42,
+   "old.mall.non": 17.82,
+   "new.mall.scp": 15.66,
+   "new.mall.non": 17.82
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Automotive Care › Automotive Keychains & Key Covers",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Automotive Care › Automotive Tools",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Automotive Care › Others",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Books & Magazines › Books",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.58,
+   "old.mall.non": 19.98,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 19.98
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "E-Books › Magazines & Newspaper",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.58,
+   "old.mall.non": 19.98,
+   "new.mall.scp": 17.82,
+   "new.mall.non": 19.98
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Others › Hobbies & Collections",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Others › Musical Instruments & Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "CD, DVD & Bluray › Collectible Items",
+  "r": {
+   "old.mp.scp": 11.88,
+   "old.mp.non": 17.28,
+   "new.mp.scp": 15.12,
+   "new.mp.non": 17.28,
+   "old.mall.scp": 16.2,
+   "old.mall.non": 21.6,
+   "new.mall.scp": 19.44,
+   "new.mall.non": 21.6
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "CD, DVD & Bluray › Needlework",
+  "r": {
+   "old.mp.scp": 11.88,
+   "old.mp.non": 17.28,
+   "new.mp.scp": 15.12,
+   "new.mp.non": 17.28,
+   "old.mall.scp": 16.2,
+   "old.mall.non": 21.6,
+   "new.mall.scp": 19.44,
+   "new.mall.non": 21.6
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "CD, DVD & Bluray › Others",
+  "r": {
+   "old.mp.scp": 11.88,
+   "old.mp.non": 17.28,
+   "new.mp.scp": 15.12,
+   "new.mp.non": 17.28,
+   "old.mall.scp": 16.2,
+   "old.mall.non": 21.6,
+   "new.mall.scp": 19.44,
+   "new.mall.non": 21.6
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "CD, DVD & Bluray › Photo Albums",
+  "r": {
+   "old.mp.scp": 11.88,
+   "old.mp.non": 17.28,
+   "new.mp.scp": 15.12,
+   "new.mp.non": 17.28,
+   "old.mall.scp": 16.2,
+   "old.mall.non": 21.6,
+   "new.mall.scp": 19.44,
+   "new.mall.non": 21.6
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "CD, DVD & Bluray › Souvenirs",
+  "r": {
+   "old.mp.scp": 11.88,
+   "old.mp.non": 17.28,
+   "new.mp.scp": 15.12,
+   "new.mp.non": 17.28,
+   "old.mall.scp": 16.2,
+   "old.mall.non": 21.6,
+   "new.mall.scp": 19.44,
+   "new.mall.non": 21.6
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "CD, DVD & Bluray › Toys & Games",
+  "r": {
+   "old.mp.scp": 11.88,
+   "old.mp.non": 17.28,
+   "new.mp.scp": 15.12,
+   "new.mp.non": 17.28,
+   "old.mall.scp": 16.2,
+   "old.mall.non": 21.6,
+   "new.mall.scp": 19.44,
+   "new.mall.non": 21.6
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "CD, DVD & Bluray › Vinyl Records",
+  "r": {
+   "old.mp.scp": 11.88,
+   "old.mp.non": 17.28,
+   "new.mp.scp": 15.12,
+   "new.mp.non": 17.28,
+   "old.mall.scp": 16.2,
+   "old.mall.non": 21.6,
+   "new.mall.scp": 19.44,
+   "new.mall.non": 21.6
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Home & Living › Safety & Security",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Home & Living › Bathrooms",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 12.96,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Bedding › Decoration",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Bedding › Dinnerware",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Bedding › Fengshui & Religious Supplies",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Bedding › Furniture",
+  "r": {
+   "old.mp.scp": 12.42,
+   "old.mp.non": 17.82,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 17.82,
+   "old.mall.scp": 16.74,
+   "old.mall.non": 22.14,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 22.14
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Gardening › Hand Warmers, Hot Water Bags & Ice Bags",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Gardening › Home Care Supplies",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Gardening › Home Fragrance & Aromatherapy",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Gardening › Home Organizers",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Gardening › Kitchenware",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Gardening › Lighting",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Gardening › Others",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Gardening › Party Supplies",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Gardening › Tools & Home Improvement",
+  "r": {
+   "old.mp.scp": 11.34,
+   "old.mp.non": 16.74,
+   "new.mp.scp": 14.58,
+   "new.mp.non": 16.74,
+   "old.mall.scp": 15.66,
+   "old.mall.non": 21.06,
+   "new.mall.scp": 18.9,
+   "new.mall.non": 21.06
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Motorcycles › Motorcycle Accessories",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Motorcycles › Motorcycle Helmets & Accessories",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Motorcycles › Motorcycle Spare Parts",
+  "r": {
+   "old.mp.scp": 9.18,
+   "old.mp.non": 14.58,
+   "new.mp.scp": 12.42,
+   "new.mp.non": 14.58,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Motorcycles › Others",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Spare Parts and Accessories for Vehicles › Heavy Duty and Boats",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Spare Parts and Accessories for Vehicles › Vehicular Care",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Spare Parts and Accessories for Vehicles › Vehicular Safety",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Spare Parts and Accessories for Vehicles › Vehicular Tools",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Spare Parts for Automobiles › Spare Parts for Motorcycles",
+  "r": {
+   "old.mp.scp": 9.18,
+   "old.mp.non": 14.58,
+   "new.mp.scp": 12.42,
+   "new.mp.non": 14.58,
+   "old.mall.scp": 12.42,
+   "old.mall.non": 17.82,
+   "new.mall.scp": 15.66,
+   "new.mall.non": 17.82
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Spare Parts for Automobiles › Automobiles",
+  "r": {
+   "old.mp.scp": 9.18,
+   "old.mp.non": 14.58,
+   "new.mp.scp": 12.42,
+   "new.mp.non": 14.58,
+   "old.mall.scp": 12.42,
+   "old.mall.non": 17.82,
+   "new.mall.scp": 15.66,
+   "new.mall.non": 17.82
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Spare Parts for Automobiles › Motorcycles",
+  "r": {
+   "old.mp.scp": 9.18,
+   "old.mp.non": 14.58,
+   "new.mp.scp": 12.42,
+   "new.mp.non": 14.58,
+   "old.mall.scp": 12.42,
+   "old.mall.non": 17.82,
+   "new.mall.scp": 15.66,
+   "new.mall.non": 17.82
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Spare Parts for Automobiles › Tires and Wheels",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 15.12,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Accessories for Motorcycles › Internal Accessories for Automobiles",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Accessories for Motorcycles › External Accessories for Automobiles",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 13.5,
+   "old.mall.non": 18.9,
+   "new.mall.scp": 16.74,
+   "new.mall.non": 18.9
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Sports & Outdoors › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Sports & Outdoors › Sports & Outdoor Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Sports & Outdoors › Sports & Outdoor Apparels",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Sports & Outdoors › Sports & Outdoor Recreation Equipments",
+  "r": {
+   "old.mp.scp": 11.88,
+   "old.mp.non": 17.28,
+   "new.mp.scp": 15.12,
+   "new.mp.non": 17.28,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Sports & Outdoors › Sports Footwear",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Stationery › Art Supplies",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Stationery › Gift & Wrapping",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Stationery › Letters & Envelopes",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Stationery › Notebooks & Papers",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Stationery › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Stationery › School & Office Equipment",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "Lifestyle",
+  "n": "Stationery › Writing & Correction",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Bath & Body Care",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Hair Care",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Skincare",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Beauty Sets & Packages",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Beauty Tools",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Hand, Foot & Nail Care",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Makeup",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Men's Care",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Perfumes & Fragrances",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Beauty › Others",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 17.28,
+   "old.mall.non": 22.68,
+   "new.mall.scp": 20.52,
+   "new.mall.non": 22.68
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Health › Personal Care",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 16.74,
+   "old.mall.non": 22.14,
+   "new.mall.scp": 19.98,
+   "new.mall.non": 22.14
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Health › Food Supplement",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 16.74,
+   "old.mall.non": 22.14,
+   "new.mall.scp": 19.98,
+   "new.mall.non": 22.14
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Health › Medical Supplies",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 16.74,
+   "old.mall.non": 22.14,
+   "new.mall.scp": 19.98,
+   "new.mall.non": 22.14
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Health › Others",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 16.74,
+   "old.mall.non": 22.14,
+   "new.mall.scp": 19.98,
+   "new.mall.non": 22.14
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Health › Sexual Wellness",
+  "r": {
+   "old.mp.scp": 12.96,
+   "old.mp.non": 18.36,
+   "new.mp.scp": 16.2,
+   "new.mp.non": 18.36,
+   "old.mall.scp": 16.74,
+   "old.mall.non": 22.14,
+   "new.mall.scp": 19.98,
+   "new.mall.non": 22.14
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Diapering & Potty",
+  "r": {
+   "old.mp.scp": 8.64,
+   "old.mp.non": 14.04,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 14.04,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Feeding Essentials › Baby Healthcare",
+  "r": {
+   "old.mp.scp": 10.26,
+   "old.mp.non": 15.66,
+   "new.mp.scp": 13.5,
+   "new.mp.non": 15.66,
+   "old.mall.scp": 12.42,
+   "old.mall.non": 17.82,
+   "new.mall.scp": 15.66,
+   "new.mall.non": 17.82
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Feeding Essentials › Bath & Body Care",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Pets › Litter & Toilet",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.58,
+   "old.mall.non": 19.98,
+   "new.mall.scp": 17.82,
+   "new.mall.non": 19.98
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Pets › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.58,
+   "old.mall.non": 19.98,
+   "new.mall.scp": 17.82,
+   "new.mall.non": 19.98
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Pets › Pet Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.58,
+   "old.mall.non": 19.98,
+   "new.mall.scp": 17.82,
+   "new.mall.non": 19.98
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Pets › Pet Clothing & Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.58,
+   "old.mall.non": 19.98,
+   "new.mall.scp": 17.82,
+   "new.mall.non": 19.98
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Pets › Pet Food",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.58,
+   "old.mall.non": 19.98,
+   "new.mall.scp": 17.82,
+   "new.mall.non": 19.98
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Pets › Pet Grooming",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.58,
+   "old.mall.non": 19.98,
+   "new.mall.scp": 17.82,
+   "new.mall.non": 19.98
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Pets › Pet Healthcare",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.58,
+   "old.mall.non": 19.98,
+   "new.mall.scp": 17.82,
+   "new.mall.non": 19.98
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Feeding Essentials",
+  "r": {
+   "old.mp.scp": 8.64,
+   "old.mp.non": 14.04,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 14.04,
+   "old.mall.scp": 11.88,
+   "old.mall.non": 17.28,
+   "new.mall.scp": 15.12,
+   "new.mall.non": 17.28
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Milk Formula & Baby Food",
+  "r": {
+   "old.mp.scp": 8.64,
+   "old.mp.non": 14.04,
+   "new.mp.scp": 11.88,
+   "new.mp.non": 14.04,
+   "old.mall.scp": 11.88,
+   "old.mall.non": 17.28,
+   "new.mall.scp": 15.12,
+   "new.mall.non": 17.28
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Maternity Healthcare",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 12.96,
+   "old.mall.non": 18.36,
+   "new.mall.scp": 16.2,
+   "new.mall.non": 18.36
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Baby Safety",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Baby Travel Essentials",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Gift Sets & Packages",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 15.12,
+   "old.mall.non": 20.52,
+   "new.mall.scp": 18.36,
+   "new.mall.non": 20.52
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Maternity Accessories",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Nursery",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Others",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "Mom & Baby › Toys",
+  "r": {
+   "old.mp.scp": 10.8,
+   "old.mp.non": 16.2,
+   "new.mp.scp": 14.04,
+   "new.mp.non": 16.2,
+   "old.mall.scp": 14.04,
+   "old.mall.non": 19.44,
+   "new.mall.scp": 17.28,
+   "new.mall.non": 19.44
+  }
+ }
+]

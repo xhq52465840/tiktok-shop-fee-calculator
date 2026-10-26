@@ -1,0 +1,189 @@
+[
+ {
+  "g": "Electronics",
+  "n": "Mobile Phones & Tablets",
+  "r": {
+   "nonmall_pxp": 8.72,
+   "nonmall": 11.99,
+   "mall_pxp": 9.81,
+   "mall": 13.08,
+   "cap_nonmall": 60,
+   "cap_mall": 120
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Cameras, Drones & Lenses",
+  "r": {
+   "nonmall_pxp": 8.72,
+   "nonmall": 11.99,
+   "mall_pxp": 10.9,
+   "mall": 14.17,
+   "cap_nonmall": 60,
+   "cap_mall": 120
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Desktop Computers & Laptops",
+  "r": {
+   "nonmall_pxp": 8.72,
+   "nonmall": 11.99,
+   "mall_pxp": 9.81,
+   "mall": 13.08,
+   "cap_nonmall": 60,
+   "cap_mall": 120
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Large Household Appliances",
+  "r": {
+   "nonmall_pxp": 10.9,
+   "nonmall": 14.17,
+   "mall_pxp": 11.99,
+   "mall": 15.26,
+   "cap_nonmall": 60,
+   "cap_mall": 120
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "PC components / Printers / Software",
+  "r": {
+   "nonmall_pxp": 10.9,
+   "nonmall": 14.17,
+   "mall_pxp": 11.99,
+   "mall": 15.26,
+   "cap_nonmall": 60,
+   "cap_mall": 120
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Console Machines & Video Games",
+  "r": {
+   "nonmall_pxp": 8.72,
+   "nonmall": 11.99,
+   "mall_pxp": 11.99,
+   "mall": 15.26,
+   "cap_nonmall": 60,
+   "cap_mall": 120
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "All other Electronics",
+  "r": {
+   "nonmall_pxp": 10.9,
+   "nonmall": 14.17,
+   "mall_pxp": 14.17,
+   "mall": 17.44,
+   "cap_nonmall": 60,
+   "cap_mall": 120
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Essential food (convenience, cooking, dairy, staples, fresh/frozen)",
+  "r": {
+   "nonmall_pxp": 6.54,
+   "nonmall": 10.9,
+   "mall_pxp": 9.81,
+   "mall": 14.17
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Alcoholic Beverages",
+  "r": {
+   "nonmall_pxp": 8.72,
+   "nonmall": 11.99,
+   "mall_pxp": 11.99,
+   "mall": 15.26
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Toilet Paper (Home Care Supplies)",
+  "r": {
+   "nonmall_pxp": 6.54,
+   "nonmall": 10.9,
+   "mall_pxp": 9.81,
+   "mall": 14.17
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Furniture, Bathroom, Bedding",
+  "r": {
+   "nonmall_pxp": 10.9,
+   "nonmall": 14.17,
+   "mall_pxp": 14.17,
+   "mall": 17.44,
+   "cap_nonmall": 60,
+   "cap_mall": 120
+  }
+ },
+ {
+  "g": "Toys, Kids & Babies",
+  "n": "Diapering, Potty, Milk Formula & Baby Food",
+  "r": {
+   "nonmall_pxp": 8.72,
+   "nonmall": 11.99,
+   "mall_pxp": 11.99,
+   "mall": 15.26
+  }
+ },
+ {
+  "g": "Pets",
+  "n": "All Pets sub-categories",
+  "r": {
+   "nonmall_pxp": 8.72,
+   "nonmall": 11.99,
+   "mall_pxp": 11.99,
+   "mall": 15.26
+  }
+ },
+ {
+  "g": "Hobbies & Books",
+  "n": "Books",
+  "r": {
+   "nonmall_pxp": 7.63,
+   "nonmall": 11.99,
+   "mall_pxp": 10.9,
+   "mall": 15.26
+  }
+ },
+ {
+  "g": "Hobbies & Books",
+  "n": "Musical Instruments & Accessories",
+  "r": {
+   "nonmall_pxp": 7.63,
+   "nonmall": 11.99,
+   "mall_pxp": 10.9,
+   "mall": 15.26
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Women/Men Shoes, Bags, Watches",
+  "r": {
+   "nonmall_pxp": 10.9,
+   "nonmall": 14.17,
+   "mall_pxp": 14.17,
+   "mall": 17.44,
+   "cap_nonmall": 300
+  }
+ },
+ {
+  "g": "Other",
+  "n": "All other Non-Electronics",
+  "r": {
+   "nonmall_pxp": 10.9,
+   "nonmall": 14.17,
+   "mall_pxp": 14.17,
+   "mall": 17.44
+  }
+ }
+]

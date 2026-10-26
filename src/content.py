@@ -557,3 +557,10 @@ PAGE_FN = {('tiktok-shop-my', 'en'): my_page, ('tiktok-shop-my', 'ms'): my_page_
 from content_ru import PAGE_FN_RU, GUIDES_RU
 PAGE_FN.update(PAGE_FN_RU)
 GUIDES.extend(GUIDES_RU)
+
+# Shopee + Lazada
+from content_sea import PAGE_FN_SEA, GUIDES_SEA, GUIDE_BODY_SEA, GUIDE_SOURCES_SEA
+PAGE_FN.update(PAGE_FN_SEA)
+GUIDES.extend(GUIDES_SEA)
+GUIDE_BODY.update(GUIDE_BODY_SEA)
+GUIDE_SOURCES.update(GUIDE_SOURCES_SEA)

@@ -15,7 +15,7 @@ S = {
   t_campaign='BXP campaign day', t_campaign_h='Double Day and Payday windows: BXP fee 7.02% instead of 4.86%.',
   t_paylater='Buyer paid with TikTok PayLater', t_paylater_h='Transaction fee 4.86% instead of 3.78% (from 16 Oct 2026).',
   t_psfWaived='Platform Support Fee waived or rebated', t_psfWaived_h='Some essential categories and new or small sellers.',
-  t_newSeller='New seller in 0% commission period', t_newSeller_h='TikTok waives commission for a new seller\'s first 90 days.',
+  t_newSeller='New seller in 0% commission period', t_newSeller_h='Commission waived for new sellers (window varies by platform — e.g. ~90–120 days). Confirm in Seller Center.',
   t_opfExempt='Order Processing Fee exempt', t_opfExempt_h='New sellers, or your first 50 orders each month.',
   rates_h='Filled in from the official tables. Edit any rate to match your Seller Center.',
   c_commission='Commission fee', c_tx='Transaction fee', c_bxp='BXP service fee', c_psf='Platform Support Fee', c_ssf='Shipping Service Fee',
@@ -35,6 +35,14 @@ S = {
           note_gn='TikTok doesn\'t name this category in its Seller Growth Fee list, so 1.5% is assumed. Check your settlement.',
           note_fx='Etsy charges the listing fee in US dollars (US$0.20 per item sold). Enter its value in your currency under "Fee rates used".'),
 
+
+  period_shopee_my_new='Orders from 14 Aug 2026 (new rates)', period_shopee_my_old='Orders before 14 Aug 2026',
+  t_scp='Cashback Programme (SCP) seller', t_scp_h='Lower commission for sellers on Shopee\'s Cashback Programme.',
+  t_pxp='Promo Xtra Programme (PXP) seller', t_pxp_h='Preferential commission; a separate PXP service fee also applies (enter your category rate below).',
+  c_pxp_svc='PXP service fee', c_pxp_svc_h='Varies by category. Enter the rate from Seller Center → Fees. FAQ example uses 5.45%.',
+  c_lz_pay='Payment / other Lazada fee', c_lz_pay_h='Lazada may charge payment or campaign fees on top of commission. Enter the % from your fee statement if any.',
+  cat_lz='Product cluster', lazmall='LazMall',
+  cmp_shopee_my_a='Before 14 Aug', cmp_shopee_my_b='From 14 Aug', cmp_shopee_my_note='Only the commission rate changes between the columns. Transaction fee and Platform Support Fee stay the same.',
   # --- shared (design refresh)
   nav_rates='Rate changes', nav_russia='Russia', open_calc_btn='Open calculator', language='Language', skip='Skip to content',
   sec_n1='Product & store', sec_n2='Price & cost', sec_n3='Shipping & extras', sec_n4='Programmes & options', optional='Optional',
@@ -59,7 +67,7 @@ S = {
   c_ym_proc='FBS order processing', c_ym_transfer='Payment transfer', c_ym_accept='Payment acceptance',
   ozproc_h='0 ₽ when the sorting centre accepts your shipment itself; 10 ₽ at pickup points or trusted acceptance.',
   verified='Rates verified', sources='Official sources', on_this_page='On this page', related='Related guides', faq='Frequently asked questions',
-  disclaimer='Independent tool, not affiliated with TikTok, ByteDance, Etsy, Ozon, Wildberries, Yandex or any marketplace. Estimates only: always confirm fees in your Seller Center.',
+  disclaimer='Independent tool, not affiliated with TikTok, ByteDance, Shopee, Lazada, Etsy, Ozon, Wildberries, Yandex or any marketplace. Estimates only: always confirm fees in your Seller Center.',
   f_tools='Calculators', f_guides='Guides', f_company='SellerFee', f_about='About', f_contact='Contact', f_privacy='Privacy Policy', f_terms='Terms of Use',
   f_tag='Fee and profit calculators for cross-border e-commerce sellers, built on official rate cards.', lang_switch='Bahasa Melayu', open_calc='Open calculator', soon='Coming soon', live='Live',
  ),

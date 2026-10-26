@@ -1,0 +1,52 @@
+[
+ {
+  "g": "General Merchandise",
+  "n": "General Merchandise (cluster range)",
+  "r": {
+   "mp": 19.98,
+   "mp_hi": 23.76,
+   "mall": 24.84,
+   "mall_hi": 29.16
+  }
+ },
+ {
+  "g": "FMCG",
+  "n": "FMCG (cluster range)",
+  "r": {
+   "mp": 0.0,
+   "mp_hi": 24.3,
+   "mall": 11.88,
+   "mall_hi": 29.16
+  }
+ },
+ {
+  "g": "Fashion",
+  "n": "Fashion (cluster range)",
+  "r": {
+   "mp": 19.98,
+   "mp_hi": 21.6,
+   "mall": 21.6,
+   "mall_hi": 27.0
+  }
+ },
+ {
+  "g": "Electronics",
+  "n": "Electronics (Marketplace cluster range)",
+  "r": {
+   "mp": 16.2,
+   "mp_hi": 23.22,
+   "mall": 24.84,
+   "mall_hi": 29.16
+  }
+ },
+ {
+  "g": "Digital Goods",
+  "n": "Digital Goods",
+  "r": {
+   "mp": 27.54,
+   "mp_hi": 27.54,
+   "mall": 2.7,
+   "mall_hi": 6.48
+  }
+ }
+]

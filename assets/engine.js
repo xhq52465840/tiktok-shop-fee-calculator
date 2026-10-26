@@ -135,8 +135,15 @@
           }
         }
         if (c.capPerItem) {
-          var cap = c.capPerItem * o.qty;
-          if (amt > cap) { amt = cap; how += ' \u2192 ' + t('capped', 'capped at') + ' ' + money(c.capPerItem) + '/' + t('item', 'item'); }
+          var capV = c.capPerItem;
+          if (typeof capV === 'string' && capV.indexOf('opt:') === 0) {
+            var RR = (opts[s.sel] || {}).r || {};
+            capV = RR[keyFor(capV.slice(4), s)];
+          }
+          if (capV) {
+            var cap = capV * o.qty;
+            if (amt > cap) { amt = cap; how += ' \u2192 ' + t('capped', 'capped at') + ' ' + money(capV) + '/' + t('item', 'item'); }
+          }
         }
         if (raw === null || raw === undefined || isNaN(raw)) how = t('notSet', 'Not set, see note above');
         Object.keys(c.condRate || {}).forEach(function (k) { if (cd[k]) how += ' \u00B7 ' + t('cond_' + k, k); });

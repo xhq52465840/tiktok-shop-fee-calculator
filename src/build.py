@@ -27,6 +27,7 @@ def copy_rates():
         # src is a short key like 'ozon' — file lives at src/data/{mid}/ru.json or similar
         for cand in [os.path.join(ROOT, 'src', 'data', mid, 'ru.json'),
                      os.path.join(ROOT, 'src', 'data', mid, f'{src}.json'),
+                     os.path.join(ROOT, 'src', 'data', m['platform'], f'{m["market"].lower()}.json'),
                      os.path.join(ROOT, 'assets', 'rates', f'{mid}.json')]:
             if os.path.isfile(cand):
                 shutil.copy2(cand, os.path.join(dst, f'{mid}.json')); break
@@ -56,6 +57,8 @@ def calc_page(mid, lang):
     alt = {l: f'{l}/{m["slug"]}/' for l in m['langs']} if len(m['langs']) > 1 else None
     items = [('SellerFee', f'{lang}/')]
     if m['platform'] == 'tiktok-shop' and lang == 'en': items.append(('TikTok Shop', 'en/tiktok-shop/'))
+    if m['platform'] == 'shopee' and lang == 'en': items.append(('Shopee', 'en/#calculators'))
+    if m['platform'] == 'lazada' and lang == 'en': items.append(('Lazada', 'en/#calculators'))
     if m['market'] == 'RU' and lang == 'en': items.append(('Russia', 'en/russia/'))
     if m['market'] == 'RU' and lang == 'ru': items.append(('Россия', 'ru/'))
     items.append((d['h1'], None))
@@ -163,6 +166,9 @@ C_SUM = {
  'ozon': 'FBO/FBS/realFBS commission by category & price band, logistics from 30 Oct 2026, last-mile 25 ₽.',
  'wildberries': 'КВВ by subject (FBW/FBS/DBS), logistics 46+14 ₽/L × warehouse coefficient.',
  'yandex-market': 'Placement by category, 42% low-price tariff, delivery 5%, middle mile, payment transfer.',
+ 'shopee-my': 'Marketplace & Mall commission from 14 Aug 2026 (SST-incl.), 3.78% TX, RM0.54 PSF.',
+ 'shopee-sg': 'GST-incl. Mall/non-Mall commission from 28 Aug 2026, 3.27% TX, PXP + caps.',
+ 'lazada-my': 'Marketplace & LazMall cluster commission from 14 Aug 2026 (SST-incl. floors).',
 }
 C_SUM_RU = {
  'ozon': 'Вознаграждение FBO/FBS/realFBS по категориям и ценам, логистика с 30 окт. 2026, последняя миля 25 ₽.',
@@ -201,13 +207,19 @@ def home():
         if p == 'TikTok Shop':
             tt += f'<div class="mrow off"><span class="flag" style="font-size:18px">{f}</span><span class="nm">{esc(mk)}</span>{badge("Coming soon","soon")}</div>'
     ru = ''.join(f'<a class="mrow" href="{MARKETS[k]["slug"]}/"><span class="flag" style="font-size:18px">{MARKETS[k]["flag"]}</span><span class="nm">{esc(MARKETS[k]["platformName"])}</span><span class="r">Verified {VDATE["en"]}</span>{badge("Live","live")}</a>' for k in ('ozon','wildberries','yandex-market'))
-    others = [('etsy', True), ('shopee', False), ('lazada', False), ('amazon', False), ('ebay', False)]
+    others = [('etsy', True), ('shopee', True), ('lazada', True), ('amazon', False), ('ebay', False)]
     ohtml = ''
+    live_map = {
+      'etsy': [('etsy', 'Etsy')],
+      'shopee': [('shopee-my', 'Shopee Malaysia'), ('shopee-sg', 'Shopee Singapore')],
+      'lazada': [('lazada-my', 'Lazada Malaysia')],
+    }
     for name, live in others:
         if live:
-            m = MARKETS['etsy']
-            ohtml += f'''<a class="card ccard" href="{m["slug"]}/"><div class="top">{ptile("etsy",40)}{badge("Live","live")}</div>
-<h3>Etsy</h3><p>{esc(C_SUM["etsy"])}</p><div class="go">Open calculator {ic("arrow",14)}</div></a>'''
+            for mid, title in live_map[name]:
+                m = MARKETS[mid]
+                ohtml += f'''<a class="card ccard" href="{m["slug"]}/"><div class="top">{ptile(m["platform"],40)}{badge("Live","live")}</div>
+<h3>{esc(title)}</h3><p>{esc(C_SUM[mid])}</p><div class="go">Open calculator {ic("arrow",14)}</div></a>'''
         else:
             req = issue_url(f'Calculator request: {name.title()}', f'Please add a fee calculator for {name.title()}.')
             ohtml += f'''<a class="card ccard" href="{req}" rel="noopener"><div class="top">{ptile(name,40)}{badge("Coming soon","soon")}</div>
@@ -223,11 +235,14 @@ def home():
      ('🇷🇺', 'Ozon', 'Commissions XLSX 28 Aug · Logistics 30 Oct', 'Seller Edu', 'en/ozon/#sources'),
      ('🇷🇺', 'Wildberries', 'КВВ PDF 7 Jul · Logistics instructions', 'Updated 19 Oct 2026', 'en/wildberries/#sources'),
      ('🇷🇺', 'Yandex Market', 'Placement · FBY/FBS · Acquiring', 'As published 26 Oct 2026', 'en/yandex-market/#sources'),
+     ('🇲🇾', 'Shopee MY', 'Local seller fees · Commission 14 Aug 2026', 'Updated 31 Jul / 14 Aug 2026', 'en/shopee/malaysia/#sources'),
+     ('🇸🇬', 'Shopee SG', 'Commission, Service & Transaction Fees', 'Updated 19 Oct 2026', 'en/shopee/singapore/#sources'),
+     ('🇲🇾', 'Lazada MY', 'MP & LazMall commission 14 Aug 2026', 'Cluster ranges (SST-incl.)', 'en/lazada/malaysia/#sources'),
     ]
     srows = ''.join(f'<tr><td><span class="flag">{f}</span> <b>{esc(m)}</b></td><td><a href="{u}">{esc(d)} {ic("ext",13)}</a><span class="sub">{esc(note)}</span></td><td>{badge("Checked "+VDATE["en"],"verified","shield")}</td></tr>' for f,m,d,note,u in srcs)
     guides = [g for g in C.GUIDES if g.get('lang') == 'en'][:6]
     body = f'''<section class="hero"><div class="wrap">
-<div><div class="announce">{badge("New","new")}<span>Russia live: Ozon, Wildberries, Yandex Market · <a href="russia/">See calculators {ic("arrow",13)}</a></span></div>
+<div><div class="announce">{badge("New","new")}<span>Shopee MY &amp; SG + Lazada MY live · <a href="shopee/malaysia/">Open Shopee {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">Know exactly what every marketplace takes from your sale.</h1>
 <p class="lead">SellerFee turns official marketplace rate cards into fast calculators. Pick your platform, enter a price, and see every fee, your payout and your real margin.</p>
 <div class="ctas"><a class="btn btn-primary btn-lg" href="tiktok-shop/malaysia/">{ic("calc",16)} TikTok Shop Malaysia</a>
@@ -235,7 +250,7 @@ def home():
 <div class="checks"><span>{ic("check",15)} Official sources only</span><span>{ic("check",15)} Verified {VDATE["en"]}</span><span>{ic("check",15)} Free, no sign-up</span></div></div>
 {qc}</div></section>
 <div class="stats"><div class="wrap" style="display:contents">
-<div><b>8</b><span>Live calculators</span></div>
+<div><b>11</b><span>Live calculators</span></div>
 <div><b>3</b><span>Russia marketplaces</span></div>
 <div><b>16k+</b><span>Category rates loaded</span></div>
 <div><b>0</b><span>Invented figures</span></div>
@@ -268,8 +283,8 @@ def home():
 </div></section>'''
     site = {"@context": "https://schema.org", "@type": "WebSite", "name": "SellerFee", "url": BASE, "inLanguage": "en"}
     org = {"@context": "https://schema.org", "@type": "Organization", "name": "SellerFee", "url": BASE, "logo": BASE + "assets/favicon.svg"}
-    w(path, page(path, 'en', 'SellerFee: Fee & Profit Calculators for TikTok Shop, Ozon, Wildberries & More',
-                 'Free fee and profit calculators for cross-border sellers: TikTok Shop, Ozon, Wildberries, Yandex Market and Etsy. Official rates, dated and sourced.',
+    w(path, page(path, 'en', 'SellerFee: Fee & Profit Calculators for TikTok Shop, Shopee, Lazada & More',
+                 'Free fee and profit calculators for cross-border sellers: TikTok Shop, Shopee, Lazada, Ozon, Wildberries, Yandex Market and Etsy. Official rates, dated and sourced.',
                  body, [site, org], alt={'en': 'en/', 'ms': 'ms/', 'ru': 'ru/'}))
 
 def home_ms():
@@ -393,7 +408,7 @@ def static_pages():
     about = f'''
 <p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (MY, PH, US, UK), Etsy, and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
 <h2 id="how-we-source-rates">How we source rates</h2>
-<p>Every rate comes from the platform’s own seller help — TikTok Shop Seller University, Etsy Help, Ozon Seller Edu, Wildberries instructions and КВВ PDF, Yandex Market help. Each calculator links its sources and shows the date we last checked them. When a platform publishes a rate but not the formula, we say so and make the rate editable. We don’t publish a calculator until rates can be verified from an official source.</p>
+<p>Every rate comes from the platform’s own seller help — TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Etsy Help, Ozon Seller Edu, Wildberries instructions and КВВ PDF, Yandex Market help. Each calculator links its sources and shows the date we last checked them. When a platform publishes a rate but not the formula, we say so and make the rate editable. We don’t publish a calculator until rates can be verified from an official source.</p>
 <h2>How we keep them current</h2>
 <p>We re-check source pages regularly and whenever a platform announces a change. When fees change, we keep old rates alongside new ones where the platform still publishes both, and we note the effective date on <a href="../rate-changes/">Rate changes</a>.</p>
 <h2>How the calculators work</h2>

@@ -10,6 +10,7 @@ def idx(opts, name):
     return next(i for i, o in enumerate(opts) if o['n'] == name)
 
 MY = load('tiktok-shop/my.json'); PH = load('tiktok-shop/ph.json'); US = load('tiktok-shop/us.json'); ET = load('etsy/processing.json')
+SH_MY = load('shopee/my.json'); SH_SG = load('shopee/sg.json'); LZ_MY = load('lazada/my.json')
 for o in ET:
     if o['r']['listing'] is None: o['note'] = 'fx'
 def load_ru(p):
@@ -160,11 +161,62 @@ MARKETS = {
      ('Тарифы на услуги по модели FBY — Yandex Market help', 'https://yandex.ru/support/marketplace/ru/introduction/rates/models/fby'),
      ('Тарифы на услуги по модели FBS — Yandex Market help', 'https://yandex.ru/support/marketplace/ru/introduction/rates/models/fbs'),
      ('Приём и перевод платежей покупателей — Yandex Market help', 'https://yandex.ru/support/marketplace/ru/introduction/rates/acquiring')]),
+ 'shopee-my': dict(
+   platform='shopee', platformName='Shopee', market='MY', marketName='Malaysia', slug='shopee/malaysia',
+   flag='🇲🇾', currency='MYR', symbols={'MYR': 'RM'}, locale='en-MY', langs=['en'],
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 39.90, 'cost': 12}, selector={'label': 'cat', 'options': SH_MY, 'src': 'shopee'},
+   defaultOption=next(i for i, o in enumerate(SH_MY) if o['n'] == 'Beauty › Skincare'),
+   store=[('mp', 'mp'), ('mall', 'mall')],
+   periods=[('new', 'period_shopee_my_new'), ('old', 'period_shopee_my_old')],
+   toggles=[dict(id='scp', vals=['non', 'scp']), dict(id='newSeller', vals=['', ''])],
+   components=[
+     dict(id='commission', type='pct', rate='opt:{period}.{store}.{scp}', zeroIf='newSeller', base='net', color=C[0]),
+     dict(id='tx', type='pct', rate=3.78, base='net_ship', color=C[1]),
+     dict(id='psf', type='fixed', rate=0.54, color=C[3])],
+   compare=dict(vary=['commission'], a={'label': 'cmp_shopee_my_a', 'state': {'period': 'old'}}, b={'label': 'cmp_shopee_my_b', 'state': {'period': 'new'}}, note='cmp_shopee_my_note'),
+   sources=[
+     ('Fees for Local Shopee Sellers — Shopee MY Seller Education Hub (updated 31 Jul 2026)', 'https://seller.shopee.com.my/edu/article/3503'),
+     ('Marketplace Commission Fee table (effective 14 Aug 2026) — Shopee MY Seller Education Hub', 'https://seller.shopee.com.my/edu/article/6799'),
+     ('Shopee Mall Commission Fee table (effective 14 Aug 2026) — Shopee MY Seller Education Hub', 'https://seller.shopee.com.my/edu/article/6799')]),
+ 'shopee-sg': dict(
+   platform='shopee', platformName='Shopee', market='SG', marketName='Singapore', slug='shopee/singapore',
+   flag='🇸🇬', currency='SGD', symbols={'SGD': 'S$'}, locale='en-SG', langs=['en'],
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 29.90, 'cost': 10}, selector={'label': 'cat', 'options': SH_SG},
+   defaultOption=next(i for i, o in enumerate(SH_SG) if 'Mobile Phones' in o['n']),
+   store=[('nonmall', 'mp'), ('mall', 'mall')],
+   periods=None,
+   toggles=[dict(id='pxp', vals=['', '_pxp']), dict(id='newSeller', vals=['', ''])],
+   components=[
+     dict(id='commission', type='pct', rate='opt:{store}{pxp}', zeroIf='newSeller', base='net',
+          capPerItem='opt:cap_{store}', color=C[0]),
+     dict(id='tx', type='pct', rate=3.27, base='net_ship', color=C[1]),
+     dict(id='pxp_svc', type='pct', rate=None, when='pxp', base='net', manual=True, color=C[2])],
+   compare=None,
+   sources=[
+     ('About Commission, Service, and Transaction Fees — Shopee SG Seller Education Hub (updated 19 Oct 2026)', 'https://seller.shopee.sg/edu/article/13107'),
+     ('Commission fee tables (GST-inclusive, from 28 Aug 2026) — Shopee SG Seller Education Hub', 'https://seller.shopee.sg/edu/article/13107')]),
+ 'lazada-my': dict(
+   platform='lazada', platformName='Lazada', market='MY', marketName='Malaysia', slug='lazada/malaysia',
+   flag='🇲🇾', currency='MYR', symbols={'MYR': 'RM'}, locale='en-MY', langs=['en'],
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 49.90, 'cost': 15}, selector={'label': 'cat_lz', 'options': LZ_MY},
+   defaultOption=0,
+   store=[('mp', 'mp'), ('mall', 'lazmall')],
+   periods=None, toggles=[dict(id='newSeller', vals=['', ''])],
+   components=[
+     dict(id='commission', type='pct', rate='opt:{store}', zeroIf='newSeller', base='net', color=C[0]),
+     dict(id='lz_pay', type='pct', rate=None, base='net_ship', manual=True, color=C[1])],
+   compare=None,
+   sources=[
+     ('Marketplace / LazMall Commission Rate (effective 14 Aug 2026, subject to 8% SST) — Lazada Seller Center → Settings → Commission', 'https://sellercenter.lazada.com.my/'),
+     ('Lazada Malaysia New Commission Rates for Marketplace & LazMall Sellers (Effective 14 August 2026) — BigSeller reprint of Lazada tables (secondary source)', 'https://www.bigseller.com/blog/articleDetails/4828/lazada-commission-rates-2026.htm')]),
 }
 
 COMING = [
   ('TikTok Shop', 'Singapore', '🇸🇬'), ('TikTok Shop', 'Thailand', '🇹🇭'), ('TikTok Shop', 'Vietnam', '🇻🇳'), ('TikTok Shop', 'Indonesia', '🇮🇩'),
-  ('Shopee', 'Malaysia, Philippines & more', '🛍️'), ('Lazada', 'Malaysia, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
+  ('Shopee', 'Philippines, Thailand, Indonesia & more', '🛍️'), ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
 
 # ---------- Python mirror of assets/engine.js (used to compute worked examples in the guides)
 from decimal import Decimal, ROUND_HALF_UP
@@ -268,7 +320,10 @@ def compute(mid, sel=None, period='new', store=None, tg=None, rates=None, x=None
                 over = m['selector']['options'][s['sel']]['r'].get(c['tier']['key'])
                 if over is not None and base > c['tier']['threshold']:
                     amt = c['tier']['threshold'] * r / 100 + (base - c['tier']['threshold']) * over / 100
-            if c.get('capPerItem'): amt = min(amt, c['capPerItem'] * o['qty'])
+            cap = c.get('capPerItem')
+            if isinstance(cap, str) and cap.startswith('opt:'):
+                R = m['selector']['options'][s['sel']]['r']; cap = R.get(key_for(cap[4:], m, s))
+            if cap: amt = min(amt, cap * o['qty'])
         rows.append((c['id'], r, r2(amt)))
     if o['affPct'] > 0: rows.append(('aff', o['affPct'], r2(net * o['affPct'] / 100)))
     total = r2(sum(x[2] for x in rows)); payout = r2(b['net_ship'] - o['shipCost'] - total)
