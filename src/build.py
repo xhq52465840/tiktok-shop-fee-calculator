@@ -8,6 +8,7 @@ from sf_site import (page, crumbs, faq_block, sources_block, widget, AD, esc, BA
 from site_helpers import money, pct
 from i18n import tr, LANGS
 import content as C
+from zh_pages import home_zh, tiktok_hub_zh, russia_hub_zh
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def w(path, html):
@@ -15,7 +16,7 @@ def w(path, html):
     os.makedirs(os.path.dirname(p), exist_ok=True); open(p, 'w', encoding='utf-8').write(html)
 
 def clean():
-    for d in ['en', 'ms', 'ru', 'malaysia', 'philippines']:
+    for d in ['en', 'ms', 'ru', 'zh', 'malaysia', 'philippines']:
         shutil.rmtree(os.path.join(ROOT, d), ignore_errors=True)
 
 def copy_rates():
@@ -57,10 +58,14 @@ def calc_page(mid, lang):
     alt = {l: f'{l}/{m["slug"]}/' for l in m['langs']} if len(m['langs']) > 1 else None
     items = [('SellerFee', f'{lang}/')]
     if m['platform'] == 'tiktok-shop' and lang == 'en': items.append(('TikTok Shop', 'en/tiktok-shop/'))
+    if m['platform'] == 'tiktok-shop' and lang == 'zh': items.append(('TikTok Shop', 'zh/tiktok-shop/'))
     if m['platform'] == 'shopee' and lang == 'en': items.append(('Shopee', 'en/#calculators'))
+    if m['platform'] == 'shopee' and lang == 'zh': items.append(('Shopee', 'zh/#calculators'))
     if m['platform'] == 'lazada' and lang == 'en': items.append(('Lazada', 'en/#calculators'))
+    if m['platform'] == 'lazada' and lang == 'zh': items.append(('Lazada', 'zh/#calculators'))
     if m['market'] == 'RU' and lang == 'en': items.append(('Russia', 'en/russia/'))
     if m['market'] == 'RU' and lang == 'ru': items.append(('Россия', 'ru/'))
+    if m['market'] == 'RU' and lang == 'zh': items.append(('俄罗斯', 'zh/russia/'))
     items.append((d['h1'], None))
     ch, cld = crumbs(path, items)
     fh, fld = faq_block(d['faq'], lang)
@@ -68,11 +73,12 @@ def calc_page(mid, lang):
     body_html = re.sub(r'<h2 id="faq"\s*>\s*</h2>', '', d['body'])
     live = badge(tr(lang, 'live'), 'live')
     verified = badge(f'{tr(lang, "verified")} {VDATE[lang]}', 'verified', 'shield')
-    srcs = badge(f'{len(m["sources"])} {"official sources" if lang=="en" else ("sumber rasmi" if lang=="ms" else "офиц. источника")}', 'brand')
+    src_lbl = {'en': 'official sources', 'ms': 'sumber rasmi', 'ru': 'офиц. источника', 'zh': '个官方来源'}.get(lang, 'official sources')
+    srcs = badge(f'{len(m["sources"])} {src_lbl}', 'brand')
     langseg = ''
     if alt and len(alt) > 1:
         langseg = '<div class="langseg"><div class="seg">' + ''.join(
-            f'<a href="{rel_(path)}{p}" hreflang="{l}"{" aria-current=page" if l==lang else ""}>{esc(LANGS[l]["name"])}</a>' for l, p in alt.items()) + '</div></div>'
+            f'<a href="{rel_(path)}{p}" hreflang="{LANGS[l]["html"]}"{" aria-current=page" if l==lang else ""}>{esc(LANGS[l]["name"])}</a>' for l, p in alt.items()) + '</div></div>'
     head = f'''<div class="phead"><div class="wrap">{ch}
 <div class="titlerow">{ptile(m["platform"], 56)}<div style="flex:1;min-width:0"><h1 class="h-display">{esc(d["h1"])}</h1>
 <p class="lead" style="margin-top:10px">{esc(d["lede"])}</p>
@@ -139,21 +145,24 @@ def guides_index(lang='en'):
     path = f'{lang}/guides/'
     ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (tr(lang, 'nav_guides'), None)])
     guides = [g for g in C.GUIDES if g.get('lang') == lang]
-    if lang == 'ru' and not guides: guides = [g for g in C.GUIDES if g.get('lang') == 'en']
-    title = {'en': 'Seller fee guides', 'ms': 'Panduan yuran penjual', 'ru': 'Гайды по комиссиям маркетплейсов'}[lang]
+    if lang in ('ru', 'zh') and not guides: guides = [g for g in C.GUIDES if g.get('lang') == 'en']
+    title = {'en': 'Seller fee guides', 'ms': 'Panduan yuran penjual', 'ru': 'Гайды по комиссиям маркетплейсов', 'zh': '卖家费用指南'}[lang]
     lede = {'en': 'Plain-English explanations of marketplace fee changes, with worked examples computed from the official rate cards.',
             'ms': 'Penjelasan yuran marketplace dengan contoh dikira daripada kad kadar rasmi.',
-            'ru': 'Разборы комиссий маркетплейсов с примерами, посчитанными по официальным тарифам.'}[lang]
+            'ru': 'Разборы комиссий маркетплейсов с примерами, посчитанными по официальным тарифам.',
+            'zh': '用官方费率表算出的实例，解读各平台费用变化。'}[lang]
     body = f'''<div class="phead"><div class="wrap">{ch}<h1 class="h-display" style="margin-top:18px">{esc(title)}</h1>
 <p class="lead" style="margin-top:12px">{esc(lede)}</p></div></div>
 <section class="s"><div class="wrap"><div class="cards">{''.join(gcard(path, g, lang) for g in guides)}</div></div></section>'''
     w(path, page(path, lang,
                  {'en': 'Seller Fee Guides for TikTok Shop, Ozon, Wildberries & More | SellerFee',
                   'ms': 'Panduan Yuran Penjual | SellerFee',
-                  'ru': 'Гайды по комиссиям Ozon, Wildberries, Яндекс Маркет | SellerFee'}[lang],
+                  'ru': 'Гайды по комиссиям Ozon, Wildberries, Яндекс Маркет | SellerFee',
+                  'zh': 'TikTok Shop、Ozon、Wildberries 等卖家费用指南 | SellerFee'}[lang],
                  {'en': 'Guides to marketplace fee changes with real worked examples from official rate cards.',
                   'ms': 'Panduan perubahan yuran marketplace dengan contoh sebenar.',
-                  'ru': 'Гайды по изменению комиссий с примерами из официальных тарифов.'}[lang],
+                  'ru': 'Гайды по изменению комиссий с примерами из официальных тарифов.',
+                  'zh': '基于官方费率表的真实计算示例，解读电商平台费用变化。'}[lang],
                  body, [cld]))
 
 # ---------------------------------------------------------------- hubs & home
@@ -175,6 +184,20 @@ C_SUM_RU = {
  'wildberries': 'КВВ по предметам (FBW/FBS/DBS), логистика 46+14 ₽/л × коэффициент склада.',
  'yandex-market': 'Размещение по категориям, тариф 42%, доставка 5%, средняя миля, перевод платежа.',
 }
+C_SUM_ZH = {
+ 'tiktok-shop-my': '2026年10月31日起新佣金表，交易手续费 3.78%/4.86%，平台支持费 RM0.54，BXP。',
+ 'tiktok-shop-ph': '₱5 订单处理费，1%–1.5% 卖家成长费，交易手续费 2.24%，物流服务费。',
+ 'tiktok-shop-us': '按类目推荐费 6%，精品珠宝与二手 5%，超 $10K 部分 3%。',
+ 'tiktok-shop-uk': '佣金 9%，指定电子与美妆类目 5%。',
+ 'etsy': '交易手续费 6.5%、刊登费 US$0.20，以及 60+ 国家支付处理费。',
+ 'ozon': 'FBO/FBS/realFBS 按类目与价位佣金，物流自 2026年10月30日，末端 25 ₽。',
+ 'wildberries': '按品类 КВВ（FBW/FBS/DBS），物流 46+14 ₽/升 × 仓库系数。',
+ 'yandex-market': '按类目展示费、42% 低价费率、配送 5%、中段与货款划转。',
+ 'shopee-my': 'Marketplace / Mall 佣金自 2026年8月14日（含 SST），交易手续费 3.78%，平台支持费 RM0.54。',
+ 'shopee-sg': '含 GST 的 Mall/非 Mall 佣金自 2026年8月28日，交易手续费 3.27%，PXP 与封顶。',
+ 'lazada-my': 'Marketplace 与 LazMall 集群佣金自 2026年8月14日（含 SST 下限）。',
+}
+
 
 def home():
     path = 'en/'
@@ -285,7 +308,7 @@ def home():
     org = {"@context": "https://schema.org", "@type": "Organization", "name": "SellerFee", "url": BASE, "logo": BASE + "assets/favicon.svg"}
     w(path, page(path, 'en', 'SellerFee: Fee & Profit Calculators for TikTok Shop, Shopee, Lazada & More',
                  'Free fee and profit calculators for cross-border sellers: TikTok Shop, Shopee, Lazada, Ozon, Wildberries, Yandex Market and Etsy. Official rates, dated and sourced.',
-                 body, [site, org], alt={'en': 'en/', 'ms': 'ms/', 'ru': 'ru/'}))
+                 body, [site, org], alt={'en': 'en/', 'ms': 'ms/', 'ru': 'ru/', 'zh': 'zh/'}))
 
 def home_ms():
     path = 'ms/'
@@ -303,7 +326,7 @@ def home_ms():
 <p class="muted" style="margin-top:18px">Kalkulator untuk Filipina, AS, UK, Etsy dan Rusia tersedia dalam bahasa Inggeris (dan Rusia).</p></div></section>'''
     w(path, page(path, 'ms', 'SellerFee: Kalkulator Yuran & Untung untuk Penjual TikTok Shop',
                  'Kalkulator yuran dan untung percuma untuk penjual e-dagang, bermula dengan TikTok Shop Malaysia. Kadar rasmi, bertarikh dan bersumber.',
-                 body, alt={'en': 'en/', 'ms': 'ms/', 'ru': 'ru/'}))
+                 body, alt={'en': 'en/', 'ms': 'ms/', 'ru': 'ru/', 'zh': 'zh/'}))
 
 def home_ru():
     path = 'ru/'
@@ -336,7 +359,7 @@ def home_ru():
 <div class="cards">{''.join(gcard(path, g, 'ru') for g in guides)}</div></div></section>'''
     w(path, page(path, 'ru', 'SellerFee: калькуляторы комиссий Ozon, Wildberries и Яндекс Маркета',
                  'Бесплатные калькуляторы комиссий и прибыли для продавцов Ozon, Wildberries и Яндекс Маркета. Официальные тарифы, с датой проверки.',
-                 body, alt={'en': 'en/', 'ms': 'ms/', 'ru': 'ru/'}))
+                 body, alt={'en': 'en/', 'ms': 'ms/', 'ru': 'ru/', 'zh': 'zh/'}))
 
 def tiktok_hub():
     path = 'en/tiktok-shop/'
@@ -378,7 +401,7 @@ def russia_hub():
 <div class="cards">{''.join(gcard(path, g, 'en') for g in guides)}</div></div></section>'''
     w(path, page(path, 'en', 'Russia Fee Calculators: Ozon, Wildberries & Yandex Market | SellerFee',
                  'Free fee and profit calculators for Ozon, Wildberries and Yandex Market sellers. Official category tariffs, logistics and payment fees in RUB.',
-                 body, [cld], alt={'en': 'en/russia/', 'ru': 'ru/'}))
+                 body, [cld], alt={'en': 'en/russia/', 'ru': 'ru/', 'zh': 'zh/russia/'}))
 
 def rate_changes():
     path = 'en/rate-changes/'
@@ -463,10 +486,10 @@ def static_pages():
 def plumbing():
     open(os.path.join(ROOT, 'index.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SellerFee</title>
 <link rel="canonical" href="{BASE}en/">
-<link rel="alternate" hreflang="en" href="{BASE}en/"><link rel="alternate" hreflang="ms" href="{BASE}ms/"><link rel="alternate" hreflang="ru" href="{BASE}ru/"><link rel="alternate" hreflang="x-default" href="{BASE}en/">
+<link rel="alternate" hreflang="en" href="{BASE}en/"><link rel="alternate" hreflang="ms" href="{BASE}ms/"><link rel="alternate" hreflang="ru" href="{BASE}ru/"><link rel="alternate" hreflang="zh-CN" href="{BASE}zh/"><link rel="alternate" hreflang="x-default" href="{BASE}en/">
 <meta http-equiv="refresh" content="0; url=en/"><meta name="robots" content="noindex,follow">
-<script>(function(){{var l=(navigator.language||'').toLowerCase();location.replace(l.indexOf('ru')===0?'ru/':l.indexOf('ms')===0?'ms/':'en/')}})()</script></head>
-<body><a href="en/">SellerFee</a> · <a href="ru/">Русский</a> · <a href="ms/">Bahasa Melayu</a></body></html>''')
+<script>(function(){{var l=(navigator.language||'').toLowerCase();location.replace(l.indexOf('zh')===0?'zh/':l.indexOf('ru')===0?'ru/':l.indexOf('ms')===0?'ms/':'en/')}})()</script></head>
+<body><a href="en/">SellerFee</a> · <a href="zh/">中文</a> · <a href="ru/">Русский</a> · <a href="ms/">Bahasa Melayu</a></body></html>''')
     for old, new in [('malaysia/', 'en/tiktok-shop/malaysia/'), ('philippines/', 'en/tiktok-shop/philippines/')]:
         w(old, f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{BASE}{new}"><meta http-equiv="refresh" content="0; url=../{new}"><meta name="robots" content="noindex"></head><body><a href="../{new}">This page has moved.</a></body></html>')
     open(os.path.join(ROOT, '404.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | SellerFee</title><meta name="robots" content="noindex">
@@ -478,7 +501,7 @@ def plumbing():
     for path, alt in PAGES:
         sm.append(f'  <url><loc>{BASE}{path}</loc><lastmod>{VERIFIED}</lastmod>')
         if alt:
-            for l, p in alt.items(): sm.append(f'    <xhtml:link rel="alternate" hreflang="{l}" href="{BASE}{p}"/>')
+            for l, p in alt.items(): sm.append(f'    <xhtml:link rel="alternate" hreflang="{LANGS[l]["html"]}" href="{BASE}{p}"/>')
             sm.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}{alt.get("en", list(alt.values())[0])}"/>')
         sm.append('  </url>')
     sm.append('</urlset>')
@@ -491,10 +514,10 @@ def plumbing():
 
 if __name__ == '__main__':
     clean(); copy_rates()
-    home(); home_ms(); home_ru(); tiktok_hub(); russia_hub(); rate_changes()
+    home(); home_ms(); home_ru(); home_zh(); tiktok_hub(); tiktok_hub_zh(); russia_hub(); russia_hub_zh(); rate_changes()
     for mid, m in MARKETS.items():
         for lang in m['langs']: calc_page(mid, lang)
-    for lang in ('en', 'ru'): guides_index(lang)
+    for lang in ('en', 'ru', 'zh'): guides_index(lang)
     for g in C.GUIDES: guide_page(g)
     static_pages(); plumbing()
     print('built', len(PAGES), 'pages')

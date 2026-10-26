@@ -29,7 +29,7 @@ UK = [{'n': 'Most categories (standard rate)', 'r': {'rate': 9.0}},
 MARKETS = {
  'tiktok-shop-my': dict(
    platform='tiktok-shop', platformName='TikTok Shop', market='MY', marketName='Malaysia', slug='tiktok-shop/malaysia',
-   flag='🇲🇾', currency='MYR', symbols={'MYR': 'RM'}, locale='en-MY', langs=['en', 'ms'],
+   flag='🇲🇾', currency='MYR', symbols={'MYR': 'RM'}, locale='en-MY', langs=['en', 'ms', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
    defaults={'price': 39.90, 'cost': 12}, selector={'label': 'cat', 'options': MY},
    defaultOption=idx(MY, 'Beauty & Personal Care › Skincare'),
@@ -50,7 +50,7 @@ MARKETS = {
      ('Bonus Extra Program (BXP) — TikTok Shop MY Seller University (22 Sep 2026)', 'https://seller-my.tiktok.com/university/essay?knowledge_id=8969995510564625&lang=en')]),
  'tiktok-shop-ph': dict(
    platform='tiktok-shop', platformName='TikTok Shop', market='PH', marketName='Philippines', slug='tiktok-shop/philippines',
-   flag='🇵🇭', currency='PHP', symbols={'PHP': '₱'}, locale='en-PH', langs=['en'],
+   flag='🇵🇭', currency='PHP', symbols={'PHP': '₱'}, locale='en-PH', langs=['en', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
    defaults={'price': 499, 'cost': 180}, selector={'label': 'cat', 'options': PH},
    defaultOption=idx(PH, 'Womenswear & Underwear'), store=[('mp', 'mp'), ('mall', 'mall')], periods=None,
@@ -69,7 +69,7 @@ MARKETS = {
      ('Seller Growth Fee start date (27 Apr 2026) — Baijing report, secondary source', 'https://www.baijing.cn/article/55291')]),
  'tiktok-shop-us': dict(
    platform='tiktok-shop', platformName='TikTok Shop', market='US', marketName='United States', slug='tiktok-shop/united-states',
-   flag='🇺🇸', currency='USD', symbols={'USD': '$'}, locale='en-US', langs=['en'],
+   flag='🇺🇸', currency='USD', symbols={'USD': '$'}, locale='en-US', langs=['en', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
    defaults={'price': 24.99, 'cost': 7}, selector={'label': 'cat', 'options': US},
    defaultOption=idx(US, "Womenswear & Underwear › Women's Tops"), store=None, periods=None, toggles=[],
@@ -78,7 +78,7 @@ MARKETS = {
    sources=[('TikTok Shop Referral Fees by Category — TikTok Shop US Seller University (revised 8 Oct 2026)', 'https://seller-us.tiktok.com/university/essay?knowledge_id=5988482086864682&lang=en')]),
  'tiktok-shop-uk': dict(
    platform='tiktok-shop', platformName='TikTok Shop', market='UK', marketName='United Kingdom', slug='tiktok-shop/united-kingdom',
-   flag='🇬🇧', currency='GBP', symbols={'GBP': '£'}, locale='en-GB', langs=['en'],
+   flag='🇬🇧', currency='GBP', symbols={'GBP': '£'}, locale='en-GB', langs=['en', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
    defaults={'price': 22, 'cost': 7}, selector={'label': 'ukcat', 'options': UK}, defaultOption=0,
    store=None, periods=None, toggles=[],
@@ -86,7 +86,7 @@ MARKETS = {
    sources=[('TikTok Shop UK Commission Rate Policy — TikTok Shop UK Seller University (policy page dated 18 Sep 2025)', 'https://seller-uk.tiktok.com/university/essay?knowledge_id=3337893683398432&lang=en')]),
  'etsy': dict(
    platform='etsy', platformName='Etsy', market='GLOBAL', marketName='All countries', slug='etsy',
-   flag='🧶', currency='USD', symbols={'USD': '$', 'GBP': '£', 'EUR': '€'}, locale='en-US', langs=['en'], currencyFromOption=True,
+   flag='🧶', currency='USD', symbols={'USD': '$', 'GBP': '£', 'EUR': '€'}, locale='en-US', langs=['en', 'zh'], currencyFromOption=True,
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'tax', 'other'],
    defaults={'price': 30, 'cost': 9, 'buyerShip': 5}, selector={'label': 'bank', 'options': ET},
    defaultOption=idx(ET, 'United States'), store=None, periods=None, toggles=[],
@@ -100,7 +100,7 @@ MARKETS = {
             ('What are Payment Processing Fees for Selling on Etsy? — Etsy Help', 'https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy'),
             ('Fees & Payments Policy — Etsy', 'https://www.etsy.com/legal/fees/')]),
  'ozon': dict(
-   platform='ozon', platformName='Ozon', market='RU', marketName='Russia', slug='ozon', flag='🇷🇺', **RUB, langs=['en', 'ru'],
+   platform='ozon', platformName='Ozon', market='RU', marketName='Russia', slug='ozon', flag='🇷🇺', **RUB, langs=['en', 'ru', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'vol', 'shipCost', 'taxPct', 'other'],
    defaults={'price': 1500, 'cost': 450, 'vol': 1.5}, selector={'label': 'cat_oz', 'options': OZ, 'src': 'ozon'},
    defaultOption=gidx(OZ, 'Красота и гигиена', 'Косметика для ухода'), tables=OZ_T,
@@ -121,7 +121,7 @@ MARKETS = {
      ('Таблица категорий и типов для расчёта вознаграждения, in force from 28 Aug 2026 — Ozon (XLSX)', 'https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0_%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%CC%86_%D0%B4%D0%BB%D1%8F_%D1%80%D0%B0%D1%81%D1%87%D0%B5%CC%88%D1%82%D0%B0_%D0%B2%D0%BE%D0%B7%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F_28082026-3_1787574038.xlsx'),
      ('Логистика FBO и FBS, tariffs in force from 30 Oct 2026 — Ozon (XLSX)', 'https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/logistika-fbo-fbs-30102026_1789376537.xlsx')]),
  'wildberries': dict(
-   platform='wildberries', platformName='Wildberries', market='RU', marketName='Russia', slug='wildberries', flag='🇷🇺', **RUB, langs=['en', 'ru'],
+   platform='wildberries', platformName='Wildberries', market='RU', marketName='Russia', slug='wildberries', flag='🇷🇺', **RUB, langs=['en', 'ru', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'vol', 'coef', 'shipCost', 'taxPct', 'other'],
    defaults={'price': 1500, 'cost': 450, 'vol': 1.5, 'coef': 170}, selector={'label': 'cat_wb', 'options': WB, 'src': 'wildberries'},
    defaultOption=gidx(WB, 'Одежда', 'Футболки'),
@@ -139,7 +139,7 @@ MARKETS = {
      ('Коэффициент вознаграждения Wildberries — seller instructions', 'https://seller.wildberries.ru/instructions/ru/ru/material/wildberries-reward-ratio'),
      ('Wildberries cuts FBS late-shipment penalties; FBS fast-shipping commission discounts −5 / −3.5 p.p. — Kommersant, 7 Oct 2026 (secondary)', 'https://www.kommersant.ru/doc/9008220')]),
  'yandex-market': dict(
-   platform='yandex-market', platformName='Yandex Market', market='RU', marketName='Russia', slug='yandex-market', flag='🇷🇺', **RUB, langs=['en', 'ru'],
+   platform='yandex-market', platformName='Yandex Market', market='RU', marketName='Russia', slug='yandex-market', flag='🇷🇺', **RUB, langs=['en', 'ru', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'vol', 'shipCost', 'taxPct', 'other'],
    defaults={'price': 1500, 'cost': 450, 'vol': 1.5}, selector={'label': 'cat_ym', 'options': YM, 'src': 'yandex-market'},
    defaultOption=gidx(YM, 'Товары для красоты', 'Косметика, парфюмерия и уход › Уход за лицом'),
@@ -163,7 +163,7 @@ MARKETS = {
      ('Приём и перевод платежей покупателей — Yandex Market help', 'https://yandex.ru/support/marketplace/ru/introduction/rates/acquiring')]),
  'shopee-my': dict(
    platform='shopee', platformName='Shopee', market='MY', marketName='Malaysia', slug='shopee/malaysia',
-   flag='🇲🇾', currency='MYR', symbols={'MYR': 'RM'}, locale='en-MY', langs=['en'],
+   flag='🇲🇾', currency='MYR', symbols={'MYR': 'RM'}, locale='en-MY', langs=['en', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
    defaults={'price': 39.90, 'cost': 12}, selector={'label': 'cat', 'options': SH_MY, 'src': 'shopee'},
    defaultOption=next(i for i, o in enumerate(SH_MY) if o['n'] == 'Beauty › Skincare'),
@@ -181,7 +181,7 @@ MARKETS = {
      ('Shopee Mall Commission Fee table (effective 14 Aug 2026) — Shopee MY Seller Education Hub', 'https://seller.shopee.com.my/edu/article/6799')]),
  'shopee-sg': dict(
    platform='shopee', platformName='Shopee', market='SG', marketName='Singapore', slug='shopee/singapore',
-   flag='🇸🇬', currency='SGD', symbols={'SGD': 'S$'}, locale='en-SG', langs=['en'],
+   flag='🇸🇬', currency='SGD', symbols={'SGD': 'S$'}, locale='en-SG', langs=['en', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
    defaults={'price': 29.90, 'cost': 10}, selector={'label': 'cat', 'options': SH_SG},
    defaultOption=next(i for i, o in enumerate(SH_SG) if 'Mobile Phones' in o['n']),
@@ -199,7 +199,7 @@ MARKETS = {
      ('Commission fee tables (GST-inclusive, from 28 Aug 2026) — Shopee SG Seller Education Hub', 'https://seller.shopee.sg/edu/article/13107')]),
  'lazada-my': dict(
    platform='lazada', platformName='Lazada', market='MY', marketName='Malaysia', slug='lazada/malaysia',
-   flag='🇲🇾', currency='MYR', symbols={'MYR': 'RM'}, locale='en-MY', langs=['en'],
+   flag='🇲🇾', currency='MYR', symbols={'MYR': 'RM'}, locale='en-MY', langs=['en', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
    defaults={'price': 49.90, 'cost': 15}, selector={'label': 'cat_lz', 'options': LZ_MY},
    defaultOption=0,

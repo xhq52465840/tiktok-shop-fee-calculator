@@ -6,8 +6,8 @@ from i18n import S, tr, LANGS
 BASE = os.environ.get('SITE_BASE', 'https://sellerfee.app/')
 REPO = 'https://github.com/xhq52465840/tiktok-shop-fee-calculator'
 VERIFIED_H = '26 October 2026'
-VDATE = {'en': '26 Oct 2026', 'ms': '26 Okt 2026', 'ru': '26 окт. 2026'}
-VFULL = {'en': '26 October 2026', 'ms': '26 Oktober 2026', 'ru': '26 октября 2026'}
+VDATE = {'en': '26 Oct 2026', 'ms': '26 Okt 2026', 'ru': '26 окт. 2026', 'zh': '2026年10月26日'}
+VFULL = {'en': '26 October 2026', 'ms': '26 Oktober 2026', 'ru': '26 октября 2026', 'zh': '2026年10月26日'}
 VERIFIED_MS = VFULL['ms']
 esc = html.escape
 PAGES = []  # (path, alternates{lang:path})
@@ -52,7 +52,10 @@ def issue_url(title, body=''):
     return f'{REPO}/issues/new?title={quote(title)}&body={quote(body)}'
 
 def calc_name(m, lang='en'):
-    if m['market'] in ('GLOBAL', 'RU'): return m['platformName'] if lang != 'ru' else {'Yandex Market': 'Яндекс Маркет'}.get(m['platformName'], m['platformName'])
+    if m['market'] in ('GLOBAL', 'RU'):
+        if lang == 'ru': return {'Yandex Market': 'Яндекс Маркет'}.get(m['platformName'], m['platformName'])
+        if lang == 'zh': return {'Yandex Market': 'Yandex Market（Яндекс Маркет）'}.get(m['platformName'], m['platformName'])
+        return m['platformName']
     return f'{m["platformName"]} {m["marketName"]}'
 
 def calc_links(lang):
@@ -67,6 +70,7 @@ TOPBAR = {
  'en': ('UPDATE', 'TikTok Shop Malaysia commission rates change on <b>31 Oct 2026</b>', 'en/guides/tiktok-shop-malaysia-commission-changes-october-2026/', 'See what changes'),
  'ms': ('BAHARU', 'Kadar komisen TikTok Shop Malaysia berubah pada <b>31 Okt 2026</b>', 'ms/tiktok-shop/malaysia/', 'Lihat perubahan'),
  'ru': ('НОВОЕ', 'Ozon обновляет тарифы логистики FBO и FBS с <b>30 октября 2026</b>', 'ru/ozon/', 'Посчитать'),
+ 'zh': ('新', 'TikTok Shop 马来西亚佣金费率将于 <b>2026年10月31日</b> 调整', 'zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/', '查看变化'),
 }
 def topbar(lang, path):
     pill, txt, href, cta = TOPBAR[lang]
@@ -76,18 +80,19 @@ NAV = {
  'en': [('en/rate-changes/', 'nav_rates'), ('en/guides/', 'nav_guides'), ('en/about/', 'nav_about')],
  'ms': [('en/rate-changes/', 'nav_rates'), ('en/guides/', 'nav_guides'), ('en/about/', 'nav_about')],
  'ru': [('ru/guides/', 'nav_guides'), ('en/rate-changes/', 'nav_rates'), ('en/about/', 'nav_about')],
+ 'zh': [('zh/guides/', 'nav_guides'), ('en/rate-changes/', 'nav_rates'), ('en/about/', 'nav_about')],
 }
 def header(lang, path, alt=None):
     r = rel(path); L = lambda k: tr(lang, k)
     cl = calc_links(lang)
     dd = ''.join(f'<a href="{r}{u}">{ptile(p, 22)}<span>{esc(n)}</span></a>' for u, n, p, f, k in cl)
-    hub = 'ru/' if lang == 'ru' else 'en/'
+    hub = {'ru': 'ru/', 'zh': 'zh/', 'ms': 'ms/'}.get(lang, 'en/')
     items = f'<details class="dd"><summary>{esc(L("nav_calcs"))}{ic("chev", 14)}</summary><div class="ddm">{dd}<a class="all" href="{r}{hub}#calculators">{esc(L("open_calc"))} {ic("arrow", 13)}</a></div></details>'
     items += ''.join(f'<a href="{r}{u}"{" aria-current=page" if path.startswith(u) else ""}>{esc(L(k))}</a>' for u, k in NAV[lang])
     langs = alt or {lang: path}
     code = lambda l: l.upper()
-    lm = ''.join(f'<a href="{r}{p}" hreflang="{l}" lang="{l}"{" aria-current=true" if l == lang else ""}>{esc(LANGS[l]["name"])}<span class="code">{code(l)}</span></a>' for l, p in langs.items())
-    if not alt: lm += f'<span class="lm-note">{esc({"en": "This page is in English only", "ms": "Halaman ini dalam satu bahasa sahaja", "ru": "Страница доступна только на русском"}[lang])}</span>'
+    lm = ''.join(f'<a href="{r}{p}" hreflang="{LANGS[l]["html"]}" lang="{LANGS[l]["html"]}"{" aria-current=true" if l == lang else ""}>{esc(LANGS[l]["name"])}<span class="code">{code(l)}</span></a>' for l, p in langs.items())
+    if not alt: lm += f'<span class="lm-note">{esc({"en": "This page is in English only", "ms": "Halaman ini dalam satu bahasa sahaja", "ru": "Страница доступна только на русском", "zh": "此页仅有当前语言版本"}[lang])}</span>'
     lsw = f'<details class="dd lang"><summary aria-label="{esc(L("language"))}">{ic("globe", 15)}<span class="ln">{esc(LANGS[lang]["name"])}</span><span class="code">{code(lang)}</span>{ic("chev", 14)}</summary><div class="ddm right">{lm}</div></details>'
     return f'''<header class="nav"><div class="wrap"><a class="logo" href="{r}{hub}" aria-label="SellerFee home">{MARK}<span>SellerFee<span class="tld">.app</span></span></a>
 <nav class="menu" id="menu" aria-label="Main">{items}</nav>
@@ -103,25 +108,26 @@ def footer(lang, path):
     soon = ''.join(f'<li><a href="{issue_url("Calculator request: " + p + " " + mk, "Please add a fee calculator for " + p + " (" + mk + ").")}" rel="noopener">{esc(p)} <span class="muted2">· {esc(mk)}</span></a></li>' for p, mk, f in COMING[:6])
     gl = [(f'en/guides/{g["slug"]}/', g['short']) for g in GUIDES if g.get('lang', 'en') == 'en']
     if lang == 'ru': gl = [(f'ru/guides/{g["slug"]}/', g['short']) for g in GUIDES if g.get('lang') == 'ru'] + gl[:2]
+    if lang == 'zh': gl = [(f'zh/guides/{g["slug"]}/', g['short']) for g in GUIDES if g.get('lang') == 'zh'] + gl[:2]
     guides = ''.join(f'<li><a href="{r}{u}">{esc(t)}</a></li>' for u, t in gl[:6])
-    company = [('en/about/', {'en': 'About SellerFee', 'ms': 'Tentang SellerFee', 'ru': 'О проекте'}[lang]), ('en/about/#how-we-source-rates', {'en': 'How we verify rates', 'ms': 'Cara kami sahkan kadar', 'ru': 'Как мы проверяем тарифы'}[lang])]
+    company = [('en/about/', {'en': 'About SellerFee', 'ms': 'Tentang SellerFee', 'ru': 'О проекте', 'zh': '关于 SellerFee'}[lang]), ('en/about/#how-we-source-rates', {'en': 'How we verify rates', 'ms': 'Cara kami sahkan kadar', 'ru': 'Как мы проверяем тарифы', 'zh': '我们如何核实费率'}[lang])]
     comp = ''.join(f'<li><a href="{r}{u}">{esc(t)}</a></li>' for u, t in company)
-    comp += f'<li><a href="{issue_url("Wrong rate: ", "Page: " + BASE + path + chr(10) + "Which fee looks wrong:" + chr(10) + "Link to the official source:")}" rel="noopener">{esc({"en": "Report a wrong rate", "ms": "Laporkan kadar salah", "ru": "Сообщить об ошибке в тарифе"}[lang])}</a></li>'
+    comp += f'<li><a href="{issue_url("Wrong rate: ", "Page: " + BASE + path + chr(10) + "Which fee looks wrong:" + chr(10) + "Link to the official source:")}" rel="noopener">{esc({"en": "Report a wrong rate", "ms": "Laporkan kadar salah", "ru": "Сообщить об ошибке в тарифе", "zh": "反馈错误费率"}[lang])}</a></li>'
     comp += ''.join(f'<li><a href="{r}en/{s}/">{esc(L(k))}</a></li>' for s, k in [('privacy', 'f_privacy'), ('terms', 'f_terms'), ('contact', 'f_contact')])
-    langs = ''.join(f'<a class="{"on" if l == lang else ""}" href="{r}{l}/" hreflang="{l}" lang="{l}">{esc(v["name"])}</a>' for l, v in LANGS.items())
-    soon_h = {'en': 'Coming soon', 'ms': 'Akan datang', 'ru': 'Скоро'}[lang]
+    langs = ''.join(f'<a class="{"on" if l == lang else ""}" href="{r}{l}/" hreflang="{v["html"]}" lang="{v["html"]}">{esc(v["name"])}</a>' for l, v in LANGS.items())
+    soon_h = {'en': 'Coming soon', 'ms': 'Akan datang', 'ru': 'Скоро', 'zh': '即将上线'}[lang]
     return f'''<footer class="footer"><div class="wrap"><div class="grid"><div><a class="logo" href="{r}{lang}/">{MARK}<span>SellerFee<span class="tld">.app</span></span></a>
 <p class="ftag">{esc(L('f_tag'))}</p><div class="langs">{langs}</div></div>
-<div><h2>{esc(L('f_tools'))}</h2><ul>{calcs}</ul></div><div><h2>{soon_h}</h2><ul>{soon}</ul></div><div><h2>{esc(L('f_guides'))}</h2><ul>{guides}<li><a href="{r}{"ru" if lang == "ru" else "en"}/guides/">{esc(L("all_guides"))} →</a></li></ul></div>
+<div><h2>{esc(L('f_tools'))}</h2><ul>{calcs}</ul></div><div><h2>{soon_h}</h2><ul>{soon}</ul></div><div><h2>{esc(L('f_guides'))}</h2><ul>{guides}<li><a href="{r}{"ru" if lang == "ru" else ("zh" if lang == "zh" else "en")}/guides/">{esc(L("all_guides"))} →</a></li></ul></div>
 <div><h2>{esc(L('f_company'))}</h2><ul>{comp}</ul></div></div>
-<div class="legal"><p>{esc(L('disclaimer'))} {esc({"en": "Rates last verified", "ms": "Kadar terakhir disahkan", "ru": "Тарифы проверены"}[lang])} {VFULL[lang]}.</p><p class="nowrap">© 2026 SellerFee · sellerfee.app</p></div></div></footer>
+<div class="legal"><p>{esc(L('disclaimer'))} {esc({"en": "Rates last verified", "ms": "Kadar terakhir disahkan", "ru": "Тарифы проверены", "zh": "费率最近核实于"}[lang])} {VFULL[lang]}.</p><p class="nowrap">© 2026 SellerFee · sellerfee.app</p></div></div></footer>
 '''
 
 def page(path, lang, title, desc, body, schema=None, alt=None, og_type='website', scripts='', topbar_on=True):
     url = BASE + path
     alts = ''
     if alt:
-        alts = ''.join(f'<link rel="alternate" hreflang="{l}" href="{BASE}{p}">' for l, p in alt.items())
+        alts = ''.join(f'<link rel="alternate" hreflang="{LANGS[l]["html"]}" href="{BASE}{p}">' for l, p in alt.items())
         alts += f'<link rel="alternate" hreflang="x-default" href="{BASE}{alt.get("en", list(alt.values())[0])}">'
     ld = ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (schema or []))
     r = rel(path)

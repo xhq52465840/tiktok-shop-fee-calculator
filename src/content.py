@@ -564,3 +564,8 @@ PAGE_FN.update(PAGE_FN_SEA)
 GUIDES.extend(GUIDES_SEA)
 GUIDE_BODY.update(GUIDE_BODY_SEA)
 GUIDE_SOURCES.update(GUIDE_SOURCES_SEA)
+
+# Simplified Chinese
+from content_zh import PAGE_FN_ZH, GUIDES_ZH
+PAGE_FN.update(PAGE_FN_ZH)
+GUIDES.extend(GUIDES_ZH)
