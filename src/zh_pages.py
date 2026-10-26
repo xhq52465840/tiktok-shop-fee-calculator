@@ -24,7 +24,8 @@ def _w(path, html):
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     p = os.path.join(root, path, 'index.html') if path.endswith('/') or path == '' else os.path.join(root, path)
     os.makedirs(os.path.dirname(p), exist_ok=True)
-    open(p, 'w', encoding='utf-8').write(html)
+    from sf_site import rootify
+    open(p, 'w', encoding='utf-8').write(rootify(html, path))
 
 def gcard(path, g, lang):
     from sf_site import rel as rel_

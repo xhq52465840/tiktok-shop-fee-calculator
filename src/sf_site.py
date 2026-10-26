@@ -41,8 +41,26 @@ def ptile(p, s=36):
     return f'<span class="tile" style="width:{s}px;height:{s}px;border-radius:{int(s*.28)}px;background:{bg};color:{fg};{bd}font-size:{fs}px" aria-hidden="true">{t}</span>'
 
 def rel(path):
-    depth = path.strip('/').count('/') + 1 if path.strip('/') else 0
-    return '../' * depth
+    # All internal URLs are root-relative ("/en/ozon/"), so they work from any depth,
+    # including 404.html which GitHub Pages serves at arbitrary paths.
+    return '/'
+
+_URL_ATTR = re.compile(r'''(\b(?:href|src|action)=")([^"]*)(")|(url=)([^"'>;\s]+)''')
+_SKIP = ('/', '#', '?', 'http:', 'https:', 'mailto:', 'tel:', 'data:', 'javascript:', '{')
+
+def rootify(html, path):
+    """Rewrite any remaining page-relative href/src/meta-refresh URL to a root-relative one,
+    resolved against the page's own URL path (e.g. 'en/russia/')."""
+    from urllib.parse import urljoin
+    page_url = '/' + path.lstrip('/')
+    if path and not path.endswith('/') and not path.endswith('.html'): page_url += '/'
+    def fix(u):
+        if not u or u.startswith(_SKIP): return u
+        return urljoin(page_url, u)
+    def sub(m):
+        if m.group(1): return m.group(1) + fix(m.group(2)) + m.group(3)
+        return m.group(4) + fix(m.group(5))
+    return _URL_ATTR.sub(sub, html)
 
 def link(frm, to):
     return rel(frm) + to

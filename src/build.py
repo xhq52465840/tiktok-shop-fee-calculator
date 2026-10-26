@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from markets import MARKETS, COMING, VERIFIED, compute
 from sf_site import (page, crumbs, faq_block, sources_block, widget, AD, esc, BASE, PAGES,
                      VERIFIED_H, VFULL, VDATE, LOGO, ic, ptile, calc_name, calc_links, badge,
-                     issue_url, rel as rel_, MARK)
+                     issue_url, rel as rel_, rootify, MARK)
 from site_helpers import money, pct
 from i18n import tr, LANGS
 import content as C
@@ -13,7 +13,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def w(path, html):
     p = os.path.join(ROOT, path, 'index.html') if path.endswith('/') or path == '' else os.path.join(ROOT, path)
-    os.makedirs(os.path.dirname(p), exist_ok=True); open(p, 'w', encoding='utf-8').write(html)
+    os.makedirs(os.path.dirname(p), exist_ok=True); open(p, 'w', encoding='utf-8').write(rootify(html, path))
 
 def clean():
     for d in ['en', 'ms', 'ru', 'zh', 'malaysia', 'philippines']:
@@ -202,11 +202,11 @@ C_SUM_ZH = {
 def home():
     path = 'en/'
     # Quick-calc: real links to live calculators (not a fake widget)
-    tabs = [('en/tiktok-shop/malaysia/', 'tiktok-shop', 'TikTok MY', True),
-            ('en/ozon/', 'ozon', 'Ozon', True),
-            ('en/wildberries/', 'wildberries', 'Wildberries', True),
-            ('en/yandex-market/', 'yandex-market', 'Yandex Market', True),
-            ('en/etsy/', 'etsy', 'Etsy', True)]
+    tabs = [('/en/tiktok-shop/malaysia/', 'tiktok-shop', 'TikTok MY', True),
+            ('/en/ozon/', 'ozon', 'Ozon', True),
+            ('/en/wildberries/', 'wildberries', 'Wildberries', True),
+            ('/en/yandex-market/', 'yandex-market', 'Yandex Market', True),
+            ('/en/etsy/', 'etsy', 'Etsy', True)]
     qc_tabs = ''.join(f'<a class="{"on" if i==0 else ""}" href="{u}">{ptile(p,18)}{esc(n)}</a>' for i,(u,p,n,_) in enumerate(tabs))
     pv = compute('tiktok-shop-my', sel='Beauty & Personal Care › Skincare', period='new', price=39.90, cost=12)
     RM = lambda v: money(v, 'MYR')
@@ -250,17 +250,17 @@ def home():
 <div class="go soon">{ic("bell",14)} Request this calculator</div></a>'''
     # source register
     srcs = [
-     ('🇲🇾', 'TikTok Shop MY', 'Commission Fee & Seller Fees', 'Updated 16 Oct 2026', 'en/tiktok-shop/malaysia/#sources'),
-     ('🇵🇭', 'TikTok Shop PH', 'Introduction to Seller Fees', 'Updated 13 Oct 2026', 'en/tiktok-shop/philippines/#sources'),
-     ('🇺🇸', 'TikTok Shop US', 'Referral Fees by Category', 'Revised 8 Oct 2026', 'en/tiktok-shop/us/#sources'),
-     ('🇬🇧', 'TikTok Shop UK', 'Commission Rate Policy', 'Dated 18 Sep 2025', 'en/tiktok-shop/uk/#sources'),
-     ('🌐', 'Etsy', 'Fee Basics · Payment Processing', 'Etsy Help Center', 'en/etsy/#sources'),
-     ('🇷🇺', 'Ozon', 'Commissions XLSX 28 Aug · Logistics 30 Oct', 'Seller Edu', 'en/ozon/#sources'),
-     ('🇷🇺', 'Wildberries', 'КВВ PDF 7 Jul · Logistics instructions', 'Updated 19 Oct 2026', 'en/wildberries/#sources'),
-     ('🇷🇺', 'Yandex Market', 'Placement · FBY/FBS · Acquiring', 'As published 26 Oct 2026', 'en/yandex-market/#sources'),
-     ('🇲🇾', 'Shopee MY', 'Local seller fees · Commission 14 Aug 2026', 'Updated 31 Jul / 14 Aug 2026', 'en/shopee/malaysia/#sources'),
-     ('🇸🇬', 'Shopee SG', 'Commission, Service & Transaction Fees', 'Updated 19 Oct 2026', 'en/shopee/singapore/#sources'),
-     ('🇲🇾', 'Lazada MY', 'MP & LazMall commission 14 Aug 2026', 'Cluster ranges (SST-incl.)', 'en/lazada/malaysia/#sources'),
+     ('🇲🇾', 'TikTok Shop MY', 'Commission Fee & Seller Fees', 'Updated 16 Oct 2026', '/en/tiktok-shop/malaysia/#sources'),
+     ('🇵🇭', 'TikTok Shop PH', 'Introduction to Seller Fees', 'Updated 13 Oct 2026', '/en/tiktok-shop/philippines/#sources'),
+     ('🇺🇸', 'TikTok Shop US', 'Referral Fees by Category', 'Revised 8 Oct 2026', '/en/tiktok-shop/united-states/#sources'),
+     ('🇬🇧', 'TikTok Shop UK', 'Commission Rate Policy', 'Dated 18 Sep 2025', '/en/tiktok-shop/united-kingdom/#sources'),
+     ('🌐', 'Etsy', 'Fee Basics · Payment Processing', 'Etsy Help Center', '/en/etsy/#sources'),
+     ('🇷🇺', 'Ozon', 'Commissions XLSX 28 Aug · Logistics 30 Oct', 'Seller Edu', '/en/ozon/#sources'),
+     ('🇷🇺', 'Wildberries', 'КВВ PDF 7 Jul · Logistics instructions', 'Updated 19 Oct 2026', '/en/wildberries/#sources'),
+     ('🇷🇺', 'Yandex Market', 'Placement · FBY/FBS · Acquiring', 'As published 26 Oct 2026', '/en/yandex-market/#sources'),
+     ('🇲🇾', 'Shopee MY', 'Local seller fees · Commission 14 Aug 2026', 'Updated 31 Jul / 14 Aug 2026', '/en/shopee/malaysia/#sources'),
+     ('🇸🇬', 'Shopee SG', 'Commission, Service & Transaction Fees', 'Updated 19 Oct 2026', '/en/shopee/singapore/#sources'),
+     ('🇲🇾', 'Lazada MY', 'MP & LazMall commission 14 Aug 2026', 'Cluster ranges (SST-incl.)', '/en/lazada/malaysia/#sources'),
     ]
     srows = ''.join(f'<tr><td><span class="flag">{f}</span> <b>{esc(m)}</b></td><td><a href="{u}">{esc(d)} {ic("ext",13)}</a><span class="sub">{esc(note)}</span></td><td>{badge("Checked "+VDATE["en"],"verified","shield")}</td></tr>' for f,m,d,note,u in srcs)
     guides = [g for g in C.GUIDES if g.get('lang') == 'en'][:6]
@@ -487,14 +487,14 @@ def plumbing():
     open(os.path.join(ROOT, 'index.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SellerFee</title>
 <link rel="canonical" href="{BASE}en/">
 <link rel="alternate" hreflang="en" href="{BASE}en/"><link rel="alternate" hreflang="ms" href="{BASE}ms/"><link rel="alternate" hreflang="ru" href="{BASE}ru/"><link rel="alternate" hreflang="zh-CN" href="{BASE}zh/"><link rel="alternate" hreflang="x-default" href="{BASE}en/">
-<meta http-equiv="refresh" content="0; url=en/"><meta name="robots" content="noindex,follow">
-<script>(function(){{var l=(navigator.language||'').toLowerCase();location.replace(l.indexOf('zh')===0?'zh/':l.indexOf('ru')===0?'ru/':l.indexOf('ms')===0?'ms/':'en/')}})()</script></head>
-<body><a href="en/">SellerFee</a> · <a href="zh/">中文</a> · <a href="ru/">Русский</a> · <a href="ms/">Bahasa Melayu</a></body></html>''')
+<meta http-equiv="refresh" content="0; url=/en/"><meta name="robots" content="noindex,follow">
+<script>(function(){{var l=(navigator.language||'').toLowerCase();location.replace(l.indexOf('zh')===0?'/zh/':l.indexOf('ru')===0?'/ru/':l.indexOf('ms')===0?'/ms/':'/en/')}})()</script></head>
+<body><a href="/en/">SellerFee</a> · <a href="/zh/">中文</a> · <a href="/ru/">Русский</a> · <a href="/ms/">Bahasa Melayu</a></body></html>''')
     for old, new in [('malaysia/', 'en/tiktok-shop/malaysia/'), ('philippines/', 'en/tiktok-shop/philippines/')]:
         w(old, f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{BASE}{new}"><meta http-equiv="refresh" content="0; url=../{new}"><meta name="robots" content="noindex"></head><body><a href="../{new}">This page has moved.</a></body></html>')
     open(os.path.join(ROOT, '404.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | SellerFee</title><meta name="robots" content="noindex">
-<script>var b=location.hostname.endsWith('github.io')?'/tiktok-shop-fee-calculator/':'/';document.write('<base href="'+b+'">')</script><link rel="stylesheet" href="assets/style.css"></head>
-<body><main class="wrap narrow spage"><h1>Page not found</h1><p>The page you’re looking for doesn’t exist or has moved.</p><p><a class="btn btn-primary" href="en/">Go to the calculators</a></p></main></body></html>''')
+<link rel="stylesheet" href="/assets/style.css"></head>
+<body><main class="wrap narrow spage"><h1>Page not found</h1><p>The page you’re looking for doesn’t exist or has moved.</p><p><a class="btn btn-primary" href="/en/">Go to the calculators</a></p></main></body></html>''')
     open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n')
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
