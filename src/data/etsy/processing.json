@@ -1,0 +1,578 @@
+[
+ {
+  "n": "Argentina",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Australia (domestic orders)",
+  "cur": "AUD",
+  "r": {
+   "pp": 3.0,
+   "pf": 0.25,
+   "listing": null
+  }
+ },
+ {
+  "n": "Australia (international orders)",
+  "cur": "AUD",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.25,
+   "listing": null
+  }
+ },
+ {
+  "n": "Austria",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Belgium",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Brazil",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Bulgaria",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Canada (domestic orders or orders from the US)",
+  "cur": "CAD",
+  "r": {
+   "pp": 3.0,
+   "pf": 0.25,
+   "listing": null
+  }
+ },
+ {
+  "n": "Canada (international orders)",
+  "cur": "CAD",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.25,
+   "listing": null
+  }
+ },
+ {
+  "n": "Chile",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "China",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Croatia",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Cyprus",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Czech Republic",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Denmark",
+  "cur": "DKK",
+  "r": {
+   "pp": 4.0,
+   "pf": 2.5,
+   "listing": null
+  }
+ },
+ {
+  "n": "Egypt",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Estonia",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Finland",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "France",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Georgia",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Germany",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Greece",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Hong Kong",
+  "cur": "HKD",
+  "r": {
+   "pp": 4.4,
+   "pf": 2.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Hungary",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "India",
+  "cur": "INR",
+  "r": {
+   "pp": 5.0,
+   "pf": 25.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Indonesia",
+  "cur": "IDR",
+  "r": {
+   "pp": 4.5,
+   "pf": 7000.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Ireland",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Israel",
+  "cur": "ILS",
+  "r": {
+   "pp": 4.5,
+   "pf": 2.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Italy",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Japan",
+  "cur": "USD",
+  "r": {
+   "pp": 6.0,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Kazakhstan",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Latvia",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Lithuania",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Luxembourg",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Malaysia",
+  "cur": "MYR",
+  "r": {
+   "pp": 4.5,
+   "pf": 2.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Malta",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Mexico",
+  "cur": "MXN",
+  "r": {
+   "pp": 4.5,
+   "pf": 8.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Morocco",
+  "cur": "MAD",
+  "r": {
+   "pp": 4.5,
+   "pf": 5.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Netherlands",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "New Zealand (domestic orders)",
+  "cur": "NZD",
+  "r": {
+   "pp": 3.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "New Zealand (international orders)",
+  "cur": "NZD",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Norway",
+  "cur": "NOK",
+  "r": {
+   "pp": 4.0,
+   "pf": 2.5,
+   "listing": null
+  }
+ },
+ {
+  "n": "Pakistan",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Peru",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Philippines",
+  "cur": "PHP",
+  "r": {
+   "pp": 4.5,
+   "pf": 25.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Poland",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Portugal",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Romania",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Serbia",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Singapore",
+  "cur": "SGD",
+  "r": {
+   "pp": 4.4,
+   "pf": 0.35,
+   "listing": null
+  }
+ },
+ {
+  "n": "Slovakia",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Slovenia",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "South Africa",
+  "cur": "ZAR",
+  "r": {
+   "pp": 4.5,
+   "pf": 8.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "South Korea",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Spain",
+  "cur": "EUR",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.3,
+   "listing": null
+  }
+ },
+ {
+  "n": "Sweden",
+  "cur": "SEK",
+  "r": {
+   "pp": 4.0,
+   "pf": 3.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Switzerland",
+  "cur": "CHF",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.5,
+   "listing": null
+  }
+ },
+ {
+  "n": "Thailand",
+  "cur": "USD",
+  "r": {
+   "pp": 6.0,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Türkiye",
+  "cur": "TRY",
+  "r": {
+   "pp": 6.5,
+   "pf": 14.0,
+   "listing": null
+  }
+ },
+ {
+  "n": "Ukraine",
+  "cur": "USD",
+  "r": {
+   "pp": 6.0,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "United Arab Emirates",
+  "cur": "USD",
+  "r": {
+   "pp": 6.5,
+   "pf": 0.3,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "United Kingdom",
+  "cur": "GBP",
+  "r": {
+   "pp": 4.0,
+   "pf": 0.2,
+   "listing": null
+  }
+ },
+ {
+  "n": "United States",
+  "cur": "USD",
+  "r": {
+   "pp": 3.0,
+   "pf": 0.25,
+   "listing": 0.2
+  }
+ },
+ {
+  "n": "Vietnam",
+  "cur": "VND",
+  "r": {
+   "pp": 4.5,
+   "pf": 11500.0,
+   "listing": null
+  }
+ }
+]

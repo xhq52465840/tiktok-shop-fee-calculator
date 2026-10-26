@@ -1,0 +1,1432 @@
+[
+ {
+  "n": "Automotive & Motorcycle › Car Electronics",
+  "g": "Automotive & Motorcycle",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Automotive & Motorcycle › Car Exterior Accessories",
+  "g": "Automotive & Motorcycle",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Automotive & Motorcycle › Car Interior Accessories",
+  "g": "Automotive & Motorcycle",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Automotive & Motorcycle › Car Lights",
+  "g": "Automotive & Motorcycle",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Automotive & Motorcycle › Car Repair Tools",
+  "g": "Automotive & Motorcycle",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Automotive & Motorcycle › Car Washing & Maintenance",
+  "g": "Automotive & Motorcycle",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Automotive & Motorcycle › Motorcycle Accessories",
+  "g": "Automotive & Motorcycle",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Automotive & Motorcycle › Motorcycles",
+  "g": "Automotive & Motorcycle",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Automotive & Motorcycle › Quads, Motorhomes & Boats",
+  "g": "Automotive & Motorcycle",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Baby & Maternity › Baby Care & Health",
+  "g": "Baby & Maternity",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Baby & Maternity › Baby Clothing & Shoes",
+  "g": "Baby & Maternity",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Baby & Maternity › Baby Fashion Accessories",
+  "g": "Baby & Maternity",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Baby & Maternity › Baby Furniture",
+  "g": "Baby & Maternity",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Baby & Maternity › Baby Safety",
+  "g": "Baby & Maternity",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Baby & Maternity › Baby Toys",
+  "g": "Baby & Maternity",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Baby & Maternity › Baby Travel Gear",
+  "g": "Baby & Maternity",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Baby & Maternity › Maternity Supplies",
+  "g": "Baby & Maternity",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Baby & Maternity › Nursing & Feeding",
+  "g": "Baby & Maternity",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Bath & Body Care",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Eye & Ear Care",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Feminine Care",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Haircare & Styling",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Hand, Foot & Nail Care",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Makeup",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Men's Care",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Nasal & Oral Care",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Fragrance",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Personal Care Appliances",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Skincare",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Beauty & Personal Care › Special Personal Care",
+  "g": "Beauty & Personal Care",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Books, Magazines & Audio › Children's & Infants' Books",
+  "g": "Books, Magazines & Audio",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Books, Magazines & Audio › Economics & Management",
+  "g": "Books, Magazines & Audio",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Books, Magazines & Audio › Education & Schooling",
+  "g": "Books, Magazines & Audio",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Books, Magazines & Audio › Humanities & Social Sciences",
+  "g": "Books, Magazines & Audio",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Books, Magazines & Audio › Lifestyle & Hobbies",
+  "g": "Books, Magazines & Audio",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Books, Magazines & Audio › Literature & Art",
+  "g": "Books, Magazines & Audio",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Books, Magazines & Audio › Magazines & Newspapers",
+  "g": "Books, Magazines & Audio",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Books, Magazines & Audio › Science & Technology",
+  "g": "Books, Magazines & Audio",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Books, Magazines & Audio › Video & Music",
+  "g": "Books, Magazines & Audio",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Collectibles › Cultural Items",
+  "g": "Collectibles",
+  "r": {
+   "rate": 6.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Collectibles › Entertainment",
+  "g": "Collectibles",
+  "r": {
+   "rate": 6.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Collectibles › Sports Collectibles",
+  "g": "Collectibles",
+  "r": {
+   "rate": 6.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Collectibles › Trading Cards & Accessories",
+  "g": "Collectibles",
+  "r": {
+   "rate": 6.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Computers & Office Equipment › Computer Accessories",
+  "g": "Computers & Office Equipment",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Computers & Office Equipment › Data Storage & Software",
+  "g": "Computers & Office Equipment",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Computers & Office Equipment › Desktop & Laptop Components",
+  "g": "Computers & Office Equipment",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Computers & Office Equipment › Desktop Computers, Laptops & Tablets",
+  "g": "Computers & Office Equipment",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Computers & Office Equipment › Network Components",
+  "g": "Computers & Office Equipment",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Computers & Office Equipment › Office Equipment",
+  "g": "Computers & Office Equipment",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Computers & Office Equipment › Office Stationery & Supplies",
+  "g": "Computers & Office Equipment",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Fashion Accessories › Clothes Accessories",
+  "g": "Fashion Accessories",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Fashion Accessories › Costume Jewelry & Accessories",
+  "g": "Fashion Accessories",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Fashion Accessories › Dressmaking Fabrics",
+  "g": "Fashion Accessories",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Fashion Accessories › Eyewear",
+  "g": "Fashion Accessories",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Fashion Accessories › Hair Accessories",
+  "g": "Fashion Accessories",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Fashion Accessories › Hair Extensions & Wigs",
+  "g": "Fashion Accessories",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Fashion Accessories › Fashion Watches & Accessories",
+  "g": "Fashion Accessories",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Food & Beverages › Baking",
+  "g": "Food & Beverages",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Food & Beverages › Drinks",
+  "g": "Food & Beverages",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Food & Beverages › Pantry Food",
+  "g": "Food & Beverages",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Food & Beverages › Milk & Dairy",
+  "g": "Food & Beverages",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Food & Beverages › Snacks",
+  "g": "Food & Beverages",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Food & Beverages › Staples & Cooking Essentials",
+  "g": "Food & Beverages",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Furniture › Children's Furniture",
+  "g": "Furniture",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Furniture › Commercial Furniture",
+  "g": "Furniture",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Furniture › Furniture Parts",
+  "g": "Furniture",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Furniture › Indoor Furniture",
+  "g": "Furniture",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Furniture › Outdoor Furniture",
+  "g": "Furniture",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Health › Alternative Medications & Treatments",
+  "g": "Health",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Health › Nutrition & Wellness",
+  "g": "Health",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Health › Medical Supplies",
+  "g": "Health",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Improvement › Bathroom Fixtures",
+  "g": "Home Improvement",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Improvement › Building Supplies",
+  "g": "Home Improvement",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Improvement › Electrical Equipment & Supplies",
+  "g": "Home Improvement",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Improvement › Garden Supplies",
+  "g": "Home Improvement",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Improvement › Kitchen Fixtures",
+  "g": "Home Improvement",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Improvement › Lights & Lighting",
+  "g": "Home Improvement",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Improvement › Security & Safety",
+  "g": "Home Improvement",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Improvement › Smart Home Systems",
+  "g": "Home Improvement",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Improvement › Solar & Wind Power",
+  "g": "Home Improvement",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Supplies › Bathroom Supplies",
+  "g": "Home Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Supplies › Festive & Party Supplies",
+  "g": "Home Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Supplies › Home Care Supplies",
+  "g": "Home Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Supplies › Home Decor",
+  "g": "Home Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Supplies › Home Organizers",
+  "g": "Home Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Supplies › Laundry Tools & Accessories",
+  "g": "Home Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Home Supplies › Miscellaneous Home",
+  "g": "Home Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Household Appliances › Commercial Appliances",
+  "g": "Household Appliances",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Household Appliances › Home Appliances",
+  "g": "Household Appliances",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Household Appliances › Kitchen Appliances",
+  "g": "Household Appliances",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Household Appliances › Large Home Appliances",
+  "g": "Household Appliances",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Diamond",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 5.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Gold",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 5.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Jade",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 5.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Platinum, Carat Gold",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 5.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Ruby, Sapphire & Emerald",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 5.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Amber",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Artificial Gemstones",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Mellite",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Natural Crystal",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Non-natural Crystal",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Pearl",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Semiprecious Stones",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Jewelry Accessories & Derivatives › Silver",
+  "g": "Jewelry Accessories & Derivatives",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kids' Fashion › Boys' Clothes",
+  "g": "Kids' Fashion",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kids' Fashion › Boys' Footwear",
+  "g": "Kids' Fashion",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kids' Fashion › Girls' Clothes",
+  "g": "Kids' Fashion",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kids' Fashion › Girls' Footwear",
+  "g": "Kids' Fashion",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kids' Fashion › Kids' Fashion Accessories",
+  "g": "Kids' Fashion",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kitchenware › Bakeware",
+  "g": "Kitchenware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kitchenware › Bar & Wine Utensils",
+  "g": "Kitchenware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kitchenware › Barbecue",
+  "g": "Kitchenware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kitchenware › Cookware",
+  "g": "Kitchenware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kitchenware › Cutlery & Tableware",
+  "g": "Kitchenware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kitchenware › Drinkware",
+  "g": "Kitchenware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kitchenware › Kitchen Knives",
+  "g": "Kitchenware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kitchenware › Kitchen Utensils & Gadgets",
+  "g": "Kitchenware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Kitchenware › Tea & Coffeeware",
+  "g": "Kitchenware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Luggage & Bags › Bag Accessories",
+  "g": "Luggage & Bags",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Luggage & Bags › Functional Bags",
+  "g": "Luggage & Bags",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Luggage & Bags › Luggage & Travel Bags",
+  "g": "Luggage & Bags",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Luggage & Bags › Men's Bags",
+  "g": "Luggage & Bags",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Luggage & Bags › Women's Bags",
+  "g": "Luggage & Bags",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Menswear & Underwear › Men's Bottoms",
+  "g": "Menswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Menswear & Underwear › Men's Sleepwear & Loungewear",
+  "g": "Menswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Menswear & Underwear › Men's Special Occasion Clothing",
+  "g": "Menswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Menswear & Underwear › Men's Suits & Sets",
+  "g": "Menswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Menswear & Underwear › Men's Tops",
+  "g": "Menswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Menswear & Underwear › Men's Underwear & Socks",
+  "g": "Menswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Bird Supplies",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Dog & Cat Accessories",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Dog & Cat Clothing",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Dog & Cat Food",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Dog & Cat Furniture",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Dog & Cat Grooming",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Dog & Cat Healthcare",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Dog & Cat Litter",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Farm Animal & Poultry Supplies",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Fish & Aquatic Supplies",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Reptile & Amphibian Supplies",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pet Supplies › Small Animal Supplies",
+  "g": "Pet Supplies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Phones & Electronics › Audio & Video",
+  "g": "Phones & Electronics",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Phones & Electronics › Cameras & Photography",
+  "g": "Phones & Electronics",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Phones & Electronics › Education Devices",
+  "g": "Phones & Electronics",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Phones & Electronics › Gaming & Consoles",
+  "g": "Phones & Electronics",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Phones & Electronics › Mobile Phone Accessories",
+  "g": "Phones & Electronics",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Phones & Electronics › Phones & Tablets",
+  "g": "Phones & Electronics",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Phones & Electronics › Smart & Wearable Devices",
+  "g": "Phones & Electronics",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Phones & Electronics › Tablet & Computer Accessories",
+  "g": "Phones & Electronics",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Phones & Electronics › Universal Accessories",
+  "g": "Phones & Electronics",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Bags",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Collectible Trading Cards",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Luggage & Travel",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Watches",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Footwear",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Refurbished Phones & Electronics",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Fashion Accessories",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Menswear",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Womenswear",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Collectible Coins and Paper Money",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Collectible Figures",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Pre-Owned › Collectible Comic Books",
+  "g": "Pre-Owned",
+  "r": {
+   "rate": 5.0,
+   "over": 3.0
+  }
+ },
+ {
+  "n": "Shoes › Men's Shoes",
+  "g": "Shoes",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Shoes › Shoe Accessories",
+  "g": "Shoes",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Shoes › Women's Shoes",
+  "g": "Shoes",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Ball Sports",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Camping & Hiking",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Fan Shop",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Fitness",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Leisure & Outdoor Recreation Equipment",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Sport & Outdoor Clothing",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Sports & Outdoor Accessories",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Sports Footwear",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Swimwear, Surfwear & Wetsuits",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Water Sports",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Sports & Outdoor › Winter Sports",
+  "g": "Sports & Outdoor",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Textiles & Soft Furnishings › Bedding and Linens",
+  "g": "Textiles & Soft Furnishings",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Textiles & Soft Furnishings › Fabrics & Sewing Supplies",
+  "g": "Textiles & Soft Furnishings",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Textiles & Soft Furnishings › Household Textiles",
+  "g": "Textiles & Soft Furnishings",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Tools & Hardware › Garden Tools",
+  "g": "Tools & Hardware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Tools & Hardware › Hand Tools",
+  "g": "Tools & Hardware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Tools & Hardware › Hardware",
+  "g": "Tools & Hardware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Tools & Hardware › Measuring Tools",
+  "g": "Tools & Hardware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Tools & Hardware › Power Tools",
+  "g": "Tools & Hardware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Tools & Hardware › Pumps & Plumbing",
+  "g": "Tools & Hardware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Tools & Hardware › Soldering Equipment",
+  "g": "Tools & Hardware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Tools & Hardware › Tool Organizers",
+  "g": "Tools & Hardware",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Toys & Hobbies › Classic & Novelty Toys",
+  "g": "Toys & Hobbies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Toys & Hobbies › DIY",
+  "g": "Toys & Hobbies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Toys & Hobbies › Dolls & Stuffed Toys",
+  "g": "Toys & Hobbies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Toys & Hobbies › Educational Toys",
+  "g": "Toys & Hobbies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Toys & Hobbies › Electric & Remote Control Toys",
+  "g": "Toys & Hobbies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Toys & Hobbies › Games & Puzzles",
+  "g": "Toys & Hobbies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Toys & Hobbies › Musical Instruments & Accessories",
+  "g": "Toys & Hobbies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Toys & Hobbies › Sports & Outdoor Play",
+  "g": "Toys & Hobbies",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Womenswear & Underwear › Women's Bottoms",
+  "g": "Womenswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Womenswear & Underwear › Women's Dresses",
+  "g": "Womenswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Womenswear & Underwear › Women's Sleepwear & Loungewear",
+  "g": "Womenswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Womenswear & Underwear › Women's Special Clothing",
+  "g": "Womenswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Womenswear & Underwear › Women's Suits & Sets",
+  "g": "Womenswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Womenswear & Underwear › Women's Tops",
+  "g": "Womenswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ },
+ {
+  "n": "Womenswear & Underwear › Women's Underwear",
+  "g": "Womenswear & Underwear",
+  "r": {
+   "rate": 6.0
+  }
+ }
+]

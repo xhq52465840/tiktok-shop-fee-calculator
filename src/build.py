@@ -1,236 +1,249 @@
-# Builds the static pages. Run: python3 src/build.py
-import json, os, html
+"""Build the static site: python3 src/build.py  (SITE_BASE env var overrides the canonical origin)."""
+import os, re, json, shutil, sys
+sys.path.insert(0, os.path.dirname(__file__))
+from markets import MARKETS, COMING, VERIFIED, compute
+from sf_site import page, crumbs, faq_block, sources_block, widget, AD, esc, BASE, PAGES, VERIFIED_H, money, pct, LOGO
+from i18n import tr
+import content as C
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = os.environ.get('SITE_BASE', 'https://xhq52465840.github.io/tiktok-shop-fee-calculator/')
-VERIFIED = '2026-10-26'
-VERIFIED_H = '26 October 2026'
-AD = '<div class="ad-slot" data-ad-slot="{}"><!-- Ad placeholder: no ad code yet --></div>'
 
-def head(title, desc, path, faq=None, extra=''):
-    url = BASE + path
-    ld = [{"@context":"https://schema.org","@type":"WebApplication","name":title,"url":url,"applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"},"dateModified":VERIFIED}]
-    if faq:
-        ld.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faq]})
-    rel = '../' if path else ''
-    return f'''<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{html.escape(title)}</title>
-<meta name="description" content="{html.escape(desc)}">
-<link rel="canonical" href="{url}">
-<meta property="og:type" content="website">
-<meta property="og:title" content="{html.escape(title)}">
-<meta property="og:description" content="{html.escape(desc)}">
-<meta property="og:url" content="{url}">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%A7%AE%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="{rel}assets/style.css">
-{extra}<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
-</head>
-'''
+def w(path, html):
+    p = os.path.join(ROOT, path, 'index.html') if path.endswith('/') or path == '' else os.path.join(ROOT, path)
+    os.makedirs(os.path.dirname(p), exist_ok=True); open(p, 'w', encoding='utf-8').write(html)
 
-def header(rel):
-    return f'''<header class="site"><div class="in"><a href="{rel or './'}">TikTok Shop Fee Calculator</a>
-<nav><a href="{rel}malaysia/">Malaysia</a><a href="{rel}philippines/">Philippines</a></nav></div></header>
-'''
+def clean():
+    for d in ['en', 'ms', 'malaysia', 'philippines']:
+        shutil.rmtree(os.path.join(ROOT, d), ignore_errors=True)
 
-def footer(rel):
-    return f'''<footer><div class="in">
-<p>Independent tool, not affiliated with TikTok or ByteDance. Rates come from official TikTok Shop Seller University pages (last checked {VERIFIED_H}). Fees can change and your shop may have waivers or program fees not shown here, so always confirm in Seller Center before pricing.</p>
-<p><a href="{rel}">Home</a> · <a href="{rel}malaysia/">Malaysia calculator</a> · <a href="{rel}philippines/">Philippines calculator</a></p>
-</div></footer>
-'''
+def toc_html(toc, lang='en'):
+    return f'<aside class="aside"><div class="sticky"><p class="eyebrow">{esc(tr(lang, "on_this_page"))}</p><nav class="toc">' + ''.join(f'<a href="#{i}">{esc(t)}</a>' for i, t in toc) + '</nav></div></aside>'
 
-def faq_html(faq):
-    return '<h2 id="faq">FAQ</h2>\n' + '\n'.join(f'<h3>{html.escape(q)}</h3>\n<p>{html.escape(a)}</p>' for q,a in faq)
+def related(path, items):
+    return '<div class="cards" style="margin-top:12px">' + ''.join(f'<a class="card" href="{rel_(path)}{u}"><h3>{esc(t)}</h3><p>{esc(d)}</p></a>' for u, t, d in items) + '</div>'
 
-def sources_html(src):
-    return '<h2 id="sources">Sources</h2>\n<ul>' + ''.join(f'<li><a href="{u}" rel="nofollow noopener" target="_blank">{html.escape(t)}</a>{(" — " + html.escape(n)) if n else ""}</li>' for t,u,n in src) + f'</ul>\n<p class="note">Last verified: <time datetime="{VERIFIED}">{VERIFIED_H}</time>.</p>'
+from sf_site import rel as rel_
 
-COMMON_INPUTS = '''
-<div class="full"><label for="cat">Product category</label><select id="cat"></select><p class="note" id="catNote"></p></div>
-<div class="full"><label>Store type</label><div class="seg"><label><input type="radio" name="store" value="mp" checked>Marketplace</label><label><input type="radio" name="store" value="mall">Mall</label></div></div>
-<div><label for="price">Selling price per item <small>({cur})</small></label><input id="price" type="number" inputmode="decimal" min="0" step="0.01" value="{price}"></div>
-<div><label for="qty">Quantity in order</label><input id="qty" type="number" inputmode="numeric" min="1" step="1" value="1"></div>
-<div><label for="sellerDisc">Seller-funded discount / voucher <small>(order total)</small></label><input id="sellerDisc" type="number" inputmode="decimal" min="0" step="0.01" value="0"></div>
-<div><label for="cost">Product cost per item</label><input id="cost" type="number" inputmode="decimal" min="0" step="0.01" value="{cost}"></div>
-<div><label for="buyerShip">Shipping paid by buyer</label><input id="buyerShip" type="number" inputmode="decimal" min="0" step="0.01" value="0"></div>
-<div><label for="shipCost">Shipping cost you pay</label><input id="shipCost" type="number" inputmode="decimal" min="0" step="0.01" value="0"></div>
-<div><label for="affPct">Affiliate creator commission <small>(%)</small></label><input id="affPct" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
-<div><label for="other">Other costs <small>(packaging, ads…)</small></label><input id="other" type="number" inputmode="decimal" min="0" step="0.01" value="0"></div>
-'''
+GUIDE_CARDS = [(f'en/guides/{g["slug"]}/', g['title'], g['desc']) for g in C.GUIDES]
 
-RESULTS = '''<div class="card" aria-live="polite">
-<h2 style="margin-top:0">Result</h2>
-<div class="big"><div><span>TikTok fees</span><b id="kFees">–</b><span id="kFeesPct"></span></div><div><span>Payout</span><b id="kPayout">–</b></div><div><span>Profit</span><b id="kProfit">–</b><span id="kMargin"></span></div></div>
-<div class="tablewrap" id="breakdown"></div>
-<p class="note">Platform-funded vouchers don't reduce your fees or payout, so they aren't an input. Margin = profit ÷ item subtotal after your discount.</p>
+# ---------------------------------------------------------------- calculators
+def calc_page(mid, lang):
+    m = MARKETS[mid]; d = C.PAGE_FN[(mid, lang)]()
+    path = f'{lang}/{m["slug"]}/'
+    alt = {l: f'{l}/{m["slug"]}/' for l in m['langs']} if len(m['langs']) > 1 else None
+    plat = 'Etsy' if m['platform'] == 'etsy' else 'TikTok Shop'
+    items = [('SellerFee', f'{lang}/')]
+    if m['platform'] == 'tiktok-shop' and lang == 'en': items.append(('TikTok Shop', 'en/tiktok-shop/'))
+    items.append((d['h1'], None))
+    ch, cld = crumbs(path, items)
+    fh, fld = faq_block(d['faq'], lang)
+    vh = VERIFIED_H if lang == 'en' else '26 Oktober 2026'
+    badges = f'<div class="badges"><span class="badge ok">✓ {esc(tr(lang, "verified"))} {vh}</span><span class="badge">{len(m["sources"])} {"official sources" if lang == "en" else "sumber rasmi"}</span><span class="badge">{"Free · no sign-up" if lang == "en" else "Percuma · tanpa daftar"}</span></div>'
+    rel_guides = [g for g in GUIDE_CARDS if (m['platform'] == 'tiktok-shop')][:3] if lang == 'en' else []
+    others = [(f'en/{x["slug"]}/', f'{x["platformName"]} {x["marketName"]}' if x['market'] != 'GLOBAL' else x['platformName'] + ' fee calculator', f'{x["platformName"]} fees and profit, {x["marketName"]}.') for k, x in MARKETS.items() if k != mid]
+    body = f'''<div class="wrap">{ch}
+<header class="pagehead"><h1>{esc(d["h1"])}</h1><p class="lede">{esc(d["lede"])}</p>{badges}</header>
+{widget(mid, lang)}
+{AD(mid + '-1')}
+<div class="layout"><article class="prose">{d["body"]}{fh}{sources_block(m["sources"], lang)}</article>{toc_html(d["toc"], lang)}</div>
+{('<h2>' + esc(tr(lang, "related")) + '</h2>' + related(path, rel_guides)) if rel_guides else ''}
+<h2>{"More calculators" if lang == "en" else "Kalkulator lain"}</h2>{related(path, others)}
 </div>'''
+    app = {"@context": "https://schema.org", "@type": "WebApplication", "name": d['h1'], "url": BASE + path, "applicationCategory": "FinanceApplication",
+           "operatingSystem": "Any", "inLanguage": lang, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "dateModified": VERIFIED,
+           "publisher": {"@type": "Organization", "name": "SellerFee", "url": BASE}}
+    w(path, page(path, lang, d['title'], d['desc'], body, [app, fld, cld], alt=alt,
+                 scripts=f'<script src="{rel_(path)}assets/engine.js" defer></script>'))
 
-# ---------------- Malaysia ----------------
-MY_FAQ = [
- ("What are TikTok Shop Malaysia's seller fees in 2026?", "On a normal delivered order you pay a commission fee by product category (different for Marketplace and Mall, and lower if you join the Bonus Extra Program), a 3.78% transaction fee (4.86% on TikTok PayLater orders from 16 October 2026), and a flat RM0.54 Platform Support Fee per order. BXP sellers also pay a 4.86% BXP service fee, or 7.02% on campaign days. All rates include 8% SST."),
- ("What changes on 31 October 2026?", "TikTok Shop Malaysia revises Marketplace and Mall commission rates for orders placed from 00:00 on 31 October 2026, Malaysia time. Orders placed before that date follow the old rates. Most categories go up (for example non-BXP Marketplace skincare moves from 15.12% to 16.74%), while some essentials such as feminine care, medical supplies, OTC medicine and nursing & feeding go down, and fresh food, baking, dairy and staples stay at 0%."),
- ("How is the TikTok Shop commission fee calculated in Malaysia?", "Commission = (item price − seller discount) × the category rate. Shipping and TikTok platform discounts are not part of the base. The published rates already include SST."),
- ("How is the transaction fee calculated?", "Since 15 February 2026 the transaction fee is (original item price − seller discount + shipping paid by the buyer) × 3.78%. From 16 October 2026 orders paid with TikTok PayLater are charged 4.86% instead. Platform discounts are not deducted from the base."),
- ("What is the RM0.54 Platform Support Fee?", "A flat fee of RM0.50 plus 8% SST (RM0.54) per successfully delivered order, regardless of order value or quantity, introduced on 15 February 2026. It is not refunded if a delivered order is later returned. Some categories and eligible new or small sellers can get it rebated or waived."),
- ("Is joining BXP worth it after the new rates?", "From 31 October 2026, BXP lowers your commission by roughly 2.2 to 6 percentage points depending on category (2.70 points for many categories, such as skincare), but adds a 4.86% BXP service fee (7.02% on campaign days, capped at RM54 per item) on every completed order. Tick and untick 'Bonus Extra Program' in the calculator to compare your own numbers."),
- ("Are TikTok Shop Malaysia fees inclusive of SST?", "Yes. TikTok publishes the commission, transaction, BXP and Platform Support Fee rates inclusive of 8% SST, and this calculator uses those SST-inclusive figures."),
-]
-MY_SRC = [
- ("Commission Fee & Seller Fees Calculations (TikTok Shop MY Seller University, updated 16 Oct 2026)", "https://seller-my.tiktok.com/university/essay?knowledge_id=6907739532281602&lang=en", "full before/after 31 Oct 2026 commission table, formula"),
- ("Transaction Fee (TikTok Shop MY Seller University)", "https://seller-my.tiktok.com/university/essay?knowledge_id=10013511&lang=en", "3.78%, PayLater 4.86% from 16 Oct 2026, fee base"),
- ("Platform Support Fee (TikTok Shop MY Seller University)", "https://seller-my.tiktok.com/university/essay?knowledge_id=7992113007347457&lang=en", "RM0.50 + SST = RM0.54 per delivered order"),
- ("Bonus Extra Program (BXP) (TikTok Shop MY Seller University, 22 Sep 2026)", "https://seller-my.tiktok.com/university/essay?knowledge_id=8969995510564625&lang=en", "4.86% / 7.02% campaign-day fee, RM54 per-item cap"),
-]
+# ---------------------------------------------------------------- guides
+def guide_page(g):
+    path = f'en/guides/{g["slug"]}/'
+    body_html = C.GUIDE_BODY[g['slug']]()
+    toc = re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body_html)
+    toc = [(i, re.sub('<[^>]+>', '', t).replace('&amp;', '&')) for i, t in toc] + [('sources', 'Sources')]
+    words = len(re.sub('<[^>]+>', ' ', body_html).split())
+    ch, cld = crumbs(path, [('SellerFee', 'en/'), ('Guides', 'en/guides/'), (g['short'], None)])
+    calcs = [(f'en/{MARKETS[k]["slug"]}/', f'TikTok Shop {MARKETS[k]["marketName"]} calculator', 'Check your own numbers with the official rates.') for k in ['tiktok-shop-my', 'tiktok-shop-ph', 'tiktok-shop-us']]
+    more = [x for x in GUIDE_CARDS if g['slug'] not in x[0]]
+    body = f'''<div class="wrap">{ch}
+<div class="layout"><article class="prose"><header class="pagehead"><p class="eyebrow">Guide</p><h1>{esc(g["title"])}</h1>
+<p class="muted">Updated <time datetime="{VERIFIED}">{VERIFIED_H}</time> · {max(2, round(words / 220))} min read · Figures from official TikTok Shop Seller University pages</p></header>
+{body_html}{sources_block(C.GUIDE_SOURCES[g["slug"]])}</article>{toc_html(toc)}</div>
+{AD('guide')}
+<h2>Calculators</h2>{related(path, calcs)}<h2>More guides</h2>{related(path, more)}</div>'''
+    art = {"@context": "https://schema.org", "@type": "Article", "headline": g['title'], "description": g['desc'], "datePublished": VERIFIED, "dateModified": VERIFIED,
+           "inLanguage": "en", "mainEntityOfPage": BASE + path, "image": BASE + "assets/og.png",
+           "author": {"@type": "Organization", "name": "SellerFee", "url": BASE}, "publisher": {"@type": "Organization", "name": "SellerFee", "logo": {"@type": "ImageObject", "url": BASE + "assets/favicon.svg"}}}
+    w(path, page(path, 'en', g['title'] + ' | SellerFee', g['desc'], body, [art, cld], og_type='article'))
 
-def my_page():
-    title = "TikTok Shop Fee Calculator Malaysia 2026 (New 31 Oct Rates)"
-    desc = "Free TikTok Shop Malaysia fee and profit calculator with the new commission rates from 31 October 2026, 3.78%/4.86% transaction fee, RM0.54 support fee and BXP. Old vs new comparison."
-    inputs = COMMON_INPUTS.format(cur='RM', price='50', cost='20') + '''
-<div class="full"><label for="period">Rate period</label><select id="period"><option value="new" selected>Orders from 31 Oct 2026 (new rates)</option><option value="old">Orders before 31 Oct 2026</option></select></div>
-<div class="full"><label class="chk"><input type="checkbox" id="bxp"> Bonus Extra Program (BXP) seller</label>
-<label class="chk"><input type="checkbox" id="campaign"> BXP campaign day (Double Day / Payday, 7.02%)</label>
-<label class="chk"><input type="checkbox" id="paylater"> Buyer paid with TikTok PayLater (4.86% transaction fee)</label>
-<label class="chk"><input type="checkbox" id="psfWaived"> Platform Support Fee waived or rebated for this order</label></div>
-<div class="full"><details><summary>Edit the fee rates</summary><p class="note">These fill in from the official tables. Change them if your Seller Center shows something different.</p><div class="grid">
-<div><label for="commRate">Commission rate (%)</label><input id="commRate" type="number" step="0.01" min="0"></div>
-<div><label for="txRate">Transaction fee (%)</label><input id="txRate" type="number" step="0.01" min="0"></div>
-<div><label for="bxpRate">BXP service fee (%)</label><input id="bxpRate" type="number" step="0.01" min="0"></div>
-<div><label for="psf">Platform Support Fee (RM per order)</label><input id="psf" type="number" step="0.01" min="0"></div>
-</div></details></div>'''
-    body = f'''<body data-market="MY">
-{header('../')}<main>
-<h1>TikTok Shop Fee Calculator Malaysia (31 Oct 2026 rates)</h1>
-<p class="lead">Work out what TikTok Shop Malaysia takes from each order and what you keep, using the commission table that applies to orders from 31 October 2026, plus the transaction fee, Platform Support Fee and BXP fee.</p>
-<p><span class="badge">Rates last verified {VERIFIED_H} from TikTok Seller University</span></p>
-{AD.format('my-top')}
-<div class="calc" id="calc">
-<div class="card"><div class="grid">{inputs}</div></div>
-{RESULTS}
-</div>
-<div class="card"><h2 style="margin-top:0">Old vs new: before and after 31 October 2026</h2><div class="tablewrap" id="compare"></div></div>
-{AD.format('my-mid')}
-<h2>TikTok Shop Malaysia fees at a glance</h2>
-<div class="tablewrap"><table>
-<thead><tr><th>Fee</th><th>Rate (SST inclusive)</th><th>Charged on</th><th>Since</th></tr></thead>
-<tbody>
-<tr><td>Commission</td><td>0% – 20.52% by category, Marketplace/Mall, BXP</td><td>Item price − seller discount</td><td>New table from 31 Oct 2026</td></tr>
-<tr><td>Transaction fee</td><td>3.78%; 4.86% for TikTok PayLater</td><td>Item price − seller discount + buyer-paid shipping</td><td>PayLater rate from 16 Oct 2026</td></tr>
-<tr><td>Platform Support Fee</td><td>RM0.54 per delivered order</td><td>Flat</td><td>15 Feb 2026</td></tr>
-<tr><td>BXP service fee (BXP sellers only)</td><td>4.86%; 7.02% on campaign days; cap RM54/item</td><td>Item price − seller discount</td><td>Campaign-day rate from 7 Oct 2026</td></tr>
-</tbody></table></div>
-<p class="note">BXP campaign days in the rest of 2026 per TikTok: Double Day 8–11 Nov and 9–12 Dec; Payday 24–25 Nov and 20–21 Dec. TikTok's own worked example shows the Platform Support Fee as RM0.50 (before SST); the fee page says RM0.54 including SST, which is what we use.</p>
-<h2 id="rates">Full commission rate table (Malaysia)</h2>
-<p>Every sub-category from TikTok's official table. MP = Marketplace. Columns 5–8 are the rates for orders from 31 October 2026.</p>
-<p><input id="rateFilter" type="search" placeholder="Filter categories, e.g. skincare" style="width:100%;padding:9px;border:1px solid #c9ced6;border-radius:8px;font-size:16px"></p>
-<div class="tablewrap"><table class="ratetable"><thead><tr><th rowspan="2">Category › Sub-category</th><th colspan="4">Before 31 Oct 2026</th><th colspan="4">From 31 Oct 2026</th></tr>
-<tr><th class="n">MP BXP</th><th class="n">MP non-BXP</th><th class="n">Mall BXP</th><th class="n">Mall non-BXP</th><th class="n">MP BXP</th><th class="n">MP non-BXP</th><th class="n">Mall BXP</th><th class="n">Mall non-BXP</th></tr></thead><tbody id="rateBody"></tbody></table></div>
-{faq_html(MY_FAQ)}
-{AD.format('my-bottom')}
-{sources_html(MY_SRC)}
-</main>
-{footer('../')}<script src="../assets/data.js"></script><script src="../assets/calc.js"></script>
-</body></html>
-'''
-    return head(title, desc, 'malaysia/', MY_FAQ) + body
+def guides_index():
+    path = 'en/guides/'
+    ch, cld = crumbs(path, [('SellerFee', 'en/'), ('Guides', None)])
+    body = f'''<div class="wrap">{ch}<header class="pagehead"><h1>Seller fee guides</h1><p class="lede">Plain-English explanations of marketplace fee changes, with worked examples computed from the official rate cards.</p></header>
+{related(path, GUIDE_CARDS)}</div>'''
+    w(path, page(path, 'en', 'Seller Fee Guides for TikTok Shop and Etsy Sellers | SellerFee', 'Guides to TikTok Shop fee changes in Malaysia and the Philippines, pricing for a target margin and checking your settlement, with real worked examples.', body, [cld]))
 
-# ---------------- Philippines ----------------
-PH_FAQ = [
- ("What are TikTok Shop Philippines seller fees in 2026?", "Each delivered order is charged a commission fee by category (Marketplace 5%–7.3%, Mall 5%–9.1%), a 2.24% transaction fee, a Shipping Service Fee of 5.5% (Marketplace) or 5% (Mall) capped at ₱100 per item, a fixed ₱5 Order Processing Fee per order, and a Seller Growth Fee of 1% or 1.5% depending on category. All rates are VAT inclusive."),
- ("What is the TikTok Shop Seller Growth Fee?", "A per-order fee TikTok Shop Philippines charges all sellers to fund platform-wide growth incentives, including making the Bonus Cashback Program free for eligible sellers. It is 1% for Electronics, Grocery and Large Appliances, and 1.5% for Beauty & Personal Care, Fashion, Mom & Baby, Health and Lifestyle (except Large Appliances), VAT inclusive. Seller reports date it from 27 April 2026."),
- ("Is the TikTok Shop order processing fee ₱3 or ₱5?", "₱5. TikTok charged a discounted ₱3 from 1 December 2025, then ended the discount from 00:00 on 1 September 2026 (Philippine time). The fee is now a fixed ₱5 (tax inclusive) per successfully delivered order, regardless of order value or number of items."),
- ("Who doesn't pay the ₱5 order processing fee?", "TikTok waives it for new sellers (first product listed within the last 90 days) for the following month, and existing sellers get their first 50 orders each month free. Tick 'Order Processing Fee exempt' in the calculator for those orders."),
- ("How is the TikTok Shop Philippines commission calculated?", "Commission = (item price − seller discount) × the sub-category rate. Shipping and TikTok platform discounts are excluded. New sellers get 0% commission for their first 90 days."),
- ("Is the Shipping Service Fee charged on every order?", "TikTok's seller fee overview says it is charged to all sellers on successfully delivered orders: 5.5% for Marketplace and 5% for Mall, capped at ₱100 per item, and not refunded if the order is later returned."),
- ("Are TikTok Shop PH fees VAT inclusive?", "Yes. TikTok publishes all of these Philippine fee rates inclusive of VAT, and the calculator uses them as published."),
-]
-PH_SRC = [
- ("Introduction to Seller Fees (TikTok Shop PH Seller University, updated 13 Oct 2026)", "https://seller-ph.tiktok.com/university/essay?knowledge_id=2675772847064834&lang=en", "transaction 2.24%, Shipping Service Fee, ₱5 processing fee, Seller Growth Fee rates"),
- ("Platform Commission Fee (TikTok Shop PH Seller University)", "https://seller-ph.tiktok.com/university/essay?knowledge_id=3157977859229442&lang=en", "commission table effective 15 Jan 2025, formula, new-seller waiver"),
- ("[Philippines] Order Processing Fee (TikTok Shop Academy, 18 Aug 2026)", "https://seller.tiktokglobalshop.com/university/essay?knowledge_id=6361124523788048", "₱5 from 1 Sep 2026, exemptions"),
- ("Report on the Seller Growth Fee start date (Baijing, secondary source)", "https://www.baijing.cn/article/55291", "27 Apr 2026 start date; not confirmed on an official page we could read"),
-]
-
-def ph_page():
-    title = "TikTok Shop Philippines Seller Fee Calculator 2026 (₱5 + Growth Fee)"
-    desc = "Free TikTok Shop Philippines fee and profit calculator with the ₱5 order processing fee, the new 1%–1.5% Seller Growth Fee, 2.24% transaction fee and Shipping Service Fee. Updated October 2026."
-    inputs = COMMON_INPUTS.format(cur='₱', price='499', cost='200') + '''
-<div class="full"><label class="chk"><input type="checkbox" id="newSeller"> New seller in 0% commission period (first 90 days)</label>
-<label class="chk"><input type="checkbox" id="opfExempt"> Order Processing Fee exempt (new seller month, or within first 50 orders this month)</label></div>
-<div class="full"><details><summary>Edit the fee rates</summary><p class="note">These fill in from the official pages. Change them if your Seller Center shows something different.</p><div class="grid">
-<div><label for="commRate">Commission rate (%)</label><input id="commRate" type="number" step="0.01" min="0"></div>
-<div><label for="txRate">Transaction fee (%)</label><input id="txRate" type="number" step="0.01" min="0"></div>
-<div><label for="ssfRate">Shipping Service Fee (%)</label><input id="ssfRate" type="number" step="0.01" min="0"></div>
-<div><label for="ssfCap">Shipping Service Fee cap (₱ per item)</label><input id="ssfCap" type="number" step="1" min="0"></div>
-<div><label for="opf">Order Processing Fee (₱ per order)</label><input id="opf" type="number" step="0.01" min="0"></div>
-<div><label for="growthRate">Seller Growth Fee (%)</label><input id="growthRate" type="number" step="0.01" min="0"></div>
-</div></details></div>'''
-    body = f'''<body data-market="PH">
-{header('../')}<main>
-<h1>TikTok Shop Philippines Seller Fee Calculator (2026)</h1>
-<p class="lead">See every fee TikTok Shop PH deducts from an order, including the ₱5 Order Processing Fee and the new Seller Growth Fee that many calculators still leave out, and what profit you keep.</p>
-<p><span class="badge">Rates last verified {VERIFIED_H} from TikTok Seller University</span></p>
-{AD.format('ph-top')}
-<div class="calc" id="calc">
-<div class="card"><div class="grid">{inputs}</div></div>
-{RESULTS}
-</div>
-<div class="card"><h2 style="margin-top:0">Old vs new: early 2026 vs now</h2><div class="tablewrap" id="compare"></div></div>
-{AD.format('ph-mid')}
-<h2>TikTok Shop Philippines fees at a glance</h2>
-<div class="tablewrap"><table>
-<thead><tr><th>Fee</th><th>Rate (VAT inclusive)</th><th>Charged on</th><th>Since</th></tr></thead>
-<tbody>
-<tr><td>Commission</td><td>Marketplace 5%–7.3%, Mall 5%–9.1%</td><td>Item price − seller discount</td><td>15 Jan 2025 table</td></tr>
-<tr><td>Transaction fee</td><td>2.24%</td><td>Item price − seller discount + buyer-paid shipping*</td><td>—</td></tr>
-<tr><td>Shipping Service Fee</td><td>5.5% Marketplace / 5% Mall, cap ₱100 per item</td><td>Item price − seller discount</td><td>—</td></tr>
-<tr><td>Order Processing Fee</td><td>₱5 per delivered order</td><td>Flat</td><td>1 Sep 2026 (₱3 before)</td></tr>
-<tr><td>Seller Growth Fee</td><td>1% Electronics, Grocery, Large Appliances; 1.5% Beauty, Fashion, Mom &amp; Baby, Health, Lifestyle</td><td>Item price − seller discount*</td><td>27 Apr 2026 (reported)</td></tr>
-</tbody></table></div>
-<p class="note">* TikTok's overview page gives the rate but not the exact base for these two fees. The transaction fee base follows TikTok's July 2026 formula change as reported by seller news sites; the growth fee base is our assumption. Both are editable above.</p>
-<h2 id="rates">Commission and growth fee by category (Philippines)</h2>
-<p><input id="rateFilter" type="search" placeholder="Filter categories, e.g. shoes" style="width:100%;padding:9px;border:1px solid #c9ced6;border-radius:8px;font-size:16px"></p>
-<div class="tablewrap"><table class="ratetable"><thead><tr><th>Cluster</th><th>Category</th><th class="n">Marketplace</th><th class="n">Mall</th><th class="n">Growth fee</th></tr></thead><tbody id="rateBody"></tbody></table></div>
-<p class="note">* Kids' Fashion and Pet Supplies are not named in TikTok's growth fee list; 1.5% is assumed.</p>
-{faq_html(PH_FAQ)}
-{AD.format('ph-bottom')}
-{sources_html(PH_SRC)}
-</main>
-{footer('../')}<script src="../assets/data.js"></script><script src="../assets/calc.js"></script>
-</body></html>
-'''
-    return head(title, desc, 'philippines/', PH_FAQ) + body
+# ---------------------------------------------------------------- hubs & home
+def live_cards(path):
+    return ''.join(f'<a class="card" href="{rel_(path)}en/{m["slug"]}/"><span class="flag">{m["flag"]}</span><h3>{esc(m["platformName"])} {esc(m["marketName"]) if m["market"] != "GLOBAL" else "fee calculator"}</h3><p>{esc(C_SUM[k])}</p><div class="meta"><span class="tag">Live</span><span>Verified {VERIFIED_H}</span></div></a>' for k, m in MARKETS.items())
+def soon_cards():
+    return ''.join(f'<div class="card soon"><span class="flag">{f}</span><h3>{esc(p)} {esc(mk)}</h3><p>Rates will be added once they can be verified against official sources.</p><div class="meta"><span class="tag soon">Coming soon</span></div></div>' for p, mk, f in COMING)
+C_SUM = {'tiktok-shop-my': 'New commission table from 31 Oct 2026, 3.78%/4.86% transaction fee, RM0.54 support fee, BXP.',
+         'tiktok-shop-ph': '₱5 Order Processing Fee, 1%–1.5% Seller Growth Fee, 2.24% transaction fee, Shipping Service Fee.',
+         'tiktok-shop-us': '6% referral fee by category, 5% fine jewelry and Pre-Owned, 3% over $10K.',
+         'tiktok-shop-uk': '9% commission, 5% for specified electronics and beauty categories.',
+         'etsy': '6.5% transaction fee, US$0.20 listing fee and payment processing for 60+ bank countries.'}
 
 def home():
-    title = "TikTok Shop Fee Calculator for Malaysia & Philippines (Updated Oct 2026)"
-    desc = "Free TikTok Shop seller fee and profit calculators for Malaysia (new 31 Oct 2026 commission rates) and the Philippines (₱5 processing fee and Seller Growth Fee). Official rates with sources."
-    faq = [("Which TikTok Shop fee changes happened in 2026?", "Malaysia added a RM0.54 Platform Support Fee (15 Feb), raised the PayLater transaction fee to 4.86% (16 Oct), raised the BXP campaign-day fee to 7.02% (7 Oct) and revises commission rates from 31 Oct 2026. The Philippines added a 1%–1.5% Seller Growth Fee (from 27 Apr, as reported) and raised the Order Processing Fee from ₱3 to ₱5 on 1 Sep 2026."),
-           ("Is this calculator official?", "No. It is an independent free tool. The rates are copied from TikTok's official Seller University pages, linked on each calculator page with the date we last checked them.")]
-    body = f'''<body>
-{header('')}<main>
-<h1>TikTok Shop Fee Calculator: Malaysia &amp; Philippines</h1>
-<p class="lead">TikTok Shop changed its seller fees several times in 2026, and many calculators haven't caught up. These calculators use the official rates and show the full fee breakdown, your payout and your profit.</p>
-<p><span class="badge">Rates last verified {VERIFIED_H}</span></p>
-<div class="cards">
-<a class="card" href="malaysia/"><h2 style="margin-top:0">🇲🇾 Malaysia</h2><p>New commission rates from 31 October 2026, 3.78% / 4.86% PayLater transaction fee, RM0.54 Platform Support Fee, BXP 4.86% / 7.02%.</p><span class="btn">Open calculator</span></a>
-<a class="card" href="philippines/"><h2 style="margin-top:0">🇵🇭 Philippines</h2><p>₱5 Order Processing Fee, 1%–1.5% Seller Growth Fee, 2.24% transaction fee, 5.5% / 5% Shipping Service Fee.</p><span class="btn">Open calculator</span></a>
-</div>
-{AD.format('home')}
-{faq_html(faq)}
-</main>
-{footer('')}</body></html>
-'''
-    return head(title, desc, '', faq) + body
+    path = 'en/'
+    pv = compute('tiktok-shop-my', sel='Beauty & Personal Care › Skincare', period='new', price=39.90, cost=12)
+    RM = lambda v: money(v, 'MYR')
+    preview = f'''<div class="preview" aria-label="Example result"><p class="eyebrow" style="margin:0">Example · TikTok Shop Malaysia</p><h3>RM39.90 skincare serum, Marketplace, from 31 Oct 2026</h3>
+<div class="row"><span>Commission ({pct(pv['rate']['commission'])})</span><span>−{RM(pv['fee']['commission'])}</span></div>
+<div class="row"><span>Transaction fee (3.78%)</span><span>−{RM(pv['fee']['tx'])}</span></div>
+<div class="row"><span>Platform Support Fee</span><span>−{RM(pv['fee']['psf'])}</span></div>
+<div class="row"><span>Product cost</span><span>−RM12.00</span></div>
+<div class="row t"><span>Profit</span><span class="pos">{RM(pv['profit'])} · {pv['margin']:.1f}%</span></div></div>'''
+    gl = ''.join(f'<a class="card" href="guides/{g["slug"]}/"><p class="eyebrow">Guide</p><h3>{esc(g["title"])}</h3><p>{esc(g["desc"])}</p></a>' for g in C.GUIDES)
+    body = f'''<section class="hero"><div class="wrap grid"><div>
+<p class="eyebrow" style="color:#5eead4">Fee &amp; profit calculators for cross-border sellers</p>
+<h1>Know exactly what every marketplace takes from your sale.</h1>
+<p class="lede">SellerFee turns official marketplace rate cards into fast calculators. Pick your platform and market, enter a price, and see every fee, your payout and your real margin.</p>
+<div class="cta"><a class="btn" href="tiktok-shop/malaysia/">TikTok Shop Malaysia</a><a class="btn ghost" href="tiktok-shop/philippines/">Philippines</a><a class="btn ghost" href="tiktok-shop/">All TikTok Shop markets</a></div>
+<ul class="trust"><li>Rates from official seller help pages</li><li>Last verified {VERIFIED_H}</li><li>Free, no sign-up</li></ul></div>
+{preview}</div></section>
+<section class="section"><div class="wrap"><p class="eyebrow">Calculators</p><h2 style="margin-top:.2em">Live now</h2><div class="cards">{live_cards(path)}</div>
+<h2>Coming next</h2><div class="cards">{soon_cards()}</div></div></section>
+<section class="section alt"><div class="wrap"><p class="eyebrow">Why sellers use SellerFee</p><h2 style="margin-top:.2em">Numbers you can check</h2><div class="features">
+<div class="feature"><div class="ic">1</div><h3>Official sources only</h3><p>Every rate comes from the platform's own seller help pages, linked on each calculator. If a rate can't be verified, we don't publish the calculator.</p></div>
+<div class="feature"><div class="ic">2</div><h3>Dated and re-checked</h3><p>Each page shows when its rates were last verified. When a platform changes fees, the calculator shows old and new side by side.</p></div>
+<div class="feature"><div class="ic">3</div><h3>Every fee, not just commission</h3><p>Transaction, processing, per-order and program fees, caps and tiers are all included, and you can edit any rate to match your account.</p></div>
+</div></div></section>
+<section class="section"><div class="wrap"><p class="eyebrow">Guides</p><h2 style="margin-top:.2em">Latest guides</h2><div class="cards">{gl}</div></div></section>
+{AD('home')}'''
+    site = {"@context": "https://schema.org", "@type": "WebSite", "name": "SellerFee", "url": BASE, "inLanguage": "en"}
+    org = {"@context": "https://schema.org", "@type": "Organization", "name": "SellerFee", "url": BASE, "logo": BASE + "assets/favicon.svg"}
+    w(path, page(path, 'en', 'SellerFee: Fee & Profit Calculators for TikTok Shop, Etsy and More', 'Free fee and profit calculators for cross-border e-commerce sellers: TikTok Shop Malaysia, Philippines, US and UK, and Etsy. Official rates, dated and sourced.', body, [site, org], alt={'en': 'en/', 'ms': 'ms/'}))
 
-def w(p, s):
-    p = os.path.join(ROOT, p); os.makedirs(os.path.dirname(p), exist_ok=True); open(p, 'w', encoding='utf-8').write(s)
+def home_ms():
+    path = 'ms/'
+    body = f'''<section class="hero"><div class="wrap"><p class="eyebrow" style="color:#5eead4">Kalkulator yuran &amp; untung untuk penjual</p>
+<h1>Ketahui dengan tepat berapa yang diambil oleh marketplace daripada jualan anda.</h1>
+<p class="lede">SellerFee menukar kad kadar rasmi marketplace kepada kalkulator yang pantas. Masukkan harga dan lihat setiap yuran, bayaran dan margin sebenar anda.</p>
+<div class="cta"><a class="btn" href="tiktok-shop/malaysia/">Kalkulator TikTok Shop Malaysia</a><a class="btn ghost" href="../en/">Semua kalkulator (English)</a></div>
+<ul class="trust"><li>Kadar daripada halaman rasmi Seller University</li><li>Terakhir disahkan 26 Oktober 2026</li><li>Percuma, tanpa daftar</li></ul></div></section>
+<section class="section"><div class="wrap"><h2 style="margin-top:0">Kalkulator dalam Bahasa Melayu</h2><div class="cards">
+<a class="card" href="tiktok-shop/malaysia/"><span class="flag">🇲🇾</span><h3>TikTok Shop Malaysia</h3><p>Jadual komisen baharu mulai 31 Okt 2026, yuran transaksi 3.78%/4.86%, Yuran Sokongan Platform RM0.54 dan BXP.</p><div class="meta"><span class="tag">Aktif</span></div></a></div>
+<p class="muted" style="margin-top:18px">Kalkulator untuk Filipina, Amerika Syarikat, United Kingdom dan Etsy tersedia dalam bahasa Inggeris.</p></div></section>'''
+    w(path, page(path, 'ms', 'SellerFee: Kalkulator Yuran & Untung untuk Penjual TikTok Shop', 'Kalkulator yuran dan untung percuma untuk penjual e-dagang, bermula dengan TikTok Shop Malaysia. Kadar rasmi, bertarikh dan bersumber.', body, alt={'en': 'en/', 'ms': 'ms/'}))
 
-w('index.html', home()); w('malaysia/index.html', my_page()); w('philippines/index.html', ph_page())
-w('404.html', head('Page not found', 'Page not found', '404.html') + '<body>' + header('/tiktok-shop-fee-calculator/') + '<main><h1>Page not found</h1><p><a href="/tiktok-shop-fee-calculator/">Go to the calculators</a></p></main></body></html>')
-w('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n')
-w('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{BASE}{p}</loc><lastmod>{VERIFIED}</lastmod></url>\n' for p in ['', 'malaysia/', 'philippines/']) + '</urlset>\n')
-w('.nojekyll', '')
-print('built')
+def tiktok_hub():
+    path = 'en/tiktok-shop/'
+    ch, cld = crumbs(path, [('SellerFee', 'en/'), ('TikTok Shop', None)])
+    tt = [m for m in MARKETS.values() if m['platform'] == 'tiktok-shop']
+    rows = ''.join(f'<tr><td>{m["flag"]} <a href="{m["slug"].split("/")[1]}/">{m["marketName"]}</a></td><td>{esc(C_SUM[k])}</td></tr>' for k, m in MARKETS.items() if m['platform'] == 'tiktok-shop')
+    cards = ''.join(f'<a class="card" href="{m["slug"].split("/")[1]}/"><span class="flag">{m["flag"]}</span><h3>TikTok Shop {m["marketName"]}</h3><p>{esc(C_SUM[k])}</p><div class="meta"><span class="tag">Live</span><span>Verified {VERIFIED_H}</span></div></a>' for k, m in MARKETS.items() if m['platform'] == 'tiktok-shop')
+    soon = ''.join(f'<div class="card soon"><span class="flag">{f}</span><h3>TikTok Shop {mk}</h3><p>We publish a market only after verifying its rates on TikTok\'s own Seller University pages.</p><div class="meta"><span class="tag soon">Coming soon</span></div></div>' for p, mk, f in COMING if p == 'TikTok Shop')
+    body = f'''<div class="wrap">{ch}<header class="pagehead"><h1>TikTok Shop fee calculators by country</h1>
+<p class="lede">TikTok Shop charges different fees in every market: category commission in Southeast Asia, a flat referral fee in the US and a single commission rate in the UK. Pick your market.</p></header>
+<div class="cards">{cards}{soon}</div>
+<h2>How TikTok Shop fees differ by market</h2><div class="tablewrap"><table class="tbl"><thead><tr><th>Market</th><th>Main fees</th></tr></thead><tbody>{rows}</tbody></table></div>
+<h2>Guides</h2>{related(path, GUIDE_CARDS)}</div>'''
+    w(path, page(path, 'en', 'TikTok Shop Fee Calculators: Malaysia, Philippines, US & UK | SellerFee', 'Free TikTok Shop seller fee calculators for Malaysia, the Philippines, the United States and the United Kingdom, built on the official Seller University rate cards.', body, [cld]))
+
+# ---------------------------------------------------------------- company pages
+REPO = 'https://github.com/xhq52465840/tiktok-shop-fee-calculator'
+def static_pages():
+    P = {
+     'about': ('About SellerFee', 'About SellerFee: who we are, how we verify marketplace fee rates and how the calculators work.', f'''
+<p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We started with TikTok Shop in Malaysia and the Philippines, where fees changed several times in 2026, and are adding more platforms and markets.</p>
+<h2>How we source rates</h2>
+<p>Every rate in our calculators comes from the platform's own seller help pages, such as TikTok Shop Seller University or the Etsy Help Center. Each calculator links its sources and shows the date we last checked them. When a platform publishes only a rate but not how it is calculated, we say so on the page and make the rate editable. We don't publish a calculator for a market until its rates can be verified from an official source.</p>
+<h2>How we keep them current</h2>
+<p>We re-check the source pages regularly and whenever a platform announces a change. When fees change, we keep the old rates alongside the new ones so you can compare, and we note the effective date.</p>
+<h2>How the calculators work</h2>
+<p>The calculators run entirely in your browser. Nothing you type is sent to us. Results are estimates based on the published rates; your own account may have waivers, program fees or promotions that change the numbers, so your Seller Center is always the final word.</p>
+<h2>Independence</h2>
+<p>SellerFee is not affiliated with, endorsed by or sponsored by TikTok, ByteDance, Etsy, Shopee, Lazada, Amazon, eBay or any other marketplace. Product and company names are trademarks of their owners.</p>
+<h2>Get in touch</h2><p>Spotted a rate that has changed, or want a market added? See our <a href="../contact/">contact page</a>.</p>'''),
+     'contact': ('Contact SellerFee', 'How to contact SellerFee, report a fee change or request a new marketplace calculator.', f'''
+<p>We'd like to hear from you, especially if a platform has changed its fees and we haven't caught it yet.</p>
+<h2>Report a rate change or an error</h2>
+<p>Open an issue on our public project page: <a href="{REPO}/issues" rel="noopener">{REPO.replace("https://", "")}/issues</a>. Please include the platform, the market, the fee that looks wrong and, if you can, a link to the official page that shows the current rate.</p>
+<h2>Request a calculator</h2>
+<p>Use the same page to request a platform or market. We add markets once their rates can be verified from official sources.</p>
+<h2>What we can't help with</h2>
+<p>We can't see or change anything in your marketplace account. For questions about a specific order or deduction, contact the platform's seller support, for example through Seller Center → Help Center on TikTok Shop.</p>'''),
+     'privacy': ('Privacy Policy', 'SellerFee privacy policy: what data the site collects, cookies, advertising and your choices.', f'''
+<p><i>Last updated {VERIFIED_H}.</i></p>
+<p>This policy explains what information SellerFee ("we") collects when you use this website and how it is used.</p>
+<h2>Information you enter in calculators</h2>
+<p>The calculators run in your browser. Prices, costs and other numbers you enter are not sent to or stored on our servers.</p>
+<h2>Information collected automatically</h2>
+<p>The site is hosted on GitHub Pages. Like most web hosts, GitHub may log technical information such as your IP address, browser type and the pages requested, for security and operational purposes. See GitHub's privacy statement for details. We do not currently run our own analytics.</p>
+<h2>Cookies</h2>
+<p>SellerFee itself does not set cookies today. If we add analytics or advertising, the third-party services described below may use cookies or similar technologies, and we will update this policy before doing so.</p>
+<h2>Advertising</h2>
+<p>We may show ads served by third-party vendors, including Google. Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visits to this site and/or other sites on the Internet. You may opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads" rel="noopener">Google Ads Settings</a>, or opt out of some third-party vendors' use of cookies for personalised advertising at <a href="https://www.aboutads.info/choices/" rel="noopener">www.aboutads.info</a>. Where required by law, we will ask for your consent before personalised ads are shown.</p>
+<h2>Links to other sites</h2>
+<p>Our pages link to official marketplace help pages and other sites. Their privacy practices are their own.</p>
+<h2>Children</h2>
+<p>The site is intended for adults running a business and is not directed at children under 13.</p>
+<h2>Changes and contact</h2>
+<p>We will post any changes on this page with a new date. Questions can be raised through our <a href="../contact/">contact page</a>.</p>'''),
+     'terms': ('Terms of Use', 'Terms of use for SellerFee calculators and content.', f'''
+<p><i>Last updated {VERIFIED_H}.</i></p>
+<p>By using SellerFee you agree to these terms.</p>
+<h2>Estimates, not advice</h2>
+<p>Our calculators and guides provide estimates based on fee rates published by each marketplace on the date shown. They are for general information only and are not financial, tax, accounting or legal advice. Your actual fees can differ because of your account type, category assignment, programs, waivers, promotions, taxes, currency conversion or changes the platform makes after our last check. Always confirm fees in your marketplace account before making pricing or business decisions.</p>
+<h2>No warranty</h2>
+<p>The site is provided "as is" without warranties of any kind. We do our best to keep rates accurate and current but do not guarantee that they are complete, correct or up to date.</p>
+<h2>Limitation of liability</h2>
+<p>To the extent permitted by law, SellerFee is not liable for any loss arising from your use of, or reliance on, the site or its results.</p>
+<h2>Trademarks</h2>
+<p>TikTok, TikTok Shop, Etsy, Shopee, Lazada, Amazon and eBay are trademarks of their respective owners. SellerFee is independent and not affiliated with or endorsed by them.</p>
+<h2>Acceptable use</h2>
+<p>You may use the calculators freely for your own business. Please don't scrape the site at a rate that disrupts it or republish our content as your own.</p>
+<h2>Changes</h2>
+<p>We may update these terms; the date above shows the latest version.</p>'''),
+    }
+    for slug, (title, desc, html) in P.items():
+        path = f'en/{slug}/'
+        ch, cld = crumbs(path, [('SellerFee', 'en/'), (title, None)])
+        w(path, page(path, 'en', f'{title} | SellerFee', desc, f'<div class="wrap narrow">{ch}<article class="prose"><h1>{esc(title)}</h1>{html}</article></div>', [cld]))
+
+# ---------------------------------------------------------------- plumbing
+def plumbing():
+    # root: send visitors to /en/ (or /ms/ for Malay browsers)
+    open(os.path.join(ROOT, 'index.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SellerFee</title>
+<link rel="canonical" href="{BASE}en/"><link rel="alternate" hreflang="en" href="{BASE}en/"><link rel="alternate" hreflang="ms" href="{BASE}ms/"><link rel="alternate" hreflang="x-default" href="{BASE}en/">
+<meta http-equiv="refresh" content="0; url=en/"><meta name="robots" content="noindex,follow">
+<script>location.replace((navigator.language||'').toLowerCase().indexOf('ms')===0?'ms/':'en/')</script></head><body><a href="en/">SellerFee</a></body></html>''')
+    for old, new in [('malaysia/', 'en/tiktok-shop/malaysia/'), ('philippines/', 'en/tiktok-shop/philippines/')]:
+        w(old, f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{BASE}{new}"><meta http-equiv="refresh" content="0; url=../{new}"><meta name="robots" content="noindex"></head><body><a href="../{new}">This page has moved.</a></body></html>')
+    open(os.path.join(ROOT, '404.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | SellerFee</title><meta name="robots" content="noindex">
+<script>var b=location.hostname.endsWith('github.io')?'/tiktok-shop-fee-calculator/':'/';document.write('<base href="'+b+'">')</script><link rel="stylesheet" href="assets/style.css"></head>
+<body><main class="wrap narrow" style="padding:80px 20px"><h1>Page not found</h1><p>The page you're looking for doesn't exist or has moved.</p><p><a class="btn" href="en/">Go to the calculators</a></p></main></body></html>''')
+    open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n')
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+    for path, alt in PAGES:
+        sm.append(f'  <url><loc>{BASE}{path}</loc><lastmod>{VERIFIED}</lastmod>')
+        if alt:
+            for l, p in alt.items(): sm.append(f'    <xhtml:link rel="alternate" hreflang="{l}" href="{BASE}{p}"/>')
+            sm.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}{alt["en"]}"/>')
+        sm.append('  </url>')
+    sm.append('</urlset>')
+    open(os.path.join(ROOT, 'sitemap.xml'), 'w').write('\n'.join(sm) + '\n')
+    open(os.path.join(ROOT, 'assets', 'favicon.svg'), 'w').write(LOGO.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" '))
+    os.makedirs(os.path.join(ROOT, 'deploy'), exist_ok=True)
+    open(os.path.join(ROOT, 'deploy', 'CNAME'), 'w').write('sellerfee.app\n')
+    open(os.path.join(ROOT, '.nojekyll'), 'w').write('')
+
+if __name__ == '__main__':
+    clean()
+    home(); home_ms(); tiktok_hub()
+    for mid, m in MARKETS.items():
+        for lang in m['langs']: calc_page(mid, lang)
+    guides_index()
+    for g in C.GUIDES: guide_page(g)
+    static_pages(); plumbing()
+    print('built', len(PAGES), 'pages')

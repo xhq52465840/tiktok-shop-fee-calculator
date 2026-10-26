@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xhq52465840.github.io/tiktok-shop-fee-calculator/sitemap.xml
+Sitemap: https://sellerfee.app/sitemap.xml

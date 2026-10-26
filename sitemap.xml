@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://xhq52465840.github.io/tiktok-shop-fee-calculator/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://xhq52465840.github.io/tiktok-shop-fee-calculator/malaysia/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://xhq52465840.github.io/tiktok-shop-fee-calculator/philippines/</loc><lastmod>2026-10-26</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://sellerfee.app/en/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/tiktok-shop/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/tiktok-shop/malaysia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/tiktok-shop/malaysia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/tiktok-shop/philippines/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/tiktok-shop/united-states/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/tiktok-shop/united-kingdom/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/etsy/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/guides/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/about/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/contact/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/privacy/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/terms/</loc><lastmod>2026-10-26</lastmod>
+  </url>
 </urlset>
