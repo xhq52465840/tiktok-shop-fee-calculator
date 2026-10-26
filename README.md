@@ -1,0 +1,1 @@
+TikTok Shop fee & profit calculator for Malaysia and the Philippines. Static site; rebuild pages with `python3 src/build.py`. Rates in assets/data.js come from official TikTok Shop Seller University pages (verified 2026-10-26).
