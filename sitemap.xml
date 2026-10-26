@@ -3,14 +3,29 @@
   <url><loc>https://sellerfee.app/en/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/"/>
     <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/"/>
   </url>
   <url><loc>https://sellerfee.app/ms/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/"/>
     <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/"/>
   </url>
   <url><loc>https://sellerfee.app/en/tiktok-shop/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/russia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/russia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/russia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/rate-changes/</loc><lastmod>2026-10-26</lastmod>
   </url>
   <url><loc>https://sellerfee.app/en/tiktok-shop/malaysia/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
@@ -30,7 +45,39 @@
   </url>
   <url><loc>https://sellerfee.app/en/etsy/</loc><lastmod>2026-10-26</lastmod>
   </url>
+  <url><loc>https://sellerfee.app/en/ozon/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/ozon/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/ozon/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/ozon/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/wildberries/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/wildberries/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/wildberries/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/wildberries/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/yandex-market/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/yandex-market/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/yandex-market/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/yandex-market/"/>
+  </url>
   <url><loc>https://sellerfee.app/en/guides/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/</loc><lastmod>2026-10-26</lastmod>
   </url>
   <url><loc>https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/</loc><lastmod>2026-10-26</lastmod>
   </url>
@@ -40,12 +87,24 @@
   </url>
   <url><loc>https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/</loc><lastmod>2026-10-26</lastmod>
   </url>
-  <url><loc>https://sellerfee.app/en/about/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/</loc><lastmod>2026-10-26</lastmod>
   </url>
-  <url><loc>https://sellerfee.app/en/contact/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/ozon-fbo-fbs-realfbs-2026/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/wildberries-logistics-commission-2026/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/yandex-market-42-percent-low-price-2026/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/about/</loc><lastmod>2026-10-26</lastmod>
   </url>
   <url><loc>https://sellerfee.app/en/privacy/</loc><lastmod>2026-10-26</lastmod>
   </url>
   <url><loc>https://sellerfee.app/en/terms/</loc><lastmod>2026-10-26</lastmod>
+  </url>
+  <url><loc>https://sellerfee.app/en/contact/</loc><lastmod>2026-10-26</lastmod>
   </url>
 </urlset>

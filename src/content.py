@@ -7,19 +7,19 @@ myr = lambda n: next(o for o in MYO if o['n'] == n)['r']
 RM = lambda v: money(v, 'MYR'); PHP = lambda v: money(v, 'PHP'); USD = lambda v: money(v, 'USD'); GBP = lambda v: money(v, 'GBP')
 
 GUIDES = [
- dict(slug='tiktok-shop-malaysia-commission-changes-october-2026', short='Malaysia commission changes (31 Oct 2026)',
+ dict(lang='en', slug='tiktok-shop-malaysia-commission-changes-october-2026', short='Malaysia commission changes (31 Oct 2026)',
       title='TikTok Shop Malaysia Commission Changes on 31 October 2026, Explained',
       desc='What changes in TikTok Shop Malaysia commission on 31 Oct 2026: which categories go up or down, BXP vs non-BXP, worked examples in ringgit and how to reprice.',
       market='tiktok-shop-my'),
- dict(slug='tiktok-shop-philippines-seller-growth-fee', short='Philippines Seller Growth Fee',
+ dict(lang='en', slug='tiktok-shop-philippines-seller-growth-fee', short='Philippines Seller Growth Fee',
       title='TikTok Shop Philippines Seller Growth Fee: Rates, Categories and Real Examples',
       desc='The TikTok Shop PH Seller Growth Fee explained: 1% or 1.5% by category, how it stacks with the ₱5 processing fee, and what it costs on real orders.',
       market='tiktok-shop-ph'),
- dict(slug='tiktok-shop-pricing-target-margin', short='Price for a target margin',
+ dict(lang='en', slug='tiktok-shop-pricing-target-margin', short='Price for a target margin',
       title='How to Price Products on TikTok Shop to Hit a Target Margin',
       desc='A simple formula to set TikTok Shop prices that hit your target margin after commission, transaction and fixed per-order fees, with worked examples for MY, PH and the US.',
       market=None),
- dict(slug='read-tiktok-shop-settlement-check-fees', short='Check your settlement',
+ dict(lang='en', slug='read-tiktok-shop-settlement-check-fees', short='Check your settlement',
       title='How to Read Your TikTok Shop Settlement and Check Every Fee Deduction',
       desc='Where to find order settlement details in TikTok Shop Seller Center, how each fee line is calculated, and how to spot deductions that don\'t add up.',
       market=None),
@@ -552,3 +552,8 @@ def my_page_ms():
 
 PAGE_FN = {('tiktok-shop-my', 'en'): my_page, ('tiktok-shop-my', 'ms'): my_page_ms, ('tiktok-shop-ph', 'en'): ph_page,
            ('tiktok-shop-us', 'en'): us_page, ('tiktok-shop-uk', 'en'): uk_page, ('etsy', 'en'): etsy_page}
+
+# Russia (Ozon, Wildberries, Yandex Market) — EN + RU
+from content_ru import PAGE_FN_RU, GUIDES_RU
+PAGE_FN.update(PAGE_FN_RU)
+GUIDES.extend(GUIDES_RU)
