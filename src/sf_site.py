@@ -37,7 +37,7 @@ def ic(n, s=16, cls=''):
 
 PLAT = {'tiktok-shop': ('#0B1220', '#fff', 'TS'), 'shopee': ('#EE4D2D', '#fff', 'S'), 'lazada': ('#1B1464', '#fff', 'L'), 'amazon': ('#232F3E', '#FF9900', 'a'),
         'etsy': ('#F1641E', '#fff', 'E'), 'ebay': ('#fff', '#0064D2', 'e'), 'ozon': ('#005BFF', '#fff', 'O'), 'wildberries': ('#A3119B', '#fff', 'WB'),
-        'yandex-market': ('#FFDC34', '#0B1220', 'YM')}
+        'yandex-market': ('#FFDC34', '#0B1220', 'YM'), 'walmart': ('#0071DC', '#FFC220', 'W')}
 def ptile(p, s=36):
     bg, fg, t = PLAT[p]
     bd = 'border:1px solid #E7EAF0;' if bg == '#fff' else ''
@@ -261,6 +261,8 @@ def widget(mid, lang):
     hk = m.get('hints', {})
     if 'tax' in inp: s3.append(fld(lang, 'tax', curh, 0, hint=L(hk.get('tax', 'tax_h'))))
     if 'vol' in inp: s3.append(fld(lang, 'vol', None, d.get('vol', 1), suffix=tr(lang, 'js')['litre'] if 'litre' in tr(lang, 'js') else 'L', step='0.001', hint=L('vol_h')))
+    if 'wt' in inp: s3.append(fld(lang, 'wt', None, d.get('wt', 1), suffix=L('lb'), step='0.01', hint=L('wt_h'), extra=' data-stores="wfs"'))
+    if 'dimwt' in inp: s3.append(fld(lang, 'dimwt', None, d.get('dimwt', 0), suffix=L('lb'), step='0.01', hint=L('dimwt_h'), extra=' data-stores="wfs"'))
     if 'coef' in inp: s3.append(fld(lang, 'coef', None, d.get('coef', 100), suffix='%', step='1', hint=L('coef_h'), extra=' data-stores="fbw fbs"'))
     s3.append(fld(lang, 'shipCost', curh, 0))
     if 'affPct' in inp: s3.append(fld(lang, 'affPct', None, 0, suffix='%', step='0.1'))
@@ -273,13 +275,13 @@ def widget(mid, lang):
     tg = ''.join(f'<label class="toggle tg"><input type="checkbox" id="sf-t-{g["id"]}"><span class="sw" aria-hidden="true"></span><span><b>{esc(L("t_" + g["id"]))}</b><small>{esc(L("t_" + g["id"] + "_h"))}</small></span></label>' for g in m['toggles'])
     rates = []
     for c in m['components']:
-        if c.get('manual') or c['type'] in ('vol', 'voltab'): continue
+        if c.get('manual') or c['type'] in ('vol', 'voltab', 'wt'): continue
         unit = '%' if c['type'] == 'pct' else (curh + ' ' + (L('u_item') if c.get('per') == 'item' else L('u_order')))
         h = f'<p class="hint">{esc(L("ozproc_h"))}</p>' if c['id'] == 'oz_proc' else ''
         rates.append(f'<div class="field sf-rate"><label class="label" for="sf-r-{c["id"]}">{esc(L("c_" + c["id"]))}</label><div class="input"><input id="sf-r-{c["id"]}" type="number" step="0.01" min="0"><span class="suf">{esc(unit)}</span></div>{h}</div>')
     n = lambda i, k, opt=False: f'<h3><span class="n">{i}</span>{esc(L(k))}{('<span class="opt">' + esc(L('optional')) + '</span>') if opt else ''}</h3>'
     sec4 = f'<div class="cs">{n(4, "sec_n4")}<div class="tgs">{tg}</div></div>' if tg else ''
-    cfg = {k: m[k] for k in ('currency', 'symbols', 'locale', 'toggles', 'defaultOption', 'bands', 'conds', 'symbolAfter', 'decimals') if k in m}
+    cfg = {k: m[k] for k in ('currency', 'symbols', 'locale', 'toggles', 'defaultOption', 'bands', 'conds', 'symbolAfter', 'decimals', 'roundFees') if k in m}
     if m['market'] == 'RU' and lang != 'ru': cfg['locale'] = 'en-US'
     if lang != 'en': cfg['locale'] = {'zh': 'zh-CN', 'ru': 'ru-RU', 'ms': 'ms-MY'}[lang]
     cfg['currencyFromOption'] = m.get('currencyFromOption', False)

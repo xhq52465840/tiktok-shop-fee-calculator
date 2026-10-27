@@ -1,0 +1,276 @@
+[
+ {
+  "n": "Apparel & Accessories",
+  "r": {
+   "rate": 15,
+   "bands": [
+    [
+     15,
+     5
+    ],
+    [
+     20,
+     10
+    ]
+   ]
+  }
+ },
+ {
+  "n": "Appliances - Compact",
+  "r": {
+   "rate": 12,
+   "at": 300,
+   "over": 8
+  }
+ },
+ {
+  "n": "Appliances - Major",
+  "r": {
+   "rate": 8
+  }
+ },
+ {
+  "n": "Automotive & Powersports",
+  "r": {
+   "rate": 12
+  }
+ },
+ {
+  "n": "Baby Products",
+  "r": {
+   "rate": 15,
+   "bands": [
+    [
+     10,
+     8
+    ]
+   ]
+  }
+ },
+ {
+  "n": "Base Power Tools",
+  "r": {
+   "rate": 12
+  }
+ },
+ {
+  "n": "Beauty, Health & Personal Care",
+  "r": {
+   "rate": 15,
+   "bands": [
+    [
+     10,
+     8
+    ]
+   ]
+  }
+ },
+ {
+  "n": "Books",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Camera & Photo",
+  "r": {
+   "rate": 8
+  }
+ },
+ {
+  "n": "Collectibles: trading cards, trading card games, comics, coins, autographed collectibles, collectible ephemera",
+  "r": {
+   "rate": 8,
+   "at": 2500,
+   "over": 2.35
+  }
+ },
+ {
+  "n": "Collectibles: all other collectible categories",
+  "r": {
+   "rate": 8
+  }
+ },
+ {
+  "n": "Consumer Electronics",
+  "r": {
+   "rate": 8
+  }
+ },
+ {
+  "n": "Electronics Accessories",
+  "r": {
+   "rate": 15,
+   "at": 100,
+   "over": 8
+  }
+ },
+ {
+  "n": "Grocery",
+  "r": {
+   "rate": 15,
+   "bands": [
+    [
+     15,
+     8
+    ]
+   ]
+  }
+ },
+ {
+  "n": "Home, Kitchen, Decor & Garden",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Indoor & Outdoor Furniture",
+  "r": {
+   "rate": 15,
+   "at": 200,
+   "over": 10
+  }
+ },
+ {
+  "n": "Industrial & Scientific Supplies",
+  "r": {
+   "rate": 12
+  }
+ },
+ {
+  "n": "Jewelry & Precious Metals",
+  "r": {
+   "rate": 20,
+   "at": 250,
+   "over": 5
+  }
+ },
+ {
+  "n": "Luggage & Travel Accessories",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Music",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Musical Instruments",
+  "r": {
+   "rate": 12
+  }
+ },
+ {
+  "n": "Office Products",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Office Products: printer cartridges",
+  "r": {
+   "rate": 12
+  }
+ },
+ {
+  "n": "Outdoor Power Tools",
+  "r": {
+   "rate": 8,
+   "bands": [
+    [
+     500,
+     15
+    ]
+   ]
+  }
+ },
+ {
+  "n": "Outdoors Products & Sports",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Outdoors Products & Sports: hunting trail monitors, binoculars, telescopes, spotting scopes, night vision goggles",
+  "r": {
+   "rate": 8
+  }
+ },
+ {
+  "n": "Personal Computers",
+  "r": {
+   "rate": 6
+  }
+ },
+ {
+  "n": "Pet Supplies",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Plumbing, Heating, Cooling & Ventilation",
+  "r": {
+   "rate": 10
+  }
+ },
+ {
+  "n": "Shoes, Handbags, Backpacks & Sunglasses",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Software & Computer Video Games",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Tires & Wheels",
+  "r": {
+   "rate": 10
+  }
+ },
+ {
+  "n": "Tools & Home Improvement",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Toys & Games",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Video & DVD",
+  "r": {
+   "rate": 15
+  }
+ },
+ {
+  "n": "Video Game Consoles",
+  "r": {
+   "rate": 8
+  }
+ },
+ {
+  "n": "Watches",
+  "r": {
+   "rate": 15,
+   "at": 1500,
+   "over": 3
+  }
+ },
+ {
+  "n": "Everything Else",
+  "r": {
+   "rate": 15
+  }
+ }
+]

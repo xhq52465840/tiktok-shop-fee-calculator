@@ -42,9 +42,12 @@
   function active(c, s) {
     if (c.when && !s.tg[c.when]) return false;
     if (!inList(s.store, c.whenStore)) return false;
-    if (c.whenX && s.x[c.whenX[0]] !== c.whenX[1]) return false;
+    if (c.whenX && !inList(s.x[c.whenX[0]], c.whenX[1])) return false;
     return true;
   }
+  function zeroed(c, s) { return [].concat(c.zeroIf || []).some(function (k) { return s.tg[k]; }); }
+  // per-item price used for whole-price rate bands (e.g. "5% for items with a total sales price of $15 or less")
+  function unitBase(c, o) { var b = bases(o); return o.qty ? b[c.bandBase || 'net'] / o.qty : 0; }
   function unit(o) { var b = bases(o); return o.qty ? b.net / o.qty : 0; }
   function band(o) { var u = unit(o), i = 0; (M.bands || []).forEach(function (th) { if (u > th) i++; }); return i; }
   function condOn(name, s, o) {
@@ -58,11 +61,14 @@
   // default rate for a component in a given state (null = not published)
   function defRate(c, s, o) {
     if (!active(c, s)) return 0;
-    if (c.zeroIf && s.tg[c.zeroIf]) return 0;
-    var r = c.rate, cd = conds(s, o);
+    var cd = conds(s, o);
+    if (c.condOnly && !cd[c.condOnly]) return 0;
+    if (zeroed(c, s)) return 0;
+    var r = c.rate;
     if (typeof r === 'string' && r.indexOf('opt:') === 0) {
       var R = (opts[s.sel] || {}).r || {}, k = keyFor(r.slice(4), s);
       r = R[k] !== undefined ? R[k] : R._;
+      if (c.bandsKey && R[c.bandsKey]) { var u = unitBase(c, o); for (var bi = 0; bi < R[c.bandsKey].length; bi++) if (u <= R[c.bandsKey][bi][0] + 1e-9) { r = R[c.bandsKey][bi][1]; break; } }
     }
     if (r && typeof r === 'object' && !Array.isArray(r)) r = r[c.by ? s.x[c.by] : s.store];
     if (Array.isArray(r)) r = r[Math.min(band(o), r.length - 1)];
@@ -79,7 +85,8 @@
   function readInputs() {
     return { price: num('sf-price'), qty: Math.max(1, Math.round(num('sf-qty')) || 1), sellerDisc: num('sf-sellerDisc'),
       buyerShip: num('sf-buyerShip'), shipCost: num('sf-shipCost'), cost: num('sf-cost'), other: num('sf-other'),
-      affPct: num('sf-affPct'), tax: num('sf-tax'), taxPct: num('sf-taxPct'), vol: num('sf-vol'), coef: $('sf-coef') ? num('sf-coef') : 100 };
+      affPct: num('sf-affPct'), tax: num('sf-tax'), taxPct: num('sf-taxPct'), vol: num('sf-vol'), coef: $('sf-coef') ? num('sf-coef') : 100,
+      wt: num('sf-wt'), dimwt: num('sf-dimwt') };
   }
   function bases(o) {
     var net = Math.max(0, o.price * o.qty - o.sellerDisc);
@@ -98,15 +105,25 @@
     if (v.cap !== undefined) p = Math.min(p, v.cap);
     return p;
   }
+  // billable shipping weight (lb): under 1 lb add 0.25 lb packaging; otherwise the greater of unit and dimensional weight; round up
+  function shipWeight(o) { if (!(o.wt > 0) && !(o.dimwt > 0)) return 0; return o.wt > 0 && o.wt < 1 ? Math.ceil(o.wt + 0.25 - 1e-9) : Math.ceil(Math.max(o.wt, o.dimwt) - 1e-9); }
+  function wtCost(pw, W) { for (var i = 0; i < pw.length; i++) if (W <= pw[i][0]) return pw[i][1] + pw[i][2] * Math.max(0, W - pw[i][3]); return null; }
+  function rnd(n) { if (M.roundFees === undefined) return r2(n); var f = Math.pow(10, M.roundFees); return Math.round(parseFloat((n * f).toPrecision(12))) / f; }
   function compute(o, rates, s) {
     var b = bases(o), rows = [], cd = conds(s, o);
     M.components.forEach(function (c) {
       if (!active(c, s)) return;
+      if (c.condOnly && !cd[c.condOnly]) return;
       var zeroCond = (c.condZero || []).filter(function (k) { return cd[k]; })[0];
       if (zeroCond) { rows.push({ id: c.id, label: c.label, how: t('cond_' + zeroCond + '_incl', 'Included'), amt: 0, color: c.color }); return; }
       var raw = rates[c.id], r = raw; if (r === null || r === undefined || isNaN(r)) r = 0;
       var amt, how, n;
-      if (c.type === 'voltab') {
+      if (c.type === 'wt') {
+        var W = shipWeight(o), pu = W ? wtCost(c.wt, W) : 0;
+        if (!W) { amt = 0; how = t('noWt', 'Enter the item weight'); }
+        else if (pu === null) { amt = 0; how = t('wtOver', 'Over the standard size limit, see note'); }
+        else { amt = pu * o.qty; how = W + '\u00A0' + t('lb', 'lb') + ' \u2192 ' + money(pu) + (o.qty > 1 ? ' \u00D7 ' + o.qty : ''); }
+      } else if (c.type === 'voltab') {
         var tb = (M.tables || {})[c.table], L = o.vol, bi = 0;
         if (!tb || !(L > 0)) { amt = 0; how = t('noVol', 'Enter the volume'); }
         else {
@@ -129,8 +146,18 @@
         if (r === 0) how = (raw === null || raw === undefined || isNaN(raw)) ? t('notSet', 'Not set, see note above') : (c.manual ? t('enterIt', 'Enter your amount') : t('waived', 'Waived'));
       } else {
         // base 'fees' = sum of the fee rows above (e.g. VAT charged on the platform's own fees)
-        var base = c.base === 'fees' ? rows.reduce(function (x, q) { return x + q.amt; }, 0) : b[c.base || 'net'];
+        var base = c.baseRows ? rows.filter(function (q) { return c.baseRows.indexOf(q.id) >= 0; }).reduce(function (x, q) { return x + q.amt; }, 0)
+          : c.base === 'fees' ? rows.reduce(function (x, q) { return x + q.amt; }, 0) : b[c.base || 'net'];
         amt = base * r / 100; how = fmtPct(r) + ' \u00D7 ' + money(base);
+        if (c.portion) {
+          var RP = (opts[s.sel] || {}).r || {}, ov = RP[c.portion.key], at = RP[c.portion.at];
+          if (ov !== undefined && at !== undefined && o.qty) {
+            var uu = base / o.qty;
+            amt = (Math.min(uu, at) * r / 100 + Math.max(0, uu - at) * ov / 100) * o.qty;
+            if (uu > at) how += ' (' + fmtPct(ov) + ' ' + t('above', 'above') + ' ' + money(at) + '/' + t('item', 'item') + ')';
+          }
+        }
+        if (c.negative) amt = -amt;
         if (c.tier) {
           var over = (opts[s.sel] || {}).r[c.tier.key];
           if (over !== undefined && base > c.tier.threshold) {
@@ -153,7 +180,7 @@
         if (raw === null || raw === undefined || isNaN(raw)) how = t('notSet', 'Not set, see note above');
         Object.keys(c.condRate || {}).forEach(function (k) { if (cd[k]) how += ' \u00B7 ' + t('cond_' + k, k); });
       }
-      rows.push({ id: c.id, label: c.label, how: how, amt: r2(amt), color: c.color });
+      rows.push({ id: c.id, label: c.label, how: how, amt: c.negative ? -rnd(-amt) : rnd(amt), color: c.color });
     });
     if (o.affPct > 0) rows.push({ id: 'aff', label: t('aff', 'Affiliate creator commission'), how: fmtPct(o.affPct) + ' \u00D7 ' + money(b.net), amt: r2(b.net * o.affPct / 100), color: '#a78bfa' });
     var total = r2(rows.reduce(function (x, r) { return x + r.amt; }, 0));
@@ -179,7 +206,7 @@
     var opt = opts[s.sel] || {};
     if (M.currencyFromOption) { cur = opt.cur; root.querySelectorAll('.sf-cur').forEach(function (x) { x.textContent = cur; }); }
     var note = '';
-    M.components.forEach(function (c) { if (active(c, s) && d[c.id] === null && !c.manual) note = t('noRate', 'No published rate for this selection. Enter the rate from your Seller Center.'); });
+    M.components.forEach(function (c) { if (active(c, s) && d[c.id] === null && !c.manual && c.type !== 'wt') note = t('noRate', 'No published rate for this selection. Enter the rate from your Seller Center.'); });
     if (opt.note && T['note_' + opt.note]) note = T['note_' + opt.note];
     $('sf-selnote').textContent = note;
     (M.toggles || []).forEach(function (g) {
@@ -192,7 +219,7 @@
     root.querySelectorAll('[data-stores]').forEach(function (el) { el.hidden = !inList(s.store, el.getAttribute('data-stores').split(' ')); });
     calc();
   }
-  function readRates() { var o = {}; M.components.forEach(function (c) { var e = $('sf-r-' + c.id); o[c.id] = e && e.value !== '' ? parseFloat(String(e.value).replace(',', '.')) : (c.type === 'vol' || c.type === 'voltab' ? 0 : null); }); return o; }
+  function readRates() { var o = {}; M.components.forEach(function (c) { var e = $('sf-r-' + c.id); o[c.id] = e && e.value !== '' ? parseFloat(String(e.value).replace(',', '.')) : (c.type === 'vol' || c.type === 'voltab' || c.type === 'wt' ? 0 : null); }); return o; }
 
   function calc() {
     var s = state(), o = readInputs();
@@ -213,7 +240,7 @@
     if (cn) { var on = Object.keys(f.cond).filter(function (k) { return f.cond[k]; }); cn.hidden = !on.length; cn.textContent = on.map(function (k) { return t('condnote_' + k, ''); }).join(' '); }
     // bar
     var parts = [];
-    f.rows.forEach(function (r) { if (r.amt) parts.push([r.label, r.amt, r.color || '#f97316']); });
+    f.rows.forEach(function (r) { if (r.amt > 0) parts.push([r.label, r.amt, r.color || '#f97316']); });
     if (o.shipCost) parts.push([t('shipCost', 'Shipping you pay'), o.shipCost, 'var(--cost)']);
     if (f.goods) parts.push([t('goods', 'Product & other costs'), f.goods, 'var(--ink-700)']);
     if (f.taxAmt) parts.push([t('taxp', 'Your income tax'), f.taxAmt, 'var(--ink-500)']);
@@ -224,7 +251,7 @@
     // breakdown
     var h = '<tr><td>' + t('subtotal', 'Item subtotal after your discount') + '<small>' + money(o.price) + ' \u00D7 ' + o.qty + (o.sellerDisc ? ' \u2212 ' + money(o.sellerDisc) : '') + '</small></td><td class="n">' + money(f.b.net) + '</td></tr>';
     if (o.buyerShip) h += '<tr><td>' + t('buyerShip', 'Shipping paid by buyer') + '</td><td class="n">+' + money(o.buyerShip) + '</td></tr>';
-    f.rows.forEach(function (r) { h += '<tr><td><i class="dot" style="background:' + (r.color || '#f97316') + '"></i>' + r.label + '<small>' + r.how + '</small></td><td class="n neg">\u2212' + money(r.amt) + '</td></tr>'; });
+    f.rows.forEach(function (r) { h += '<tr><td><i class="dot" style="background:' + (r.color || '#f97316') + '"></i>' + r.label + '<small>' + r.how + '</small></td>' + (r.amt < 0 ? '<td class="n pos">+' + money(-r.amt) : '<td class="n neg">\u2212' + money(r.amt)) + '</td></tr>'; });
     if (o.shipCost) h += '<tr><td>' + t('shipCost', 'Shipping you pay') + '</td><td class="n neg">\u2212' + money(o.shipCost) + '</td></tr>';
     h += '<tr class="tot"><td>' + t('payout', 'Estimated payout') + '</td><td class="n">' + money(f.payout) + '</td></tr>';
     h += '<tr><td>' + t('goods', 'Product & other costs') + '</td><td class="n neg">\u2212' + money(f.goods) + '</td></tr>';
@@ -252,7 +279,7 @@
     if (!last) return '';
     var lines = [document.title.split(' | ')[0], label(opts[state().sel] || {})];
     lines.push(t('subtotal', 'Item subtotal') + ': ' + money(last.f.b.net));
-    last.f.rows.forEach(function (r) { lines.push(r.label + ' (' + r.how + '): −' + money(r.amt)); });
+    last.f.rows.forEach(function (r) { lines.push(r.label + ' (' + r.how + '): ' + (r.amt < 0 ? '+' + money(-r.amt) : '−' + money(r.amt))); });
     lines.push(t('ui_res_fees', 'Total fees') + ': ' + money(last.f.total));
     lines.push(t('ui_res_payout', 'Payout') + ': ' + money(last.f.payout));
     lines.push(t('ui_res_profit', 'Profit') + ': ' + money(last.f.profit) + ' (' + fmt1(last.f.margin) + '%)');
@@ -378,7 +405,7 @@
         if (extra.tg) Object.assign(s.tg, extra.tg);
         if (extra.x) Object.assign(s.x, extra.x);
       }
-      var o = inputs ? Object.assign({ price: 0, qty: 1, sellerDisc: 0, buyerShip: 0, shipCost: 0, cost: 0, other: 0, affPct: 0, tax: 0, taxPct: 0, vol: 0, coef: 100 }, inputs) : readInputs();
+      var o = inputs ? Object.assign({ price: 0, qty: 1, sellerDisc: 0, buyerShip: 0, shipCost: 0, cost: 0, other: 0, affPct: 0, tax: 0, taxPct: 0, vol: 0, coef: 100, wt: 0, dimwt: 0 }, inputs) : readInputs();
       var rates = defaults(s, o);
       var f = compute(o, rates, s);
       f.fee = {}; f.rate = rates; f.rows.forEach(function (r) { f.fee[r.id] = r.amt; });

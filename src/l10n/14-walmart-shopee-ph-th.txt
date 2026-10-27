@@ -1,0 +1,713 @@
+@@ e23ebc0a70
+ms: Walmart New-Seller Savings {0}: Diskaun {1}–{2}% Yuran Rujukan, Diterangkan dengan Contoh
+ru: Walmart New-Seller Savings {0}: скидка {1}–{2}% на реферальный сбор, с примерами
+zh: Walmart New-Seller Savings {0}：推荐费减免 {1}–{2}%，附计算示例
+@@ 3ee438451b
+ms: Siapa yang layak untuk Walmart Marketplace New-Seller Savings pada {0}, cara peringkat yuran rujukan {1}%, {2}% dan {3}% serta had maksimum ${4} berfungsi, diskaun WFS dan contoh pengiraan.
+ru: Кто может участвовать в Walmart Marketplace New-Seller Savings в {0} году, как работают уровни скидки на реферальный сбор {1}%, {2}% и {3}% и лимит ${4}, скидка на WFS и примеры расчёта.
+zh: 谁能参加 {0} 年 Walmart Marketplace 新卖家优惠（New-Seller Savings）、推荐费减免 {1}%、{2}% 和 {3}% 三档及 ${4} 上限如何计算、WFS 折扣，以及计算示例。
+@@ 043df81009
+ms: Walmart New-Seller Savings {0}
+ru: Walmart New-Seller Savings {0}
+zh: Walmart 新卖家优惠 {0}
+@@ 6474065d0a
+ms: Walmart
+ru: Walmart
+zh: Walmart
+@@ c692420318
+ms: Indonesia, Vietnam &amp; lain-lain
+ru: Индонезия, Вьетнам и другие
+zh: 印度尼西亚、越南等
+@@ 0ffdd100bf
+ms: Yuran transaksi jualan (komisen)
+ru: Сбор с продажи (комиссия)
+zh: 销售交易费（佣金）
+@@ 3151559be7
+ms: Jadual Bukan Mall dan Mall baharu mengikut kategori, termasuk VAT
+ru: Новые таблицы для Non-Mall и Mall по категориям, с НДС
+zh: 按类目的非 Mall 与 Mall 新费率表，含增值税
+@@ 91310e4957
+ms: Yuran Sokongan Pertumbuhan Penjual
+ru: Сбор поддержки роста продавца
+zh: 卖家成长支持费
+@@ 92fcd27e7a
+ms: Senarai kategori dikemas kini: {0}% atau {1}% daripada harga item
+ru: Обновлён список категорий: {0}% или {1}% от цены товара
+zh: 类目清单更新：按商品价格的 {0}% 或 {1}% 收取
+@@ 515448ae6c
+ms: {0} Feb {1} – {2} Jan {3}
+ru: {0} февр. {1} – {2} янв. {3}
+zh: {1}年2月{0}日 – {3}年1月{2}日
+@@ 9e5ba2b2ab
+ms: Walmart AS
+ru: Walmart США
+zh: Walmart 美国站
+@@ d085987d70
+ms: New-Seller Savings {0}
+ru: New-Seller Savings {0}
+zh: 新卖家优惠 {0}
+@@ 976e9ca35e
+ms: Diskaun {0}% / {1}% / {2}% yuran rujukan mengikut peringkat GMV, sehingga ${3}
+ru: Скидка {0}% / {1}% / {2}% на реферальный сбор по уровню GMV, до ${3}
+zh: 按 GMV 档位推荐费减免 {0}% / {1}% / {2}%，上限 ${3}
+@@ 887fda74c7
+ms: Penyimpanan jangka panjang WFS
+ru: Долгосрочное хранение WFS
+zh: WFS 长期仓储费
+@@ e0edef011a
+ms: ${0} setiap kaki padu untuk {1}–{2} hari, ${3} melebihi {4} hari
+ru: ${0} за куб. фут при хранении {1}–{2} дней, ${3} — свыше {4} дней
+zh: 存放 {1}–{2} 天每立方英尺 ${0}，超过 {4} 天 ${3}
+@@ dc85185e94
+ms: Perubahan yuran marketplace bertarikh untuk TikTok Shop, Shopee, Walmart, Etsy, Ozon, Wildberries dan Yandex Market, dipautkan ke kalkulator yang menggunakannya.
+ru: Изменения комиссий TikTok Shop, Shopee, Walmart, Etsy, Ozon, Wildberries и Yandex Market с датами и ссылками на калькуляторы, которые их используют.
+zh: TikTok Shop、Shopee、Walmart、Etsy、Ozon、Wildberries 和 Yandex Market 的费用变动及生效日期，并链接到使用这些费率的计算器。
+@@ 54df85d492
+ms: SellerFee ialah laman web bebas yang menerbitkan kalkulator yuran dan keuntungan percuma untuk penjual di marketplace dalam talian, terutamanya penjual rentas sempadan. Kami meliputi TikTok Shop (Malaysia, Singapura, Thailand, Filipina, AS dan UK), Shopee (Malaysia, Singapura, Filipina, Thailand), Lazada Malaysia, Walmart Marketplace (AS), Etsy (global dan UK), serta marketplace Rusia Ozon, Wildberries dan Yandex Market.
+ru: SellerFee — независимый сайт с бесплатными калькуляторами комиссий и прибыли для продавцов на маркетплейсах, особенно для тех, кто торгует за рубежом. Мы охватываем TikTok Shop (Малайзия, Сингапур, Таиланд, Филиппины, США и Великобритания), Shopee (Малайзия, Сингапур, Филиппины, Таиланд), Lazada Малайзия, Walmart Marketplace (США), Etsy (весь мир и Великобритания), а также российские маркетплейсы Ozon, Wildberries и Yandex Market.
+zh: SellerFee 是一个独立网站，为在线上平台开店的卖家（尤其是跨境卖家）提供免费的费用与利润计算器。目前覆盖 TikTok Shop（马来西亚、新加坡、泰国、菲律宾、美国和英国）、Shopee（马来西亚、新加坡、菲律宾、泰国）、Lazada 马来西亚、Walmart Marketplace（美国）、Etsy（全球与英国），以及俄罗斯平台 Ozon、Wildberries 和 Yandex Market。
+@@ a636a2ee0c
+ms: Setiap kadar diambil daripada bantuan penjual platform itu sendiri — TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Walmart Marketplace Learn, Etsy Help, Ozon Seller Edu, arahan dan PDF КВВ Wildberries, bantuan Yandex Market. Setiap kalkulator memautkan sumbernya dan menunjukkan tarikh semakan terakhir kami. Jika platform menerbitkan kadar tetapi bukan formulanya, kami nyatakan begitu dan membolehkan kadar itu disunting. Kami tidak menerbitkan kalkulator sehingga kadarnya dapat disahkan daripada sumber rasmi.
+ru: Каждая ставка берётся из официальной справки площадки для продавцов: TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Walmart Marketplace Learn, Etsy Help, Ozon Seller Edu, инструкции и PDF КВВ Wildberries, справка Yandex Market. Каждый калькулятор ссылается на источники и показывает дату последней проверки. Если площадка публикует ставку, но не формулу, мы об этом пишем и делаем ставку редактируемой. Калькулятор появляется только тогда, когда ставки можно проверить по официальному источнику.
+zh: 每项费率都来自平台自己的卖家帮助文档——TikTok Shop Seller University、Shopee Seller Education Hub、Lazada Seller Center、Walmart Marketplace Learn、Etsy Help、Ozon Seller Edu、Wildberries 说明与 КВВ PDF、Yandex Market 帮助中心。每个计算器都附有来源链接和最近核对日期。如果平台只公布费率而未说明公式，我们会注明并允许修改该费率。费率无法通过官方来源核实之前，我们不会上线计算器。
+@@ 4e42737813
+ms: SellerFee tidak bergabung dengan TikTok, Shopee, Lazada, Walmart, Etsy, Ozon, Wildberries, Yandex atau mana-mana marketplace lain. Kami tidak menerima yuran penyenaraian atau komisen rujukan untuk keputusan kalkulator.
+ru: SellerFee не связан с TikTok, Shopee, Lazada, Walmart, Etsy, Ozon, Wildberries, Yandex или другими маркетплейсами. Мы не берём плату за размещение и не получаем вознаграждений за результаты калькуляторов.
+zh: SellerFee 与 TikTok、Shopee、Lazada、Walmart、Etsy、Ozon、Wildberries、Yandex 或任何其他平台均无关联。我们不会因计算结果收取上架费或推荐返佣。
+@@ c8a4eaa09d
+ms: TikTok, TikTok Shop, Etsy, Shopee, Lazada, Walmart, Amazon, eBay, Ozon, Wildberries dan Yandex Market ialah tanda dagangan pemilik masing-masing. SellerFee adalah bebas dan tidak bergabung dengan atau disokong oleh mereka.
+ru: TikTok, TikTok Shop, Etsy, Shopee, Lazada, Walmart, Amazon, eBay, Ozon, Wildberries и Yandex Market — товарные знаки их владельцев. SellerFee — независимый проект, не связанный с ними и не одобренный ими.
+zh: TikTok、TikTok Shop、Etsy、Shopee、Lazada、Walmart、Amazon、eBay、Ozon、Wildberries 和 Yandex Market 均为其各自所有者的商标。SellerFee 为独立网站，与上述公司无关联，也未获其背书。
+@@ 91cd52c065
+ms: Kalkulator Yuran Walmart Marketplace {0} (Yuran Rujukan, WFS & New-Seller Savings)
+ru: Калькулятор комиссий Walmart Marketplace {0} (реферальный сбор, WFS и New-Seller Savings)
+zh: Walmart Marketplace 费用计算器 {0}（推荐费、WFS 与新卖家优惠）
+@@ eb00ae2c0a
+ms: Kalkulator yuran dan keuntungan Walmart Marketplace (AS) percuma dengan jadual yuran rujukan rasmi, jalur harga dan peringkat, diskaun New-Seller Savings {0} serta yuran pemenuhan WFS mengikut berat.
+ru: Бесплатный калькулятор комиссий и прибыли Walmart Marketplace (США): официальная шкала реферального сбора с ценовыми порогами и ступенями, скидки New-Seller Savings {0} и сборы за фулфилмент WFS по весу.
+zh: 免费的 Walmart Marketplace（美国）费用与利润计算器：官方推荐费表（含价格档与分段费率）、{0} 新卖家优惠折扣，以及按重量计算的 WFS 履约费。
+@@ 88c89b89b2
+ms: Kalkulator Yuran Walmart Marketplace
+ru: Калькулятор комиссий Walmart Marketplace
+zh: Walmart Marketplace 费用计算器
+@@ 184f72f75d
+ms: Yuran rujukan mengikut kategori dengan jalur harga dan peringkat Walmart, diskaun New-Seller Savings {0} dan yuran pemenuhan WFS mengikut berat penghantaran. Lihat bayaran dan margin anda sebelum menyenaraikan produk.
+ru: Реферальный сбор по категориям с ценовыми порогами и ступенями Walmart, скидка New-Seller Savings {0} и сборы за фулфилмент WFS по отправочному весу. Узнайте выплату и маржу ещё до публикации товара.
+zh: 按类目计算推荐费（含 Walmart 的价格档与分段费率）、{0} 新卖家优惠折扣，以及按计费重量计算的 WFS 履约费。上架前就能看到回款与利润率。
+@@ 5180c0d471
+ms: Cara yuran Walmart Marketplace berfungsi
+ru: Как устроены сборы Walmart Marketplace
+zh: Walmart Marketplace 的费用构成
+@@ 3c24c4effb
+ms: Yuran Walmart Fulfillment Services
+ru: Сборы Walmart Fulfillment Services
+zh: Walmart 履约服务（WFS）费用
+@@ f7ffe1952a
+ms: Yuran rujukan mengikut kategori
+ru: Реферальный сбор по категориям
+zh: 各类目推荐费费率
+@@ 787f5a27d3
+ms: Adakah Walmart Marketplace mengenakan yuran bulanan?
+ru: Берёт ли Walmart Marketplace ежемесячную плату?
+zh: Walmart Marketplace 收月费吗？
+@@ 214febdc65
+ms: Tidak. Walmart Marketplace tiada langganan bulanan dan tiada yuran pendaftaran. Anda membayar yuran rujukan bagi setiap jualan, serta yuran WFS jika menggunakan pemenuhan Walmart.
+ru: Нет. У Walmart Marketplace нет ежемесячной подписки и платы за подключение. Вы платите реферальный сбор с каждой продажи и сборы WFS, если пользуетесь фулфилментом Walmart.
+zh: 不收。Walmart Marketplace 没有月度订阅费，也没有开店费。每笔销售收取推荐费；如果使用 Walmart 履约服务，另收 WFS 费用。
+@@ f6659a7089
+zh: 运费也要收推荐费吗？
+@@ c2c631679f
+ms: Ya. Walmart mengira yuran rujukan berdasarkan jumlah harga jualan, yang merangkumi harga item serta sebarang caj penghantaran, pengendalian dan pembalut hadiah yang dibayar oleh pelanggan.
+ru: Да. Walmart считает реферальный сбор от общей цены продажи: это цена товара плюс оплаченные покупателем доставка, обработка и подарочная упаковка.
+zh: 要。Walmart 按销售总价计算推荐费，销售总价包括商品价格以及顾客支付的运费、处理费和礼品包装费。
+@@ 46974c087e
+ms: Bagaimanakah diskaun New-Seller Savings {0} berfungsi?
+ru: Как работает скидка New-Seller Savings {0}?
+zh: {0} 年新卖家优惠折扣怎么算？
+@@ 85b0be46ec
+ms: Penjual kali pertama yang mula berjual selepas {0} Februari {1} dan mendaftar mendapat diskaun {2}%, {3}% atau {4}% pada yuran rujukan bergantung pada GMV sejak pelancaran, sehingga {5} Januari {6} atau had maksimum ${7}. Pengguna WFS yang layak juga mendapat pulangan {8}% daripada yuran pemenuhan, sehingga ${9}.
+ru: Новые продавцы, начавшие продажи после {0} февраля {1} года и подавшие заявку, получают скидку {2}%, {3}% или {4}% на реферальный сбор в зависимости от GMV с момента запуска — до {5} января {6} года или до лимита ${7}. Подходящие продавцы на WFS также получают обратно {8}% сборов за фулфилмент, до ${9}.
+zh: {1}年2月{0}日之后首次上线并报名的新卖家，按上线以来的 GMV 享受推荐费减免 {2}%、{3}% 或 {4}%，截至 {6}年1月{5}日或减免总额达到 ${7} 上限为止。符合条件的 WFS 卖家还可获得履约费 {8}% 返还，最高 ${9}。
+@@ 917551b7f2
+ms: Bagaimanakah berat penghantaran WFS dikira?
+ru: Как считается отправочный вес WFS?
+zh: WFS 计费重量怎么算？
+@@ 88f184076a
+ms: Di bawah {0} lb, Walmart menambah {1} lb pada berat unit dan membundarkan ke atas. Mulai {2} lb, Walmart mengambil yang lebih besar antara berat unit dan berat dimensi (P × L × T ÷ {3}) dan membundarkan ke paun seterusnya.
+ru: Если вес меньше {0} фунта, Walmart добавляет к весу единицы {1} фунта и округляет вверх. От {2} фунта берётся больший из фактического и объёмного веса (Д × Ш × В ÷ {3}) с округлением вверх до целого фунта.
+zh: 不足 {0} 磅时，Walmart 在单件重量上加 {1} 磅后向上取整。{2} 磅及以上，取单件重量与体积重（长 × 宽 × 高 ÷ {3}）中的较大者，向上取整到整磅。
+@@ fe0afd84ca
+ms: Mengapakah penyata saya menunjukkan kadar rujukan yang berbeza?
+ru: Почему в отчёте другая ставка реферального сбора?
+zh: 为什么结算单上的推荐费比例不一样？
+@@ 06ce0e111b
+ms: Sesetengah kategori mungkin menggunakan kadar kontrak atau kadar yang dikemas kini. Setiap kadar dalam kalkulator boleh disunting, jadi masukkan kadar komisen yang ditunjukkan dalam penyata Seller Center anda.
+ru: Для некоторых категорий может действовать договорная или обновлённая ставка. Любую ставку в калькуляторе можно изменить — укажите ставку комиссии из отчётов в Seller Center.
+zh: 部分类目可能适用合同费率或已更新的费率。计算器中的每个费率都可以修改，请填写 Seller Center 结算单中显示的推荐费比例。
+@@ f5a4e4b393
+ms: Walmart Marketplace (AS) tidak mengenakan langganan bulanan atau yuran pendaftaran. Bagi setiap jualan anda membayar <b1>yuran rujukan</b1>: peratusan daripada jumlah harga jualan, iaitu harga item serta sebarang caj penghantaran, pengendalian dan pembalut hadiah yang dibayar pelanggan. Walmart memotongnya daripada bayaran anda. Jika anda menggunakan Walmart Fulfillment Services (WFS), yuran pemenuhan dan penyimpanan ditambah.
+ru: Walmart Marketplace (США) не берёт ни ежемесячной подписки, ни платы за подключение. С каждой продажи вы платите <b1>реферальный сбор</b1> — процент от общей цены продажи, то есть цены товара плюс оплаченных покупателем доставки, обработки и подарочной упаковки. Walmart удерживает его из выплаты. Если вы пользуетесь Walmart Fulfillment Services (WFS), добавляются сборы за фулфилмент и хранение.
+zh: Walmart Marketplace（美国）不收月度订阅费，也不收开店费。每笔销售收取<b1>推荐费</b1>：按销售总价的一定比例计算，销售总价包括商品价格以及顾客支付的运费、处理费和礼品包装费。Walmart 会从回款中直接扣除。如果使用 Walmart 履约服务（WFS），另加履约费和仓储费。
+@@ 6327da72ea
+ms: {0}. Yuran rujukan
+ru: {0}. Реферальный сбор
+zh: {0}. 推荐费
+@@ 2defde314c
+ms: Kebanyakan kategori membayar kadar tetap, biasanya {0}%. Sesetengah kategori menggunakan salah satu daripada dua peraturan lain, dan kalkulator menggunakan kedua-duanya secara automatik:
+ru: В большинстве категорий ставка фиксированная, обычно {0}%. В некоторых действует одно из двух других правил, и калькулятор применяет их автоматически:
+zh: 大多数类目按固定比例收取，通常为 {0}%。部分类目采用另外两种规则之一，计算器会自动套用：
+@@ fa44094b22
+ms: <b1>Jalur harga penuh.</b1> Satu kadar dikenakan pada keseluruhan item, bergantung pada jumlah harga jualannya. Contohnya, Beauty, Health &amp; Personal Care membayar {0}% jika item dijual pada ${1} atau kurang dan {2}% melebihi ${3}.
+ru: <b1>Пороги по всей цене.</b1> Одна ставка применяется ко всему товару в зависимости от его общей цены продажи. Например, в категории Beauty, Health &amp; Personal Care — {0}%, если товар стоит ${1} или меньше, и {2}% дороже ${3}.
+zh: <b1>整价分档。</b1>按商品销售总价落在哪一档，整件商品适用一个费率。例如 Beauty, Health &amp; Personal Care 类目：售价 ${1} 及以下按 {0}%，高于 ${3} 按 {2}%。
+@@ b9b637f04d
+ms: <b1>Peringkat bahagian.</b1> Satu kadar dikenakan pada bahagian harga sehingga satu ambang dan kadar kedua pada bahagian yang melebihinya. Contohnya, Electronics Accessories membayar {0}% pada ${1} pertama dan {2}% pada bakinya.
+ru: <b1>Ступени по части цены.</b1> Одна ставка применяется к части цены до порога, другая — к части выше него. Например, в категории Electronics Accessories — {0}% с первых ${1} и {2}% с остатка.
+zh: <b1>分段计费。</b1>价格中不超过门槛的部分按一个费率，超出部分按另一个费率。例如 Electronics Accessories 类目：前 ${1} 按 {0}%，其余部分按 {2}%。
+@@ 17c74d3adb
+ms: Sesetengah sumber sekunder melaporkan bahawa Walmart menurunkan kadar dalam beberapa kategori mulai Jun {0}, tetapi jadual yang diterbitkan Walmart di atas tidak berubah. Setiap kadar dalam kalkulator boleh disunting, jadi semak lajur kadar komisen dalam penyata pembayaran Seller Center anda dan masukkan kadar anda sendiri jika berbeza.
+ru: Некоторые сторонние источники сообщают, что с июня {0} года Walmart снизил ставки в ряде категорий, но опубликованная Walmart шкала выше не изменилась. Любую ставку в калькуляторе можно изменить: сверьтесь с колонкой ставки комиссии в платёжных отчётах Seller Center и укажите свою ставку, если она отличается.
+zh: 有第三方来源称 Walmart 自 {0} 年 6 月起下调了若干类目的费率，但 Walmart 官方公布的上述费率表并未改变。计算器中的每个费率都可修改：请核对 Seller Center 结算单中的推荐费比例一栏，如有不同请填入你自己的费率。
+@@ 7a3f951423
+ms: Penjual kali pertama yang mula berjual selepas {0} Februari {1} dan mendaftar melalui borang Seller Center mendapat diskaun pada yuran rujukan. Diskaun bergantung pada GMV (nilai barangan kasar) sejak pelancaran:
+ru: Новые продавцы, начавшие продажи после {0} февраля {1} года и подавшие заявку через форму в Seller Center, получают скидку на реферальный сбор. Размер скидки зависит от GMV (валового объёма продаж) с момента запуска:
+zh: {1}年2月{0}日之后首次上线、并通过 Seller Center 表单报名的新卖家可享受推荐费减免。减免比例取决于上线以来的 GMV（商品交易总额）：
+@@ f9b8e3abca
+ms: GMV sejak pelancaran
+ru: GMV с момента запуска
+zh: 上线以来 GMV
+@@ f9c2d09de2
+ms: Diskaun yuran rujukan
+ru: Скидка на реферальный сбор
+zh: 推荐费减免
+@@ f28590304d
+ms: Melebihi ${0}
+ru: Свыше ${0}
+zh: 超过 ${0}
+@@ 887c535bdb
+ms: Program ini berjalan dari {0} Februari {1} hingga {2} Januari {3}. Diskaun berhenti pada {4} Januari {5} atau apabila anda mencapai had maksimum ${6}, yang mana lebih awal. Penjual yang menyertai antara {7} Februari dan {8} April {9} tidak perlu mendaftar dengan klik. Penjual layak yang menggunakan WFS juga mendapat pulangan {10}% daripada yuran pemenuhan mereka, sehingga ${11}. Tawaran ini turut merangkumi insentif lain (rebat iklan carian tajaan dan kredit Walmart Connect); ia tidak mengubah yuran setiap pesanan, jadi kalkulator tidak memasukkannya. Pilih peringkat anda dalam kalkulator untuk melihat diskaun sebagai baris kredit berasingan.
+ru: Программа действует с {0} февраля {1} года по {2} января {3} года. Скидки прекращаются {4} января {5} года или при достижении лимита ${6} — в зависимости от того, что наступит раньше. Продавцам, присоединившимся с {7} февраля по {8} апреля {9} года, не нужно подавать заявку. Подходящие продавцы на WFS также получают обратно {10}% сборов за фулфилмент, до ${11}. В предложение входят и другие бонусы (возврат части расходов на рекламу в поиске и кредиты Walmart Connect); они не меняют сборы с заказа, поэтому калькулятор их не учитывает. Выберите свой уровень в калькуляторе, чтобы увидеть скидку отдельной строкой.
+zh: 活动期为 {1}年2月{0}日至 {3}年1月{2}日。减免在 {5}年1月{4}日结束，或在减免总额达到 ${6} 上限时提前结束，以先到者为准。{9}年2月{7}日至4月{8}日之间入驻的卖家无需点击报名。符合条件的 WFS 卖家还可获得履约费 {10}% 返还，最高 ${11}。该优惠还包括其他激励（搜索广告返利和 Walmart Connect 广告额度），它们不影响每笔订单的费用，因此计算器未计入。在计算器中选择你的档位，减免会作为单独的抵扣行显示。
+@@ a9776d4895
+ms: WFS mengenakan yuran pemenuhan bagi setiap unit, berdasarkan berat penghantaran. Di bawah {0} lb, Walmart menambah {1} lb untuk pembungkusan pada berat unit dan membundarkan ke atas. Dari {2} lb hingga {3} lb, berat penghantaran ialah yang lebih besar antara berat unit dan berat dimensi (panjang × lebar × tinggi dalam inci ÷ {4}), dibundarkan ke paun penuh seterusnya. Yuran asas standard, berkuat kuasa sejak April {5}, ialah:
+ru: WFS берёт сбор за фулфилмент с каждой единицы в зависимости от отправочного веса. Если вес меньше {0} фунта, Walmart добавляет к весу единицы {1} фунта на упаковку и округляет вверх. От {2} до {3} фунтов отправочный вес — больший из фактического и объёмного (длина × ширина × высота в дюймах ÷ {4}) с округлением вверх до целого фунта. Базовые ставки, действующие с апреля {5} года:
+zh: WFS 按计费重量对每件商品收取履约费。不足 {0} 磅时，Walmart 在单件重量上加 {1} 磅包装重量后向上取整。{2} 至 {3} 磅之间，计费重量取单件重量与体积重（长 × 宽 × 高，英寸，÷ {4}）中的较大者，向上取整到整磅。自 {5} 年 4 月起执行的标准基础费如下：
+@@ 9f02d2af48
+ms: Berat penghantaran
+ru: Отправочный вес
+zh: 计费重量
+@@ 3145ae8489
+ms: Yuran seunit
+ru: Сбор за единицу
+zh: 每件费用
+@@ b9f5ccd3a8
+ms: Sehingga {0} lb
+ru: До {0} фунта
+zh: 不超过 {0} 磅
+@@ 71261e5d7c
+ms: {0} lb
+ru: {0} фунта
+zh: {0} 磅
+@@ 37e2f6bfa4
+ms: {0}–{1} lb
+ru: {0}–{1} фунтов
+zh: {0}–{1} 磅
+@@ d2be58b504
+ms: ${0} + ${1} setiap lb melebihi {2} lb
+ru: ${0} + ${1} за каждый фунт свыше {2}
+zh: ${0} + 超过 {2} 磅部分每磅 ${1}
+@@ 9c2ebc01bf
+ms: Jadual yang diterbitkan Walmart menunjukkan yuran permulaan yang lebih rendah untuk {0}–{1} lb (${2}) berbanding {3}–{4} lb (${5}). Kalkulator menggunakan jadual itu tepat seperti yang diterbitkan.
+ru: В опубликованной таблице Walmart начальный сбор для {0}–{1} фунтов (${2}) ниже, чем для {3}–{4} фунтов (${5}). Калькулятор использует таблицу точно в опубликованном виде.
+zh: Walmart 公布的费率表中，{0}–{1} 磅的起步费（${2}）低于 {3}–{4} 磅（${5}）。计算器完全按公布的表格计算。
+@@ e808ccebf0
+ms: Contoh {0}: barang rumah ${1} dihantar oleh penjual
+ru: Пример {0}: товар для дома за ${1}, доставка силами продавца
+zh: 示例 {0}：${1} 家居商品，卖家自发货
+@@ e8a2bc5510
+ms: Home, Kitchen, Decor &amp; Garden pada {0}%, kos produk ${1}, tiada caj penghantaran kepada pelanggan.
+ru: Home, Kitchen, Decor &amp; Garden по ставке {0}%, себестоимость ${1}, доставка для покупателя бесплатная.
+zh: Home, Kitchen, Decor &amp; Garden 类目，费率 {0}%，商品成本 ${1}，不向顾客收运费。
+@@ 46c8795e3f
+zh: 推荐费（{0}%）
+@@ c9dec0a847
+ms: Untung ${0} (margin {1}%).
+ru: Прибыль ${0} (маржа {1}%).
+zh: 利润 ${0}（利润率 {1}%）。
+@@ 5540a97105
+ms: Contoh {0}: item yang sama dengan New-Seller Savings (peringkat {1}%)
+ru: Пример {0}: тот же товар со скидкой New-Seller Savings (уровень {1}%)
+zh: 示例 {0}：同一商品享受新卖家优惠（{1}% 档）
+@@ b430176ec0
+ms: Diskaun New-Seller Savings ({0}%)
+ru: Скидка New-Seller Savings ({0}%)
+zh: 新卖家优惠折扣（{0}%）
+@@ 14e303c4e6
+ms: Yuran rujukan turun daripada ${0} kepada ${1}, jadi untung meningkat kepada ${2}.
+ru: Реферальный сбор снижается с ${0} до ${1}, а прибыль растёт до ${2}.
+zh: 推荐费从 ${0} 降至 ${1}，利润升至 ${2}。
+@@ 2f6438ad6a
+ms: Contoh {0}: item yang sama dipenuhi oleh WFS ({1} lb)
+ru: Пример {0}: тот же товар на фулфилменте WFS ({1} фунта)
+zh: 示例 {0}：同一商品使用 WFS 履约（{1} 磅）
+@@ 7518b015a9
+ms: Unit {0} lb dibundarkan ke {1} lb, jadi yuran asasnya ${2}.
+ru: Единица весом {0} фунта округляется до {1} фунтов, поэтому базовый сбор — ${2}.
+zh: {0} 磅的商品向上取整为 {1} 磅，基础费为 ${2}。
+@@ 1e324d0d6a
+ms: Yuran pemenuhan WFS
+ru: Сбор за фулфилмент WFS
+zh: WFS 履约费
+@@ 4c58d1216c
+ms: Untung ${0}. Jika anda menghantar sendiri, masukkan kos penghantaran anda sendiri sebelum membandingkan kedua-duanya.
+ru: Прибыль ${0}. Если отправляете сами, учтите собственные расходы на доставку, прежде чем сравнивать два варианта.
+zh: 利润 ${0}。如果自己发货，比较两种方式前请把自己的运费也算进去。
+@@ 55b6275527
+ms: Contoh {0}: kemeja-T ${1} dipenuhi oleh WFS ({2} lb)
+ru: Пример {0}: футболка за ${1} на фулфилменте WFS ({2} фунта)
+zh: 示例 {0}：${1} T 恤，使用 WFS 履约（{2} 磅）
+@@ adbb1d66a8
+ms: Pakaian yang dijual pada ${0} atau kurang membayar yuran rujukan {1}%. {2} lb + {3} lb dibundarkan ke {4} lb, dan surcaj pakaian ditambah.
+ru: Для одежды дешевле ${0} включительно реферальный сбор — {1}%. {2} + {3} фунта округляются до {4} фунта, и добавляется надбавка за одежду.
+zh: 售价 ${0} 及以下的服装推荐费为 {1}%。{2} 磅 + {3} 磅向上取整为 {4} 磅，并加收服装附加费。
+@@ e05be1469f
+ms: Surcaj pakaian WFS
+ru: Надбавка WFS за одежду
+zh: WFS 服装附加费
+@@ 0af22f4c48
+ms: Contoh {0}: aksesori elektronik ${1}, peringkat bahagian
+ru: Пример {0}: аксессуар для электроники за ${1}, ступенчатая ставка
+zh: 示例 {0}：${1} 电子配件，分段计费
+@@ 62fb91bf75
+ms: {0}% pada ${1} pertama (${2}) ditambah {3}% pada baki ${4} (${5}) memberikan yuran rujukan ${6}.
+ru: {0}% с первых ${1} (${2}) плюс {3}% с оставшихся ${4} (${5}) — реферальный сбор ${6}.
+zh: 前 ${1} 按 {0}%（${2}），其余 ${4} 按 {3}%（${5}），推荐费合计 ${6}。
+@@ 527183391c
+ms: Semakan: halaman harga Walmart mengira item {0} lb dengan yuran WFS ${1}. Kalkulator memberikan ${2}.
+ru: Проверка: на странице тарифов Walmart разобран товар весом {0} фунтов со сбором WFS ${1}. Калькулятор даёт ${2}.
+zh: 核对：Walmart 定价页面以 {0} 磅商品为例，WFS 费用为 ${1}。计算器结果为 ${2}。
+@@ 023ab121a9
+ms: Daripada jadual yuran rujukan Walmart untuk kategori kontrak, dikemas kini {0} Mac {1}. Kadar dikenakan pada jumlah harga jualan.
+ru: По шкале реферального сбора Walmart для категорий по договору, обновлённой {0} марта {1} года. Ставки применяются к общей цене продажи.
+zh: 数据来自 Walmart 合同类目推荐费表，{1}年3月{0}日更新。费率按销售总价计算。
+@@ accc5a1fb8
+ms: {0}% sehingga ${1}; {2}% sehingga ${3}; {4}% melebihi ${5} (harga penuh)
+ru: {0}% до ${1}; {2}% до ${3}; {4}% свыше ${5} (на всю цену)
+zh: ${1} 及以下 {0}%；${3} 及以下 {2}%；高于 ${5} {4}%（按整价）
+@@ 7b0c5fb113
+ms: {0}% pada bahagian sehingga ${1}; {2}% pada bahagian yang melebihi
+ru: {0}% с части цены до ${1}; {2}% с части свыше
+zh: 不超过 ${1} 的部分 {0}%；超出部分 {2}%
+@@ dee736b3ba
+ms: {0}% sehingga ${1}; {2}% melebihi ${3} (harga penuh)
+ru: {0}% до ${1}; {2}% свыше ${3} (на всю цену)
+zh: ${1} 及以下 {0}%；高于 ${3} {2}%（按整价）
+@@ 1e3dd8258d
+ms: Kalkulator Yuran Shopee Filipina {0} (Komisen, TX {1}%, Yuran Penghantaran)
+ru: Калькулятор сборов Shopee Филиппины {0} (комиссия, транзакционный сбор {1}%, сбор за доставку)
+zh: Shopee 菲律宾费用计算器 {0}（佣金、{1}% 交易手续费、平台运费）
+@@ 21276102f4
+ms: Kalkulator yuran dan keuntungan Shopee Filipina percuma dengan komisen Marketplace dan Mall termasuk VAT, yuran transaksi {0}%, Yuran Penghantaran Platform, Yuran Sokongan Pertumbuhan Penjual dan Yuran Pemprosesan Pesanan ₱{1}.
+ru: Бесплатный калькулятор сборов и прибыли Shopee Филиппины: комиссия Marketplace и Mall с НДС, транзакционный сбор {0}%, сбор платформы за доставку, сбор поддержки роста продавца и сбор за обработку заказа ₱{1}.
+zh: 免费的 Shopee 菲律宾费用与利润计算器：含增值税的 Marketplace 与 Mall 佣金、{0}% 交易手续费、平台运费、卖家成长支持费和 ₱{1} 订单处理费。
+@@ 4b106cea30
+ms: Kalkulator Yuran Shopee Filipina
+ru: Калькулятор сборов Shopee Филиппины
+zh: Shopee 菲律宾费用计算器
+@@ 8461e1c749
+ms: Komisen Marketplace dan Mall termasuk VAT, yuran transaksi {0}%, Yuran Penghantaran Platform dengan had ₱{1} seitem, Yuran Sokongan Pertumbuhan Penjual dan yuran pesanan ₱{2}, setiap satu dibundarkan ke peso terdekat seperti yang dilakukan Shopee.
+ru: Комиссия Marketplace и Mall с НДС, транзакционный сбор {0}%, сбор платформы за доставку не больше ₱{1} за товар, сбор поддержки роста продавца и сбор за заказ ₱{2} — каждый округляется до песо, как это делает Shopee.
+zh: 含增值税的 Marketplace 与 Mall 佣金、{0}% 交易手续费、每件封顶 ₱{1} 的平台运费、卖家成长支持费和 ₱{2} 订单处理费，每项费用都像 Shopee 一样四舍五入到整比索。
+@@ 78171ba886
+ms: Cara yuran Shopee Filipina berfungsi
+ru: Как устроены сборы Shopee Филиппины
+zh: Shopee 菲律宾的费用构成
+@@ a2b92b78ec
+ms: Komisen mengikut kategori
+ru: Комиссия по категориям
+zh: 各类目佣金
+@@ 4fa57a70d6
+zh: 守住利润率
+@@ f0fc8f965b
+ms: Adakah yuran Shopee Filipina termasuk VAT?
+ru: Включают ли сборы Shopee Филиппины НДС?
+zh: Shopee 菲律宾的费用含增值税吗？
+@@ 467c5ad1fd
+ms: Ya. Shopee PH menerbitkan komisen, yuran transaksi, yuran penghantaran platform dan yuran lain sebagai termasuk VAT, dan membundarkan setiap yuran ke peso terdekat.
+ru: Да. Shopee PH публикует комиссию, транзакционный сбор, сбор платформы за доставку и прочие сборы с НДС и округляет каждый сбор до песо.
+zh: 含。Shopee PH 公布的佣金、交易手续费、平台运费等各项费用均已含增值税，且每项费用四舍五入到整比索。
+@@ c7f4c4b9e1
+ms: Berapakah yuran transaksi Shopee PH?
+ru: Какой транзакционный сбор у Shopee PH?
+zh: Shopee PH 的交易手续费是多少？
+@@ a2061ea636
+ms: {0}% daripada jumlah yang dibayar pembeli, termasuk penghantaran. Pesanan ansuran SPayLater dikenakan tambahan {1}–{2}%.
+ru: {0}% от суммы, которую платит покупатель, включая доставку. Для заказов в рассрочку через SPayLater — дополнительно {1}–{2}%.
+zh: 买家实付总额（含运费）的 {0}%。使用 SPayLater 分期的订单另加 {1}–{2}%。
+@@ a7ec6e0a8f
+ms: Apakah Yuran Penghantaran Platform?
+ru: Что такое сбор платформы за доставку?
+zh: 什么是平台运费？
+@@ f6cb615aa3
+ms: {0}% daripada harga item selepas diskaun untuk penjual Marketplace, atau {1}% untuk Mall, sehingga ₱{2} seitem, bagi pesanan yang dihantar melalui logistik yang disokong Shopee.
+ru: {0}% от цены товара после скидок для продавцов Marketplace или {1}% для Mall, не больше ₱{2} за товар, — для заказов, отправленных через логистику, поддерживаемую Shopee.
+zh: 对使用 Shopee 支持的物流发货的订单收取：Marketplace 卖家按折后商品价格的 {0}%，Mall 卖家按 {1}%，每件最高 ₱{2}。
+@@ bfb424764b
+zh: 新卖家要付佣金吗？
+@@ fa493f6404
+ms: Tidak. Penjual baharu tidak membayar komisen, Yuran Sokongan Pertumbuhan Penjual atau Yuran Pemprosesan Pesanan untuk {0} hari pertama mereka. Yuran transaksi dan Yuran Penghantaran Platform masih dikenakan.
+ru: Нет. Первые {0} дней новые продавцы не платят комиссию, сбор поддержки роста продавца и сбор за обработку заказа. Транзакционный сбор и сбор платформы за доставку взимаются.
+zh: 不用。新卖家在前 {0} 天免收佣金、卖家成长支持费和订单处理费，但交易手续费和平台运费照常收取。
+@@ 3e8a1350a8
+ms: Bilakah Yuran Pemprosesan Pesanan ₱{0} dikecualikan?
+ru: Когда не взимается сбор за обработку заказа ₱{0}?
+zh: ₱{0} 订单处理费什么时候免收？
+@@ 57f283eaf6
+ms: Pada {0} pesanan pertama anda setiap bulan, dan dalam tempoh {1} hari pertama penjual baharu.
+ru: На первые {0} заказов каждого месяца и в первые {1} дней работы нового продавца.
+zh: 每月前 {0} 笔订单免收；新卖家前 {1} 天也免收。
+@@ 001f5e19ba
+ms: Shopee PH menerbitkan setiap yuran penjual sebagai <b1>termasuk VAT</b1> dan membundarkan setiap yuran ke peso terdekat. Kalkulator melakukan perkara yang sama. Yuran berikut dikenakan pada pesanan yang selesai:
+ru: Shopee PH публикует все сборы для продавцов <b1>с НДС</b1> и округляет каждый сбор до песо. Калькулятор делает так же. С выполненного заказа взимаются следующие сборы:
+zh: Shopee PH 公布的所有卖家费用均<b1>已含增值税</b1>，且每项费用四舍五入到整比索，计算器的做法相同。已完成订单会收取以下费用：
+@@ 3535aae9c1
+zh: {0}. 佣金
+@@ d0947823c4
+ms: Komisen ialah kadar kategori yang dikenakan pada harga item selepas diskaun penjual. Jadual Marketplace terpakai sejak {0} Jun {1}, dengan kadar dari {2}% (telefon bimbit, kamera) hingga {3}% (pakaian, rumah &amp; kediaman, sukan). Mall menggunakan jadual berasingan yang lebih terperinci yang terpakai sejak {4} Januari {5}. Penjual baharu tidak membayar komisen untuk {6} hari pertama mereka.
+ru: Комиссия — это ставка категории, применяемая к цене товара после скидок продавца. Таблица Marketplace действует с {0} июня {1} года, ставки от {2}% (телефоны, камеры) до {3}% (одежда, дом, спорт). Для Mall действует отдельная, более подробная таблица — с {4} января {5} года. Первые {6} дней новые продавцы комиссию не платят.
+zh: 佣金按类目费率乘以扣除卖家折扣后的商品价格计算。Marketplace 费率表自 {1}年6月{0}日起执行，费率从 {2}%（手机、相机）到 {3}%（服装、家居、运动）。Mall 使用另一张更细的费率表，自 {5}年1月{4}日起执行。新卖家前 {6} 天免佣金。
+@@ edf2f43b57
+zh: {0}. 交易手续费
+@@ fd305742d3
+ms: {0}% daripada jumlah yang dibayar pembeli, termasuk penghantaran. Jika pembeli menggunakan ansuran SPayLater, tambahan {1}–{2}% dikenakan. Untuk memodelkannya, sunting kadar yuran transaksi.
+ru: {0}% от суммы, которую платит покупатель, включая доставку. Если покупатель платит в рассрочку через SPayLater, добавляется {1}–{2}%. Чтобы это учесть, измените ставку транзакционного сбора.
+zh: 买家实付总额（含运费）的 {0}%。买家使用 SPayLater 分期时另加 {1}–{2}%，如需计算请修改交易手续费费率。
+@@ 65ecb6777b
+ms: {0}. Yuran Penghantaran Platform
+ru: {0}. Сбор платформы за доставку
+zh: {0}. 平台运费
+@@ 96d699fafa
+ms: {0}% daripada harga item selepas diskaun untuk penjual Marketplace, atau {1}% untuk Mall, sehingga ₱{2} seitem. Ia dikenakan pada pesanan yang dihantar melalui logistik yang disokong Shopee.
+ru: {0}% от цены товара после скидок для продавцов Marketplace или {1}% для Mall, не больше ₱{2} за товар. Взимается с заказов, отправленных через логистику, поддерживаемую Shopee.
+zh: Marketplace 卖家按折后商品价格的 {0}%，Mall 卖家按 {1}%，每件最高 ₱{2}。适用于使用 Shopee 支持的物流发货的订单。
+@@ 1c755885db
+ms: {0}. Yuran Sokongan Pertumbuhan Penjual
+ru: {0}. Сбор поддержки роста продавца
+zh: {0}. 卖家成长支持费
+@@ 1e5b365ec1
+ms: {0}% atau {1}% daripada harga item selepas diskaun, bergantung pada kategori (senarai dikemas kini {2} Oktober {3}). Penjual baharu dikecualikan untuk {4} hari pertama mereka.
+ru: {0}% или {1}% от цены товара после скидок в зависимости от категории (список обновлён {2} октября {3} года). Первые {4} дней новые продавцы его не платят.
+zh: 按类目收取折后商品价格的 {0}% 或 {1}%（类目清单 {3}年10月{2}日更新）。新卖家前 {4} 天免收。
+@@ 8e6e65134d
+zh: {0}. 订单处理费
+@@ 735e23eb48
+ms: ₱{0} bagi setiap pesanan yang selesai. Anda tidak membayarnya untuk {1} pesanan pertama setiap bulan, atau dalam tempoh {2} hari pertama penjual baharu.
+ru: ₱{0} с каждого выполненного заказа. Он не взимается с первых {1} заказов каждого месяца и в первые {2} дней работы нового продавца.
+zh: 每笔已完成订单 ₱{0}。每月前 {1} 笔订单免收，新卖家前 {2} 天也免收。
+@@ 1664232dee
+ms: {0}. Program pilihan
+ru: {0}. Дополнительные программы
+zh: {0}. 可选活动项目
+@@ 64a1149c72
+ms: Jika anda menyertai Mega Discount Voucher, yuran perkhidmatan {0}% ditambah, sehingga ₱{1} seitem, dengan tambahan {2}% pada hari kempen besar. Live Xtra ({3}%, sehingga ₱{4}) dan prapesanan ({5}%) mempunyai yuran sendiri. Masukkannya di bawah kos lain atau sunting kadar.
+ru: Участие в Mega Discount Voucher добавляет сервисный сбор {0}%, не больше ₱{1} за товар, и ещё {2}% в дни крупных распродаж. У Live Xtra ({3}%, до ₱{4}) и предзаказа ({5}%) свои сборы. Укажите их в прочих расходах или измените ставку.
+zh: 参加 Mega Discount Voucher 会加收 {0}% 服务费，每件最高 ₱{1}，大促日另加 {2}%。Live Xtra（{3}%，最高 ₱{4}）和预售（{5}%）各有费用，请填入“其他成本”或修改费率。
+@@ c8d3786c8f
+ms: Contoh {0}: contoh pengiraan Shopee sendiri (Mall, telefon bimbit)
+ru: Пример {0}: расчёт из справки самого Shopee (Mall, мобильный телефон)
+zh: 示例 {0}：Shopee 官方示例（Mall，手机）
+@@ 67cad8d1de
+ms: Harga ₱{0} dengan diskaun penjual ₱{1}, jadi harga item selepas diskaun ialah ₱{2}. Pembeli membayar ₱{3} termasuk penghantaran ₱{4}, dan penjual menyertai Mega Discount Voucher. Komisen ialah {5}%.
+ru: Цена ₱{0}, скидки продавца ₱{1}, значит цена товара после скидок — ₱{2}. Покупатель платит ₱{3}, включая ₱{4} за доставку; продавец участвует в Mega Discount Voucher. Комиссия {5}%.
+zh: 售价 ₱{0}，卖家折扣 ₱{1}，折后商品价格 ₱{2}。买家支付 ₱{3}（含 ₱{4} 运费），卖家参加了 Mega Discount Voucher。佣金 {5}%。
+@@ 33d6d0ed10
+ms: Yuran komisen ({0}%)
+ru: Комиссия ({0}%)
+zh: 佣金（{0}%）
+@@ 34562ac842
+ms: Yuran Penghantaran Platform ({0}%)
+ru: Сбор платформы за доставку ({0}%)
+zh: 平台运费（{0}%）
+@@ cf56064f7f
+ms: Yuran Sokongan Pertumbuhan Penjual ({0}%)
+ru: Сбор поддержки роста продавца ({0}%)
+zh: 卖家成长支持费（{0}%）
+@@ 38fb518515
+ms: Yuran perkhidmatan Mega Discount Voucher ({0}%)
+ru: Сервисный сбор Mega Discount Voucher ({0}%)
+zh: Mega Discount Voucher 服务费（{0}%）
+@@ 3eb1072274
+ms: Penghantaran ₱{0} diserahkan kepada kurier, jadi kami juga memasukkannya sebagai kos penghantaran. Pendapatan bersih: ₱{1}, sama dengan keputusan ₱{2} yang diterbitkan Shopee.
+ru: ₱{0} за доставку уходят курьеру, поэтому мы вводим их и как расходы на доставку. Чистый доход: ₱{1} — совпадает с опубликованным Shopee результатом ₱{2}.
+zh: ₱{0} 运费交给物流商，所以同时填入“你支付的运费”。净收入：₱{1}，与 Shopee 公布的结果 ₱{2} 一致。
+@@ 9aa2dda079
+ms: Contoh {0}: gaun ₱{1}, Marketplace
+ru: Пример {0}: платье за ₱{1}, Marketplace
+zh: 示例 {0}：₱{1} 连衣裙，Marketplace
+@@ 94cf3a5693
+ms: Women Clothes pada {0}%, kos produk ₱{1}, tiada penghantaran dibayar oleh pembeli.
+ru: Women Clothes по ставке {0}%, себестоимость ₱{1}, покупатель за доставку не платит.
+zh: Women Clothes 类目，费率 {0}%，商品成本 ₱{1}，买家不付运费。
+@@ 81297902b2
+ms: Untung ₱{0} (margin {1}%). Dalam {2} hari pertama, pengecualian penjual baharu menghapuskan komisen, Yuran Sokongan Pertumbuhan Penjual dan Yuran Pemprosesan Pesanan, jadi yuran turun kepada ₱{3}.
+ru: Прибыль ₱{0} (маржа {1}%). В первые {2} дней для нового продавца не взимаются комиссия, сбор поддержки роста и сбор за обработку заказа, и сборы снижаются до ₱{3}.
+zh: 利润 ₱{0}（利润率 {1}%）。新卖家前 {2} 天免收佣金、卖家成长支持费和订单处理费，费用降至 ₱{3}。
+@@ f3860a56b0
+ms: Contoh {0}: telefon ₱{1}, Marketplace
+ru: Пример {0}: телефон за ₱{1}, Marketplace
+zh: 示例 {0}：₱{1} 手机，Marketplace
+@@ f733973dfe
+ms: Pada {0}%, komisen ialah ₱{1}. Yuran Penghantaran Platform dihadkan pada ₱{2}. Jumlah yuran: ₱{3}.
+ru: При ставке {0}% комиссия составляет ₱{1}. Сбор платформы за доставку ограничен ₱{2}. Всего сборов: ₱{3}.
+zh: 按 {0}% 计算，佣金 ₱{1}。平台运费封顶 ₱{2}。费用合计：₱{3}。
+@@ 0ac9ce4d9f
+ms: Kadar termasuk VAT daripada jadual komisen Shopee PH. Jika subkategori dalam satu kategori mempunyai kadar berbeza, jadual menunjukkan julatnya. Kalkulator mempunyai setiap subkategori.
+ru: Ставки с НДС из таблиц комиссий Shopee PH. Если у подкатегорий разные ставки, показан диапазон. В калькуляторе есть все подкатегории.
+zh: 含增值税费率，来自 Shopee PH 佣金表。同一类目下子类目费率不同时显示范围，计算器中包含所有子类目。
+@@ 9cb64ef6c1
+ms: Yuran Sokongan Pertumbuhan
+ru: Сбор поддержки роста
+zh: 成长支持费
+@@ 10369cd083
+ms: <b1>Rancang untuk tamatnya pengecualian {0} hari.</b1> Apabila ia tamat, komisen, yuran sokongan pertumbuhan dan yuran pesanan bermula serentak.
+ru: <b1>Заранее учтите окончание {0}-дневных льгот.</b1> После него комиссия, сбор поддержки роста и сбор за заказ начинают взиматься одновременно.
+zh: <b1>提前规划 {0} 天免收期结束。</b1>到期后，佣金、成长支持费和订单处理费会同时开始收取。
+@@ 39dcb5e4d4
+ms: <b1>Semak had yuran penghantaran ₱{0}</b1> pada item berharga tinggi. Melebihi kira-kira ₱{1} (Marketplace), had itu terpakai.
+ru: <b1>Учитывайте лимит сбора за доставку ₱{0}</b1> для дорогих товаров. Примерно от ₱{1} (Marketplace) срабатывает лимит.
+zh: <b1>留意 ₱{0} 运费封顶</b1>对高价商品的影响：Marketplace 商品价格高于约 ₱{1} 时即触及封顶。
+@@ e4657b50a3
+ms: <b1>Sertai Mega Discount Voucher hanya</b1> jika pesanan tambahan melebihi kos yuran {0}%.
+ru: <b1>Подключайте Mega Discount Voucher,</b1> только если дополнительные заказы окупают сбор {0}%.
+zh: <b1>只有当新增订单能覆盖 {0}% 服务费时，</b1>才值得参加 Mega Discount Voucher。
+@@ 4dcc9af20a
+ms: Kalkulator Yuran Shopee Thailand {0} (Komisen mulai {1} Ogos, Yuran Pembayaran {2}%)
+ru: Калькулятор сборов Shopee Таиланд {0} (комиссия с {1} августа, платёжный сбор {2}%)
+zh: Shopee 泰国费用计算器 {0}（8月{1}日起新佣金、{2}% 支付手续费）
+@@ b73cf8a264
+ms: Kalkulator yuran dan keuntungan Shopee Thailand percuma dengan komisen Bukan Mall dan Mall untuk {0}+ kategori mulai {1} Ogos {2}, kadar penjual kecil, yuran pembayaran {3}% dan ฿{4} setiap pesanan.
+ru: Бесплатный калькулятор сборов и прибыли Shopee Таиланд: комиссия Non-Mall и Mall для {0}+ категорий с {1} августа {2} года, ставки для малых продавцов, платёжный сбор {3}% и ฿{4} за заказ.
+zh: 免费的 Shopee 泰国费用与利润计算器：{2}年8月{1}日起 {0}+ 个类目的非 Mall / Mall 佣金、小卖家费率、{3}% 支付手续费和每单 ฿{4}。
+@@ ca87ea4a1a
+ms: Kalkulator Yuran Shopee Thailand
+ru: Калькулятор сборов Shopee Таиланд
+zh: Shopee 泰国费用计算器
+@@ 4f6c7ea61d
+ms: Komisen Bukan Mall dan Mall untuk setiap kategori mulai {0} Ogos {1}, lajur penjual kecil dan PRIME, yuran transaksi pembayaran {2}% dan ฿{3} setiap pesanan, semuanya termasuk VAT.
+ru: Комиссия Non-Mall и Mall для каждой категории с {0} августа {1} года, колонки для малых продавцов и PRIME, платёжный сбор {2}% и ฿{3} за заказ — всё с НДС.
+zh: {1}年8月{0}日起每个类目的非 Mall / Mall 佣金，含小卖家与 PRIME 费率列、{2}% 支付手续费和每单 ฿{3}，均含增值税。
+@@ eb18fa9c6b
+ms: Cara yuran Shopee Thailand berfungsi
+ru: Как устроены сборы Shopee Таиланд
+zh: Shopee 泰国的费用构成
+@@ 6f8794e287
+ms: Contoh kadar komisen
+ru: Примеры ставок комиссии
+zh: 佣金费率示例
+@@ 619f1981f7
+ms: Bilakah komisen baharu Shopee Thailand bermula?
+ru: С какого числа действует новая комиссия Shopee Таиланд?
+zh: Shopee 泰国新佣金从什么时候开始？
+@@ 9e15ead065
+ms: Jadual yuran transaksi jualan baharu Bukan Mall dan Mall Shopee Thailand terpakai mulai {0} Ogos {1}.
+ru: Новые таблицы сбора с продажи Shopee Таиланд для Non-Mall и Mall действуют с {0} августа {1} года.
+zh: Shopee 泰国新的非 Mall 与 Mall 销售交易费表自 {1}年8月{0}日起执行。
+@@ bba6fa0d1f
+ms: Adakah yuran Shopee Thailand termasuk VAT?
+ru: Включают ли сборы Shopee Таиланд НДС?
+zh: Shopee 泰国的费用含增值税吗？
+@@ 1bc4531dde
+ms: Ya. Kadar kategori termasuk VAT {0}%. Yuran transaksi pembayaran ialah {1}% + VAT ({2}%), dan Yuran Infrastruktur Platform ialah ฿{3} + VAT (฿{4}) setiap pesanan.
+ru: Да. Ставки по категориям включают НДС {0}%. Платёжный сбор — {1}% + НДС ({2}%), сбор за инфраструктуру платформы — ฿{3} + НДС (฿{4}) за заказ.
+zh: 含。类目费率已含 {0}% 增值税。支付手续费为 {1}% + 增值税（{2}%），平台基础设施费为每单 ฿{3} + 增值税（฿{4}）。
+@@ 3e37b09e1c
+ms: Apakah penjual kecil?
+ru: Кто считается малым продавцом?
+zh: 什么是小卖家？
+@@ 904d206ff2
+ms: Jadual yuran Shopee memberikan kadar lebih rendah kepada penjual kecil, iaitu penjual dengan jualan ฿{0} atau kurang dalam {1} hari sebelumnya.
+ru: В таблицах сборов Shopee для малых продавцов ставка ниже. Малый продавец — тот, у кого продажи за предыдущие {1} дней не превышают ฿{0}.
+zh: Shopee 费率表为小卖家提供较低费率。小卖家指前 {1} 天销售额不超过 ฿{0} 的卖家。
+@@ 0267a5543c
+ms: Adakah komisen dikenakan pada penghantaran?
+ru: Берётся ли комиссия с доставки?
+zh: 运费要收佣金吗？
+@@ 879d59e5a7
+ms: Tidak. Komisen dikenakan pada harga item selepas diskaun penjual. Yuran transaksi pembayaran {0}% memang merangkumi penghantaran.
+ru: Нет. Комиссия берётся с цены товара после скидок продавца. А вот платёжный сбор {0}% включает доставку.
+zh: 不收。佣金按扣除卖家折扣后的商品价格计算。但 {0}% 支付手续费的计费基数包含运费。
+@@ ee7a3d6df9
+ms: Polisi yuran Shopee Thailand meliputi tiga caj pada pesanan biasa yang selesai. Semua kadar di bawah termasuk VAT {0}%.
+ru: Политика сборов Shopee Таиланд предусматривает три платежа с обычного выполненного заказа. Все ставки ниже включают НДС {0}%.
+zh: 根据 Shopee 泰国的费用政策，一笔普通的已完成订单涉及三项费用。以下费率均含 {0}% 增值税。
+@@ 9b6d31d7f4
+ms: {0}. Yuran transaksi jualan (komisen)
+ru: {0}. Сбор с продажи (комиссия)
+zh: {0}. 销售交易费（佣金）
+@@ 048dec5d65
+ms: Jadual kategori baharu terpakai mulai <b1>{0} Ogos {1}</b1>, dengan jadual berasingan untuk penjual Bukan Mall dan Mall. Setiap jadual menyenaraikan lebih daripada {2} kategori dan empat lajur: standard, penjual PRIME, penjual kecil dan penjual kecil + PRIME. Shopee mentakrifkan penjual kecil sebagai penjual dengan jualan ฿{3} atau kurang dalam {4} hari sebelumnya. Kadar dikenakan pada harga item selepas diskaun penjual; penghantaran tidak termasuk. Kalkulator memuatkan kedua-dua jadual penuh, jadi cari kategori anda dan pilih jenis penjual anda.
+ru: Новые таблицы по категориям действуют с <b1>{0} августа {1} года</b1>, отдельно для продавцов Non-Mall и Mall. В каждой более {2} категорий и четыре колонки: обычный, продавец PRIME, малый продавец и малый продавец + PRIME. Малый продавец по определению Shopee — тот, у кого продажи за предыдущие {4} дней не превышают ฿{3}. Ставка применяется к цене товара после скидок продавца, доставка не учитывается. В калькулятор загружены обе таблицы целиком: найдите свою категорию и выберите тип продавца.
+zh: 新的类目费率表自 <b1>{1}年8月{0}日</b1>起执行，非 Mall 与 Mall 卖家各一张表。每张表包含 {2} 多个类目和四列费率：标准、PRIME 卖家、小卖家、小卖家 + PRIME。Shopee 将小卖家定义为前 {4} 天销售额不超过 ฿{3} 的卖家。费率按扣除卖家折扣后的商品价格计算，不含运费。计算器已载入两张完整费率表，搜索类目并选择卖家类型即可。
+@@ ef463f48ce
+ms: {0}. Yuran transaksi pembayaran
+ru: {0}. Платёжный сбор
+zh: {0}. 支付手续费
+@@ 6bfdf00caf
+ms: {0}% + VAT = {1}% daripada amaun pesanan, termasuk penghantaran dan sebarang diskaun atau syiling yang dibiayai Shopee. Pembayaran ansuran dan sesetengah pembayaran SPayLater lebih mahal. Untuk memodelkannya, sunting kadar.
+ru: {0}% + НДС = {1}% от суммы заказа, включая доставку и скидки или монеты за счёт Shopee. Рассрочка и часть платежей через SPayLater стоят дороже — чтобы это учесть, измените ставку.
+zh: {0}% + 增值税 = 订单金额的 {1}%，计费基数包括运费以及 Shopee 出资的折扣或金币。分期付款和部分 SPayLater 付款费率更高，如需计算请修改费率。
+@@ 5b3b125650
+zh: {0}. 平台基础设施费
+@@ 9fbf490aac
+ms: ฿{0} + VAT = ฿{1} bagi setiap pesanan yang selesai.
+ru: ฿{0} + НДС = ฿{1} с каждого выполненного заказа.
+zh: 每笔已完成订单 ฿{0} + 增值税 = ฿{1}。
+@@ 0fd6b49e0c
+ms: {0}. Yuran perkhidmatan program
+ru: {0}. Сборы за программы
+zh: {0}. 活动项目服务费
+@@ a443998c5b
+ms: Program seperti promosi penghantaran percuma atau pulangan tunai syiling mempunyai yuran perkhidmatan sendiri. Ia adalah pilihan dan berbeza mengikut program, jadi masukkan jumlah peratusan anda dalam ruangan yang disediakan.
+ru: У программ вроде бесплатной доставки или кешбэка монетами свои сервисные сборы. Они необязательны и зависят от программы, поэтому укажите их суммарный процент в отдельном поле.
+zh: 免运费、金币返现等活动项目有各自的服务费。这些项目是可选的，费率因项目而异，请在对应栏填写合计百分比。
+@@ 300d9dcd4b
+ms: Contoh {0}: serum ฿{1}, Bukan Mall, penjual standard
+ru: Пример {0}: сыворотка за ฿{1}, Non-Mall, обычный продавец
+zh: 示例 {0}：฿{1} 精华，非 Mall，标准卖家
+@@ 1a908f3304
+ms: Facial Serum &amp; Essence pada {0}%, kos produk ฿{1}, tiada penghantaran dibayar oleh pembeli.
+ru: Facial Serum &amp; Essence по ставке {0}%, себестоимость ฿{1}, покупатель за доставку не платит.
+zh: Facial Serum &amp; Essence 类目，费率 {0}%，商品成本 ฿{1}，买家不付运费。
+@@ 7efc676e48
+zh: 平台基础设施费
+@@ c0f00b5fb0
+ms: Untung ฿{0} (margin {1}%).
+ru: Прибыль ฿{0} (маржа {1}%).
+zh: 利润 ฿{0}（利润率 {1}%）。
+@@ a616c935f1
+ms: Contoh {0}: serum yang sama sebagai penjual kecil
+ru: Пример {0}: та же сыворотка у малого продавца
+zh: 示例 {0}：同一款精华，小卖家
+@@ ed21218fb4
+ms: Lajur penjual kecil ialah {0}%, jadi komisen turun kepada ฿{1} dan untung meningkat kepada ฿{2}.
+ru: Ставка для малого продавца — {0}%, поэтому комиссия снижается до ฿{1}, а прибыль растёт до ฿{2}.
+zh: 小卖家费率为 {0}%，佣金降至 ฿{1}，利润升至 ฿{2}。
+@@ 07c24928dc
+ms: Contoh {0}: serum yang sama di Shopee Mall
+ru: Пример {0}: та же сыворотка в Shopee Mall
+zh: 示例 {0}：同一款精华在 Shopee Mall
+@@ 05f1ceaf02
+ms: Kadar Mall ialah {0}%: jumlah yuran ฿{1}, untung ฿{2}.
+ru: Ставка Mall — {0}%: всего сборов ฿{1}, прибыль ฿{2}.
+zh: Mall 费率为 {0}%：费用合计 ฿{1}，利润 ฿{2}。
+@@ c1b7d15a33
+ms: Contoh {0}: telefon bimbit ฿{1}
+ru: Пример {0}: мобильный телефон за ฿{1}
+zh: 示例 {0}：฿{1} 手机
+@@ 88ad27cc2b
+ms: Telefon bimbit membayar {0}%. Yuran: ฿{1}, untung ฿{2} pada kos ฿{3}.
+ru: Для мобильных телефонов ставка {0}%. Сборы: ฿{1}, прибыль ฿{2} при себестоимости ฿{3}.
+zh: 手机类目费率 {0}%。费用 ฿{1}，成本 ฿{3} 时利润 ฿{2}。
+@@ 1ab0bebe4b
+ms: Kadar termasuk VAT daripada jadual yang terpakai mulai {0} Ogos {1}. Kalkulator mempunyai semua kategori.
+ru: Ставки с НДС из таблиц, действующих с {0} августа {1} года. В калькуляторе есть все категории.
+zh: 含增值税费率，来自 {1}年8月{0}日起执行的费率表。计算器包含所有类目。
+@@ c4e8efdd4b
+zh: 非 Mall
+@@ d6924caecd
+ms: Bukan Mall, penjual kecil
+ru: Non-Mall, малый продавец
+zh: 非 Mall，小卖家
+@@ 80094a8124
+ms: Mall, penjual kecil
+ru: Mall, малый продавец
+zh: Mall，小卖家
+@@ 2772ccb5f8
+ms: Program <b1>New-Seller Savings</b1> Walmart Marketplace untuk {0} mengurangkan yuran rujukan bagi penjual kali pertama sebanyak {1}%, {2}% atau {3}%. Panduan ini menerangkan siapa yang layak, cara peringkat berfungsi dan nilai diskaun pada item biasa. Setiap angka dipautkan ke <a2>kalkulator yuran Walmart Marketplace</a2>.
+ru: Программа Walmart Marketplace <b1>New-Seller Savings</b1> на {0} год снижает реферальный сбор для новых продавцов на {1}%, {2}% или {3}%. В этом гайде — кто может участвовать, как работают уровни и сколько скидка даёт на типичном товаре. Все цифры можно проверить в <a2>калькуляторе комиссий Walmart Marketplace</a2>.
+zh: Walmart Marketplace 的 <b1>新卖家优惠（New-Seller Savings）</b1>{0} 年计划为首次入驻的卖家减免 {1}%、{2}% 或 {3}% 的推荐费。本指南介绍谁符合条件、各档位如何计算，以及在一件典型商品上能省多少。所有数字都可以在 <a2>Walmart Marketplace 费用计算器</a2>中核对。
+@@ a003ee53a5
+ms: Siapa yang layak
+ru: Кто может участвовать
+zh: 谁符合条件
+@@ dbb37c434b
+ms: Penjual Walmart Marketplace kali pertama yang mula berjual selepas {0} Februari {1}.
+ru: Новые продавцы Walmart Marketplace, начавшие продажи после {0} февраля {1} года.
+zh: {1}年2月{0}日之后首次上线的 Walmart Marketplace 卖家。
+@@ 766f170dfd
+ms: Anda mendaftar melalui borang dalam Seller Center. Penjual yang menyertai antara {0} Februari dan {1} April {2} tidak perlu mendaftar dengan klik.
+ru: Заявка подаётся через форму в Seller Center. Продавцам, присоединившимся с {0} февраля по {1} апреля {2} года, подавать её не нужно.
+zh: 通过 Seller Center 中的表单报名。{2}年2月{0}日至4月{1}日之间入驻的卖家无需点击报名。
+@@ eff691f67e
+ms: Program berjalan dari {0} Februari {1} hingga {2} Januari {3}.
+ru: Программа действует с {0} февраля {1} года по {2} января {3} года.
+zh: 活动期为 {1}年2月{0}日至 {3}年1月{2}日。
+@@ 118474f2d1
+ms: Tiga peringkat
+ru: Три уровня
+zh: 三个档位
+@@ 77e492a895
+ms: Diskaun ialah peratusan potongan daripada yuran rujukan anda. Ia meningkat mengikut GMV (nilai barangan kasar) anda sejak pelancaran: <b1>{0}%</b1> untuk ${1}–${2}, <b2>{3}%</b2> untuk ${4}–${5} dan <b3>{6}%</b3> melebihi ${7}. Diskaun berhenti pada {8} Januari {9} atau apabila jumlahnya mencapai <b4>${10}</b4>, yang mana lebih awal.
+ru: Скидка — это процент от вашего реферального сбора. Она растёт вместе с GMV (валовым объёмом продаж) с момента запуска: <b1>{0}%</b1> при ${1}–${2}, <b2>{3}%</b2> при ${4}–${5} и <b3>{6}%</b3> свыше ${7}. Скидки прекращаются {8} января {9} года или когда их сумма достигнет <b4>${10}</b4> — смотря что наступит раньше.
+zh: 减免按推荐费的一定比例计算，随上线以来的 GMV（商品交易总额）提高：${1}–${2} 减 <b1>{0}%</b1>，${4}–${5} 减 <b2>{3}%</b2>，超过 ${7} 减 <b3>{6}%</b3>。减免在 {9}年1月{8}日结束，或在减免总额达到 <b4>${10}</b4> 时提前结束，以先到者为准。
+@@ e565369bef
+ms: Nilainya pada item ${0}
+ru: Сколько это даёт на товаре за ${0}
+zh: 在 ${0} 商品上能省多少
+@@ ccf2fecb6e
+ms: Barang rumah dengan yuran rujukan {0}%, dipenuhi oleh penjual, dengan kos produk ${1}. Tanpa program ini, yuran ialah ${2} dan untung ${3}.
+ru: Товар для дома с реферальным сбором {0}%, доставка силами продавца, себестоимость ${1}. Без программы сборы составляют ${2}, а прибыль — ${3}.
+zh: 一件家居商品，推荐费 {0}%，卖家自发货，商品成本 ${1}。不参加优惠时，费用为 ${2}，利润 ${3}。
+@@ 5bd44ebe63
+ms: Peringkat
+ru: Уровень
+zh: 档位
+@@ 72abbc9284
+ms: Yuran
+ru: Сборы
+zh: 费用
+@@ a524bfe240
+ms: Peringkat {0}%
+ru: Уровень {0}%
+zh: {0}% 档
+@@ 76722790f1
+ms: Diskaun WFS
+ru: Скидка на WFS
+zh: WFS 折扣
+@@ da4b412ce5
+ms: Penjual layak yang menggunakan Walmart Fulfillment Services juga mendapat pulangan {0}% daripada yuran pemenuhan WFS, sehingga ${1}. Untuk item yang sama dipenuhi oleh WFS ({2} lb, jadi berat penghantaran {3} lb), dengan peringkat {4}% dan diskaun WFS diaktifkan, jumlah yuran ialah ${5} dan untung ${6}.
+ru: Подходящие продавцы на Walmart Fulfillment Services также получают обратно {0}% сборов за фулфилмент WFS, до ${1}. Для того же товара на WFS ({2} фунта, отправочный вес {3} фунта) с уровнем {4}% и включённой скидкой на WFS сборы составляют ${5}, а прибыль — ${6}.
+zh: 使用 Walmart 履约服务的合格卖家，还可获得 WFS 履约费 {0}% 返还，最高 ${1}。同一商品使用 WFS（{2} 磅，计费重量 {3} 磅），选择 {4}% 档并开启 WFS 折扣后，费用合计 ${5}，利润 ${6}。
+@@ 12c0db55b8
+ms: Bahagian lain tawaran
+ru: Что ещё входит в предложение
+zh: 优惠的其他部分
+@@ a85ff19756
+ms: Tawaran ini juga merangkumi rebat untuk iklan carian tajaan dan kredit pengiklanan Walmart Connect. Kedua-duanya tidak mengubah yuran pada pesanan, jadi kalkulator tidak memasukkannya. Semak terma rasmi untuk jumlah dan syarat semasa.
+ru: Предложение также включает возврат части расходов на рекламу в поиске и рекламные кредиты Walmart Connect. Ни то, ни другое не меняет сборы с заказа, поэтому калькулятор их не учитывает. Актуальные суммы и условия смотрите в официальных правилах.
+zh: 该优惠还包括搜索广告返利和 Walmart Connect 广告额度。两者都不影响订单费用，因此计算器未计入。当前金额与条件请以官方条款为准。
+@@ c8b4cd05d5
+ms: Yuran rujukan mengikut kategori dengan jalur harga dan peringkat, New-Seller Savings {0} (diskaun {1}–{2}%), yuran WFS mengikut berat.
+ru: Реферальный сбор по категориям с ценовыми порогами и ступенями, New-Seller Savings {0} (скидка {1}–{2}%), сборы WFS по весу.
+@@ 7dbbb1ffe6
+ms: Komisen Marketplace &amp; Mall, TX {0}%, Yuran Penghantaran Platform (had ₱{1}), OPF ₱{2}, yuran sokongan pertumbuhan {3}–{4}%.
+ru: Комиссия Marketplace и Mall, транзакционный сбор {0}%, сбор платформы за доставку (лимит ₱{1}), сбор за заказ ₱{2}, сбор поддержки роста {3}–{4}%.
+@@ ed046f8729
+ms: Komisen Bukan Mall &amp; Mall untuk {0}+ kategori mulai {1} Ogos {2}, TX {3}%, ฿{4} setiap pesanan.
+ru: Комиссия Non-Mall и Mall для {0}+ категорий с {1} авг. {2}, транзакционный сбор {3}%, ฿{4} за заказ.
+@@ d8d3af9485
+ms: Walmart AS + Shopee Filipina &amp; Thailand kini tersedia · <a1>Buka Walmart <x1/></a1>
+@@ 07a402c53e
+ms: Walmart Marketplace AS
+@@ 44d01a5e60
+ms: Shopee Filipina
+@@ a81d63be93
+ms: Shopee Thailand
+@@ 559925acc1
+ms: Dikemas kini {0} Mac / {1} Mei {2}
+@@ c53f0a2029
+ms: Artikel Pusat Bantuan {0}
+@@ 5f5f138fd7
+ms: Surcaj seunit: pakaian ${0}, bahan berbahaya ${1}, item berharga di bawah ${2} ${3}, saiz besar ${4} (sisi terpanjang melebihi {5} inci, sisi tengah melebihi {6} inci, atau sisi terpanjang + lilitan melebihi {7} inci). Item saiz besar yang lebih besar (${8}, dengan berat dikira sekurang-kurangnya {9} lb) dan item Big &amp; Bulky (${10} serta ${11} bagi setiap paun melebihi {12} lb) mengikut peraturan berbeza dan tidak diliputi di sini. Penyimpanan berharga ${13} setiap kaki padu sebulan, meningkat selepas {14} hari pada Oktober–Disember. Mulai {15} Jun {16}, penyimpanan jangka panjang ialah ${17} setiap kaki padu untuk {18}–{19} hari dan ${20} melebihi {21} hari. Masukkan kos penyimpanan di bawah kos lain.
+ru: Надбавки за единицу: одежда ${0}, опасные грузы ${1}, товары дешевле ${2} — ${3}, негабарит — ${4} (самая длинная сторона больше {5} дюймов, средняя больше {6} дюймов или самая длинная сторона + обхват больше {7} дюймов). Более крупный негабарит (${8}, вес считается не меньше {9} фунтов) и товары Big &amp; Bulky (${10} плюс ${11} за каждый фунт свыше {12}) тарифицируются по другим правилам и здесь не учтены. Хранение стоит ${13} за кубический фут в месяц, с повышением после {14} дней в октябре–декабре. С {15} июня {16} года долгосрочное хранение стоит ${17} за кубический фут при сроке {18}–{19} дней и ${20} — свыше {21} дней. Расходы на хранение укажите в прочих расходах.
+zh: 每件附加费：服装 ${0}，危险品 ${1}，售价低于 ${2} 的商品 ${3}，超大件 ${4}（最长边超过 {5} 英寸、中间边超过 {6} 英寸，或最长边 + 周长超过 {7} 英寸）。更大的超大件（${8}，重量最低按 {9} 磅计）和大件商品（Big &amp; Bulky，${10}，超过 {12} 磅部分每磅加 ${11}）规则不同，本工具不涵盖。仓储费为每立方英尺每月 ${13}，10–12 月存放超过 {14} 天会上调。自 {16}年6月{15}日起，长期仓储费为：存放 {18}–{19} 天每立方英尺 ${17}，超过 {21} 天 ${20}。仓储费请填入“其他成本”。

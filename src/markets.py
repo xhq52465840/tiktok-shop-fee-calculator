@@ -11,6 +11,12 @@ def idx(opts, name):
 
 MY = load('tiktok-shop/my.json'); PH = load('tiktok-shop/ph.json'); US = load('tiktok-shop/us.json'); ET = load('etsy/processing.json')
 SH_MY = load('shopee/my.json'); SH_SG = load('shopee/sg.json'); LZ_MY = load('lazada/my.json')
+SH_PH = load('shopee/ph.json'); WM_US = load('walmart/us.json')
+SH_TH, _ = (lambda d: ([{'g': d['groups'][x[0]], 'n': x[1], 'r': x[2]} for x in d['o']], None))(load('shopee/th.json'))
+# Walmart Fulfillment Services standard base fee per unit by shipping weight (lb): [max lb, base, per lb, counted from lb]
+WFS_STD = [[1, 3.45, 0, 0], [2, 4.95, 0, 0], [3, 5.45, 0, 0], [20, 5.75, 0.40, 4], [30, 15.55, 0.40, 21], [50, 14.55, 0.40, 31], [150, 17.55, 0.40, 51]]
+WM_NSS = [('none', 'nss_none'), ('t20', 'nss_t20'), ('t30', 'nss_t30'), ('t40', 'nss_t40')]
+SH_TH_TIER = [('std', 'th_tier_std'), ('prime', 'th_tier_prime'), ('small', 'th_tier_small'), ('smallprime', 'th_tier_smallprime')]
 for o in ET:
     if o['r']['listing'] is None: o['note'] = 'fx'
 def load_ru(p):
@@ -284,11 +290,80 @@ MARKETS = {
    sources=[
      ('Marketplace / LazMall Commission Rate (effective 14 Aug 2026, subject to 8% SST) — Lazada Seller Center → Settings → Commission', 'https://sellercenter.lazada.com.my/'),
      ('Lazada Malaysia New Commission Rates for Marketplace & LazMall Sellers (Effective 14 August 2026) — BigSeller reprint of Lazada tables (secondary source)', 'https://www.bigseller.com/blog/articleDetails/4828/lazada-commission-rates-2026.htm')]),
+ 'walmart-us': dict(
+   platform='walmart', platformName='Walmart', market='US', marketName='United States', slug='walmart/united-states',
+   flag='🇺🇸', currency='USD', symbols={'USD': '$'}, locale='en-US', langs=['en'],
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'wt', 'dimwt', 'other'],
+   defaults={'price': 24.99, 'cost': 8, 'wt': 1.5}, selector={'label': 'cat_wm', 'options': WM_US},
+   defaultOption=idx(WM_US, 'Home, Kitchen, Decor & Garden'),
+   store=[('self', 'wm_self'), ('wfs', 'wm_wfs')], periods=None,
+   conds={'u10': {'maxUnit': 9.99, 'stores': ['wfs']}},
+   selects=[dict(id='nss', label='nss_label', options=WM_NSS, def_='none')],
+   toggles=[dict(id='wfsApparel', vals=['', ''], stores=['wfs']), dict(id='wfsHazmat', vals=['', ''], stores=['wfs']),
+            dict(id='wfsOversize', vals=['', ''], stores=['wfs']), dict(id='wfsCredit', vals=['', ''], stores=['wfs'])],
+   components=[
+     dict(id='referral', type='pct', rate='opt:rate', bandsKey='bands', bandBase='net_ship', portion={'key': 'over', 'at': 'at'}, base='net_ship', color=C[0]),
+     dict(id='nss', type='pct', rate={'none': 0, 't20': 20, 't30': 30, 't40': 40}, by='nss', whenX=['nss', ['t20', 't30', 't40']], baseRows=['referral'], negative=True, color='#16a34a'),
+     dict(id='wfs', type='wt', wt=WFS_STD, whenStore='wfs', color=C[1]),
+     dict(id='wfs_app', type='fixed', per='item', rate=0.50, when='wfsApparel', whenStore='wfs', color=C[2]),
+     dict(id='wfs_haz', type='fixed', per='item', rate=0.50, when='wfsHazmat', whenStore='wfs', color=C[3]),
+     dict(id='wfs_low', type='fixed', per='item', rate=1.00, condOnly='u10', whenStore='wfs', color=C[4]),
+     dict(id='wfs_ovr', type='fixed', per='item', rate=3.00, when='wfsOversize', whenStore='wfs', color=C[5]),
+     dict(id='wfs_credit', type='pct', rate=10, when='wfsCredit', whenStore='wfs', baseRows=['wfs', 'wfs_app', 'wfs_haz', 'wfs_low', 'wfs_ovr'], negative=True, color='#22c55e')],
+   compare=dict(vary=[], a={'label': 'cmp_wm_a', 'state': {'x': {'nss': 'none'}}}, b={'label': 'cmp_wm_b', 'state': {'x': {'nss': 't20'}}}, note='cmp_wm_note'),
+   sources=[
+     ('Referral fee schedule for contract categories — Walmart Marketplace Learn (updated 9 Mar 2026)', 'https://marketplacelearn.walmart.com/guides/Policies%20&%20standards/Product%20listings/Referral-fee-schedule-for-contract-categories'),
+     ('Pricing: referral fees and Walmart Fulfillment Services fees — Walmart Marketplace (checked 27 Oct 2026)', 'https://marketplace.walmart.com/pricing/'),
+     ('New-Seller Savings 2026 (20% / 30% / 40% off referral fees, 2 Feb 2026 – 31 Jan 2027) — Walmart Marketplace', 'https://marketplace.walmart.com/new-seller-savings-2026/'),
+     ('New Seller Savings — general offer details and terms — Walmart Marketplace', 'https://marketplace.walmart.com/nss-offer-details/'),
+     ('WFS fees (fees effective April 2025; long-term storage from 30 Jun 2026) — Walmart Marketplace Learn (updated 27 May 2026)', 'https://marketplacelearn.walmart.com/guides/Walmart%20Fulfillment%20Services%20(WFS)/WFS%20basics/WFS-fees')]),
+ 'shopee-ph': dict(
+   platform='shopee', platformName='Shopee', market='PH', marketName='Philippines', slug='shopee/philippines',
+   flag='🇵🇭', currency='PHP', symbols={'PHP': '₱'}, locale='en-PH', langs=['en'], roundFees=0,
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 499, 'cost': 180}, selector={'label': 'cat', 'options': SH_PH, 'src': 'shopee-ph'},
+   defaultOption=next(i for i, o in enumerate(SH_PH) if o['g'] == 'Women Clothes'),
+   store=[('mp', 'mp'), ('mall', 'mall')], periods=None,
+   toggles=[dict(id='newSeller', vals=['', '']), dict(id='opfExempt', vals=['', '']), dict(id='mdv', vals=['', ''])],
+   components=[
+     dict(id='commission', type='pct', rate='opt:{store}', zeroIf='newSeller', base='net', color=C[0]),
+     dict(id='tx', type='pct', rate=2.24, base='net_ship', color=C[1]),
+     dict(id='psf_ph', type='pct', rate={'mp': 5.6, 'mall': 4.48}, base='net', capPerItem=100, color=C[2]),
+     dict(id='sgsf', type='pct', rate='opt:sgsf', zeroIf='newSeller', base='net', color=C[4]),
+     dict(id='opf', type='fixed', rate=5, zeroIf=['newSeller', 'opfExempt'], color=C[3]),
+     dict(id='mdv', type='pct', rate=4, when='mdv', base='net', capPerItem=200, color=C[5])],
+   compare=None,
+   sources=[
+     ('Seller Fees — Shopee PH Seller Education Hub (all fees VAT-inclusive; sections updated 13 May 2025 to 22 Oct 2026)', 'https://seller.shopee.ph/edu/article/21077'),
+     ('Commission Fee Rates for Shopee Marketplace, VAT-inclusive (effective 1 Jun 2025) — Shopee PH (Google Doc linked from the Seller Fees article)', 'https://docs.google.com/document/d/1zZGKQl9FfykrLhKxLjI8ucAnXBhrzYYp16YcVub5yVw/edit?tab=t.0'),
+     ('Commission Fee Rates for Shopee Mall, VAT-inclusive (effective 1 Jan 2025) — Shopee PH (Google Doc linked from the Seller Fees article)', 'https://docs.google.com/document/d/103EMWxNmlnUgQB0rAWUL4c-_STfxB_rCyKGIA4-YVLs/edit?tab=t.0'),
+     ('Seller Growth Support Fee by category (updated 22 Oct 2026) — Shopee PH Seller Education Hub', 'https://seller.shopee.ph/edu/article/27461'),
+     ('Sample computation of seller net income (fees rounded to the nearest peso) — Shopee PH Seller Education Hub', 'https://seller.shopee.ph/edu/article/27462')]),
+ 'shopee-th': dict(
+   platform='shopee', platformName='Shopee', market='TH', marketName='Thailand', slug='shopee/thailand',
+   flag='🇹🇭', currency='THB', symbols={'THB': '฿'}, locale='en-TH', langs=['en'],
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 299, 'cost': 90}, selector={'label': 'cat', 'options': SH_TH, 'src': 'shopee-th'},
+   defaultOption=gidx(SH_TH, 'Beauty', 'Skincare › Facial Serum & Essence'),
+   store=[('mp', 'mp_nonmall'), ('mall', 'mall')], periods=None,
+   selects=[dict(id='tier', label='th_tier', options=SH_TH_TIER, def_='std')],
+   toggles=[],
+   components=[
+     dict(id='commission', type='pct', rate='opt:{store}.{x:tier}', base='net', color=C[0]),
+     dict(id='tx', type='pct', rate=3.21, base='net_ship', color=C[1]),
+     dict(id='pif', type='fixed', rate=1.07, color=C[3]),
+     dict(id='svc', type='pct', rate=None, base='net', manual=True, color=C[2])],
+   compare=None,
+   sources=[
+     ('นโยบายค่าธรรมเนียม (Fee Policy; new Sale Transaction Fee tables from 4 Aug 2026) — Shopee TH Help Centre', 'https://help.shopee.co.th/portal/4/article/77254'),
+     ('Sale Transaction Fee for Non-Mall sellers by category, VAT-inclusive, effective 4 Aug 2026 (English PDF linked from the Fee Policy)', 'https://drive.google.com/file/d/1EiOQVESYZNQ6CMPBejrctqQNNl34ozMH/view'),
+     ('Sale Transaction Fee for Mall sellers by category, VAT-inclusive, effective 4 Aug 2026 (English PDF linked from the Fee Policy)', 'https://drive.google.com/file/d/1GcaQ6jv-JcE-diGgZ7hJ-zV-BVBGCQTa/view'),
+     ('ค่าธรรมเนียมการทำธุรกรรม (Payment Transaction Fee, 3% + VAT, from 7 Apr 2026) — Shopee TH Seller Education Hub', 'https://seller.shopee.co.th/edu/article/404')]),
 }
 
 COMING = [
   ('TikTok Shop', 'Vietnam', '🇻🇳'), ('TikTok Shop', 'Indonesia', '🇮🇩'),
-  ('Shopee', 'Philippines, Thailand, Indonesia & more', '🛍️'), ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
+  ('Shopee', 'Indonesia, Vietnam & more', '🛍️'), ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
 
 # ---------- Python mirror of assets/engine.js (used to compute worked examples in the guides)
 from decimal import Decimal, ROUND_HALF_UP
@@ -310,7 +385,32 @@ def in_list(v, l):
 
 def active(c, s):
     if c.get('when') and not s['tg'].get(c['when']): return False
+    if c.get('whenX') and not in_list(s['x'].get(c['whenX'][0]), c['whenX'][1]): return False
     return in_list(s.get('store'), c.get('whenStore'))
+
+def zeroed(c, s):
+    z = c.get('zeroIf') or []
+    return any(s['tg'].get(k) for k in ([z] if isinstance(z, str) else z))
+
+def unit_base(c, o):
+    b = max(0, o['price'] * o['qty'] - o['sellerDisc']) + (o['buyerShip'] if c.get('bandBase') == 'net_ship' else 0)
+    return b / o['qty'] if o['qty'] else 0
+
+def ship_weight(o):
+    import math
+    if not (o['wt'] > 0) and not (o['dimwt'] > 0): return 0
+    return math.ceil(o['wt'] + 0.25 - 1e-9) if 0 < o['wt'] < 1 else math.ceil(max(o['wt'], o['dimwt']) - 1e-9)
+
+def wt_cost(pw, W):
+    for mx, base, per, frm in pw:
+        if W <= mx: return base + per * max(0, W - frm)
+    return None
+
+def rnd(m, n):
+    d = m.get('roundFees')
+    if d is None: return r2(n)
+    f = 10 ** d
+    return float(Decimal(format(n * f, '.12g')).quantize(Decimal('1'), rounding=ROUND_HALF_UP)) / f
 
 def unit_price(o):
     return max(0, o['price'] * o['qty'] - o['sellerDisc']) / o['qty'] if o['qty'] else 0
@@ -323,10 +423,16 @@ def conds(m, s, o):
 
 def def_rate(m, c, s, o):
     if not active(c, s): return None
-    if c.get('zeroIf') and s['tg'].get(c['zeroIf']): return 0
-    r = c.get('rate'); cd = conds(m, s, o)
+    cd = conds(m, s, o)
+    if c.get('condOnly') and not cd.get(c['condOnly']): return 0
+    if zeroed(c, s): return 0
+    r = c.get('rate')
     if isinstance(r, str) and r.startswith('opt:'):
         R = m['selector']['options'][s['sel']]['r']; k = key_for(r[4:], m, s); r = R.get(k, R.get('_'))
+        if c.get('bandsKey') and R.get(c['bandsKey']):
+            u = unit_base(c, o)
+            for mx, br in R[c['bandsKey']]:
+                if u <= mx + 1e-9: r = br; break
     if isinstance(r, dict): r = r[s['x'][c['by']]] if c.get('by') else r[s['store']]
     if isinstance(r, list):
         b = sum(1 for th in m.get('bands', []) if unit_price(o) > th); r = r[min(b, len(r) - 1)]
@@ -373,24 +479,34 @@ def compute(mid, sel=None, period='new', store=None, tg=None, rates=None, x=None
     xs.update(x or {})
     s = {'sel': m['defaultOption'] if sel is None else (sel if isinstance(sel, int) else idx(m['selector']['options'], sel)),
          'period': period, 'store': store, 'tg': tg or {}, 'x': xs}
-    o = dict(price=0, qty=1, sellerDisc=0, buyerShip=0, shipCost=0, cost=0, other=0, affPct=0, tax=0, taxPct=0, vol=0, coef=100); o.update(inp)
+    o = dict(price=0, qty=1, sellerDisc=0, buyerShip=0, shipCost=0, cost=0, other=0, affPct=0, tax=0, taxPct=0, vol=0, coef=100, wt=0, dimwt=0); o.update(inp)
     net = max(0, o['price'] * o['qty'] - o['sellerDisc'])
     b = {'net': net, 'net_ship': net + o['buyerShip'], 'gross': net + o['buyerShip'] + o['tax']}
     rows = []; cd = conds(m, s, o)
     for c in m['components']:
         if not active(c, s): continue
+        if c.get('condOnly') and not cd.get(c['condOnly']): continue
         if any(cd.get(k) for k in c.get('condZero', [])): rows.append((c['id'], 0, 0)); continue
         r = def_rate(m, c, s, o)
         if rates and c['id'] in rates: r = rates[c['id']]
         r = r or 0
-        if c['type'] == 'vol':
+        if c['type'] == 'wt':
+            W = ship_weight(o); pu = wt_cost(c['wt'], W) if W else 0
+            amt = (pu or 0) * o['qty']
+        elif c['type'] == 'vol':
             amt = vol_cost(c['vol'], o['vol']) * (o[c['vol']['mult']] / 100 if c['vol'].get('mult') else 1) * o['qty']
         elif c['type'] == 'voltab':
             amt = voltab_cost(m, c, s, o)[0] * o['qty']
         elif c['type'] == 'fixed':
             amt = r * (o['qty'] if c.get('per') == 'item' else 1)
         else:
-            base = sum(x[2] for x in rows) if c.get('base') == 'fees' else b[c.get('base', 'net')]; amt = base * r / 100
+            if c.get('baseRows'): base = sum(x[2] for x in rows if x[0] in c['baseRows'])
+            else: base = sum(x[2] for x in rows) if c.get('base') == 'fees' else b[c.get('base', 'net')]
+            amt = base * r / 100
+            if c.get('portion'):
+                R = m['selector']['options'][s['sel']]['r']; ov = R.get(c['portion']['key']); at = R.get(c['portion']['at'])
+                if ov is not None and at is not None and o['qty']:
+                    uu = base / o['qty']; amt = (min(uu, at) * r / 100 + max(0, uu - at) * ov / 100) * o['qty']
             if c.get('tier'):
                 over = m['selector']['options'][s['sel']]['r'].get(c['tier']['key'])
                 if over is not None and base > c['tier']['threshold']:
@@ -400,7 +516,8 @@ def compute(mid, sel=None, period='new', store=None, tg=None, rates=None, x=None
                 R = m['selector']['options'][s['sel']]['r']; cap = R.get(key_for(cap[4:], m, s))
             if cap: amt = min(amt, cap * o['qty'])
             if c.get('capPerOrder'): amt = min(amt, c['capPerOrder'])
-        rows.append((c['id'], r, r2(amt)))
+            if c.get('negative'): amt = -amt
+        rows.append((c['id'], r, -rnd(m, -amt) if c.get('negative') else rnd(m, amt)))
     if o['affPct'] > 0: rows.append(('aff', o['affPct'], r2(net * o['affPct'] / 100)))
     total = r2(sum(x[2] for x in rows)); payout = r2(b['net_ship'] - o['shipCost'] - total)
     goods = r2(o['cost'] * o['qty'] + o['other']); tax = r2(net * o['taxPct'] / 100); profit = r2(payout - goods - tax)

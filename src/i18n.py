@@ -351,3 +351,77 @@ S['ru'].update(dict(
 S['ru']['js'].update(dict(order='заказ',
   note_gn='TikTok не называет эту категорию в списке сбора за рост продавца, поэтому взято 1,5%. Сверьте с отчётом о расчётах.',
   note_fx='Плату за размещение Etsy берёт в долларах США (US$0,20 за каждый проданный товар). Укажите её в своей валюте в блоке «Использованные тарифы».'))
+
+# ---------------------------------------------------------------- Walmart US, Shopee PH & TH (Oct 2026)
+S['en'].update(dict(
+  nav_walmart='Walmart', cat_wm='Referral fee category', wm_self='Seller fulfilled', wm_wfs='Walmart Fulfillment Services (WFS)',
+  nss_label='New-Seller Savings tier', nss_none='Not enrolled / not eligible', nss_t20='20% off (GMV up to $50,000)', nss_t30='30% off (GMV $50,001–$500,000)', nss_t40='40% off (GMV over $500,000)',
+  wt='Unit weight', wt_h='Packaged weight of one unit. Under 1 lb, Walmart adds 0.25 lb and rounds up.', dimwt='Dimensional weight', dimwt_h='Length × width × height in inches ÷ 139. From 1 lb, the greater of unit and dimensional weight is used.', lb='lb',
+  t_wfsApparel='Apparel item', t_wfsApparel_h='WFS adds $0.50 per unit for apparel.',
+  t_wfsHazmat='Hazardous materials (hazmat)', t_wfsHazmat_h='WFS adds $0.50 per unit for hazmat items.',
+  t_wfsOversize='Oversize (longest side over 48 in, median side over 30 in, or longest side + girth over 105 in)', t_wfsOversize_h='WFS adds $3.00 per unit. Larger items (longest side over 96 in, or longest side + girth over 130 in) pay $20 with a 90 lb minimum weight, and are not covered here.',
+  t_wfsCredit='New-Seller Savings WFS discount', t_wfsCredit_h='10% back on WFS fulfillment fees, up to $2,000 in total, for eligible new sellers.',
+  c_nss='New-Seller Savings discount', c_wfs='WFS fulfillment fee', c_wfs_app='WFS apparel surcharge', c_wfs_haz='WFS hazmat surcharge',
+  c_wfs_low='WFS surcharge, item under $10', c_wfs_ovr='WFS oversize surcharge', c_wfs_credit='New-Seller Savings WFS discount',
+  cmp_wm_a='Standard referral fee', cmp_wm_b='With New-Seller Savings 20%', cmp_wm_note='Only the New-Seller Savings tier changes between the columns. Your other settings stay the same.',
+  c_psf_ph='Platform Shipping Fee', c_sgsf='Seller Growth Support Fee', c_mdv='Mega Discount Voucher service fee',
+  t_mdv='Joined Mega Discount Voucher (MDV)', t_mdv_h='4% service fee, capped at ₱200 per item (1% more on spike campaign days).',
+  mp_nonmall='Non-Mall', th_tier='Seller type in the fee table', th_tier_std='Standard', th_tier_prime='PRIME seller', th_tier_small='Small seller', th_tier_smallprime='Small seller + PRIME',
+  c_svc='Programme service fees', c_svc_h='Optional. If you joined Shopee programmes with their own service fee, enter the total %.',
+))
+S['en']['js'].update(dict(lb='lb', noWt='Enter the item weight', wtOver='Over 150 lb: not a standard WFS item', above='above', item='item',
+  condnote_u10='Items priced under $10 carry a $1.00 WFS surcharge per unit.'))
+S['ms'].update(dict(
+  nav_walmart='Walmart', cat_wm='Kategori yuran rujukan', wm_self='Dipenuhi oleh penjual', wm_wfs='Walmart Fulfillment Services (WFS)',
+  nss_label='Peringkat New-Seller Savings', nss_none='Tidak mendaftar / tidak layak', nss_t20='Diskaun 20% (GMV sehingga $50,000)', nss_t30='Diskaun 30% (GMV $50,001–$500,000)', nss_t40='Diskaun 40% (GMV melebihi $500,000)',
+  wt='Berat seunit', wt_h='Berat satu unit berbungkus. Di bawah 1 lb, Walmart menambah 0.25 lb dan membundarkan ke atas.', dimwt='Berat dimensi', dimwt_h='Panjang × lebar × tinggi dalam inci ÷ 139. Mulai 1 lb, yang lebih besar antara berat unit dan berat dimensi digunakan.', lb='lb',
+  t_wfsApparel='Item pakaian', t_wfsApparel_h='WFS mengenakan tambahan $0.50 seunit untuk pakaian.',
+  t_wfsHazmat='Bahan berbahaya', t_wfsHazmat_h='WFS mengenakan tambahan $0.50 seunit untuk item hazmat.',
+  t_wfsOversize='Saiz besar (sisi terpanjang melebihi 48 inci, sisi tengah melebihi 30 inci, atau sisi terpanjang + lilitan melebihi 105 inci)', t_wfsOversize_h='WFS mengenakan tambahan $3.00 seunit. Item lebih besar (sisi terpanjang melebihi 96 inci, atau sisi terpanjang + lilitan melebihi 130 inci) dikenakan $20 dengan berat minimum 90 lb dan tidak diliputi di sini.',
+  t_wfsCredit='Diskaun WFS New-Seller Savings', t_wfsCredit_h='Pulangan 10% atas yuran pemenuhan WFS, sehingga $2,000 secara keseluruhan, untuk penjual baharu yang layak.',
+  c_nss='Diskaun New-Seller Savings', c_wfs='Yuran pemenuhan WFS', c_wfs_app='Surcaj pakaian WFS', c_wfs_haz='Surcaj hazmat WFS',
+  c_wfs_low='Surcaj WFS, item di bawah $10', c_wfs_ovr='Surcaj saiz besar WFS', c_wfs_credit='Diskaun WFS New-Seller Savings',
+  cmp_wm_a='Yuran rujukan standard', cmp_wm_b='Dengan New-Seller Savings 20%', cmp_wm_note='Hanya peringkat New-Seller Savings berubah antara lajur. Tetapan lain anda kekal sama.',
+  c_psf_ph='Yuran Penghantaran Platform', c_sgsf='Yuran Sokongan Pertumbuhan Penjual', c_mdv='Yuran perkhidmatan Mega Discount Voucher',
+  t_mdv='Menyertai Mega Discount Voucher (MDV)', t_mdv_h='Yuran perkhidmatan 4%, maksimum ₱200 seitem (tambahan 1% pada hari kempen besar).',
+  mp_nonmall='Bukan Mall', th_tier='Jenis penjual dalam jadual yuran', th_tier_std='Standard', th_tier_prime='Penjual PRIME', th_tier_small='Penjual kecil', th_tier_smallprime='Penjual kecil + PRIME',
+  c_svc='Yuran perkhidmatan program', c_svc_h='Pilihan. Jika anda menyertai program Shopee yang mempunyai yuran perkhidmatan sendiri, masukkan jumlah %.',
+))
+S['ms']['js'].update(dict(lb='lb', noWt='Masukkan berat item', wtOver='Melebihi 150 lb: bukan item WFS standard', above='melebihi', item='item',
+  condnote_u10='Item berharga di bawah $10 dikenakan surcaj WFS $1.00 seunit.'))
+S['zh'].update(dict(
+  nav_walmart='Walmart', cat_wm='推荐费类目', wm_self='卖家自发货', wm_wfs='沃尔玛履约服务（WFS）',
+  nss_label='新卖家优惠（New-Seller Savings）档位', nss_none='未参加 / 不符合条件', nss_t20='减 20%（GMV 不超过 $50,000）', nss_t30='减 30%（GMV $50,001–$500,000）', nss_t40='减 40%（GMV 超过 $500,000）',
+  wt='单件重量', wt_h='单件含包装重量。不足 1 磅时，沃尔玛加 0.25 磅后向上取整。', dimwt='体积重', dimwt_h='长 × 宽 × 高（英寸）÷ 139。1 磅及以上按实重与体积重中较大者计算。', lb='磅',
+  t_wfsApparel='服装类商品', t_wfsApparel_h='WFS 对服装每件加收 $0.50。',
+  t_wfsHazmat='危险品', t_wfsHazmat_h='WFS 对危险品每件加收 $0.50。',
+  t_wfsOversize='超大件（最长边超过 48 英寸、中间边超过 30 英寸，或最长边 + 周长超过 105 英寸）', t_wfsOversize_h='WFS 每件加收 $3.00。更大的商品（最长边超过 96 英寸，或最长边 + 周长超过 130 英寸）每件加收 $20，且重量最低按 90 磅计，本工具不涵盖。',
+  t_wfsCredit='新卖家优惠的 WFS 折扣', t_wfsCredit_h='符合条件的新卖家可获 WFS 履约费 10% 返还，总额最高 $2,000。',
+  c_nss='新卖家优惠折扣', c_wfs='WFS 履约费', c_wfs_app='WFS 服装附加费', c_wfs_haz='WFS 危险品附加费',
+  c_wfs_low='WFS 附加费（售价低于 $10）', c_wfs_ovr='WFS 超大件附加费', c_wfs_credit='新卖家优惠的 WFS 折扣',
+  cmp_wm_a='标准推荐费', cmp_wm_b='享受新卖家优惠 20%', cmp_wm_note='两列之间只改变新卖家优惠档位，其他设置保持不变。',
+  c_psf_ph='平台运费', c_sgsf='卖家成长支持费', c_mdv='Mega Discount Voucher 服务费',
+  t_mdv='已参加 Mega Discount Voucher（MDV）', t_mdv_h='服务费 4%，每件最高 ₱200（大促日另加 1%）。',
+  mp_nonmall='非 Mall', th_tier='费率表中的卖家类型', th_tier_std='标准', th_tier_prime='PRIME 卖家', th_tier_small='小卖家', th_tier_smallprime='小卖家 + PRIME',
+  c_svc='活动项目服务费', c_svc_h='可选。如果参加了自带服务费的 Shopee 活动项目，请填写合计百分比。',
+))
+S['zh']['js'].update(dict(lb='磅', noWt='请输入商品重量', wtOver='超过 150 磅：不属于 WFS 标准件', above='超出部分', item='件',
+  condnote_u10='售价低于 $10 的商品，WFS 每件加收 $1.00。'))
+S['ru'].update(dict(
+  nav_walmart='Walmart', cat_wm='Категория реферального сбора', wm_self='Доставка силами продавца', wm_wfs='Фулфилмент Walmart (WFS)',
+  nss_label='Уровень New-Seller Savings', nss_none='Не участвую / не подхожу', nss_t20='Скидка 20% (GMV до $50 000)', nss_t30='Скидка 30% (GMV $50 001–$500 000)', nss_t40='Скидка 40% (GMV свыше $500 000)',
+  wt='Вес единицы', wt_h='Вес одной единицы в упаковке. Если меньше 1 фунта, Walmart добавляет 0,25 фунта и округляет вверх.', dimwt='Объёмный вес', dimwt_h='Длина × ширина × высота в дюймах ÷ 139. От 1 фунта берётся больший из фактического и объёмного веса.', lb='фунт.',
+  t_wfsApparel='Одежда', t_wfsApparel_h='WFS добавляет $0,50 за единицу одежды.',
+  t_wfsHazmat='Опасный груз', t_wfsHazmat_h='WFS добавляет $0,50 за единицу опасного груза.',
+  t_wfsOversize='Негабарит (самая длинная сторона больше 48 дюймов, средняя больше 30 дюймов или самая длинная сторона + обхват больше 105 дюймов)', t_wfsOversize_h='WFS добавляет $3,00 за единицу. Более крупные товары (самая длинная сторона больше 96 дюймов или самая длинная сторона + обхват больше 130 дюймов) — $20 и вес не меньше 90 фунтов; здесь они не учтены.',
+  t_wfsCredit='Скидка на WFS по New-Seller Savings', t_wfsCredit_h='Возврат 10% сборов за фулфилмент WFS, всего до $2000, для подходящих новых продавцов.',
+  c_nss='Скидка New-Seller Savings', c_wfs='Сбор за фулфилмент WFS', c_wfs_app='Надбавка WFS за одежду', c_wfs_haz='Надбавка WFS за опасный груз',
+  c_wfs_low='Надбавка WFS за товар дешевле $10', c_wfs_ovr='Надбавка WFS за негабарит', c_wfs_credit='Скидка на WFS по New-Seller Savings',
+  cmp_wm_a='Обычный реферальный сбор', cmp_wm_b='Со скидкой New-Seller Savings 20%', cmp_wm_note='Между колонками меняется только уровень New-Seller Savings. Остальные настройки те же.',
+  c_psf_ph='Сбор платформы за доставку', c_sgsf='Сбор поддержки роста продавца', c_mdv='Сервисный сбор Mega Discount Voucher',
+  t_mdv='Участвую в Mega Discount Voucher (MDV)', t_mdv_h='Сервисный сбор 4%, не больше ₱200 за товар (плюс 1% в дни крупных распродаж).',
+  mp_nonmall='Не Mall', th_tier='Тип продавца в таблице сборов', th_tier_std='Обычный', th_tier_prime='Продавец PRIME', th_tier_small='Малый продавец', th_tier_smallprime='Малый продавец + PRIME',
+  c_svc='Сборы за программы', c_svc_h='Необязательно. Если вы участвуете в программах Shopee со своим сервисным сбором, укажите их сумму в %.',
+))
+S['ru']['js'].update(dict(lb='фунт.', noWt='Укажите вес товара', wtOver='Больше 150 фунтов: не стандартный товар WFS', above='свыше', item='шт.',
+  condnote_u10='Для товаров дешевле $10 WFS берёт надбавку $1,00 за единицу.'))
