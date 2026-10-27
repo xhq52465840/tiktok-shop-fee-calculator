@@ -1,0 +1,428 @@
+@@ 89a7f790e2
+ms: Kalkulator Yuran TikTok Shop AS {0}: Yuran Rujukan & Untung
+ru: Калькулятор сборов TikTok Shop США {0}: реферальная комиссия и прибыль
+@@ 9ab8a56c09
+ms: Kalkulator yuran TikTok Shop AS percuma: yuran rujukan {0}% ({1}% untuk barang kemas halus dan Pre-Owned), caj penghantaran dalam asas, peringkat ${2}K untuk barang koleksi, serta komisen afiliasi dan untung.
+ru: Бесплатный калькулятор сборов TikTok Shop в США: реферальная комиссия {0}% ({1}% для ювелирных изделий и Pre-Owned), доставка в базе расчёта, порог ${2}K для коллекционных товаров, партнёрская комиссия и прибыль.
+@@ 064398d2a9
+ms: Kalkulator Yuran TikTok Shop Amerika Syarikat
+ru: Калькулятор сборов TikTok Shop для США
+@@ fcc4023d3c
+ms: Kira yuran rujukan TikTok Shop AS, bayaran anda dan untung anda menggunakan kadar kategori rasmi.
+ru: Рассчитайте реферальную комиссию TikTok Shop в США, сумму к выплате и прибыль по официальным ставкам категорий.
+@@ 14d0b3482e
+ms: Cara yuran rujukan berfungsi
+ru: Как работает реферальная комиссия
+@@ 1b0ae6b91a
+ms: Kadar mengikut kategori
+ru: Ставки по категориям
+@@ 6967886b4a
+ms: Tip penetapan harga
+ru: Советы по ценам
+@@ a180515704
+ms: Berapakah yuran rujukan TikTok Shop AS pada {0}?
+ru: Какая реферальная комиссия у TikTok Shop в США в {0} году?
+@@ 237401ad37
+ms: {0}% untuk kebanyakan kategori; {1}% untuk lima subkategori barang kemas halus dan semua kategori Pre-Owned. Barang koleksi dan Pre-Owned membayar {2}% bagi bahagian jualan melebihi ${3}.
+ru: {0}% для большинства категорий; {1}% для пяти подкатегорий ювелирных изделий и всех категорий Pre-Owned. Коллекционные товары и Pre-Owned платят {2}% с части продажи свыше ${3}.
+@@ f6659a7089
+ms: Adakah yuran rujukan dikenakan pada caj penghantaran?
+ru: Начисляется ли реферальная комиссия на доставку?
+@@ 30ea7c7e52
+ms: Ya. Asasnya termasuk caj penghantaran yang dibayar pelanggan. Cukai jualan tidak termasuk.
+ru: Да. В базу входит доставка, оплаченная покупателем. Налог с продаж не входит.
+@@ 50580c8a42
+ms: Adakah diskaun platform mengurangkan yuran?
+ru: Снижают ли скидки платформы комиссию?
+@@ 9108bee116
+ms: Tidak. TikTok menambah semula diskaun platform ke dalam asas, jadi yuran dikira seolah-olah pembeli membayar harga penuh.
+ru: Нет. TikTok добавляет скидки платформы обратно в базу, поэтому комиссия считается так, будто покупатель заплатил полную цену.
+@@ c43bccca50
+ms: Adakah komisen afiliasi termasuk?
+ru: Входит ли партнёрская комиссия?
+@@ 3982dc3762
+ms: Tidak. Komisen kreator ditetapkan oleh anda dan dikenakan secara berasingan. Masukkannya dalam kalkulator untuk melihat margin sebenar anda.
+ru: Нет. Комиссию для креаторов вы задаёте сами, и она удерживается отдельно. Укажите её в калькуляторе, чтобы увидеть реальную маржу.
+@@ 94a6f40a41
+ms: Cara yuran rujukan TikTok Shop AS berfungsi
+ru: Как устроена реферальная комиссия TikTok Shop в США
+@@ 9b6bf84138
+ms: Di Amerika Syarikat, TikTok Shop mengenakan satu yuran platform utama, iaitu <b1>yuran rujukan</b1>. Formula TikTok ialah <b2>yuran rujukan = kadar × (bayaran pelanggan + diskaun platform − cukai)</b2>. Secara praktikal, itu ialah harga item selepas diskaun anda sendiri serta caj penghantaran yang dibayar pelanggan. Diskaun yang dibiayai platform ditambah semula, jadi ia tidak mengurangkan yuran anda, dan cukai jualan tidak termasuk.
+ru: В США TikTok Shop взимает один основной сбор платформы — <b1>реферальную комиссию</b1>. Формула TikTok: <b2>реферальная комиссия = ставка × (оплата покупателя + скидка платформы − налог)</b2>. На практике это цена товара после вашей скидки плюс оплаченная покупателем доставка. Скидки за счёт платформы добавляются обратно и комиссию не снижают, а налог с продаж исключается.
+@@ c64987d86a
+ms: Kadarnya {0}% bagi hampir semua kategori. Lima subkategori barang kemas halus (Diamond, Gold, Jade, Platinum/Carat Gold, dan Ruby, Sapphire &amp; Emerald) dikenakan {1}% sejak {2} Oktober {3}, dan setiap subkategori Pre-Owned dikenakan {4}%. Jualan barang koleksi dan Pre-Owned hanya membayar {5}% bagi bahagian jualan melebihi ${6}.
+ru: Ставка — {0}% почти для всех категорий. Пять подкатегорий ювелирных изделий (<span lang="en">Diamond, Gold, Jade, Platinum/Carat Gold</span> и <span lang="en">Ruby, Sapphire &amp; Emerald</span>) с {2} октября {3} платят {1}%, а все подкатегории Pre-Owned — {4}%. Коллекционные товары и Pre-Owned платят лишь {5}% с части продажи свыше ${6}.
+@@ 20b899bb29
+ms: Yuran rujukan bukanlah gambaran penuh. Jika anda menjual melalui kreator, komisen afiliasi yang anda tetapkan dikenakan sebagai tambahan, dan ia selalunya lebih besar daripada yuran TikTok sendiri. Tambahkannya dalam kalkulator.
+ru: Реферальная комиссия — это ещё не всё. Если вы продаёте через креаторов, сверху удерживается заданная вами партнёрская комиссия, и она часто больше сбора самого TikTok. Добавьте её в калькуляторе.
+@@ a35e9a0f91
+ms: Contoh {0}: kemeja-T ${1} dengan caj penghantaran ${2} dibayar pembeli
+ru: Пример {0}: футболка за ${1} и доставка ${2} за счёт покупателя
+@@ d52be50e9a
+ms: Yuran rujukan dikenakan pada ${0}, termasuk caj penghantaran yang dibayar pembeli. Kos produk ${1}, kos label ${2}.
+ru: Реферальная комиссия начисляется на ${0}, включая оплаченную покупателем доставку. Себестоимость ${1}, стоимость этикетки ${2}.
+@@ 46c8795e3f
+ms: Yuran rujukan ({0}%)
+ru: Реферальная комиссия ({0}%)
+@@ a4af44967b
+ms: Untung ${0} ({1}% daripada harga item). Dengan komisen kreator {2}%, ia turun kepada ${3}.
+ru: Прибыль — ${0} ({1}% цены товара). С комиссией креатора {2}% она снижается до ${3}.
+@@ 3af0952861
+ms: Contoh {0}: kad dagangan ${1}
+ru: Пример {0}: коллекционная карточка за ${1}
+@@ abe9005713
+ms: Barang koleksi membayar {0}% bagi ${1} pertama dan {2}% bagi bakinya: {3}% × ${4} + {5}% × ${6} = ${7}, kadar efektif {8}%.
+ru: Коллекционные товары платят {0}% с первых ${1} и {2}% с остатка: {3}% × ${4} + {5}% × ${6} = ${7}, эффективная ставка {8}%.
+@@ 80949f1b8c
+ms: Contoh {0}: rantai leher emas ${1}
+ru: Пример {0}: золотая цепочка за ${1}
+@@ 6a91798ce6
+ms: Barang kemas emas ialah salah satu subkategori {0}%, jadi yuran rujukan ialah ${1}, bukan ${2} pada {3}%.
+ru: Золотые украшения относятся к подкатегориям со ставкой {0}%, поэтому реферальная комиссия — ${1}, а не ${2} по ставке {3}%.
+@@ 5c2e681e93
+ms: Kadar yuran rujukan mengikut kategori
+ru: Ставки реферальной комиссии по категориям
+@@ 3a9c736b31
+ms: Kadar
+ru: Ставка
+zh: 费率
+@@ 70440046a3
+ms: Nota
+ru: Примечания
+zh: 备注
+@@ a604a8ffbc
+ms: {0}% bagi bahagian jualan melebihi ${1}
+ru: {0}% с части продажи свыше ${1}
+@@ 2e45e1d5c3
+ms: Subkategori {0}%: <span lang="en">Jewelry Accessories & Derivatives › Diamond, Jewelry Accessories & Derivatives › Gold, Jewelry Accessories & Derivatives › Jade, Jewelry Accessories & Derivatives › Platinum, Carat Gold, Jewelry Accessories & Derivatives › Ruby, Sapphire & Emerald, Pre-Owned › Bags, Pre-Owned › Collectible Trading Cards, Pre-Owned › Luggage & Travel, Pre-Owned › Watches, Pre-Owned › Footwear, Pre-Owned › Refurbished Phones & Electronics, Pre-Owned › Fashion Accessories, Pre-Owned › Menswear, Pre-Owned › Womenswear, Pre-Owned › Collectible Coins and Paper Money, Pre-Owned › Collectible Figures, Pre-Owned › Collectible Comic Books</span>.
+ru: Подкатегории со ставкой {0}%: <span lang="en">Jewelry Accessories & Derivatives › Diamond, Jewelry Accessories & Derivatives › Gold, Jewelry Accessories & Derivatives › Jade, Jewelry Accessories & Derivatives › Platinum, Carat Gold, Jewelry Accessories & Derivatives › Ruby, Sapphire & Emerald, Pre-Owned › Bags, Pre-Owned › Collectible Trading Cards, Pre-Owned › Luggage & Travel, Pre-Owned › Watches, Pre-Owned › Footwear, Pre-Owned › Refurbished Phones & Electronics, Pre-Owned › Fashion Accessories, Pre-Owned › Menswear, Pre-Owned › Womenswear, Pre-Owned › Collectible Coins and Paper Money, Pre-Owned › Collectible Figures, Pre-Owned › Collectible Comic Books</span>.
+@@ 147f7fb281
+ms: <b1>Kenakan caj penghantaran dengan sedar.</b1> Caj penghantaran yang dibayar pembeli termasuk dalam asas yuran rujukan, jadi caj penghantaran ${0} menelan kos yuran ${1}.
+ru: <b1>Учитывайте доставку в цене.</b1> Оплаченная покупателем доставка входит в базу реферальной комиссии, так что доставка за ${0} обходится вам в ${1} сборов.
+@@ f7a17c0d82
+ms: <b1>Peruntukkan bajet untuk kreator.</b1> Komisen afiliasi biasanya melebihi yuran rujukan {0}%. Tetapkan komisen yang mampu anda tanggung pada margin sasaran.
+ru: <b1>Заложите бюджет на креаторов.</b1> Партнёрская комиссия обычно больше реферальной комиссии {0}%. Ставьте такую комиссию, которую выдерживает ваша целевая маржа.
+@@ e1b2ade461
+ms: <b1>Semak kategori anda.</b1> Barang kemas dalam lima subkategori barang kemas halus membayar {0}%; barang kemas lain membayar {1}%. Pastikan penyenaraian dikategorikan dengan betul.
+ru: <b1>Проверьте категорию.</b1> Украшения в пяти ювелирных подкатегориях платят {0}%, остальные — {1}%. Убедитесь, что товары размещены в правильной категории.
+@@ 79af6e0181
+ms: Baca <a1>cara menetapkan harga untuk margin sasaran</a1>.
+ru: Читайте также: <a1>как назначить цену под целевую маржу</a1>.
+@@ d1d7cb6176
+ms: Kalkulator Yuran TikTok Shop UK {0}: Komisen {1}% & Untung
+ru: Калькулятор сборов TikTok Shop Великобритания {0}: комиссия {1}% и прибыль
+@@ 09e85dc1db
+ms: Kalkulator komisen dan untung TikTok Shop UK percuma: kadar standard {0}%, {1}% untuk elektronik dan kecantikan yang layak, caj pos dalam asas, serta komisen afiliasi.
+ru: Бесплатный калькулятор комиссии и прибыли TikTok Shop в Великобритании: стандартная ставка {0}%, {1}% для отдельных категорий электроники и красоты, доставка в базе расчёта и партнёрская комиссия.
+@@ f12c6be204
+ms: Kalkulator Yuran TikTok Shop United Kingdom
+ru: Калькулятор сборов TikTok Shop для Великобритании
+@@ 6934d1db36
+ms: Anggarkan komisen TikTok Shop UK dan jumlah yang anda simpan bagi setiap pesanan, berdasarkan dasar komisen rasmi.
+ru: Оцените комиссию TikTok Shop в Великобритании и то, что остаётся вам с заказа, по официальной политике комиссий.
+@@ af5660b5a8
+ms: Cara komisen berfungsi
+ru: Как начисляется комиссия
+@@ 2d114fdf7f
+ms: Berapakah kadar komisen TikTok Shop UK?
+ru: Какая ставка комиссии у TikTok Shop в Великобритании?
+@@ d8f4394c0d
+ms: {0}% termasuk VAT untuk kebanyakan kategori. Kategori Elektronik dan Kecantikan & Penjagaan Diri yang ditetapkan mendapat kadar efektif {1}%.
+ru: {0}% с НДС для большинства категорий. Для отдельных категорий электроники и красоты эффективная ставка — {1}%.
+@@ f725ee4734
+ms: Adakah komisen dikenakan pada caj pos?
+ru: Начисляется ли комиссия на доставку?
+@@ c2b7159fb6
+ms: Ya. Caj penghantaran yang dibayar pelanggan termasuk dalam asas komisen.
+ru: Да. Оплаченная покупателем доставка входит в базу комиссии.
+@@ 561ae87ad6
+ms: Bolehkah pengurangan digabungkan?
+ru: Суммируются ли скидки на комиссию?
+@@ ba9a5b26b9
+ms: Tidak. Hanya satu pengurangan komisen terpakai pada satu produk pada satu masa.
+ru: Нет. К товару одновременно применяется только одно снижение комиссии.
+@@ c487bfb202
+ms: Adakah komisen dipulangkan apabila barang dipulangkan?
+ru: Возвращается ли комиссия при возврате товара?
+@@ ecf7b3128c
+ms: Ya. Pemulangan penuh memulangkan komisen sepenuhnya; bayaran balik separa memulangkan komisen bagi item yang dibayar balik.
+ru: Да. При полном возврате комиссия возвращается целиком, при частичном — только за возвращённые товары.
+@@ 229432af6a
+ms: Cara komisen TikTok Shop UK berfungsi
+ru: Как устроена комиссия TikTok Shop в Великобритании
+@@ ff56bd9dfe
+ms: TikTok Shop UK mengenakan komisen pada setiap jualan. Kadar standard ialah <b1>{0}%</b1>, termasuk VAT, sebelum sebarang pengurangan. Formula TikTok ialah <b2>komisen = ((jualan bersih + caj penghantaran dibayar pelanggan + diskaun platform) − (bayaran balik jualan bersih + bayaran balik diskaun platform)) × kadar</b2>. Jadi caj penghantaran yang dibayar pembeli termasuk, diskaun platform ditambah semula, dan bayaran balik ditolak.
+ru: TikTok Shop в Великобритании берёт комиссию с каждой продажи. Стандартная ставка — <b1>{0}%</b1> с НДС до любых скидок. Формула TikTok: <b2>комиссия = ((чистые продажи + оплаченная покупателем доставка + скидка платформы) − (возврат по чистым продажам + возврат скидки платформы)) × ставка</b2>. То есть доставка за счёт покупателя учитывается, скидки платформы добавляются обратно, а возвраты вычитаются.
+@@ a44228ec5c
+ms: Produk dalam kategori Elektronik dan Kecantikan &amp; Penjagaan Diri yang ditetapkan menerima pengurangan {0} mata di peringkat kategori secara automatik, iaitu kadar efektif <b1>{1}%</b1>. TikTok juga boleh menawarkan pengurangan melalui misi Seller Centre. Hanya satu pengurangan terpakai pada satu produk pada satu masa; ia tidak boleh digabungkan.
+ru: Товары в отдельных категориях электроники и красоты автоматически получают снижение на {0} п. п. на уровне категории — эффективная ставка <b1>{1}%</b1>. TikTok также может предлагать снижение через задания в Seller Centre. К товару одновременно применяется только одно снижение, они не суммируются.
+@@ 0f571a36a3
+ms: Jika pesanan dipulangkan sepenuhnya, komisen dipulangkan sepenuhnya. Jika sebahagian pesanan dibayar balik, hanya komisen bagi item yang dibayar balik dikembalikan.
+ru: При полном возврате заказа комиссия возвращается целиком. При частичном возврате возвращается только комиссия за возвращённые товары.
+@@ f133c102d7
+ms: Subkategori yang layak untuk {0}% disenaraikan dalam dokumen TikTok "Commission Rate by Product Categories" yang dipautkan daripada dasar tersebut. Pastikan produk anda dikategorikan dengan betul: jika TikTok mengkategorikan semula semasa semakan penyenaraian, kadar dikurangkan tidak lagi terpakai.
+ru: Какие подкатегории получают {0}%, указано в документе TikTok «Commission Rate by Product Categories», ссылка на который есть в политике. Проверьте, что товар в правильной категории: если TikTok при модерации перенесёт его в другую, сниженная ставка перестанет действовать.
+@@ 9f0ef2ba4b
+ms: Contoh {0}: gaun £{1} dengan caj penghantaran £{2} dibayar pembeli
+ru: Пример {0}: платье за £{1} и доставка £{2} за счёт покупателя
+@@ 91705a9711
+ms: Komisen dikenakan pada £{0}. Selepas kos produk £{1} dan caj pos £{2}, untung ialah £{3}.
+ru: Комиссия начисляется на £{0}. После себестоимости £{1} и доставки £{2} прибыль составляет £{3}.
+@@ 0ec1fda2ee
+ms: Contoh {0}: item £{1} dalam kategori elektronik yang layak
+ru: Пример {0}: товар за £{1} из категории электроники со сниженной ставкой
+@@ d79a87c3ed
+ms: Pada kadar dikurangkan {0}%, komisen ialah £{1}, bukan £{2} pada {3}%.
+ru: По сниженной ставке {0}% комиссия — £{1} вместо £{2} по ставке {3}%.
+@@ f9a4065f79
+ms: <b1>Caj penghantaran termasuk dalam asas.</b1> Caj pos £{0} menambah kira-kira £{1} komisen pada {2}%.
+ru: <b1>Доставка входит в базу.</b1> Доставка за £{0} добавляет около £{1} комиссии по ставке {2}%.
+@@ 50c48f00ea
+ms: <b1>Cari misi.</b1> TikTok menawarkan pengurangan komisen melalui misi Seller Centre, terutamanya untuk penjual baharu. Ia tidak boleh digabungkan dengan pengurangan kategori.
+ru: <b1>Следите за заданиями.</b1> TikTok предлагает снижение комиссии через задания в Seller Centre, особенно новым продавцам. Со снижением по категории они не суммируются.
+@@ 250a34348b
+ms: <b1>Tambah komisen kreator.</b1> Komisen afiliasi dikenakan di atas {0}% TikTok.
+ru: <b1>Добавьте комиссию креатора.</b1> Партнёрская комиссия удерживается сверх {0}% TikTok.
+@@ 77ed934c3b
+ms: Kebanyakan kategori (kadar standard)
+ru: Большинство категорий (стандартная ставка)
+zh: 大多数类目（标准费率）
+@@ 6ba17455a5
+ms: Kategori Elektronik dan Kecantikan & Penjagaan Diri yang ditetapkan (kadar dikurangkan)
+ru: Отдельные категории электроники и красоты (сниженная ставка)
+zh: 指定电子与美妆个护类目（优惠费率）
+@@ af43b2437c
+ms: Kalkulator Yuran TikTok Shop Singapura {0} (Komisen {1}% mulai {2} Sep)
+ru: Калькулятор сборов TikTok Shop Сингапур {0} (комиссия {1}% с {2} сентября)
+@@ cd6c2ca4bb
+ms: Kalkulator yuran dan untung TikTok Shop Singapura percuma: komisen {0}% / {1}% BXP mulai {2} Sep {3} dengan had elektronik S${4}, yuran transaksi {5}% dan yuran perkhidmatan BXP. Termasuk GST.
+ru: Бесплатный калькулятор сборов и прибыли TikTok Shop в Сингапуре: комиссия {0}% / {1}% для BXP с {2} сент. {3}, лимит S${4} для электроники, транзакционный сбор {5}% и сервисный сбор BXP. Все ставки с GST.
+@@ 0075283a21
+ms: Kalkulator Yuran TikTok Shop Singapura
+ru: Калькулятор сборов TikTok Shop для Сингапура
+@@ 1cb00499a0
+ms: Lihat apa yang dipotong TikTok Shop Singapura daripada setiap pesanan dan berapa yang anda simpan, menggunakan jadual komisen rasmi termasuk GST bagi pesanan mulai {0} September {1}.
+ru: Узнайте, что TikTok Shop в Сингапуре удерживает с каждого заказа и сколько остаётся вам, по официальной таблице комиссий с GST для заказов с {0} сентября {1}.
+@@ eb3c379463
+ms: Cara yuran TikTok Shop Singapura berfungsi
+ru: Как устроены сборы TikTok Shop в Сингапуре
+@@ f0d572b1d5
+ms: Apa yang berubah pada {0} September {1}
+ru: Что изменилось {0} сентября {1}
+@@ 7df41db665
+ms: Kadar komisen mengikut kategori
+ru: Ставки комиссии по категориям
+@@ ffb112b317
+ms: Andaian kalkulator
+ru: Допущения калькулятора
+@@ 568b269c99
+ms: Apakah yuran penjual TikTok Shop Singapura pada {0}?
+ru: Какие сборы у TikTok Shop в Сингапуре в {0} году?
+@@ 6b86f1e3c1
+ms: Yuran Komisen Platform {0}% ({1}% untuk penjual BXP) bagi pesanan mulai {2} September {3}, dengan had S${4} dalam kategori elektronik, mainan dan barang koleksi, serta Yuran Transaksi {5}%. Penjual BXP juga membayar yuran perkhidmatan BXP {6}% atau {7}% (had S${8} seunit). Semua kadar termasuk GST {9}%.
+ru: Комиссия платформы {0}% ({1}% для участников BXP) для заказов с {2} сентября {3}, с лимитом S${4} в категориях электроники, игрушек и коллекционных товаров, плюс транзакционный сбор {5}%. Участники BXP также платят сервисный сбор BXP {6}% или {7}% (не более S${8} за единицу). Все ставки включают GST {9}%.
+@@ a81c8f39d8
+ms: Adakah komisen TikTok Shop Singapura sama untuk setiap kategori?
+ru: Одинакова ли комиссия TikTok Shop в Сингапуре для всех категорий?
+@@ fb121752f4
+ms: Sejak {0} September {1}, ya: {2}% standard dan {3}% BXP dalam setiap kategori jadual rasmi. Yang berbeza ialah had S${4}, yang hanya terpakai pada industri 'EL, Toys & Collectibles'.
+ru: С {0} сентября {1} — да: {2}% стандартно и {3}% для BXP во всех категориях официальной таблицы. Различается только лимит S${4}, который действует лишь в отрасли «EL, Toys & Collectibles».
+@@ ad5e8e3849
+ms: Bagaimana komisen dikira?
+ru: Как рассчитывается комиссия?
+@@ 130d54487f
+ms: (Harga item − diskaun penjual) × kadar. Caj penghantaran dan diskaun platform TikTok tidak termasuk.
+ru: (Цена товара − скидка продавца) × ставка. Доставка и скидки платформы TikTok не учитываются.
+@@ 196f99eada
+ms: Bagaimana yuran transaksi {0}% dikira?
+ru: Как рассчитывается транзакционный сбор {0}%?
+@@ 8379c7f63c
+ms: Pada bayaran pelanggan, termasuk caj penghantaran, ditambah diskaun platform TikTok, ditolak bayaran balik. Ia dipulangkan secara berkadar apabila barang dipulangkan.
+ru: С оплаты покупателя, включая доставку, плюс скидка платформы TikTok, минус возвраты. При возврате товара сбор возмещается пропорционально.
+@@ b4df2469ae
+ms: Bilakah yuran perkhidmatan BXP naik?
+ru: Когда растёт сервисный сбор BXP?
+@@ 0addede423
+ms: Semasa kempen hari berangka berganda dan Payday, ia {0} mata lebih tinggi: {1}% berbanding {2}%, atau {3}% berbanding {4}%.
+ru: Во время акций «двойных» дат и Payday он выше на {0} п. п.: {1}% вместо {2}% или {3}% вместо {4}%.
+@@ c56424f23b
+ms: Adakah kadar termasuk GST?
+ru: Включают ли ставки GST?
+@@ bb3ea2ea3c
+ms: Ya. TikTok menerbitkan yuran komisen, transaksi dan perkhidmatan BXP untuk Singapura termasuk GST {0}%.
+ru: Да. TikTok публикует комиссию, транзакционный и сервисный сбор BXP для Сингапура с учётом GST {0}%.
+@@ 1c322a3a6d
+ms: Adakah kalkulator ini sesuai untuk penjual rentas sempadan?
+ru: Подходит ли калькулятор для трансграничных продавцов?
+@@ bd114df631
+ms: Ia menggunakan jadual penjual tempatan. Notis Global Seller TikTok bertarikh {0} September {1} menunjukkan kadar berbeza dalam contohnya, jadi penjual rentas sempadan perlu menyemak Seller Center mereka sendiri dan mengubah kadar.
+ru: Он использует таблицы для местных продавцов. В уведомлении TikTok для Global Seller от {0} сентября {1} в примерах указаны другие ставки, поэтому трансграничным продавцам стоит проверить свой Seller Center и поправить ставки.
+@@ 15b138b9cf
+ms: Gambaran keseluruhan yuran TikTok Shop Singapura sendiri menyenaraikan dua yuran penjual pada pesanan yang dihantar: <b1>Yuran Komisen Platform</b1> dan <b2>Yuran Transaksi</b2>. Penjual dalam Bonus Extra Program (BXP) membayar yuran ketiga, iaitu yuran perkhidmatan BXP. Setiap kadar yang diterbitkan TikTok untuk Singapura sudah termasuk GST {0}%, jadi tiada tambahan di atasnya.
+ru: В собственном обзоре сборов TikTok Shop Сингапур с доставленного заказа указаны два сбора: <b1>комиссия платформы</b1> и <b2>транзакционный сбор</b2>. Участники Bonus Extra Program (BXP) платят третий — сервисный сбор BXP. Все ставки, которые TikTok публикует для Сингапура, уже включают GST {0}%, поэтому сверху ничего не добавляется.
+@@ d465a9ebd0
+ms: {0}. Yuran Komisen Platform
+ru: {0}. Комиссия платформы
+@@ 192b34851f
+ms: Mulai {0}:{1}, {2} September {3} (GMT+{4}), jadual rasmi mengenakan <b1>{5}%</b1> kepada penjual standard dan <b2>{6}%</b2> kepada penjual BXP dalam setiap kategori. Baris dalam industri "EL, Toys &amp; Collectibles" — elektronik, perkakas, komputer, mainan, barang koleksi, baucar dan seumpamanya — mempunyai <b3>had yuran S${7}</b3>; baris lain tiada had. Asasnya ialah <b4>(harga item − diskaun penjual) × kadar</b4>. Caj penghantaran dan diskaun yang dibiayai TikTok tidak termasuk.
+ru: С {0}:{1} {2} сентября {3} (GMT+{4}) официальная таблица устанавливает <b1>{5}%</b1> для обычных продавцов и <b2>{6}%</b2> для участников BXP во всех категориях. Для строк отрасли «EL, Toys &amp; Collectibles» — электроника, бытовая техника, компьютеры, игрушки, коллекционные товары, ваучеры и т. п. — действует <b3>лимит сбора S${7}</b3>; у остальных строк лимита нет. База — <b4>(цена товара − скидка продавца) × ставка</b4>. Доставка и скидки за счёт TikTok в неё не входят.
+@@ 43280ce28c
+ms: {0}. Yuran Transaksi
+ru: {0}. Транзакционный сбор
+@@ 5c531d0ca0
+ms: <b1>{0}%</b1> (termasuk GST) sejak {1} Oktober {2}, naik daripada {3}%. Sejak {4} April {5}, ia dikenakan pada jumlah yang dibayar pelanggan (termasuk caj penghantaran) ditambah diskaun platform TikTok, ditolak sebarang bayaran balik. Contoh TikTok: S${6} × {7}% = S${8}. Ia dipulangkan secara berkadar apabila pesanan dipulangkan.
+ru: <b1>{0}%</b1> (с GST) с {1} октября {2}, ранее {3}%. С {4} апреля {5} начисляется на сумму, оплаченную покупателем (включая доставку), плюс скидка платформы TikTok, минус возвраты. Пример TikTok: S${6} × {7}% = S${8}. При возврате заказа сбор возмещается пропорционально.
+@@ f29d11825a
+ms: {0}. Yuran perkhidmatan BXP (penjual BXP sahaja)
+ru: {0}. Сервисный сбор BXP (только для участников BXP)
+@@ e0a6799ea1
+ms: BXP memberi produk anda Bonus Cashback, LIVE Specials dan baucar Voucher Xtra sebagai pertukaran untuk yuran perkhidmatan pada <b1>setiap</b1> pesanan yang selesai, sama ada menggunakan baucar atau tidak: <b2>{0}%</b2> dalam subkategori elektronik, penjagaan bayi dan perkakas yang disenaraikan dan <b3>{1}%</b3> dalam semua yang lain, pada (harga produk bersih − diskaun dibiayai penjual), dengan had <b4>S${2} seunit</b4>. Semasa kempen hari berangka berganda dan Payday, ia naik {3} mata ({4}% / {5}%). Kalkulator mengenakan kadar yang betul pada setiap {6} kategori ({7} berada dalam kumpulan {8}%).
+ru: BXP даёт вашим товарам Bonus Cashback, LIVE Specials и ваучеры Voucher Xtra в обмен на сервисный сбор с <b1>каждого</b1> выполненного заказа — с ваучером или без: <b2>{0}%</b2> в перечисленных подкатегориях электроники, товаров для ухода за детьми и бытовой техники и <b3>{1}%</b3> во всех остальных, от (чистой цены товара − скидок за счёт продавца), не более <b4>S${2} за единицу</b4>. Во время акций «двойных» дат и Payday ставка растёт на {3} п. п. ({4}% / {5}%). Калькулятор применяет нужную ставку к каждой из {6} категорий ({7} относятся к группе {8}%).
+@@ f2b80f8754
+ms: Semua contoh menggunakan jadual rasmi dan formula yang sama seperti kalkulator di atas.
+ru: Во всех примерах используются официальные таблицы и те же формулы, что и в калькуляторе выше.
+@@ 051b2a24a7
+ms: Contoh {0}: serum S${1}, bukan BXP, sebelum dan selepas {2} September
+ru: Пример {0}: сыворотка за S${1}, без BXP, до и после {2} сентября
+@@ d78a8730e9
+ms: Kos produk S${0}, tiada diskaun, penghantaran percuma dibiayai platform.
+ru: Себестоимость S${0}, без скидки, бесплатная доставка за счёт платформы.
+@@ 2ff38d454a
+ms: {0} Jul – {1} Ogos
+ru: {0} июля – {1} авг.
+@@ a5a3da4b47
+ms: Mulai {0} Sep
+ru: С {0} сент.
+@@ 4bfc46bc92
+ms: Komisen
+ru: Комиссия
+zh: 佣金
+@@ fbe95db000
+ms: Untung selepas kos S${0}
+ru: Прибыль после себестоимости S${0}
+@@ 3213eb04ba
+ms: Jadual {0} September menelan kos tambahan S${1} setiap pesanan bagi penjual ini; margin berubah daripada {2}% kepada {3}%.
+ru: Таблица от {0} сентября обходится этому продавцу в S${1} за заказ; маржа меняется с {2}% до {3}%.
+@@ a117448777
+ms: Contoh {0}: serum yang sama sebagai penjual BXP
+ru: Пример {0}: та же сыворотка у участника BXP
+@@ 88264f2980
+ms: Yuran perkhidmatan BXP ({0}%)
+ru: Сервисный сбор BXP ({0}%)
+@@ dc9b6e3bf1
+ms: Untung S${0} pada hari biasa dan S${1} pada hari kempen (yuran BXP {2}%), berbanding S${3} di luar BXP. BXP hanya berbaloi jika baucarnya membawa pesanan tambahan.
+ru: Прибыль S${0} в обычный день и S${1} в день акции (сбор BXP {2}%) против S${3} без BXP. BXP окупается, только если ваучеры приносят дополнительные заказы.
+@@ b8bcba02bd
+ms: Contoh {0}: telefon S${1} — had baharu S${2}
+ru: Пример {0}: телефон за S${1} — новый лимит S${2}
+@@ dcfa6daf0b
+ms: Telefon bimbit berada dalam kumpulan elektronik yang dihadkan. Tanpa had, {0}% ialah S${1}.
+ru: Мобильные телефоны относятся к группе электроники с лимитом. Без лимита {0}% составили бы S${1}.
+@@ b4e2a2d2a9
+ms: dihadkan −S${0}
+ru: лимит −S${0}
+@@ 32446e8812
+ms: Bagi elektronik bernilai tinggi, jadual baharu lebih murah: had turun daripada S${0} kepada S${1} seunit, jadi telefon ini menyimpan S${2} lebih setiap pesanan.
+ru: Для дорогой электроники новая таблица выгоднее: лимит снизился с S${0} до S${1} за единицу, и с этого телефона остаётся на S${2} больше за заказ.
+@@ 195174cdcd
+ms: Contoh {0}: contoh BXP TikTok sendiri
+ru: Пример {0}: примеры BXP от самого TikTok
+@@ 3c512c5480
+ms: Halaman BXP TikTok menggunakan dua pesanan pada {0}%. Kalkulator menghasilkan semula kedua-duanya: S${1} dengan diskaun penjual S${2} memberikan yuran BXP <b1>S${3}</b1> (({4} − {5}) × {6}%), dan S${7} dengan diskaun S${8} memberikan S${9} sebelum had, dikenakan sebagai <b2>S${10}</b2>. Contoh yuran transaksi (S${11} × {12}%) menjadi S${13} selepas pembundaran.
+ru: На странице BXP TikTok приводит два заказа по ставке {0}%. Калькулятор воспроизводит оба: S${1} со скидкой продавца S${2} дают сбор BXP <b1>S${3}</b1> (({4} − {5}) × {6}%), а S${7} со скидкой S${8} дают S${9} до лимита и списываются как <b2>S${10}</b2>. Пример транзакционного сбора (S${11} × {12}%) после округления даёт S${13}.
+@@ f17102a33f
+ms: TikTok menggantikan jadual {0} Julai {1} dengan satu struktur rata:
+ru: TikTok заменил таблицу от {0} июля {1} единой структурой:
+@@ 545f520306
+ms: {0} Jul – {1} Ogos {2}
+ru: {0} июля – {1} авг. {2}
+@@ 9c634f5241
+ms: Mulai {0} Sep {1}
+ru: С {0} сент. {1}
+@@ e9a99b31f5
+ms: Standard (bukan BXP)
+ru: Стандарт (без BXP)
+@@ 50dde79427
+ms: {0}% dalam kebanyakan kategori; {1}% dalam {2} kategori elektronik dan perkakas
+ru: {0}% в большинстве категорий; {1}% в {2} категориях электроники и бытовой техники
+@@ 8666ae44f3
+ms: {0}% untuk semua
+ru: {0}% везде
+@@ 6e43a8b7f2
+ms: {0}%; {1}% dalam kategori elektronik dan perkakas yang sama
+ru: {0}%; {1}% в тех же категориях электроники и бытовой техники
+@@ e4bf8cd6a4
+ms: Had yuran
+ru: Лимит сбора
+@@ 809963e977
+ms: S${0} dalam {1} kategori
+ru: S${0} в {1} категориях
+@@ e9db7ddcc0
+ms: S${0} dalam {1} kategori ("EL, Toys &amp; Collectibles")
+ru: S${0} в {1} категориях («EL, Toys &amp; Collectibles»)
+@@ d905bff362
+ms: Bagi penjual standard, itu +{0} mata dalam {1} daripada {2} kategori dan +{3} mata dalam {4}. Dalam kategori yang dihadkan, mana-mana item berharga melebihi kira-kira S${5} (standard) atau S${6} (BXP) mencecah siling S${7}. Analisis penuh: <a1>panduan kami tentang perubahan {8} September</a1>.
+ru: Для обычного продавца это +{0} п. п. в {1} из {2} категорий и +{3} п. п. в {4}. В категориях с лимитом любой товар дороже примерно S${5} (стандарт) или S${6} (BXP) упирается в потолок S${7}. Подробный разбор — в <a1>нашем гайде об изменениях {8} сентября</a1>.
+@@ b8121b839c
+ms: Jadual terdahulu di halaman TikTok berkuat kuasa pada {0} Oktober {1}, {2} April {3} dan {4} Julai {5}. Kalkulator mengekalkan jadual {6} Julai supaya anda boleh membandingkan.
+ru: Предыдущие таблицы на странице TikTok вступали в силу {0} октября {1}, {2} апреля {3} и {4} июля {5}. Калькулятор сохраняет таблицу от {6} июля, чтобы можно было сравнить.
+@@ 5d34cf95de
+ms: Kategori popular. Semua kadar termasuk GST.
+ru: Популярные категории. Все ставки с GST.
+@@ 402a97fc60
+ms: Bukan BXP mulai {0} Sep
+ru: Без BXP с {0} сент.
+@@ 6e8bc43cc5
+ms: BXP mulai {0} Sep
+ru: BXP с {0} сент.
+@@ 29d55fc779
+ms: Had mulai {0} Sep
+ru: Лимит с {0} сент.
+@@ 0299927003
+ms: Bukan BXP {0} Jul
+ru: Без BXP, {0} июля
+@@ 37538a3fb6
+ms: BXP {0} Jul
+ru: BXP, {0} июля
+@@ dc1743f73f
+ms: Had {0} Jul
+ru: Лимит, {0} июля
+@@ 3beadfdf9a
+ms: Yuran perkhidmatan BXP
+ru: Сервисный сбор BXP
+zh: BXP 服务费
+@@ 7cae19e81c
+ms: Tunjukkan kesemua {0} kategori
+ru: Показать все категории ({0})
+zh: 显示全部 {0} 个类目
+@@ 2288c82a98
+ms: Subkategori dengan kadar yang sama dikumpulkan di bawah kategori induknya; kumpulan bercampur disenaraikan satu per satu.
+ru: Подкатегории с одинаковыми ставками сгруппированы под родительской категорией; смешанные группы перечислены по отдельности.
+@@ 39d3c56231
+ms: Tapis, cth. penjagaan kulit
+ru: Фильтр, напр. уход за кожей
+@@ 3b13ededa7
+ms: (kesemua {0})
+ru: (все {0})
+zh: （共 {0} 个）
+@@ ee7b677f1f
+ms: <b1>Penjual tempatan.</b1> Jadual ini ialah jadual penjual tempatan TikTok Shop Singapura. Penjual rentas sempadan dibilkan di bawah program Global Seller, dan notis {0} September {1} program itu menunjukkan kadar berbeza dalam contohnya — semak Global Seller Center anda.
+ru: <b1>Местные продавцы.</b1> Это таблицы TikTok Shop Сингапур для местных продавцов. Трансграничные продавцы работают по программе Global Seller, и в её уведомлении от {0} сентября {1} в примерах указаны другие ставки — сверьте ставки в своём кабинете Global Seller.
+@@ 77fc5e4b14
+ms: <b1>Marketplace dan Mall.</b1> Halaman TikTok menyatakan kadar Marketplace dan Mall boleh berbeza, tetapi PDF {0} September menerbitkan satu set kadar sahaja. Jika kontrak Mall anda menunjukkan kadar lain, ubah kadar komisen.
+ru: <b1>Marketplace и Mall.</b1> На странице TikTok сказано, что ставки Marketplace и Mall могут различаться, но в PDF от {0} сентября опубликован один набор ставок. Если в вашем договоре Mall указано иное, измените ставку комиссии.
+@@ 2da85f7332
+ms: <b1>Had seunit.</b1> TikTok melabelkan S${0} sebagai <span lang="en">"fee upper cap"</span>; kami mengenakannya seunit, sama seperti cara TikTok menyatakan had BXP.
+ru: <b1>Лимит за единицу.</b1> TikTok называет S${0} <span lang="en">«fee upper cap»</span>; мы применяем его к каждой единице товара — так же, как TikTok формулирует лимит BXP.
+@@ a036bfda9d
+ms: <b1>Produk yang tidak layak BXP.</b1> Produk maya, susu formula bayi dan emas tidak boleh menggunakan BXP dan dikenakan kadar standard, jadi biarkan suis BXP dimatikan untuknya.
+ru: <b1>Товары без BXP.</b1> Виртуальные товары, детские смеси и золото не участвуют в BXP и оплачиваются по стандартной ставке — для них оставьте переключатель BXP выключенным.
+@@ 4ccd03e58c
+ms: <b1>Tidak termasuk:</b1> yuran perkhidmatan prapesanan {0}%, yuran rakan afiliasi, pelarasan penghantaran dan penalti. Tambah mana-mana yang berkaitan di bawah "Kos lain bagi setiap pesanan".
+ru: <b1>Не учтены:</b1> сервисный сбор {0}% за предзаказ, сборы партнёров-аффилиатов, корректировки доставки и штрафы. Добавьте нужное в поле «Прочие расходы на заказ».
+@@ 413b4858cc
+ms: <b1>Tetapkan semula harga item harian.</b1> Kecantikan, fesyen dan makanan berharga rendah menerima kenaikan penuh kepada {0}%. Bagi item S${1}, tambahan {2} mata itu menelan kira-kira S${3} setiap pesanan.
+ru: <b1>Пересчитайте цены на повседневные товары.</b1> Недорогие товары красоты, моды и еды получили полное повышение до {0}%. Для товара за S${1} лишние {2} п. п. — это около S${3} с заказа.
+@@ e041168e21
+ms: <b1>Semak BXP mengikut kategori.</b1> BXP menjimatkan {0} mata komisen tetapi menambah kos {1}% atau {2}%, jadi yuran setiap pesanan meningkat. Ia hanya berbaloi jika baucar melonjakkan jualan.
+ru: <b1>Оценивайте BXP по каждой категории.</b1> BXP экономит {0} п. п. комиссии, но добавляет {1}% или {2}%, так что сборы с заказа растут. Это оправдано, только если ваучеры увеличивают продажи.

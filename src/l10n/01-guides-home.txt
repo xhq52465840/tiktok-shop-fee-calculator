@@ -1,0 +1,403 @@
+@@ 5c6a8be8f6
+ms: Perubahan Komisen TikTok Shop Malaysia pada {0} Oktober {1}: Penjelasan Lengkap
+ru: Изменение комиссий TikTok Shop в Малайзии с {0} октября {1}: подробный разбор
+@@ cb55f8b26c
+ms: Apa yang berubah pada komisen TikTok Shop Malaysia mulai {0} Okt {1}: kategori yang naik atau turun, BXP lwn bukan BXP, contoh pengiraan dalam ringgit dan cara menetapkan semula harga.
+ru: Что меняется в комиссиях TikTok Shop Малайзия с {0} окт. {1}: какие категории дорожают и дешевеют, BXP и без BXP, примеры в ринггитах и как пересчитать цены.
+@@ c8a7942251
+ms: Perubahan komisen Malaysia ({0} Okt {1})
+ru: Новые комиссии в Малайзии ({0} окт. {1})
+@@ 00e344b62a
+ms: Yuran Pertumbuhan Penjual TikTok Shop Filipina: Kadar, Kategori dan Contoh Sebenar
+ru: Сбор за рост продавца TikTok Shop на Филиппинах: ставки, категории и реальные примеры
+@@ 24c8a6440f
+ms: Yuran Pertumbuhan Penjual TikTok Shop PH: {0}% atau {1}% mengikut kategori, cara ia bergabung dengan yuran pemprosesan ₱{2}, dan kosnya pada pesanan sebenar.
+ru: Сбор за рост продавца TikTok Shop PH: {0}% или {1}% в зависимости от категории, как он сочетается со сбором ₱{2} за обработку заказа и во что обходится на реальных заказах.
+@@ 65c32ff25f
+ms: Yuran Pertumbuhan Penjual Filipina
+ru: Сбор за рост продавца (Филиппины)
+@@ a17f4930fe
+ms: Cara Menetapkan Harga Produk di TikTok Shop untuk Mencapai Margin Sasaran
+ru: Как назначить цену на TikTok Shop, чтобы выйти на целевую маржу
+@@ dc5eb7977f
+ms: Formula mudah untuk menetapkan harga TikTok Shop yang mencapai margin sasaran selepas komisen, yuran transaksi dan yuran tetap setiap pesanan, dengan contoh untuk MY, PH dan AS.
+ru: Простая формула цены на TikTok Shop, при которой после комиссии, транзакционного сбора и фиксированных сборов за заказ остаётся целевая маржа. Примеры для Малайзии, Филиппин и США.
+@@ 477a9407a0
+ms: Harga untuk margin sasaran
+ru: Цена под целевую маржу
+@@ 8b5d5444da
+ms: Cara Membaca Penyelesaian TikTok Shop dan Menyemak Setiap Potongan Yuran
+ru: Как читать расчёт по заказу в TikTok Shop и проверить каждое удержание
+zh: 如何看懂 TikTok Shop 结算明细并逐项核对扣费
+@@ f176d6cf07
+ms: Di mana untuk mencari butiran penyelesaian pesanan dalam TikTok Shop Seller Center, cara setiap baris yuran dikira, dan cara mengesan potongan yang tidak sepadan.
+ru: Где в TikTok Shop Seller Center найти расчёт по заказу, как считается каждая строка удержаний и как заметить суммы, которые не сходятся.
+zh: 在 TikTok Shop Seller Center 哪里查看订单结算明细、每一行费用如何计算，以及如何发现对不上的扣款。
+@@ 1da5d98a36
+ms: Semak penyelesaian anda
+ru: Проверка расчёта по заказу
+zh: 核对你的结算
+@@ 2d1f68bb8a
+ms: Ozon FBO lwn FBS lwn realFBS pada {0}: yuran yang sebenarnya anda bayar
+zh: {0} 年 Ozon FBO、FBS 与 realFBS 对比：你实际要付哪些费用
+@@ e54f2cfcc7
+ms: Perbandingan yuran Ozon bagi tiga model pemenuhan untuk SKU yang sama, dengan jalur harga {0}%/{1}% dan logistik mulai {2} Okt {3}.
+zh: 同一 SKU 在 Ozon 三种履约模式下的费用逐项对比，含 {0}%/{1}% 价格档位与 {3}年10月{2}日起的物流费。
+@@ 4a45ee4c8d
+ms: Ozon FBO lwn FBS lwn realFBS
+zh: Ozon FBO、FBS 与 realFBS 对比
+@@ 13fb5a68a2
+ms: Ekonomi unit Wildberries: logistik dan komisen pada {0}
+zh: {0} 年 Wildberries 单件经济：物流与佣金
+@@ 14d25d7408
+ms: Cara КВВ WB dan tarif logistik {0}+{1} ₽/L dengan pekali {2}% bergabung, berserta semakan rasmi {3} L dan {4} L.
+zh: WB 的 КВВ 佣金与 {0}+{1} ₽/升物流费、{2}% 仓库系数如何叠加，并附官方 {3} 升与 {4} 升的核对示例。
+@@ 3f15680484
+ms: Ekonomi unit Wildberries
+zh: Wildberries 单件经济
+@@ 3e200f0ec1
+ms: Tarif harga rendah {0}% Yandex Market sehingga akhir {1}
+zh: Yandex Market {0}% 低价商品费率（至 {1} 年底）
+@@ c9432a6969
+ms: Bila tarif penempatan {0}% terpakai (≤{1} ₽, ≤{2} L), yuran yang dihapuskannya, dan betapa yuran melonjak sebaik anda keluar daripadanya.
+zh: {0}% 展示费率何时适用（≤{1} ₽、≤{2} 升）、它免掉哪些费用，以及超出门槛后费用如何跳升。
+@@ 0a5b0b81ff
+ms: Tarif {0}% Yandex Market
+zh: Yandex Market {0}% 费率
+@@ 00d86438a6
+ms: Yuran Penjual Shopee Malaysia selepas {0} Ogos {1}: Komisen, TX {2}% dan PSF RM{3}
+ru: Сборы Shopee Малайзия после {0} августа {1}: комиссия, транзакционный сбор {2}% и PSF RM{3}
+zh: {1}年8月{0}日后的 Shopee 马来西亚卖家费用：佣金、{2}% 交易手续费与 RM{3} 平台支持费
+@@ 4205d4b59b
+ms: Bagaimana komisen Marketplace dan Mall Shopee Malaysia berubah pada {0} Ogos {1}, cara SST dikenakan, dan contoh pengiraan dengan yuran transaksi {2}% serta Yuran Sokongan Platform RM{3}.
+ru: Как {0} августа {1} изменились комиссии Marketplace и Mall в Shopee Малайзия, как учитывается SST, и примеры расчёта с транзакционным сбором {2}% и сбором поддержки платформы RM{3}.
+zh: Shopee 马来西亚 Marketplace 与 Mall 佣金在 {1}年8月{0}日如何调整、SST 如何计入，并附 {2}% 交易手续费与 RM{3} 平台支持费的计算示例。
+@@ ea1f445946
+ms: Yuran Shopee MY ({0} Ogos {1})
+ru: Сборы Shopee MY ({0} авг. {1})
+zh: Shopee 马来西亚费用（{1}年8月{0}日）
+@@ 3e6db4aac9
+ms: Komisen dan Yuran Transaksi Shopee Singapura (Termasuk GST): Penjelasan Lengkap
+ru: Комиссия и транзакционный сбор Shopee Сингапур (с GST): подробный разбор
+zh: Shopee 新加坡佣金与交易手续费（含 GST）详解
+@@ e0d5cd5bce
+ms: Komisen Mall lwn bukan Mall Shopee SG mulai {0} Ogos {1}, yuran transaksi {2}% termasuk GST, kadar keutamaan PXP dan had seunit.
+ru: Комиссия Shopee SG для Mall и не-Mall с {0} августа {1}, транзакционный сбор {2}% с GST, льготные ставки PXP и лимиты на единицу товара.
+zh: {1}年8月{0}日起 Shopee 新加坡 Mall 与非 Mall 佣金、含 GST 的 {2}% 交易手续费、PXP 优惠费率与单件封顶。
+@@ 78696e443a
+ms: Yuran Shopee SG termasuk GST
+ru: Сборы Shopee SG с GST
+zh: Shopee 新加坡含 GST 费用
+@@ ea0740ff6b
+ms: Perubahan Komisen TikTok Shop Singapura pada {0} September {1}: Kadar Rata {2}% dan Had S${3}
+ru: Новая комиссия TikTok Shop в Сингапуре с {0} сентября {1}: единая ставка {2}% и лимит S${3}
+@@ ce56cbcdad
+ms: TikTok Shop Singapura beralih kepada komisen rata {0}% ({1}% BXP) pada {2} Sep {3} dengan had S${4} bagi elektronik. Siapa bayar lebih, siapa bayar kurang, dengan contoh pengiraan.
+ru: С {2} сент. {3} TikTok Shop в Сингапуре перешёл на единую комиссию {0}% ({1}% для BXP) с лимитом S${4} на электронику. Кто платит больше, кто меньше — с примерами расчёта.
+@@ 739a5180b2
+ms: Komisen Singapura ({0} Sep {1})
+ru: Комиссия в Сингапуре ({0} сент. {1})
+@@ aa239e29b8
+ms: Yuran Penjual TikTok Shop Thailand {0}: Komisen, Yuran Transaksi {1}%, CGF dan Yuran ฿{2}
+ru: Сборы TikTok Shop в Таиланде в {0} году: комиссия, транзакционный сбор {1}%, CGF и сбор ฿{2}
+@@ f0111000ea
+ms: Empat yuran pada setiap pesanan TikTok Shop Thailand, kenaikan komisen {0} Julai {1}, Yuran Pertumbuhan Perdagangan dan Mall Combo — dengan contoh pengiraan dalam baht.
+ru: Четыре сбора с каждого заказа TikTok Shop в Таиланде, повышение комиссии с {0} июля {1}, сбор за развитие торговли и Mall Combo — с примерами в батах.
+@@ 6f1a3b5a76
+ms: Yuran penjual Thailand {0}
+ru: Сборы в Таиланде, {0}
+@@ 4caf0bf107
+ms: {0} yuran
+ru: {0} сбора
+@@ 8d9b3b2b90
+ms: Yuran Etsy untuk Penjual UK pada {0}: Yuran Kawal Selia {1}%, VAT atas Yuran dan Contoh Sebenar
+ru: Сборы Etsy для продавцов из Великобритании в {0} году: регуляторный сбор {1}%, VAT на сборы и реальные примеры
+@@ fc5d024862
+ms: Setiap yuran Etsy untuk kedai UK: transaksi {0}%, pemprosesan {1}% + £{2}, yuran operasi kawal selia {3}% mulai {4} Jun {5} dan VAT atas yuran Etsy, dengan contoh pengiraan.
+ru: Все сборы Etsy для магазина из Великобритании: транзакционный {0}%, обработка платежа {1}% + £{2}, регуляторный операционный сбор {3}% с {4} июня {5} и VAT на сборы Etsy — с примерами расчёта.
+@@ 5de408ae12
+ms: Yuran Etsy UK & VAT
+ru: Сборы Etsy UK и VAT
+@@ 6403f2b7eb
+ms: Baharu
+@@ e652c755cf
+ms: TikTok Shop Singapura &amp; Thailand + Etsy UK kini tersedia · <a1>Buka Singapura <x1/></a1>
+@@ 1623cce4af
+ms: Ketahui dengan tepat berapa yang diambil oleh setiap marketplace daripada jualan anda.
+@@ 7d9b6c2833
+ms: SellerFee menukar kad kadar rasmi marketplace kepada kalkulator yang pantas. Pilih platform anda, masukkan harga, dan lihat setiap yuran, bayaran anda serta margin sebenar.
+@@ 9f5801d2d5
+ms: Marketplace Rusia
+@@ 5c4a98a2e7
+ms: Sumber rasmi sahaja
+@@ e9c6e5ea11
+ms: Disahkan {0} Okt {1}
+@@ 7d38b03e8c
+ms: Percuma, tanpa pendaftaran
+@@ c51a16fe08
+ms: Contoh · TikTok Shop Malaysia · mulai {0} Okt {1}
+@@ 6f4789b025
+ms: Buka →
+@@ f8a38c2713
+ms: Anggaran untung
+@@ ca9e20a570
+ms: Margin {0}% · yuran RM{1}
+@@ 5b0b7edc19
+ms: Buka kalkulator
+ru: Открыть калькулятор
+zh: 打开计算器
+@@ 74a9d177ac
+ms: Kalkulator aktif
+@@ 6ec6edeb60
+ms: Kadar kategori dimuatkan
+@@ dead29b910
+ms: Angka rekaan
+@@ 1f7b9715bc
+ms: Kalkulator
+@@ dbc3967875
+ms: Platform &amp; pasaran
+@@ b374a90baa
+ms: Perubahan kadar
+ru: Изменения тарифов
+zh: 费率变动
+@@ 1fe319dabf
+ms: {0} pasaran aktif
+@@ ff3ea3bec1
+ms: Malaysia
+ru: Малайзия
+zh: 马来西亚
+@@ 087eea9843
+ms: Kadar baharu {0} Okt
+@@ 65c821a596
+ms: Aktif
+ru: Работает
+zh: 已上线
+@@ 8067364d44
+ms: Filipina
+ru: Филиппины
+zh: 菲律宾
+@@ 768685ca58
+ms: Amerika Syarikat
+ru: США
+zh: 美国
+@@ 9769121f10
+ms: United Kingdom
+ru: Великобритания
+zh: 英国
+@@ 20c0b7bdab
+ms: Singapura
+ru: Сингапур
+zh: 新加坡
+@@ a2b7c120c9
+ms: Thailand
+ru: Таиланд
+zh: 泰国
+@@ 681101d8f9
+ms: Vietnam
+ru: Вьетнам
+zh: 越南
+@@ e4115be258
+ms: Akan datang
+ru: Скоро
+zh: 即将上线
+@@ 35536a41b2
+ms: Indonesia
+ru: Индонезия
+zh: 印度尼西亚
+@@ 4c688275be
+ms: Semua pasaran TikTok Shop
+@@ 6754fe3cd8
+ms: Rusia
+@@ 38d1f6f03b
+ms: Hab Rusia
+@@ 41446f43e7
+ms: Yuran transaksi {0}%, yuran penyenaraian US${1} dan pemprosesan pembayaran untuk {2}+ negara bank.
+ru: Транзакционный сбор {0}%, плата за размещение US${1} и обработка платежей для {2}+ стран банковского счёта.
+@@ dc9c0e9275
+ms: Etsy UK
+ru: Etsy Великобритания
+zh: Etsy 英国
+@@ 1e80362f82
+ms: Transaksi {0}%, pemprosesan {1}% + £{2}, yuran kawal selia {3}% dan VAT atas yuran, dalam GBP.
+ru: Транзакционный {0}%, обработка платежа {1}% + £{2}, регуляторный сбор {3}% и VAT на сборы — в фунтах.
+@@ 2ff7a296fc
+ms: Shopee Malaysia
+@@ 54048d7132
+ms: Komisen Marketplace &amp; Mall mulai {0} Ogos {1} (termasuk SST), TX {2}%, PSF RM{3}.
+ru: Комиссия Marketplace и Mall с {0} авг. {1} (с SST), транзакционный сбор {2}%, PSF RM{3}.
+@@ 697b1b0e13
+ms: Shopee Singapura
+@@ b96663e93c
+ms: Komisen Mall/bukan Mall termasuk GST mulai {0} Ogos {1}, TX {2}%, PXP + had.
+ru: Комиссия Mall и не-Mall с GST с {0} авг. {1}, транзакционный сбор {2}%, PXP и лимиты.
+@@ 47fb98bce9
+ms: Lazada Malaysia
+@@ 5484272ee1
+ms: Komisen kelompok Marketplace &amp; LazMall mulai {0} Ogos {1} (lantai termasuk SST).
+ru: Комиссия по кластерам Marketplace и LazMall с {0} авг. {1} (нижние границы с SST).
+@@ a70a01e7c0
+ms: Kadar akan ditambah sebaik sahaja ia dapat disahkan dengan sumber rasmi.
+@@ 8fac23c43c
+ms: Mohon kalkulator ini
+@@ 33a579ffc0
+ms: Kepercayaan
+@@ 6467cfcc08
+ms: Angka yang boleh anda semak
+@@ 1967bc1eae
+ms: Setiap kadar diambil daripada bantuan penjual platform itu sendiri. Jika kami tidak dapat mengesahkannya, kami tidak menerbitkan kalkulator.
+@@ a3470006a9
+ms: Bertarikh dan disemak semula
+@@ a3c10a1801
+ms: Setiap halaman menunjukkan bila kadarnya terakhir disahkan. Kadar lama dan baharu dipaparkan bersebelahan apabila yuran berubah.
+@@ ea4ff10eb8
+ms: Semua yuran, bukan komisen sahaja
+@@ 33aa07782e
+ms: Transaksi, pemprosesan, logistik, had dan peringkat — dan anda boleh mengubah mana-mana kadar supaya sepadan dengan akaun anda.
+@@ 1b6f485604
+ms: Daftar sumber
+@@ 78d367a748
+ms: Disemak {0} Okt {1}
+@@ 569bbd757e
+ms: Pasaran
+ru: Рынок
+zh: 市场
+@@ 6da13addb0
+ms: Sumber
+@@ bae7d5be70
+ms: Status
+@@ 212a0f3093
+ms: Dikemas kini {0} Okt {1}
+@@ f6e5a54fd7
+ms: Disemak semula {0} Okt {1}
+@@ 09c8546891
+ms: Bertarikh {0} Sep {1}
+@@ d6a9b165c7
+ms: Dikemas kini {0} Ogos {1}
+@@ 403784dc2b
+ms: Dikemas kini {0} Jul / {1} Sep {2}
+@@ 2c690f18f4
+ms: Pusat Bantuan Etsy
+@@ 8b3001b0fd
+ms: {0}% mulai {1} Jun {2}
+@@ 6a16fec2bf
+ms: Seperti diterbitkan {0} Okt {1}
+@@ e28a98341b
+ms: Dikemas kini {0} Jul / {1} Ogos {2}
+@@ 009ca96d0f
+ms: Julat kelompok (termasuk SST)
+@@ 929a28d261
+ms: Panduan
+ru: Гайды
+zh: 指南
+@@ a481288b6b
+ms: Panduan terkini
+@@ 9b60654db4
+ms: Semua panduan
+ru: Все гайды
+zh: 全部指南
+@@ c646e85813
+ms: Perlukan pasaran yang belum kami liputi?
+@@ e000441d7c
+ms: Buka isu GitHub dengan nama platform dan halaman kadar rasmi. Kami hanya menerbitkan selepas kami dapat mengesahkan angkanya.
+@@ 548540e2d5
+ms: Mohon kalkulator
+ru: Запросить калькулятор
+zh: 申请新计算器
+@@ 391aa24a6f
+ms: Cara kami mengesahkan kadar
+@@ 904f66c953
+ms: SellerFee: Kalkulator Yuran & Untung untuk TikTok Shop, Shopee, Lazada dan Lain-lain
+@@ 9ab47d43d9
+ms: Kalkulator yuran dan untung percuma untuk penjual rentas sempadan: TikTok Shop, Shopee, Lazada, Ozon, Wildberries, Yandex Market dan Etsy. Kadar rasmi, bertarikh dan bersumber.
+@@ 073edc798d
+ms: Filipina, Thailand, Indonesia &amp; lain-lain
+ru: Филиппины, Таиланд, Индонезия и другие
+zh: 菲律宾、泰国、印度尼西亚等
+@@ a53f4dc2c0
+ms: Singapura, Filipina &amp; lain-lain
+ru: Сингапур, Филиппины и другие
+zh: 新加坡、菲律宾等
+@@ d094c7d859
+ms: AS, UK &amp; lain-lain
+ru: США, Великобритания и другие
+zh: 美国、英国等
+@@ b8fa5aab84
+ms: AS &amp; UK
+ru: США и Великобритания
+zh: 美国与英国
+@@ 2b2d93b3b1
+ms: Kalkulator yuran TikTok Shop mengikut negara
+ru: Калькуляторы сборов TikTok Shop по странам
+zh: 按国家划分的 TikTok Shop 费用计算器
+@@ 7e5b4d8ec5
+ms: Yuran berbeza di setiap pasaran: komisen mengikut kategori di Malaysia, Thailand dan Filipina, kadar rata termasuk GST di Singapura, yuran rujukan di AS dan satu kadar komisen di UK.
+ru: В каждой стране свои сборы: комиссия по категориям в Малайзии, Таиланде и на Филиппинах, единая ставка с GST в Сингапуре, реферальная комиссия в США и одна ставка комиссии в Великобритании.
+zh: 每个市场费用结构不同：马来西亚、泰国与菲律宾按类目收佣金，新加坡为含 GST 的统一费率，美国收推荐费，英国为单一佣金费率。
+@@ f34439522d
+ms: Jadual komisen baharu mulai {0} Okt {1}, yuran transaksi {2}%/{3}%, yuran sokongan RM{4}, BXP.
+ru: Новая таблица комиссий с {0} окт. {1}, транзакционный сбор {2}%/{3}%, сбор поддержки RM{4}, BXP.
+zh: {1}年10月{0}日起新佣金表，交易手续费 {2}%/{3}%，平台支持费 RM{4}，BXP。
+@@ 3ca83a5af2
+ms: TikTok Shop Filipina
+ru: TikTok Shop Филиппины
+zh: TikTok Shop 菲律宾
+@@ 8e6aa51ec3
+ms: Yuran Pemprosesan Pesanan ₱{0}, Yuran Pertumbuhan Penjual {1}%–{2}%, yuran transaksi {3}%, Yuran Perkhidmatan Penghantaran.
+ru: Сбор за обработку заказа ₱{0}, сбор за рост продавца {1}%–{2}%, транзакционный сбор {3}%, сбор за услуги доставки.
+zh: 订单处理费 ₱{0}，卖家成长费 {1}%–{2}%，交易手续费 {3}%，物流服务费。
+@@ 4c74159f2e
+ms: TikTok Shop Amerika Syarikat
+ru: TikTok Shop США
+zh: TikTok Shop 美国
+@@ 96428dc81e
+ms: Yuran rujukan {0}% mengikut kategori, {1}% untuk barang kemas halus dan Pre-Owned, {2}% melebihi ${3}K.
+ru: Реферальная комиссия {0}% по категориям, {1}% для ювелирных изделий и Pre-Owned, {2}% сверх ${3}K.
+zh: 按类目推荐费 {0}%，精品珠宝与二手（Pre-Owned）{1}%，超过 ${3}K 的部分 {2}%。
+@@ 7175893edc
+ms: TikTok Shop United Kingdom
+ru: TikTok Shop Великобритания
+zh: TikTok Shop 英国
+@@ 7335617a8d
+ms: Komisen {0}%, {1}% untuk kategori elektronik dan kecantikan yang ditetapkan.
+ru: Комиссия {0}%, {1}% для отдельных категорий электроники и красоты.
+zh: 佣金 {0}%，指定电子与美妆类目 {1}%。
+@@ b4ac537f9d
+ms: TikTok Shop Singapura
+ru: TikTok Shop Сингапур
+zh: TikTok Shop 新加坡
+@@ ce87d52de7
+ms: Komisen {0}% / {1}% BXP mulai {2} Sep {3}, had elektronik S${4}, TX {5}%, yuran BXP.
+ru: Комиссия {0}% / {1}% для BXP с {2} сент. {3}, лимит S${4} на электронику, транзакционный сбор {5}%, сбор BXP.
+zh: {3}年9月{2}日起佣金 {0}%（BXP {1}%），电子类封顶 S${4}，交易手续费 {5}%，BXP 服务费。
+@@ 5944bc1297
+ms: TikTok Shop Thailand
+ru: TikTok Shop Таиланд
+zh: TikTok Shop 泰国
+@@ b6b36c0fc6
+ms: Komisen Marketplace &amp; Mall mulai {0} Jul {1}, TX {2}%, yuran pertumbuhan {3}%/{4}%, ฿{5}.
+ru: Комиссия Marketplace и Mall с {0} июля {1}, транзакционный сбор {2}%, сбор за развитие {3}%/{4}%, ฿{5}.
+zh: {1}年7月{0}日起 Marketplace 与 Mall 佣金，交易手续费 {2}%，商业增长费 {3}%/{4}%，每单 ฿{5}。
+@@ d5b455b1c8
+ms: TikTok Shop Vietnam
+ru: TikTok Shop Вьетнам
+zh: TikTok Shop 越南
+@@ 9d4c9ab1fc
+ms: Diterbitkan hanya selepas kadar disahkan di TikTok Seller University.
+ru: Появится только после проверки ставок в TikTok Seller University.
+zh: 在 TikTok Seller University 核实费率后才会上线。
+@@ 4aed03cac4
+ms: Mohon
+ru: Запросить
+zh: 申请
+@@ 9e3652a1da
+ms: TikTok Shop Indonesia
+ru: TikTok Shop Индонезия
+zh: TikTok Shop 印度尼西亚
+@@ 8849b0e82b
+ms: Perbezaan yuran mengikut pasaran
+ru: Чем отличаются сборы по странам
+zh: 各市场费用差异
+@@ 44dcb2d878
+ms: Yuran utama
+ru: Основные сборы
+zh: 主要费用

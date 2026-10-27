@@ -91,7 +91,7 @@ def ph_zh():
     toc = [('how', '菲律宾费用怎么算'), ('examples', '计算示例'), ('changes', '2026 年变化'), ('faq', '常见问题'), ('sources', '官方来源')]
     body = f'''
 <h2 id="how">TikTok Shop 菲律宾费用怎么算</h2>
-<p>菲律宾站对每笔成功签收订单扣除五项费用。以下费率均为 TikTok 公布的<strong>含税（VAT inclusive）</strong>数字。</p>
+<p>菲律宾站对每笔成功签收订单扣除五项费用。以下费率均为 TikTok 公布的<strong>含税（含 VAT）</strong>数字。</p>
 <ul>
 <li><b>佣金：</b>基数为售价 − 卖家折扣。自 2025年1月15日起 Marketplace 约 5%–7.3%，Mall 约 5%–9.1%。新卖家前 90 天佣金 0%。</li>
 <li><b>交易手续费：</b>2.24%。计算器按「折扣后商品小计 + 买家运费」计（2026年7月起的基数口径）。</li>
@@ -140,7 +140,7 @@ def us_zh():
     toc = [('how', '美国推荐费怎么算'), ('examples', '计算示例'), ('faq', '常见问题'), ('sources', '官方来源')]
     body = f'''
 <h2 id="how">TikTok Shop 美国推荐费怎么算</h2>
-<p>美国站主要平台费是<strong>推荐费（referral fee）</strong>。TikTok 公式为：推荐费 = 费率 ×（顾客实付 + 平台优惠 − 税费）。实务上即「折扣后商品价 + 买家支付运费」；平台出资优惠会加回基数，销售税不计入。</p>
+<p>美国站主要平台费是<strong>推荐费</strong>。TikTok 公式为：推荐费 = 费率 ×（顾客实付 + 平台优惠 − 税费）。实务上即「折扣后商品价 + 买家支付运费」；平台出资优惠会加回基数，销售税不计入。</p>
 <p>绝大多数类目为 <b>6%</b>。五类精品珠宝（钻石、黄金、翡翠、铂金/K 金、红宝石/蓝宝石/祖母绿）及全部 Pre-Owned 子类自 2024年10月31日起为 <b>5%</b>。收藏品与二手在单笔售价超过 $10,000 的部分按 <b>3%</b>。</p>
 <p>若走达人带货，你设定的联盟佣金会叠在推荐费之上，往往比平台费还高——请在计算器中填写。</p>
 <h2 id="examples">计算示例</h2>
@@ -203,8 +203,8 @@ def etsy_zh():
 <h2 id="how">Etsy 费用怎么算</h2>
 <p>多数 Etsy 成交包含三项费用：</p>
 <ul>
-<li><b>交易手续费（transaction fee）：</b>售价与运费合计的 <b>6.5%</b>（部分市场另有当地税费口径，以帮助中心为准）。</li>
-<li><b>刊登费（listing fee）：</b>每售出一件通常 <b>US$0.20</b>（按美元计，非美元账户需在「所用费率」中换算）。</li>
+<li><b>交易手续费：</b>售价与运费合计的 <b>6.5%</b>（部分市场另有当地税费口径，以帮助中心为准）。</li>
+<li><b>刊登费：</b>每售出一件通常 <b>US$0.20</b>（按美元计，非美元账户需在「所用费率」中换算）。</li>
 <li><b>支付处理费：</b>依收款银行所在国家而定，一般为百分比 + 固定金额；基数常含销售税。</li>
 </ul>
 <p>请在计算器顶部选择银行账户所在国家，以加载对应处理费率。</p>
@@ -215,7 +215,7 @@ def etsy_zh():
 <p>成本 $9、面单 $4.80 后，利润 {USD(us['profit'])}。</p></div>
 <div class="example"><h4>示例 2：英国账户，£25 + £4 运费</h4>
 {ex_table(_ex_rows(uk, 'GBP', LBL))}
-<p>刊登费若已用美元另付，可在费率区将 listing 设为 0（本例如此）。</p></div>
+<p>刊登费若已用美元另付，可在费率区将刊登费设为 0（本例如此）。</p></div>
 '''
     faq = [
      ('Etsy 交易手续费是多少？', '一般为商品价与运费合计的 6.5%。'),
@@ -486,7 +486,7 @@ GUIDES_ZH = [
  dict(lang='zh', slug='tiktok-shop-malaysia-commission-changes-october-2026', short='马来西亚佣金调整（10月31日）',
       title='TikTok Shop 马来西亚 2026年10月31日佣金调整解读',
       desc='马来西亚佣金表 10月31日怎么变：哪些类目涨跌、BXP 与非 BXP、令吉示例与调价思路。',
-      market='tiktok-shop-my', cov='cov-ink', fig='31 Oct', body=g_my_zh,
+      market='tiktok-shop-my', cov='cov-ink', fig='10月31日', body=g_my_zh,
       sources=MARKETS['tiktok-shop-my']['sources']),
  dict(lang='zh', slug='tiktok-shop-philippines-seller-growth-fee', short='菲律宾卖家成长费',
       title='TikTok Shop 菲律宾卖家成长费：费率、类目与实例',

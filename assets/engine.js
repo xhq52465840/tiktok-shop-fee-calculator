@@ -19,6 +19,7 @@
     var sym = M.symbols && M.symbols[cur] || cur + ' ';
     return (n < 0 ? '\u2212' : '') + (M.symbolAfter ? s + '\u00A0' + sym : sym + s);
   }
+  function fmt1(x) { return x.toLocaleString(M.locale || 'en', { minimumFractionDigits: 1, maximumFractionDigits: 1 }); }
   function fmtPct(r) { return (Math.round(r * 1000) / 1000).toLocaleString(M.locale || 'en', { maximumFractionDigits: 3 }) + '%'; }
   function label(o) { return (o.g ? o.g + ' \u203A ' : '') + o.n; }
 
@@ -113,7 +114,8 @@
           var fr = s.x[c.from], to = s.x[c.to], key = fr + '-' + to, arr = (fr !== '' && to !== '' && tb.routes[key]) || tb['default'];
           var routed = arr !== tb['default'], col = unit(o) > tb.bands[0] ? 1 : 0, pv = arr[bi][col];
           amt = pv * o.qty;
-          how = tb.labels[bi] + ', ' + (routed ? tb.clusters[fr] + ' → ' + tb.clusters[to] : t('universal', 'universal tariff')) + ' → ' + money(pv) + (o.qty > 1 ? ' × ' + o.qty : '');
+          var bl = (M.locale || '').indexOf('ru') === 0 ? tb.labels[bi] : '\u2264\u00A0' + tb.upper[bi].toLocaleString(M.locale || 'en') + '\u00A0' + t('litre', 'L');
+          how = bl + ', ' + (routed ? tb.clusters[fr] + ' → ' + tb.clusters[to] : t('universal', 'universal tariff')) + ' → ' + money(pv) + (o.qty > 1 ? ' × ' + o.qty : '');
           if (!routed && fr !== '' && to !== '') how += ' (' + t('noRoute', 'no tariff for this route') + ')';
         }
       } else if (c.type === 'vol') {
@@ -198,10 +200,10 @@
     var f = compute(o, readRates(), s);
     $('sf-k-profit').textContent = money(f.profit);
     $('sf-k-profit').className = f.profit < 0 ? 'neg' : 'pos';
-    $('sf-k-margin').textContent = (M.locale || '').indexOf('ru') === 0 ? f.margin.toFixed(1).replace('.', ',') + '%' : f.margin.toFixed(1) + '%';
+    $('sf-k-margin').textContent = fmt1(f.margin) + '%';
     $('sf-k-margin').className = f.profit < 0 ? 'neg' : f.margin < 10 ? 'warn' : 'pos';
     $('sf-k-fees').textContent = money(f.total);
-    $('sf-k-feespct').textContent = f.b.net > 0 ? (f.total / f.b.net * 100).toFixed(1) + '% ' + t('ofSub', 'of item subtotal') : '';
+    $('sf-k-feespct').textContent = f.b.net > 0 ? fmt1(f.total / f.b.net * 100) + '% ' + t('ofSub', 'of item subtotal') : '';
     $('sf-k-payout').textContent = money(f.payout);
     $('sf-k-payout').className = 'big' + (f.payout < 0 ? ' neg' : '');
     last = { o: o, f: f };
@@ -218,7 +220,7 @@
     if (f.profit > 0) parts.push([t('profit', 'Profit'), f.profit, 'var(--profit)']);
     var tot = parts.reduce(function (x, p) { return x + p[1]; }, 0) || 1;
     $('sf-bar').innerHTML = parts.map(function (p) { return '<i style="width:' + (p[1] / tot * 100).toFixed(2) + '%;background:' + p[2] + '" title="' + p[0] + ': ' + money(p[1]) + '"></i>'; }).join('');
-    $('sf-legend').innerHTML = parts.map(function (p) { return '<li><i style="background:' + p[2] + '"></i>' + p[0] + ' <b>' + (p[1] / tot * 100).toFixed(1) + '%</b></li>'; }).join('');
+    $('sf-legend').innerHTML = parts.map(function (p) { return '<li><i style="background:' + p[2] + '"></i>' + p[0] + ' <b>' + fmt1(p[1] / tot * 100) + '%</b></li>'; }).join('');
     // breakdown
     var h = '<tr><td>' + t('subtotal', 'Item subtotal after your discount') + '<small>' + money(o.price) + ' \u00D7 ' + o.qty + (o.sellerDisc ? ' \u2212 ' + money(o.sellerDisc) : '') + '</small></td><td class="n">' + money(f.b.net) + '</td></tr>';
     if (o.buyerShip) h += '<tr><td>' + t('buyerShip', 'Shipping paid by buyer') + '</td><td class="n">+' + money(o.buyerShip) + '</td></tr>';
@@ -253,7 +255,7 @@
     last.f.rows.forEach(function (r) { lines.push(r.label + ' (' + r.how + '): −' + money(r.amt)); });
     lines.push(t('ui_res_fees', 'Total fees') + ': ' + money(last.f.total));
     lines.push(t('ui_res_payout', 'Payout') + ': ' + money(last.f.payout));
-    lines.push(t('ui_res_profit', 'Profit') + ': ' + money(last.f.profit) + ' (' + last.f.margin.toFixed(1) + '%)');
+    lines.push(t('ui_res_profit', 'Profit') + ': ' + money(last.f.profit) + ' (' + fmt1(last.f.margin) + '%)');
     lines.push(location.href.split('#')[0]);
     return lines.join('\n');
   }

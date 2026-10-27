@@ -8,7 +8,17 @@ from sf_site import (page, crumbs, faq_block, sources_block, widget, AD, esc, BA
 from site_helpers import money, pct
 from i18n import tr, LANGS
 import content as C
-from zh_pages import home_zh, tiktok_hub_zh, russia_hub_zh
+import l10n, sf_site
+from sf_site import market_name
+from zh_pages import home_zh
+ALL = ['en', 'zh', 'ru', 'ms']
+def ALT(suffix): return {l: f'{l}/{suffix}' for l in LANGS}          # every page exists in every language
+def LZ(lang, s): return l10n.text(lang, s)
+def LB(lang, html):
+    """Localise an English body: segment translation + same-language links."""
+    if lang == 'en': return html
+    return re.sub(r'(href=")/en/', rf'\1/{lang}/', l10n.localize(lang, html))
+def ctx(path): l10n.CTX['page'] = path
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def w(path, html):
@@ -34,7 +44,7 @@ def copy_rates():
                 shutil.copy2(cand, os.path.join(dst, f'{mid}.json')); break
 
 def toc_html(toc, lang='en'):
-    return ('<aside class="toc" aria-label="On this page"><b>' + esc(tr(lang, 'on_this_page')) + '</b><div class="lst">'
+    return (f'<aside class="toc" aria-label="{esc(tr(lang, "on_this_page"))}"><b>' + esc(tr(lang, 'on_this_page')) + '</b><div class="lst">'
             + ''.join(f'<a href="#{i}">{esc(t)}</a>' for i, t in toc) + '</div></aside>')
 
 def rail_calcs(path, lang, mid=None):
@@ -53,22 +63,22 @@ def gcard(path, g, lang):
 
 # ---------------------------------------------------------------- calculators
 def calc_page(mid, lang):
-    m = MARKETS[mid]; d = C.PAGE_FN[(mid, lang)]()
-    path = f'{lang}/{m["slug"]}/'
-    alt = {l: f'{l}/{m["slug"]}/' for l in m['langs']} if len(m['langs']) > 1 else None
+    m = MARKETS[mid]
+    path = f'{lang}/{m["slug"]}/'; ctx(path)
+    if (mid, lang) in C.PAGE_FN: d = C.PAGE_FN[(mid, lang)]()
+    else:
+        e = C.PAGE_FN[(mid, 'en')]()
+        d = dict(title=LZ(lang, e['title']), desc=LZ(lang, e['desc']), h1=LZ(lang, e['h1']), lede=LZ(lang, e['lede']),
+                 toc=[(i, LZ(lang, t)) for i, t in e['toc']], faq=[(LZ(lang, q), LB(lang, a)) for q, a in e['faq']], body=LB(lang, e['body']))
+    alt = ALT(f'{m["slug"]}/')
     items = [('SellerFee', f'{lang}/')]
-    if m['platform'] == 'tiktok-shop' and lang == 'en': items.append(('TikTok Shop', 'en/tiktok-shop/'))
-    if m['platform'] == 'tiktok-shop' and lang == 'zh': items.append(('TikTok Shop', 'zh/tiktok-shop/'))
-    if m['platform'] == 'shopee' and lang == 'en': items.append(('Shopee', 'en/#calculators'))
-    if m['platform'] == 'shopee' and lang == 'zh': items.append(('Shopee', 'zh/#calculators'))
-    if m['platform'] == 'lazada' and lang == 'en': items.append(('Lazada', 'en/#calculators'))
-    if m['platform'] == 'lazada' and lang == 'zh': items.append(('Lazada', 'zh/#calculators'))
+    if m['platform'] == 'tiktok-shop': items.append(('TikTok Shop', f'{lang}/tiktok-shop/'))
+    if m['platform'] == 'shopee': items.append(('Shopee', f'{lang}/#calculators'))
+    if m['platform'] == 'lazada': items.append(('Lazada', f'{lang}/#calculators'))
     if m['platform'] == 'etsy' and m['market'] != 'GLOBAL': items.append(('Etsy', f'{lang}/etsy/'))
-    if m['market'] == 'RU' and lang == 'en': items.append(('Russia', 'en/russia/'))
-    if m['market'] == 'RU' and lang == 'ru': items.append(('Россия', 'ru/'))
-    if m['market'] == 'RU' and lang == 'zh': items.append(('俄罗斯', 'zh/russia/'))
+    if m['market'] == 'RU': items.append((tr(lang, 'nav_russia'), f'{lang}/russia/'))
     items.append((d['h1'], None))
-    ch, cld = crumbs(path, items)
+    ch, cld = crumbs(path, items, lang)
     fh, fld = faq_block(d['faq'], lang)
     # strip empty faq placeholder heading from body if present
     body_html = re.sub(r'<h2 id="faq"\s*>\s*</h2>', '', d['body'])
@@ -79,14 +89,13 @@ def calc_page(mid, lang):
     langseg = ''
     if alt and len(alt) > 1:
         langseg = '<div class="langseg"><div class="seg">' + ''.join(
-            f'<a href="{rel_(path)}{p}" hreflang="{LANGS[l]["html"]}"{" aria-current=page" if l==lang else ""}>{esc(LANGS[l]["name"])}</a>' for l, p in alt.items()) + '</div></div>'
+            f'<a href="{rel_(path)}{p}" hreflang="{LANGS[l]["html"]}" lang="{LANGS[l]["html"]}"{" aria-current=page" if l==lang else ""}>{esc(LANGS[l]["name"])}</a>' for l, p in alt.items()) + '</div></div>'
     head = f'''<div class="phead"><div class="wrap">{ch}
 <div class="titlerow">{ptile(m["platform"], 56)}<div style="flex:1;min-width:0"><h1 class="h-display">{esc(d["h1"])}</h1>
 <p class="lead" style="margin-top:10px">{esc(d["lede"])}</p>
 <div class="metarow">{live}{verified}{srcs}{langseg}</div></div></div></div></div>'''
     # related guides
-    rel_g = [g for g in C.GUIDES if g.get('market') == mid and g.get('lang') == lang][:3]
-    if not rel_g: rel_g = [g for g in C.GUIDES if g.get('market') == mid and g.get('lang') == 'en'][:2]
+    rel_g = [g for g in sf_site.GUIDES_ALL if g.get('market') == mid and g.get('lang') == lang][:3]
     guides_h = ''
     if rel_g:
         guides_h = f'<section class="blk"><div class="wrap"><div class="sh"><h2 class="h2">{esc(tr(lang,"related"))}</h2></div><div class="cards">{"".join(gcard(path,g,lang) for g in rel_g)}</div></div></section>'
@@ -97,7 +106,7 @@ def calc_page(mid, lang):
 {rail_calcs(path, lang, mid)}</div></div></section>
 {guides_h}'''
     app = {"@context": "https://schema.org", "@type": "WebApplication", "name": d['h1'], "url": BASE + path,
-           "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "inLanguage": lang,
+           "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "inLanguage": LANGS[lang]['html'],
            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "dateModified": VERIFIED,
            "publisher": {"@type": "Organization", "name": "SellerFee", "url": BASE}}
     w(path, page(path, lang, d['title'], d['desc'], body, [app, fld, cld], alt=alt,
@@ -106,22 +115,20 @@ def calc_page(mid, lang):
 # ---------------------------------------------------------------- guides
 def guide_page(g):
     lang = g.get('lang', 'en')
-    path = f'{lang}/guides/{g["slug"]}/'
+    path = f'{lang}/guides/{g["slug"]}/'; ctx(path)
     body_html = g['body']() if callable(g.get('body')) else C.GUIDE_BODY[g['slug']]()
     toc = re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body_html)
     toc = [(i, re.sub('<[^>]+>', '', t).replace('&amp;', '&')) for i, t in toc] + [('sources', tr(lang, 'sources'))]
     words = len(re.sub('<[^>]+>', ' ', body_html).split())
     hub = f'{lang}/guides/'
-    ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (tr(lang, 'nav_guides'), hub), (g['short'], None)])
+    ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (tr(lang, 'nav_guides'), hub), (g['short'], None)], lang)
     src = g.get('sources') or C.GUIDE_SOURCES.get(g['slug'], [])
     # related calcs
     calcs = []
     if g.get('market') and g['market'] in MARKETS:
         m = MARKETS[g['market']]; l = lang if lang in m['langs'] else 'en'
         calcs = [(f'{l}/{m["slug"]}/', calc_name(m, lang), '')]
-    elif g.get('market') == 'tiktok-shop-my':
-        calcs = [('en/tiktok-shop/malaysia/', 'TikTok Shop Malaysia', '')]
-    more = [x for x in C.GUIDES if x.get('lang') == lang and x['slug'] != g['slug']][:3]
+    more = [x for x in sf_site.GUIDES_ALL if x.get('lang') == lang and x['slug'] != g['slug']][:3]
     byline = f'''<div class="byline"><span class="who"><b>SellerFee</b></span><span class="sep"></span>
 <span>{ic("cal",14)}<time datetime="{VERIFIED}">{VFULL[lang]}</time></span>
 <span>{ic("clock",14)}{max(3, round(words/220))} {esc(tr(lang,"min_read"))}</span>
@@ -137,16 +144,15 @@ def guide_page(g):
 {('<section class="blk"><div class="sh"><h2 class="h2">' + esc(tr(lang,"related")) + '</h2></div><div class="cards">' + ''.join(gcard(path,x,lang) for x in more) + '</div></section>') if more else ''}
 </div>'''
     art = {"@context": "https://schema.org", "@type": "Article", "headline": g['title'], "description": g['desc'],
-           "datePublished": VERIFIED, "dateModified": VERIFIED, "inLanguage": lang, "mainEntityOfPage": BASE + path,
+           "datePublished": VERIFIED, "dateModified": VERIFIED, "inLanguage": LANGS[lang]['html'], "mainEntityOfPage": BASE + path,
            "image": BASE + "assets/og.png", "author": {"@type": "Organization", "name": "SellerFee", "url": BASE},
            "publisher": {"@type": "Organization", "name": "SellerFee", "logo": {"@type": "ImageObject", "url": BASE + "assets/favicon.svg"}}}
-    w(path, page(path, lang, g['title'] + ' | SellerFee', g['desc'], body, [art, cld], og_type='article'))
+    w(path, page(path, lang, g['title'] + ' | SellerFee', g['desc'], body, [art, cld], og_type='article', alt=ALT(f'guides/{g["slug"]}/')))
 
 def guides_index(lang='en'):
-    path = f'{lang}/guides/'
-    ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (tr(lang, 'nav_guides'), None)])
-    guides = [g for g in C.GUIDES if g.get('lang') == lang]
-    if lang in ('ru', 'zh') and not guides: guides = [g for g in C.GUIDES if g.get('lang') == 'en']
+    path = f'{lang}/guides/'; ctx(path)
+    ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (tr(lang, 'nav_guides'), None)], lang)
+    guides = [g for g in sf_site.GUIDES_ALL if g.get('lang') == lang]
     title = {'en': 'Seller fee guides', 'ms': 'Panduan yuran penjual', 'ru': 'Гайды по комиссиям маркетплейсов', 'zh': '卖家费用指南'}[lang]
     lede = {'en': 'Plain-English explanations of marketplace fee changes, with worked examples computed from the official rate cards.',
             'ms': 'Penjelasan yuran marketplace dengan contoh dikira daripada kad kadar rasmi.',
@@ -164,7 +170,7 @@ def guides_index(lang='en'):
                   'ms': 'Panduan perubahan yuran marketplace dengan contoh sebenar.',
                   'ru': 'Гайды по изменению комиссий с примерами из официальных тарифов.',
                   'zh': '基于官方费率表的真实计算示例，解读电商平台费用变化。'}[lang],
-                 body, [cld]))
+                 body, [cld], alt=ALT('guides/')))
 
 # ---------------------------------------------------------------- hubs & home
 C_SUM = {
@@ -206,8 +212,11 @@ C_SUM_ZH = {
 }
 
 
-def home():
-    path = 'en/'
+def gcards(path, lang, guides):
+    return ''.join(gcard(path, g, lang) for g in guides)
+
+def home(lang='en'):
+    path = f'{lang}/'; ctx(path)
     # Quick-calc: real links to live calculators (not a fake widget)
     tabs = [('/en/tiktok-shop/malaysia/', 'tiktok-shop', 'TikTok MY', True),
             ('/en/ozon/', 'ozon', 'Ozon', True),
@@ -251,9 +260,9 @@ def home():
                 ohtml += f'''<a class="card ccard" href="{m["slug"]}/"><div class="top">{ptile(m["platform"],40)}{badge("Live","live")}</div>
 <h3>{esc(title)}</h3><p>{esc(C_SUM[mid])}</p><div class="go">Open calculator {ic("arrow",14)}</div></a>'''
         else:
-            req = issue_url(f'Calculator request: {name.title()}', f'Please add a fee calculator for {name.title()}.')
+            req = issue_url(f'Calculator request: { {'amazon': 'Amazon', 'ebay': 'eBay'}[name]}', f'Please add a fee calculator for { {'amazon': 'Amazon', 'ebay': 'eBay'}[name]}.')
             ohtml += f'''<a class="card ccard" href="{req}" rel="noopener"><div class="top">{ptile(name,40)}{badge("Coming soon","soon")}</div>
-<h3>{name.title()}</h3><p>Rates will be added once they can be verified against official sources.</p>
+<h3>{ {'amazon': 'Amazon', 'ebay': 'eBay'}[name]}</h3><p>Rates will be added once they can be verified against official sources.</p>
 <div class="go soon">{ic("bell",14)} Request this calculator</div></a>'''
     # source register
     srcs = [
@@ -272,8 +281,8 @@ def home():
      ('🇸🇬', 'Shopee SG', 'Commission, Service & Transaction Fees', 'Updated 19 Oct 2026', '/en/shopee/singapore/#sources'),
      ('🇲🇾', 'Lazada MY', 'MP & LazMall commission 14 Aug 2026', 'Cluster ranges (SST-incl.)', '/en/lazada/malaysia/#sources'),
     ]
-    srows = ''.join(f'<tr><td><span class="flag">{f}</span> <b>{esc(m)}</b></td><td><a href="{u}">{esc(d)} {ic("ext",13)}</a><span class="sub">{esc(note)}</span></td><td>{badge("Checked "+VDATE["en"],"verified","shield")}</td></tr>' for f,m,d,note,u in srcs)
-    guides = [g for g in C.GUIDES if g.get('lang') == 'en'][:6]
+    srows = ''.join(f'<tr><td><span class="flag">{f}</span> <b>{esc(m)}</b></td><td><a href="{u}"><span lang="en">{esc(d)}</span> {ic("ext",13)}</a><span class="sub">{esc(note)}</span></td><td>{badge("Checked "+VDATE["en"],"verified","shield")}</td></tr>' for f,m,d,note,u in srcs)
+    guides = [g for g in sf_site.GUIDES_ALL if g.get('lang') == lang][:6]
     body = f'''<section class="hero"><div class="wrap">
 <div><div class="announce">{badge("New","new")}<span>TikTok Shop Singapore &amp; Thailand + Etsy UK live · <a href="tiktok-shop/singapore/">Open Singapore {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">Know exactly what every marketplace takes from your sale.</h1>
@@ -308,17 +317,18 @@ def home():
 </div></div></section>
 <section class="s"><div class="wrap"><div class="sh"><div><p class="eyebrow">Guides</p><h2 class="h2">Latest guides</h2></div>
 <a class="btn btn-link" href="guides/">All guides {ic("arrow",14)}</a></div>
-<div class="cards">{''.join(gcard(path, g, 'en') for g in guides)}</div>
+<div class="cards"><!--GUIDES--></div>
 <div class="cta"><div><h2 class="h-display">Need a market we don’t cover yet?</h2>
 <p>Open a GitHub issue with the platform and the official rate page. We only publish after we can verify the numbers.</p></div>
 <div class="btns"><a class="btn btn-secondary btn-lg" href="{issue_url("Calculator request: ", "Platform:\nMarket:\nLink to official rates:")}" rel="noopener">{ic("bell",16)} Request a calculator</a>
 <a class="btn btn-brand btn-lg" href="about/">How we verify rates</a></div></div>
 </div></section>'''
-    site = {"@context": "https://schema.org", "@type": "WebSite", "name": "SellerFee", "url": BASE, "inLanguage": "en"}
+    body = LB(lang, body).replace('<!--GUIDES-->', gcards(path, lang, guides))
+    site = {"@context": "https://schema.org", "@type": "WebSite", "name": "SellerFee", "url": BASE, "inLanguage": LANGS[lang]['html']}
     org = {"@context": "https://schema.org", "@type": "Organization", "name": "SellerFee", "url": BASE, "logo": BASE + "assets/favicon.svg"}
-    w(path, page(path, 'en', 'SellerFee: Fee & Profit Calculators for TikTok Shop, Shopee, Lazada & More',
-                 'Free fee and profit calculators for cross-border sellers: TikTok Shop, Shopee, Lazada, Ozon, Wildberries, Yandex Market and Etsy. Official rates, dated and sourced.',
-                 body, [site, org], alt={'en': 'en/', 'ms': 'ms/', 'ru': 'ru/', 'zh': 'zh/'}))
+    w(path, page(path, lang, LZ(lang, 'SellerFee: Fee & Profit Calculators for TikTok Shop, Shopee, Lazada & More'),
+                 LZ(lang, 'Free fee and profit calculators for cross-border sellers: TikTok Shop, Shopee, Lazada, Ozon, Wildberries, Yandex Market and Etsy. Official rates, dated and sourced.'),
+                 body, [site, org], alt=ALT('')))
 
 def home_ms():
     path = 'ms/'
@@ -352,7 +362,9 @@ def home_ru():
     cards = ''.join(f'''<a class="card ccard" href="{MARKETS[k]["slug"]}/"><div class="top">{ptile(k,40)}{badge("Актуально","live")}</div>
 <h3>{esc({"ozon":"Ozon","wildberries":"Wildberries","yandex-market":"Яндекс Маркет"}[k])}</h3>
 <p>{esc(C_SUM_RU[k])}</p><div class="go">Открыть калькулятор {ic("arrow",14)}</div></a>''' for k in ('ozon','wildberries','yandex-market'))
-    guides = [g for g in C.GUIDES if g.get('lang') == 'ru']
+    guides = [g for g in sf_site.GUIDES_ALL if g.get('lang') == 'ru' and g.get('market') in ('ozon', 'wildberries', 'yandex-market')]
+    other = ''.join(f'''<a class="card ccard" href="{m["slug"]}/"><div class="top">{ptile(m["platform"],40)}{badge("Работает","live")}</div>
+<h3>{esc(calc_name(m, 'ru'))}</h3><p>{LZ('ru', esc(C_SUM[k]))}</p><div class="go">Открыть калькулятор {ic("arrow",14)}</div></a>''' for k, m in MARKETS.items() if m['market'] != 'RU')
     body = f'''<section class="hero"><div class="wrap">
 <div><div class="announce">{badge("Новое","new")}<span>Логистика Ozon FBO/FBS с 30 октября 2026 · <a href="ozon/">Посчитать {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">Считайте комиссии Ozon, Wildberries и Яндекс Маркета по официальным тарифам.</h1>
@@ -366,14 +378,17 @@ def home_ru():
 <div class="cards">{cards}</div></div></section>
 <section class="s"><div class="wrap"><div class="sh"><div><p class="eyebrow">Гайды</p><h2 class="h2">Разборы тарифов</h2></div>
 <a class="btn btn-link" href="guides/">Все гайды {ic("arrow",14)}</a></div>
-<div class="cards">{''.join(gcard(path, g, 'ru') for g in guides)}</div></div></section>'''
+<div class="cards">{''.join(gcard(path, g, 'ru') for g in guides)}</div></div></section>
+<section class="s"><div class="wrap"><div class="sh"><div><p class="eyebrow">Другие площадки</p><h2 class="h2">TikTok Shop, Shopee, Lazada и Etsy</h2></div>
+<a class="btn btn-link" href="tiktok-shop/">Все рынки TikTok Shop {ic("arrow",14)}</a></div>
+<div class="cards">{other}</div></div></section>'''
     w(path, page(path, 'ru', 'SellerFee: калькуляторы комиссий Ozon, Wildberries и Яндекс Маркета',
-                 'Бесплатные калькуляторы комиссий и прибыли для продавцов Ozon, Wildberries и Яндекс Маркета. Официальные тарифы, с датой проверки.',
-                 body, alt={'en': 'en/', 'ms': 'ms/', 'ru': 'ru/', 'zh': 'zh/'}))
+                 'Бесплатные калькуляторы комиссий и прибыли для продавцов Ozon, Wildberries и Яндекс Маркета, а также TikTok Shop, Shopee, Lazada и Etsy. Официальные тарифы, с датой проверки.',
+                 body, alt=ALT('')))
 
-def tiktok_hub():
-    path = 'en/tiktok-shop/'
-    ch, cld = crumbs(path, [('SellerFee', 'en/'), ('TikTok Shop', None)])
+def tiktok_hub(lang='en'):
+    path = f'{lang}/tiktok-shop/'; ctx(path)
+    ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), ('TikTok Shop', None)], lang)
     cards = ''.join(f'''<a class="card ccard" href="{m["slug"].split("/")[1]}/"><div class="top"><span class="flag" style="font-size:28px">{m["flag"]}</span>{badge("Live","live")}</div>
 <h3>TikTok Shop {m["marketName"]}</h3><p>{esc(C_SUM[k])}</p><div class="go">Open calculator {ic("arrow",14)}</div></a>'''
                     for k, m in MARKETS.items() if m['platform'] == 'tiktok-shop')
@@ -382,40 +397,43 @@ def tiktok_hub():
 <div class="go soon">{ic("bell",14)} Request</div></div>''' for p, mk, f in COMING if p == 'TikTok Shop')
     rows = ''.join(f'<tr><td>{m["flag"]} <a href="{m["slug"].split("/")[1]}/">{m["marketName"]}</a></td><td>{esc(C_SUM[k])}</td></tr>'
                    for k, m in MARKETS.items() if m['platform'] == 'tiktok-shop')
-    guides = [g for g in C.GUIDES if g.get('lang') == 'en' and (g.get('market') or '').startswith('tiktok')]
-    body = f'''<div class="phead"><div class="wrap">{ch}
+    guides = [g for g in sf_site.GUIDES_ALL if g.get('lang') == lang and (g.get('market') or '').startswith('tiktok')]
+    body = f'''<div class="phead"><div class="wrap"><!--CRUMBS-->
 <h1 class="h-display" style="margin-top:18px">TikTok Shop fee calculators by country</h1>
 <p class="lead" style="margin-top:12px">Different fees in every market: category commission in Malaysia, Thailand and the Philippines, a flat GST-inclusive rate in Singapore, a referral fee in the US and a single commission rate in the UK.</p></div></div>
 <section class="s"><div class="wrap"><div class="cards">{cards}{soon}</div>
 <h2 class="h2" style="margin-top:48px">How fees differ by market</h2>
 <div class="tablewrap"><table><thead><tr><th>Market</th><th>Main fees</th></tr></thead><tbody>{rows}</tbody></table></div>
 <div class="sh" style="margin-top:48px"><h2 class="h2">Guides</h2></div>
-<div class="cards">{''.join(gcard(path, g, 'en') for g in guides)}</div></div></section>'''
-    w(path, page(path, 'en', 'TikTok Shop Fee Calculators: Malaysia, Singapore, Thailand, Philippines, US & UK | SellerFee',
-                 'Free TikTok Shop seller fee calculators for Malaysia, Singapore, Thailand, the Philippines, the United States and the United Kingdom, built on official Seller University rate cards.',
-                 body, [cld]))
+<div class="cards"><!--GUIDES--></div></div></section>'''
+    body = LB(lang, body).replace('<!--GUIDES-->', gcards(path, lang, guides)).replace('<!--CRUMBS-->', ch)
+    w(path, page(path, lang, LZ(lang, 'TikTok Shop Fee Calculators: Malaysia, Singapore, Thailand, Philippines, US & UK | SellerFee'),
+                 LZ(lang, 'Free TikTok Shop seller fee calculators for Malaysia, Singapore, Thailand, the Philippines, the United States and the United Kingdom, built on official Seller University rate cards.'),
+                 body, [cld], alt=ALT('tiktok-shop/')))
 
-def russia_hub():
-    path = 'en/russia/'
-    ch, cld = crumbs(path, [('SellerFee', 'en/'), ('Russia', None)])
+def russia_hub(lang='en'):
+    path = f'{lang}/russia/'; ctx(path)
+    ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (tr(lang, 'nav_russia'), None)], lang)
     cards = ''.join(f'''<a class="card ccard" href="../{MARKETS[k]["slug"]}/"><div class="top">{ptile(k,40)}{badge("Live","live")}</div>
 <h3>{esc(MARKETS[k]["platformName"])}</h3><p>{esc(C_SUM[k])}</p><div class="go">Open calculator {ic("arrow",14)}</div></a>'''
                     for k in ('ozon', 'wildberries', 'yandex-market'))
-    guides = [g for g in C.GUIDES if g.get('lang') == 'en' and g.get('market') in ('ozon', 'wildberries', 'yandex-market')]
-    body = f'''<div class="phead"><div class="wrap">{ch}
+    guides = [g for g in sf_site.GUIDES_ALL if g.get('lang') == lang and g.get('market') in ('ozon', 'wildberries', 'yandex-market')]
+    body = f'''<div class="phead"><div class="wrap"><!--CRUMBS-->
 <h1 class="h-display" style="margin-top:18px">Russia marketplace fee calculators</h1>
 <p class="lead" style="margin-top:12px">Ozon, Wildberries and Yandex Market — FBO/FBS-style models, category commission, logistics and payment fees in rubles, from official seller documents.</p>
-<p class="muted" style="margin-top:8px">Also available in <a href="../../ru/">Русский</a>.</p></div></div>
+<p class="muted" style="margin-top:8px">Also available in <a href="/ru/russia/" lang="ru">Русский</a>.</p></div></div>
 <section class="s"><div class="wrap"><div class="cards">{cards}</div>
 <div class="sh" style="margin-top:48px"><h2 class="h2">Guides</h2><a class="btn btn-link" href="../guides/">All guides {ic("arrow",14)}</a></div>
-<div class="cards">{''.join(gcard(path, g, 'en') for g in guides)}</div></div></section>'''
-    w(path, page(path, 'en', 'Russia Fee Calculators: Ozon, Wildberries & Yandex Market | SellerFee',
-                 'Free fee and profit calculators for Ozon, Wildberries and Yandex Market sellers. Official category tariffs, logistics and payment fees in RUB.',
-                 body, [cld], alt={'en': 'en/russia/', 'ru': 'ru/', 'zh': 'zh/russia/'}))
+<div class="cards"><!--GUIDES--></div></div></section>'''
+    body = LB(lang, body).replace('<!--GUIDES-->', gcards(path, lang, guides)).replace('<!--CRUMBS-->', ch)
+    if lang == 'ru': body = body.replace('<p class="muted" style="margin-top:8px">', '<p class="muted" style="margin-top:8px" hidden>', 1)
+    w(path, page(path, lang, LZ(lang, 'Russia Fee Calculators: Ozon, Wildberries & Yandex Market | SellerFee'),
+                 LZ(lang, 'Free fee and profit calculators for Ozon, Wildberries and Yandex Market sellers. Official category tariffs, logistics and payment fees in RUB.'),
+                 body, [cld], alt=ALT('russia/')))
 
-def rate_changes():
-    path = 'en/rate-changes/'
-    ch, cld = crumbs(path, [('SellerFee', 'en/'), ('Rate changes', None)])
+def rate_changes(lang='en'):
+    path = f'{lang}/rate-changes/'; ctx(path)
+    ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (tr(lang, 'nav_rates'), None)], lang)
     rows = [
      ('30 Oct 2026', 'Ozon', 'FBO/FBS logistics tariffs', 'New cluster × volume × price-band table', 'en/ozon/'),
      ('31 Oct 2026', 'TikTok Shop MY', 'Category commission', 'New commission table (side-by-side with old rates in the calculator)', 'en/tiktok-shop/malaysia/'),
@@ -430,18 +448,19 @@ def rate_changes():
      ('28 Aug 2026', 'Ozon', 'Category commission XLSX', 'Price-band rates currently loaded', 'en/ozon/'),
     ]
     trs = ''.join(f'<tr><td class="nowrap">{esc(d)}</td><td><b>{esc(p)}</b></td><td>{esc(w)}</td><td>{esc(n)}</td><td><a href="../{u.split("/",1)[1]}">Calculator {ic("arrow",13)}</a></td></tr>' for d,p,w,n,u in rows)
-    body = f'''<div class="phead"><div class="wrap">{ch}
+    body = f'''<div class="phead"><div class="wrap"><!--CRUMBS-->
 <h1 class="h-display" style="margin-top:18px">Rate changes</h1>
 <p class="lead" style="margin-top:12px">Dated fee changes that affect the live calculators. Every row links to the calculator and its official sources.</p></div></div>
 <section class="s"><div class="wrap"><div class="tablewrap"><table>
 <thead><tr><th>When</th><th>Platform</th><th>What</th><th>Detail</th><th></th></tr></thead>
 <tbody>{trs}</tbody></table></div>
 <p class="muted" style="margin-top:16px">Last register check: {VFULL["en"]}. Found a change we missed? <a href="{issue_url("Rate change: ", "Platform:\nEffective date:\nLink to official source:")}">Open an issue</a>.</p></div></section>'''
-    w(path, page(path, 'en', 'Marketplace Rate Changes (2026) | SellerFee',
-                 'Dated marketplace fee changes for TikTok Shop, Etsy, Ozon, Wildberries and Yandex Market, linked to the calculators that use them.',
-                 body, [cld]))
+    body = LB(lang, body).replace('<!--CRUMBS-->', ch)
+    w(path, page(path, lang, LZ(lang, 'Marketplace Rate Changes (2026) | SellerFee'),
+                 LZ(lang, 'Dated marketplace fee changes for TikTok Shop, Etsy, Ozon, Wildberries and Yandex Market, linked to the calculators that use them.'),
+                 body, [cld], alt=ALT('rate-changes/')))
 
-def static_pages():
+def static_pages(lang='en'):
     about = f'''
 <p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (Malaysia, Singapore, Thailand, the Philippines, the US and the UK), Shopee (Malaysia, Singapore), Lazada Malaysia, Etsy (global and UK), and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
 <h2 id="how-we-source-rates">How we source rates</h2>
@@ -457,7 +476,7 @@ def static_pages():
     P = {
      'about': ('About SellerFee', 'About SellerFee: who we are, how we verify marketplace fee rates and how the calculators work.', about),
      'privacy': ('Privacy', 'SellerFee privacy notice: calculators run in your browser; we don’t collect the numbers you type.', f'''
-<p>Last updated {VERIFIED_H}.</p>
+<p>Last updated 26 October 2026.</p>
 <p>SellerFee calculators run entirely in your browser. The prices, costs and rates you enter are not sent to our servers. We don’t run an account system and we don’t sell personal data.</p>
 <h2>Logs and hosting</h2>
 <p>Like most static sites, our host may keep standard access logs (IP address, URL, user agent). We use them only to keep the site reliable.</p>
@@ -467,7 +486,7 @@ def static_pages():
 <p>Questions: use the <a href="../contact/">contact page</a> or open a GitHub issue on the project repository.</p>
 '''),
      'terms': ('Terms of use', 'Terms of use for SellerFee calculators and guides.', f'''
-<p>Last updated {VERIFIED_H}.</p>
+<p>Last updated 26 October 2026.</p>
 <p>By using SellerFee you agree to these terms.</p>
 <h2>Estimates, not advice</h2>
 <p>Our calculators and guides provide estimates based on fee rates published by each marketplace on the date shown. They are for general information only and are not financial, tax, accounting or legal advice. Your actual fees can differ because of your account type, category assignment, programs, waivers, promotions, taxes, currency conversion or changes the platform makes after our last check. Always confirm fees in your marketplace account before making pricing or business decisions.</p>
@@ -492,10 +511,42 @@ def static_pages():
 '''),
     }
     for slug, (title, desc, html) in P.items():
-        path = f'en/{slug}/'
-        ch, cld = crumbs(path, [('SellerFee', 'en/'), (title, None)])
-        w(path, page(path, 'en', f'{title} | SellerFee', desc,
-                     f'<div class="wrap narrow spage">{ch}<article class="prose"><h1>{esc(title)}</h1>{html}</article></div>', [cld]))
+        path = f'{lang}/{slug}/'; ctx(path)
+        title, desc, html = LZ(lang, title), LZ(lang, desc), LB(lang, html)
+        ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (title, None)], lang)
+        w(path, page(path, lang, f'{title} | SellerFee', desc,
+                     f'<div class="wrap narrow spage">{ch}<article class="prose"><h1>{esc(title)}</h1>{html}</article></div>', [cld], alt=ALT(f'{slug}/')))
+
+NF = {'en': ('Page not found', 'The page you’re looking for doesn’t exist or has moved.', 'Go to the calculators'),
+      'zh': ('页面不存在', '你要找的页面不存在，或已经移到别处。', '前往计算器'),
+      'ru': ('Страница не найдена', 'Такой страницы нет или она переехала.', 'Перейти к калькуляторам'),
+      'ms': ('Halaman tidak ditemui', 'Halaman yang anda cari tidak wujud atau telah dipindahkan.', 'Pergi ke kalkulator')}
+
+def not_found(lang):
+    """Localised 404 page with the full site chrome (noindex, not in the sitemap)."""
+    path = f'{lang}/404.html'; ctx(path)
+    body = f'<div class="wrap narrow spage"><article class="prose"><h1>{esc(NF[lang][0])}</h1><p>{esc(NF[lang][1])}</p><p><a class="btn btn-primary" href="/{lang}/#calculators">{esc(NF[lang][2])}</a></p></article></div>'
+    html = page(path, lang, NF[lang][0] + ' | SellerFee', NF[lang][1], body, alt={l: f'{l}/404.html' for l in LANGS})
+    PAGES.pop()
+    html = html.replace('<meta charset="utf-8">', '<meta charset="utf-8"><meta name="robots" content="noindex">', 1)
+    w(path, re.sub(r'<link rel="(canonical|alternate)"[^>]*>', '', html))
+
+def all_guides():
+    """Every English guide in every language: the hand-written version where one exists, otherwise localised."""
+    en = [g for g in C.GUIDES if g.get('lang', 'en') == 'en']
+    out = []
+    for lang in ALL:
+        for g in en:
+            nat = next((x for x in C.GUIDES if x.get('lang') == lang and x['slug'] == g['slug']), None)
+            if lang == 'en': out.append(g)
+            elif nat: out.append(nat)
+            else:
+                ctx(f'{lang}/guides/{g["slug"]}/')
+                body_fn = g['body'] if callable(g.get('body')) else C.GUIDE_BODY[g['slug']]
+                out.append(dict(g, lang=lang, title=LZ(lang, g['title']), desc=LZ(lang, g['desc']), short=LZ(lang, g['short']),
+                                fig=LZ(lang, g.get('fig', '')), body=(lambda f=body_fn, l=lang: LB(l, f())),
+                                sources=g.get('sources') or C.GUIDE_SOURCES.get(g['slug'], [])))
+    return out
 
 def plumbing():
     open(os.path.join(ROOT, 'index.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SellerFee</title>
@@ -506,9 +557,12 @@ def plumbing():
 <body><a href="/en/">SellerFee</a> · <a href="/zh/">中文</a> · <a href="/ru/">Русский</a> · <a href="/ms/">Bahasa Melayu</a></body></html>''')
     for old, new in [('malaysia/', 'en/tiktok-shop/malaysia/'), ('philippines/', 'en/tiktok-shop/philippines/')]:
         w(old, f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{BASE}{new}"><meta http-equiv="refresh" content="0; url=../{new}"><meta name="robots" content="noindex"></head><body><a href="../{new}">This page has moved.</a></body></html>')
+    # GitHub Pages serves this one file for every missing URL: show the message in the language of the URL prefix
+    blocks = ''.join(f'<div class="nf" data-l="{l}" lang="{LANGS[l]["html"]}"{"" if l == "en" else " hidden"}><h1>{esc(NF[l][0])}</h1><p>{esc(NF[l][1])}</p><p><a class="btn btn-primary" href="/{l}/">{esc(NF[l][2])}</a></p></div>' for l in ALL)
     open(os.path.join(ROOT, '404.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | SellerFee</title><meta name="robots" content="noindex">
 <link rel="stylesheet" href="/assets/style.css"></head>
-<body><main class="wrap narrow spage"><h1>Page not found</h1><p>The page you’re looking for doesn’t exist or has moved.</p><p><a class="btn btn-primary" href="/en/">Go to the calculators</a></p></main></body></html>''')
+<body><main class="wrap narrow spage">{blocks}</main>
+<script>(function(){{var m=location.pathname.match(/^\\/(zh|ru|ms)\\//);if(!m)return;var t={json.dumps({l: NF[l][0] + ' | SellerFee' for l in ALL}, ensure_ascii=False)};document.querySelectorAll('.nf').forEach(function(e){{e.hidden=e.getAttribute('data-l')!==m[1]}});document.documentElement.lang=document.querySelector('.nf[data-l='+m[1]+']').getAttribute('lang');document.title=t[m[1]]}})()</script></body></html>''')
     open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n')
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
@@ -528,10 +582,14 @@ def plumbing():
 
 if __name__ == '__main__':
     clean(); copy_rates()
-    home(); home_ms(); home_ru(); home_zh(); tiktok_hub(); tiktok_hub_zh(); russia_hub(); russia_hub_zh(); rate_changes()
+    for m in MARKETS.values(): m['langs'] = list(LANGS)
+    sf_site.GUIDES_ALL[:] = all_guides()
+    home('en'); home('ms'); home_ru(); home_zh()
+    for lang in ALL:
+        tiktok_hub(lang); russia_hub(lang); rate_changes(lang); static_pages(lang); guides_index(lang); not_found(lang)
     for mid, m in MARKETS.items():
-        for lang in m['langs']: calc_page(mid, lang)
-    for lang in ('en', 'ru', 'zh'): guides_index(lang)
-    for g in C.GUIDES: guide_page(g)
-    static_pages(); plumbing()
-    print('built', len(PAGES), 'pages')
+        for lang in ALL: calc_page(mid, lang)
+    for g in sf_site.GUIDES_ALL: guide_page(g)
+    plumbing()
+    miss = l10n.write_missing()
+    print('built', len(PAGES), 'pages', '· untranslated segments:', miss or 0)

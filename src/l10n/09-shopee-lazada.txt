@@ -1,0 +1,361 @@
+@@ 6b78a1557b
+ms: Kalkulator Yuran Shopee Malaysia {0} (Komisen, TX {1}%, PSF RM{2})
+ru: Калькулятор сборов Shopee Малайзия {0} (комиссия, транзакционный сбор {1}%, PSF RM{2})
+@@ eae8fe15b5
+ms: Kalkulator yuran dan untung Shopee Malaysia percuma dengan jadual komisen Marketplace dan Mall mulai {0} Ogos {1} (termasuk SST), yuran transaksi {2}% dan Yuran Sokongan Platform RM{3}.
+ru: Бесплатный калькулятор сборов и прибыли Shopee Малайзия: таблицы комиссий Marketplace и Mall с {0} авг. {1} (с SST), транзакционный сбор {2}% и сбор поддержки платформы RM{3}.
+@@ 98d8b59149
+ms: Kalkulator Yuran Shopee Malaysia
+ru: Калькулятор сборов Shopee Малайзия
+@@ 81c03f0c65
+ms: Lihat dengan tepat apa yang diambil Shopee Malaysia daripada setiap pesanan — Marketplace atau Mall, SCP atau bukan SCP — menggunakan jadual komisen rasmi {0} Ogos {1}, yuran transaksi {2}% dan Yuran Sokongan Platform RM{3}.
+ru: Точно посчитайте, что Shopee Малайзия удерживает с каждого заказа — Marketplace или Mall, с SCP или без — по официальным таблицам комиссий от {0} августа {1}, с транзакционным сбором {2}% и сбором поддержки платформы RM{3}.
+@@ 6e6e69389f
+ms: Cara yuran Shopee Malaysia berfungsi
+ru: Как устроены сборы Shopee Малайзия
+@@ ded062f730
+ms: Apakah yuran yang dikenakan Shopee Malaysia kepada penjual tempatan?
+ru: Какие сборы Shopee Малайзия берёт с местных продавцов?
+@@ 1dbb3425b0
+ms: Komisen kategori (Marketplace atau Mall, SCP atau bukan SCP), yuran transaksi {0}% pada amaun yang dibayar pembeli termasuk caj penghantaran, dan Yuran Sokongan Platform RM{1} bagi setiap pesanan yang selesai. Yuran program dan prapesanan pilihan juga mungkin dikenakan.
+ru: Комиссия по категории (Marketplace или Mall, с SCP или без), транзакционный сбор {0}% от суммы, оплаченной покупателем, включая доставку, и сбор поддержки платформы RM{1} с каждого выполненного заказа. Могут взиматься и сборы за дополнительные программы и предзаказ.
+@@ 8eda2ffc15
+ms: Adakah kadar komisen termasuk SST?
+ru: Включают ли ставки комиссии SST?
+@@ bbc1494d10
+ms: Shopee menerbitkan kadar senarai yang tertakluk kepada SST {0}%. Kalkulator ini menyimpan kadar termasuk SST (senarai × {1}), sepadan dengan contoh pengiraan Shopee sendiri (cth. {2}% → {3}%).
+ru: Shopee публикует базовые ставки, к которым добавляется SST {0}%. Калькулятор хранит ставки с SST (базовая × {1}), как в примерах самого Shopee (например, {2}% → {3}%).
+@@ bb1b0c8bc6
+ms: Bilakah perubahan komisen Ogos {0} bermula?
+ru: Когда вступили в силу августовские ({0}) изменения комиссий?
+@@ 3c61124c44
+ms: {0}:{1}, {2} Ogos {3} untuk kedua-dua jadual Marketplace dan Mall. Pesanan sebelum tarikh itu mengikut lajur terdahulu.
+ru: В {0}:{1} {2} августа {3} — для таблиц Marketplace и Mall. Заказы до этой даты считаются по прежним столбцам.
+@@ df891797ef
+ms: Siapa yang mendapat pengecualian komisen penjual baharu?
+ru: Кто получает освобождение от комиссии как новый продавец?
+@@ 9788ae5ecb
+ms: Mulai {0} Ogos {1}, komisen Marketplace dikenakan selepas lebih {2} hari sejak penyenaraian pertama atau lebih {3} pesanan selesai, yang mana lebih awal.
+ru: С {0} августа {1} комиссия Marketplace начинает взиматься, когда с первого размещения прошло больше {2} дней или выполнено больше {3} заказов — что наступит раньше.
+@@ 99cbe0b028
+ms: Apakah Program Cashback (SCP)?
+ru: Что такое программа Cashback (SCP)?
+@@ 4e0cfd9b0a
+ms: Penjual dalam Program Cashback Shopee membayar lajur komisen SCP yang lebih rendah. Peraturan program dan sebarang yuran perkhidmatan berasingan terdapat di Seller Center.
+ru: Участники программы Cashback от Shopee платят по пониженному столбцу комиссий SCP. Правила программы и отдельные сервисные сборы — в Seller Center.
+@@ 7faeabb8fe
+ms: Pada pesanan tempatan yang selesai, Shopee Malaysia memotong komisen kategori, yuran transaksi dan Yuran Sokongan Platform. Komisen bergantung pada kategori produk, Marketplace atau Mall, dan sama ada anda dalam Program Cashback (SCP). Peratusan komisen yang kami muatkan adalah <b1>termasuk SST</b1> (jadual rasmi × {0}), sepadan dengan cara contoh pengiraan Shopee sendiri menukar kadar senarai {1}% kepada {2}%.
+ru: С выполненного местного заказа Shopee Малайзия удерживает комиссию по категории, транзакционный сбор и сбор поддержки платформы. Комиссия зависит от категории товара, от того, Marketplace это или Mall, и от участия в программе Cashback (SCP). Загруженные проценты комиссии указаны <b1>с SST</b1> (официальная таблица × {0}) — так же, как в примерах самого Shopee базовая ставка {1}% превращается в {2}%.
+@@ bcd7cc3b1a
+ms: Komisen = (harga item − diskaun dibiayai penjual) × kadar kategori. Baucar yang dibiayai platform tidak ditolak daripada asas. Marketplace dan Mall menerbitkan jadual berasingan; penjual SCP mendapat lajur yang lebih rendah. Mulai {0} Ogos {1}, jadual Marketplace dan Mall dikemas kini sekali lagi.
+ru: Комиссия = (цена товара − скидка за счёт продавца) × ставка категории. Ваучеры за счёт платформы из базы не вычитаются. У Marketplace и Mall отдельные таблицы; участники SCP платят по пониженному столбцу. С {0} августа {1} таблицы Marketplace и Mall снова обновлены.
+@@ ef4371052b
+ms: {0}% (selepas SST) daripada amaun pesanan akhir yang dibayar pembeli, termasuk caj penghantaran, dibundarkan kepada {1} tempat perpuluhan. Dipotong secara automatik pada pesanan yang selesai.
+ru: {0}% (с SST) от итоговой суммы заказа, оплаченной покупателем, включая доставку, с округлением до {1} знаков после запятой. Удерживается автоматически с выполненных заказов.
+@@ 4ed0e3e2de
+ms: {0}. Yuran Sokongan Platform
+ru: {0}. Сбор поддержки платформы
+@@ 52e7d95501
+ms: RM{0} (selepas SST) pada setiap pesanan yang selesai, tanpa mengira nilai pesanan.
+ru: RM{0} (с SST) с каждого выполненного заказа независимо от его суммы.
+@@ eae5ba2893
+ms: {0}. Pengecualian penjual baharu
+ru: {0}. Освобождение для новых продавцов
+@@ 4572f9d23e
+ms: Mulai {0} Ogos {1}, komisen Marketplace hanya dikenakan selepas anda menyenaraikan produk pertama lebih {2} hari <b1>atau</b1> mempunyai lebih {3} pesanan selesai, yang mana lebih awal. Gunakan suis "Penjual baharu dalam tempoh komisen 0%" untuk memodelkan tempoh pengecualian.
+ru: С {0} августа {1} комиссия Marketplace начинает взиматься, только когда с размещения первого товара прошло больше {2} дней <b1>или</b1> выполнено больше {3} заказов — что наступит раньше. Чтобы смоделировать льготный период, включите переключатель «Новый продавец в периоде 0% комиссии».
+@@ 0f3e029eae
+ms: Contoh {0}: serum penjagaan kulit RM{1}, Marketplace, bukan SCP
+ru: Пример {0}: сыворотка для ухода за кожей за RM{1}, Marketplace, без SCP
+@@ e000f94ca7
+ms: Komisen penjagaan kulit untuk penjual Marketplace bukan SCP kekal {0}% selepas {1} Ogos (termasuk SST). Kos RM{2}.
+ru: Комиссия на уход за кожей для продавца Marketplace без SCP после {1} августа остаётся {0}% (с SST). Себестоимость RM{2}.
+@@ 098d25f537
+ms: Sebelum {0} Ogos
+ru: До {0} авг.
+@@ 8f27529d1e
+ms: Mulai {0} Ogos
+ru: С {0} авг.
+@@ e35aa8f92a
+ms: Yuran Sokongan Platform
+ru: Сбор поддержки платформы
+zh: 平台支持费
+@@ 2dc94dfa8d
+ms: Untung selepas kos RM{0}
+ru: Прибыль после себестоимости RM{0}
+@@ df3e3449fb
+ms: Contoh {0}: serum yang sama sebagai penjual SCP
+ru: Пример {0}: та же сыворотка у участника SCP
+@@ f64197c249
+ms: SCP menurunkan komisen penjagaan kulit baharu kepada {0}%.
+ru: С SCP новая комиссия на уход за кожей снижается до {0}%.
+@@ 0c8639cbe6
+ms: Untung RM{0} (margin {1}%) berbanding RM{2} di luar SCP.
+ru: Прибыль RM{0} (маржа {1}%) против RM{2} без SCP.
+@@ 0ea3eef965
+ms: Contoh {0}: senario kamera Mall Shopee
+ru: Пример {0}: сценарий Shopee с камерами в Mall
+@@ 52c05e609e
+ms: Kamera Mall SCP, RM{0} selepas promosi RM{1} dengan baucar penjual RM{2} (asas komisen RM{3}). Contoh rasmi: senarai {4}% × SST {5}% = {6}% → RM{7}. Kalkulator sepadan: komisen RM{8}.
+ru: Камеры в Mall с SCP: RM{0} после акции RM{1} и ваучера продавца RM{2} (база комиссии RM{3}). Официальный пример: базовая ставка {4}% × SST {5}% = {6}% → RM{7}. Калькулятор даёт то же: комиссия RM{8}.
+@@ 621d236723
+ms: Subjumlah item selepas diskaun anda
+ru: Сумма товаров после вашей скидки
+@@ 423225f2ef
+ms: Komisen dikecualikan atau dikurangkan bagi {0}+ kategori keperluan asas.
+ru: Освобождение от комиссии или сниженная комиссия для {0}+ категорий товаров первой необходимости.
+@@ a2568070c1
+ms: Komisen Marketplace bermula selepas {0} hari atau {1} pesanan selesai; lebih banyak barangan keperluan ditambah ke kadar dikurangkan.
+ru: Комиссия Marketplace начинается через {0} дней или после {1} выполненных заказов; к сниженным ставкам добавлены новые товары первой необходимости.
+@@ 71ca8b5f32
+ms: Jadual komisen Marketplace dan Mall baharu (lajur SCP / bukan SCP).
+ru: Новые таблицы комиссий Marketplace и Mall (столбцы с SCP и без).
+@@ dc114c8e16
+ms: Pilihan subkategori popular. Semua kadar di bawah adalah <b1>termasuk SST</b1>. MP = Marketplace.
+ru: Подборка популярных подкатегорий. Все ставки ниже <b1>с SST</b1>. MP = Marketplace.
+@@ ca85a9cd7f
+ms: Subkategori
+ru: Подкатегория
+@@ 9ad4c910f6
+ms: MP bukan SCP sebelum
+ru: MP без SCP, до
+@@ 781a26563e
+ms: MP bukan SCP mulai {0} Ogos
+ru: MP без SCP, с {0} авг.
+@@ 64d59211ba
+ms: MP SCP mulai {0} Ogos
+ru: MP с SCP, с {0} авг.
+@@ 954a36753e
+ms: Mall bukan SCP mulai {0} Ogos
+ru: Mall без SCP, с {0} авг.
+@@ eb8a7cdf2c
+ms: Kategori › Subkategori
+ru: Категория › подкатегория
+@@ a3aaa3e54e
+ms: MP SCP (lama)
+ru: MP с SCP (старая)
+@@ 4fc44ab078
+ms: MP bukan SCP (lama)
+ru: MP без SCP (старая)
+@@ 07b9fe5bde
+ms: Mall SCP (lama)
+ru: Mall с SCP (старая)
+@@ 68c774ba51
+ms: Mall bukan SCP (lama)
+ru: Mall без SCP (старая)
+@@ 629de5475b
+ms: MP SCP (baharu)
+ru: MP с SCP (новая)
+@@ 904ce3d0b7
+ms: MP bukan SCP (baharu)
+ru: MP без SCP (новая)
+@@ 2f0932a843
+ms: Mall SCP (baharu)
+ru: Mall с SCP (новая)
+@@ 6028ff0b89
+ms: Mall bukan SCP (baharu)
+ru: Mall без SCP (новая)
+@@ 2db6615733
+ms: <b1>Tetapkan semula harga berdasarkan jadual {0} Ogos.</b1> Lajur SCP dan bukan SCP berubah secara berasingan; semak SKU utama anda dengan kedua-dua suis.
+ru: <b1>Пересчитайте цены по таблице от {0} августа.</b1> Столбцы с SCP и без SCP менялись независимо; проверьте ключевые SKU с обоими положениями переключателя.
+@@ 1677179ffb
+ms: <b1>Gabungkan item berharga rendah.</b1> Yuran Sokongan Platform RM{0} dikenakan setiap pesanan, bukan setiap item.
+ru: <b1>Объединяйте дешёвые товары.</b1> Сбор поддержки платформы RM{0} берётся с заказа, а не с товара.
+@@ cd9d04b9d4
+ms: <b1>Sahkan Mall atau Marketplace.</b1> Komisen Mall beberapa mata lebih tinggi dalam kebanyakan kategori.
+ru: <b1>Уточните: Mall или Marketplace.</b1> В большинстве категорий комиссия Mall выше на несколько пунктов.
+@@ 5ced7b06ea
+ms: <b1>Ubah kadar jika Seller Center menunjukkan angka lain.</b1> Penetapan kategori boleh berbeza daripada jadual awam; setiap medan kadar boleh diubah.
+ru: <b1>Если Seller Center показывает другое, измените ставку.</b1> Категория может отличаться от публичной таблицы; любое поле ставки можно редактировать.
+@@ efcdcd38fe
+ms: Kalkulator Yuran Shopee Singapura {0} (Komisen Termasuk GST & TX {1}%)
+ru: Калькулятор сборов Shopee Сингапур {0} (комиссия с GST и транзакционный сбор {1}%)
+@@ f70df7ddd5
+ms: Kalkulator yuran dan untung Shopee Singapura percuma dengan jadual komisen Mall dan bukan Mall termasuk GST mulai {0} Ogos {1}, yuran transaksi {2}%, suis PXP dan had seunit.
+ru: Бесплатный калькулятор сборов и прибыли Shopee Сингапур: таблицы комиссий Mall и не-Mall с GST с {0} авг. {1}, транзакционный сбор {2}%, переключатель PXP и лимиты на единицу товара.
+@@ f8349cab6d
+ms: Kalkulator Yuran Shopee Singapura
+ru: Калькулятор сборов Shopee Сингапур
+@@ f4d4f133ad
+ms: Komisen Mall dan bukan Mall termasuk GST mulai {0} Ogos {1}, yuran transaksi {2}%, kadar keutamaan PXP dan had seunit yang diterbitkan — supaya anda boleh melihat bayaran dan margin sebelum menyenaraikan.
+ru: Комиссия Mall и не-Mall с GST с {0} августа {1}, транзакционный сбор {2}%, льготные ставки PXP и опубликованные лимиты на единицу — чтобы увидеть выплату и маржу ещё до размещения товара.
+@@ 9dbecd3fdd
+ms: Cara yuran Shopee Singapura berfungsi
+ru: Как устроены сборы Shopee Сингапур
+@@ dcfd11ade6
+ms: Berapakah yuran transaksi Shopee Singapura?
+ru: Какой транзакционный сбор у Shopee Сингапур?
+@@ b6651e884e
+ms: {0}% termasuk GST daripada amaun bayaran akhir (termasuk caj penghantaran dibayar pembeli). SPayLater boleh lebih tinggi, sehingga {1}%.
+ru: {0}% с GST от итоговой суммы оплаты (включая доставку за счёт покупателя). Для SPayLater ставка может быть выше — до {1}%.
+@@ cf21e1b2e6
+ms: Adakah kadar komisen termasuk GST?
+ru: Включают ли ставки комиссии GST?
+@@ cf1fc866c9
+ms: Ya. Shopee SG menerbitkan yuran komisen dan transaksi termasuk GST.
+ru: Да. Shopee SG публикует комиссию и транзакционный сбор с учётом GST.
+@@ 89738c5552
+ms: Apa yang berubah pada {0} Ogos {1}?
+ru: Что изменилось {0} августа {1}?
+@@ bb04cf650d
+ms: Shopee mengurangkan komisen sebanyak {0} mata peratusan bagi Makanan & Minuman, Rumah & Gaya Hidup (kertas tandas), buku dan alat muzik terpilih.
+ru: Shopee снизил комиссию на {0} п. п. для отдельных категорий: продукты и напитки, дом (туалетная бумага), книги и музыкальные инструменты.
+@@ b4f7ac34f0
+ms: Bagaimana pengecualian penjual baharu {0} hari berfungsi?
+ru: Как работает освобождение новых продавцов на {0} дней?
+@@ e59403013d
+ms: Penjual Mall dan bukan Mall baharu yang layak membayar komisen {0}% bagi {1} hari pertama aktiviti penjual. Yuran perkhidmatan dan transaksi masih dikenakan.
+ru: Подходящие новые продавцы Mall и не-Mall платят комиссию {0}% в первые {1} дней работы. Сервисные и транзакционные сборы взимаются как обычно.
+@@ 4cae855ddd
+ms: Dari mana datangnya kadar yuran perkhidmatan PXP?
+ru: Откуда берутся ставки сервисного сбора PXP?
+@@ fb6f3a3828
+ms: Ia berbeza mengikut kategori pada halaman Shopee yang berasingan. Masukkan kadar yang ditunjukkan dalam Seller Center anda; contoh FAQ {0}% hanyalah nilai sementara.
+ru: Они зависят от категории и опубликованы на отдельной странице Shopee. Укажите ставку из своего Seller Center; {0}% из примера в FAQ — лишь условное значение.
+@@ f86644c0e6
+ms: Penjual Shopee SG tempatan membayar komisen kategori termasuk GST dan yuran transaksi termasuk GST pada setiap pesanan berjaya. Penjual dalam Promo Xtra Programme (PXP) mendapat kadar komisen keutamaan dan membayar yuran perkhidmatan PXP berasingan.
+ru: Местные продавцы Shopee SG платят с каждого успешного заказа комиссию по категории и транзакционный сбор — оба с GST. Участники Promo Xtra Programme (PXP) получают льготные ставки комиссии и платят отдельный сервисный сбор PXP.
+@@ 9826924b8b
+ms: Peratusan termasuk GST daripada harga produk selepas promosi tajaan penjual. Mall dan bukan Mall (Marketplace) mempunyai kadar berbeza; penjual PXP menggunakan lajur keutamaan. Kategori elektronik dan fesyen terpilih mempunyai had seunit (cth. S${0} bukan Mall / S${1} Mall untuk banyak elektronik). Mulai {2} Ogos {3}, kategori makanan, penjagaan rumah, buku dan alat muzik terpilih menerima pengurangan {4} mata peratusan.
+ru: Процент с GST от цены товара после акций за счёт продавца. У Mall и не-Mall (Marketplace) ставки разные; участники PXP платят по льготному столбцу. У отдельных категорий электроники и моды есть лимит на единицу (например, S${0} для не-Mall / S${1} для Mall у многих категорий электроники). С {2} августа {3} отдельные категории продуктов, бытовой химии, книг и музыкальных инструментов получили снижение на {4} п. п.
+@@ be99eab728
+ms: {0}% (termasuk GST) daripada amaun bayaran akhir, termasuk caj penghantaran dibayar pembeli. SPayLater boleh berjulat dari {1}% hingga {2}% bergantung pada tempoh bayaran balik pembeli — kalkulator menggunakan {3}% secara lalai; ubah kadar untuk tempoh lebih panjang.
+ru: {0}% (с GST) от итоговой суммы оплаты, включая доставку за счёт покупателя. Для SPayLater ставка может составлять от {1}% до {2}% в зависимости от срока рассрочки покупателя — по умолчанию в калькуляторе {3}%; для более длинных сроков измените ставку.
+@@ 7632ec24ef
+ms: {0}. Yuran perkhidmatan PXP
+ru: {0}. Сервисный сбор PXP
+@@ 0ef87ac5e2
+ms: Dikenakan hanya jika anda menyertai Promo Xtra. Peratusan berbeza mengikut kategori (contoh FAQ Shopee menggunakan {0}% daripada penyelesaian kasar). Masukkan kadar kategori anda di bawah kadar yuran — kami tidak mereka jadual kategori yang belum kami sahkan.
+ru: Взимается, только если вы участвуете в Promo Xtra. Процент зависит от категории (в примере из FAQ Shopee — {0}% от валовой суммы расчёта). Укажите ставку вашей категории в блоке тарифов — мы не придумываем таблицу категорий, которую не смогли проверить.
+@@ 47b4c29a69
+ms: Penjual Mall dan bukan Mall baharu yang layak mendapat komisen {0}% bagi {1} hari pertama aktiviti penjual. Yuran perkhidmatan PXP mempunyai pengecualian {2} hari berasingan untuk penjual baharu di Shopee yang menyertai PXP.
+ru: Подходящие новые продавцы Mall и не-Mall платят комиссию {0}% в первые {1} дней работы. Для сервисного сбора PXP есть отдельное освобождение на {2} дней для новых на Shopee продавцов, вступивших в PXP.
+@@ fc027858eb
+ms: Contoh {0}: aksesori telefon S${1}, bukan Mall, tidak dalam PXP
+ru: Пример {0}: аксессуар для телефона за S${1}, не-Mall, без PXP
+@@ 2058910c08
+ms: Menggunakan baris "Mobile Phones & Tablets" pada {0}% bukan PXP, kos S${1}.
+ru: По строке «Mobile Phones & Tablets» со ставкой {0}% без PXP, себестоимость S${1}.
+@@ 28b24a4c65
+ms: Untung S${0} (margin {1}%).
+ru: Прибыль S${0} (маржа {1}%).
+@@ 7d1c364b65
+ms: Contoh {0}: item yang sama dalam PXP dengan yuran perkhidmatan {1}%
+ru: Пример {0}: тот же товар в PXP с сервисным сбором {1}%
+@@ 6b5335a2d5
+ms: Komisen keutamaan {0}% serta yuran perkhidmatan PXP {1}% (kadar contoh FAQ).
+ru: Льготная комиссия {0}% плюс сервисный сбор PXP {1}% (ставка из примера в FAQ).
+@@ f2eb114ff7
+ms: Yuran perkhidmatan PXP ({0}%)
+ru: Сервисный сбор PXP ({0}%)
+@@ 0c49fe0548
+ms: Untung S${0}. Sama ada PXP berbaloi bergantung pada pesanan tambahan yang dibawa program ini.
+ru: Прибыль S${0}. Окупится ли PXP, зависит от дополнительных заказов, которые принесёт программа.
+@@ f7acd90b0c
+ms: Contoh {0}: telefon S${1}, bukan Mall — had komisen
+ru: Пример {0}: телефон за S${1}, не-Mall — лимит комиссии
+@@ 05860b5aeb
+ms: Pada {0}%, komisen tanpa had akan melebihi S${1}; had bukan Mall yang diterbitkan ialah S${2} seunit. Komisen kalkulator: S${3}.
+ru: При ставке {0}% комиссия без лимита превысила бы S${1}; опубликованный лимит для не-Mall — S${2} за единицу. Комиссия в калькуляторе: S${3}.
+@@ 09017e78dd
+ms: Kadar termasuk GST daripada jadual Shopee SG yang berkuat kuasa mulai {0} Ogos {1}. Had ditunjukkan apabila Shopee menerbitkannya.
+ru: Ставки с GST из таблицы Shopee SG, действующей с {0} августа {1}. Лимиты указаны там, где их публикует Shopee.
+@@ c811a8cbbd
+ms: Bukan Mall PXP
+ru: Не-Mall, PXP
+@@ c4e8efdd4b
+ms: Bukan Mall
+ru: Не-Mall
+@@ 7c6e953ef1
+ms: Had bukan Mall
+ru: Лимит не-Mall
+@@ 4d83edd25a
+ms: Had Mall
+ru: Лимит Mall
+@@ 866f71525e
+ms: <b1>Perhatikan had seunit bagi elektronik.</b1> Telefon dan perkakas bernilai tinggi sering mencecah had S${0} / S${1}, yang membantu margin berbanding peratusan tanpa had.
+ru: <b1>Следите за лимитами на электронику.</b1> Дорогие телефоны и техника часто упираются в лимиты S${0} / S${1}, что выгоднее для маржи, чем процент без лимита.
+@@ 8841cc4802
+ms: <b1>Modelkan SPayLater secara berasingan</b1> jika sebahagian besar pembeli menggunakan tempoh lebih panjang (sehingga {0}%).
+ru: <b1>Считайте SPayLater отдельно</b1>, если большая доля покупателей берёт длинную рассрочку (до {0}%).
+@@ 5643db02b1
+ms: <b1>Masukkan yuran perkhidmatan PXP sebenar anda</b1> daripada Seller Center sebelum memutuskan sama ada komisen keutamaan berbaloi.
+ru: <b1>Укажите свой реальный сервисный сбор PXP</b1> из Seller Center, прежде чем решать, стоит ли льготная комиссия того.
+@@ 745ea8ca5d
+ms: Kalkulator Yuran Lazada Malaysia {0} (Komisen mulai {1} Ogos)
+ru: Калькулятор сборов Lazada Малайзия {0} (комиссия с {1} августа)
+@@ 9f04572a2d
+ms: Kalkulator yuran dan untung Lazada Malaysia percuma dengan julat komisen kelompok Marketplace dan LazMall mulai {0} Ogos {1} (lantai termasuk SST), boleh diubah supaya sepadan dengan Seller Center.
+ru: Бесплатный калькулятор сборов и прибыли Lazada Малайзия: диапазоны комиссий по кластерам Marketplace и LazMall с {0} августа {1} (нижние границы с SST); ставки можно подогнать под Seller Center.
+@@ 2341044f6a
+ms: Kalkulator Yuran Lazada Malaysia
+ru: Калькулятор сборов Lazada Малайзия
+@@ 1500108014
+ms: Lantai komisen kelompok Marketplace dan LazMall mulai {0} Ogos {1} (termasuk SST), boleh diubah kepada % tepat dalam Seller Center anda — serta bayaran dan margin bagi setiap pesanan.
+ru: Нижние границы комиссий по кластерам Marketplace и LazMall с {0} августа {1} (с SST), которые можно заменить точным % из Seller Center, — а также выплата и маржа по каждому заказу.
+@@ 2269520664
+ms: Cara yuran Lazada Malaysia berfungsi
+ru: Как устроены сборы Lazada Малайзия
+@@ 4791c5cece
+ms: Julat komisen kelompok
+ru: Диапазоны комиссий по кластерам
+@@ e3a361fa0d
+ms: Perkara yang tidak dapat kami sahkan
+ru: Что мы не смогли проверить
+@@ 0bdf94c54d
+ms: Dari mana datangnya kadar Lazada MY ini?
+ru: Откуда взяты эти ставки Lazada MY?
+@@ 6993791941
+ms: Julat kelompok berkuat kuasa {0} Ogos {1}, tertakluk kepada SST {2}%, seperti dicetak semula oleh BigSeller daripada jadual komisen Marketplace dan LazMall Lazada. Sahkan % tepat dalam Seller Center, di bahagian tetapan komisen.
+ru: Диапазоны по кластерам действуют с {0} августа {1} и облагаются SST {2}%; они взяты из перепечатки BigSeller официальных таблиц комиссий Lazada для Marketplace и LazMall. Точный % уточняйте в Seller Center, в настройках комиссии.
+@@ a2bac76ec7
+ms: Mengapa hanya julat kelompok, bukan setiap subkategori?
+ru: Почему только диапазоны по кластерам, а не каждая подкатегория?
+@@ 837bf5949a
+ms: Halaman bantuan awam Lazada tidak memaparkan jadual mengikut kategori yang boleh dibaca oleh pengikis kami. Kami enggan mereka baris, jadi kalkulator menggunakan lantai kelompok yang disahkan dengan kadar yang boleh diubah.
+ru: Публичная справка Lazada не отдала нашему парсеру читаемую таблицу по категориям. Придумывать строки мы не станем, поэтому калькулятор использует проверенные нижние границы кластеров с редактируемыми ставками.
+@@ 638c3b7dd1
+ms: Adakah kadar termasuk SST?
+ru: Включают ли ставки SST?
+@@ 74efb764b5
+ms: Lazada melabelkan jadual sebagai 'tertakluk kepada SST {0}%'. Kami mendarab dengan {1} supaya nilai lalai sepadan dengan potongan menyeluruh; ubah jika penyata anda menunjukkan angka tanpa SST.
+ru: Lazada помечает таблицы как «облагается SST {0}%». Мы умножаем на {1}, чтобы значение по умолчанию совпадало с полным удержанием; если в выписке сумма без SST, измените ставку.
+@@ 0003534470
+ms: Adakah terdapat pengecualian penjual baharu?
+ru: Есть ли освобождение для новых продавцов?
+@@ bfc3a56aff
+ms: Lazada biasanya menawarkan kira-kira {0} hari bebas komisen untuk penjual baharu. Gunakan suis; sahkan tempoh tepat dalam e-mel pendaftaran atau Seller Center anda.
+ru: Обычно Lazada даёт новым продавцам около {0} дней без комиссии. Включите переключатель и уточните точный срок в письме о подключении или в Seller Center.
+@@ fb8dcb422d
+ms: Lazada Malaysia mengenakan komisen kategori pada pesanan yang dihantar. Mulai {0} Ogos {1}, jadual Marketplace dan LazMall disemak semula. Kadar yang diterbitkan adalah <b1>tertakluk kepada SST {2}%</b1>; kalkulator ini menyimpan lantai termasuk SST (senarai × {3}) sebagai lalai dan mengekalkan siling kelompok dalam jadual kadar supaya anda boleh menaikkannya.
+ru: Lazada Малайзия берёт комиссию по категории с доставленных заказов. С {0} августа {1} таблицы Marketplace и LazMall пересмотрены. Опубликованные ставки <b1>облагаются SST {2}%</b1>; по умолчанию калькулятор использует нижние границы с SST (базовая × {3}), а верхняя граница кластера указана в таблице ставок, чтобы её можно было поднять.
+@@ 1ac355e92b
+ms: Pusat bantuan awam Lazada memaparkan halaman komisen sebagai aplikasi JavaScript yang tidak mengembalikan jadual yang boleh dibaca kepada pengikis kami. Julat kelompok di bawah diambil daripada cetakan semula BigSeller yang bertarikh bagi jadual rasmi Marketplace dan LazMall Lazada {0} Ogos {1}, disemak silang dengan laluan Seller Center <b1><span lang="en">Settings → Commission</span></b1>. Setiap medan kadar boleh diubah — tampal % tepat daripada Seller Center anda apabila ada.
+ru: Публичный справочный центр Lazada отдаёт страницу комиссий как JavaScript-приложение, из которого наш парсер не получил читаемой таблицы. Диапазоны по кластерам ниже взяты из датированной перепечатки BigSeller официальных таблиц Lazada для Marketplace и LazMall от {0} августа {1} и сверены с разделом Seller Center <b1><span lang="en">Settings → Commission</span></b1>. Любое поле ставки можно изменить — вставьте точный % из своего Seller Center, когда он у вас есть.
+@@ 4844c2a0d9
+ms: Peratusan harga item selepas diskaun dibiayai penjual, mengikut kelompok produk (Barangan Am, FMCG, Fesyen, Elektronik, Barangan Digital). LazMall lebih tinggi daripada Marketplace dalam kebanyakan kelompok. Penjual baharu biasanya mendapat tempoh bebas komisen {0} hari — gunakan suis.
+ru: Процент от цены товара после скидок за счёт продавца, по кластерам товаров (товары общего назначения, FMCG, мода, электроника, цифровые товары). В большинстве кластеров у LazMall ставки выше, чем у Marketplace. Новые продавцы обычно получают {0} дней без комиссии — включите переключатель.
+@@ eeb75d1f67
+ms: {0}. Yuran pembayaran dan lain-lain
+ru: {0}. Платёжные и прочие сборы
+@@ 68e8c525ed
+ms: Lazada mungkin mengenakan yuran pembayaran atau berkaitan kempen di atas komisen. Kami belum mengesahkan satu peratusan yuran pembayaran yang diterbitkan untuk semua penjual MY, jadi medan ini bermula kosong dan boleh diubah.
+ru: Сверх комиссии Lazada может брать платёжные сборы или сборы за участие в акциях. Единого опубликованного процента платёжного сбора для всех продавцов MY мы не подтвердили, поэтому поле изначально пустое и редактируемое.
+@@ d352064374
+ms: Contoh {0}: barangan am RM{1}, lantai Marketplace
+ru: Пример {0}: товары общего назначения за RM{1}, нижняя граница Marketplace
+@@ a85948c95b
+ms: Menggunakan lantai Marketplace termasuk SST untuk Barangan Am ({0}%), kos RM{1}.
+ru: По нижней границе Marketplace с SST для товаров общего назначения ({0}%), себестоимость RM{1}.
+@@ e60cc5b217
+ms: Yuran pembayaran / lain-lain
+ru: Платёжный / прочий сбор
+@@ 3e5d2831ef
+ms: Untung RM{0}. Naikkan komisen ke arah {1}% jika subkategori anda berada di bahagian atas kelompok.
+ru: Прибыль RM{0}. Если ваша подкатегория в верхней части кластера, поднимите комиссию ближе к {1}%.
+@@ 73fdd3c158
+ms: Contoh {0}: item yang sama di LazMall
+ru: Пример {0}: тот же товар в LazMall
+@@ b5f06dcb94
+ms: Lantai LazMall {0}%.
+ru: Нижняя граница LazMall — {0}%.

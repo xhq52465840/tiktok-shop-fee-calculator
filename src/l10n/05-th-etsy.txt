@@ -1,0 +1,309 @@
+@@ 2fd40300ad
+ms: <b1>Manfaatkan had.</b1> Bundle elektronik yang dihadkan melebihi kira-kira S${0} tidak membayar komisen tambahan seunit, yang boleh menjadikan bundle premium lebih menarik.
+ru: <b1>Используйте лимит.</b1> Наборы электроники с лимитом дороже примерно S${0} не платят дополнительной комиссии за единицу, поэтому премиальные наборы могут быть выгоднее.
+@@ 1dd2c0aabf
+ms: <b1>Biayai diskaun dengan berhati-hati.</b1> Diskaun penjual mengurangkan asas komisen, tetapi setiap dolar tetap keluar daripada bayaran anda. Diskaun yang dibiayai platform tidak mengurangkan komisen; ia sebahagian daripada asas yuran transaksi.
+ru: <b1>Осторожно со скидками.</b1> Скидки продавца уменьшают базу комиссии, но каждый доллар всё равно уходит из вашей выплаты. Скидки за счёт платформы комиссию не снижают и входят в базу транзакционного сбора.
+@@ 9953de17b4
+ms: Kalkulator Yuran TikTok Shop Thailand {0} (Komisen, CGF & Yuran ฿{1})
+ru: Калькулятор сборов TikTok Shop Таиланд {0} (комиссия, CGF и сбор ฿{1})
+@@ 2d40b3bca4
+ms: Kalkulator yuran dan untung TikTok Shop Thailand percuma: komisen Marketplace dan Mall mulai {0} Jul {1}, yuran transaksi {2}%, Yuran Pertumbuhan Perdagangan {3}%/{4}% (had ฿{5}) dan yuran infrastruktur ฿{6}.
+ru: Бесплатный калькулятор сборов и прибыли TikTok Shop в Таиланде: комиссия Marketplace и Mall с {0} июля {1}, транзакционный сбор {2}%, сбор за развитие торговли {3}%/{4}% (лимит ฿{5}) и инфраструктурный сбор ฿{6}.
+@@ 91f7b7e3b1
+ms: Kalkulator Yuran TikTok Shop Thailand
+ru: Калькулятор сборов TikTok Shop для Таиланда
+@@ a54cceadd1
+ms: Lihat apa yang dipotong TikTok Shop Thailand daripada setiap pesanan — komisen, yuran transaksi, Yuran Pertumbuhan Perdagangan dan yuran infrastruktur ฿{0} — menggunakan jadual rasmi mulai {1} Julai {2}.
+ru: Узнайте, что TikTok Shop в Таиланде удерживает с каждого заказа — комиссию, транзакционный сбор, сбор за развитие торговли и инфраструктурный сбор ฿{0} — по официальным таблицам с {1} июля {2}.
+@@ ab28365395
+ms: Cara yuran TikTok Shop Thailand berfungsi
+ru: Как устроены сборы TikTok Shop в Таиланде
+@@ 405e59377d
+ms: Apakah yuran penjual TikTok Shop Thailand pada {0}?
+ru: Какие сборы у TikTok Shop в Таиланде в {0} году?
+@@ 2dcd23b53b
+ms: Komisen mengikut kategori (kebanyakan kategori Marketplace {0}%, kebanyakan Mall {1}% mulai {2} Julai {3}), yuran transaksi {4}%, Yuran Pertumbuhan Perdagangan {5}% (Elektronik) atau {6}% dengan had ฿{7} seunit, dan Yuran Infrastruktur Platform ฿{8} bagi setiap pesanan yang dihantar. Semua kadar termasuk cukai.
+ru: Комиссия по категориям (большинство категорий Marketplace — {0}%, большинство Mall — {1}% с {2} июля {3}), транзакционный сбор {4}%, сбор за развитие торговли {5}% (электроника) или {6}% с лимитом ฿{7} за единицу и сбор за инфраструктуру платформы ฿{8} с каждого доставленного заказа. Все ставки с налогом.
+@@ 6d363afba7
+ms: Bilakah kadar komisen baharu bermula?
+ru: Когда начали действовать новые ставки комиссии?
+@@ 6bb4b40d92
+ms: Pada {0}:{1}, {2} Julai {3}, waktu Thailand (GMT+{4}), untuk Marketplace dan Mall.
+ru: В {0}:{1} {2} июля {3} по времени Таиланда (GMT+{4}) — и для Marketplace, и для Mall.
+@@ 143a8b4cb9
+ms: Apakah Yuran Pertumbuhan Perdagangan?
+ru: Что такое сбор за развитие торговли?
+@@ dc677e6494
+ms: Yuran setiap pesanan pada (harga item − diskaun penjual): {0}% untuk industri Elektronik dan {1}% untuk yang lain sejak {2} Mei {3}, dengan had ฿{4} seunit. Ia dikecualikan untuk {5} hari pertama penjual baharu dan tidak dikenakan kepada penjual yang menghantar hanya dengan armada sendiri.
+ru: Сбор с каждого заказа от (цены товара − скидки продавца): {0}% для отрасли «Электроника» и {1}% для остальных с {2} мая {3}, не более ฿{4} за единицу. Новые продавцы первые {5} дней его не платят, и он не взимается с продавцов, которые доставляют только своим транспортом.
+@@ 347247fb9a
+ms: Apakah Mall Combo Package?
+ru: Что такое Mall Combo Package?
+@@ 69b33e2cbf
+ms: Komisen Mall yang lebih rendah untuk penjual Mall yang menyertai kedua-dua Mall Live Specials dan Brands Crazy Deals serta mendaftar untuk pakej ini.
+ru: Пониженная комиссия Mall для продавцов Mall, которые участвуют и в Mall Live Specials, и в Brands Crazy Deals и подключили этот пакет.
+@@ 2841d4bb54
+ms: Adakah yuran dipulangkan apabila pembeli memulangkan pesanan?
+ru: Возвращаются ли сборы, если покупатель вернул заказ?
+@@ d3c0ae0dfe
+ms: Komisen dipulangkan bagi item yang dipulangkan. Yuran transaksi, Yuran Pertumbuhan Perdagangan dan Yuran Infrastruktur Platform tidak dipulangkan selepas penghantaran.
+ru: Комиссия за возвращённые товары возмещается. Транзакционный сбор, сбор за развитие торговли и сбор за инфраструктуру платформы после доставки не возвращаются.
+@@ 06d16d5df6
+ms: Adakah kadar termasuk VAT?
+ru: Включают ли ставки НДС?
+@@ c1835da5ff
+ms: Ya. TikTok Shop Thailand menerbitkan semua kadar ini termasuk cukai.
+ru: Да. TikTok Shop в Таиланде публикует все эти ставки с налогом.
+@@ 9c6d8a1617
+ms: Pesanan yang dihantar di TikTok Shop Thailand membawa empat yuran platform. TikTok menerbitkan setiap kadar <b1>termasuk cukai</b1> (VAT), jadi tiada tambahan di atasnya.
+ru: С доставленного заказа TikTok Shop в Таиланде удерживает четыре сбора платформы. TikTok публикует все ставки <b1>с налогом</b1> (НДС), поэтому сверху ничего не добавляется.
+@@ 0c29b78310
+ms: Ditetapkan mengikut subkategori, dengan jadual berasingan untuk penjual Marketplace (bukan Mall) dan Mall. Mulai {0}:{1}, {2} Julai {3} (GMT+{4}), kebanyakan kategori Marketplace membayar <b1>{5}%</b1> dan kebanyakan kategori Mall <b2>{6}%</b2>; julat penuh ialah {7}% hingga {8}%. Penjual Mall dalam <b3>Mall Combo Package</b3> (menyertai kedua-dua Mall Live Specials dan Brands Crazy Deals) membayar lajur Combo yang lebih rendah, biasanya {9}%. Formula: <b4>(harga item − diskaun penjual) × kadar</b4>; caj penghantaran dan diskaun platform TikTok tidak termasuk. Penjual Marketplace yang perbelanjaan iklan GMV Max melebihi {10}% hasil dalam {11} hari lalu mendapat potongan {12} mata (sejak {13} April {14}).
+ru: Устанавливается по подкатегориям, с отдельными таблицами для продавцов Marketplace (не Mall) и Mall. С {0}:{1} {2} июля {3} (GMT+{4}) большинство категорий Marketplace платят <b1>{5}%</b1>, большинство категорий Mall — <b2>{6}%</b2>; весь диапазон — от {7}% до {8}%. Продавцы Mall в <b3>Mall Combo Package</b3> (участники и Mall Live Specials, и Brands Crazy Deals) платят по пониженному столбцу Combo, обычно {9}%. Формула: <b4>(цена товара − скидка продавца) × ставка</b4>; доставка и скидки платформы TikTok не учитываются. Продавцы Marketplace, у которых расходы на рекламу GMV Max за последние {11} дней превышают {10}% выручки, получают снижение на {12} п. п. (с {13} апреля {14}).
+@@ 31611bd6a4
+ms: <b1>{0}%</b1>. Sejak {1} Mac {2}, ia dikenakan pada bayaran pelanggan ditambah diskaun platform TikTok, yang merangkumi caj penghantaran yang dibayar pembeli. Ia tidak dipulangkan jika pesanan yang dihantar dipulangkan. Contoh TikTok: THB {3} × {4}% = THB {5}.
+ru: <b1>{0}%</b1>. С {1} марта {2} начисляется на оплату покупателя плюс скидку платформы TikTok, включая оплаченную покупателем доставку. При возврате доставленного заказа не возмещается. Пример TikTok: THB {3} × {4}% = THB {5}.
+@@ cac2664ea3
+ms: {0}. Yuran Pertumbuhan Perdagangan (CGF)
+ru: {0}. Сбор за развитие торговли (CGF)
+@@ 3b5d6abed1
+ms: Mulai {0} Mei {1}: <b1>{2}%</b1> untuk industri Elektronik ({3} subkategori) dan <b2>{4}%</b2> untuk semua yang lain, pada (harga item − diskaun penjual), dengan had <b3>฿{5} seunit</b3>. Penjual Marketplace dengan GMV bawah ฿{6} dalam {7} hari lalu membayar {8}% / {9}%. Penjual baharu tidak membayarnya bagi {10} hari pertama (dihadkan kepada ฿{11} yuran yang dikecualikan bagi penjual yang menyertai selepas {12} Julai {13}), dan ia tidak dikenakan kepada penjual yang menghantar hanya dengan armada sendiri. Tidak dipulangkan apabila barang dipulangkan.
+ru: С {0} мая {1}: <b1>{2}%</b1> для отрасли «Электроника» ({3} подкатегорий) и <b2>{4}%</b2> для всего остального, от (цены товара − скидки продавца), не более <b3>฿{5} за единицу</b3>. Продавцы Marketplace с GMV меньше ฿{6} за последние {7} дней платят {8}% / {9}%. Новые продавцы не платят его первые {10} дней (для подключившихся после {12} июля {13} — не более ฿{11} освобождённых сборов), и он не взимается с продавцов, которые доставляют только своим транспортом. При возврате не возмещается.
+@@ 5b3b125650
+ms: {0}. Yuran Infrastruktur Platform
+ru: {0}. Сбор за инфраструктуру платформы
+@@ f04858499c
+ms: Yuran rata <b1>฿{0} bagi setiap pesanan yang dihantar</b1> sejak {1} Oktober {2}, tidak dipulangkan apabila barang dipulangkan. Penjual dengan {3}–{4} pesanan dalam {5} hari sebelumnya (tempoh berakhir pada hari ke-{6}) dikecualikan pada bulan berikutnya.
+ru: Фиксированные <b1>฿{0} с каждого доставленного заказа</b1> с {1} октября {2}; при возврате не возмещается. Продавцы, у которых за предыдущие {5} дней (период заканчивается {6}-го числа) было {3}–{4} заказов, освобождаются от сбора на следующий месяц.
+@@ d3ff3349a5
+ms: Contoh {0}: serum ฿{1}, Marketplace, sebelum dan selepas {2} Julai
+ru: Пример {0}: сыворотка за ฿{1}, Marketplace, до и после {2} июля
+@@ 4cfa37c6f9
+ms: Kos produk ฿{0}, tiada diskaun, penghantaran percuma dibiayai platform.
+ru: Себестоимость ฿{0}, без скидки, бесплатная доставка за счёт платформы.
+@@ 0b90a54429
+ms: {0} Mei – {1} Jul
+ru: {0} мая – {1} июля
+@@ f99baba85b
+ms: Mulai {0} Jul
+ru: С {0} июля
+@@ d15623f38c
+ms: Yuran Pertumbuhan Perdagangan ({0}%)
+ru: Сбор за развитие торговли ({0}%)
+@@ 7efc676e48
+ms: Yuran Infrastruktur Platform
+ru: Сбор за инфраструктуру платформы
+@@ 86d05f9e22
+ms: Untung selepas kos ฿{0}
+ru: Прибыль после себестоимости ฿{0}
+@@ d839e4927e
+ms: Yuran kini mengambil ฿{0}, atau {1}% daripada harga. Jadual {2} Julai menelan kos tambahan ฿{3} setiap pesanan.
+ru: Сборы теперь забирают ฿{0}, или {1}% цены. Таблица от {2} июля обходится в ฿{3} за заказ.
+@@ 495d557eb9
+ms: Contoh {0}: serum yang sama sebagai penjual Mall
+ru: Пример {0}: та же сыворотка у продавца Mall
+@@ a4c2a0dc31
+ms: Komisen Mall standard ialah {0}%: jumlah yuran ฿{1}, untung ฿{2}. Dalam Mall Combo Package ia turun kepada {3}%: yuran ฿{4}, untung ฿{5}.
+ru: Стандартная комиссия Mall — {0}%: сборы ฿{1}, прибыль ฿{2}. В Mall Combo Package она снижается до {3}%: сборы ฿{4}, прибыль ฿{5}.
+@@ 0be8d6ac26
+ms: Contoh {0}: contoh TikTok sendiri
+ru: Пример {0}: примеры от самого TikTok
+@@ af58b050e4
+ms: Item ฿{0} dengan diskaun penjual ฿{1}, Marketplace, {2}%: komisen <b1>฿{3}</b1>, yuran transaksi <b2>฿{4}</b2> dan Yuran Pertumbuhan Perdagangan <b3>฿{5}</b3> ({6}%) — sepadan dengan angka TikTok iaitu {7}, {8} dan {9}. Fon kepala ฿{10} di Mall: komisen <b4>฿{11}</b4> ({12}%) dan CGF <b5>฿{13}</b5> ({14}%, Elektronik), seperti dalam contoh TikTok.
+ru: Товар за ฿{0} со скидкой продавца ฿{1}, Marketplace, {2}%: комиссия <b1>฿{3}</b1>, транзакционный сбор <b2>฿{4}</b2> и сбор за развитие торговли <b3>฿{5}</b3> ({6}%) — совпадает с расчётом TikTok: {7}, {8} и {9}. Наушники за ฿{10} в Mall: комиссия <b4>฿{11}</b4> ({12}%) и CGF <b5>฿{13}</b5> ({14}%, электроника), как в примерах TikTok.
+@@ 081867293b
+ms: Contoh {0}: had Yuran Pertumbuhan Perdagangan ฿{1}
+ru: Пример {0}: лимит сбора за развитие торговли ฿{1}
+@@ c95d763e6d
+ms: Item ฿{0} di luar Elektronik sepatutnya dikenakan ฿{1} pada {2}%; kalkulator mengenakan amaun terhad <b1>฿{3}</b1>. Had mula berkesan melebihi kira-kira ฿{4} (atau ฿{5} untuk Elektronik).
+ru: Товар за ฿{0} не из электроники должен был бы заплатить ฿{1} по ставке {2}%; калькулятор начисляет ограниченные <b1>฿{3}</b1>. Лимит срабатывает примерно от ฿{4} (или ฿{5} для электроники).
+@@ 3cbfde94ab
+ms: Contoh {0}: penjual Marketplace kecil yang menggunakan GMV Max
+ru: Пример {0}: небольшой продавец Marketplace с GMV Max
+@@ 531b9e91ec
+ms: Dengan kedua-dua pengurangan (komisen −{0}, CGF −{1}), yuran serum turun daripada ฿{2} kepada ฿{3}.
+ru: С обоими снижениями (комиссия −{0}, CGF −{1}) сборы за сыворотку падают с ฿{2} до ฿{3}.
+@@ deb57cd42f
+ms: {0} Mac {1}
+ru: {0} марта {1}
+zh: {1}年3月{0}日
+@@ 5f0352f951
+ms: Asas yuran transaksi menjadi bayaran pelanggan + diskaun platform ({0}%).
+ru: База транзакционного сбора — оплата покупателя + скидка платформы ({0}%).
+@@ 72e62e3367
+ms: {0} Apr {1}
+ru: {0} апр. {1}
+zh: {1}年4月{0}日
+@@ 9a6010cee8
+ms: Penjual Marketplace yang membelanjakan lebih {0}% hasil untuk GMV Max mendapat komisen −{1} mata.
+ru: Продавцы Marketplace, тратящие на GMV Max больше {0}% выручки, получают снижение комиссии на {1} п. п.
+@@ 2fb82f8c1f
+ms: Jadual komisen baharu. Yuran Pertumbuhan Perdagangan naik daripada {0}% / {1}% kepada {2}% / {3}%, dengan had ฿{4} seunit.
+ru: Новые таблицы комиссий. Сбор за развитие торговли вырос с {0}% / {1}% до {2}% / {3}%, не более ฿{4} за единицу.
+@@ 70cf278763
+ms: Jadual komisen Marketplace dan Mall baharu: kebanyakan kategori Marketplace naik daripada {0}% kepada {1}%, kebanyakan kategori Mall daripada {2}% kepada {3}%.
+ru: Новые таблицы комиссий Marketplace и Mall: большинство категорий Marketplace — с {0}% до {1}%, большинство категорий Mall — с {2}% до {3}%.
+@@ 864bdecfd0
+ms: Pengecualian CGF {0} hari untuk penjual baharu dihadkan kepada ฿{1}.
+ru: Освобождение новых продавцов от CGF на {0} дней ограничено суммой ฿{1}.
+@@ 01e19d65c2
+ms: Merentasi {0} subkategori Marketplace dalam kedua-dua jadual, perubahan paling biasa pada {1} Julai ialah <b1>+{2} mata</b1> ({3} subkategori). {4} subkategori hanya muncul dalam jadual baharu. Analisis penuh: <a2>panduan kami tentang yuran penjual Thailand {5}</a2>.
+ru: Среди {0} подкатегорий Marketplace, которые есть в обеих таблицах, самым частым изменением {1} июля стало <b1>+{2} п. п.</b1> ({3} подкатегорий). {4} подкатегорий есть только в новой таблице. Подробный разбор — в <a2>нашем гайде по сборам в Таиланде в {5} году</a2>.
+@@ 25187dfcb4
+ms: Kategori popular. Semua kadar termasuk cukai.
+ru: Популярные категории. Все ставки с налогом.
+@@ 4718569f66
+ms: Marketplace mulai {0} Jul
+ru: Marketplace с {0} июля
+@@ adeeefc87c
+ms: Mall mulai {0} Jul
+ru: Mall с {0} июля
+@@ 58cfb315e6
+ms: Mall Combo mulai {0} Jul
+ru: Mall Combo с {0} июля
+@@ f27ffc903b
+ms: Marketplace {0} Mei
+ru: Marketplace, {0} мая
+@@ 5663d2a811
+ms: Mall {0} Mei
+ru: Mall, {0} мая
+@@ a907510cb6
+ms: Tunjukkan kesemua {0} subkategori
+ru: Показать все подкатегории ({0})
+@@ 4b48a67825
+ms: <b1>Penjual tempatan</b1> di TikTok Shop Thailand. Penjual rentas sempadan dibilkan di bawah program Global Seller.
+ru: <b1>Местные продавцы</b1> TikTok Shop в Таиланде. Трансграничные продавцы работают по программе Global Seller.
+@@ ae68483a8b
+ms: <b1>Yuran program Mall.</b1> Mall Live Specials dan Brands Crazy Deals mungkin mempunyai yuran tersendiri; suis Combo hanya mengubah kadar komisen.
+ru: <b1>Сборы программ Mall.</b1> У Mall Live Specials и Brands Crazy Deals могут быть свои сборы; переключатель Combo меняет только ставку комиссии.
+@@ e8881d0936
+ms: <b1>Jadual terdahulu.</b1> Perbandingan menggunakan jadual {0} Mei {1}. Tiada lajur Mall Combo {2} Mei dimuatkan, jadi ia menunjukkan "tidak diterbitkan" jika anda menggabungkan kedua-duanya.
+ru: <b1>Предыдущая таблица.</b1> Для сравнения используется таблица от {0} мая {1}. Столбца Mall Combo от {2} мая нет, поэтому при сочетании этих опций показывается «не опубликовано».
+@@ eee648e21c
+ms: <b1>Tidak termasuk:</b1> yuran perkhidmatan prapesanan {0}%, yuran rakan afiliasi dan iklan. Tambahkannya di bawah "Kos lain bagi setiap pesanan" jika berkaitan.
+ru: <b1>Не учтены:</b1> сервисный сбор {0}% за предзаказ, сборы партнёров-аффилиатов и реклама. При необходимости добавьте их в поле «Прочие расходы на заказ».
+@@ b567527926
+ms: <b1>Kira keempat-empat yuran.</b1> Pada pesanan Marketplace bukan Elektronik yang biasa, komisen + transaksi + CGF kira-kira {0}% sebelum yuran rata ฿{1}. Ramai penjual masih menetapkan harga seolah-olah hanya komisen yang dikenakan.
+ru: <b1>Считайте все четыре сбора.</b1> В обычном заказе Marketplace не из электроники комиссия + транзакционный сбор + CGF — около {0}% ещё до фиксированных ฿{1}. Многие продавцы до сих пор считают цену так, будто есть только комиссия.
+@@ 357146fc46
+ms: <b1>Manfaatkan had CGF untuk item premium.</b1> Melebihi kira-kira ฿{0}, CGF tetap pada ฿{1} seunit.
+ru: <b1>Используйте лимит CGF для дорогих товаров.</b1> Примерно от ฿{0} CGF фиксирован на уровне ฿{1} за единицу.
+@@ 6396ab4d17
+ms: <b1>Gabungkan item murah.</b1> Yuran infrastruktur ฿{0} dikenakan setiap pesanan.
+ru: <b1>Объединяйте дешёвые товары.</b1> Инфраструктурный сбор ฿{0} берётся с заказа.
+@@ ec13966e50
+ms: <b1>Pemulangan lebih mahal daripada yang disangka.</b1> Yuran transaksi, CGF dan yuran infrastruktur tidak dipulangkan selepas penghantaran.
+ru: <b1>Возвраты обходятся дороже, чем кажется.</b1> Транзакционный сбор, CGF и инфраструктурный сбор после доставки не возвращаются.
+@@ 9ecabe8fae
+ms: Kalkulator Yuran Etsy {0}: Yuran Penyenaraian, Transaksi & Pemprosesan Mengikut Negara
+ru: Калькулятор сборов Etsy {0}: плата за размещение, транзакционный сбор и обработка платежей по странам
+@@ 40ea9ddb0e
+ms: Kalkulator yuran dan untung Etsy percuma dengan yuran transaksi {0}%, yuran penyenaraian US${1} dan yuran pemprosesan pembayaran rasmi untuk {2}+ negara akaun bank.
+ru: Бесплатный калькулятор сборов и прибыли Etsy: транзакционный сбор {0}%, плата за размещение US${1} и официальные сборы за обработку платежей для {2}+ стран банковского счёта.
+@@ ccf4d32cef
+ms: Kalkulator Yuran Etsy
+ru: Калькулятор сборов Etsy
+@@ b3be3c8f3d
+ms: Lihat yuran penyenaraian, transaksi dan pemprosesan pembayaran Etsy untuk negara anda dan berapa yang anda simpan daripada setiap jualan.
+ru: Посмотрите плату за размещение, транзакционный сбор и сбор за обработку платежей Etsy для вашей страны и сколько остаётся вам с каждой продажи.
+@@ c498d606de
+ms: Cara yuran Etsy berfungsi
+ru: Как устроены сборы Etsy
+@@ 9bb7f312d8
+ms: Yuran pemprosesan mengikut negara
+ru: Сборы за обработку платежей по странам
+@@ 80d1f62fe9
+ms: Apakah yuran Etsy pada {0}?
+ru: Какие сборы у Etsy в {0} году?
+@@ 4ca01c39c4
+ms: Yuran penyenaraian US${0}, yuran transaksi {1}% pada harga item serta caj penghantaran dan bungkusan hadiah, dan yuran pemprosesan pembayaran yang bergantung pada negara bank anda, seperti {2}% + ${3} di AS.
+ru: Плата за размещение US${0}, транзакционный сбор {1}% от цены товара плюс доставка и подарочная упаковка и сбор за обработку платежа, который зависит от страны вашего банка, например {2}% + ${3} в США.
+@@ 5d1d46fa6b
+ms: Adakah yuran transaksi dikenakan pada caj penghantaran?
+ru: Начисляется ли транзакционный сбор на доставку?
+@@ cb9f43fa16
+ms: Ya. Ia dikenakan pada harga item serta caj penghantaran dan bungkusan hadiah yang anda kenakan.
+ru: Да. Он начисляется на цену товара плюс доставку и подарочную упаковку, которые вы берёте с покупателя.
+@@ ce615d6600
+ms: Adakah pemprosesan pembayaran dikenakan pada cukai jualan?
+ru: Начисляется ли сбор за обработку платежа на налог с продаж?
+@@ 6f496e45dc
+ms: Ya. Ia dikenakan pada jumlah harga jualan termasuk caj penghantaran dan sebarang cukai jualan yang berkenaan.
+ru: Да. Он начисляется на полную сумму продажи, включая доставку и применимый налог с продаж.
+@@ b7c3008e48
+ms: Adakah yuran dipulangkan jika saya membuat bayaran balik kepada pembeli?
+ru: Возвращаются ли сборы, если я возвращаю деньги покупателю?
+@@ 07728a6c9e
+ms: Etsy mengkreditkan yuran pemprosesan pembayaran secara berkadar dengan amaun bayaran balik.
+ru: Etsy возвращает сбор за обработку платежа пропорционально сумме возврата.
+@@ 36083163bb
+ms: Kebanyakan jualan Etsy membawa tiga yuran:
+ru: С большинства продаж на Etsy удерживаются три сбора:
+@@ 35715fd3f6
+ms: <b1>Yuran penyenaraian:</b1> US${0} bagi setiap penyenaraian apabila anda menerbitkannya. Jika penyenaraian diperbaharui secara automatik selepas jualan, atau pembeli membeli lebih daripada satu item daripada satu penyenaraian, US${1} lagi dikenakan bagi setiap item tambahan. Kalkulator mengenakan US${2} bagi setiap item yang dijual.
+ru: <b1>Плата за размещение:</b1> US${0} за объявление при публикации. Если после продажи объявление автоматически продлевается или покупатель берёт из одного объявления несколько товаров, за каждый дополнительный товар списывается ещё US${1}. Калькулятор считает US${2} за каждый проданный товар.
+@@ 5add5040d6
+ms: <b1>Yuran transaksi:</b1> {0}% daripada harga item serta caj penghantaran dan bungkusan hadiah yang anda kenakan. Jika anda menjual dari AS, ia tidak dikenakan pada cukai jualan. Di luar AS, ia dikenakan pada harga penyenaraian, yang sepatutnya termasuk sebarang cukai yang anda tanggung.
+ru: <b1>Транзакционный сбор:</b1> {0}% от цены товара плюс доставка и подарочная упаковка, которые вы берёте с покупателя. При продажах из США на налог с продаж он не начисляется. За пределами США начисляется на цену в объявлении, которая должна включать налоги, за которые отвечаете вы.
+@@ 8202d76aaa
+ms: <b1>Yuran pemprosesan pembayaran:</b1> peratusan serta amaun tetap bagi setiap pesanan, ditetapkan mengikut negara akaun bank anda, dikenakan pada jumlah jualan termasuk caj penghantaran dan sebarang cukai jualan yang berkenaan. Contohnya {0}% + ${1} di Amerika Syarikat, {2}% + £{3} di UK dan {4}% + RM{5} di Malaysia.
+ru: <b1>Сбор за обработку платежа:</b1> процент плюс фиксированная сумма за заказ; размер зависит от страны вашего банковского счёта и начисляется на всю сумму продажи, включая доставку и применимый налог с продаж. Например, {0}% + ${1} в США, {2}% + £{3} в Великобритании и {4}% + RM{5} в Малайзии.
+@@ 4b34e472f2
+ms: Etsy Ads, Offsite Ads dan label penghantaran yang dibeli di Etsy adalah tambahan dan bergantung pada cara anda menggunakannya. Tambahkannya di bawah "Kos lain bagi setiap pesanan".
+ru: Etsy Ads, Offsite Ads и транспортные этикетки, купленные на Etsy, оплачиваются отдельно и зависят от того, как вы ими пользуетесь. Добавьте их в поле «Прочие расходы на заказ».
+@@ b1f90a554b
+ms: <b1>Menjual dari UK?</b1> Kedai UK juga membayar yuran operasi kawal selia {0}% Etsy dan, tanpa nombor VAT, VAT {1}% atas yuran Etsy. <a2>Kalkulator yuran Etsy UK</a2> merangkumi kedua-duanya, dalam paun.
+ru: <b1>Продаёте из Великобритании?</b1> Британские магазины также платят регуляторный операционный сбор Etsy {0}% и, если нет номера плательщика VAT, VAT {1}% на сборы Etsy. <a2>Калькулятор сборов Etsy UK</a2> учитывает и то и другое, в фунтах.
+@@ 018f2dc449
+ms: Contoh {0}: penjual AS, item ${1}, caj penghantaran ${2}, cukai jualan ${3}
+ru: Пример {0}: продавец из США, товар за ${1}, доставка ${2}, налог с продаж ${3}
+@@ a8ea57e1c2
+ms: Yuran penyenaraian
+ru: Плата за размещение
+@@ dbadfd3df7
+ms: Pemprosesan pembayaran ({0}%)
+ru: Обработка платежа ({0}%)
+@@ 08fecf620c
+ms: Pemprosesan pembayaran (tetap)
+ru: Обработка платежа (фикс.)
+@@ f88436fc58
+ms: Yuran transaksi dikenakan pada ${0}; pemprosesan pembayaran pada ${1} termasuk cukai, ditambah ${2}. Etsy mengambil ${3}. Selepas kos ${4} dan label ${5}, untung ialah ${6}.
+ru: Транзакционный сбор начисляется на ${0}; обработка платежа — на ${1} с налогом, плюс ${2}. Etsy забирает ${3}. После себестоимости ${4} и этикетки ${5} прибыль составляет ${6}.
+@@ 2449711196
+ms: Contoh {0}: penjual UK, item £{1}, caj pos £{2}
+ru: Пример {0}: продавец из Великобритании, товар за £{1}, доставка £{2}
+@@ 499e730cc9
+ms: Yuran transaksi £{0} dan pemprosesan pembayaran £{1} ({2}% + £{3}), jumlahnya £{4}, ditambah yuran penyenaraian US${5} yang dikenakan dalam dolar AS.
+ru: Транзакционный сбор £{0} и обработка платежа £{1} ({2}% + £{3}), всего £{4}, плюс плата за размещение US${5}, которая списывается в долларах США.
+@@ 777c7bad9b
+ms: Contoh {0}: penjual Malaysia, item RM{1}, caj penghantaran RM{2}
+ru: Пример {0}: продавец из Малайзии, товар за RM{1}, доставка RM{2}
+@@ 4211052311
+ms: Yuran transaksi RM{0} dan pemprosesan pembayaran RM{1} ({2}% + RM{3}), RM{4} sebelum yuran penyenaraian US${5}.
+ru: Транзакционный сбор RM{0} и обработка платежа RM{1} ({2}% + RM{3}), RM{4} без учёта платы за размещение US${5}.
+@@ 40cbb37974
+ms: Yuran pemprosesan pembayaran mengikut lokasi akaun bank
+ru: Сборы за обработку платежей по стране банковского счёта
+@@ 209cfaa94e
+ms: Tapis negara
+ru: Фильтр стран
+@@ 7dc28de918
+ms: Lokasi akaun bank
+ru: Страна банковского счёта
+zh: 银行账户所在地
+@@ 1bc1943061
+ms: Yuran (% daripada jumlah + amaun tetap setiap pesanan)
+ru: Сбор (% от суммы + фиксированная сумма за заказ)
+@@ 36344924d8
+ms: Yuran pemprosesan Etsy Payments dikenakan VAT di sesetengah lokasi; VAT dipaparkan pada invois VAT Etsy anda.
+ru: В некоторых странах на сборы за обработку платежей Etsy Payments начисляется VAT; он указывается в вашем VAT-счёте Etsy.
+@@ 901ada02e5
+ms: <b1>Caj penghantaran juga dikenakan yuran.</b1> Yuran transaksi {0}% dan pemprosesan kedua-duanya dikenakan pada caj penghantaran yang anda kenakan.
+ru: <b1>Сборы берутся и с доставки.</b1> И транзакционный сбор {0}%, и обработка платежа начисляются на доставку, которую вы берёте с покупателя.
+@@ 4c4af15e0c
+ms: <b1>Pesanan kecil membayar lebih.</b1> Yuran pemprosesan tetap dan yuran penyenaraian lebih membebankan item murah. Pertimbangkan bundle atau harga minimum yang lebih tinggi.
+ru: <b1>Маленькие заказы платят больше.</b1> Фиксированная часть сбора за обработку и плата за размещение сильнее бьют по дешёвым товарам. Подумайте о наборах или более высокой минимальной цене.
+@@ b6b7c2f089
+ms: <b1>Bayaran balik memulangkan sebahagian yuran pemprosesan.</b1> Etsy mengkreditkan yuran pemprosesan secara berkadar dengan amaun yang dibayar balik.
+ru: <b1>При возврате денег часть сбора за обработку возвращается.</b1> Etsy возмещает сбор за обработку пропорционально сумме возврата.

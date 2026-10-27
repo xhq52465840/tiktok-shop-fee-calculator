@@ -36,7 +36,7 @@ def grouped(opts, keys):
     for (g, l2), items in groupby(opts, key=lambda o: (o['g'], o['n'].split(' › ')[0])):
         items = list(items)
         sig = {tuple(o['r'].get(k) for k in keys) for o in items}
-        if len(sig) == 1 and len(items) > 1: out.append((f"{g} › {l2} <span class='muted'>(all {len(items)})</span>", items[0]['r']))
+        if len(sig) == 1 and len(items) > 1: out.append((f"<span lang=\"en\">{g} › {l2}</span> <span class='muted'>(all {len(items)})</span>", items[0]['r']))
         else: out.extend((label(o), o['r']) for o in items)
     return out
 

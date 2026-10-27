@@ -1,0 +1,165 @@
+@@ f14fe5ad2c
+ms: Kalkulator Yuran Etsy UK {0}: Yuran, Yuran Kawal Selia {1}% & VAT
+ru: Калькулятор сборов Etsy UK {0}: сборы, регуляторный сбор {1}% и VAT
+@@ 2be6596b79
+ms: Kalkulator yuran dan untung Etsy UK percuma: yuran transaksi {0}%, pemprosesan {1}% + £{2}, yuran operasi kawal selia {3}% mulai {4} Jun {5}, VAT atas yuran Etsy dan Offsite Ads, dalam paun.
+ru: Бесплатный калькулятор сборов и прибыли Etsy UK: транзакционный сбор {0}%, обработка платежа {1}% + £{2}, регуляторный операционный сбор {3}% с {4} июня {5}, VAT на сборы Etsy и Offsite Ads — в фунтах.
+@@ 99eafb0f62
+ms: Kalkulator Yuran Etsy UK
+ru: Калькулятор сборов Etsy UK
+@@ b5597e3241
+ms: Setiap yuran yang diambil Etsy daripada jualan UK — penyenaraian, transaksi, pemprosesan, yuran operasi kawal selia {0}% dan VAT atas yuran — dan berapa yang anda simpan, dalam paun.
+ru: Все сборы Etsy с продажи в Великобритании — размещение, транзакционный сбор, обработка платежа, регуляторный операционный сбор {0}% и VAT на сборы — и сколько остаётся вам, в фунтах.
+@@ 799f7d7d18
+ms: Cara yuran Etsy berfungsi untuk penjual UK
+ru: Как устроены сборы Etsy для продавцов из Великобритании
+@@ b1116b3ed9
+ms: VAT atas yuran Etsy
+ru: VAT на сборы Etsy
+@@ b996011b5f
+ms: Apakah yuran Etsy untuk penjual UK pada {0}?
+ru: Какие сборы у Etsy для продавцов из Великобритании в {0} году?
+@@ 85fd552e5e
+ms: Yuran penyenaraian US${0} (kira-kira £{1}), yuran transaksi {2}% pada harga item serta caj pos dan bungkusan hadiah, pemprosesan pembayaran {3}% + £{4} setiap pesanan, yuran operasi kawal selia {5}% sejak {6} Jun {7}, dan VAT {8}% atas yuran tersebut jika anda belum menambah nombor VAT UK. Offsite Ads menambah {9}% atau {10}% pada pesanan yang dibawanya, dengan had US${11}.
+ru: Плата за размещение US${0} (около £{1}), транзакционный сбор {2}% от цены товара плюс доставка и подарочная упаковка, обработка платежа {3}% + £{4} за заказ, регуляторный операционный сбор {5}% с {6} июня {7} и VAT {8}% на эти сборы, если вы не добавили британский номер VAT. Offsite Ads добавляют {9}% или {10}% к заказам, которые они привели, но не более US${11}.
+@@ 78ea97eedc
+ms: Apakah yuran operasi kawal selia Etsy di UK?
+ru: Что такое регуляторный операционный сбор Etsy в Великобритании?
+@@ aa573666b9
+ms: {0}% daripada jumlah pesanan — harga item, caj pos, bungkusan hadiah dan personalisasi — sejak {1} Jun {2}. Sebelum itu {3}%.
+ru: {0}% от суммы заказа — цена товара, доставка, подарочная упаковка и персонализация — с {1} июня {2}. Раньше было {3}%.
+@@ e0b592f730
+ms: Adakah Etsy mengenakan VAT atas yuran di UK?
+ru: Начисляет ли Etsy VAT на сборы в Великобритании?
+@@ ec9ddf9b8f
+ms: Ya, melainkan anda menambah nombor VAT yang sah dalam akaun Etsy anda. Selepas itu Etsy berhenti mengenakan VAT atas yurannya dan invois bulanan anda menunjukkan tiada VAT dikenakan.
+ru: Да, если вы не добавили действующий номер VAT в аккаунт Etsy. После этого Etsy перестаёт начислять VAT на свои сборы, а в ежемесячном счёте VAT не указывается.
+@@ d24196c90e
+ms: Adakah yuran transaksi dikenakan pada caj pos?
+ru: Начисляется ли транзакционный сбор на доставку?
+@@ 5f91b26c2d
+ms: Ya. Kadar {0}% dikenakan pada harga item serta caj pos dan bungkusan hadiah yang anda kenakan.
+ru: Да. {0}% начисляются на цену товара плюс доставку и подарочную упаковку, которые вы берёте с покупателя.
+@@ 18771f080b
+ms: Berapakah yuran penyenaraian Etsy dalam paun?
+ru: Сколько стоит размещение на Etsy в фунтах?
+@@ a212e113de
+ms: Etsy mengebil US${0}, jadi amaun dalam paun berubah mengikut kadar pertukaran. Pada kadar ECB {1} Oktober {2}, ia ialah £{3}.
+ru: Etsy выставляет US${0}, поэтому сумма в фунтах зависит от курса. По курсу ЕЦБ на {1} октября {2} это было £{3}.
+@@ 809cf9cd57
+ms: Bolehkah saya menarik diri daripada Offsite Ads?
+ru: Можно ли отказаться от Offsite Ads?
+@@ c8120a1bf6
+ms: Hanya selagi kedai anda sentiasa menjana bawah US${0} dalam mana-mana tempoh {1} hari. Selepas itu, Offsite Ads adalah wajib dan yurannya {2}%.
+ru: Только пока ваш магазин ни за какие {1} дней не заработал US${0} или больше. После этого Offsite Ads становятся обязательными, а сбор составляет {2}%.
+@@ 8fae361ae9
+ms: Kedai UK yang dibayar melalui Etsy Payments ke akaun bank UK membayar yuran berikut pada jualan biasa:
+ru: Британский магазин, получающий выплаты через Etsy Payments на счёт в британском банке, с обычной продажи платит такие сборы:
+@@ b9d87d4583
+ms: <b1>Yuran penyenaraian:</b1> US${0} setiap penyenaraian, dikenakan semula bagi setiap item tambahan yang dijual daripada penyenaraian berbilang kuantiti dan apabila penyenaraian yang terjual diperbaharui secara automatik. Etsy mengebilnya dalam dolar AS; kalkulator menukarnya kepada <b2>£{1}</b2> pada kadar rujukan ECB {2} Oktober {3} ({4} USD = {5} GBP). Ubah di bawah "Kadar yuran yang digunakan" jika penyata anda berbeza.
+ru: <b1>Плата за размещение:</b1> US${0} за объявление; списывается снова за каждый дополнительный товар, проданный из объявления с несколькими единицами, и при автоматическом продлении проданного объявления. Etsy выставляет её в долларах США; калькулятор переводит её в <b2>£{1}</b2> по справочному курсу ЕЦБ на {2} октября {3} ({4} USD = {5} GBP). Если в выписке сумма другая, измените её в блоке «Использованные тарифы».
+@@ 8a32fd269f
+ms: <b1>Yuran transaksi:</b1> {0}% daripada jumlah pesanan dalam mata wang penyenaraian anda — harga item serta caj pos dan bungkusan hadiah yang anda kenakan.
+ru: <b1>Транзакционный сбор:</b1> {0}% от суммы заказа в валюте объявления — цена товара плюс доставка и подарочная упаковка, которые вы берёте с покупателя.
+@@ c507123f0d
+ms: <b1>Yuran pemprosesan pembayaran:</b1> {0}% + £{1} setiap pesanan untuk akaun bank UK, pada jumlah harga jualan termasuk caj pos dan sebarang cukai jualan yang dikutip Etsy.
+ru: <b1>Сбор за обработку платежа:</b1> {0}% + £{1} за заказ для британского банковского счёта, от полной суммы продажи, включая доставку и налог с продаж, который собирает Etsy.
+@@ ece1b094aa
+ms: <b1>Yuran operasi kawal selia:</b1> <b2>{0}%</b2> daripada jumlah pesanan (harga item, caj pos, bungkusan hadiah dan personalisasi) sejak <b3>{1} Jun {2}</b3>, naik daripada {3}%. Etsy mengenakannya di sesetengah pasaran, termasuk UK, untuk menampung kos pematuhan peraturan tempatan.
+ru: <b1>Регуляторный операционный сбор:</b1> <b2>{0}%</b2> от суммы заказа (цена товара, доставка, подарочная упаковка и персонализация) с <b3>{1} июня {2}</b3>, ранее {3}%. Etsy взимает его на некоторых рынках, включая Великобританию, чтобы покрыть расходы на соблюдение местного регулирования.
+@@ 99f4658227
+ms: <b1>Yuran Offsite Ads</b1> (hanya pada pesanan daripada Offsite Ad): {0}% daripada jumlah pesanan, atau {1}% sebaik kedai anda menjana US${2} dalam mana-mana tempoh {3} hari, tidak melebihi US${4} setiap pesanan (£{5} pada kadar yang sama).
+ru: <b1>Сбор Offsite Ads</b1> (только с заказов, пришедших из Offsite Ads): {0}% от суммы заказа или {1}%, когда магазин заработал US${2} за какие-либо {3} дней, но не более US${4} за заказ (£{5} по тому же курсу).
+@@ 17be18855b
+ms: Etsy Ads, label pos yang dibeli di Etsy dan Etsy Plus adalah berasingan. Tambahkannya di bawah "Kos lain bagi setiap pesanan".
+ru: Etsy Ads, почтовые этикетки, купленные на Etsy, и подписка Etsy Plus оплачиваются отдельно. Добавьте их в поле «Прочие расходы на заказ».
+@@ cb142f90a9
+ms: UK ialah salah satu negara di mana Etsy mengenakan VAT atas yuran penjualnya. Artikel bantuan Etsy menyatakan bahawa jika anda <b1>belum</b1> menambah nombor VAT, VAT dikenakan atas yuran penjual anda, dan atas yuran pemprosesan Etsy Payments jika diperlukan; jika anda menambah nombor VAT yang sah, Etsy tidak mengenakan VAT dan invois bulanan anda menunjukkan tiada VAT dikenakan. Kalkulator menggunakan kadar standard UK <b2>{0}%</b2> atas semua yuran Etsy dalam pilihan pertama "Status VAT anda di Etsy" dan {1}% dalam pilihan kedua.
+ru: Великобритания — одна из стран, где Etsy начисляет VAT на сборы с продавцов. В справке Etsy сказано: если вы <b1>не</b1> добавили номер VAT, VAT начисляется на ваши сборы, а при необходимости и на сборы за обработку платежей Etsy Payments; если вы добавили действующий номер VAT, Etsy VAT не начисляет, и в ежемесячном счёте он не указывается. Калькулятор применяет стандартную британскую ставку <b2>{0}%</b2> ко всем сборам Etsy в первом варианте поля «Ваш статус по НДС (VAT) на Etsy» и {1}% во втором.
+@@ f6b92ba776
+ms: Jika anda berdaftar VAT, anda juga perlu membayar VAT atas jualan anda sendiri. Masukkan {0} di bawah "VAT yang anda tanggung atas jualan" untuk mengeluarkan VAT daripada harga yang termasuk VAT. Cara anda mengakaunkan VAT atas yuran Etsy setelah Etsy berhenti mengenakannya ialah soalan untuk akauntan anda atau panduan HMRC.
+ru: Если вы зарегистрированы как плательщик VAT, вы также платите VAT со своих продаж. Укажите {0} в поле «VAT, который вы платите с продаж», чтобы выделить VAT из цены с налогом. Как учитывать VAT на сборы Etsy после того, как Etsy перестанет его начислять, уточните у бухгалтера или в разъяснениях HMRC.
+@@ 70ee916548
+ms: Contoh {0}: item £{1} dengan caj pos £{2}, tidak berdaftar VAT
+ru: Пример {0}: товар за £{1}, доставка £{2}, без регистрации по VAT
+@@ 08972fed82
+ms: Kos produk £{0}, label pos £{1} dibeli di tempat lain.
+ru: Себестоимость £{0}, почтовая этикетка за £{1} куплена не на Etsy.
+@@ c3c7f6ea42
+ms: Yuran penyenaraian (US${0} ditukar)
+ru: Плата за размещение (US${0} в пересчёте)
+@@ f5a3a0c43f
+ms: Yuran operasi kawal selia ({0}%)
+ru: Регуляторный операционный сбор ({0}%)
+@@ 7bbe4bcebd
+ms: VAT atas yuran Etsy ({0}%)
+ru: VAT на сборы Etsy ({0}%)
+@@ db9cf10644
+ms: Yuran Etsy sebelum VAT berjumlah £{0}; VAT {1}% menambah £{2}. Anda menyimpan £{3}, dan untung selepas kos dan caj pos ialah <b1>£{4}</b1> ({5}% daripada harga item). Kalkulator Etsy global, yang tidak mengambil kira yuran kawal selia dan VAT, akan menunjukkan yuran £{6} sebelum yuran penyenaraian.
+ru: Сборы Etsy без VAT составляют £{0}; VAT {1}% добавляет £{2}. Вам остаётся £{3}, а прибыль после себестоимости и доставки — <b1>£{4}</b1> ({5}% цены товара). Глобальный калькулятор Etsy, который не учитывает регуляторный сбор и VAT, показал бы £{6} сборов без платы за размещение.
+@@ b4e4974761
+ms: Contoh {0}: pesanan yang sama, berdaftar VAT dengan nombor VAT di Etsy
+ru: Пример {0}: тот же заказ, продавец зарегистрирован по VAT и добавил номер на Etsy
+@@ d885cce4ba
+ms: Tiada VAT atas yuran, jadi yuran turun kepada £{0}. Tetapi harga £{1} kini mengandungi £{2} VAT yang perlu anda bayar kepada HMRC, jadi untung ialah <b1>£{3}</b1>.
+ru: VAT на сборы нет, поэтому сборы снижаются до £{0}. Но в цене £{1} теперь содержится £{2} VAT, который вы должны HMRC, так что прибыль составляет <b1>£{3}</b1>.
+@@ b5631cedfb
+ms: Contoh {0}: pesanan yang sama daripada Offsite Ad
+ru: Пример {0}: тот же заказ из Offsite Ads
+@@ 8faf5bd46a
+ms: Yuran Offsite Ads ({0}%)
+ru: Сбор Offsite Ads ({0}%)
+@@ d5eb8d16b4
+ms: Yuran Offsite Ads {0}% (£{1}) juga dikenakan VAT, jadi yuran melonjak kepada £{2} dan untung menjadi £{3}.
+ru: На сбор Offsite Ads {0}% (£{1}) тоже начисляется VAT, поэтому сборы вырастают до £{2}, а прибыль падает до £{3}.
+@@ f8eaa05c12
+ms: Contoh {0}: pesanan £{1} daripada Offsite Ad — had US${2}
+ru: Пример {0}: заказ на £{1} из Offsite Ads — лимит US${2}
+@@ 17c12b00d7
+ms: {0}% sepatutnya £{1}; yuran dihadkan kepada <b1>£{2}</b1> (US${3}). Jumlah yuran £{4}.
+ru: {0}% составили бы £{1}; сбор ограничен суммой <b1>£{2}</b1> (US${3}). Всего сборов £{4}.
+@@ 4ac764fd65
+ms: <b1>Kedai UK, akaun bank UK, penyenaraian dalam GBP.</b1> Jika anda menyenaraikan dalam mata wang lain, Etsy menambah yuran penukaran mata wang {0}% — tambahkannya di bawah "Kos lain bagi setiap pesanan".
+ru: <b1>Британский магазин, счёт в британском банке, цены в GBP.</b1> Если цены в другой валюте, Etsy добавляет сбор за конвертацию {0}% — укажите его в поле «Прочие расходы на заказ».
+@@ 6e0af646d6
+ms: <b1>Amaun dalam dolar AS</b1> (yuran penyenaraian dan had Offsite Ads) ditukar pada kadar rujukan ECB {0} Oktober {1}. Etsy menukar pada kadarnya sendiri pada hari tersebut.
+ru: <b1>Суммы в долларах США</b1> (плата за размещение и лимит Offsite Ads) пересчитаны по справочному курсу ЕЦБ на {0} октября {1}. Etsy конвертирует по собственному курсу на дату операции.
+@@ c94bb366cc
+ms: <b1>VAT pada {0}%.</b1> Artikel Etsy menyatakan ia mengenakan VAT yang berkenaan; kami menggunakan kadar standard UK.
+ru: <b1>VAT {0}%.</b1> В справке Etsy сказано, что начисляется применимый VAT; мы используем стандартную британскую ставку.
+@@ 661b231760
+ms: <b1>Satu yuran penyenaraian bagi setiap item yang dijual.</b1> Etsy mengenakan US${0} semasa penerbitan dan sekali lagi pada setiap pembaharuan dan jualan berbilang kuantiti.
+ru: <b1>Одна плата за размещение на каждый проданный товар.</b1> Etsy берёт US${0} при публикации и снова при каждом продлении и продаже нескольких единиц.
+@@ 7f5c488805
+ms: <b1>Rancang kira-kira {0}–{1}% daripada jumlah pesanan</b1> untuk yuran Etsy pada pesanan biasa £{2}–£{3} jika anda tidak berdaftar VAT, sebelum sebarang Offsite Ads.
+ru: <b1>Закладывайте примерно {0}–{1}% от суммы заказа</b1> на сборы Etsy при обычном заказе на £{2}–£{3}, если вы не зарегистрированы по VAT, ещё без Offsite Ads.
+@@ 2f3fa5d01d
+ms: <b1>Caj pos juga dikenakan yuran.</b1> Yuran transaksi, pemprosesan dan kawal selia semuanya dikenakan pada caj pos yang anda kenakan.
+ru: <b1>Сборы берутся и с доставки.</b1> Транзакционный, платёжный и регуляторный сборы начисляются на доставку, которую вы берёте с покупателя.
+@@ 544be6d11e
+ms: <b1>Ambil kira Offsite Ads dalam margin anda.</b1> Sebaik kedai anda melepasi US${0} dalam {1} hari, anda tidak boleh menarik diri.
+ru: <b1>Закладывайте Offsite Ads в маржу.</b1> Когда магазин превысит US${0} за {1} дней, отказаться уже нельзя.
+@@ cef1f8674c
+ms: <b1>Bayaran balik memulangkan yuran pemprosesan secara berkadar.</b1> Etsy mengkreditkannya mengikut amaun yang dibayar balik.
+ru: <b1>При возврате денег сбор за обработку возвращается пропорционально.</b1> Etsy возмещает его в пределах суммы возврата.
+@@ 40beb558cc
+ms: Menjual dari negara lain? Gunakan <a1>kalkulator yuran Etsy global</a1> dengan pemprosesan pembayaran untuk {0}+ negara bank.
+ru: Продаёте из другой страны? Воспользуйтесь <a1>глобальным калькулятором сборов Etsy</a1> со сборами за обработку платежей для {0}+ стран.
+@@ 6d9086b6b5
+ms: Tidak berdaftar VAT, atau tiada nombor VAT UK ditambah di Etsy
+ru: Не зарегистрирован по VAT или британский номер VAT не добавлен на Etsy
+zh: 未注册 VAT，或未在 Etsy 添加英国 VAT 号
+@@ 9106fcadbb
+ms: Nombor VAT telah ditambah di Etsy (Etsy tidak mengenakan VAT atas yurannya)
+ru: Номер VAT добавлен на Etsy (Etsy не начисляет VAT на свои сборы)
+zh: 已在 Etsy 添加 VAT 号（Etsy 不对其费用收取 VAT）
+@@ 8544a47725
+ms: Untung
+ru: Прибыль
+zh: 利润
+@@ ec7fdb4798
+ms: Subjumlah item
+zh: 商品小计
+@@ 7a2c34cb78
+ms: Logistik
+zh: 物流费

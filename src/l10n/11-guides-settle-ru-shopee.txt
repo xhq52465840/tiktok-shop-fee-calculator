@@ -1,0 +1,343 @@
+@@ 37580dff12
+ms: TikTok Shop memotong yurannya daripada penyelesaian setiap pesanan sebelum membayar anda, jadi anda tidak akan melihat invois baris demi baris melainkan anda mencarinya. Menyemak beberapa pesanan setiap bulan ialah cara terpantas untuk mengesan kategori yang salah, yuran yang tidak dijangka atau perubahan kadar yang terlepas.
+ru: TikTok Shop удерживает свои сборы из расчёта по каждому заказу ещё до выплаты, поэтому построчного счёта вы не увидите, если специально его не искать. Проверка нескольких заказов в месяц — самый быстрый способ заметить неверную категорию, неожиданный сбор или пропущенное изменение ставок.
+zh: TikTok Shop 会在打款前从每笔订单的结算中直接扣除费用，除非你主动去查，否则看不到逐项明细。每月抽查几笔订单，是发现类目错误、意外扣费或漏掉费率调整的最快方法。
+@@ 996bf4662f
+ms: Di mana untuk mencari angka
+ru: Где найти цифры
+zh: 在哪里查看数据
+@@ c70380cff3
+ms: <b1>Pesanan belum diselesaikan:</b1> <span lang="en">Seller Center → Finance → Transactions → To settle → View Details</span>. Ini menunjukkan anggaran penyelesaian dan setiap yuran.
+ru: <b1>Заказы, по которым ещё нет расчёта:</b1> <span lang="en">Seller Center → Finance → Transactions → To settle → View Details</span>. Здесь видны предварительный расчёт и каждый сбор.
+zh: <b1>尚未结算的订单：</b1><span lang="en">Seller Center → Finance → Transactions → To settle → View Details</span>，可查看预估结算金额及每项费用。
+@@ 7ce4c7f368
+ms: <b1>Pesanan yang telah diselesaikan:</b1> <span lang="en">Seller Center → Finance → Withdrawals → Settled → View Details (Earning Details)</span>.
+ru: <b1>Заказы с завершённым расчётом:</b1> <span lang="en">Seller Center → Finance → Withdrawals → Settled → View Details (Earning Details)</span>.
+zh: <b1>已结算的订单：</b1><span lang="en">Seller Center → Finance → Withdrawals → Settled → View Details (Earning Details)</span>。
+@@ 900ef7a9cb
+ms: <b1>Invois bulanan:</b1> di Filipina, <span lang="en">Finance → Invoice Center → Platform Service Fee</span> mempunyai invois bagi komisen bulan sebelumnya.
+ru: <b1>Ежемесячные счета:</b1> на Филиппинах в разделе <span lang="en">Finance → Invoice Center → Platform Service Fee</span> есть счёт на комиссию за прошлый месяц.
+zh: <b1>月度发票：</b1>在菲律宾，<span lang="en">Finance → Invoice Center → Platform Service Fee</span> 中有上月佣金的发票。
+@@ 7e1a002697
+ms: <b1>Yuran BXP (Malaysia):</b1> <span lang="en">Finance → Settled records → View Details</span>. Yuran program BXP dipaparkan sebagai dua komponen, yuran perkhidmatan BCP dan yuran perkhidmatan VXP. Jumlahkan kedua-duanya.
+ru: <b1>Сборы BXP (Малайзия):</b1> <span lang="en">Finance → Settled records → View Details</span>. Сбор программы BXP отображается двумя строками — сервисный сбор BCP и сервисный сбор VXP. Сложите их.
+zh: <b1>BXP 费用（马来西亚）：</b1><span lang="en">Finance → Settled records → View Details</span>。BXP 项目费分为两项显示：BCP 服务费和 VXP 服务费，两者相加即可。
+@@ 5cd515085d
+ms: Cara setiap baris sepatutnya dikira
+ru: Как должна считаться каждая строка
+zh: 每一项费用应如何计算
+@@ b7ec7aadfd
+ms: Baris yuran
+ru: Строка сбора
+zh: 费用项
+@@ 720f58fb1f
+ms: Formula
+ru: Формула
+zh: 公式
+@@ 6d30352b6a
+ms: (harga item − diskaun penjual) × kadar kategori
+ru: (цена товара − скидка продавца) × ставка категории
+zh: （商品价格 − 卖家折扣）× 类目费率
+@@ b85c6224df
+ms: Yuran transaksi
+ru: Транзакционный сбор
+zh: 交易手续费
+@@ 03fa7dc64d
+ms: (harga item − diskaun penjual + caj penghantaran dibayar pembeli) × {0}% ({1}% untuk PayLater)
+ru: (цена товара − скидка продавца + доставка, оплаченная покупателем) × {0}% ({1}% для PayLater)
+zh: （商品价格 − 卖家折扣 + 买家支付的运费）× {0}%（PayLater 订单 {1}%）
+@@ ee63cd4d7b
+ms: RM{0} bagi setiap pesanan yang dihantar
+ru: RM{0} с каждого доставленного заказа
+zh: 每笔已妥投订单 RM{0}
+@@ 0f72836278
+ms: BXP (BCP + VXP)
+ru: BXP (BCP + VXP)
+zh: BXP（BCP + VXP）
+@@ 6b19c7001f
+ms: (harga item − diskaun penjual) × {0}% ({1}% pada hari kempen), maksimum RM{2} seunit
+ru: (цена товара − скидка продавца) × {0}% ({1}% в дни акций), не более RM{2} за единицу
+zh: （商品价格 − 卖家折扣）× {0}%（大促日 {1}%），每件最高 RM{2}
+@@ d2128d73f7
+ms: Yuran Perkhidmatan Penghantaran
+ru: Сбор за услуги доставки
+zh: 物流服务费
+@@ 0c06afef21
+ms: (harga item − diskaun penjual) × {0}% Marketplace / {1}% Mall, maksimum ₱{2} seunit
+ru: (цена товара − скидка продавца) × {0}% Marketplace / {1}% Mall, не более ₱{2} за единицу
+zh: （商品价格 − 卖家折扣）× {0}%（Marketplace）/ {1}%（Mall），每件最高 ₱{2}
+@@ 769a4aa7fa
+ms: ₱{0} bagi setiap pesanan yang dihantar (kecuali dikecualikan)
+ru: ₱{0} с каждого доставленного заказа (если нет освобождения)
+zh: 每笔已妥投订单 ₱{0}（豁免情况除外）
+@@ 3148dda090
+ms: Yuran Pertumbuhan Penjual
+ru: Сбор за рост продавца
+zh: 卖家成长费
+@@ 2ef9972c59
+ms: {0}% atau {1}% mengikut kategori
+ru: {0}% или {1}% в зависимости от категории
+zh: 按类目 {0}% 或 {1}%
+@@ 83408e2364
+ms: Yuran rujukan
+ru: Реферальная комиссия
+zh: 推荐费
+@@ e1dc1f05e3
+ms: (bayaran pelanggan + diskaun platform − cukai) × kadar
+ru: (оплата покупателя + скидка платформы − налог) × ставка
+zh: （买家实付 + 平台折扣 − 税费）× 费率
+@@ a1458a6287
+ms: (jualan bersih + caj penghantaran dibayar pelanggan + diskaun platform − bayaran balik) × {0}% atau {1}%
+ru: (чистые продажи + доставка, оплаченная покупателем + скидка платформы − возвраты) × {0}% или {1}%
+zh: （净销售额 + 买家支付的运费 + 平台折扣 − 退款）× {0}% 或 {1}%
+@@ b022bdff47
+ms: Semakan lima minit
+ru: Проверка за пять минут
+zh: 五分钟快速核对
+@@ c4424709eb
+ms: Pilih tiga pesanan yang baru diselesaikan dalam kategori berbeza.
+ru: Выберите три недавних заказа с завершённым расчётом из разных категорий.
+zh: 挑选三笔最近已结算、类目不同的订单。
+@@ 9a07c6bc50
+ms: Bagi setiap satu, catat harga item, diskaun penjual anda, caj penghantaran dibayar pembeli dan baris yuran.
+ru: Для каждого запишите цену товара, вашу скидку, оплаченную покупателем доставку и строки сборов.
+zh: 逐笔记下商品价格、卖家折扣、买家支付的运费以及各项费用。
+@@ b1acd7895a
+ms: Masukkan pesanan yang sama dalam kalkulator untuk pasaran anda, dengan jenis kedai dan tetapan program yang betul.
+ru: Введите тот же заказ в калькулятор для вашего рынка с правильным типом магазина и настройками программ.
+zh: 在对应市场的计算器中输入同样的订单，并选对店铺类型和项目设置。
+@@ 963ce63b89
+ms: Bandingkan baris demi baris. Perbezaan satu sen berpunca daripada pembundaran. Perbezaan lebih besar biasanya bermakna salah satu isu di bawah.
+ru: Сравните построчно. Расхождения в один цент — из-за округления. Более крупные обычно означают одну из проблем ниже.
+zh: 逐项比较。相差一分钱是四舍五入造成的；差距更大通常是下面某个原因。
+@@ d0451e596e
+ms: Sebagai rujukan, contoh TikTok Malaysia sendiri (gitar RM{0} dengan diskaun penjual RM{1}, Marketplace bukan BXP pada {2}%) memberikan komisen RM{3} dan yuran transaksi RM{4}, yang sepadan dengan kalkulator kami.
+ru: Для ориентира: в собственном примере TikTok Малайзия (гитара за RM{0} со скидкой продавца RM{1}, Marketplace без BXP, ставка {2}%) комиссия — RM{3}, транзакционный сбор — RM{4}; наш калькулятор даёт то же самое.
+zh: 作为参照，TikTok 马来西亚官方示例（RM{0} 的吉他、卖家折扣 RM{1}、非 BXP Marketplace 费率 {2}%）得出佣金 RM{3}、交易手续费 RM{4}，与我们的计算器结果一致。
+@@ 7d9db548ae
+ms: Mengapa yuran mungkin tidak sepadan
+ru: Почему сбор может не совпадать
+zh: 费用对不上的常见原因
+@@ 924ad498f1
+ms: <b1>Kategori salah.</b1> Komisen bergantung pada subkategori yang ditetapkan TikTok, yang mungkin bukan yang anda pilih. Di UK, produk yang dikategorikan semula kehilangan kadar dikurangkan {0}%.
+ru: <b1>Неверная категория.</b1> Комиссия зависит от подкатегории, которую назначил TikTok, а она может отличаться от выбранной вами. В Великобритании товары, перенесённые в другую категорию, теряют сниженную ставку {0}%.
+zh: <b1>类目不对。</b1>佣金取决于 TikTok 实际分配的子类目，未必是你选的那个。在英国，被重新归类的商品会失去 {0}% 的优惠费率。
+@@ c23c8ffea7
+ms: <b1>Diskaun platform.</b1> Baucar yang dibiayai platform tidak ditolak daripada asas komisen, dan sejak {0} Februari {1} juga tidak daripada asas yuran transaksi Malaysia. Yuran dikira seolah-olah pembeli membayar harga penuh.
+ru: <b1>Скидки платформы.</b1> Ваучеры за счёт платформы не вычитаются из базы комиссии, а с {0} февраля {1} — и из базы транзакционного сбора в Малайзии. Сбор считается так, будто покупатель заплатил полную цену.
+zh: <b1>平台折扣。</b1>平台出资的优惠券不会从佣金计费基数中扣除；自 {1}年2月{0}日起，也不再从马来西亚交易手续费的基数中扣除。费用按买家支付全价计算。
+@@ bcea516003
+ms: <b1>Kaedah pembayaran.</b1> Di Malaysia, pesanan PayLater mulai {0} Oktober {1} dikenakan yuran transaksi {2}%.
+ru: <b1>Способ оплаты.</b1> В Малайзии с {0} октября {1} к заказам с PayLater применяется транзакционный сбор {2}%.
+zh: <b1>支付方式。</b1>在马来西亚，自 {1}年10月{0}日起 PayLater 订单的交易手续费为 {2}%。
+@@ 93496538fb
+ms: <b1>Tarikh pesanan.</b1> Jadual komisen baharu Malaysia terpakai pada pesanan yang dibuat mulai {0} Oktober {1}, bukan pada tarikh penyelesaian.
+ru: <b1>Дата заказа.</b1> Новая таблица комиссий в Малайзии применяется к заказам, оформленным с {0} октября {1}, а не по дате расчёта.
+zh: <b1>下单日期。</b1>马来西亚新佣金表适用于 {1}年10月{0}日起下的订单，而不是按结算日期。
+@@ 6871db8899
+ms: <b1>Pengecualian.</b1> Pengecualian komisen penjual baharu, rebat Yuran Sokongan Platform dan pengecualian Yuran Pemprosesan Pesanan Filipina bagi {0} pesanan pertama sebulan semuanya mengubah angka.
+ru: <b1>Льготы.</b1> Освобождение новых продавцов от комиссии, возврат сбора поддержки платформы и освобождение от филиппинского сбора за обработку для первых {0} заказов в месяц — всё это меняет цифры.
+zh: <b1>减免。</b1>新卖家佣金减免、平台支持费返还，以及菲律宾每月前 {0} 单免收订单处理费，都会改变实际数字。
+@@ 1d1304b376
+ms: Apa yang berlaku apabila barang dipulangkan
+ru: Что происходит при возврате
+zh: 退货时会怎样
+@@ 3c1e634f81
+ms: <b1>Komisen dan yuran transaksi:</b1> dipulangkan sepenuhnya jika keseluruhan pesanan dipulangkan, dan bagi item yang dibayar balik dalam bayaran balik separa (Malaysia, Filipina, UK).
+ru: <b1>Комиссия и транзакционный сбор:</b1> возвращаются полностью, если возвращён весь заказ, а при частичном возврате — за возвращённые товары (Малайзия, Филиппины, Великобритания).
+zh: <b1>佣金与交易手续费：</b1>整单退货全额退还；部分退款时按退款商品退还（马来西亚、菲律宾、英国）。
+@@ 2e59e59950
+ms: <b1>Yuran Sokongan Platform Malaysia:</b1> tidak dipulangkan setelah pesanan dihantar. Dipulangkan hanya jika keseluruhan pesanan dibatalkan sebelum penghantaran.
+ru: <b1>Сбор поддержки платформы (Малайзия):</b1> после доставки не возвращается. Возвращается, только если весь заказ отменён до доставки.
+zh: <b1>马来西亚平台支持费：</b1>订单妥投后不退还；仅在整单于妥投前取消时退还。
+@@ 81d4be92f3
+ms: <b1>Yuran Pemprosesan Pesanan Filipina:</b1> tidak dipulangkan setelah pesanan dihantar. Bagi pesanan yang tidak dihantar, ia dipulangkan hanya jika keseluruhan pesanan dibayar balik.
+ru: <b1>Сбор за обработку заказа (Филиппины):</b1> после доставки не возвращается. По недоставленным заказам возвращается, только если возвращены деньги за весь заказ.
+zh: <b1>菲律宾订单处理费：</b1>订单妥投后不退还；未妥投订单仅在整单退款时退还。
+@@ 41ca5fbdd4
+ms: Jika potongan masih tidak sepadan, buka tiket di <span lang="en">Seller Center → Help Center</span> dengan ID pesanan dan pengiraan anda.
+ru: Если удержание всё равно не сходится, создайте обращение в <span lang="en">Seller Center → Help Center</span> с номером заказа и своим расчётом.
+zh: 如果扣费仍然对不上，请在 <span lang="en">Seller Center → Help Center</span> 提交工单，附上订单号和你的计算过程。
+@@ efa0357bda
+ms: Perkara utama
+zh: 要点速览
+@@ 14bc152475
+ms: FBO dan FBS berkongsi tiga kadar komisen jalur harga yang sama; realFBS menggunakan satu kadar.
+zh: FBO 与 FBS 共用同样的三档价格佣金费率；realFBS 只用一个费率。
+@@ 55d94cac98
+ms: Logistik + batu terakhir {0} ₽ hanya terpakai pada FBO dan FBS; FBS menambah pemprosesan ~{1} ₽.
+zh: 物流费与 {0} ₽ 最后一公里费只适用于 FBO 和 FBS；FBS 另加约 {1} ₽ 处理费。
+@@ 8b23a1c5d2
+ms: Pada SKU kosmetik {0} {1} ₽, yuran FBO {2} ₽, FBS {3} ₽, realFBS {4} ₽ (komisen sahaja).
+zh: 以售价 {0} {1} ₽ 的护肤品 SKU 为例：FBO 费用 {2} ₽，FBS {3} ₽，realFBS {4} ₽（仅佣金）。
+@@ efe9daa65f
+ms: Tiga model pemenuhan Ozon kelihatan serupa dalam kabinet penjual tetapi struktur yurannya berbeza. Panduan ini meneliti SKU yang sama di bawah setiap model menggunakan kadar yang berkuat kuasa pada akhir Oktober {0}.
+zh: Ozon 三种履约模式在卖家后台看起来差不多，费用构成却不同。本指南以同一个 SKU 为例，按 {0} 年 10 月下旬生效的费率逐一拆解。
+@@ aee9c4659e
+ms: Jalur harga pada FBO/FBS
+zh: FBO/FBS 的价格档位
+@@ bb222fc471
+ms: Kebanyakan jenis produk membayar <b1>{0}%</b1> pada ≤{1} ₽, <b2>{2}%</b2> pada {3}–{4} ₽ dan kadar kategori melebihi {5} ₽. Lalai kalkulator, <i3>Косметика для ухода</i3>, ialah {6}% melebihi {7} ₽. realFBS mengabaikan jalur harga rendah dan menggunakan satu kadar itu.
+zh: 大多数商品类型在 ≤{1} ₽ 时为 <b1>{0}%</b1>，{3}–{4} ₽ 时为 <b2>{2}%</b2>，高于 {5} ₽ 则按类目费率。计算器默认类目 <i3>Косметика для ухода</i3> 在 {7} ₽ 以上为 {6}%。realFBS 不适用低价档位，统一使用该类目费率。
+@@ 1eb43b3f66
+ms: SKU sama, tiga model
+zh: 同一 SKU，三种模式
+@@ 8f61200bad
+ms: {0} {1} ₽, {2} L, Moscow → Moscow, kos produk {3} ₽.
+zh: {0} {1} ₽，{2} 升，莫斯科 → 莫斯科，商品成本 {3} ₽。
+@@ c2242bc466
+ms: Jumlah yuran FBO
+zh: FBO 费用合计
+@@ f4223c6c40
+ms: Jumlah yuran FBS
+zh: FBS 费用合计
+@@ 61e3f04a11
+ms: Jumlah yuran realFBS
+zh: realFBS 费用合计
+@@ 32e20c48f0
+ms: Untung FBO
+zh: FBO 利润
+@@ d1d076e5e3
+ms: Untung FBS
+zh: FBS 利润
+@@ ec4a220383
+ms: Untung realFBS
+zh: realFBS 利润
+@@ 2b46351e83
+ms: realFBS kelihatan paling murah dari segi yuran hanya kerana anda masih membayar penghantaran sendiri — tambahkannya di bawah “kos penghantaran yang anda bayar” dalam kalkulator sebelum membandingkan.
+zh: realFBS 看起来费用最低，只是因为配送要你自己出钱——比较之前，先在计算器的“你实际承担的运费”里填上这部分。
+@@ c3295be53d
+ms: Perkara yang tidak kami ambil kira
+zh: 本文未涵盖的内容
+@@ eef448cf8e
+ms: Caj tambahan FBO bukan tempatan, FBO Fresh, FBO PVZ (−{0} mata peratusan sehingga {1} Dis {2}), Fesyen penjual baharu {3}%, penyimpanan paksa {4} ₽/L/hari dan pemulangan. Lihat dokumen Seller Edu yang dipautkan.
+zh: 非本地 FBO 加价、FBO Fresh、FBO PVZ（{2}年12月{1}日前 −{0} 个百分点）、时尚类新卖家 {3}%、强制仓储 {4} ₽/升/天以及退货。详见所链接的 Seller Edu 文件。
+@@ 0e64d10f1c
+ms: КВВ ditetapkan mengikut subjek dan model (FBW / FBS / DBS); PDF berkuat kuasa mulai {0} Jul {1}.
+zh: КВВ 按商品品类和模式（FBW / FBS / DBS）分别设定；PDF 自 {1}年7月{0}日起生效。
+@@ c4ff398662
+ms: Logistik: berperingkat sehingga {0} L, kemudian {1} + {2} ₽/L, × pekali gudang ({3}% sejak {4} Ogos).
+zh: 物流：{0} 升以内按阶梯计费，之后为 {1} + {2} ₽/升，再乘仓库系数（8月{4}日起为 {3}%）。
+@@ f6f302e194
+ms: Semakan rasmi: {0} L → {1} ₽, {2} L → {3} ₽.
+zh: 官方核对：{0} 升 → {1} ₽，{2} 升 → {3} ₽。
+@@ a7a0493b88
+ms: Ekonomi unit di Wildberries ialah komisen ditambah logistik mengikut isi padu. Di bawah ialah cara kedua-dua bahagian bergabung pada kemeja-T berharga {0} {1} ₽.
+zh: Wildberries 的单件经济 = 佣金 + 按体积计的物流费。下面以售价 {0} {1} ₽ 的 T 恤为例，看两者如何叠加。
+@@ dd5527fc51
+ms: Subjek <i1>Футболки</i1>: FBW {0}%, FBS {1}%, DBS {2}%. Diskaun penghantaran pantas FBS (−{3} / −{4} mata peratusan) datang daripada laporan sekunder — sahkan dalam akaun anda.
+zh: 品类 <i1>Футболки</i1>：FBW {0}%，FBS {1}%，DBS {2}%。FBS 快速发货折扣（−{3} / −{4} 个百分点）来自二手报道，请在你的账户中确认。
+@@ 14fee5d2bb
+ms: langkah tetap ({0}→{1} … {2}→{3} ₽), kemudian × pekali
+zh: 固定阶梯（{0}→{1} … {2}→{3} ₽），再乘系数
+@@ d461175c4e
+ms: ({0} + {1} × liter tambahan) × pekali
+zh: （{0} + {1} × 超出升数）× 系数
+@@ 88d78083db
+ms: Contoh kemeja-T
+zh: T 恤示例
+@@ 7f2642b669
+ms: Logistik {0} L × {1}%
+zh: 物流 {0} 升 × {1}%
+@@ c198ebdacd
+ms: Untung selepas kos {0} ₽
+zh: 扣除 {0} ₽ 成本后的利润
+@@ b2c9092fbb
+ms: Sehingga akhir {0}: ≤{1} ₽ dan ≤{2} L pada FBY/FBS → penempatan {3}%, tiada penghantaran, tiada batu tengah.
+zh: {0} 年底前：FBY/FBS 下 ≤{1} ₽ 且 ≤{2} 升 → 展示费 {3}%，免配送费，免中程物流费。
+@@ 69e44648ca
+ms: Semakan rasmi: {0} ₽ / {1} L → penempatan {2} ₽.
+zh: 官方核对：{0} ₽ / {1} 升 → 展示费 {2} ₽。
+@@ 16467883ae
+ms: Melebihi ambang, penghantaran {0}% (maksimum {1} {2} ₽) dan batu tengah ({3} L → {4} ₽) dikenakan semula.
+zh: 超过门槛后，配送费 {0}%（上限 {1} {2} ₽）和中程物流费（{3} 升 → {4} ₽）恢复收取。
+@@ aee27a77cf
+ms: Tarif harga rendah Yandex Market ialah penggantian sementara pada FBY dan FBS. Lepasi garis {0} ₽ atau {1} L dan struktur biasa kembali.
+zh: Yandex Market 的低价费率是 FBY 和 FBS 上的临时优惠。一旦超过 {0} ₽ 或 {1} 升，就恢复正常费用结构。
+@@ f1a9171254
+ms: Dalam tarif
+zh: 适用低价费率时
+@@ ecdda59aea
+ms: Item
+zh: 项目
+@@ ac8262004b
+ms: Penempatan {0}%
+zh: 展示费 {0}%
+@@ 9960cea4c0
+ms: Pemindahan {0}% (mingguan)
+zh: 货款划转 {0}%（按周）
+@@ a69d9d5f9f
+ms: Penerimaan
+zh: 收款费
+@@ 1b55d8b3b6
+ms: Di luar tarif
+zh: 不适用低价费率时
+@@ 41a1391649
+ms: {0} {1} ₽ · {2} L · penjagaan muka {3}%
+zh: {0} {1} ₽ · {2} 升 · 面部护理 {3}%
+@@ b09143db12
+ms: Penghantaran {0}%
+zh: 配送费 {0}%
+@@ 2c756d408c
+ms: Pemindahan + penerimaan
+zh: 货款划转 + 收款费
+@@ dfbd1f826e
+ms: Shopee Malaysia mengemas kini komisen Marketplace dan Mall pada <b1>{0} Ogos {1}</b1>. Panduan ini merumuskan perubahan dan memautkan setiap angka ke <a2>kalkulator yuran Shopee Malaysia</a2>.
+ru: <b1>{0} августа {1}</b1> Shopee Малайзия обновил комиссии Marketplace и Mall. В этом гайде — краткий обзор изменений, а каждая цифра ведёт в <a2>калькулятор сборов Shopee Малайзия</a2>.
+zh: Shopee 马来西亚于 <b1>{1}年8月{0}日</b1>调整了 Marketplace 与 Mall 佣金。本指南汇总变化要点，所有数字均链接到 <a2>Shopee 马来西亚费用计算器</a2>。
+@@ 90e15a2e6d
+ms: Tiga yuran pada pesanan biasa
+ru: Три сбора с обычного заказа
+zh: 普通订单的三项费用
+@@ 3788a1c78a
+ms: <b1>Komisen</b1> — kategori × Marketplace/Mall × SCP/bukan SCP. Kami menyimpan kadar termasuk SST (senarai rasmi × {0}).
+ru: <b1>Комиссия</b1> — категория × Marketplace/Mall × SCP/без SCP. Мы храним ставки с SST (официальная базовая × {0}).
+zh: <b1>佣金</b1>：类目 × Marketplace/Mall × 是否参加 SCP。我们存储的是含 SST 费率（官方费率 × {0}）。
+@@ 6a83869aac
+ms: <b1>Yuran transaksi</b1> — {0}% selepas SST pada amaun yang dibayar pembeli termasuk caj penghantaran.
+ru: <b1>Транзакционный сбор</b1> — {0}% с SST от суммы, оплаченной покупателем, включая доставку.
+zh: <b1>交易手续费</b1>：按买家实付金额（含运费）收取 {0}%（含 SST）。
+@@ 2bdb7d5dd7
+ms: <b1>Yuran Sokongan Platform</b1> — RM{0} selepas SST bagi setiap pesanan yang selesai.
+ru: <b1>Сбор поддержки платформы</b1> — RM{0} с SST с каждого выполненного заказа.
+zh: <b1>平台支持费</b1>：每笔完成订单 RM{0}（含 SST）。
+@@ c4a4cfce89
+ms: Kesan jadual {0} Ogos terhadap penjagaan kulit
+ru: Как таблица от {0} августа повлияла на уход за кожей
+zh: 8月{0}日新表对护肤类目的影响
+@@ 39beb9074f
+ms: <span lang="en">Beauty › Skincare</span>, Marketplace bukan SCP: {0}% sebelum → {1}% mulai {2} Ogos (termasuk SST). Pada serum RM{3} dengan kos RM{4}, untung berubah daripada RM{5} kepada RM{6}.
+ru: <span lang="en">Beauty › Skincare</span>, Marketplace без SCP: было {0}% → {1}% с {2} августа (с SST). Для сыворотки за RM{3} с себестоимостью RM{4} прибыль меняется с RM{5} до RM{6}.
+zh: <span lang="en">Beauty › Skincare</span>，Marketplace 非 SCP：此前 {0}% → 8月{2}日起 {1}%（含 SST）。以售价 RM{3}、成本 RM{4} 的精华为例，利润由 RM{5} 变为 RM{6}。
+@@ 3bd980162c
+ms: Buka kalkulator, tukar tempoh kadar, dan bandingkan SKU utama anda sebelum kempen seterusnya.
+ru: Откройте калькулятор, переключите период ставок и сравните свои ключевые SKU до следующей акции.
+zh: 打开计算器，切换费率期间，在下一次大促前对比你的主力 SKU。
+@@ e4a184645f
+ms: SCP lwn bukan SCP
+ru: SCP или без SCP
+zh: SCP 与非 SCP
+@@ c96c464081
+ms: Penjual Program Cashback menggunakan lajur SCP (komisen lebih rendah). Sahkan anda benar-benar mendaftar sebelum menetapkan harga berdasarkan lajur itu.
+ru: Участники программы Cashback платят по столбцу SCP (комиссия ниже). Прежде чем считать цены по этому столбцу, убедитесь, что вы действительно в программе.
+zh: 参加 Cashback 计划的卖家适用 SCP 列（佣金更低）。按这一列定价前，先确认你确实已加入。
+@@ fbf8bfbfa6
+ms: Shopee Singapura menerbitkan komisen <b1>termasuk GST</b1> dan yuran transaksi <b2>{0}% termasuk GST</b2>. Komisen keutamaan PXP terletak bersebelahan yuran perkhidmatan PXP berasingan. Gunakan <a3>kalkulator yuran Shopee Singapura</a3> untuk bayaran dan margin.
+ru: Shopee Сингапур публикует комиссию <b1>с GST</b1> и транзакционный сбор <b2>{0}% с GST</b2>. Рядом с льготной комиссией PXP — отдельный сервисный сбор PXP. Выплату и маржу считайте в <a3>калькуляторе сборов Shopee Сингапур</a3>.
+zh: Shopee 新加坡公布的佣金<b1>含 GST</b1>，交易手续费为 <b2>{0}%（含 GST）</b2>。PXP 优惠佣金之外另有单独的 PXP 服务费。到账与利润率可用 <a3>Shopee 新加坡费用计算器</a3>计算。
+@@ b31ac9b7f2
+ms: Pengurangan {0} Ogos {1}
+ru: Снижение с {0} августа {1}
+zh: {1}年8月{0}日下调
+@@ f45e980a0a
+ms: Makanan &amp; Minuman, kertas tandas, buku dan alat muzik terpilih turun sebanyak {0} mata peratusan. Elektronik mengekalkan had seunit (biasanya S${1} bukan Mall / S${2} Mall).
+ru: Для отдельных продуктов и напитков, туалетной бумаги, книг и музыкальных инструментов ставка снизилась на {0} п. п. У электроники сохраняются лимиты на единицу (обычно S${1} для не-Mall / S${2} для Mall).
+zh: 部分食品饮料、卫生纸、图书和乐器下调 {0} 个百分点。电子类仍有单件封顶（通常非 Mall S${1} / Mall S${2}）。
+@@ a576dfcedc
+ms: PXP dalam satu baris
+ru: PXP в одной строке
+zh: 一句话看懂 PXP
+@@ 2f6d61959e
+ms: Lajur komisen lebih rendah + yuran perkhidmatan kategori (masukkan kadar anda; contoh FAQ {0}%). Kira kedua-dua senario dalam kalkulator sebelum menyertai.
+ru: Пониженный столбец комиссии + сервисный сбор по категории (укажите свой; пример из FAQ — {0}%). Перед вступлением посчитайте оба варианта в калькуляторе.
+zh: 更低的佣金列 + 按类目收取的服务费（填你自己的费率；FAQ 示例为 {0}%）。加入前先在计算器里把两种情况都算一遍。

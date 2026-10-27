@@ -1,0 +1,273 @@
+@@ edecca12a5
+ms: Untung RM{0}.
+ru: Прибыль RM{0}.
+@@ a3cdd053c6
+ms: Julat komisen kelompok (mulai {0} Ogos {1}, termasuk SST)
+ru: Диапазоны комиссий по кластерам (с {0} авг. {1}, с SST)
+@@ 9cd04ddff7
+ms: Nilai lalai dalam kalkulator menggunakan <b1>lantai</b1> setiap julat. Siling ditunjukkan supaya anda boleh menaikkannya supaya sepadan dengan Seller Center.
+ru: По умолчанию калькулятор берёт <b1>нижнюю границу</b1> каждого диапазона. Верхние границы показаны, чтобы ставку можно было поднять до значения из Seller Center.
+@@ 9e1b1f5573
+ms: Barangan Am (julat kelompok)
+ru: Товары общего назначения (диапазон кластера)
+zh: 综合百货（集群区间）
+@@ e2b02e6d00
+ms: FMCG (julat kelompok)
+ru: FMCG (диапазон кластера)
+zh: 快消品 FMCG（集群区间）
+@@ 3a46d53c8d
+ms: Fesyen (julat kelompok)
+ru: Мода (диапазон кластера)
+zh: 时尚（集群区间）
+@@ 6bddc53fb8
+ms: Elektronik (julat kelompok Marketplace)
+ru: Электроника (диапазон кластера Marketplace)
+zh: 电子（Marketplace 集群区间）
+@@ 078ee20f68
+ms: Barangan Digital
+ru: Цифровые товары
+zh: 数字商品
+@@ f286044203
+ms: <b1>Kadar mengikut subkategori</b1> dalam setiap kelompok — hanya julat kelompok diterbitkan dalam cetakan semula sekunder yang dapat kami baca.
+ru: <b1>Ставки по подкатегориям</b1> внутри каждого кластера — во вторичной перепечатке, которую мы смогли прочитать, опубликованы только диапазоны кластеров.
+@@ bd3e490c97
+ms: <b1>Satu % yuran pembayaran rasmi</b1> untuk semua penjual MY — masukkan kadar anda daripada penyata yuran.
+ru: <b1>Единый официальный % платёжного сбора</b1> для всех продавцов MY — укажите свой из выписки по сборам.
+@@ 1a2c465c47
+ms: <b1>Pengikisan langsung sellercenter.lazada.com.my</b1> — FAQ komisen ialah halaman yang dipaparkan di sisi klien dan mengembalikan kandungan kosong kepada automasi.
+ru: <b1>Прямой парсинг sellercenter.lazada.com.my</b1> — FAQ по комиссиям рендерится на стороне клиента и при автоматическом доступе отдаёт пустую страницу.
+@@ 8c8341da02
+ms: Apabila Lazada menerbitkan jadual HTML atau PDF awam yang stabil, kami akan menggantikan lantai kelompok dengan baris mengikut kategori.
+ru: Когда Lazada опубликует стабильную публичную таблицу в HTML или PDF, мы заменим нижние границы кластеров строками по категориям.
+@@ 2dc4ac961f
+ms: TikTok Shop Malaysia menerbitkan jadual komisen baharu pada {0} Oktober {1}. Ia terpakai pada pesanan yang dibuat mulai <b1>{2}:{3}, {4} Oktober {5}, waktu Malaysia (UTC+{6})</b1>. Pesanan sebelum itu mengikut kadar semasa. Tiada perkara lain berubah pada tarikh itu: yuran transaksi {7}%, Yuran Sokongan Platform RM{8} dan yuran perkhidmatan BXP kekal, dan TikTok menyatakan tiada caj rata, penyenaraian atau bulanan baharu.
+ru: {0} октября {1} TikTok Shop Малайзия опубликовал новую таблицу комиссий. Она применяется к заказам, оформленным начиная с <b1>{2}:{3} {4} октября {5} по времени Малайзии (UTC+{6})</b1>. Более ранние заказы считаются по текущим ставкам. Больше в этот день ничего не меняется: транзакционный сбор {7}%, сбор поддержки платформы RM{8} и сервисный сбор BXP остаются прежними, а новых фиксированных, ежемесячных сборов или платы за размещение, по словам TikTok, нет.
+@@ 575c2b7f9f
+ms: Perubahan dalam angka
+ru: Изменения в цифрах
+@@ c2259afd6a
+ms: Melihat kadar Marketplace bukan BXP merentasi {0} subkategori yang mempunyai kadar sebelum ini:
+ru: Если смотреть на ставки Marketplace без BXP по {0} подкатегориям, у которых ставка была и раньше:
+@@ 8c5daac27f
+ms: <b1>{0} naik.</b1> Kenaikan paling biasa ialah +{1} mata ({2} subkategori), +{3} mata ({4} subkategori), +{5} mata ({6} subkategori).
+ru: <b1>{0} дорожают.</b1> Самые частые повышения: +{1} п. п. ({2} подкатегорий), +{3} п. п. ({4} подкатегорий), +{5} п. п. ({6} подкатегорий).
+@@ ca18350c5a
+ms: <b1>{0} turun</b1>, semuanya dalam barangan keperluan dan baucar.
+ru: <b1>{0} дешевеют</b1> — все из товаров первой необходимости и ваучеров.
+@@ 9992926fc8
+ms: <b1>{0} kekal sama</b1>, termasuk barisan fesyen Pre-Owned dan {1} kategori pada {2}%: <span lang="en">Food & Beverages › Baking, Food & Beverages › Fresh & Frozen Food, Food & Beverages › Milk & Dairy, Food & Beverages › Staples & Cooking Essentials</span>.
+ru: <b1>{0} не меняются</b1>, включая линейки моды Pre-Owned и {1} категории со ставкой {2}%: <span lang="en">Food & Beverages › Baking, Food & Beverages › Fresh & Frozen Food, Food & Beverages › Milk & Dairy, Food & Beverages › Staples & Cooking Essentials</span>.
+@@ 6847f58ca5
+ms: Satu kategori baharu, Bir, Wain &amp; Minuman Keras, mendapat kadar buat kali pertama ({0}% untuk Marketplace bukan BXP).
+ru: Одна новая категория — пиво, вино и крепкие напитки — впервые получила ставку ({0}% для Marketplace без BXP).
+@@ 00a93cba85
+ms: Kadar tertinggi dalam jadual baharu ialah {0}% (Mall bukan BXP bagi wangian, solekan, penjagaan lelaki, penjagaan kuku dan penjagaan tangan &amp; kaki), naik daripada {1}%.
+ru: Самая высокая ставка в новой таблице — {0}% (Mall без BXP: парфюмерия, макияж, мужской уход, уход за ногтями, за руками и ногами), ранее {1}%.
+@@ c63e2b60c9
+ms: Kenaikan terbesar
+ru: Самые большие повышения
+@@ 31da9e0f88
+ms: MP bukan BXP sebelum
+ru: MP без BXP, до
+@@ 9ef50a8c5b
+ms: Mulai {0} Okt
+ru: С {0} окт.
+@@ f83ce882f2
+ms: Perubahan (mata)
+ru: Изменение (п. п.)
+@@ 10a5ad9bc5
+ms: Kategori yang menjadi lebih murah
+ru: Категории, которые дешевеют
+@@ c1b1a7e12e
+ms: TikTok menyifatkannya sebagai "kategori keperluan yang dilindungi": barangan keperluan harian terpilih yang kadarnya dikurangkan atau dikekalkan.
+ru: TikTok называет их «защищёнными категориями первой необходимости»: это отдельные повседневные товары, ставки на которые снижены или сохранены.
+@@ 2450da1950
+ms: BXP lwn bukan BXP selepas perubahan
+ru: BXP и без BXP после изменений
+@@ 965e62fd5f
+ms: Penjual BXP masih membayar komisen lebih rendah, tetapi dalam kebanyakan kategori jurangnya mengecil. Sebelum {0} Oktober, penjual BXP membayar {1} mata kurang daripada penjual bukan BXP dalam hampir setiap kategori. Mulai {2} Oktober, jurangnya {3} mata dalam kebanyakan kategori dan {4} mata dalam kebanyakan kategori pakaian dan beg. Oleh sebab penjual BXP juga membayar yuran BXP {5}% ({6}% pada hari kempen), menyertai BXP kini lebih mahal setiap pesanan dalam kebanyakan kategori berbanding sebelum ini. Pengecualiannya ialah Penjagaan &amp; Kesihatan Bayi, di mana komisen BXP turun kepada {7}% manakala kadar bukan BXP naik kepada {8}%.
+ru: Участники BXP по-прежнему платят меньшую комиссию, но в большинстве категорий разрыв сокращается. До {0} октября участник BXP почти во всех категориях платил на {1} п. п. меньше, чем продавец без BXP. С {2} октября разница составляет {3} п. п. в большинстве категорий и {4} п. п. в большинстве категорий одежды и сумок. Поскольку участники BXP ещё и платят сбор BXP {5}% ({6}% в дни акций), в большинстве категорий участие в BXP теперь обходится за заказ дороже, чем раньше. Исключение — уход и здоровье малыша: там комиссия для BXP снижается до {7}%, а без BXP растёт до {8}%.
+@@ 5bcb63623c
+ms: Maksudnya bagi setiap pesanan
+ru: Что это значит для каждого заказа
+@@ d7d768ac33
+ms: Tudung RM{0}, Marketplace bukan BXP, kos RM{1}
+ru: Хиджаб за RM{0}, Marketplace без BXP, себестоимость RM{1}
+@@ 49a59171f1
+ms: Komisen berubah daripada {0}% kepada {1}%. Bayaran turun daripada RM{2} kepada RM{3}, untung daripada RM{4} kepada RM{5}. Untuk mengekalkan untung lama, anda perlu mengenakan kira-kira RM{6}.
+ru: Комиссия меняется с {0}% до {1}%. Выплата снижается с RM{2} до RM{3}, прибыль — с RM{4} до RM{5}. Чтобы сохранить прежнюю прибыль, цену нужно поднять примерно до RM{6}.
+@@ 7bf2b0f65d
+ms: Sarung telefon RM{0}, Marketplace bukan BXP, kos RM{1}
+ru: Чехол для телефона за RM{0}, Marketplace без BXP, себестоимость RM{1}
+@@ 8369babd16
+ms: Aksesori telefon bimbit berubah daripada {0}% kepada {1}%. Untung setiap pesanan berubah daripada RM{2} kepada RM{3}.
+ru: Аксессуары для телефонов — с {0}% до {1}%. Прибыль с заказа меняется с RM{2} до RM{3}.
+@@ 41974a69da
+ms: Set aksesori pam susu RM{0} (Penyusuan &amp; Pemakanan), kos RM{1}
+ru: Набор аксессуаров для молокоотсоса за RM{0} (кормление), себестоимость RM{1}
+@@ 6fa24af08b
+ms: Salah satu kategori yang menjadi lebih murah: {0}% → {1}%. Untung naik daripada RM{2} kepada RM{3}.
+ru: Одна из категорий, которые дешевеют: {0}% → {1}%. Прибыль растёт с RM{2} до RM{3}.
+@@ 16bbcc40f8
+ms: Apa yang perlu dilakukan sebelum {0} Oktober
+ru: Что сделать до {0} октября
+@@ 3d12d73018
+ms: Senaraikan {0} SKU teratas anda mengikut hasil dan semak subkategori setiap satu dalam <a1>kalkulator Malaysia</a1>, dengan "Pesanan mulai {1} Okt {2}" dipilih.
+ru: Составьте список {0} самых доходных SKU и проверьте подкатегорию каждого в <a1>калькуляторе для Малайзии</a1>, выбрав «Заказы с {1} окт. {2}».
+@@ 3e85770180
+ms: Putuskan bagi setiap SKU sama ada untuk menyerap kenaikan, menaikkan harga atau membuat bundle. Bagi item berharga rendah, bundle juga menyebarkan Yuran Sokongan Platform RM{0}.
+ru: Для каждого SKU решите: принять повышение на себя, поднять цену или собрать набор. Для дешёвых товаров набор ещё и распределяет сбор поддержки платформы RM{0}.
+@@ 2b0932c396
+ms: Jika anda dalam BXP, bandingkan yuran anda dengan BXP dihidupkan dan dimatikan. Ingat kadar hari kempen {0}% pada Double Day {1}–{2} November dan Payday {3}–{4} November.
+ru: Если вы в BXP, сравните сборы с включённым и выключенным BXP. Помните о ставке {0}% в дни акций: Double Day {1}–{2} ноября и Payday {3}–{4} ноября.
+@@ 20351e62d2
+ms: Selepas {0} Oktober, semak penyelesaian pertama anda dengan kadar baharu. <a1>Panduan penyelesaian</a1> kami menunjukkan di mana untuk melihat.
+ru: После {0} октября сверьте первые расчёты по заказам с новыми ставками. Где их смотреть, показано в нашем <a1>гайде по расчётам</a1>.
+@@ ac91160c7c
+ms: TikTok Shop Filipina mengenakan <b1>Yuran Pertumbuhan Penjual</b1> pada setiap pesanan berjaya. TikTok menyatakan ia membiayai insentif pertumbuhan seluruh platform, termasuk menawarkan Bonus Cashback Program kepada semua penjual yang layak secara percuma, dengan lebih banyak subsidi dan sokongan platform dijanjikan pada masa hadapan.
+ru: TikTok Shop на Филиппинах берёт <b1>сбор за рост продавца</b1> с каждого успешного заказа. По словам TikTok, он финансирует общеплатформенные программы роста, в том числе бесплатное участие всех подходящих продавцов в Bonus Cashback Program, а в будущем обещаны новые субсидии и поддержка.
+@@ 86626bb876
+ms: Kadar Yuran Pertumbuhan Penjual
+ru: Ставки сбора за рост продавца
+@@ f32da8bd73
+ms: Kumpulan produk
+ru: Группа товаров
+@@ eda4431dc6
+ms: Kadar (termasuk VAT)
+ru: Ставка (с НДС)
+@@ 5c49155566
+ms: Elektronik, Barangan Runcit, Perkakas Besar
+ru: Электроника, продукты, крупная бытовая техника
+@@ 092b834f32
+ms: Kecantikan &amp; Penjagaan Diri, Fesyen, Ibu &amp; Bayi, Kesihatan, Gaya Hidup (kecuali Perkakas Besar)
+ru: Красота и уход, мода, мама и малыш, здоровье, лайфстайл (кроме крупной бытовой техники)
+@@ 6909d9d6da
+ms: Senarai TikTok menggunakan kumpulan luas, bukan subkategori komisennya. Dua kategori komisen tidak jelas diliputi: Fesyen Kanak-kanak dan Bekalan Haiwan Peliharaan. <a1>Kalkulator Filipina</a1> kami mengandaikan {0}% untuk kedua-duanya dan membolehkan anda mengubah kadar.
+ru: В списке TikTok используются крупные группы, а не подкатегории комиссий. Две категории явно не охвачены: детская мода и товары для животных. Наш <a1>калькулятор для Филиппин</a1> принимает для обеих {0}% и позволяет изменить ставку.
+@@ 0d5bc6ed64
+ms: Bilakah ia bermula?
+ru: Когда он появился?
+@@ b1b5eafe9e
+ms: Laporan berita penjual menyatakan ia bermula pada {0} April {1}, apabila TikTok meluaskan Bonus Cashback kepada semua penjual yang layak dan memotong yuran perkhidmatannya daripada {2}% kepada {3}%. Kami tidak dapat membaca halaman rasmi yang menyatakan tarikh itu, jadi anggap ia sebagai dilaporkan, bukan disahkan. Gambaran keseluruhan yuran TikTok semasa, dikemas kini {4} Oktober {5}, menyenaraikan yuran pertumbuhan sebagai yuran penjual standard.
+ru: По сообщениям отраслевых СМИ, сбор появился {0} апреля {1}, когда TikTok распространил Bonus Cashback на всех подходящих продавцов и снизил его сервисный сбор с {2}% до {3}%. Официальной страницы с этой датой мы не нашли, поэтому считайте её неподтверждённой. В текущем обзоре сборов TikTok (обновлён {4} октября {5}) сбор за рост указан как стандартный.
+@@ ebcdc2bfe0
+ms: Manfaat Bonus Cashback hanya terpakai kepada penjual yang layak: gambaran keseluruhan TikTok menyatakan Seller Shop Experience Score sekurang-kurangnya {0} atau kurang daripada {1} mata pelanggaran. Yuran pertumbuhan itu sendiri dikenakan kepada semua penjual.
+ru: Преимущества Bonus Cashback доступны только подходящим продавцам: в обзоре TikTok указан Seller Shop Experience Score не ниже {0} или меньше {1} штрафных баллов. Сам сбор за рост взимается со всех продавцов.
+@@ e22768e6c4
+ms: Cara ia bergabung dengan yuran lain
+ru: Как он сочетается с другими сборами
+@@ a085526253
+ms: Yuran pertumbuhan dikenakan di atas komisen ({0}%–{1}% Marketplace), yuran transaksi {2}%, Yuran Perkhidmatan Penghantaran {3}% ({4}% Mall, had ₱{5} seunit) dan Yuran Pemprosesan Pesanan ₱{6}, yang naik daripada ₱{7} pada {8} September {9}. Jadual membandingkan jumlah yuran setiap pesanan kini dengan Januari–April {10} (yuran pemprosesan ₱{11}, tiada yuran pertumbuhan), untuk penjual Marketplace tanpa diskaun dan tanpa caj penghantaran dibayar pembeli:
+ru: Сбор за рост добавляется к комиссии ({0}%–{1}% для Marketplace), транзакционному сбору {2}%, сбору за услуги доставки {3}% ({4}% для Mall, не более ₱{5} за единицу) и сбору за обработку заказа ₱{6}, который {8} сентября {9} вырос с ₱{7}. В таблице сравниваются общие сборы с заказа сейчас и в январе–апреле {10} (сбор за обработку ₱{11}, без сбора за рост) для продавцов Marketplace без скидки и без оплаченной покупателем доставки:
+@@ 0f01ed56a1
+ms: Contoh
+ru: Пример
+@@ 3e8248e32e
+ms: Harga
+ru: Цена
+zh: 价格
+@@ ac26e09f6f
+ms: Kadar pertumbuhan
+ru: Ставка сбора за рост
+@@ a24f0ce042
+ms: Semua yuran, Jan–Apr {0}
+ru: Все сборы, янв.–апр. {0}
+@@ 360ef2c049
+ms: Semua yuran kini
+ru: Все сборы сейчас
+@@ 149f8414fd
+ms: Fesyen: <span lang="en">Womenswear & Underwear</span>
+ru: Мода: <span lang="en">Womenswear & Underwear</span>
+@@ fce2c1d99f
+ms: Kecantikan: <span lang="en">Beauty & Personal Care</span>
+ru: Красота: <span lang="en">Beauty & Personal Care</span>
+@@ c5a391b652
+ms: Elektronik: <span lang="en">Phones & Electronics › Phone Accessories</span>
+ru: Электроника: <span lang="en">Phones & Electronics › Phone Accessories</span>
+@@ fbf4cd0a81
+ms: Barangan runcit: <span lang="en">Food & Beverages</span>
+ru: Продукты: <span lang="en">Food & Beverages</span>
+@@ 49efefefd1
+ms: Pada {0} pesanan sebulan bagi item fesyen ₱{1}, yuran pertumbuhan sahaja ialah ₱{2} sebulan.
+ru: При {0} заказах в месяц на модный товар за ₱{1} один только сбор за рост составляет ₱{2} в месяц.
+@@ 63823075ba
+ms: Pada apakah ia dikenakan?
+ru: С какой суммы он берётся?
+@@ cf64f9b37d
+ms: Gambaran keseluruhan TikTok memberikan kadar tetapi bukan asasnya. Kami mengandaikan ia berfungsi seperti komisen dan Yuran Perkhidmatan Penghantaran, pada harga item tolak diskaun penjual. Semak butiran penyelesaian satu pesanan untuk mengesahkan: bahagikan baris <span lang="en">Seller Growth Fee</span> dengan subjumlah item selepas diskaun anda dan anda sepatutnya mendapat {0}% atau {1}%.
+ru: В обзоре TikTok указана ставка, но не база. Мы исходим из того, что сбор считается как комиссия и сбор за услуги доставки — от цены товара минус скидка продавца. Проверьте это по расчёту одного заказа: разделите строку <span lang="en">Seller Growth Fee</span> на сумму товаров после вашей скидки — должно получиться {0}% или {1}%.
+@@ a457b18422
+ms: Bolehkah anda mengurangkannya?
+ru: Можно ли его снизить?
+@@ 3eaa6a8ea2
+ms: Tiada pengecualian yang diterbitkan. Yang boleh anda kawal ialah harga: yuran pertumbuhan ialah peratusan, jadi ia meningkat mengikut harga, manakala yuran pemprosesan ₱{0} adalah rata. Gunakan <a1>kaedah harga margin sasaran</a1> dengan kelima-lima yuran diambil kira.
+ru: Опубликованных исключений нет. Управлять можно ценой: сбор за рост — это процент и растёт вместе с ценой, а сбор за обработку ₱{0} фиксированный. Используйте <a1>метод расчёта цены под целевую маржу</a1> с учётом всех пяти сборов.
+@@ 5ccded331f
+ms: Kebanyakan penjual menetapkan harga dengan menambah markup pada kos dan berharap yuran tidak menelannya. Di TikTok Shop cara itu jarang berkesan, kerana sesetengah yuran ialah peratusan harga dan sesetengahnya rata setiap pesanan. Cara yang boleh dipercayai ialah bermula dengan margin yang anda mahu dan menyelesaikan untuk harga.
+ru: Большинство продавцов назначают цену, добавляя наценку к себестоимости и надеясь, что сборы её не съедят. На TikTok Shop это редко работает: часть сборов — процент от цены, а часть фиксирована на заказ. Надёжнее начать с желаемой маржи и вывести из неё цену.
+@@ ee14e683d9
+ms: Formula
+ru: Формула
+@@ 74b6ee76a8
+ms: Bahagikan kos anda kepada dua kumpulan:
+ru: Разделите затраты на две группы:
+@@ ff7ab16671
+ms: <b1>Kos tetap setiap pesanan (F):</b1> kos produk, kos penghantaran anda, pembungkusan, dan yuran platform rata seperti Yuran Sokongan Platform RM{0} (Malaysia) atau Yuran Pemprosesan Pesanan ₱{1} (Filipina).
+ru: <b1>Фиксированные затраты на заказ (<var>F</var>):</b1> себестоимость, ваши расходы на доставку, упаковка и фиксированные сборы платформы, например сбор поддержки платформы RM{0} (Малайзия) или сбор за обработку заказа ₱{1} (Филиппины).
+@@ 3b54e429e9
+ms: <b1>Yuran peratusan (v):</b1> komisen, yuran transaksi dan sebarang yuran lain yang dikenakan sebagai peratusan harga, serta komisen afiliasi jika anda menggunakan kreator.
+ru: <b1>Процентные сборы (<var>v</var>):</b1> комиссия, транзакционный сбор и любые другие сборы в процентах от цены, а также партнёрская комиссия, если вы работаете с креаторами.
+@@ a35068f7b3
+ms: Jika m ialah margin sasaran anda sebagai bahagian daripada harga, maka:
+ru: Если <var>m</var> — целевая маржа как доля цены, то:
+@@ 0e31bca56a
+ms: Harga = F ÷ ({0} − v − m)
+ru: Цена = <var>F</var> ÷ ({0} − <var>v</var> − <var>m</var>)
+@@ fefeb3f426
+ms: Contohnya, dengan yuran peratusan {0}% dan margin sasaran {1}%, bahagikan kos tetap anda dengan {2}. Jika v + m mencecah {3}%, tiada harga yang berkesan: anda perlu mengurangkan kos, yuran atau sasaran anda.
+ru: Например, при процентных сборах {0}% и целевой марже {1}% разделите фиксированные затраты на {2}. Если <var>v</var> + <var>m</var> достигает {3}%, подходящей цены нет: придётся снизить затраты, сборы или целевую маржу.
+@@ 0a5f4f8bb8
+ms: Contoh: Malaysia
+ru: Пример: Малайзия
+@@ ff8984aee9
+ms: Blaus wanita berharga kos RM{0}, Marketplace bukan BXP, mulai {1} Oktober {2}. Komisen {3}% dan yuran transaksi {4}%, jadi v = {5}%. F = RM{6} + RM{7} = RM{8}. Untuk margin {9}%:
+ru: Женский топ с себестоимостью RM{0}, Marketplace без BXP, с {1} октября {2}. Комиссия — {3}%, транзакционный сбор — {4}%, значит <var>v</var> = {5}%. <var>F</var> = RM{6} + RM{7} = RM{8}. Для маржи {9}%:
+@@ e81c54c09d
+ms: Harga = {0} ÷ ({1} − {2} − {3}) ≈ <b1>RM{4}</b1>. Semak dalam kalkulator: yuran RM{5}, untung RM{6}, margin {7}%.
+ru: Цена = {0} ÷ ({1} − {2} − {3}) ≈ <b1>RM{4}</b1>. Проверка в калькуляторе: сборы RM{5}, прибыль RM{6}, маржа {7}%.
+@@ d953850c7d
+ms: Tambah komisen kreator {0}% dan harga untuk margin yang sama naik kepada <b1>RM{1}</b1> (margin {2}%). Komisen kreator selalunya pengungkit tunggal terbesar ke atas harga.
+ru: Добавьте комиссию креатора {0}% — и цена для той же маржи вырастет до <b1>RM{1}</b1> (маржа {2}%). Комиссия креатора часто влияет на цену сильнее всего.
+@@ 8095e8db2f
+ms: Contoh: Filipina
+ru: Пример: Филиппины
+@@ eeb430bc3f
+ms: Item pakaian wanita ₱{0}, Marketplace. Yuran peratusan: komisen {1}% + transaksi {2}% + Yuran Perkhidmatan Penghantaran {3}% + Yuran Pertumbuhan Penjual {4}% = {5}%. F = ₱{6} + ₱{7} = ₱{8}.
+ru: Женская одежда за ₱{0}, Marketplace. Процентные сборы: комиссия {1}% + транзакционный {2}% + сбор за услуги доставки {3}% + сбор за рост продавца {4}% = {5}%. <var>F</var> = ₱{6} + ₱{7} = ₱{8}.
+@@ c9907b3e3c
+ms: Harga = {0} ÷ ({1} − {2} − {3}) ≈ <b1>₱{4}</b1>, memberikan yuran ₱{5} dan margin {6}%. Ini berkesan selagi Yuran Perkhidmatan Penghantaran kekal di bawah had ₱{7} seunit; melebihi itu, anggap ia sebagai kos tetap ₱{8}.
+ru: Цена = {0} ÷ ({1} − {2} − {3}) ≈ <b1>₱{4}</b1>; сборы ₱{5}, маржа {6}%. Это верно, пока сбор за услуги доставки не превышает лимит ₱{7} за единицу; выше — считайте его фиксированными ₱{8}.
+@@ 0736bc9e4f
+ms: Contoh: Amerika Syarikat
+ru: Пример: США
+@@ 81dba4d9b6
+ms: Item berharga kos ${0} dengan label penghantaran ${1}, pembeli tidak membayar caj penghantaran, yuran rujukan {2}%. Harga = {3} ÷ ({4} − {5} − {6}) ≈ <b1>${7}</b1>, untuk yuran rujukan ${8} dan margin {9}%.
+ru: Товар с себестоимостью ${0} и этикеткой доставки за ${1}, покупатель доставку не оплачивает, реферальная комиссия {2}%. Цена = {3} ÷ ({4} − {5} − {6}) ≈ <b1>${7}</b1>; реферальная комиссия ${8}, маржа {9}%.
+@@ 3598d7d42b
+ms: Kesilapan biasa
+ru: Типичные ошибки
+@@ 38bcf09ab4
+ms: <b1>Margin lwn markup.</b1> Margin {0}% bermakna untung bersamaan {1}% daripada harga. Ia ialah markup {2}% atas kos tambah yuran. Mencampuradukkan kedua-duanya ialah kesilapan harga yang paling biasa.
+ru: <b1>Маржа и наценка.</b1> Маржа {0}% — это прибыль, равная {1}% цены. Это наценка {2}% на себестоимость со сборами. Путать их — самая частая ошибка в ценообразовании.
+@@ c81b93ad40
+ms: <b1>Diskaun mengubah asas.</b1> Diskaun dibiayai penjual mengurangkan harga yang dikenakan peratusan, tetapi kos tetap anda kekal. Selesaikan formula pada harga diskaun yang anda jangka benar-benar akan dijual.
+ru: <b1>Скидки меняют базу.</b1> Скидки за счёт продавца уменьшают цену, от которой считаются проценты, а фиксированные затраты остаются. Считайте по формуле ту цену со скидкой, по которой реально ожидаете продавать.
+@@ bf1bdf693b
+ms: <b1>Yuran kempen.</b1> Di Malaysia, penjual BXP membayar {0}% dan bukannya {1}% pada hari kempen. Tetapkan harga tawaran kempen anda dengan kadar kempen.
+ru: <b1>Сборы в дни акций.</b1> В Малайзии участники BXP в дни акций платят {0}% вместо {1}%. Считайте акционные предложения по акционной ставке.
+@@ f0615a0ec8
+ms: <b1>Pemulangan.</b1> Sesetengah yuran rata tidak dipulangkan apabila barang dipulangkan selepas penghantaran (Yuran Sokongan Platform Malaysia dan Yuran Pemprosesan Pesanan Filipina). Jika kadar pemulangan anda tinggi, tambah peruntukan pemulangan kepada F.
+ru: <b1>Возвраты.</b1> Некоторые фиксированные сборы при возврате после доставки не возмещаются (сбор поддержки платформы в Малайзии и сбор за обработку заказа на Филиппинах). Если возвратов много, заложите резерв на возвраты в <var>F</var>.
+@@ 73da9a2c8a
+ms: Gunakan kalkulator <a1>Malaysia</a1>, <a2>Filipina</a2> atau <a3>AS</a3> untuk menyemak sebarang harga yang anda peroleh daripada formula.
+ru: Проверьте любую цену, полученную по формуле, в калькуляторе для <a1>Малайзии</a1>, <a2>Филиппин</a2> или <a3>США</a3>.

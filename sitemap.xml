@@ -29,252 +29,955 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/"/>
   </url>
   <url><loc>https://sellerfee.app/en/tiktok-shop/</loc><lastmod>2026-10-26</lastmod>
-  </url>
-  <url><loc>https://sellerfee.app/zh/tiktok-shop/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/"/>
   </url>
   <url><loc>https://sellerfee.app/en/russia/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/russia/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/russia/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/russia/"/>
-  </url>
-  <url><loc>https://sellerfee.app/zh/russia/</loc><lastmod>2026-10-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/russia/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/russia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/russia/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/russia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/russia/"/>
   </url>
   <url><loc>https://sellerfee.app/en/rate-changes/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/rate-changes/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/about/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/about/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/about/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/about/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/privacy/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/privacy/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/terms/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/terms/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/contact/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/contact/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/contact/"/>
+  </url>
+  <url><loc>https://sellerfee.app/en/guides/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/tiktok-shop/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/russia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/russia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/russia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/russia/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/russia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/russia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/rate-changes/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/rate-changes/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/about/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/about/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/about/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/about/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/privacy/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/privacy/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/terms/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/terms/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/contact/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/contact/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/contact/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/tiktok-shop/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/russia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/russia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/russia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/russia/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/russia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/russia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/rate-changes/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/rate-changes/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/about/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/about/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/about/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/about/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/privacy/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/privacy/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/terms/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/terms/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/contact/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/contact/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/contact/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/tiktok-shop/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/russia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/russia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/russia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/russia/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/russia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/russia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/rate-changes/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/rate-changes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/rate-changes/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/about/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/about/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/about/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/about/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/privacy/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/privacy/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/terms/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/terms/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/contact/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/contact/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/contact/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/"/>
   </url>
   <url><loc>https://sellerfee.app/en/tiktok-shop/malaysia/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/malaysia/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/malaysia/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
-  </url>
-  <url><loc>https://sellerfee.app/ms/tiktok-shop/malaysia/</loc><lastmod>2026-10-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
-    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/tiktok-shop/malaysia/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/tiktok-shop/malaysia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/tiktok-shop/malaysia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/malaysia/"/>
   </url>
   <url><loc>https://sellerfee.app/en/tiktok-shop/philippines/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/philippines/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/philippines/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/philippines/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/tiktok-shop/philippines/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/philippines/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/tiktok-shop/philippines/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/philippines/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/tiktok-shop/philippines/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/philippines/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/philippines/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/philippines/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/philippines/"/>
   </url>
   <url><loc>https://sellerfee.app/en/tiktok-shop/united-states/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/united-states/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/united-states/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/united-states/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/tiktok-shop/united-states/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/united-states/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/tiktok-shop/united-states/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/united-states/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/tiktok-shop/united-states/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/united-states/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/united-states/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/united-states/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/united-states/"/>
   </url>
   <url><loc>https://sellerfee.app/en/tiktok-shop/united-kingdom/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/united-kingdom/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/united-kingdom/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/united-kingdom/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/tiktok-shop/united-kingdom/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/united-kingdom/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/tiktok-shop/united-kingdom/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/united-kingdom/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/tiktok-shop/united-kingdom/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/united-kingdom/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/united-kingdom/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/united-kingdom/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/united-kingdom/"/>
   </url>
   <url><loc>https://sellerfee.app/en/tiktok-shop/singapore/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/singapore/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/singapore/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/singapore/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/tiktok-shop/singapore/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/singapore/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/tiktok-shop/singapore/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/singapore/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/tiktok-shop/singapore/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/singapore/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/singapore/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/singapore/"/>
   </url>
   <url><loc>https://sellerfee.app/en/tiktok-shop/thailand/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/thailand/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/thailand/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/thailand/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/tiktok-shop/thailand/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/thailand/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/tiktok-shop/thailand/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/thailand/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/tiktok-shop/thailand/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/tiktok-shop/thailand/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/tiktok-shop/thailand/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/tiktok-shop/thailand/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/tiktok-shop/thailand/"/>
   </url>
   <url><loc>https://sellerfee.app/en/etsy/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/etsy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/etsy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/etsy/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/etsy/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/etsy/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/etsy/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/etsy/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/etsy/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/etsy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/etsy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/etsy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/etsy/"/>
   </url>
   <url><loc>https://sellerfee.app/en/etsy/uk/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/etsy/uk/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/etsy/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/etsy/uk/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/etsy/uk/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/etsy/uk/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/etsy/uk/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/etsy/uk/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/etsy/uk/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/etsy/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/etsy/uk/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/etsy/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/etsy/uk/"/>
   </url>
   <url><loc>https://sellerfee.app/en/ozon/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/ozon/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/ozon/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/ozon/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/ozon/"/>
-  </url>
-  <url><loc>https://sellerfee.app/ru/ozon/</loc><lastmod>2026-10-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/ozon/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/ozon/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/ozon/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/ozon/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/ozon/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/ozon/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/ozon/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/ozon/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/ozon/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/ozon/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/ozon/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/ozon/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/ozon/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/ozon/"/>
   </url>
   <url><loc>https://sellerfee.app/en/wildberries/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/wildberries/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/wildberries/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/wildberries/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/wildberries/"/>
-  </url>
-  <url><loc>https://sellerfee.app/ru/wildberries/</loc><lastmod>2026-10-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/wildberries/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/wildberries/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/wildberries/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/wildberries/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/wildberries/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/wildberries/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/wildberries/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/wildberries/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/wildberries/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/wildberries/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/wildberries/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/wildberries/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/wildberries/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/wildberries/"/>
   </url>
   <url><loc>https://sellerfee.app/en/yandex-market/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/yandex-market/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/yandex-market/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/yandex-market/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/yandex-market/"/>
-  </url>
-  <url><loc>https://sellerfee.app/ru/yandex-market/</loc><lastmod>2026-10-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/yandex-market/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/yandex-market/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/yandex-market/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/yandex-market/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/yandex-market/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/yandex-market/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/yandex-market/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/yandex-market/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/yandex-market/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/yandex-market/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/yandex-market/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/yandex-market/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/yandex-market/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/yandex-market/"/>
   </url>
   <url><loc>https://sellerfee.app/en/shopee/malaysia/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/shopee/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/shopee/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/shopee/malaysia/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/shopee/malaysia/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/shopee/malaysia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/shopee/malaysia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/shopee/malaysia/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/shopee/malaysia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/shopee/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/shopee/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/shopee/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/shopee/malaysia/"/>
   </url>
   <url><loc>https://sellerfee.app/en/shopee/singapore/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/shopee/singapore/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/shopee/singapore/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/shopee/singapore/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/shopee/singapore/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/shopee/singapore/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/shopee/singapore/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/shopee/singapore/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/shopee/singapore/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/shopee/singapore/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/shopee/singapore/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/shopee/singapore/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/shopee/singapore/"/>
   </url>
   <url><loc>https://sellerfee.app/en/lazada/malaysia/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/lazada/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/lazada/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/lazada/malaysia/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/lazada/malaysia/</loc><lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/lazada/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/lazada/malaysia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/lazada/malaysia/"/>
   </url>
-  <url><loc>https://sellerfee.app/en/guides/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://sellerfee.app/ru/lazada/malaysia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/lazada/malaysia/"/>
   </url>
-  <url><loc>https://sellerfee.app/ru/guides/</loc><lastmod>2026-10-26</lastmod>
-  </url>
-  <url><loc>https://sellerfee.app/zh/guides/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://sellerfee.app/ms/lazada/malaysia/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/lazada/malaysia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/lazada/malaysia/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/</loc><lastmod>2026-10-26</lastmod>
-  </url>
-  <url><loc>https://sellerfee.app/ru/guides/ozon-fbo-fbs-realfbs-2026/</loc><lastmod>2026-10-26</lastmod>
-  </url>
-  <url><loc>https://sellerfee.app/ru/guides/wildberries-logistics-commission-2026/</loc><lastmod>2026-10-26</lastmod>
-  </url>
-  <url><loc>https://sellerfee.app/ru/guides/yandex-market-42-percent-low-price-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/shopee-singapore-commission-gst/</loc><lastmod>2026-10-26</lastmod>
-  </url>
-  <url><loc>https://sellerfee.app/zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/</loc><lastmod>2026-10-26</lastmod>
-  </url>
-  <url><loc>https://sellerfee.app/zh/guides/tiktok-shop-philippines-seller-growth-fee/</loc><lastmod>2026-10-26</lastmod>
-  </url>
-  <url><loc>https://sellerfee.app/zh/guides/tiktok-shop-pricing-target-margin/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/shopee-singapore-commission-gst/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/"/>
   </url>
   <url><loc>https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/tiktok-shop-philippines-seller-growth-fee/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/tiktok-shop-pricing-target-margin/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/read-tiktok-shop-settlement-check-fees/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/ozon-fbo-fbs-realfbs-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/wildberries-logistics-commission-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/yandex-market-42-percent-low-price-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/shopee-malaysia-fees-august-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/guides/shopee-singapore-commission-gst/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/shopee-singapore-commission-gst/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/guides/tiktok-shop-singapore-commission-september-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/guides/tiktok-shop-thailand-seller-fees-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/"/>
   </url>
   <url><loc>https://sellerfee.app/zh/guides/etsy-uk-fees-vat-regulatory-fee/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/"/>
   </url>
-  <url><loc>https://sellerfee.app/en/about/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://sellerfee.app/ru/guides/tiktok-shop-malaysia-commission-changes-october-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
   </url>
-  <url><loc>https://sellerfee.app/en/privacy/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://sellerfee.app/ru/guides/tiktok-shop-philippines-seller-growth-fee/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/"/>
   </url>
-  <url><loc>https://sellerfee.app/en/terms/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://sellerfee.app/ru/guides/tiktok-shop-pricing-target-margin/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/"/>
   </url>
-  <url><loc>https://sellerfee.app/en/contact/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://sellerfee.app/ru/guides/read-tiktok-shop-settlement-check-fees/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/ozon-fbo-fbs-realfbs-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/wildberries-logistics-commission-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/yandex-market-42-percent-low-price-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/shopee-malaysia-fees-august-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/shopee-singapore-commission-gst/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/shopee-singapore-commission-gst/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/tiktok-shop-singapore-commission-september-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/tiktok-shop-thailand-seller-fees-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/guides/etsy-uk-fees-vat-regulatory-fee/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/tiktok-shop-malaysia-commission-changes-october-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/tiktok-shop-philippines-seller-growth-fee/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/tiktok-shop-pricing-target-margin/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-pricing-target-margin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/read-tiktok-shop-settlement-check-fees/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/read-tiktok-shop-settlement-check-fees/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/ozon-fbo-fbs-realfbs-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/ozon-fbo-fbs-realfbs-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/wildberries-logistics-commission-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/wildberries-logistics-commission-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/yandex-market-42-percent-low-price-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/yandex-market-42-percent-low-price-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/shopee-malaysia-fees-august-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/shopee-malaysia-fees-august-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/shopee-singapore-commission-gst/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/shopee-singapore-commission-gst/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/shopee-singapore-commission-gst/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/tiktok-shop-singapore-commission-september-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-singapore-commission-september-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/tiktok-shop-thailand-seller-fees-2026/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/guides/etsy-uk-fees-vat-regulatory-fee/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/etsy-uk-fees-vat-regulatory-fee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/"/>
   </url>
 </urlset>

@@ -1,8 +1,12 @@
 """Page shell (header, footer, page template), calculator widget and shared helpers. Visual design: sellerfee-design (approved 26 Oct 2026)."""
 import json, html, os, re
+import html as H
 from markets import MARKETS, VERIFIED, compute
 from site_helpers import money, pct, ex_table
 from i18n import S, tr, LANGS
+import l10n
+GUIDES_ALL = []   # filled by build.py: every guide in every language (native or localised)
+LORDER = ['en', 'zh', 'ru', 'ms']
 BASE = os.environ.get('SITE_BASE', 'https://sellerfee.app/')
 REPO = 'https://github.com/xhq52465840/tiktok-shop-fee-calculator'
 VERIFIED_H = '26 October 2026'
@@ -69,12 +73,20 @@ def issue_url(title, body=''):
     from urllib.parse import quote
     return f'{REPO}/issues/new?title={quote(title)}&body={quote(body)}'
 
+MKT = {
+ 'zh': {'Malaysia': '马来西亚', 'Philippines': '菲律宾', 'United States': '美国', 'United Kingdom': '英国', 'Singapore': '新加坡', 'Thailand': '泰国', 'UK': '英国', 'Vietnam': '越南', 'Indonesia': '印度尼西亚'},
+ 'ru': {'Malaysia': 'Малайзия', 'Philippines': 'Филиппины', 'United States': 'США', 'United Kingdom': 'Великобритания', 'Singapore': 'Сингапур', 'Thailand': 'Таиланд', 'UK': 'Великобритания', 'Vietnam': 'Вьетнам', 'Indonesia': 'Индонезия'},
+ 'ms': {'Philippines': 'Filipina', 'United States': 'Amerika Syarikat', 'Singapore': 'Singapura'},
+}
+def market_name(name, lang='en'):
+    return MKT.get(lang, {}).get(name, name)
+
 def calc_name(m, lang='en'):
     if m['market'] in ('GLOBAL', 'RU'):
         if lang == 'ru': return {'Yandex Market': 'Яндекс Маркет'}.get(m['platformName'], m['platformName'])
         if lang == 'zh': return {'Yandex Market': 'Yandex Market（Яндекс Маркет）'}.get(m['platformName'], m['platformName'])
         return m['platformName']
-    return f'{m["platformName"]} {m["marketName"]}'
+    return f'{m["platformName"]} {market_name(m["marketName"], lang)}'
 
 def calc_links(lang):
     """(path, label, platform, flag) for every live calculator, in the page language where one exists."""
@@ -94,12 +106,7 @@ def topbar(lang, path):
     pill, txt, href, cta = TOPBAR[lang]
     return f'<div class="topbar"><div class="wrap"><span class="pill">{pill}</span><span class="tb-txt">{txt}</span> <a href="{rel(path)}{href}">{cta} {ic("arrow", 13)}</a></div></div>'
 
-NAV = {
- 'en': [('en/rate-changes/', 'nav_rates'), ('en/guides/', 'nav_guides'), ('en/about/', 'nav_about')],
- 'ms': [('en/rate-changes/', 'nav_rates'), ('en/guides/', 'nav_guides'), ('en/about/', 'nav_about')],
- 'ru': [('ru/guides/', 'nav_guides'), ('en/rate-changes/', 'nav_rates'), ('en/about/', 'nav_about')],
- 'zh': [('zh/guides/', 'nav_guides'), ('en/rate-changes/', 'nav_rates'), ('en/about/', 'nav_about')],
-}
+NAV = {l: [(f'{l}/rate-changes/', 'nav_rates'), (f'{l}/guides/', 'nav_guides'), (f'{l}/about/', 'nav_about')] for l in ('en', 'ms', 'ru', 'zh')}
 def header(lang, path, alt=None):
     r = rel(path); L = lambda k: tr(lang, k)
     cl = calc_links(lang)
@@ -112,31 +119,29 @@ def header(lang, path, alt=None):
     lm = ''.join(f'<a href="{r}{p}" hreflang="{LANGS[l]["html"]}" lang="{LANGS[l]["html"]}"{" aria-current=true" if l == lang else ""}>{esc(LANGS[l]["name"])}<span class="code">{code(l)}</span></a>' for l, p in langs.items())
     if not alt: lm += f'<span class="lm-note">{esc({"en": "This page is in English only", "ms": "Halaman ini dalam satu bahasa sahaja", "ru": "Страница доступна только на русском", "zh": "此页仅有当前语言版本"}[lang])}</span>'
     lsw = f'<details class="dd lang"><summary aria-label="{esc(L("language"))}">{ic("globe", 15)}<span class="ln">{esc(LANGS[lang]["name"])}</span><span class="code">{code(lang)}</span>{ic("chev", 14)}</summary><div class="ddm right">{lm}</div></details>'
-    return f'''<header class="nav"><div class="wrap"><a class="logo" href="{r}{hub}" aria-label="SellerFee home">{MARK}<span>SellerFee<span class="tld">.app</span></span></a>
-<nav class="menu" id="menu" aria-label="Main">{items}</nav>
+    return f'''<header class="nav"><div class="wrap"><a class="logo" href="{r}{hub}" aria-label="{esc(L('aria_home'))}">{MARK}<span>SellerFee<span class="tld">.app</span></span></a>
+<nav class="menu" id="menu" aria-label="{esc(L('aria_main'))}">{items}</nav>
 <div class="right">{lsw}<a class="btn btn-primary btn-sm hide-m" href="{r}{hub}#calculators">{ic("calc", 15)} {esc(L("open_calc_btn"))}</a>
 <button class="menu-btn" aria-expanded="false" aria-controls="menu" onclick="var n=document.getElementById('menu');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">{ic("menu", 20)}<span class="sr">{esc(L("menu"))}</span></button></div></div></header>
 '''
 
-def footer(lang, path):
+def footer(lang, path, alt=None):
     r = rel(path); L = lambda k: tr(lang, k)
-    from content import GUIDES
     from markets import COMING
     calcs = ''.join(f'<li><a href="{r}{u}">{esc(n)}</a></li>' for u, n, p, f, k in calc_links(lang))
-    soon = ''.join(f'<li><a href="{issue_url("Calculator request: " + p + " " + mk, "Please add a fee calculator for " + p + " (" + mk + ").")}" rel="noopener">{esc(p)} <span class="muted2">· {esc(mk)}</span></a></li>' for p, mk, f in COMING[:6])
-    gl = [(f'en/guides/{g["slug"]}/', g['short']) for g in GUIDES if g.get('lang', 'en') == 'en']
-    if lang == 'ru': gl = [(f'ru/guides/{g["slug"]}/', g['short']) for g in GUIDES if g.get('lang') == 'ru'] + gl[:2]
-    if lang == 'zh': gl = [(f'zh/guides/{g["slug"]}/', g['short']) for g in GUIDES if g.get('lang') == 'zh'] + gl[:2]
+    soon = ''.join(f'<li><a href="{issue_url("Calculator request: " + p + " " + mk, "Please add a fee calculator for " + p + " (" + mk + ").")}" rel="noopener">{esc(p)} <span class="muted2">· {l10n.text(lang, esc(mk))}</span></a></li>' for p, mk, f in COMING[:6])
+    gl = [(f'{lang}/guides/{g["slug"]}/', g['short']) for g in GUIDES_ALL if g.get('lang', 'en') == lang]
     guides = ''.join(f'<li><a href="{r}{u}">{esc(t)}</a></li>' for u, t in gl[:6])
-    company = [('en/about/', {'en': 'About SellerFee', 'ms': 'Tentang SellerFee', 'ru': 'О проекте', 'zh': '关于 SellerFee'}[lang]), ('en/about/#how-we-source-rates', {'en': 'How we verify rates', 'ms': 'Cara kami sahkan kadar', 'ru': 'Как мы проверяем тарифы', 'zh': '我们如何核实费率'}[lang])]
+    company = [(f'{lang}/about/', {'en': 'About SellerFee', 'ms': 'Tentang SellerFee', 'ru': 'О проекте', 'zh': '关于 SellerFee'}[lang]), (f'{lang}/about/#how-we-source-rates', {'en': 'How we verify rates', 'ms': 'Cara kami sahkan kadar', 'ru': 'Как мы проверяем тарифы', 'zh': '我们如何核实费率'}[lang])]
     comp = ''.join(f'<li><a href="{r}{u}">{esc(t)}</a></li>' for u, t in company)
     comp += f'<li><a href="{issue_url("Wrong rate: ", "Page: " + BASE + path + chr(10) + "Which fee looks wrong:" + chr(10) + "Link to the official source:")}" rel="noopener">{esc({"en": "Report a wrong rate", "ms": "Laporkan kadar salah", "ru": "Сообщить об ошибке в тарифе", "zh": "反馈错误费率"}[lang])}</a></li>'
-    comp += ''.join(f'<li><a href="{r}en/{s}/">{esc(L(k))}</a></li>' for s, k in [('privacy', 'f_privacy'), ('terms', 'f_terms'), ('contact', 'f_contact')])
-    langs = ''.join(f'<a class="{"on" if l == lang else ""}" href="{r}{l}/" hreflang="{v["html"]}" lang="{v["html"]}">{esc(v["name"])}</a>' for l, v in LANGS.items())
+    comp += ''.join(f'<li><a href="{r}{lang}/{s}/">{esc(L(k))}</a></li>' for s, k in [('privacy', 'f_privacy'), ('terms', 'f_terms'), ('contact', 'f_contact')])
+    tgt = alt or {l: f'{l}/' for l in LANGS}
+    langs = ''.join(f'<a class="{"on" if l == lang else ""}" href="{r}{tgt[l]}" hreflang="{v["html"]}" lang="{v["html"]}"{" aria-current=true" if l == lang else ""}>{esc(v["name"])}</a>' for l, v in LANGS.items() if l in tgt)
     soon_h = {'en': 'Coming soon', 'ms': 'Akan datang', 'ru': 'Скоро', 'zh': '即将上线'}[lang]
     return f'''<footer class="footer"><div class="wrap"><div class="grid"><div><a class="logo" href="{r}{lang}/">{MARK}<span>SellerFee<span class="tld">.app</span></span></a>
 <p class="ftag">{esc(L('f_tag'))}</p><div class="langs">{langs}</div></div>
-<div><h2>{esc(L('f_tools'))}</h2><ul>{calcs}</ul></div><div><h2>{soon_h}</h2><ul>{soon}</ul></div><div><h2>{esc(L('f_guides'))}</h2><ul>{guides}<li><a href="{r}{"ru" if lang == "ru" else ("zh" if lang == "zh" else "en")}/guides/">{esc(L("all_guides"))} →</a></li></ul></div>
+<div><h2>{esc(L('f_tools'))}</h2><ul>{calcs}</ul></div><div><h2>{soon_h}</h2><ul>{soon}</ul></div><div><h2>{esc(L('f_guides'))}</h2><ul>{guides}<li><a href="{r}{lang}/guides/">{esc(L("all_guides"))} →</a></li></ul></div>
 <div><h2>{esc(L('f_company'))}</h2><ul>{comp}</ul></div></div>
 <div class="legal"><p>{esc(L('disclaimer'))} {esc({"en": "Rates last verified", "ms": "Kadar terakhir disahkan", "ru": "Тарифы проверены", "zh": "费率最近核实于"}[lang])} {VFULL[lang]}.</p><p class="nowrap">© 2026 SellerFee · sellerfee.app</p></div></div></footer>
 '''
@@ -169,14 +174,14 @@ def page(path, lang, title, desc, body, schema=None, alt=None, og_type='website'
 {topbar(lang, path) if topbar_on else ''}{header(lang, path, alt)}<main id="main">
 {body}
 </main>
-{footer(lang, path)}<script src="{r}assets/site.js" defer></script>{scripts}</body>
+{footer(lang, path, alt)}<script src="{r}assets/site.js" defer></script>{scripts}</body>
 </html>
 '''
 
-def crumbs(path, items):
+def crumbs(path, items, lang='en'):
     r = rel(path)
     sep = ic('chev', 12, 'rot')
-    h = '<nav class="crumbs" aria-label="Breadcrumb">' + f' {sep} '.join(f'<a href="{r}{u}">{esc(t)}</a>' if u is not None else f'<b>{esc(t)}</b>' for t, u in items) + '</nav>'
+    h = f'<nav class="crumbs" aria-label="{esc(tr(lang, "aria_crumbs"))}">' + f' {sep} '.join(f'<a href="{r}{u}">{esc(t)}</a>' if u is not None else f'<b>{esc(t)}</b>' for t, u in items) + '</nav>'
     ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": t, **({"item": BASE + u} if u is not None else {})} for i, (t, u) in enumerate(items)]}
     return h, ld
@@ -188,7 +193,11 @@ def faq_block(faq, lang='en'):
     return h, ld
 
 def sources_block(src, lang='en', path=''):
-    items = ''.join(f'<li class="src"><span class="ix">{i + 1:02d}</span><a href="{u}" rel="nofollow noopener" target="_blank">{esc(t)}</a>{ic("ext", 14)}</li>' for i, (t, u) in enumerate(src))
+    def sl(t):
+        tl = 'ru' if re.search('[А-Яа-яЁё]', t) else ('zh-CN' if re.search('[\u4e00-\u9fff]', t) else 'en')
+        return f' lang="{tl}"' if tl != LANGS[lang]['html'] else ''
+    tt = lambda t: t if sl(t) else H.unescape(l10n.text(lang, esc(t)))
+    items = ''.join(f'<li class="src"><span class="ix">{i + 1:02d}</span><a href="{u}" rel="nofollow noopener" target="_blank"{sl(t)}>{esc(tt(t))}</a>{ic("ext", 14)}</li>' for i, (t, u) in enumerate(src))
     rep = issue_url('Wrong rate: ', f'Page: {BASE}{path}\nWhich fee looks wrong:\nLink to the official source:')
     return (f'<h2 id="sources">{esc(tr(lang, "sources"))}</h2><p class="muted small">{esc(tr(lang, "verified"))}: <time datetime="{VERIFIED}">{VFULL[lang]}</time></p><ol class="srcs">{items}</ol>'
             f'<p class="report">{ic("alert", 14)}<span>{esc(tr(lang, "report_rate"))} <a href="{rep}" rel="noopener">{esc(tr(lang, "report_link"))}</a> {esc(tr(lang, "report_tail"))}</span></p>')
@@ -209,20 +218,26 @@ def sel_field(id, label, opts, val=None, extra=''):
     o = ''.join(f'<option value="{v}"{" selected" if v == val else ""}>{esc(t)}</option>' for v, t in opts)
     return f'<div class="field"{extra}><label class="label" for="sf-{id}">{esc(label)}</label><div class="input select"><select id="sf-{id}">{o}</select>{ic("chev", 16, "chev")}</div></div>'
 
+TR_OPTS = {'tiktok-shop-uk', 'etsy-uk', 'lazada-my', 'etsy'}   # descriptive option labels written by us -> translated
+
 def widget(mid, lang):
     m = MARKETS[mid]; L = lambda k: tr(lang, k); d = m['defaults']
     cur = m['symbols'].get(m['currency'], m['currency'])
     curh = cur if not m.get('currencyFromOption') else m['currency']
     inp = m['inputs']
     opts = m['selector']['options']; big = bool(m['selector'].get('src'))
+    if lang != 'en' and mid in TR_OPTS:
+        opts = [dict(o, n=l10n.text(lang, o['n'])) for o in opts]
+    src_lang = 'ru' if m['market'] == 'RU' else 'en'
+    sl = f' lang="{src_lang}"' if (mid not in TR_OPTS and src_lang != lang) else ''
     if big:
         cat = (f'<div class="field full"><span class="label">{esc(L(m["selector"]["label"]))} <span class="hint"><span id="sf-selcount">{len(opts):,}</span> {esc(L("n_cats"))}</span></span>'
                f'<div class="input search">{ic("search", 15)}<input id="sf-selq" type="search" autocomplete="off" placeholder="{esc(L("search_cat"))}" aria-label="{esc(L("search_cat"))}"></div>'
-               f'<div class="g2 catpick"><div class="input select"><select id="sf-grp" aria-label="{esc(L("grp"))}"></select>{ic("chev", 16, "chev")}</div>'
-               f'<div class="input select"><select id="sf-sel" aria-label="{esc(L(m["selector"]["label"]))}"></select>{ic("chev", 16, "chev")}</div></div><p class="hint" id="sf-selnote"></p></div>')
+               f'<div class="g2 catpick"><div class="input select"><select id="sf-grp"{sl} aria-label="{esc(L("grp"))}"></select>{ic("chev", 16, "chev")}</div>'
+               f'<div class="input select"><select id="sf-sel"{sl} aria-label="{esc(L(m["selector"]["label"]))}"></select>{ic("chev", 16, "chev")}</div></div><p class="hint" id="sf-selnote"></p></div>')
     else:
         cat = (f'<div class="field full"><label class="label" for="sf-sel">{esc(L(m["selector"]["label"]))} <span class="hint">{len(opts) if m["selector"]["label"] != "vat_uk" else ""} {esc(L("n_cats")) if m["selector"]["label"] not in ("bank", "vat_uk") else ""}</span></label>'
-               f'<div class="input select"><select id="sf-sel"></select>{ic("chev", 16, "chev")}</div><p class="hint" id="sf-selnote"></p></div>')
+               f'<div class="input select"><select id="sf-sel"{sl}></select>{ic("chev", 16, "chev")}</div><p class="hint" id="sf-selnote"></p></div>')
     s1 = [cat]
     row = []
     if m['store']:
@@ -234,7 +249,7 @@ def widget(mid, lang):
     for x in m.get('selects', []):
         ds = f' data-stores="{" ".join(x["stores"])}"' if x.get('stores') else ''
         if x.get('fromTable'):
-            row.append(f'<div class="field"{ds}><label class="label" for="sf-x-{x["id"]}">{esc(L(x["label"]))}</label><div class="input select"><select id="sf-x-{x["id"]}"><option value="">{esc(L(x["first"]))}</option></select>{ic("chev", 16, "chev")}</div></div>')
+            row.append(f'<div class="field"{ds}><label class="label" for="sf-x-{x["id"]}">{esc(L(x["label"]))}</label><div class="input select"><select id="sf-x-{x["id"]}"{sl}><option value=""{(' lang="' + LANGS[lang]['html'] + '"') if sl else ''}>{esc(L(x["first"]))}</option></select>{ic("chev", 16, "chev")}</div></div>')
         else:
             o = ''.join(f'<option value="{v}"{" selected" if v == x.get("def_") else ""}>{esc(L(k))}</option>' for v, k in x['options'])
             row.append(f'<div class="field"{ds}><label class="label" for="sf-x-{x["id"]}">{esc(L(x["label"]))}</label><div class="input select"><select id="sf-x-{x["id"]}">{o}</select>{ic("chev", 16, "chev")}</div></div>')
@@ -266,6 +281,7 @@ def widget(mid, lang):
     sec4 = f'<div class="cs">{n(4, "sec_n4")}<div class="tgs">{tg}</div></div>' if tg else ''
     cfg = {k: m[k] for k in ('currency', 'symbols', 'locale', 'toggles', 'defaultOption', 'bands', 'conds', 'symbolAfter', 'decimals') if k in m}
     if m['market'] == 'RU' and lang != 'ru': cfg['locale'] = 'en-US'
+    if lang != 'en': cfg['locale'] = {'zh': 'zh-CN', 'ru': 'ru-RU', 'ms': 'ms-MY'}[lang]
     cfg['currencyFromOption'] = m.get('currencyFromOption', False)
     if big:
         cfg['selector'] = {'src': rel(f'{lang}/{m["slug"]}/') + f'assets/rates/{mid}.json?v={VERIFIED}'}

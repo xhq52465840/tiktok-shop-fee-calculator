@@ -1,6 +1,6 @@
 """Chinese locale home and hub pages for the static build."""
 from markets import MARKETS, COMING, compute
-from sf_site import page, crumbs, badge, esc, ic, ptile, issue_url, VDATE
+from sf_site import page, crumbs, badge, esc, ic, ptile, issue_url, VDATE, market_name
 from site_helpers import money
 import content as C
 
@@ -72,7 +72,7 @@ def home_zh():
         note = '10月31日新费率' if mid == 'tiktok-shop-my' else f'已核实 {VDATE["zh"]}'
         nb = (f'<span class="badge b-new" style="height:22px;font-size:12px">{note}</span>'
               if mid == 'tiktok-shop-my' else f'<span class="r">{note}</span>')
-        label = m['marketName'] if m['market'] != 'GLOBAL' else '全球'
+        label = market_name(m['marketName'], 'zh') if m['market'] != 'GLOBAL' else '全球'
         return (f'<a class="mrow" href="{m["slug"]}/"><span class="flag" style="font-size:18px">{m["flag"]}</span>'
                 f'<span class="nm">{esc(label)}</span>{nb}{badge("已上线","live")}</a>')
 
@@ -80,7 +80,7 @@ def home_zh():
     for plat, mk, f in COMING:
         if plat == 'TikTok Shop':
             tt += (f'<div class="mrow off"><span class="flag" style="font-size:18px">{f}</span>'
-                   f'<span class="nm">{esc(mk)}</span>{badge("即将上线","soon")}</div>')
+                   f'<span class="nm">{esc(market_name(mk, "zh"))}</span>{badge("即将上线","soon")}</div>')
     ru = ''.join(
         f'<a class="mrow" href="{MARKETS[k]["slug"]}/"><span class="flag" style="font-size:18px">{MARKETS[k]["flag"]}</span>'
         f'<span class="nm">{esc(MARKETS[k]["platformName"])}</span><span class="r">已核实 {VDATE["zh"]}</span>'
@@ -102,14 +102,15 @@ def home_zh():
                 f'<div class="go">打开计算器 {ic("arrow",14)}</div></a>'
             )
     for name in ('amazon', 'ebay'):
-        req = issue_url(f'Calculator request: {name.title()}', f'Please add a fee calculator for {name.title()}.')
+        req = issue_url(f'Calculator request: { {'amazon': 'Amazon', 'ebay': 'eBay'}[name]}', f'Please add a fee calculator for { {'amazon': 'Amazon', 'ebay': 'eBay'}[name]}.')
         ohtml += (
             f'<a class="card ccard" href="{req}" rel="noopener"><div class="top">{ptile(name,40)}{badge("即将上线","soon")}</div>'
-            f'<h3>{name.title()}</h3><p>核实官方费率后上线。</p>'
+            f'<h3>{ {'amazon': 'Amazon', 'ebay': 'eBay'}[name]}</h3><p>核实官方费率后上线。</p>'
             f'<div class="go soon">{ic("bell",14)} 申请此计算器</div></a>'
         )
 
-    guides = [g for g in C.GUIDES if g.get('lang') == 'zh'][:6]
+    from sf_site import GUIDES_ALL
+    guides = [g for g in GUIDES_ALL if g.get('lang') == 'zh'][:6]
     body = f'''<section class="hero"><div class="wrap">
 <div><div class="announce">{badge("新","new")}<span>TikTok Shop 新加坡、泰国 + Etsy 英国已上线 · <a href="tiktok-shop/singapore/">打开新加坡 {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">看清每个平台从你这一单拿走多少。</h1>
@@ -126,7 +127,7 @@ def home_zh():
 </div></div>
 <section class="s" id="calculators"><div class="wrap">
 <div class="sh"><div><p class="eyebrow">计算器</p><h2 class="h2">平台与市场</h2></div>
-<a class="btn btn-link" href="../en/rate-changes/">费率变动 {ic("arrow",14)}</a></div>
+<a class="btn btn-link" href="rate-changes/">费率变动 {ic("arrow",14)}</a></div>
 <div class="pgrid">
 <div class="card pcard"><div class="ph">{ptile("tiktok-shop",40)}<div><b>TikTok Shop</b><div class="small muted">{sum(1 for m in MARKETS.values() if m["platform"] == "tiktok-shop")} 个已上线市场</div></div></div>{tt}
 <a class="mrow" href="tiktok-shop/" style="border-top:1px solid var(--line);margin-top:4px"><span class="nm" style="color:var(--brand-600)">全部 TikTok Shop 市场</span>{ic("arrow",14)}</a></div>
@@ -140,15 +141,15 @@ def home_zh():
 <div class="step"><span class="n">2</span><div><b>标注核实日期</b><p>每页写明最近核实时间。费率变更时新旧对照并列。</p></div></div>
 <div class="step"><span class="n">3</span><div><b>费用算全</b><p>交易费、处理费、物流、封顶与分档——并且任意费率都可按你的账户改。</p></div></div></div>
 <div class="card reg"><div class="hd"><b>来源登记</b><span class="small muted">核实于 {VDATE["zh"]}</span></div>
-<p class="muted" style="padding:16px">完整来源列表见各计算器页底部，或浏览 <a href="../en/">英文首页</a> 的来源登记表。</p></div>
+<p class="muted" style="padding:16px">每个计算器页面底部的「官方来源」都列出了所用文件、链接与核实日期。</p></div>
 </div></div></section>
 <section class="s"><div class="wrap"><div class="sh"><div><p class="eyebrow">指南</p><h2 class="h2">最新指南</h2></div>
 <a class="btn btn-link" href="guides/">全部指南 {ic("arrow",14)}</a></div>
 <div class="cards">{''.join(gcard(path, g, 'zh') for g in guides)}</div>
 <div class="cta"><div><h2 class="h-display">还缺你需要的市场？</h2>
-<p>在 GitHub 开 issue，写明平台与官方费率页。我们核实数字后才会发布。</p></div>
+<p>在 GitHub 上提交需求，写明平台与官方费率页链接。我们核实数字后才会发布。</p></div>
 <div class="btns"><a class="btn btn-secondary btn-lg" href="{issue_url("Calculator request: ", "Platform:\nMarket:\nLink to official rates:")}" rel="noopener">{ic("bell",16)} 申请计算器</a>
-<a class="btn btn-brand btn-lg" href="../en/about/">我们如何核实费率</a></div></div>
+<a class="btn btn-brand btn-lg" href="about/">我们如何核实费率</a></div></div>
 </div></section>'''
     _w(path, page(path, 'zh', 'SellerFee：TikTok Shop、Shopee、Lazada 等费用与利润计算器',
                   '面向跨境卖家的免费费用与利润计算器：TikTok Shop、Shopee、Lazada、Ozon、Wildberries、Yandex Market、Etsy。官方费率，标注核实日期。',
@@ -156,7 +157,7 @@ def home_zh():
 
 def tiktok_hub_zh():
     path = 'zh/tiktok-shop/'
-    ch, cld = crumbs(path, [('SellerFee', 'zh/'), ('TikTok Shop', None)])
+    ch, cld = crumbs(path, [('SellerFee', 'zh/'), ('TikTok Shop', None)], 'zh')
     names = {'Malaysia': '马来西亚', 'Philippines': '菲律宾', 'United States': '美国', 'United Kingdom': '英国', 'Singapore': '新加坡', 'Thailand': '泰国'}
     cards = ''.join(
         f'<a class="card ccard" href="{m["slug"].split("/")[1]}/">'
@@ -170,11 +171,11 @@ def tiktok_hub_zh():
 <section class="s"><div class="wrap"><div class="cards">{cards}</div></div></section>'''
     _w(path, page(path, 'zh', 'TikTok Shop 费用计算器：马来西亚、新加坡、泰国、菲律宾、美国与英国 | SellerFee',
                   '免费 TikTok Shop 卖家费用计算器，覆盖马来西亚、新加坡、泰国、菲律宾、美国与英国，基于官方 Seller University 费率。',
-                  body, [cld], alt={'en': 'en/tiktok-shop/', 'zh': 'zh/tiktok-shop/'}))
+                  body, [cld], alt={l: f'{l}/tiktok-shop/' for l in ('en', 'ms', 'ru', 'zh')}))
 
 def russia_hub_zh():
     path = 'zh/russia/'
-    ch, cld = crumbs(path, [('SellerFee', 'zh/'), ('俄罗斯', None)])
+    ch, cld = crumbs(path, [('SellerFee', 'zh/'), ('俄罗斯', None)], 'zh')
     cards = ''.join(
         f'<a class="card ccard" href="../{MARKETS[k]["slug"]}/">'
         f'<div class="top">{ptile(k,40)}{badge("已上线","live")}</div>'
@@ -184,8 +185,8 @@ def russia_hub_zh():
     body = f'''<div class="phead"><div class="wrap">{ch}
 <h1 class="h-display" style="margin-top:18px">俄罗斯电商平台费用计算器</h1>
 <p class="lead" style="margin-top:12px">Ozon、Wildberries、Yandex Market — FBO/FBS 类模式、类目佣金、物流与支付费用，全部按官方文件以卢布计算。</p>
-<p class="muted" style="margin-top:8px">另有 <a href="../../ru/">Русский</a> 与 <a href="../../en/russia/">English</a>。</p></div></div>
+<p class="muted" style="margin-top:8px">另有 <a href="../../ru/russia/" lang="ru">Русский</a> 与 <a href="../../en/russia/" lang="en">English</a> 版本。</p></div></div>
 <section class="s"><div class="wrap"><div class="cards">{cards}</div></div></section>'''
     _w(path, page(path, 'zh', '俄罗斯费用计算器：Ozon、Wildberries 与 Yandex Market | SellerFee',
                   '面向 Ozon、Wildberries、Yandex Market 卖家的免费费用与利润计算器。官方类目费率、物流与支付费用（卢布）。',
-                  body, [cld], alt={'en': 'en/russia/', 'ru': 'ru/', 'zh': 'zh/russia/'}))
+                  body, [cld], alt={l: f'{l}/russia/' for l in ('en', 'ms', 'ru', 'zh')}))

@@ -1,0 +1,223 @@
+@@ bb5f9464f6
+ms: Kalkulator Yuran Penjual TikTok Shop Filipina {0} (Yuran ₱{1} + Yuran Pertumbuhan)
+ru: Калькулятор сборов TikTok Shop Филиппины {0} (сбор ₱{1} + сбор за рост)
+@@ 210e302dcd
+ms: Kalkulator yuran dan untung TikTok Shop Filipina percuma dengan Yuran Pemprosesan Pesanan ₱{0}, Yuran Pertumbuhan Penjual {1}%–{2}%, yuran transaksi {3}% dan Yuran Perkhidmatan Penghantaran.
+ru: Бесплатный калькулятор сборов и прибыли TikTok Shop на Филиппинах: сбор за обработку заказа ₱{0}, сбор за рост продавца {1}%–{2}%, транзакционный сбор {3}% и сбор за услуги доставки.
+@@ edb0acd04c
+ms: Kalkulator Yuran Penjual TikTok Shop Filipina
+ru: Калькулятор сборов TikTok Shop для Филиппин
+@@ 2cd64ac3fb
+ms: Setiap yuran yang dipotong TikTok Shop PH daripada pesanan, termasuk Yuran Pemprosesan Pesanan ₱{0} dan Yuran Pertumbuhan Penjual yang masih tertinggal dalam banyak kalkulator.
+ru: Все сборы, которые TikTok Shop PH удерживает с заказа, включая сбор за обработку заказа ₱{0} и сбор за рост продавца, который многие калькуляторы до сих пор не учитывают.
+@@ a6a31d1d5d
+ms: Cara yuran TikTok Shop Filipina berfungsi
+ru: Как устроены сборы TikTok Shop на Филиппинах
+@@ 6d21a493a1
+ms: Contoh pengiraan
+ru: Примеры расчёта
+zh: 计算示例
+@@ 0b76d3bcec
+ms: Apa yang berubah pada {0}
+ru: Что изменилось в {0} году
+@@ 59b49af6c3
+ms: Komisen dan yuran pertumbuhan mengikut kategori
+ru: Комиссия и сбор за рост по категориям
+@@ 4fa57a70d6
+ms: Melindungi margin anda
+ru: Как сохранить маржу
+@@ 2eb56be3c2
+ms: Sumber
+ru: Источники
+zh: 来源
+@@ 433a311c08
+ms: Apakah yuran penjual TikTok Shop Filipina pada {0}?
+ru: Какие сборы у TikTok Shop на Филиппинах в {0} году?
+@@ 1db2d29a5a
+ms: Komisen mengikut kategori (Marketplace {0}%–{1}%, Mall {2}%–{3}%), yuran transaksi {4}%, Yuran Perkhidmatan Penghantaran {5}% (Marketplace) atau {6}% (Mall) dengan had ₱{7} seunit, Yuran Pemprosesan Pesanan ₱{8} bagi setiap pesanan yang dihantar dan Yuran Pertumbuhan Penjual {9}% atau {10}%. Semua termasuk VAT.
+ru: Комиссия по категориям (Marketplace {0}%–{1}%, Mall {2}%–{3}%), транзакционный сбор {4}%, сбор за услуги доставки {5}% (Marketplace) или {6}% (Mall) с лимитом ₱{7} за единицу, сбор за обработку заказа ₱{8} с каждого доставленного заказа и сбор за рост продавца {9}% или {10}%. Все ставки с НДС.
+@@ 0babb2abf2
+ms: Adakah yuran pemprosesan pesanan ₱{0} atau ₱{1}?
+ru: Сбор за обработку заказа — ₱{0} или ₱{1}?
+@@ b89f014779
+ms: ₱{0} sejak {1}:{2} pada {3} September {4}. Sebelum itu ₱{5} dari {6} Disember {7} hingga {8} Ogos {9}.
+ru: ₱{0} с {1}:{2} {3} сентября {4}. С {6} декабря {7} по {8} августа {9} он составлял ₱{5}.
+@@ 137cd91d38
+ms: Siapa yang tidak membayar yuran ₱{0}?
+ru: Кто не платит сбор ₱{0}?
+@@ fb89322c06
+ms: Penjual baharu yang menyenaraikan produk pertama dalam tempoh {0} hari lalu dikecualikan untuk bulan berikutnya. {1} pesanan pertama setiap bulan bagi penjual sedia ada juga dikecualikan.
+ru: Новые продавцы, разместившие первый товар за последние {0} дней, освобождаются от сбора на следующий месяц. У действующих продавцов от сбора освобождены первые {1} заказов каждого месяца.
+@@ d379d96622
+ms: Apakah Yuran Pertumbuhan Penjual?
+ru: Что такое сбор за рост продавца?
+@@ 4b891cb630
+ms: Yuran {0}% (Elektronik, Barangan Runcit, Perkakas Besar) atau {1}% (Kecantikan & Penjagaan Diri, Fesyen, Ibu & Bayi, Kesihatan, Gaya Hidup) bagi setiap pesanan berjaya yang membiayai insentif pertumbuhan platform, termasuk Bonus Cashback percuma untuk penjual yang layak.
+ru: Сбор {0}% (электроника, продукты, крупная бытовая техника) или {1}% (красота и уход, мода, мама и малыш, здоровье, лайфстайл) с каждого успешного заказа. Он финансирует программы роста платформы, в том числе бесплатный Bonus Cashback для подходящих продавцов.
+@@ bfb424764b
+ms: Adakah penjual baharu membayar komisen?
+ru: Платят ли новые продавцы комиссию?
+@@ 3b8a5989b3
+ms: Tidak. Penjual baharu mendapat komisen {0}% selama {1} hari. Yuran lain masih dikenakan.
+ru: Нет. Новые продавцы платят комиссию {0}% в течение {1} дней. Остальные сборы взимаются как обычно.
+@@ 93f94f901d
+ms: Adakah yuran ini termasuk VAT?
+ru: Эти сборы включают НДС?
+@@ 344bc4b467
+ms: Ya. TikTok menerbitkan semua kadar yuran penjual Filipina termasuk VAT.
+ru: Да. TikTok публикует все ставки сборов для Филиппин с учётом НДС.
+@@ 965f4b0515
+ms: TikTok Shop Filipina memotong lima yuran daripada setiap pesanan yang berjaya dihantar. Setiap kadar di bawah termasuk VAT, seperti yang diterbitkan TikTok.
+ru: TikTok Shop на Филиппинах удерживает пять сборов с каждого успешно доставленного заказа. Все ставки ниже указаны с НДС — так, как их публикует TikTok.
+@@ 3535aae9c1
+ms: {0}. Yuran komisen
+ru: {0}. Комиссия
+@@ c24935a1c3
+ms: Dikenakan pada <b1>harga item − diskaun penjual</b1> pada kadar yang ditetapkan mengikut kategori produk. Sejak {0} Januari {1}, penjual Marketplace dan Mall mempunyai kadar berbeza: Marketplace antara {2}% hingga {3}%, Mall antara {4}% hingga {5}%. Penjual baharu membayar komisen {6}% bagi {7} hari pertama. Jika TikTok belum menetapkan kadar untuk kategori baharu, kadar lalai ialah {8}% untuk Marketplace dan {9}% untuk Mall.
+ru: Начисляется на <b1>цену товара − скидку продавца</b1> по ставке, зависящей от категории. С {0} января {1} ставки для Marketplace и Mall различаются: у Marketplace от {2}% до {3}%, у Mall от {4}% до {5}%. Новые продавцы первые {7} дней платят комиссию {6}%. Если TikTok ещё не назначил ставку новой категории, по умолчанию действует {8}% для Marketplace и {9}% для Mall.
+@@ edf2f43b57
+ms: {0}. Yuran transaksi
+ru: {0}. Транзакционный сбор
+@@ bc732c0909
+ms: {0}% pada setiap pesanan berjaya. Kalkulator mengenakannya pada subjumlah item selepas diskaun anda serta caj penghantaran yang dibayar pembeli, iaitu asas yang diperkenalkan TikTok pada Julai {1}. Anda boleh mengubah kadar di bawah "Kadar yuran yang digunakan" jika penyelesaian anda menunjukkan sebaliknya.
+ru: {0}% с каждого успешного заказа. Калькулятор применяет его к сумме товаров после вашей скидки плюс доставка, оплаченная покупателем, — эту базу TikTok ввёл в июле {1}. Если в вашем расчёте по заказу ставка другая, измените её в блоке «Использованные тарифы».
+@@ d2b0384a98
+ms: {0}. Yuran Perkhidmatan Penghantaran
+ru: {0}. Сбор за услуги доставки
+@@ c48407e800
+ms: Dikenakan pada pesanan yang dihantar untuk membiayai insentif penghantaran percuma dan rangsangan keterlihatan di seluruh platform: {0}% untuk penjual Marketplace dan {1}% untuk penjual Mall, pada harga item − diskaun penjual, dengan had ₱{2} seunit.
+ru: Взимается с доставленных заказов и финансирует общеплатформенные программы бесплатной доставки и продвижения: {0}% для продавцов Marketplace и {1}% для Mall, от цены товара − скидки продавца, не более ₱{2} за единицу.
+@@ 8e6e65134d
+ms: {0}. Yuran Pemprosesan Pesanan
+ru: {0}. Сбор за обработку заказа
+@@ f031d0b05d
+ms: Yuran tetap ₱{0} (termasuk cukai) bagi setiap pesanan yang berjaya dihantar, tanpa mengira nilai pesanan atau bilangan item. TikTok mengenakan kadar diskaun ₱{1} dari {2} Disember {3} dan menamatkan diskaun itu pada {4}:{5}, {6} September {7}. Yuran ini tidak dipulangkan jika pesanan yang dihantar kemudiannya dipulangkan. Penjual baharu (produk pertama disenaraikan dalam tempoh {8} hari lalu) dikecualikan untuk bulan berikutnya, dan {9} pesanan pertama setiap bulan bagi penjual sedia ada juga dikecualikan.
+ru: Фиксированные ₱{0} (с налогом) с каждого успешно доставленного заказа независимо от суммы и количества товаров. С {2} декабря {3} TikTok брал сниженную ставку ₱{1} и отменил скидку в {4}:{5} {6} сентября {7}. Если доставленный заказ потом возвращают, сбор не возмещается. Новые продавцы (первый товар размещён за последние {8} дней) освобождены от сбора на следующий месяц, а у действующих продавцов освобождены первые {9} заказов каждого месяца.
+@@ ecee380017
+ms: {0}. Yuran Pertumbuhan Penjual
+ru: {0}. Сбор за рост продавца
+@@ de65c28b29
+ms: Yuran setiap pesanan yang membiayai insentif pertumbuhan seluruh platform, termasuk menjadikan Bonus Cashback Program percuma untuk penjual yang layak. Kadarnya {0}% untuk Elektronik, Barangan Runcit dan Perkakas Besar, dan {1}% untuk Kecantikan &amp; Penjagaan Diri, Fesyen, Ibu &amp; Bayi, Kesihatan dan Gaya Hidup (kecuali Perkakas Besar). Laporan penjual menyatakan ia bermula {2} April {3}. Baca lanjut dalam <a1>panduan Yuran Pertumbuhan Penjual</a1> kami.
+ru: Сбор с каждого заказа, который финансирует общеплатформенные программы роста, в том числе бесплатное участие подходящих продавцов в Bonus Cashback Program. Ставка — {0}% для электроники, продуктов и крупной бытовой техники и {1}% для красоты и ухода, моды, товаров для мам и малышей, здоровья и лайфстайла (кроме крупной бытовой техники). По сообщениям продавцов, сбор действует с {2} апреля {3}. Подробнее — в нашем <a1>гайде по сбору за рост продавца</a1>.
+@@ 38b1e3c50b
+ms: Contoh {0}: blaus wanita ₱{1}, Marketplace
+ru: Пример {0}: женский топ за ₱{1}, Marketplace
+@@ 6c943e9a9c
+ms: Komisen pakaian wanita ialah {0}% untuk penjual Marketplace dan yuran pertumbuhan {1}%. Kos produk ₱{2}.
+ru: Комиссия на женскую одежду для Marketplace — {0}%, сбор за рост — {1}%. Себестоимость ₱{2}.
+@@ b8cd71fb5d
+ms: Komisen ({0}%)
+ru: Комиссия ({0}%)
+zh: 佣金（{0}%）
+@@ 3c381a43f8
+ms: Yuran transaksi ({0}%)
+ru: Транзакционный сбор ({0}%)
+zh: 交易手续费（{0}%）
+@@ 19618306b3
+ms: Yuran Perkhidmatan Penghantaran ({0}%)
+ru: Сбор за услуги доставки ({0}%)
+@@ 3be750e2d6
+ms: Yuran Pemprosesan Pesanan
+ru: Сбор за обработку заказа
+zh: 订单处理费
+@@ 4b496a30ec
+ms: Yuran Pertumbuhan Penjual ({0}%)
+ru: Сбор за рост продавца ({0}%)
+@@ 35a8c72f04
+ms: Jumlah yuran
+ru: Итого сборов
+zh: 费用合计
+@@ 9bb396940a
+ms: Bayaran
+ru: К выплате
+zh: 到账金额
+@@ 5db9047efa
+ms: TikTok mengambil ₱{0}, atau {1}% daripada harga. Untung ₱{2} (margin {3}%). Pada Januari–April {4}, dengan yuran pemprosesan ₱{5} dan tanpa yuran pertumbuhan, pesanan yang sama akan memberi baki ₱{6}.
+ru: TikTok удерживает ₱{0}, или {1}% цены. Прибыль — ₱{2} (маржа {3}%). В январе–апреле {4}, при сборе за обработку ₱{5} и без сбора за рост, с того же заказа оставалось бы ₱{6}.
+@@ 70e0851a24
+ms: Contoh {0}: telefon ₱{1}, penjual Mall
+ru: Пример {0}: телефон за ₱{1}, продавец Mall
+@@ 83a19bf2be
+ms: Komisen Telefon &amp; Tablet ialah {0}% untuk Mall, dan elektronik membayar yuran pertumbuhan {1}%. Yuran Perkhidmatan Penghantaran sepatutnya {2}% × ₱{3} = ₱{4}, tetapi had mengehadkannya kepada ₱{5}.
+ru: Комиссия на телефоны и планшеты для Mall — {0}%, электроника платит сбор за рост {1}%. Сбор за услуги доставки составил бы {2}% × ₱{3} = ₱{4}, но лимит ограничивает его суммой ₱{5}.
+@@ ceb4f8b701
+ms: Bagi item bernilai tinggi, had ₱{0} memberi kesan besar: kadar yuran efektif di sini ialah {1}% berbanding {2}% tanpa had.
+ru: Для дорогих товаров лимит ₱{0} очень важен: эффективная ставка сборов здесь {1}% вместо {2}% без лимита.
+@@ e32c429d7a
+ms: Contoh {0}: alat dapur ₱{1}
+ru: Пример {0}: кухонный гаджет за ₱{1}
+@@ 35b7461a02
+ms: Harga rendah paling terasa kesan yuran tetap ₱{0}. Peralatan dapur dikenakan {1}% untuk Marketplace.
+ru: Фиксированный сбор ₱{0} сильнее всего бьёт по дешёвым товарам. Комиссия на кухонную утварь для Marketplace — {1}%.
+@@ c384e446fe
+ms: Yuran Pemprosesan Pesanan ₱{0} sahaja sudah {1}% daripada harga. Jumlah yuran ialah {2}% daripada jualan, berbanding {3}% bagi blaus ₱{4}.
+ru: Один только сбор за обработку заказа ₱{0} — это {1}% цены. Все сборы вместе — {2}% продажи против {3}% у топа за ₱{4}.
+@@ 2a9b1aeb69
+ms: Contoh {0}: contoh komisen TikTok sendiri
+ru: Пример {0}: пример комиссии от самого TikTok
+@@ 0f069b2301
+ms: Seller University TikTok menggunakan kasut kelabu berharga ₱{0} dengan diskaun penjual ₱{1}, pada kadar Mall {2}% untuk kasut. Kalkulator memberikan komisen yang sama: ₱{3}.
+ru: В Seller University TikTok приводит пример с серыми туфлями за ₱{0} со скидкой продавца ₱{1} по ставке Mall {2}% для обуви. Калькулятор даёт ту же комиссию: ₱{3}.
+@@ b034605d10
+ms: Berkuat kuasa
+ru: Вступает в силу
+zh: 生效日期
+@@ 64fbd995d3
+ms: Perubahan
+ru: Изменение
+zh: 变化
+@@ 784bcf4f3c
+ms: {0} Apr {1} (dilaporkan)
+ru: {0} апр. {1} (по сообщениям)
+@@ bb78a85f22
+ms: Yuran Pertumbuhan Penjual {0}% atau {1}% setiap pesanan diperkenalkan; Bonus Cashback menjadi percuma untuk penjual yang layak.
+ru: Введён сбор за рост продавца {0}% или {1}% с заказа; Bonus Cashback стал бесплатным для подходящих продавцов.
+@@ 6a44dd9b95
+ms: Diskaun Yuran Pemprosesan Pesanan tamat: ₱{0} → ₱{1} bagi setiap pesanan yang dihantar. Pengecualian untuk penjual baharu dan {2} pesanan pertama sebulan kekal.
+ru: Скидка на сбор за обработку заказа отменена: ₱{0} → ₱{1} с доставленного заказа. Освобождение для новых продавцов и первых {2} заказов в месяц сохраняется.
+@@ 51ed651132
+ms: Tidak berubah
+ru: Без изменений
+zh: 不变
+@@ aa6e6c2b5c
+ms: Komisen (jadual {0} Januari {1}), yuran transaksi {2}%, Yuran Perkhidmatan Penghantaran {3}%/{4}% dengan had ₱{5} seunit.
+ru: Комиссия (таблица от {0} января {1}), транзакционный сбор {2}%, сбор за услуги доставки {3}%/{4}% с лимитом ₱{5} за единицу.
+@@ dddac538db
+ms: Tapis, cth. kasut
+ru: Фильтр, напр. обувь
+@@ 0fb72648bc
+ms: Tapis kategori
+ru: Фильтр категорий
+zh: 筛选类目
+@@ d75dc68bbd
+ms: Kelompok
+ru: Кластер
+zh: 集群
+@@ a3c686e711
+ms: Kategori
+ru: Категория
+zh: 类目
+@@ 845737ac45
+ms: Yuran pertumbuhan
+ru: Сбор за рост
+@@ 096f2f0ad0
+ms: * Fesyen Kanak-kanak dan Bekalan Haiwan Peliharaan tidak dinamakan dalam senarai Yuran Pertumbuhan Penjual TikTok; {0}% diandaikan. Asas yuran pertumbuhan (harga item − diskaun penjual) ialah andaian kami, kerana halaman gambaran keseluruhan TikTok memberikan kadar tetapi bukan asasnya.
+ru: * Детская мода и товары для животных не названы в списке TikTok по сбору за рост продавца; мы принимаем {0}%. База сбора за рост (цена товара − скидка продавца) — наше допущение: на обзорной странице TikTok указана ставка, но не база.
+@@ f2e1b0be59
+ms: <b1>Naikkan harga minimum, bukan semua harga.</b1> Bagi item bawah kira-kira ₱{0}, yuran tetap ₱{1} mewakili beberapa peratus jualan. Bundle dan baucar perbelanjaan minimum menyebarkannya ke atas nilai yang lebih besar.
+ru: <b1>Поднимайте минимальную цену, а не все цены.</b1> На товарах дешевле примерно ₱{0} фиксированный сбор ₱{1} съедает несколько процентов продажи. Наборы и купоны с минимальной суммой заказа распределяют его на больший чек.
+@@ 0ce0cb9906
+ms: <b1>Gunakan {0} pesanan yang dikecualikan.</b1> Penjual sedia ada tidak membayar Yuran Pemprosesan Pesanan bagi {1} pesanan pertama setiap bulan. Kira ia dalam purata bulanan anda, bukan setiap pesanan.
+ru: <b1>Учитывайте {0} заказов без сбора.</b1> Действующие продавцы не платят сбор за обработку заказа за первые {1} заказов каждого месяца. Учитывайте это в среднем за месяц, а не в каждом заказе.
+@@ 3e29a918e4
+ms: <b1>Ambil kira had ₱{0}.</b1> Yuran Perkhidmatan Penghantaran berhenti pada ₱{1} seunit, jadi item bernilai tinggi menanggung kadar yuran lebih rendah berbanding item murah.
+ru: <b1>Помните о лимите ₱{0}.</b1> Сбор за услуги доставки не превышает ₱{1} за единицу, поэтому у дорогих товаров ставка сборов ниже, чем у дешёвых.
+@@ c88ca44db1
+ms: <b1>Mall lwn Marketplace.</b1> Komisen Mall lebih tinggi dalam kebanyakan kategori tetapi Yuran Perkhidmatan Penghantaran {0} mata lebih rendah. Bandingkan kedua-duanya dengan suis jenis kedai.
+ru: <b1>Mall или Marketplace.</b1> В большинстве категорий комиссия Mall выше, зато сбор за услуги доставки на {0} п. п. ниже. Сравните оба варианта переключателем типа магазина.
+@@ 2807f7d34a
+ms: <b1>Tetapkan harga dengan mengambil kira yuran pertumbuhan.</b1> Fesyen, kecantikan, kesihatan dan gaya hidup membayar {0}%. Itu ₱{1} bagi item ₱{2}, setiap pesanan.
+ru: <b1>Закладывайте сбор за рост в цену.</b1> Мода, красота, здоровье и лайфстайл платят {0}%. Это ₱{1} с товара за ₱{2} в каждом заказе.
+@@ 4a01ae7f6c
+ms: Lihat juga: <a1>harga untuk margin sasaran</a1> dan <a2>menyemak penyelesaian anda</a2>.
+ru: См. также: <a1>цена под целевую маржу</a1> и <a2>проверка расчёта по заказу</a2>.

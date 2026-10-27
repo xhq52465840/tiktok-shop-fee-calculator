@@ -1,0 +1,392 @@
+@@ 6b2e6b0df4
+ms: TikTok Shop Malaysia
+ru: TikTok Shop Малайзия
+zh: TikTok Shop 马来西亚
+@@ be5491cab1
+ms: 🇲🇾 <a1>Malaysia</a1>
+ru: 🇲🇾 <a1>Малайзия</a1>
+zh: 🇲🇾 <a1>马来西亚</a1>
+@@ 131e572557
+ms: 🇵🇭 <a1>Filipina</a1>
+ru: 🇵🇭 <a1>Филиппины</a1>
+zh: 🇵🇭 <a1>菲律宾</a1>
+@@ de8fb64974
+ms: 🇺🇸 <a1>Amerika Syarikat</a1>
+ru: 🇺🇸 <a1>США</a1>
+zh: 🇺🇸 <a1>美国</a1>
+@@ 50ad4696ca
+ms: 🇬🇧 <a1>United Kingdom</a1>
+ru: 🇬🇧 <a1>Великобритания</a1>
+zh: 🇬🇧 <a1>英国</a1>
+@@ 042ed9d746
+ms: 🇸🇬 <a1>Singapura</a1>
+ru: 🇸🇬 <a1>Сингапур</a1>
+zh: 🇸🇬 <a1>新加坡</a1>
+@@ 80567adbf1
+ms: 🇹🇭 <a1>Thailand</a1>
+ru: 🇹🇭 <a1>Таиланд</a1>
+zh: 🇹🇭 <a1>泰国</a1>
+@@ f96cc2b989
+ms: Kalkulator Yuran TikTok Shop: Malaysia, Singapura, Thailand, Filipina, AS & UK | SellerFee
+ru: Калькуляторы сборов TikTok Shop: Малайзия, Сингапур, Таиланд, Филиппины, США и Великобритания | SellerFee
+zh: TikTok Shop 费用计算器：马来西亚、新加坡、泰国、菲律宾、美国与英国 | SellerFee
+@@ ae7a8dbf00
+ms: Kalkulator yuran penjual TikTok Shop percuma untuk Malaysia, Singapura, Thailand, Filipina, Amerika Syarikat dan United Kingdom, berdasarkan kad kadar rasmi Seller University.
+ru: Бесплатные калькуляторы сборов TikTok Shop для Малайзии, Сингапура, Таиланда, Филиппин, США и Великобритании на основе официальных тарифов из Seller University.
+zh: 免费的 TikTok Shop 卖家费用计算器，覆盖马来西亚、新加坡、泰国、菲律宾、美国和英国，费率取自 Seller University 官方费率表。
+@@ e5779bf960
+ms: Kalkulator yuran marketplace Rusia
+ru: Калькуляторы комиссий российских маркетплейсов
+zh: 俄罗斯电商平台费用计算器
+@@ 5e3ab38b14
+ms: Ozon, Wildberries dan Yandex Market — model gaya FBO/FBS, komisen kategori, logistik dan yuran pembayaran dalam rubel, daripada dokumen penjual rasmi.
+ru: Ozon, Wildberries и Яндекс Маркет — модели FBO/FBS и аналоги, комиссия по категориям, логистика и платёжные сборы в рублях по официальным документам для продавцов.
+zh: Ozon、Wildberries 与 Yandex Market：FBO/FBS 等履约模式、类目佣金、物流与支付费用（卢布），均依据官方卖家文件。
+@@ c98f475b5b
+ms: Juga tersedia dalam <x1/>.
+ru: Также доступно на языке: <x1/>.
+zh: 另有 <x1/> 版本。
+@@ 8417917e1b
+ms: Komisen FBO/FBS/realFBS mengikut kategori &amp; jalur harga, logistik mulai {0} Okt {1}, batu terakhir {2} ₽.
+ru: Комиссия FBO/FBS/realFBS по категориям и ценовым диапазонам, логистика с {0} окт. {1}, последняя миля {2} ₽.
+zh: 按类目与价格档位计算 FBO/FBS/realFBS 佣金，{1}年10月{0}日起的物流费，最后一公里 {2} ₽。
+@@ eef3f3ce0a
+ms: КВВ mengikut subjek (FBW/FBS/DBS), logistik {0}+{1} ₽/L × pekali gudang.
+ru: КВВ по предметам (FBW/FBS/DBS), логистика {0}+{1} ₽/л × коэффициент склада.
+zh: 按商品品类（предмет）计 КВВ（FBW/FBS/DBS），物流 {0}+{1} ₽/升 × 仓库系数。
+@@ e47e391bc2
+ms: Penempatan mengikut kategori, tarif harga rendah {0}%, penghantaran {1}%, batu tengah, pemindahan pembayaran.
+ru: Размещение по категориям, тариф {0}% для недорогих товаров, доставка {1}%, средняя миля, перевод платежей.
+zh: 按类目计展示费，{0}% 低价费率，配送 {1}%，中程物流，货款划转。
+@@ 54cb889951
+ms: Kalkulator Yuran Rusia: Ozon, Wildberries & Yandex Market | SellerFee
+ru: Калькуляторы комиссий: Ozon, Wildberries и Яндекс Маркет | SellerFee
+zh: 俄罗斯平台费用计算器：Ozon、Wildberries 与 Yandex Market | SellerFee
+@@ db21328fa7
+ms: Kalkulator yuran dan untung percuma untuk penjual Ozon, Wildberries dan Yandex Market. Tarif kategori rasmi, logistik dan yuran pembayaran dalam RUB.
+ru: Бесплатные калькуляторы комиссий и прибыли для продавцов Ozon, Wildberries и Яндекс Маркета. Официальные тарифы по категориям, логистика и платёжные сборы в рублях.
+zh: 面向 Ozon、Wildberries 与 Yandex Market 卖家的免费费用与利润计算器。官方类目费率、物流与支付费用，以卢布计。
+@@ 3cb053bcac
+ms: Perubahan yuran bertarikh yang menjejaskan kalkulator aktif. Setiap baris dipautkan ke kalkulator dan sumber rasminya.
+ru: Изменения сборов с датами, которые влияют на наши калькуляторы. Каждая строка ведёт на калькулятор и его официальные источники.
+zh: 影响在线计算器的费率变动（附生效日期）。每一行都链接到对应计算器及其官方来源。
+@@ 769bb19e61
+ms: Bila
+ru: Когда
+zh: 生效时间
+@@ 123a7f2fcc
+ms: Platform
+ru: Площадка
+zh: 平台
+@@ 97211a8888
+ms: Apa
+ru: Что
+zh: 项目
+@@ 7c9a7c0610
+ms: Butiran
+ru: Подробности
+zh: 详情
+@@ 79933af592
+ms: {0} Okt {1}
+ru: {0} окт. {1}
+zh: {1}年10月{0}日
+@@ ba0ef40b03
+ms: Tarif logistik FBO/FBS
+ru: Тарифы логистики FBO/FBS
+zh: FBO/FBS 物流费率
+@@ 41af690969
+ms: Jadual baharu kelompok × isi padu × jalur harga
+ru: Новая таблица: кластер × объём × ценовой диапазон
+zh: 新表：集群 × 体积 × 价格档位
+@@ 16b6e0c696
+ms: Kalkulator
+ru: Калькулятор
+zh: 计算器
+@@ 0f2a7c63fd
+ms: Komisen kategori
+ru: Комиссия по категориям
+zh: 类目佣金
+@@ 3ca0c723b3
+ms: Jadual komisen baharu (bersebelahan kadar lama dalam kalkulator)
+ru: Новая таблица комиссий (в калькуляторе — рядом со старыми ставками)
+zh: 新佣金表（计算器中与旧费率并列显示）
+@@ 93e2d2469a
+ms: {0} Sep {1}
+ru: {0} сент. {1}
+zh: {1}年9月{0}日
+@@ e0d3660285
+ms: Komisen platform
+ru: Комиссия платформы
+zh: 平台佣金
+@@ d7b3e09954
+ms: Rata {0}% standard / {1}% BXP (termasuk GST), had S${2} bagi elektronik, mainan &amp; barang koleksi
+ru: Единая ставка {0}% (стандарт) / {1}% (BXP), с GST; лимит S${2} для электроники, игрушек и коллекционных товаров
+zh: 统一费率：标准 {0}% / BXP {1}%（含 GST），电子、玩具与收藏品封顶 S${2}
+@@ 54bc96d55b
+ms: {0} Jul {1}
+ru: {0} июля {1}
+zh: {1}年7月{0}日
+@@ a5b7925d42
+ms: Komisen Marketplace &amp; Mall
+ru: Комиссия Marketplace и Mall
+zh: Marketplace 与 Mall 佣金
+@@ 7ef5461afe
+ms: Kebanyakan kategori Marketplace {0}% → {1}%, kebanyakan Mall {2}% → {3}%
+ru: Большинство категорий Marketplace {0}% → {1}%, большинство Mall {2}% → {3}%
+zh: 多数 Marketplace 类目 {0}% → {1}%，多数 Mall 类目 {2}% → {3}%
+@@ d29e173137
+ms: {0} Jun {1}
+ru: {0} июня {1}
+zh: {1}年6月{0}日
+@@ cb0e2370be
+ms: Yuran operasi kawal selia
+ru: Регуляторный операционный сбор
+zh: 监管运营费
+@@ 64e03ed62a
+ms: {0}% → {1}% daripada jumlah pesanan
+ru: {0}% → {1}% от суммы заказа
+zh: 订单总额的 {0}% → {1}%
+@@ e2fe1babd5
+ms: {0} Mei {1}
+ru: {0} мая {1}
+zh: {1}年5月{0}日
+@@ 86056779fd
+ms: Yuran Pertumbuhan Perdagangan
+ru: Сбор за развитие торговли (CGF)
+zh: 商业增长费（CGF）
+@@ 0897b1eeb6
+ms: {0}% Elektronik / {1}% lain-lain, maksimum ฿{2} seunit
+ru: {0}% для электроники / {1}% для остальных, не более ฿{2} за единицу
+zh: 电子类 {0}% / 其他 {1}%，每件封顶 ฿{2}
+@@ 1b9e1bebb5
+ms: Arahan logistik
+ru: Инструкция по логистике
+zh: 物流说明
+@@ 43a06eb715
+ms: Halaman dikemas kini; tarif asas × pekali tidak berubah sejak {0} Ogos
+ru: Страница обновлена; базовый тариф × коэффициент не менялись с {0} августа
+zh: 页面已更新；基础费率 × 系数自8月{0}日起未变
+@@ c93b352109
+ms: {0} Okt – {1} Dis {2}
+ru: {0} окт. – {1} дек. {2}
+zh: {2}年10月{0}日至12月{1}日
+@@ 8d8842ef93
+ms: Penyimpanan FBY
+ru: Хранение FBY
+zh: FBY 仓储
+@@ 387119dbde
+ms: Penyimpanan percuma dalam tempoh ini
+ru: В этот период хранение бесплатно
+zh: 此期间免仓储费
+@@ 19b5e893a9
+ms: Akhir {0}
+ru: Конец {0} г.
+zh: {0} 年底
+@@ 9993dd5f95
+ms: Tarif harga rendah {0}%
+ru: Тариф {0}% для недорогих товаров
+zh: {0}% 低价费率
+@@ 8f5804ff22
+ms: ≤{0} ₽ dan ≤{1} L pada FBY/FBS
+ru: ≤{0} ₽ и ≤{1} л на FBY/FBS
+zh: FBY/FBS 下 ≤{0} ₽ 且 ≤{1} 升
+@@ b22c316560
+ms: Jadual КВВ
+ru: Таблица КВВ
+zh: КВВ 佣金表
+@@ 6acf25378e
+ms: PDF komisen subjek yang sedang berkuat kuasa
+ru: Действующий PDF с комиссиями по предметам
+zh: 当前生效的品类佣金 PDF
+@@ bfd155017c
+ms: {0} Ogos {1}
+ru: {0} авг. {1}
+zh: {1}年8月{0}日
+@@ 784342a293
+ms: XLSX komisen kategori
+ru: XLSX с комиссиями по категориям
+zh: 类目佣金 XLSX
+@@ 032fa7d2fb
+ms: Kadar jalur harga yang sedang dimuatkan
+ru: Загружены текущие ставки по ценовым диапазонам
+zh: 已载入当前价格档位费率
+@@ 102df0a51f
+ms: Semakan daftar terakhir: {0} Oktober {1}. Jumpa perubahan yang kami terlepas? <a1>Buka isu</a1>.
+ru: Последняя проверка реестра: {0} октября {1}. Заметили изменение, которое мы пропустили? <a1>Сообщите нам</a1>.
+zh: 最近一次核对：{1}年10月{0}日。发现我们遗漏的变动？<a1>提交反馈</a1>。
+@@ c0a2a433a3
+ms: Perubahan Kadar Marketplace ({0}) | SellerFee
+ru: Изменения тарифов маркетплейсов ({0}) | SellerFee
+zh: 电商平台费率变动（{0}）| SellerFee
+@@ 40181192e0
+ms: Perubahan yuran marketplace bertarikh untuk TikTok Shop, Etsy, Ozon, Wildberries dan Yandex Market, dipautkan ke kalkulator yang menggunakannya.
+ru: Изменения сборов TikTok Shop, Etsy, Ozon, Wildberries и Яндекс Маркета с датами и ссылками на калькуляторы, где они учтены.
+zh: TikTok Shop、Etsy、Ozon、Wildberries 与 Yandex Market 的费率变动及生效日期，并链接到使用这些费率的计算器。
+@@ 2eac33e70f
+ms: Tentang SellerFee
+ru: О SellerFee
+zh: 关于 SellerFee
+@@ 07ad349a87
+ms: Tentang SellerFee: siapa kami, cara kami mengesahkan kadar yuran marketplace dan cara kalkulator berfungsi.
+ru: О SellerFee: кто мы, как мы проверяем тарифы маркетплейсов и как работают калькуляторы.
+zh: 关于 SellerFee：我们是谁、如何核实平台费率，以及计算器如何运作。
+@@ 00030e62b7
+ms: SellerFee ialah laman web bebas yang menerbitkan kalkulator yuran dan untung percuma untuk mereka yang menjual di marketplace dalam talian, terutamanya penjual rentas sempadan. Kami meliputi TikTok Shop (Malaysia, Singapura, Thailand, Filipina, AS dan UK), Shopee (Malaysia, Singapura), Lazada Malaysia, Etsy (global dan UK), serta marketplace Rusia Ozon, Wildberries dan Yandex Market.
+ru: SellerFee — независимый сайт с бесплатными калькуляторами комиссий и прибыли для тех, кто продаёт на онлайн-маркетплейсах, особенно для трансграничных продавцов. Мы охватываем TikTok Shop (Малайзия, Сингапур, Таиланд, Филиппины, США и Великобритания), Shopee (Малайзия, Сингапур), Lazada Малайзия, Etsy (глобально и в Великобритании), а также российские маркетплейсы Ozon, Wildberries и Яндекс Маркет.
+zh: SellerFee 是一个独立网站，为在线上平台开店的卖家（尤其是跨境卖家）提供免费的费用与利润计算器。目前覆盖 TikTok Shop（马来西亚、新加坡、泰国、菲律宾、美国和英国）、Shopee（马来西亚、新加坡）、Lazada 马来西亚、Etsy（全球与英国），以及俄罗斯平台 Ozon、Wildberries 和 Yandex Market。
+@@ 82af4d909f
+ms: Cara kami mendapatkan kadar
+ru: Откуда мы берём ставки
+zh: 费率从哪里来
+@@ 68932b4d26
+ms: Setiap kadar diambil daripada bantuan penjual platform itu sendiri — TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Etsy Help, Ozon Seller Edu, arahan Wildberries dan PDF КВВ, serta bantuan Yandex Market. Setiap kalkulator memautkan sumbernya dan menunjukkan tarikh kami terakhir menyemaknya. Apabila platform menerbitkan kadar tetapi bukan formulanya, kami menyatakannya dan menjadikan kadar itu boleh diubah. Kami tidak menerbitkan kalkulator sehingga kadar dapat disahkan daripada sumber rasmi.
+ru: Каждая ставка взята из справочных материалов самой площадки: TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Etsy Help, Ozon Seller Edu, инструкции Wildberries и PDF с КВВ, справка Яндекс Маркета. Каждый калькулятор ссылается на свои источники и показывает дату последней проверки. Если площадка публикует ставку, но не формулу, мы прямо об этом пишем и даём ставку отредактировать. Калькулятор появляется только после того, как ставки удалось проверить по официальному источнику.
+zh: 每项费率都取自平台官方的卖家帮助资料：TikTok Shop Seller University、Shopee Seller Education Hub、Lazada Seller Center、Etsy Help、Ozon Seller Edu、Wildberries 说明及 КВВ PDF、Yandex Market 帮助中心。每个计算器都列出来源并注明最近核实日期。若平台只公布费率而未给出公式，我们会如实说明，并允许你自行修改费率。费率未能通过官方来源核实之前，我们不会上线计算器。
+@@ 6cbeb747eb
+ms: Cara kami memastikannya terkini
+ru: Как мы поддерживаем актуальность
+zh: 如何保持费率最新
+@@ ac656fcc4d
+ms: Kami menyemak semula halaman sumber secara berkala dan setiap kali platform mengumumkan perubahan. Apabila yuran berubah, kami mengekalkan kadar lama bersama kadar baharu jika platform masih menerbitkan kedua-duanya, dan kami mencatat tarikh berkuat kuasa di <a1>Perubahan kadar</a1>.
+ru: Мы регулярно перепроверяем источники, а также каждый раз, когда площадка объявляет об изменениях. Если сборы меняются, а площадка всё ещё публикует обе версии, мы показываем старые ставки рядом с новыми и указываем дату вступления в силу на странице <a1>Изменения тарифов</a1>.
+zh: 我们会定期复核来源页面，平台宣布调整时也会立即复核。费用变化时，如果平台仍同时公布新旧费率，我们会并列保留，并在<a1>费率变动</a1>页面注明生效日期。
+@@ 6115ff02f2
+ms: Cara kalkulator berfungsi
+ru: Как работают калькуляторы
+zh: 计算器如何运作
+@@ efe1239d09
+ms: Kalkulator berjalan sepenuhnya dalam pelayar anda. Tiada apa yang anda taip dihantar kepada kami. Keputusan ialah anggaran berdasarkan kadar yang diterbitkan; akaun anda mungkin mempunyai pengecualian, yuran program atau promosi yang mengubah angka, jadi papan pemuka penjual anda sentiasa menjadi rujukan muktamad.
+ru: Калькуляторы работают целиком в вашем браузере. Ничего из того, что вы вводите, нам не отправляется. Результаты — это оценка по опубликованным ставкам: у вашего аккаунта могут быть льготы, сборы за программы или акции, которые меняют цифры, поэтому последнее слово всегда за личным кабинетом продавца.
+zh: 计算器完全在你的浏览器中运行，你输入的任何内容都不会发送给我们。结果是基于公开费率的估算；你的账户可能有减免、项目费用或促销活动，会影响实际数字，因此一切以卖家后台为准。
+@@ 1db51a0f26
+ms: Kebebasan
+ru: Независимость
+zh: 独立性
+@@ e01f3705ef
+ms: SellerFee tidak bergabung dengan TikTok, Etsy, Ozon, Wildberries, Yandex atau mana-mana marketplace lain. Kami tidak menerima yuran penyenaraian atau komisen rujukan untuk keputusan kalkulator.
+ru: SellerFee не связан с TikTok, Etsy, Ozon, Wildberries, Яндексом или другими маркетплейсами. Мы не берём плату за размещение и не получаем реферальных вознаграждений за результаты калькуляторов.
+zh: SellerFee 与 TikTok、Etsy、Ozon、Wildberries、Yandex 及其他任何平台均无关联。我们不会因计算结果收取上架费或推荐返佣。
+@@ 3136bffe9f
+ms: Jumpa kadar yang salah? <a1>Buka isu GitHub</a1> dengan halaman dan sumber rasmi.
+ru: Нашли неверную ставку? <a1>Сообщите об этом на GitHub</a1> со ссылкой на страницу и официальный источник.
+zh: 发现费率有误？<a1>在 GitHub 上反馈</a1>，附上页面和官方来源。
+@@ cf01481f62
+ms: Privasi
+ru: Конфиденциальность
+zh: 隐私政策
+@@ ed78c7fa3d
+ms: Notis privasi SellerFee: kalkulator berjalan dalam pelayar anda; kami tidak mengumpul angka yang anda taip.
+ru: Политика конфиденциальности SellerFee: калькуляторы работают в вашем браузере, мы не собираем введённые вами цифры.
+zh: SellerFee 隐私说明：计算器在你的浏览器中运行，我们不收集你输入的数字。
+@@ ffcf50c286
+ms: Kemas kini terakhir {0} Oktober {1}.
+ru: Последнее обновление: {0} октября {1}.
+zh: 最后更新：{1}年10月{0}日。
+@@ cd535b08d5
+ms: Kalkulator SellerFee berjalan sepenuhnya dalam pelayar anda. Harga, kos dan kadar yang anda masukkan tidak dihantar ke pelayan kami. Kami tidak mengendalikan sistem akaun dan kami tidak menjual data peribadi.
+ru: Калькуляторы SellerFee работают целиком в вашем браузере. Цены, затраты и ставки, которые вы вводите, не отправляются на наши серверы. У нас нет системы аккаунтов, и мы не продаём персональные данные.
+zh: SellerFee 计算器完全在你的浏览器中运行。你输入的价格、成本和费率不会发送到我们的服务器。我们没有账户系统，也不出售个人数据。
+@@ 59005d3bf3
+ms: Log dan pengehosan
+ru: Логи и хостинг
+zh: 日志与托管
+@@ f19d072e1f
+ms: Seperti kebanyakan laman statik, hos kami mungkin menyimpan log akses standard (alamat IP, URL, ejen pengguna). Kami menggunakannya hanya untuk memastikan laman ini boleh dipercayai.
+ru: Как и у большинства статических сайтов, хостинг может вести стандартные журналы доступа (IP-адрес, URL, данные о браузере). Мы используем их только для стабильной работы сайта.
+zh: 与大多数静态网站一样，我们的托管服务商可能会保留标准访问日志（IP 地址、URL、浏览器标识）。我们仅用其保障网站稳定运行。
+@@ 524cf50b5d
+ms: Kuki
+ru: Файлы cookie
+zh: Cookie
+@@ 98dfd40afd
+ms: Kami tidak menetapkan kuki analitik atau pengiklanan. Bahasa yang anda pilih tidak disimpan sebagai kuki penjejakan.
+ru: Мы не используем аналитические и рекламные cookie. Выбранный язык не сохраняется в виде отслеживающего cookie.
+zh: 我们不设置分析或广告 Cookie。你选择的语言不会作为跟踪 Cookie 保存。
+@@ b37456c453
+ms: Hubungi
+ru: Контакты
+zh: 联系我们
+@@ ddd1e01bf2
+ms: Pertanyaan: gunakan <a1>halaman hubungi</a1> atau buka isu GitHub di repositori projek.
+ru: Вопросы: воспользуйтесь <a1>страницей контактов</a1> или напишите нам в репозитории проекта на GitHub.
+zh: 如有疑问：请使用<a1>联系页面</a1>，或在项目的 GitHub 仓库留言反馈。
+@@ 8a069ed1c6
+ms: Terma penggunaan
+ru: Условия использования
+zh: 使用条款
+@@ 73473262a8
+ms: Terma penggunaan untuk kalkulator dan panduan SellerFee.
+ru: Условия использования калькуляторов и гайдов SellerFee.
+zh: SellerFee 计算器与指南的使用条款。
+@@ 8dd97b8e19
+ms: Dengan menggunakan SellerFee, anda bersetuju dengan terma ini.
+ru: Пользуясь SellerFee, вы соглашаетесь с этими условиями.
+zh: 使用 SellerFee 即表示你同意本条款。
+@@ 51913ac8e8
+ms: Anggaran, bukan nasihat
+ru: Оценка, а не консультация
+zh: 仅为估算，不构成建议
+@@ f06152c2f7
+ms: Kalkulator dan panduan kami memberikan anggaran berdasarkan kadar yuran yang diterbitkan oleh setiap marketplace pada tarikh yang ditunjukkan. Ia untuk maklumat am sahaja dan bukan nasihat kewangan, cukai, perakaunan atau undang-undang. Yuran sebenar anda boleh berbeza kerana jenis akaun, penetapan kategori, program, pengecualian, promosi, cukai, penukaran mata wang atau perubahan yang dibuat platform selepas semakan terakhir kami. Sentiasa sahkan yuran dalam akaun marketplace anda sebelum membuat keputusan harga atau perniagaan.
+ru: Наши калькуляторы и гайды дают оценку по ставкам, которые каждая площадка опубликовала на указанную дату. Они носят исключительно информационный характер и не являются финансовой, налоговой, бухгалтерской или юридической консультацией. Ваши фактические сборы могут отличаться из-за типа аккаунта, присвоенной категории, программ, льгот, акций, налогов, конвертации валют или изменений, которые площадка внесла после нашей последней проверки. Прежде чем принимать решения о ценах или бизнесе, всегда сверяйте сборы в своём аккаунте на маркетплейсе.
+zh: 我们的计算器和指南根据各平台在所示日期公布的费率提供估算，仅供一般参考，不构成财务、税务、会计或法律建议。你的实际费用可能因账户类型、类目归属、参与的项目、减免、促销、税费、汇率换算或平台在我们最近核实后作出的调整而不同。在做定价或经营决策前，请务必在你的平台账户中确认费用。
+@@ f474152e72
+ms: Tiada waranti
+ru: Отказ от гарантий
+zh: 免责声明
+@@ 8e18d0ad16
+ms: Laman ini disediakan “seadanya” tanpa sebarang jenis waranti. Kami berusaha sedaya upaya memastikan kadar tepat dan terkini tetapi tidak menjamin bahawa ia lengkap, betul atau terkini.
+ru: Сайт предоставляется «как есть», без каких-либо гарантий. Мы стараемся поддерживать ставки точными и актуальными, но не гарантируем их полноту, правильность и своевременность.
+zh: 本网站按“现状”提供，不作任何形式的保证。我们尽力确保费率准确且及时，但不保证其完整、正确或为最新。
+@@ b1a6f88628
+ms: Had liabiliti
+ru: Ограничение ответственности
+zh: 责任限制
+@@ 6c8d171fb8
+ms: Setakat yang dibenarkan oleh undang-undang, SellerFee tidak bertanggungjawab atas sebarang kerugian yang timbul daripada penggunaan anda atau pergantungan anda pada laman ini atau keputusannya.
+ru: В пределах, допускаемых законом, SellerFee не несёт ответственности за любые убытки, возникшие в результате использования сайта или его результатов либо в связи с доверием к ним.
+zh: 在法律允许的范围内，SellerFee 不对你使用或依赖本网站及其结果所造成的任何损失承担责任。
+@@ 05e8d1a353
+ms: Tanda dagangan
+ru: Товарные знаки
+zh: 商标
+@@ e5d1b0c80c
+ms: TikTok, TikTok Shop, Etsy, Shopee, Lazada, Amazon, eBay, Ozon, Wildberries dan Yandex Market ialah tanda dagangan pemilik masing-masing. SellerFee adalah bebas dan tidak bergabung dengan atau disokong oleh mereka.
+ru: TikTok, TikTok Shop, Etsy, Shopee, Lazada, Amazon, eBay, Ozon, Wildberries и Яндекс Маркет — товарные знаки соответствующих правообладателей. SellerFee — независимый проект, не связанный с ними и не одобренный ими.
+zh: TikTok、TikTok Shop、Etsy、Shopee、Lazada、Amazon、eBay、Ozon、Wildberries 和 Yandex Market 均为其各自所有者的商标。SellerFee 是独立项目，与上述各方无关联，也未获其背书。
+@@ 009a7b91ce
+ms: Penggunaan yang dibenarkan
+ru: Допустимое использование
+zh: 合理使用
+@@ 33c0b20be5
+ms: Anda boleh menggunakan kalkulator secara bebas untuk perniagaan anda sendiri. Sila jangan mengikis laman ini pada kadar yang mengganggunya atau menerbitkan semula kandungan kami sebagai milik anda.
+ru: Вы можете свободно пользоваться калькуляторами для своего бизнеса. Пожалуйста, не парсите сайт с интенсивностью, мешающей его работе, и не публикуйте наши материалы под своим именем.
+zh: 你可以在自己的业务中免费使用这些计算器。请勿以影响网站运行的频率抓取内容，也不要将我们的内容作为你自己的内容转载发布。
+@@ 8aa57de6dc
+ms: Perubahan
+ru: Изменения
+zh: 条款变更
+@@ 37798e1a52
+ms: Kami mungkin mengemas kini terma ini; tarikh di atas menunjukkan versi terkini.
+ru: Мы можем обновлять эти условия; дата выше указывает на последнюю версию.
+zh: 我们可能会更新本条款；上方日期即为最新版本日期。
+@@ 7252dafee3
+ms: Hubungi SellerFee tentang kesilapan kadar, permintaan kalkulator atau projek ini.
+ru: Свяжитесь с SellerFee по поводу ошибок в ставках, запросов на калькуляторы или проекта в целом.
+zh: 就费率错误、计算器需求或项目本身联系 SellerFee。
+@@ d046d67fc3
+ms: SellerFee ialah projek bebas yang kecil.
+ru: SellerFee — небольшой независимый проект.
+zh: SellerFee 是一个小型独立项目。
+@@ c8abe9d2ed
+ms: <b1>Kadar salah pada halaman</b1> — <a2>buka isu GitHub</a2> dengan URL halaman dan sumber rasmi.
+ru: <b1>Неверная ставка на странице</b1> — <a2>сообщите об этом на GitHub</a2> с адресом страницы и официальным источником.
+zh: <b1>页面费率有误</b1>：<a2>在 GitHub 上反馈</a2>，附上页面链接和官方来源。
+@@ e29eeff202
+ms: <b1>Mohon kalkulator</b1> — <a2>beritahu kami platform dan halaman kadar rasmi</a2>.
+ru: <b1>Запросить калькулятор</b1> — <a2>укажите площадку и официальную страницу с тарифами</a2>.
+zh: <b1>申请新计算器</b1>：<a2>告诉我们平台名称和官方费率页面</a2>。
+@@ 4f7fad43b7
+ms: <b1>Lain-lain</b1> — buka isu di <a2>repositori GitHub</a2>.
+ru: <b1>Всё остальное</b1> — напишите нам в <a2>репозитории на GitHub</a2>.
+zh: <b1>其他事项</b1>：在 <a2>GitHub 仓库</a2>留言反馈。

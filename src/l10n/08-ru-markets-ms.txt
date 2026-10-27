@@ -1,0 +1,215 @@
+@@ 9eca724987
+ms: Kalkulator Yuran Ozon Rusia {0} (FBO / FBS / realFBS) | SellerFee
+@@ 6a6b3b689e
+ms: Kalkulator yuran dan untung Ozon Rusia percuma: komisen FBO, FBS dan realFBS mengikut kategori dan jalur harga, logistik mulai {0} Okt {1}, batu terakhir dan pemprosesan. Kadar rasmi, RUB.
+@@ e49cc436df
+ms: Kalkulator yuran Ozon (Rusia)
+@@ ac55eadc15
+ms: Komisen mengikut kategori dan jalur harga, logistik FBO/FBS daripada jadual {0} Okt {1}, batu terakhir dan pemprosesan — kemudian bayaran dan margin anda dalam rubel.
+@@ b8cd7bd358
+ms: Jalur komisen
+@@ d167e9a509
+ms: Contoh pengiraan
+@@ d3550aee41
+ms: Logistik & tambahan
+@@ 2781060d5e
+ms: Apakah yang dikenakan Ozon untuk FBO lwn FBS lwn realFBS?
+@@ 139ae32f17
+ms: FBO dan FBS berkongsi tiga kadar komisen jalur harga yang sama dan kedua-duanya membayar logistik + batu terakhir {0} ₽; FBS juga membayar yuran pemprosesan (biasanya {1} ₽). realFBS hanya membayar satu kadar komisen — anda menghantar sendiri.
+@@ 1ffe4a3ddd
+ms: Dari mana datangnya kadar harga rendah {0}% / {1}%?
+@@ 9957fb2f5d
+ms: Daripada XLSX kategori rasmi Ozon yang berkuat kuasa mulai {0} Ogos {1}. Pada FBO / FBO Fresh / FBS, kebanyakan jenis produk dikenakan {2}% pada ≤{3} ₽ dan {4}% pada {5}–{6} ₽; melebihi {7} ₽, kadar kategori terpakai.
+@@ aef848a914
+ms: Bagaimana logistik dikira?
+@@ 6ede50c8d6
+ms: Daripada XLSX logistik FBO/FBS rasmi yang berkuat kuasa mulai {0} Oktober {1}: pilih kelompok asal dan destinasi, baldi isi padu dan lajur ≤{2} / &gt;{3} ₽. Kelompok yang tidak diketahui menggunakan helaian tarif universal.
+@@ c066bbabfb
+ms: Adakah yuran pemerolehan (acquiring) termasuk?
+@@ 257b3f14e2
+ms: Ozon tidak menerbitkan satu peratusan acquiring awam di Seller Edu. Kalkulator membiarkan acquiring kosong supaya anda boleh memasukkan kadar daripada kontrak atau laporan bayaran anda.
+@@ 0be3354beb
+ms: Bilakah tarif logistik dalam kalkulator ini terpakai?
+@@ 1597e764db
+ms: Jadual yang dimuatkan ialah jadual yang ditandakan Ozon sebagai berkuat kuasa mulai {0} Oktober {1}. Kategori komisen daripada XLSX {2} Ogos {3}.
+@@ 5902713c51
+ms: <b1>Disahkan {0} Okt {1}.</b1> Jalur komisen daripada XLSX kategori Ozon yang berkuat kuasa mulai <b2>{2} Ogos {3}</b2>. Logistik FBO/FBS daripada XLSX yang berkuat kuasa mulai <b3>{4} Okt {5}</b3>. Peraturan daripada <span lang="ru">«Полный список комиссий и тарифов»</span> (edisi dicetak {6} Okt {7}).
+@@ e750580742
+ms: Ozon mengenakan komisen kategori yang bergantung pada model pemenuhan dan harga seunit, serta logistik dan batu terakhir untuk FBO dan FBS. realFBS (rFBS) hanya membayar komisen — anda menguruskan penghantaran sendiri. Acquiring tidak diterbitkan sebagai peratusan tetap, jadi kalkulator membiarkannya kosong untuk anda isi.
+@@ 491574d94c
+ms: FBO, FBS dan realFBS
+@@ b69d0947ef
+ms: <b1>FBO</b1> — stok disimpan di gudang Ozon. Ozon memilih, membungkus dan menghantar. Anda membayar komisen + logistik + batu terakhir ({0} ₽/item).
+@@ 791fc2d6a6
+ms: <b1>FBS</b1> — anda menghantar ke titik pengambilan atau pusat pengisihan Ozon. Jalur komisen sama seperti FBO, serta logistik, batu terakhir dan yuran pemprosesan (biasanya {0} ₽; {1} ₽ di sesetengah titik, {2} ₽ di sesetengah PPZ Moscow).
+@@ 417c5182f4
+ms: <b1>realFBS (rFBS)</b1> — anda menghantar terus kepada pembeli. Komisen sahaja (kadar &gt;{0} ₽ bagi kategori). Tiada logistik Ozon.
+@@ a30c4fb0b4
+ms: Komisen mengikut jalur harga
+@@ 7b05ee6adb
+ms: Pada FBO, FBO Fresh dan FBS, Ozon menerbitkan tiga kadar untuk kebanyakan jenis produk: <b1>{0}%</b1> apabila harga seunit ≤{1} ₽, <b2>{2}%</b2> untuk {3}–{4} ₽, dan kadar khusus kategori melebihi {5} ₽. realFBS menggunakan satu kadar (biasanya sama dengan kadar FBO/FBS &gt;{6} ₽). Komisen dikenakan pada harga penjual termasuk VAT dan diskaun anda, pada kadar yang berkuat kuasa semasa pesanan dibuat, setelah item dihantar.
+@@ d6854e5019
+ms: Sampel {0} pilihan dimuatkan daripada XLSX rasmi. Buka kalkulator untuk mencari setiap kategori dan jenis produk.
+@@ 63a540bda2
+ms: Contoh pengiraan — kosmetik, {0} {1} ₽, {2} L, Moscow → Moscow
+@@ a0cdcdc062
+ms: Kategori lalai <i1>Красота и гигиена › Косметика для ухода</i1> ({0}% melebihi {1} ₽). Logistik menggunakan pasangan kelompok Moscow daripada jadual {2} Okt {3}; batu terakhir ialah kadar rata {4} ₽.
+@@ dd152f4827
+ms: Komisen Ozon ({0}%)
+@@ dd0b67e468
+ms: Logistik (FBO/FBS)
+@@ 0b5f5afcc0
+ms: Batu terakhir ({0} ₽)
+@@ c7606d1429
+ms: Kos produk
+@@ 071650f30b
+ms: Yuran {0} ₽ · bayaran {1} ₽ · untung {2} ₽ (margin {3}%) selepas kos produk {4} ₽.
+@@ a6d248bc5d
+ms: FBS (item yang sama)
+@@ 1c94818681
+ms: Pemprosesan FBS ({0} ₽)
+@@ bbd68d4cee
+ms: FBS menambah yuran pemprosesan {0} ₽. Logistik dan batu terakhir sama seperti FBO apabila kedua-dua kelompok ialah Moscow.
+@@ abf3802006
+ms: Jalur harga rendah — {0} ₽ seunit
+@@ e0ff3aa8ed
+ms: Pada {0} ₽, jalur {1}% terpakai ({2}–{3} ₽), jadi komisen turun kepada {4} ₽. Logistik juga menggunakan lajur ≤{5} ₽ dalam jadual laluan.
+@@ 310827e240
+ms: Logistik, batu terakhir dan tambahan
+@@ 15252662d2
+ms: <b1>Logistik</b1> — laluan (kelompok asal → kelompok destinasi) × baldi isi padu × jalur harga (≤{0} / &gt;{1} ₽). Tarif ditetapkan selama {2} hari dari permintaan bekalan. Apabila kelompok tidak diketahui, Ozon mengenakan tarif universal (“lalai”) mengikut isi padu.
+@@ f56ae76803
+ms: <b1>Batu terakhir</b1> — {0} ₽ seunit pada FBO/FBS (penghantaran ke titik pengambilan ≤{1} ₽).
+@@ 8333e242ad
+ms: <b1>Bukan standard / berat</b1> — {0}% daripada harga item, maksimum {1} ₽/item (suis dalam kalkulator).
+@@ 34524af577
+ms: <b1>Penyimpanan paksa</b1> — {0} ₽/L/hari (tidak dimodelkan; lihat panduan).
+@@ 68adc61575
+ms: <b1>Tidak dimodelkan di sini:</b1> caj tambahan FBO bukan tempatan ({0}–{1}%), FBO Fresh, FBO PVZ (−{2} mata peratusan sehingga {3} Dis {4}), Fesyen penjual baharu {5}%, motosikal realFBS &gt;{6}k ₽, pemulangan dan penyimpanan selain nota penyimpanan paksa. Semak Seller Edu untuk perkara tersebut.
+@@ a68b2c9afc
+ms: Kalkulator Yuran Wildberries Rusia {0} (FBW / FBS / DBS) | SellerFee
+@@ 468ec075f1
+ms: Kalkulator yuran Wildberries Rusia percuma: КВВ mengikut subjek (FBW/FBS/DBS), logistik {0}+{1} ₽/L × pekali, diskaun kelajuan FBS. PDF dan arahan rasmi, RUB.
+@@ ab2e80fce1
+ms: Kalkulator yuran Wildberries (Rusia)
+@@ 94f54be578
+ms: КВВ peringkat subjek untuk FBW, FBS dan DBS, logistik mengikut isi padu dengan pekali gudang, kemudian bayaran dan margin anda dalam rubel.
+@@ 64f8058c57
+ms: Sampel КВВ
+@@ 37a00fcc63
+ms: Apakah КВВ?
+@@ 11c52bd42c
+ms: <span lang="ru">Комиссия вознаграждения</span> Wildberries — peratusan komisen di peringkat subjek. PDF rasmi menyenaraikan nilai FBW / FBS / DBS berasingan bagi setiap subjek, berkuat kuasa mulai {0} Julai {1}.
+@@ f02f38cd94
+ms: Tarif berperingkat sehingga {0} L, kemudian {1} ₽ + {2} ₽ × liter tambahan, didarab dengan pekali gudang ({3}% untuk gudang WB sejak {4} Ogos {5}). Contoh rasmi: {6} L → {7} ₽, {8} L → {9} ₽ pada {10}%.
+@@ fbe62fe06a
+ms: Adakah diskaun kelajuan FBS terpakai?
+@@ 643bacbf81
+ms: Kommersant ({0} Okt {1}) dan alat penjual melaporkan −{2} mata peratusan untuk penghantaran dalam masa kurang {3} jam dan −{4} mata peratusan kurang {5} jam. Ia tiada dalam PDF КВВ itu sendiri, jadi anggap ia boleh diubah dan sahkan dalam akaun anda.
+@@ bd38f8f05c
+ms: Tiada peratusan acquiring tetap diterbitkan secara awam. Biarkan medan kosong atau masukkan kadar kontrak anda.
+@@ f219ea821c
+ms: <b1>Disahkan {0} Okt {1}.</b1> Komisen (КВВ) daripada PDF Wildberries yang berkuat kuasa mulai <b2>{2} Jul {3}</b2>. Logistik daripada arahan penjual yang dikemas kini <b3>{4} Okt {5}</b3> (tarif asas × pekali gudang, {6}% sejak {7} Ogos {8}). Diskaun penghantaran pantas FBS −{9} / −{10} mata peratusan daripada Kommersant ({11} Okt {12}, sumber sekunder).
+@@ 6800b54543
+ms: Wildberries mengenakan komisen peringkat subjek (КВВ) yang berbeza untuk FBW, FBS dan DBS, serta logistik berdasarkan isi padu untuk FBW/FBS. Acquiring tidak diterbitkan sebagai peratusan awam yang tetap.
+@@ 0cfc4bbbff
+ms: FBW, FBS dan DBS
+@@ 5c33f57093
+ms: <b1>FBW</b1> — stok di gudang WB. Komisen + logistik (tarif asas × pekali gudang).
+@@ f46900e0de
+ms: <b1>FBS</b1> — anda menghantar ke WB. КВВ lebih tinggi daripada FBW bagi kebanyakan subjek; formula logistik sama (pekali mungkin berbeza mengikut gudang — semak kabinet anda). Diskaun komisen penghantaran pantas adalah pilihan.
+@@ 4d93d2770d
+ms: <b1>DBS</b1> — anda menghantar terus kepada pembeli. Komisen sahaja.
+@@ c45a75f3b1
+ms: Sampel komisen (КВВ)
+@@ 8d183dbdce
+ms: Subjek
+@@ 4fc14733aa
+ms: {0} subjek daripada PDF rasmi. Baris alkohol tempahan sahaja tidak disertakan.
+@@ 487c89190e
+ms: Formula logistik
+@@ 8d43e1ab6e
+ms: Untuk isi padu sehingga {0} L, WB menerbitkan langkah tetap ({1} L → {2} ₽ … {3} L → {4} ₽). Melebihi {5} L: <b1>{6} ₽ untuk liter pertama + {7} ₽ bagi setiap liter tambahan</b1>, kemudian × pekali gudang ({8}% untuk gudang WB sejak {9} Ogos {10}). Penghantaran balik menggunakan tarif asas tanpa pekali.
+@@ 92c0fa1681
+ms: {0} ₽ × {1} = <em1>{2} ₽</em1> (contoh pengiraan rasmi)
+@@ bc9246385f
+ms: Contoh pengiraan — kemeja-T, {0} {1} ₽, {2} L
+@@ bc2845c9ac
+ms: Subjek <i1>Одежда › Футболки</i1>: FBW {0}%, FBS {1}%, DBS {2}%.
+@@ 4296710473
+ms: Komisen WB (КВВ) ({0}%)
+@@ 73bc54302e
+ms: Logistik untuk {0} L pada {1}% = {2} ₽. Untung {3} ₽ ({4}%) selepas kos {5} ₽.
+@@ 0254af64d6
+ms: FBS dengan penghantaran &lt;{0} jam (−{1} mata peratusan)
+@@ e66e0b102c
+ms: КВВ menjadi {0} − {1} = {2}% (minimum {3}%). Logistik tidak berubah dalam contoh ini.
+@@ 00c4a1e33b
+ms: <b1>Tidak dimodelkan:</b1> had saiz besar ({0} {1}–{2} {3} ₽, pekali {4}%), logistik balik selain nota, yuran pemulangan ke titik pengambilan ({5} ₽ + {6} ₽/L melebihi {7} L), penyimpanan. Diskaun FBS memetik sumber sekunder — sahkan dalam akaun WB anda.
+@@ 50355845d3
+ms: Kalkulator Yuran Yandex Market {0} (FBY / FBS / DBS) | SellerFee
+@@ a30287d5c8
+ms: Kalkulator yuran Yandex Market percuma: penempatan mengikut kategori, tarif harga rendah {0}%, penghantaran {1}%, batu tengah, pemindahan pembayaran {2}–{3}%. Halaman bantuan rasmi, RUB.
+@@ 3da311d0ea
+ms: Kalkulator yuran Yandex Market
+@@ c804421309
+ms: Penempatan kategori, tarif harga rendah {0}%, penghantaran, batu tengah dan yuran pembayaran — kemudian bayaran dan margin anda dalam rubel.
+@@ ab89d05c4b
+ms: Penempatan
+zh: 展示费
+@@ b20782a9f6
+ms: Harga rendah {0}%
+@@ a7845a7791
+ms: Apakah tarif harga rendah {0}%?
+@@ ce579b8fb9
+ms: Sehingga akhir {0}, item FBY/FBS berharga ≤{1} ₽ dengan isi padu ≤{2} L membayar penempatan {3}% dan tiada yuran penghantaran atau batu tengah. Disahkan oleh contoh pengiraan rasmi ({4} ₽ → penempatan {5} ₽).
+@@ eb87b0ee3f
+ms: Bagaimana batu tengah dikira?
+@@ d890ddbb95
+ms: Liter dibundarkan ke atas: {0} ₽ untuk liter pertama, +{1} ₽ setiap liter sehingga {2} L, kemudian +{3} ₽, maksimum {4} {5} ₽. Contoh rasmi: {6} L → {7} ₽.
+@@ 121e28a362
+ms: Apakah kadar pemindahan pembayaran?
+@@ cd665d2d1f
+ms: Daripada halaman bantuan acquiring: {0}% (setiap {1} minggu), {2}% (setiap {3} minggu), {4}% (mingguan), {5}% (harian), serta penerimaan {6} ₽ bagi setiap SKU berbeza.
+@@ 787ee16369
+ms: Bolehkah saya membayar penempatan dengan mata Yandex Market?
+@@ f17b44d626
+ms: Ya — sehingga {0}% daripada penempatan. Penempatan dipulangkan jika pesanan dipulangkan.
+@@ e5f29b957e
+ms: <b1>Disahkan {0} Okt {1}.</b1> Tarif penempatan daripada bantuan Yandex Market <span lang="ru">«Размещение товаров на витрине»</span> (seperti diterbitkan pada tarikh semakan — halaman itu sendiri tiada cap tarikh berkuat kuasa). Yuran penghantaran, batu tengah, pemprosesan dan pembayaran daripada halaman bantuan FBY / FBS / acquiring.
+@@ 0814d2fa70
+ms: Yandex Market mengenakan penempatan kategori (biasanya sama merentasi model; sesetengah baris berbeza untuk FBY/FBS/Express/DBS), serta penghantaran {0}% (maksimum {1} {2} ₽/item), batu tengah mengikut isi padu, pemprosesan FBS {3} ₽, pemindahan pembayaran {4}–{5}% mengikut jadual bayaran, dan penerimaan {6} ₽ bagi setiap SKU berbeza. Sehingga {7}% daripada penempatan boleh dibayar dengan mata Yandex Market; penempatan dipulangkan apabila barang dipulangkan.
+@@ 2d40264c11
+ms: FBY, FBS dan DBS
+@@ 264a663375
+ms: <b1>FBY</b1> — stok di gudang Yandex Market. Penempatan + penghantaran + batu tengah + yuran pembayaran. Penyimpanan percuma dari {0} Okt hingga {1} Dis {2}.
+@@ db7766b627
+ms: <b1>FBS</b1> — anda menghantar ke Yandex Market. Struktur yang sama serta pemprosesan {0} ₽; diskaun kelajuan pilihan −{1} / −{2} mata peratusan pada penempatan. Yuran lawatan kurier mengikut jumlah pesanan harian tidak dimodelkan.
+@@ acd4d0d889
+ms: <b1>DBS</b1> — anda menghantar sendiri. Penempatan + yuran pembayaran sahaja.
+@@ 82cb840db5
+ms: Sampel penempatan
+@@ 8059ca0803
+ms: {0} pilihan (dua peringkat kategori pertama dikekalkan; peringkat lebih dalam digabungkan apabila kadar sama dengan induk). Julat yang diterbitkan kira-kira {1}–{2}%.
+@@ b61a91191c
+ms: Sehingga akhir {0}, pesanan FBY/FBS dengan harga seunit ≤{1} ₽ dan isi padu ≤{2} L menggunakan <b1>penempatan {3}%</b1> rata dan <b2>sifar</b2> penghantaran serta batu tengah. Contoh rasmi: {4} ₽ / {5} L → penempatan {6} ₽.
+@@ 260a010ef2
+ms: Penempatan ({0}%)
+@@ 9631af52c6
+ms: Penghantaran
+zh: 配送费
+@@ 016a6c8057
+ms: Batu tengah
+zh: 中程物流
+@@ a33d9935cc
+ms: Pemindahan pembayaran ({0}%)
+@@ dc80030672
+ms: Penerimaan pembayaran ({0} ₽)
+@@ 81233f3140
+ms: Contoh pengiraan — penjagaan muka, {0} {1} ₽, {2} L, bayaran mingguan
+@@ e94d3e3902
+ms: Penghantaran ({0}%)
+@@ a4eeb9eae6
+ms: Batu tengah untuk {0} L = {1} ₽. Contoh batu tengah rasmi pada {2} L = {3} ₽ ({4} + {5} × {6}, dalam had {7} {8} ₽).
+@@ 762a211adf
+ms: <b1>Tidak dimodelkan:</b1> lawatan kurier FBS ({0}/{1}/{2}/{3} ₽/hari mengikut jumlah), penyimpanan di luar tempoh percuma, tambahan khusus Express. Halaman penempatan tidak bertarikh — kami melaporkan “seperti diterbitkan pada {4} Okt {5}”.

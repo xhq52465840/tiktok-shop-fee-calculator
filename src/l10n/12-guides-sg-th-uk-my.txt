@@ -1,0 +1,201 @@
+@@ 9e82f7a959
+ms: Pada <b1>{0} September {1}</b1>, TikTok Shop Singapura menggantikan jadual komisen kategorinya dengan satu kadar rata: <b2>{2}%</b2> untuk penjual standard dan <b3>{3}%</b3> untuk penjual BXP, termasuk GST, dengan <b4>had yuran S${4}</b4> bagi elektronik, mainan dan barang koleksi. Panduan ini menunjukkan siapa bayar lebih, siapa bayar kurang, dan kesannya pada pesanan sebenar. Setiap angka dipautkan semula ke <a5>kalkulator yuran TikTok Shop Singapura</a5>.
+ru: <b1>{0} сентября {1}</b1> TikTok Shop в Сингапуре заменил таблицу комиссий по категориям одной единой ставкой: <b2>{2}%</b2> для обычных продавцов и <b3>{3}%</b3> для участников BXP, с GST, и <b4>лимитом сбора S${4}</b4> для электроники, игрушек и коллекционных товаров. В гайде — кто платит больше, кто меньше и как это сказывается на реальных заказах. Каждая цифра ведёт в <a5>калькулятор сборов TikTok Shop Сингапур</a5>.
+@@ 7e4b91991b
+ms: Apa yang berubah
+ru: Что изменилось
+@@ 2dc69d5029
+ms: Komisen standard
+ru: Стандартная комиссия
+@@ 530299c66d
+ms: {0}% ({1}% dalam {2} kategori elektronik &amp; perkakas)
+ru: {0}% ({1}% в {2} категориях электроники и бытовой техники)
+@@ 51fd22255b
+ms: {0}% dalam kesemua {1} kategori
+ru: {0}% во всех {1} категориях
+@@ fdc88b9e8e
+ms: Komisen BXP
+ru: Комиссия BXP
+@@ 3d4b316e02
+ms: {0}% ({1}% dalam kumpulan yang sama)
+ru: {0}% ({1}% в той же группе)
+@@ b38fd978df
+ms: Had
+ru: Лимит
+@@ 4dada52a0a
+ms: Yuran transaksi {0}% dan yuran perkhidmatan BXP ({1}% / {2}%, had S${3} seunit) tidak berubah.
+ru: Транзакционный сбор {0}% и сервисный сбор BXP ({1}% / {2}%, не более S${3} за единицу) не изменились.
+@@ a2a54c4a59
+ms: Produk harian membayar lebih
+ru: Повседневные товары платят больше
+@@ 4446d6c17f
+ms: {0} kategori berubah daripada {1}% kepada {2}%, kenaikan {3} mata untuk penjual standard. Serum S${4} (kos S${5}) kini membayar komisen S${6} dan bukannya S${7}; untung turun daripada S${8} kepada S${9}. Penjual BXP dalam kategori ini tidak melihat perubahan pada {10}%.
+ru: В {0} категориях ставка выросла с {1}% до {2}% — на {3} п. п. для обычных продавцов. Сыворотка за S${4} (себестоимость S${5}) теперь платит комиссию S${6} вместо S${7}; прибыль снижается с S${8} до S${9}. Для участников BXP в этих категориях ничего не изменилось — {10}%.
+@@ cfc6459f0f
+ms: Elektronik: kadar lebih tinggi, had lebih rendah
+ru: Электроника: ставка выше, лимит ниже
+@@ 18586c42b8
+ms: {0} kategori yang membayar {1}% melonjak {2} mata, tetapi kebanyakannya kini dihadkan pada S${3}. Kesan mana yang menang bergantung pada harga:
+ru: В {0} категориях, где было {1}%, ставка выросла на {2} п. п., но у большинства теперь лимит S${3}. Что перевесит, зависит от цены:
+@@ 342b9bd6bc
+ms: Tablet S${0} (sebelum ini {1}%, tanpa had): komisen S${2} → S${3}, untung S${4} → S${5}.
+ru: Планшет за S${0} (раньше {1}%, без лимита): комиссия S${2} → S${3}, прибыль S${4} → S${5}.
+@@ 10ff995ba9
+ms: Telefon S${0} (sebelum ini {1}%, had S${2}): komisen S${3} → S${4}, untung S${5} → S${6}.
+ru: Телефон за S${0} (раньше {1}%, лимит S${2}): комиссия S${3} → S${4}, прибыль S${5} → S${6}.
+@@ 46a23d7887
+ms: Pada {0}%, had mula berkesan dari kira-kira S${1}, jadi elektronik premium selalunya lebih murah untuk dijual berbanding sebelum ini.
+ru: При ставке {0}% лимит срабатывает примерно от S${1}, поэтому продавать премиальную электронику часто стало дешевле, чем раньше.
+@@ 3bd4ec4e65
+ms: Adakah BXP masih berbaloi?
+ru: Стоит ли BXP того?
+@@ 157a5b6a9a
+ms: BXP menurunkan komisen sebanyak {0} mata tetapi menambah yuran perkhidmatan {1}% atau {2}% pada setiap pesanan yang selesai (+{3} semasa kempen). Bagi setiap pesanan, BXP lebih mahal dalam hampir setiap kategori, jadi ia hanya berbaloi jika baucar membawa jualan tambahan. Hidupkan dan matikan BXP dalam kalkulator dengan harga anda sendiri untuk melihat jurangnya.
+ru: BXP снижает комиссию на {0} п. п., но добавляет сервисный сбор {1}% или {2}% с каждого выполненного заказа (+{3} во время акций). В расчёте на заказ BXP дороже почти во всех категориях, так что он окупается, только если ваучеры приносят дополнительные продажи. Переключите BXP в калькуляторе со своей ценой и посмотрите на разницу.
+@@ ed355255c2
+ms: Apa yang perlu dilakukan sekarang
+ru: Что делать сейчас
+@@ ed762a10ac
+ms: Semak semula harga item berharga rendah dalam kecantikan, fesyen dan makanan, di mana keseluruhan kenaikan {0} mata berlaku.
+ru: Пересмотрите цены на недорогие товары красоты, моды и еды — на них приходится всё повышение на {0} п. п.
+@@ 416da1de08
+ms: Bagi elektronik melebihi S${0}, had menjadikan bundle dan model premium relatif lebih murah untuk dijual.
+ru: Для электроники дороже S${0} лимит делает наборы и премиальные модели относительно выгоднее.
+@@ 8d43399db3
+ms: Penjual rentas sempadan: notis Global Seller TikTok menggunakan kadar berbeza — semak Seller Center anda sendiri.
+ru: Трансграничные продавцы: в уведомлении TikTok для Global Seller указаны другие ставки — проверьте свой Seller Center.
+@@ 7e578697a4
+ms: TikTok Shop Thailand kini mengambil empat yuran berasingan daripada setiap pesanan yang dihantar, dan dua daripadanya berubah pada pertengahan {0}. Panduan ini membentangkan struktur yuran penuh, apa yang berubah pada {1} Mei dan {2} Julai, dan kosnya pada pesanan sebenar, menggunakan <a1>kalkulator yuran TikTok Shop Thailand</a1>.
+ru: Теперь TikTok Shop в Таиланде удерживает с каждого доставленного заказа четыре отдельных сбора, и два из них изменились в середине {0} года. В гайде — полная структура сборов, что изменилось {1} мая и {2} июля и во что это обходится на реальных заказах, с расчётами в <a1>калькуляторе сборов TikTok Shop Таиланд</a1>.
+@@ a9a013ee44
+ms: Empat yuran
+ru: Четыре сбора
+@@ c6e89c9caf
+ms: Yuran
+ru: Сбор
+@@ 3bfb7da4f7
+ms: Kadar (termasuk cukai)
+ru: Ставка (с налогом)
+@@ 077fe9c54e
+ms: Asas
+ru: База
+@@ 95c159f984
+ms: Dipulangkan apabila barang dipulangkan?
+ru: Возвращается при возврате?
+@@ 1e265fc611
+ms: Yuran Komisen Platform
+ru: Комиссия платформы
+@@ 5068e363f9
+ms: Mengikut kategori: Marketplace kebanyakannya {0}%, Mall kebanyakannya {1}% (mulai {2} Jul {3})
+ru: По категориям: Marketplace в основном {0}%, Mall в основном {1}% (с {2} июля {3})
+@@ f3ed39dbd7
+ms: Harga item − diskaun penjual
+ru: Цена товара − скидка продавца
+@@ 5397e0583f
+ms: Ya
+ru: Да
+@@ 78589ba6dc
+ms: Yuran Transaksi
+ru: Транзакционный сбор
+@@ e97201576b
+ms: Bayaran pelanggan + diskaun platform
+ru: Оплата покупателя + скидка платформы
+@@ 349471999d
+ms: Tidak, selepas penghantaran
+ru: Нет, после доставки
+@@ d97c215a5e
+ms: {0}% Elektronik / {1}% lain-lain, maksimum ฿{2} seunit
+ru: {0}% электроника / {1}% остальное, не более ฿{2} за единицу
+@@ 816c52fd2b
+ms: Tidak
+ru: Нет
+@@ 0f1b2959b0
+ms: ฿{0} setiap pesanan
+ru: ฿{0} с заказа
+@@ 79c9e13ab7
+ms: Rata
+ru: Фиксированный
+@@ cb05996932
+ms: Kenaikan komisen {0} Julai
+ru: Повышение комиссии с {0} июля
+@@ e63c507ae5
+ms: Perubahan Marketplace paling biasa ialah <b1>+{0} mata</b1> ({1} subkategori, kebanyakannya {2}% → {3}%); bagi Mall, perubahan paling biasa ialah +{4} mata ({5} subkategori, kebanyakannya {6}% → {7}%). Pada serum ฿{8} (kos ฿{9}) yang dijual di Marketplace, jumlah yuran berubah daripada ฿{10} kepada ฿{11} dan untung daripada ฿{12} kepada ฿{13}.
+ru: Самое частое изменение в Marketplace — <b1>+{0} п. п.</b1> ({1} подкатегорий, в основном {2}% → {3}%); в Mall — +{4} п. п. ({5} подкатегорий, в основном {6}% → {7}%). Для сыворотки за ฿{8} (себестоимость ฿{9}) в Marketplace сборы растут с ฿{10} до ฿{11}, а прибыль меняется с ฿{12} до ฿{13}.
+@@ a5c537aa16
+ms: Yuran Pertumbuhan Perdagangan
+ru: Сбор за развитие торговли
+@@ 99f34af9f8
+ms: Sejak {0} Mei {1}, CGF ialah {2}% untuk Elektronik dan {3}% untuk semua yang lain (naik daripada {4}% / {5}%), dengan had ฿{6} seunit. Ia dikecualikan bagi {7} hari pertama penjual baharu (sehingga ฿{8} bagi penjual yang menyertai selepas {9} Julai {10}), dikurangkan {11} mata bagi penjual Marketplace dengan GMV bawah ฿{12} dalam {13} hari, dan tidak dikenakan kepada penjual yang menghantar hanya dengan armada sendiri. Bagi kebanyakan penjual, ia kini yuran kedua terbesar selepas komisen.
+ru: С {0} мая {1} CGF составляет {2}% для электроники и {3}% для всего остального (было {4}% / {5}%), не более ฿{6} за единицу. Новые продавцы не платят его первые {7} дней (для подключившихся после {9} июля {10} — в пределах ฿{8}), продавцы Marketplace с GMV меньше ฿{12} за {13} дней получают снижение на {11} п. п., а с продавцов, которые доставляют только своим транспортом, он не взимается. Для большинства продавцов это теперь второй по величине сбор после комиссии.
+@@ 15edafd85a
+ms: Serum yang sama di Mall membayar komisen {0}% (yuran ฿{1}). Dalam Mall Combo Package — Mall Live Specials serta Brands Crazy Deals — ia membayar {2}% (yuran ฿{3}). Perbezaannya ฿{4} setiap pesanan, sebelum sebarang kos kedua-dua program.
+ru: Та же сыворотка в Mall платит комиссию {0}% (сборы ฿{1}). В Mall Combo Package — Mall Live Specials плюс Brands Crazy Deals — {2}% (сборы ฿{3}). Разница — ฿{4} с заказа, без учёта затрат на обе программы.
+@@ 1b0bd5b1e0
+ms: Tetapkan harga dengan keempat-empat yuran: kira-kira {0}% daripada harga bagi item Marketplace bukan Elektronik yang biasa, ditambah ฿{1}.
+ru: Закладывайте в цену все четыре сбора: около {0}% цены для обычного товара Marketplace не из электроники плюс ฿{1}.
+@@ 8f71e8c63a
+ms: Jika anda berbelanja untuk GMV Max, semak sama ada anda melepasi ambang {0}% daripada hasil untuk diskaun {1} mata.
+ru: Если вы тратите на GMV Max, проверьте, преодолеваете ли порог {0}% выручки для снижения на {1} п. п.
+@@ 67a6e588ba
+ms: Ingat bahawa pemulangan tidak memulangkan yuran transaksi, CGF atau yuran infrastruktur.
+ru: Помните: при возвратах транзакционный сбор, CGF и инфраструктурный сбор не возмещаются.
+@@ b96064609f
+ms: Yuran Etsy untuk penjual UK berubah dua kali dengan cara yang terlepas oleh kebanyakan kalkulator yuran: <b1>yuran operasi kawal selia</b1> naik kepada <b2>{0}%</b2> pada {1} Jun {2}, dan Etsy menambah <b3>VAT</b3> pada yurannya melainkan anda telah memberikan nombor VAT. Berikut senarai penuh dan kosnya, dengan <a4>kalkulator yuran Etsy UK</a4>.
+ru: Сборы Etsy для продавцов из Великобритании изменились так, что большинство калькуляторов этого не учитывают: <b1>регуляторный операционный сбор</b1> {1} июня {2} вырос до <b2>{0}%</b2>, а на свои сборы Etsy начисляет <b3>VAT</b3>, если вы не указали номер VAT. Ниже — полный список и во что это обходится, с расчётами в <a4>калькуляторе сборов Etsy UK</a4>.
+@@ 0eedd0181f
+ms: Setiap yuran Etsy untuk kedai UK
+ru: Все сборы Etsy для британского магазина
+@@ 6c020dfefa
+ms: Yuran penyenaraian US${0} (kira-kira £{1} pada kadar ECB {2} Okt {3}).
+ru: Плата за размещение US${0} (около £{1} по курсу ЕЦБ на {2} окт. {3}).
+@@ eea826ca2b
+ms: Yuran transaksi {0}% daripada harga item + caj pos + bungkusan hadiah.
+ru: Транзакционный сбор {0}% от цены товара + доставки + подарочной упаковки.
+@@ afc06dfcbb
+ms: Pemprosesan pembayaran {0}% + £{1} setiap pesanan (akaun bank UK).
+ru: Обработка платежа {0}% + £{1} за заказ (британский банковский счёт).
+@@ 761f880916
+ms: Yuran operasi kawal selia {0}% daripada jumlah pesanan ({1}% sehingga {2} Jun {3}).
+ru: Регуляторный операционный сбор {0}% от суммы заказа ({1}% до {2} июня {3}).
+@@ e22aaef240
+ms: VAT pada {0}% atas yuran tersebut jika anda belum menambah nombor VAT.
+ru: VAT {0}% на эти сборы, если вы не добавили номер VAT.
+@@ 9f14b29a8e
+ms: Offsite Ads {0}% atau {1}% pada pesanan yang berkaitan, maksimum US${2} setiap pesanan.
+ru: Offsite Ads — {0}% или {1}% с привлечённых заказов, не более US${2} за заказ.
+@@ f3e378f4f6
+ms: Siapa yang membayar VAT atas yuran Etsy
+ru: Кто платит VAT на сборы Etsy
+@@ 97d35e57ba
+ms: Etsy mengenakan VAT atas yuran penjual bagi penjual UK yang belum menghantar nombor VAT, dan atas yuran pemprosesan Etsy Payments jika diperlukan. Tambah nombor VAT yang sah dalam akaun anda dan Etsy berhenti mengenakannya; invois bulanan anda kemudian menyatakan tiada VAT dikenakan. Bagi penjual di bawah ambang VAT, VAT ini hanyalah kos — pada pesanan £{0}, ia menambah £{1}.
+ru: Etsy начисляет VAT на сборы британским продавцам, которые не указали номер VAT, а при необходимости — и на сборы за обработку платежей Etsy Payments. Добавьте действующий номер VAT в аккаунт — и Etsy перестанет его начислять, а в ежемесячном счёте будет указано, что VAT не взимался. Для продавца ниже порога регистрации по VAT это просто расход: на заказ в £{0} он добавляет £{1}.
+@@ 6030a4d707
+ms: Kosnya pada pesanan sebenar
+ru: Во что это обходится на реальных заказах
+@@ 1d75774c0f
+ms: Pesanan
+ru: Заказ
+@@ 2a37d53456
+ms: Yuran Etsy
+ru: Сборы Etsy
+@@ 5f92a068bc
+ms: % daripada pesanan
+ru: % от заказа
+@@ c8b7c2edd7
+ms: £{0} + caj pos
+ru: £{0} + доставка
+@@ 034e375e3e
+ms: Tidak berdaftar VAT, tiada Offsite Ads; kos produk £{0} / £{1} / £{2} dan label pos £{3} / £{4} / £{5} berbanding £{6} / £{7} / £{8} yang dikenakan. Pesanan lebih kecil kehilangan bahagian lebih besar kepada yuran pemprosesan tetap £{9} dan yuran penyenaraian.
+ru: Без регистрации по VAT, без Offsite Ads; себестоимость £{0} / £{1} / £{2}, почтовые этикетки £{3} / £{4} / £{5} при доставке для покупателя £{6} / £{7} / £{8}. Маленькие заказы теряют большую долю на фиксированные £{9} за обработку платежа и плату за размещение.
+@@ 95085b7ccd
+ms: Cara menetapkan harga untuknya
+ru: Как заложить это в цену
+@@ 2839657130
+ms: Peruntukkan kira-kira {0}–{1}% daripada jumlah pesanan untuk yuran Etsy, lebih banyak bagi item murah.
+ru: Закладывайте на сборы Etsy примерно {0}–{1}% от суммы заказа, на дешёвые товары — больше.
+@@ 66072981ab
+ms: Masukkan Offsite Ads ke dalam harga produk terlaris: yuran {0}% serta VAT atasnya boleh memotong separuh margin pesanan tersebut.
+ru: Закладывайте Offsite Ads в цену бестселлеров: сбор {0}% плюс VAT на него может вдвое урезать маржу такого заказа.
+@@ 2cacd65db1
+ms: Jika anda menjadi berdaftar VAT, tambah nombor VAT anda ke Etsy dengan segera supaya yuran tidak lagi membawa VAT.
+ru: Если вы зарегистрировались по VAT, сразу добавьте номер на Etsy, чтобы на сборы перестал начисляться VAT.
