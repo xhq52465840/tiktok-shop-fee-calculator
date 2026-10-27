@@ -211,7 +211,8 @@ def math_checks(report, pg, base, n):
             sel = rnd.randrange(len(opts))
             inp = dict(price=round(rnd.choice([rnd.uniform(1, 60), rnd.uniform(60, 5000)]), 2), qty=rnd.randint(1, 3),
                        sellerDisc=rnd.choice([0, round(rnd.uniform(0, 5), 2)]), buyerShip=rnd.choice([0, round(rnd.uniform(0, 9), 2)]),
-                       cost=round(rnd.uniform(0, 20), 2), vol=round(rnd.uniform(0.1, 30), 3), coef=rnd.choice([100, 170]), tax=rnd.choice([0, 1.5]))
+                       cost=round(rnd.uniform(0, 20), 2), vol=round(rnd.uniform(0.1, 30), 3), coef=rnd.choice([100, 170]), tax=rnd.choice([0, 1.5]),
+                       wt=rnd.choice([0, round(rnd.uniform(0.05, 0.99), 2), round(rnd.uniform(1, 160), 2)]), dimwt=rnd.choice([0, round(rnd.uniform(0, 60), 2)]))
             store = rnd.choice(m['store'])[0] if m.get('store') else None
             period = rnd.choice(m['periods'])[0] if m.get('periods') else 'new'
             tg = {g['id']: rnd.random() < .5 for g in m.get('toggles', [])}

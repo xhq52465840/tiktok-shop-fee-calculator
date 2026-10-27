@@ -75,6 +75,7 @@ def calc_page(mid, lang):
     if m['platform'] == 'tiktok-shop': items.append(('TikTok Shop', f'{lang}/tiktok-shop/'))
     if m['platform'] == 'shopee': items.append(('Shopee', f'{lang}/#calculators'))
     if m['platform'] == 'lazada': items.append(('Lazada', f'{lang}/#calculators'))
+    if m['platform'] == 'walmart': items.append(('Walmart', f'{lang}/#calculators'))
     if m['platform'] == 'etsy' and m['market'] != 'GLOBAL': items.append(('Etsy', f'{lang}/etsy/'))
     if m['market'] == 'RU': items.append((tr(lang, 'nav_russia'), f'{lang}/russia/'))
     items.append((d['h1'], None))
@@ -188,6 +189,9 @@ C_SUM = {
  'shopee-my': 'Marketplace & Mall commission from 14 Aug 2026 (SST-incl.), 3.78% TX, RM0.54 PSF.',
  'shopee-sg': 'GST-incl. Mall/non-Mall commission from 28 Aug 2026, 3.27% TX, PXP + caps.',
  'lazada-my': 'Marketplace & LazMall cluster commission from 14 Aug 2026 (SST-incl. floors).',
+ 'walmart-us': 'Referral fees by category with price bands and tiers, 2026 New-Seller Savings (20–40% off), WFS fees by weight.',
+ 'shopee-ph': 'Marketplace & Mall commission, 2.24% TX, Platform Shipping Fee (₱100 cap), ₱5 OPF, 1–1.5% growth support fee.',
+ 'shopee-th': 'Non-Mall & Mall commission for 1,400+ categories from 4 Aug 2026, 3.21% TX, ฿1.07 per order.',
 }
 C_SUM_RU = {
  'ozon': 'Вознаграждение FBO/FBS/realFBS по категориям и ценам, логистика с 30 окт. 2026, последняя миля 25 ₽.',
@@ -209,6 +213,9 @@ C_SUM_ZH = {
  'shopee-my': 'Marketplace / Mall 佣金自 2026年8月14日（含 SST），交易手续费 3.78%，平台支持费 RM0.54。',
  'shopee-sg': '含 GST 的 Mall/非 Mall 佣金自 2026年8月28日，交易手续费 3.27%，PXP 与封顶。',
  'lazada-my': 'Marketplace 与 LazMall 集群佣金自 2026年8月14日（含 SST 下限）。',
+ 'walmart-us': '按类目的推荐费（含价格档与分段费率）、2026 新卖家优惠（减 20–40%）、按重量计的 WFS 费用。',
+ 'shopee-ph': 'Marketplace / Mall 佣金，交易手续费 2.24%，平台运费（每件封顶 ₱100），₱5 订单处理费，1–1.5% 卖家成长支持费。',
+ 'shopee-th': '2026年8月4日起 1,400+ 个类目的非 Mall / Mall 佣金，交易手续费 3.21%，每单 ฿1.07。',
 }
 
 
@@ -246,11 +253,12 @@ def home(lang='en'):
         if p == 'TikTok Shop':
             tt += f'<div class="mrow off"><span class="flag" style="font-size:18px">{f}</span><span class="nm">{esc(mk)}</span>{badge("Coming soon","soon")}</div>'
     ru = ''.join(f'<a class="mrow" href="{MARKETS[k]["slug"]}/"><span class="flag" style="font-size:18px">{MARKETS[k]["flag"]}</span><span class="nm">{esc(MARKETS[k]["platformName"])}</span><span class="r">Verified {VDATE["en"]}</span>{badge("Live","live")}</a>' for k in ('ozon','wildberries','yandex-market'))
-    others = [('etsy', True), ('shopee', True), ('lazada', True), ('amazon', False), ('ebay', False)]
+    others = [('walmart', True), ('etsy', True), ('shopee', True), ('lazada', True), ('amazon', False), ('ebay', False)]
     ohtml = ''
     live_map = {
       'etsy': [('etsy', 'Etsy'), ('etsy-uk', 'Etsy UK')],
-      'shopee': [('shopee-my', 'Shopee Malaysia'), ('shopee-sg', 'Shopee Singapore')],
+      'walmart': [('walmart-us', 'Walmart Marketplace US')],
+      'shopee': [('shopee-my', 'Shopee Malaysia'), ('shopee-sg', 'Shopee Singapore'), ('shopee-ph', 'Shopee Philippines'), ('shopee-th', 'Shopee Thailand')],
       'lazada': [('lazada-my', 'Lazada Malaysia')],
     }
     for name, live in others:
@@ -280,11 +288,14 @@ def home(lang='en'):
      ('🇲🇾', 'Shopee MY', 'Local seller fees · Commission 14 Aug 2026', 'Updated 31 Jul / 14 Aug 2026', '/en/shopee/malaysia/#sources'),
      ('🇸🇬', 'Shopee SG', 'Commission, Service & Transaction Fees', 'Updated 19 Oct 2026', '/en/shopee/singapore/#sources'),
      ('🇲🇾', 'Lazada MY', 'MP & LazMall commission 14 Aug 2026', 'Cluster ranges (SST-incl.)', '/en/lazada/malaysia/#sources'),
+     ('🇺🇸', 'Walmart US', 'Referral fee schedule · WFS fees · New-Seller Savings', 'Updated 9 Mar / 27 May 2026', '/en/walmart/united-states/#sources'),
+     ('🇵🇭', 'Shopee PH', 'Seller Fees · Commission tables · Growth Support Fee', 'Updated 22 Oct 2026', '/en/shopee/philippines/#sources'),
+     ('🇹🇭', 'Shopee TH', 'Fee Policy · Sale Transaction Fee from 4 Aug 2026', 'Help Centre article 77254', '/en/shopee/thailand/#sources'),
     ]
     srows = ''.join(f'<tr><td><span class="flag">{f}</span> <b>{esc(m)}</b></td><td><a href="{u}"><span lang="en">{esc(d)}</span> {ic("ext",13)}</a><span class="sub">{esc(note)}</span></td><td>{badge("Checked "+VDATE["en"],"verified","shield")}</td></tr>' for f,m,d,note,u in srcs)
     guides = [g for g in sf_site.GUIDES_ALL if g.get('lang') == lang][:6]
     body = f'''<section class="hero"><div class="wrap">
-<div><div class="announce">{badge("New","new")}<span>TikTok Shop Singapore &amp; Thailand + Etsy UK live · <a href="tiktok-shop/singapore/">Open Singapore {ic("arrow",13)}</a></span></div>
+<div><div class="announce">{badge("New","new")}<span>Walmart US + Shopee Philippines &amp; Thailand live · <a href="walmart/united-states/">Open Walmart {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">Know exactly what every marketplace takes from your sale.</h1>
 <p class="lead">SellerFee turns official marketplace rate cards into fast calculators. Pick your platform, enter a price, and see every fee, your payout and your real margin.</p>
 <div class="ctas"><a class="btn btn-primary btn-lg" href="tiktok-shop/malaysia/">{ic("calc",16)} TikTok Shop Malaysia</a>
@@ -446,6 +457,10 @@ def rate_changes(lang='en'):
      ('End of 2026', 'Yandex Market', '42% low-price tariff', '≤300 ₽ and ≤5 L on FBY/FBS', 'en/yandex-market/'),
      ('7 Jul 2026', 'Wildberries', 'КВВ table', 'Subject commission PDF currently in force', 'en/wildberries/'),
      ('28 Aug 2026', 'Ozon', 'Category commission XLSX', 'Price-band rates currently loaded', 'en/ozon/'),
+     ('4 Aug 2026', 'Shopee TH', 'Sale Transaction Fee (commission)', 'New Non-Mall and Mall tables by category, VAT-inclusive', 'en/shopee/thailand/'),
+     ('22 Oct 2026', 'Shopee PH', 'Seller Growth Support Fee', 'Category list updated: 1.00% or 1.50% of the item price', 'en/shopee/philippines/'),
+     ('2 Feb 2026 – 31 Jan 2027', 'Walmart US', 'New-Seller Savings 2026', '20% / 30% / 40% off referral fees by GMV tier, up to $72,000', 'en/walmart/united-states/'),
+     ('30 Jun 2026', 'Walmart US', 'WFS long-term storage', '$2.25 per cu ft for 366–450 days, $7.50 over 450 days', 'en/walmart/united-states/'),
     ]
     trs = ''.join(f'<tr><td class="nowrap">{esc(d)}</td><td><b>{esc(p)}</b></td><td>{esc(w)}</td><td>{esc(n)}</td><td><a href="../{u.split("/",1)[1]}">Calculator {ic("arrow",13)}</a></td></tr>' for d,p,w,n,u in rows)
     body = f'''<div class="phead"><div class="wrap"><!--CRUMBS-->
@@ -457,20 +472,20 @@ def rate_changes(lang='en'):
 <p class="muted" style="margin-top:16px">Last register check: {VFULL["en"]}. Found a change we missed? <a href="{issue_url("Rate change: ", "Platform:\nEffective date:\nLink to official source:")}">Open an issue</a>.</p></div></section>'''
     body = LB(lang, body).replace('<!--CRUMBS-->', ch)
     w(path, page(path, lang, LZ(lang, 'Marketplace Rate Changes (2026) | SellerFee'),
-                 LZ(lang, 'Dated marketplace fee changes for TikTok Shop, Etsy, Ozon, Wildberries and Yandex Market, linked to the calculators that use them.'),
+                 LZ(lang, 'Dated marketplace fee changes for TikTok Shop, Shopee, Walmart, Etsy, Ozon, Wildberries and Yandex Market, linked to the calculators that use them.'),
                  body, [cld], alt=ALT('rate-changes/')))
 
 def static_pages(lang='en'):
     about = f'''
-<p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (Malaysia, Singapore, Thailand, the Philippines, the US and the UK), Shopee (Malaysia, Singapore), Lazada Malaysia, Etsy (global and UK), and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
+<p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (Malaysia, Singapore, Thailand, the Philippines, the US and the UK), Shopee (Malaysia, Singapore, the Philippines, Thailand), Lazada Malaysia, Walmart Marketplace (US), Etsy (global and UK), and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
 <h2 id="how-we-source-rates">How we source rates</h2>
-<p>Every rate comes from the platform’s own seller help — TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Etsy Help, Ozon Seller Edu, Wildberries instructions and КВВ PDF, Yandex Market help. Each calculator links its sources and shows the date we last checked them. When a platform publishes a rate but not the formula, we say so and make the rate editable. We don’t publish a calculator until rates can be verified from an official source.</p>
+<p>Every rate comes from the platform’s own seller help — TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Walmart Marketplace Learn, Etsy Help, Ozon Seller Edu, Wildberries instructions and КВВ PDF, Yandex Market help. Each calculator links its sources and shows the date we last checked them. When a platform publishes a rate but not the formula, we say so and make the rate editable. We don’t publish a calculator until rates can be verified from an official source.</p>
 <h2>How we keep them current</h2>
 <p>We re-check source pages regularly and whenever a platform announces a change. When fees change, we keep old rates alongside new ones where the platform still publishes both, and we note the effective date on <a href="../rate-changes/">Rate changes</a>.</p>
 <h2>How the calculators work</h2>
 <p>The calculators run entirely in your browser. Nothing you type is sent to us. Results are estimates based on published rates; your account may have waivers, program fees or promotions that change the numbers, so your seller cabinet is always the final word.</p>
 <h2>Independence</h2>
-<p>SellerFee is not affiliated with TikTok, Etsy, Ozon, Wildberries, Yandex or any other marketplace. We don’t take listing fees or referral kickbacks for calculator results.</p>
+<p>SellerFee is not affiliated with TikTok, Shopee, Lazada, Walmart, Etsy, Ozon, Wildberries, Yandex or any other marketplace. We don’t take listing fees or referral kickbacks for calculator results.</p>
 <p>Found a wrong rate? <a href="{issue_url("Wrong rate: ", "Page:\nWhich fee:\nOfficial source:")}">Open a GitHub issue</a> with the page and the official source.</p>
 '''
     P = {
@@ -495,7 +510,7 @@ def static_pages(lang='en'):
 <h2>Limitation of liability</h2>
 <p>To the extent permitted by law, SellerFee is not liable for any loss arising from your use of, or reliance on, the site or its results.</p>
 <h2>Trademarks</h2>
-<p>TikTok, TikTok Shop, Etsy, Shopee, Lazada, Amazon, eBay, Ozon, Wildberries and Yandex Market are trademarks of their respective owners. SellerFee is independent and not affiliated with or endorsed by them.</p>
+<p>TikTok, TikTok Shop, Etsy, Shopee, Lazada, Walmart, Amazon, eBay, Ozon, Wildberries and Yandex Market are trademarks of their respective owners. SellerFee is independent and not affiliated with or endorsed by them.</p>
 <h2>Acceptable use</h2>
 <p>You may use the calculators freely for your own business. Please don’t scrape the site at a rate that disrupts it or republish our content as your own.</p>
 <h2>Changes</h2>

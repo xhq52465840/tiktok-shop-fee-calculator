@@ -1,0 +1,1091 @@
+[
+ {
+  "g": "Audio",
+  "n": "Audio",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Cameras & Drones",
+  "n": "Cameras",
+  "r": {
+   "mp": 8.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Cameras & Drones",
+  "n": "Drones",
+  "r": {
+   "mp": 8.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Cameras & Drones",
+  "n": "Lenses",
+  "r": {
+   "mp": 8.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Cameras & Drones",
+  "n": "Security Cameras & Systems",
+  "r": {
+   "mp": 8.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Cameras & Drones",
+  "n": "Camera Accessories",
+  "r": {
+   "mp": 8.5,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Cameras & Drones",
+  "n": "Camera Care",
+  "r": {
+   "mp": 8.5,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Cameras & Drones",
+  "n": "Drone Accessories",
+  "r": {
+   "mp": 8.5,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Cameras & Drones",
+  "n": "Lens Accessories",
+  "r": {
+   "mp": 8.5,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Cameras & Drones",
+  "n": "Others",
+  "r": {
+   "mp": 8.5,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Desktop & Laptop Components",
+  "r": {
+   "mp": 9.0,
+   "mall": 6.62,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Desktop Computers",
+  "r": {
+   "mp": 9.0,
+   "mall": 6.62,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Laptops",
+  "r": {
+   "mp": 9.0,
+   "mall": 6.62,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Data Storage",
+  "r": {
+   "mp": 9.0,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Keyboards & Mice",
+  "r": {
+   "mp": 9.0,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Monitors",
+  "r": {
+   "mp": 9.0,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Network Components",
+  "r": {
+   "mp": 9.0,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Office Equipment",
+  "r": {
+   "mp": 9.0,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Peripherals & Accessories",
+  "r": {
+   "mp": 9.0,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Printers & Scanners",
+  "r": {
+   "mp": 9.0,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Softwares",
+  "r": {
+   "mp": 9.0,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Computers & Accessories",
+  "n": "Others",
+  "r": {
+   "mp": 9.0,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Gaming & Consoles",
+  "n": "Gaming & Consoles",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "Batteries",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "E-Cigarettes",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "Large Household Appliances",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "Projectors & Accessories",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "Remote Controls",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "Small Household Appliances",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "TVs & Accessories",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "Electrical Circuitry & Parts",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "Kitchen Appliances",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Home Appliances",
+  "n": "Others",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mobile & Gadgets",
+  "n": "Mobile Phones",
+  "r": {
+   "mp": 8.5,
+   "mall": 6.12,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mobile & Gadgets",
+  "n": "Tablets",
+  "r": {
+   "mp": 8.5,
+   "mall": 6.12,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mobile & Gadgets",
+  "n": "Wearable Devices",
+  "r": {
+   "mp": 8.5,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mobile & Gadgets",
+  "n": "Accessories",
+  "r": {
+   "mp": 9.0,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mobile & Gadgets",
+  "n": "Sim Cards",
+  "r": {
+   "mp": 9.0,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mobile & Gadgets",
+  "n": "Walkie Talkies",
+  "r": {
+   "mp": 9.0,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mobile & Gadgets",
+  "n": "Others",
+  "r": {
+   "mp": 9.0,
+   "mall": 9.36,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Beverages",
+  "r": {
+   "mp": 9.5,
+   "mall": 7.72,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Cooking Essentials",
+  "r": {
+   "mp": 9.5,
+   "mall": 7.72,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Dairy & Eggs",
+  "r": {
+   "mp": 9.5,
+   "mall": 7.72,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Food Staples",
+  "r": {
+   "mp": 9.5,
+   "mall": 7.72,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Alcoholic Beverages",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.84,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Bakery",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.84,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Baking Needs",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.84,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Breakfast Cereals & Spread",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.84,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Convenience / Ready",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.84,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Fresh & Frozen Food",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.84,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Gift Set & Hampers",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.84,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Snacks",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.84,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Food & Beverages",
+  "n": "Others",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.84,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Bath & Body Care",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.12,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Diapering & Potty",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.12,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Maternity Healthcare",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.12,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Milk Formula & Baby Food",
+  "r": {
+   "mp": 9.5,
+   "mall": 8.12,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Baby Healthcare",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Baby Safety",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Baby Travel Essentials",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Feeding Essentials",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Gift Sets & Packages",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Maternity Accessories",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Nursery",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Toys",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Mom & Baby",
+  "n": "Others",
+  "r": {
+   "mp": 9.5,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Beauty",
+  "n": "Beauty",
+  "r": {
+   "mp": 10.0,
+   "mall": 10.36,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Health",
+  "n": "Medical Supplies",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.24,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Health",
+  "n": "Personal Care",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.24,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Health",
+  "n": "Food Supplement",
+  "r": {
+   "mp": 10.0,
+   "mall": 10.36,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Health",
+  "n": "Sexual Wellness",
+  "r": {
+   "mp": 10.0,
+   "mall": 10.36,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Health",
+  "n": "Others",
+  "r": {
+   "mp": 10.0,
+   "mall": 10.36,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Pets",
+  "n": "Pets",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.24,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Automobiles",
+  "n": "Automobile Interior Accessories",
+  "r": {
+   "mp": 10.0,
+   "mall": 8.24,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Automobiles",
+  "n": "Others (all except Automobile Interior Accessories)",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Books & Magazines",
+  "n": "Books & Magazines",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Hobbies & Collections",
+  "n": "CD, DVD & Bluray",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.74,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Hobbies & Collections",
+  "n": "Collectible Items",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.74,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Hobbies & Collections",
+  "n": "Toys & Games",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.74,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Hobbies & Collections",
+  "n": "Vinyl Records",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.74,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Hobbies & Collections",
+  "n": "Musical Instruments & Accessories",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Hobbies & Collections",
+  "n": "Needlework",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Hobbies & Collections",
+  "n": "Photo Albums",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Hobbies & Collections",
+  "n": "Souvenirs",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Hobbies & Collections",
+  "n": "Others",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Bathrooms",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Bedding",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Decoration",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Dinnerware",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Fengshui & Religious Supplies",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Furniture",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Gardening",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Hand Warmers, Hot Water Bags & Ice Bags",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Home Care Supplies",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Home Fragrance & Aromatherapy",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Home Organizers",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Kitchenware",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Party Supplies",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Safety & Security",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Lighting",
+  "r": {
+   "mp": 10.5,
+   "mall": 11.08,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Tools & Home Improvement",
+  "r": {
+   "mp": 10.5,
+   "mall": 11.08,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Home & Living",
+  "n": "Others",
+  "r": {
+   "mp": 10.5,
+   "mall": 11.08,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Sports & Outdoors",
+  "n": "Sports & Outdoor Accessories",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Sports & Outdoors",
+  "n": "Sports & Outdoor Recreation Equipments",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Sports & Outdoors",
+  "n": "Sports Footwear",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Sports & Outdoors",
+  "n": "Sports & Outdoor Apparels",
+  "r": {
+   "mp": 10.5,
+   "mall": 11.08,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Sports & Outdoors",
+  "n": "Others",
+  "r": {
+   "mp": 10.5,
+   "mall": 11.08,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Travel & Luggage",
+  "n": "Travel & Luggage",
+  "r": {
+   "mp": 10.5,
+   "mall": 11.08,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Motorcycles",
+  "n": "Motorcycles",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Spare Parts and Accessories for Vehicles",
+  "n": "Spare Parts and Accessories for Vehicles",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Stationery",
+  "n": "Stationery",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.5
+  }
+ },
+ {
+  "g": "Baby & Kids Fashion",
+  "n": "Baby & Kids Fashion",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Fashion Accessories",
+  "n": "Fashion Accessories",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Men Bags",
+  "n": "Men Bags",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Men Clothes",
+  "n": "Men Clothes",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Men Shoes",
+  "n": "Men Shoes",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Muslim Fashion",
+  "n": "Muslim Fashion",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Watches",
+  "n": "Watches",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Women Bags",
+  "n": "Women Bags",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Women Clothes",
+  "n": "Women Clothes",
+  "r": {
+   "mp": 10.5,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ },
+ {
+  "g": "Women Shoes",
+  "n": "Women Shoes",
+  "r": {
+   "mp": 10.0,
+   "mall": 9.96,
+   "sgsf": 1.0
+  }
+ }
+]
