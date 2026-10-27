@@ -16,6 +16,12 @@ for o in ET:
 def load_ru(p):
     d = load(p); return [{'g': d['groups'][x[0]], 'n': x[1], 'r': x[2]} for x in d['o']], d.get('tables', {})
 OZ, OZ_T = load_ru('ozon/ru.json'); WB, _ = load_ru('wildberries/ru.json'); YM, _ = load_ru('yandex-market/ru.json')
+TT_SG, _ = load_ru('tiktok-shop/sg.json'); TT_TH, _ = load_ru('tiktok-shop/th.json')
+# Etsy UK: Etsy bills the listing fee (US$0.20) and caps Offsite Ads (US$100/order) in US dollars.
+# Converted at the ECB reference rate published 26 Oct 2026 (1 USD = 0.7492 GBP); both are editable in the calculator.
+USD_GBP = 0.7492
+ETSY_UK_VAT = [{'n': 'Not VAT-registered, or no UK VAT number added in Etsy', 'r': {'vat': 20}},
+               {'n': 'VAT number added in Etsy (Etsy charges no VAT on its fees)', 'r': {'vat': 0}}]
 def gidx(opts, g, n):
     return next(i for i, o in enumerate(opts) if o['g'] == g and o['n'] == n)
 RUB = dict(currency='RUB', symbols={'RUB': '₽'}, symbolAfter=True, locale='ru-RU', decimals=2)
@@ -84,6 +90,46 @@ MARKETS = {
    store=None, periods=None, toggles=[],
    components=[dict(id='commission', type='pct', rate='opt:rate', base='net_ship', color=C[0])], compare=None,
    sources=[('TikTok Shop UK Commission Rate Policy — TikTok Shop UK Seller University (policy page dated 18 Sep 2025)', 'https://seller-uk.tiktok.com/university/essay?knowledge_id=3337893683398432&lang=en')]),
+ 'tiktok-shop-sg': dict(
+   platform='tiktok-shop', platformName='TikTok Shop', market='SG', marketName='Singapore', slug='tiktok-shop/singapore',
+   flag='🇸🇬', currency='SGD', symbols={'SGD': 'S$'}, locale='en-SG', langs=['en', 'zh'],
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 29.90, 'cost': 9}, selector={'label': 'cat', 'options': TT_SG, 'src': 'tiktok-sg'},
+   defaultOption=gidx(TT_SG, 'Beauty & Personal Care', 'Skincare › Serums & Essences'),
+   store=None, periods=[('new', 'period_sg_new'), ('old', 'period_sg_old')],
+   toggles=[dict(id='bxp', vals=['non', 'bxp']), dict(id='sgCampaign', vals=['', ''], requires='bxp')],
+   components=[
+     dict(id='commission', type='pct', rate='opt:{period}.{bxp}', base='net', capPerItem='opt:cap_{period}', color=C[0]),
+     dict(id='tx', type='pct', rate=3.27, base='net_ship', color=C[1]),
+     dict(id='bxp', type='pct', rate='opt:bxpfee', when='bxp', adj=[{'t': 'sgCampaign', 'd': 1.09}], base='net', capPerItem=30, color=C[2])],
+   compare=dict(vary=['commission'], a={'label': 'cmp_sg_a', 'state': {'period': 'old'}}, b={'label': 'cmp_sg_b', 'state': {'period': 'new'}}, note='cmp_sg_note'),
+   sources=[
+     ('Platform Commission Fee (table from 1 Sep 2026, GST-inclusive) — TikTok Shop SG Seller University (updated 17 Aug 2026)', 'https://seller-sg.tiktok.com/university/essay?knowledge_id=2161524467910401&lang=en'),
+     ('Transaction Fee — TikTok Shop SG Seller University (13 Mar 2026)', 'https://seller-sg.tiktok.com/university/essay?knowledge_id=780268081530625&lang=en'),
+     ('Bonus Extra Program (BXP) service fee — TikTok Shop SG Seller University (24 Aug 2026)', 'https://seller-sg.tiktok.com/university/essay?knowledge_id=2192573259400976&lang=en'),
+     ('Introduction to Seller Fees — TikTok Shop SG Seller University (13 Mar 2026)', 'https://seller-sg.tiktok.com/university/essay?knowledge_id=113323786536705&lang=en')]),
+ 'tiktok-shop-th': dict(
+   platform='tiktok-shop', platformName='TikTok Shop', market='TH', marketName='Thailand', slug='tiktok-shop/thailand',
+   flag='🇹🇭', currency='THB', symbols={'THB': '฿'}, locale='en-TH', langs=['en', 'zh'],
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 299, 'cost': 90}, selector={'label': 'cat', 'options': TT_TH, 'src': 'tiktok-th'},
+   defaultOption=gidx(TT_TH, 'Beauty & Personal Care', 'Skincare › Serums & Essences'),
+   store=[('mp', 'mp'), ('mall', 'mall')], periods=[('new', 'period_th_new'), ('old', 'period_th_old')],
+   toggles=[dict(id='combo', vals=['', '_combo'], stores=['mall']), dict(id='gmvMax', vals=['', ''], stores=['mp']),
+            dict(id='smallSeller', vals=['', ''], stores=['mp']), dict(id='cgfWaived', vals=['', '']), dict(id='pifWaived', vals=['', ''])],
+   components=[
+     dict(id='commission', type='pct', rate='opt:{period}.{store}{combo}', adj=[{'t': 'gmvMax', 'd': -1.07}], base='net', color=C[0]),
+     dict(id='tx', type='pct', rate=3.21, base='net_ship', color=C[1]),
+     dict(id='cgf', type='pct', rate='opt:cgf', adj=[{'t': 'smallSeller', 'd': -0.54}], zeroIf='cgfWaived', base='net', capPerItem=199, color=C[2]),
+     dict(id='pif', type='fixed', rate=1.07, zeroIf='pifWaived', color=C[3])],
+   compare=dict(vary=['commission'], a={'label': 'cmp_th_a', 'state': {'period': 'old'}}, b={'label': 'cmp_th_b', 'state': {'period': 'new'}}, note='cmp_th_note'),
+   sources=[
+     ('Platform Commission Fee for Marketplace (non-Mall) sellers, table from 5 Jul 2026 — TikTok Shop TH Seller University (updated 17 Jul 2026)', 'https://seller-th.tiktok.com/university/essay?knowledge_id=10014445&lang=en'),
+     ('Mall Commission Fee, table from 5 Jul 2026 — TikTok Shop TH Seller University (updated 17 Jul 2026)', 'https://seller-th.tiktok.com/university/essay?knowledge_id=7485510424282896&lang=en'),
+     ('Mall Combo Package — TikTok Shop TH Seller University (21 Sep 2026)', 'https://seller-th.tiktok.com/university/essay?knowledge_id=7576841150449425&lang=en'),
+     ('Transaction Fee — TikTok Shop TH Seller University (20 Feb 2026)', 'https://seller-th.tiktok.com/university/essay?knowledge_id=6837804139087618&lang=en'),
+     ('Commerce Growth Fee — TikTok Shop TH Seller University (21 Sep 2026)', 'https://seller-th.tiktok.com/university/essay?knowledge_id=4831419884979969&lang=en'),
+     ('Platform Infrastructure Fee — TikTok Shop TH Seller University (3 Jul 2026)', 'https://seller-th.tiktok.com/university/essay?knowledge_id=4832028500215569&lang=en')]),
  'etsy': dict(
    platform='etsy', platformName='Etsy', market='GLOBAL', marketName='All countries', slug='etsy',
    flag='🧶', currency='USD', symbols={'USD': '$', 'GBP': '£', 'EUR': '€'}, locale='en-US', langs=['en', 'zh'], currencyFromOption=True,
@@ -99,6 +145,32 @@ MARKETS = {
    sources=[('Etsy Fee Basics — Etsy Help', 'https://help.etsy.com/hc/en-us/articles/360035902374-Etsy-Fee-Basics'),
             ('What are Payment Processing Fees for Selling on Etsy? — Etsy Help', 'https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy'),
             ('Fees & Payments Policy — Etsy', 'https://www.etsy.com/legal/fees/')]),
+ 'etsy-uk': dict(
+   platform='etsy', platformName='Etsy', market='UK', marketName='UK', slug='etsy/uk',
+   flag='🇬🇧', currency='GBP', symbols={'GBP': '£'}, locale='en-GB', langs=['en', 'zh'],
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'tax', 'taxPct', 'other'],
+   hints={'tax': 'tax_uk_h', 'taxPct': 'taxPct_uk_h'},
+   defaults={'price': 25, 'cost': 8, 'buyerShip': 4}, selector={'label': 'vat_uk', 'options': ETSY_UK_VAT},
+   defaultOption=0, store=None, periods=None,
+   toggles=[dict(id='offsite', vals=['', '']), dict(id='offsite12', vals=['', ''], requires='offsite')],
+   components=[
+     dict(id='listing', type='fixed', per='item', rate=round(0.20 * USD_GBP, 2), color=C[3]),
+     dict(id='etx', type='pct', rate=6.5, base='net_ship', color=C[0]),
+     dict(id='epp', type='pct', rate=4, base='gross', color=C[1]),
+     dict(id='epf', type='fixed', rate=0.20, color=C[2]),
+     dict(id='rof', type='pct', rate=0.48, base='net_ship', color=C[4]),
+     dict(id='offads', type='pct', rate=15, rateIf=[{'t': 'offsite12', 'rate': 12}], when='offsite', base='net_ship', capPerOrder=round(100 * USD_GBP, 2), color='#c2410c'),
+     dict(id='feevat', type='pct', rate='opt:vat', base='fees', color=C[5])],
+   compare=None,
+   sources=[('Etsy Fee Basics — Etsy Help (en-GB)', 'https://help.etsy.com/hc/en-gb/articles/360035902374-Etsy-Fee-Basics'),
+            ('What are Payment Processing Fees for Selling on Etsy? (United Kingdom: 4% + 0.20 GBP) — Etsy Help', 'https://help.etsy.com/hc/en-gb/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy'),
+            ('What is a Regulatory Operating Fee? (UK 0.48%) — Etsy Help', 'https://help.etsy.com/hc/en-us/articles/1500011073202-What-is-a-Regulatory-Operating-Fee'),
+            ('Regulatory Operating Fee updates for some markets (UK 0.32% → 0.48% from 22 Jun 2026) — Etsy Community announcement', 'https://community.etsy.com/forum/announcements-290/topic/regulatory-operating-fee-updates-for-some-markets-181930/'),
+            ('How VAT Is Collected on Seller Fees — Etsy Help (en-GB)', 'https://help.etsy.com/hc/en-gb/articles/360040584433-How-VAT-Is-Collected-on-Seller-Fees'),
+            ("How Etsy's Offsite Ads Work (15% / 12%, max US$100 per order) — Etsy Help (en-GB)", 'https://help.etsy.com/hc/en-gb/articles/360000338367-How-Etsy-s-Offsite-Ads-Work'),
+            ('Fees & Payments Policy — Etsy UK', 'https://www.etsy.com/uk/legal/fees/'),
+            ('VAT rates (standard rate 20%) — GOV.UK', 'https://www.gov.uk/vat-rates'),
+            ('Euro foreign exchange reference rates, 26 Oct 2026 (USD/GBP used to convert US$ amounts) — European Central Bank', 'https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html')]),
  'ozon': dict(
    platform='ozon', platformName='Ozon', market='RU', marketName='Russia', slug='ozon', flag='🇷🇺', **RUB, langs=['en', 'ru', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'vol', 'shipCost', 'taxPct', 'other'],
@@ -215,13 +287,16 @@ MARKETS = {
 }
 
 COMING = [
-  ('TikTok Shop', 'Singapore', '🇸🇬'), ('TikTok Shop', 'Thailand', '🇹🇭'), ('TikTok Shop', 'Vietnam', '🇻🇳'), ('TikTok Shop', 'Indonesia', '🇮🇩'),
+  ('TikTok Shop', 'Vietnam', '🇻🇳'), ('TikTok Shop', 'Indonesia', '🇮🇩'),
   ('Shopee', 'Philippines, Thailand, Indonesia & more', '🛍️'), ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
 
 # ---------- Python mirror of assets/engine.js (used to compute worked examples in the guides)
 from decimal import Decimal, ROUND_HALF_UP
 def r2(n):
     return float(Decimal(format(n * 100, '.12g')).quantize(Decimal('1'), rounding=ROUND_HALF_UP)) / 100
+
+def r4(n):
+    return float(Decimal(format(n * 10000, '.12g')).quantize(Decimal('1'), rounding=ROUND_HALF_UP)) / 10000
 
 def key_for(tpl, m, s):
     out = tpl.replace('{period}', str(s.get('period'))).replace('{store}', str(s.get('store')))
@@ -265,7 +340,7 @@ def def_rate(m, c, s, o):
         for a in c.get('adj', []):
             if (s['tg'].get(a['t']) if a.get('t') else s['x'].get(a['x']) == a['v']): r += a['d']
     if c.get('minRate') is not None: r = max(r, c['minRate'])
-    return r2(r)
+    return r4(r)
 
 def vol_cost(v, L):
     import math
@@ -315,7 +390,7 @@ def compute(mid, sel=None, period='new', store=None, tg=None, rates=None, x=None
         elif c['type'] == 'fixed':
             amt = r * (o['qty'] if c.get('per') == 'item' else 1)
         else:
-            base = b[c.get('base', 'net')]; amt = base * r / 100
+            base = sum(x[2] for x in rows) if c.get('base') == 'fees' else b[c.get('base', 'net')]; amt = base * r / 100
             if c.get('tier'):
                 over = m['selector']['options'][s['sel']]['r'].get(c['tier']['key'])
                 if over is not None and base > c['tier']['threshold']:
@@ -324,6 +399,7 @@ def compute(mid, sel=None, period='new', store=None, tg=None, rates=None, x=None
             if isinstance(cap, str) and cap.startswith('opt:'):
                 R = m['selector']['options'][s['sel']]['r']; cap = R.get(key_for(cap[4:], m, s))
             if cap: amt = min(amt, cap * o['qty'])
+            if c.get('capPerOrder'): amt = min(amt, c['capPerOrder'])
         rows.append((c['id'], r, r2(amt)))
     if o['affPct'] > 0: rows.append(('aff', o['affPct'], r2(net * o['affPct'] / 100)))
     total = r2(sum(x[2] for x in rows)); payout = r2(b['net_ship'] - o['shipCost'] - total)

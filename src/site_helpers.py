@@ -7,11 +7,11 @@ def money(v, cur='MYR', dec=2, lang='en'):
             s = f'{a:,.{dec}f}'.replace(',', '\u00a0').replace('.', ',')
             return ('−' if neg else '') + s + '\u00a0₽'
         return ('−' if neg else '') + f'{a:,.{dec}f} ₽'
-    sym = {'MYR': 'RM', 'PHP': '₱', 'USD': '$', 'GBP': '£'}.get(cur, cur + ' ')
+    sym = {'MYR': 'RM', 'PHP': '₱', 'USD': '$', 'GBP': '£', 'SGD': 'S$', 'THB': '฿', 'EUR': '€'}.get(cur, cur + ' ')
     return ('−' if neg else '') + sym + f'{a:,.{dec}f}'
 
 def pct(v):
-    s = f'{v:.2f}'.rstrip('0').rstrip('.')
+    s = f'{v:.3f}'.rstrip('0').rstrip('.')
     return s + '%'
 
 def ex_table(rows, total_label=None):

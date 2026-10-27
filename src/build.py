@@ -63,6 +63,7 @@ def calc_page(mid, lang):
     if m['platform'] == 'shopee' and lang == 'zh': items.append(('Shopee', 'zh/#calculators'))
     if m['platform'] == 'lazada' and lang == 'en': items.append(('Lazada', 'en/#calculators'))
     if m['platform'] == 'lazada' and lang == 'zh': items.append(('Lazada', 'zh/#calculators'))
+    if m['platform'] == 'etsy' and m['market'] != 'GLOBAL': items.append(('Etsy', f'{lang}/etsy/'))
     if m['market'] == 'RU' and lang == 'en': items.append(('Russia', 'en/russia/'))
     if m['market'] == 'RU' and lang == 'ru': items.append(('Россия', 'ru/'))
     if m['market'] == 'RU' and lang == 'zh': items.append(('俄罗斯', 'zh/russia/'))
@@ -171,7 +172,10 @@ C_SUM = {
  'tiktok-shop-ph': '₱5 Order Processing Fee, 1%–1.5% Seller Growth Fee, 2.24% transaction fee, Shipping Service Fee.',
  'tiktok-shop-us': '6% referral fee by category, 5% fine jewelry and Pre-Owned, 3% over $10K.',
  'tiktok-shop-uk': '9% commission, 5% for specified electronics and beauty categories.',
+ 'tiktok-shop-sg': '9.81% / 7.085% BXP commission from 1 Sep 2026, S$30 electronics cap, 3.27% TX, BXP fee.',
+ 'tiktok-shop-th': 'Marketplace & Mall commission from 5 Jul 2026, 3.21% TX, 6.96%/8.03% growth fee, ฿1.07.',
  'etsy': '6.5% transaction fee, US$0.20 listing fee and payment processing for 60+ bank countries.',
+ 'etsy-uk': '6.5% transaction, 4% + £0.20 processing, 0.48% regulatory fee and VAT on fees, in GBP.',
  'ozon': 'FBO/FBS/realFBS commission by category & price band, logistics from 30 Oct 2026, last-mile 25 ₽.',
  'wildberries': 'КВВ by subject (FBW/FBS/DBS), logistics 46+14 ₽/L × warehouse coefficient.',
  'yandex-market': 'Placement by category, 42% low-price tariff, delivery 5%, middle mile, payment transfer.',
@@ -189,7 +193,10 @@ C_SUM_ZH = {
  'tiktok-shop-ph': '₱5 订单处理费，1%–1.5% 卖家成长费，交易手续费 2.24%，物流服务费。',
  'tiktok-shop-us': '按类目推荐费 6%，精品珠宝与二手 5%，超 $10K 部分 3%。',
  'tiktok-shop-uk': '佣金 9%，指定电子与美妆类目 5%。',
+ 'tiktok-shop-sg': '2026年9月1日起佣金 9.81%（BXP 7.085%），电子类 S$30 封顶，交易手续费 3.27%，BXP 服务费。',
+ 'tiktok-shop-th': '2026年7月5日起 Marketplace / Mall 佣金，交易手续费 3.21%，商业增长费 6.96%/8.03%，每单 ฿1.07。',
  'etsy': '交易手续费 6.5%、刊登费 US$0.20，以及 60+ 国家支付处理费。',
+ 'etsy-uk': '6.5% 交易费、4% + £0.20 支付处理费、0.48% 监管运营费与费用 VAT，以英镑计算。',
  'ozon': 'FBO/FBS/realFBS 按类目与价位佣金，物流自 2026年10月30日，末端 25 ₽。',
  'wildberries': '按品类 КВВ（FBW/FBS/DBS），物流 46+14 ₽/升 × 仓库系数。',
  'yandex-market': '按类目展示费、42% 低价费率、配送 5%、中段与货款划转。',
@@ -233,7 +240,7 @@ def home():
     others = [('etsy', True), ('shopee', True), ('lazada', True), ('amazon', False), ('ebay', False)]
     ohtml = ''
     live_map = {
-      'etsy': [('etsy', 'Etsy')],
+      'etsy': [('etsy', 'Etsy'), ('etsy-uk', 'Etsy UK')],
       'shopee': [('shopee-my', 'Shopee Malaysia'), ('shopee-sg', 'Shopee Singapore')],
       'lazada': [('lazada-my', 'Lazada Malaysia')],
     }
@@ -254,7 +261,10 @@ def home():
      ('🇵🇭', 'TikTok Shop PH', 'Introduction to Seller Fees', 'Updated 13 Oct 2026', '/en/tiktok-shop/philippines/#sources'),
      ('🇺🇸', 'TikTok Shop US', 'Referral Fees by Category', 'Revised 8 Oct 2026', '/en/tiktok-shop/united-states/#sources'),
      ('🇬🇧', 'TikTok Shop UK', 'Commission Rate Policy', 'Dated 18 Sep 2025', '/en/tiktok-shop/united-kingdom/#sources'),
+     ('🇸🇬', 'TikTok Shop SG', 'Platform Commission Fee (table from 1 Sep 2026)', 'Updated 17 Aug 2026', '/en/tiktok-shop/singapore/#sources'),
+     ('🇹🇭', 'TikTok Shop TH', 'Commission (5 Jul 2026) · Commerce Growth Fee', 'Updated 17 Jul / 21 Sep 2026', '/en/tiktok-shop/thailand/#sources'),
      ('🌐', 'Etsy', 'Fee Basics · Payment Processing', 'Etsy Help Center', '/en/etsy/#sources'),
+     ('🇬🇧', 'Etsy UK', 'Regulatory Operating Fee · VAT on seller fees', '0.48% from 22 Jun 2026', '/en/etsy/uk/#sources'),
      ('🇷🇺', 'Ozon', 'Commissions XLSX 28 Aug · Logistics 30 Oct', 'Seller Edu', '/en/ozon/#sources'),
      ('🇷🇺', 'Wildberries', 'КВВ PDF 7 Jul · Logistics instructions', 'Updated 19 Oct 2026', '/en/wildberries/#sources'),
      ('🇷🇺', 'Yandex Market', 'Placement · FBY/FBS · Acquiring', 'As published 26 Oct 2026', '/en/yandex-market/#sources'),
@@ -265,7 +275,7 @@ def home():
     srows = ''.join(f'<tr><td><span class="flag">{f}</span> <b>{esc(m)}</b></td><td><a href="{u}">{esc(d)} {ic("ext",13)}</a><span class="sub">{esc(note)}</span></td><td>{badge("Checked "+VDATE["en"],"verified","shield")}</td></tr>' for f,m,d,note,u in srcs)
     guides = [g for g in C.GUIDES if g.get('lang') == 'en'][:6]
     body = f'''<section class="hero"><div class="wrap">
-<div><div class="announce">{badge("New","new")}<span>Shopee MY &amp; SG + Lazada MY live · <a href="shopee/malaysia/">Open Shopee {ic("arrow",13)}</a></span></div>
+<div><div class="announce">{badge("New","new")}<span>TikTok Shop Singapore &amp; Thailand + Etsy UK live · <a href="tiktok-shop/singapore/">Open Singapore {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">Know exactly what every marketplace takes from your sale.</h1>
 <p class="lead">SellerFee turns official marketplace rate cards into fast calculators. Pick your platform, enter a price, and see every fee, your payout and your real margin.</p>
 <div class="ctas"><a class="btn btn-primary btn-lg" href="tiktok-shop/malaysia/">{ic("calc",16)} TikTok Shop Malaysia</a>
@@ -273,16 +283,16 @@ def home():
 <div class="checks"><span>{ic("check",15)} Official sources only</span><span>{ic("check",15)} Verified {VDATE["en"]}</span><span>{ic("check",15)} Free, no sign-up</span></div></div>
 {qc}</div></section>
 <div class="stats"><div class="wrap" style="display:contents">
-<div><b>11</b><span>Live calculators</span></div>
+<div><b>{len(MARKETS)}</b><span>Live calculators</span></div>
 <div><b>3</b><span>Russia marketplaces</span></div>
-<div><b>16k+</b><span>Category rates loaded</span></div>
+<div><b>20k+</b><span>Category rates loaded</span></div>
 <div><b>0</b><span>Invented figures</span></div>
 </div></div>
 <section class="s" id="calculators"><div class="wrap">
 <div class="sh"><div><p class="eyebrow">Calculators</p><h2 class="h2">Platforms &amp; markets</h2></div>
 <a class="btn btn-link" href="rate-changes/">Rate changes {ic("arrow",14)}</a></div>
 <div class="pgrid">
-<div class="card pcard"><div class="ph">{ptile("tiktok-shop",40)}<div><b>TikTok Shop</b><div class="small muted">4 live markets</div></div></div>{tt}
+<div class="card pcard"><div class="ph">{ptile("tiktok-shop",40)}<div><b>TikTok Shop</b><div class="small muted">{sum(1 for m in MARKETS.values() if m["platform"] == "tiktok-shop")} live markets</div></div></div>{tt}
 <a class="mrow" href="tiktok-shop/" style="border-top:1px solid var(--line);margin-top:4px"><span class="nm" style="color:var(--brand-600)">All TikTok Shop markets</span>{ic("arrow",14)}</a></div>
 <div class="card pcard"><div class="ph">{ptile("ozon",40)}<div><b>Russia</b><div class="small muted">Ozon · WB · Yandex</div></div></div>{ru}
 <a class="mrow" href="russia/" style="border-top:1px solid var(--line);margin-top:4px"><span class="nm" style="color:var(--brand-600)">Russia hub</span>{ic("arrow",14)}</a></div>
@@ -375,14 +385,14 @@ def tiktok_hub():
     guides = [g for g in C.GUIDES if g.get('lang') == 'en' and (g.get('market') or '').startswith('tiktok')]
     body = f'''<div class="phead"><div class="wrap">{ch}
 <h1 class="h-display" style="margin-top:18px">TikTok Shop fee calculators by country</h1>
-<p class="lead" style="margin-top:12px">Different fees in every market: category commission in Southeast Asia, a flat referral fee in the US and a single commission rate in the UK.</p></div></div>
+<p class="lead" style="margin-top:12px">Different fees in every market: category commission in Malaysia, Thailand and the Philippines, a flat GST-inclusive rate in Singapore, a referral fee in the US and a single commission rate in the UK.</p></div></div>
 <section class="s"><div class="wrap"><div class="cards">{cards}{soon}</div>
 <h2 class="h2" style="margin-top:48px">How fees differ by market</h2>
 <div class="tablewrap"><table><thead><tr><th>Market</th><th>Main fees</th></tr></thead><tbody>{rows}</tbody></table></div>
 <div class="sh" style="margin-top:48px"><h2 class="h2">Guides</h2></div>
 <div class="cards">{''.join(gcard(path, g, 'en') for g in guides)}</div></div></section>'''
-    w(path, page(path, 'en', 'TikTok Shop Fee Calculators: Malaysia, Philippines, US & UK | SellerFee',
-                 'Free TikTok Shop seller fee calculators for Malaysia, the Philippines, the United States and the United Kingdom, built on official Seller University rate cards.',
+    w(path, page(path, 'en', 'TikTok Shop Fee Calculators: Malaysia, Singapore, Thailand, Philippines, US & UK | SellerFee',
+                 'Free TikTok Shop seller fee calculators for Malaysia, Singapore, Thailand, the Philippines, the United States and the United Kingdom, built on official Seller University rate cards.',
                  body, [cld]))
 
 def russia_hub():
@@ -409,6 +419,10 @@ def rate_changes():
     rows = [
      ('30 Oct 2026', 'Ozon', 'FBO/FBS logistics tariffs', 'New cluster × volume × price-band table', 'en/ozon/'),
      ('31 Oct 2026', 'TikTok Shop MY', 'Category commission', 'New commission table (side-by-side with old rates in the calculator)', 'en/tiktok-shop/malaysia/'),
+     ('1 Sep 2026', 'TikTok Shop SG', 'Platform commission', 'Flat 9.81% standard / 7.085% BXP (GST-incl.), S$30 cap on electronics, toys & collectibles', 'en/tiktok-shop/singapore/'),
+     ('5 Jul 2026', 'TikTok Shop TH', 'Marketplace & Mall commission', 'Most Marketplace categories 8.56% → 10.70%, most Mall 11.77% → 13.91%', 'en/tiktok-shop/thailand/'),
+     ('22 Jun 2026', 'Etsy UK', 'Regulatory operating fee', '0.32% → 0.48% of the order total', 'en/etsy/uk/'),
+     ('6 May 2026', 'TikTok Shop TH', 'Commerce Growth Fee', '6.96% Electronics / 8.03% others, capped at ฿199 per item', 'en/tiktok-shop/thailand/'),
      ('19 Oct 2026', 'Wildberries', 'Logistics instructions', 'Page updated; base tariff × coefficient unchanged since 15 Aug', 'en/wildberries/'),
      ('11 Oct – 31 Dec 2026', 'Yandex Market', 'FBY storage', 'Storage free in this window', 'en/yandex-market/'),
      ('End of 2026', 'Yandex Market', '42% low-price tariff', '≤300 ₽ and ≤5 L on FBY/FBS', 'en/yandex-market/'),
@@ -424,12 +438,12 @@ def rate_changes():
 <tbody>{trs}</tbody></table></div>
 <p class="muted" style="margin-top:16px">Last register check: {VFULL["en"]}. Found a change we missed? <a href="{issue_url("Rate change: ", "Platform:\nEffective date:\nLink to official source:")}">Open an issue</a>.</p></div></section>'''
     w(path, page(path, 'en', 'Marketplace Rate Changes (2026) | SellerFee',
-                 'Dated marketplace fee changes for TikTok Shop, Ozon, Wildberries and Yandex Market, linked to the calculators that use them.',
+                 'Dated marketplace fee changes for TikTok Shop, Etsy, Ozon, Wildberries and Yandex Market, linked to the calculators that use them.',
                  body, [cld]))
 
 def static_pages():
     about = f'''
-<p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (MY, PH, US, UK), Etsy, and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
+<p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (Malaysia, Singapore, Thailand, the Philippines, the US and the UK), Shopee (Malaysia, Singapore), Lazada Malaysia, Etsy (global and UK), and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
 <h2 id="how-we-source-rates">How we source rates</h2>
 <p>Every rate comes from the platform’s own seller help — TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Etsy Help, Ozon Seller Edu, Wildberries instructions and КВВ PDF, Yandex Market help. Each calculator links its sources and shows the date we last checked them. When a platform publishes a rate but not the formula, we say so and make the rate editable. We don’t publish a calculator until rates can be verified from an official source.</p>
 <h2>How we keep them current</h2>

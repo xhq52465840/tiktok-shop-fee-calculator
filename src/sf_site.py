@@ -221,7 +221,7 @@ def widget(mid, lang):
                f'<div class="g2 catpick"><div class="input select"><select id="sf-grp" aria-label="{esc(L("grp"))}"></select>{ic("chev", 16, "chev")}</div>'
                f'<div class="input select"><select id="sf-sel" aria-label="{esc(L(m["selector"]["label"]))}"></select>{ic("chev", 16, "chev")}</div></div><p class="hint" id="sf-selnote"></p></div>')
     else:
-        cat = (f'<div class="field full"><label class="label" for="sf-sel">{esc(L(m["selector"]["label"]))} <span class="hint">{len(opts)} {esc(L("n_cats")) if m["selector"]["label"] != "bank" else ""}</span></label>'
+        cat = (f'<div class="field full"><label class="label" for="sf-sel">{esc(L(m["selector"]["label"]))} <span class="hint">{len(opts) if m["selector"]["label"] != "vat_uk" else ""} {esc(L("n_cats")) if m["selector"]["label"] not in ("bank", "vat_uk") else ""}</span></label>'
                f'<div class="input select"><select id="sf-sel"></select>{ic("chev", 16, "chev")}</div><p class="hint" id="sf-selnote"></p></div>')
     s1 = [cat]
     row = []
@@ -243,7 +243,8 @@ def widget(mid, lang):
           fld(lang, 'sellerDisc', curh, 0, hint=None), fld(lang, 'cost', curh, d.get('cost', 0))]
     s3 = []
     if 'buyerShip' in inp: s3.append(fld(lang, 'buyerShip', curh, d.get('buyerShip', 0)))
-    if 'tax' in inp: s3.append(fld(lang, 'tax', curh, 0, hint=L('tax_h')))
+    hk = m.get('hints', {})
+    if 'tax' in inp: s3.append(fld(lang, 'tax', curh, 0, hint=L(hk.get('tax', 'tax_h'))))
     if 'vol' in inp: s3.append(fld(lang, 'vol', None, d.get('vol', 1), suffix=tr(lang, 'js')['litre'] if 'litre' in tr(lang, 'js') else 'L', step='0.001', hint=L('vol_h')))
     if 'coef' in inp: s3.append(fld(lang, 'coef', None, d.get('coef', 100), suffix='%', step='1', hint=L('coef_h'), extra=' data-stores="fbw fbs"'))
     s3.append(fld(lang, 'shipCost', curh, 0))
@@ -252,7 +253,7 @@ def widget(mid, lang):
         if c.get('manual'):
             unit = '%' if c['type'] == 'pct' else curh
             s3.append(f'<div class="field sf-rate"><label class="label" for="sf-r-{c["id"]}">{esc(L("c_" + c["id"]))}</label><div class="input"><input id="sf-r-{c["id"]}" type="number" step="0.01" min="0" placeholder="—"><span class="suf">{esc(unit)}</span></div><p class="hint">{esc(L("c_" + c["id"] + "_h"))}</p></div>')
-    if 'taxPct' in inp: s3.append(fld(lang, 'taxPct', None, 0, suffix='%', step='0.1', hint=L('taxPct_h')))
+    if 'taxPct' in inp: s3.append(fld(lang, 'taxPct', None, 0, suffix='%', step='0.1', hint=L(hk.get('taxPct', 'taxPct_h')), label=L(hk['taxPct'][:-2]) if 'taxPct' in hk else None))
     s3.append(fld(lang, 'other', curh, 0, hint=L('other_h')))
     tg = ''.join(f'<label class="toggle tg"><input type="checkbox" id="sf-t-{g["id"]}"><span class="sw" aria-hidden="true"></span><span><b>{esc(L("t_" + g["id"]))}</b><small>{esc(L("t_" + g["id"] + "_h"))}</small></span></label>' for g in m['toggles'])
     rates = []

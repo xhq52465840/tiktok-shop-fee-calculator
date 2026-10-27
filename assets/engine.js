@@ -10,6 +10,7 @@
   var root = $('sf-calc');
   var num = function (id) { var e = $(id); if (!e) return 0; var v = parseFloat(String(e.value).replace(',', '.')); return isFinite(v) ? v : 0; };
   var r2 = function (n) { return Math.round(parseFloat((n * 100).toPrecision(12))) / 100; };
+  var r4 = function (n) { return Math.round(parseFloat((n * 10000).toPrecision(12))) / 10000; }; // rates keep up to 4 decimals (e.g. 7.085%)
   var t = function (k, d) { return T[k] || d; };
   var cur = M.currency, opts = [], touched = {};
   function money(n) {
@@ -18,7 +19,7 @@
     var sym = M.symbols && M.symbols[cur] || cur + ' ';
     return (n < 0 ? '\u2212' : '') + (M.symbolAfter ? s + '\u00A0' + sym : sym + s);
   }
-  function fmtPct(r) { return (Math.round(r * 100) / 100).toLocaleString(M.locale || 'en') + '%'; }
+  function fmtPct(r) { return (Math.round(r * 1000) / 1000).toLocaleString(M.locale || 'en', { maximumFractionDigits: 3 }) + '%'; }
   function label(o) { return (o.g ? o.g + ' \u203A ' : '') + o.n; }
 
   // ----- state
@@ -70,7 +71,7 @@
     if (r === undefined || r === null) return null;
     if (!replaced) (c.adj || []).forEach(function (a) { if (a.t ? s.tg[a.t] : s.x[a.x] === a.v) r += a.d; });
     if (c.minRate !== undefined) r = Math.max(r, c.minRate);
-    return r2(r);
+    return r4(r);
   }
   function defaults(s, o) { var d = {}; M.components.forEach(function (c) { d[c.id] = defRate(c, s, o); }); return d; }
 
@@ -125,7 +126,8 @@
         amt = r * n; how = c.per === 'item' ? money(r) + ' \u00D7 ' + o.qty : t('flat', 'Flat per order');
         if (r === 0) how = (raw === null || raw === undefined || isNaN(raw)) ? t('notSet', 'Not set, see note above') : (c.manual ? t('enterIt', 'Enter your amount') : t('waived', 'Waived'));
       } else {
-        var base = b[c.base || 'net'];
+        // base 'fees' = sum of the fee rows above (e.g. VAT charged on the platform's own fees)
+        var base = c.base === 'fees' ? rows.reduce(function (x, q) { return x + q.amt; }, 0) : b[c.base || 'net'];
         amt = base * r / 100; how = fmtPct(r) + ' \u00D7 ' + money(base);
         if (c.tier) {
           var over = (opts[s.sel] || {}).r[c.tier.key];
@@ -145,6 +147,7 @@
             if (amt > cap) { amt = cap; how += ' \u2192 ' + t('capped', 'capped at') + ' ' + money(capV) + '/' + t('item', 'item'); }
           }
         }
+        if (c.capPerOrder && amt > c.capPerOrder) { amt = c.capPerOrder; how += ' \u2192 ' + t('capped', 'capped at') + ' ' + money(c.capPerOrder) + '/' + t('order', 'order'); }
         if (raw === null || raw === undefined || isNaN(raw)) how = t('notSet', 'Not set, see note above');
         Object.keys(c.condRate || {}).forEach(function (k) { if (cd[k]) how += ' \u00B7 ' + t('cond_' + k, k); });
       }

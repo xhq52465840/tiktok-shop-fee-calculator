@@ -10,7 +10,10 @@ C_SUM_ZH = {
  'tiktok-shop-ph': '₱5 订单处理费，1%–1.5% 卖家成长费，交易手续费 2.24%，物流服务费。',
  'tiktok-shop-us': '按类目推荐费 6%，精品珠宝与二手 5%，超 $10K 部分 3%。',
  'tiktok-shop-uk': '佣金 9%，指定电子与美妆类目 5%。',
+ 'tiktok-shop-sg': '2026年9月1日起佣金 9.81%（BXP 7.085%），电子类 S$30 封顶，交易手续费 3.27%，BXP 服务费。',
+ 'tiktok-shop-th': '2026年7月5日起 Marketplace / Mall 佣金，交易手续费 3.21%，商业增长费 6.96%/8.03%，每单 ฿1.07。',
  'etsy': '交易手续费 6.5%、刊登费 US$0.20，以及 60+ 国家支付处理费。',
+ 'etsy-uk': '6.5% 交易费、4% + £0.20 支付处理费、0.48% 监管运营费与费用 VAT，以英镑计算。',
  'ozon': 'FBO/FBS/realFBS 按类目与价位佣金，物流自 2026年10月30日，末端 25 ₽。',
  'wildberries': '按品类 КВВ（FBW/FBS/DBS），物流 46+14 ₽/升 × 仓库系数。',
  'yandex-market': '按类目展示费、42% 低价费率、配送 5%、中段与货款划转。',
@@ -85,7 +88,7 @@ def home_zh():
         for k in ('ozon', 'wildberries', 'yandex-market'))
 
     live_map = {
-        'etsy': [('etsy', 'Etsy')],
+        'etsy': [('etsy', 'Etsy'), ('etsy-uk', 'Etsy 英国')],
         'shopee': [('shopee-my', 'Shopee 马来西亚'), ('shopee-sg', 'Shopee 新加坡')],
         'lazada': [('lazada-my', 'Lazada 马来西亚')],
     }
@@ -108,7 +111,7 @@ def home_zh():
 
     guides = [g for g in C.GUIDES if g.get('lang') == 'zh'][:6]
     body = f'''<section class="hero"><div class="wrap">
-<div><div class="announce">{badge("新","new")}<span>Shopee 马来/新加坡 + Lazada 马来已上线 · <a href="shopee/malaysia/">打开 Shopee {ic("arrow",13)}</a></span></div>
+<div><div class="announce">{badge("新","new")}<span>TikTok Shop 新加坡、泰国 + Etsy 英国已上线 · <a href="tiktok-shop/singapore/">打开新加坡 {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">看清每个平台从你这一单拿走多少。</h1>
 <p class="lead">SellerFee 把官方费率表变成可即时计算的工具。选平台、填售价，立刻看到每项费用、结算金额与真实利润率。</p>
 <div class="ctas"><a class="btn btn-primary btn-lg" href="tiktok-shop/malaysia/">{ic("calc",16)} TikTok Shop 马来西亚</a>
@@ -116,16 +119,16 @@ def home_zh():
 <div class="checks"><span>{ic("check",15)} 仅用官方来源</span><span>{ic("check",15)} 已核实 {VDATE["zh"]}</span><span>{ic("check",15)} 免费，无需注册</span></div></div>
 {qc}</div></section>
 <div class="stats"><div class="wrap" style="display:contents">
-<div><b>11</b><span>已上线计算器</span></div>
+<div><b>{len(MARKETS)}</b><span>已上线计算器</span></div>
 <div><b>3</b><span>俄罗斯平台</span></div>
-<div><b>16k+</b><span>已加载类目费率</span></div>
+<div><b>20k+</b><span>已加载类目费率</span></div>
 <div><b>0</b><span>虚构数字</span></div>
 </div></div>
 <section class="s" id="calculators"><div class="wrap">
 <div class="sh"><div><p class="eyebrow">计算器</p><h2 class="h2">平台与市场</h2></div>
 <a class="btn btn-link" href="../en/rate-changes/">费率变动 {ic("arrow",14)}</a></div>
 <div class="pgrid">
-<div class="card pcard"><div class="ph">{ptile("tiktok-shop",40)}<div><b>TikTok Shop</b><div class="small muted">4 个已上线市场</div></div></div>{tt}
+<div class="card pcard"><div class="ph">{ptile("tiktok-shop",40)}<div><b>TikTok Shop</b><div class="small muted">{sum(1 for m in MARKETS.values() if m["platform"] == "tiktok-shop")} 个已上线市场</div></div></div>{tt}
 <a class="mrow" href="tiktok-shop/" style="border-top:1px solid var(--line);margin-top:4px"><span class="nm" style="color:var(--brand-600)">全部 TikTok Shop 市场</span>{ic("arrow",14)}</a></div>
 <div class="card pcard"><div class="ph">{ptile("ozon",40)}<div><b>俄罗斯</b><div class="small muted">Ozon · WB · Yandex</div></div></div>{ru}
 <a class="mrow" href="russia/" style="border-top:1px solid var(--line);margin-top:4px"><span class="nm" style="color:var(--brand-600)">俄罗斯专区</span>{ic("arrow",14)}</a></div>
@@ -154,7 +157,7 @@ def home_zh():
 def tiktok_hub_zh():
     path = 'zh/tiktok-shop/'
     ch, cld = crumbs(path, [('SellerFee', 'zh/'), ('TikTok Shop', None)])
-    names = {'Malaysia': '马来西亚', 'Philippines': '菲律宾', 'United States': '美国', 'United Kingdom': '英国'}
+    names = {'Malaysia': '马来西亚', 'Philippines': '菲律宾', 'United States': '美国', 'United Kingdom': '英国', 'Singapore': '新加坡', 'Thailand': '泰国'}
     cards = ''.join(
         f'<a class="card ccard" href="{m["slug"].split("/")[1]}/">'
         f'<div class="top"><span class="flag" style="font-size:28px">{m["flag"]}</span>{badge("已上线","live")}</div>'
@@ -163,10 +166,10 @@ def tiktok_hub_zh():
         for k, m in MARKETS.items() if m['platform'] == 'tiktok-shop')
     body = f'''<div class="phead"><div class="wrap">{ch}
 <h1 class="h-display" style="margin-top:18px">按国家划分的 TikTok Shop 费用计算器</h1>
-<p class="lead" style="margin-top:12px">每个市场费用结构不同：东南亚按类目佣金，美国是推荐费，英国是统一佣金。</p></div></div>
+<p class="lead" style="margin-top:12px">每个市场费用结构不同：马来西亚、泰国、菲律宾按类目佣金，新加坡为统一含 GST 费率，美国是推荐费，英国是统一佣金。</p></div></div>
 <section class="s"><div class="wrap"><div class="cards">{cards}</div></div></section>'''
-    _w(path, page(path, 'zh', 'TikTok Shop 费用计算器：马来西亚、菲律宾、美国与英国 | SellerFee',
-                  '免费 TikTok Shop 卖家费用计算器，覆盖马来西亚、菲律宾、美国与英国，基于官方 Seller University 费率。',
+    _w(path, page(path, 'zh', 'TikTok Shop 费用计算器：马来西亚、新加坡、泰国、菲律宾、美国与英国 | SellerFee',
+                  '免费 TikTok Shop 卖家费用计算器，覆盖马来西亚、新加坡、泰国、菲律宾、美国与英国，基于官方 Seller University 费率。',
                   body, [cld], alt={'en': 'en/tiktok-shop/', 'zh': 'zh/tiktok-shop/'}))
 
 def russia_hub_zh():

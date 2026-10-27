@@ -301,6 +301,7 @@ def etsy_page():
 <li><b>Transaction fee:</b> 6.5% of the item price plus the shipping and gift wrap you charge. If you sell from the US, it doesn't apply to sales tax. Outside the US it applies to the listing price, which should include any taxes you are responsible for.</li>
 <li><b>Payment processing fee:</b> a percentage plus a flat amount per order, set by the country of your bank account, charged on the total sale including shipping and any applicable sales tax. For example 3% + $0.25 in the United States, 4% + £0.20 in the UK and 4.5% + RM2 in Malaysia.</li></ul>
 <p>Etsy Ads, Offsite Ads and shipping labels bought on Etsy are extra and depend on how you use them. Add them under "Other costs".</p>
+<div class="callout"><p><b>Selling from the UK?</b> UK shops also pay Etsy's 0.48% regulatory operating fee and, without a VAT number, 20% VAT on Etsy's fees. The <a href="/en/etsy/uk/">Etsy UK fee calculator</a> includes both, in pounds.</p></div>
 <h2 id="examples">Worked examples</h2>
 <div class="example"><h4>Example 1: a US seller, $30 item, $5 shipping, $2.40 sales tax</h4>
 {ex_table(ex_rows(us, 'USD', LBL))}
@@ -569,3 +570,11 @@ GUIDE_SOURCES.update(GUIDE_SOURCES_SEA)
 from content_zh import PAGE_FN_ZH, GUIDES_ZH
 PAGE_FN.update(PAGE_FN_ZH)
 GUIDES.extend(GUIDES_ZH)
+
+# TikTok Shop Singapore & Thailand, Etsy UK — EN + ZH
+from content_new import PAGE_FN_NEW, GUIDES_NEW, GUIDE_BODY_NEW, GUIDE_SOURCES_NEW
+from content_new_zh import PAGE_FN_NEW_ZH, GUIDES_NEW_ZH
+PAGE_FN.update(PAGE_FN_NEW); PAGE_FN.update(PAGE_FN_NEW_ZH)
+GUIDES.extend(GUIDES_NEW); GUIDES.extend(GUIDES_NEW_ZH)
+GUIDE_BODY.update(GUIDE_BODY_NEW); GUIDE_SOURCES.update(GUIDE_SOURCES_NEW)
+

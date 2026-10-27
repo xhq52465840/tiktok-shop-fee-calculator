@@ -208,6 +208,7 @@ def etsy_zh():
 <li><b>支付处理费：</b>依收款银行所在国家而定，一般为百分比 + 固定金额；基数常含销售税。</li>
 </ul>
 <p>请在计算器顶部选择银行账户所在国家，以加载对应处理费率。</p>
+<div class="callout"><p><b>英国卖家？</b>英国店铺还要付 0.48% 监管运营费；未填写 VAT 号时，Etsy 费用另加 20% VAT。<a href="/zh/etsy/uk/">Etsy 英国费用计算器</a> 已全部计入（以英镑计算）。</p></div>
 <h2 id="examples">计算示例</h2>
 <div class="example"><h4>示例 1：美国账户，$30 商品 + $5 运费 + $2.40 税</h4>
 {ex_table(_ex_rows(us, 'USD', LBL))}
