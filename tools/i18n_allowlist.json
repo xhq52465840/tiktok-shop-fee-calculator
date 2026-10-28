@@ -117,7 +117,14 @@
   "Phí Cố Định",
   "Phí Xử Lý Giao Dịch",
   "Phí Thanh Toán",
-  "Phí Hạ Tầng"
+  "Phí Hạ Tầng",
+  "WordPress",
+  "Webflow",
+  "Wix",
+  "Squarespace",
+  "Tilda",
+  "Custom HTML",
+  "Embed / Code"
  ],
  "words": [
   "BXP",
@@ -254,7 +261,13 @@
   "Tokopedia",
   "XTRA",
   "Star",
-  "PiShip"
+  "PiShip",
+  "iframe",
+  "nofollow",
+  "height",
+  "KB",
+  "px",
+  "T123"
  ],
  "ms_english_markers": [
   "the",
@@ -420,7 +433,7 @@
  ],
  "_notes": {
   "ms_english_markers": "'had' (limit) and 'per' ('satu per satu') are Malay words and were removed.",
-  "words": "Codes, units, currency codes and technical acronyms (IP, HTML, UTC, cookie is the standard Russian/Chinese legal term). 'T' = T恤 (T-shirt) in Chinese.",
+  "words": "Codes, units, currency codes and technical acronyms (IP, HTML, UTC, cookie is the standard Russian/Chinese legal term). 'T' = T恤 (T-shirt) in Chinese. Web terms for the embed page: iframe, nofollow, the height attribute, KB/px; site-builder names are in phrases.",
   "phrases": "Brand, programme, metric and official document names quoted from the platforms."
  }
 }

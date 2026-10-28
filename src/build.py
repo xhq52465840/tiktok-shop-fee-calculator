@@ -11,6 +11,7 @@ import content as C
 import l10n, sf_site
 from sf_site import market_name
 from zh_pages import home_zh
+import embed as EMB
 ALL = ['en', 'zh', 'ru', 'ms']
 def ALT(suffix): return {l: f'{l}/{suffix}' for l in LANGS}          # every page exists in every language
 def LZ(lang, s): return l10n.text(lang, s)
@@ -100,7 +101,7 @@ def calc_page(mid, lang):
     guides_h = ''
     if rel_g:
         guides_h = f'<section class="blk"><div class="wrap"><div class="sh"><h2 class="h2">{esc(tr(lang,"related"))}</h2></div><div class="cards">{"".join(gcard(path,g,lang) for g in rel_g)}</div></div></section>'
-    body = f'''{head}<div class="wrap">{widget(mid, lang)}</div>
+    body = f'''{head}<div class="wrap">{widget(mid, lang)}{EMB.cta_link(mid, lang)}</div>
 {AD(mid + '-1')}
 <section class="blk"><div class="wrap"><div class="contentgrid">{toc_html(d["toc"], lang)}
 <article class="prose">{body_html}{fh}{sources_block(m["sources"], lang, path)}</article>
@@ -627,6 +628,10 @@ if __name__ == '__main__':
     for mid, m in MARKETS.items():
         for lang in ALL: calc_page(mid, lang)
     for g in sf_site.GUIDES_ALL: guide_page(g)
+    for lang in ALL:
+        ctx(f'{lang}/embed/'); EMB.embed_doc(lang, w, ALT('embed/'))
+        for mid in MARKETS: EMB.embed_frame(mid, lang, w)
+    open(os.path.join(ROOT, 'assets', 'embed.js'), 'w').write(EMB.EMBED_JS)
     plumbing()
     miss = l10n.write_missing()
     print('built', len(PAGES), 'pages', '· untranslated segments:', miss or 0)

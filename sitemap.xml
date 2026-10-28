@@ -1372,4 +1372,32 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/guides/walmart-new-seller-savings-2026/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/guides/walmart-new-seller-savings-2026/"/>
   </url>
+  <url><loc>https://sellerfee.app/en/embed/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/embed/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/embed/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/embed/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/embed/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/embed/"/>
+  </url>
+  <url><loc>https://sellerfee.app/zh/embed/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/embed/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/embed/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/embed/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/embed/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/embed/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ru/embed/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/embed/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/embed/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/embed/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/embed/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/embed/"/>
+  </url>
+  <url><loc>https://sellerfee.app/ms/embed/</loc><lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sellerfee.app/en/embed/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://sellerfee.app/ms/embed/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sellerfee.app/ru/embed/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://sellerfee.app/zh/embed/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sellerfee.app/en/embed/"/>
+  </url>
 </urlset>

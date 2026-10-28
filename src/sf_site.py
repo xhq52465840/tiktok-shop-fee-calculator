@@ -135,6 +135,7 @@ def footer(lang, path, alt=None):
     company = [(f'{lang}/about/', {'en': 'About SellerFee', 'ms': 'Tentang SellerFee', 'ru': 'О проекте', 'zh': '关于 SellerFee'}[lang]), (f'{lang}/about/#how-we-source-rates', {'en': 'How we verify rates', 'ms': 'Cara kami sahkan kadar', 'ru': 'Как мы проверяем тарифы', 'zh': '我们如何核实费率'}[lang])]
     comp = ''.join(f'<li><a href="{r}{u}">{esc(t)}</a></li>' for u, t in company)
     comp += f'<li><a href="{issue_url("Wrong rate: ", "Page: " + BASE + path + chr(10) + "Which fee looks wrong:" + chr(10) + "Link to the official source:")}" rel="noopener">{esc({"en": "Report a wrong rate", "ms": "Laporkan kadar salah", "ru": "Сообщить об ошибке в тарифе", "zh": "反馈错误费率"}[lang])}</a></li>'
+    comp += f'<li><a href="{r}{lang}/embed/">{esc({"en": "Embed a calculator", "ms": "Benamkan kalkulator", "ru": "Встроить калькулятор", "zh": "嵌入计算器"}[lang])}</a></li>'
     comp += ''.join(f'<li><a href="{r}{lang}/{s}/">{esc(L(k))}</a></li>' for s, k in [('privacy', 'f_privacy'), ('terms', 'f_terms'), ('contact', 'f_contact')])
     tgt = alt or {l: f'{l}/' for l in LANGS}
     langs = ''.join(f'<a class="{"on" if l == lang else ""}" href="{r}{tgt[l]}" hreflang="{v["html"]}" lang="{v["html"]}"{" aria-current=true" if l == lang else ""}>{esc(v["name"])}</a>' for l, v in LANGS.items() if l in tgt)

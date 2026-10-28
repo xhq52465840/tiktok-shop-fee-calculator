@@ -283,7 +283,7 @@
     lines.push(t('ui_res_fees', 'Total fees') + ': ' + money(last.f.total));
     lines.push(t('ui_res_payout', 'Payout') + ': ' + money(last.f.payout));
     lines.push(t('ui_res_profit', 'Profit') + ': ' + money(last.f.profit) + ' (' + fmt1(last.f.margin) + '%)');
-    lines.push(location.href.split('#')[0]);
+    lines.push(M.page || location.href.split('#')[0]);
     return lines.join('\n');
   }
   function stateToQuery() {
@@ -391,8 +391,8 @@
     var cb = $('sf-copy'), sb = $('sf-share');
     if (cb) cb.addEventListener('click', function () { copyText(plain(), cb, t('ui_copied', 'Copied')); });
     if (sb) sb.addEventListener('click', function () {
-      var url = location.href.split('?')[0].split('#')[0] + '?' + stateToQuery();
-      if (history.replaceState) history.replaceState(null, '', url);
+      var url = (M.page || location.href.split('?')[0].split('#')[0]) + '?' + stateToQuery();
+      if (!M.page && history.replaceState) history.replaceState(null, '', url);
       if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) navigator.share({ title: document.title, url: url }).catch(function () {});
       else copyText(url, sb, t('ui_link_copied', 'Link copied'));
     });
