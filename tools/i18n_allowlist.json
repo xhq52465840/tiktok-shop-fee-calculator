@@ -112,7 +112,12 @@
   "Non Star",
   "Star/Star+",
   "Star / Star+",
-  "Live XTRA"
+  "Live XTRA",
+  "PiShip",
+  "Phí Cố Định",
+  "Phí Xử Lý Giao Dịch",
+  "Phí Thanh Toán",
+  "Phí Hạ Tầng"
  ],
  "words": [
   "BXP",
@@ -248,7 +253,8 @@
   "Rp",
   "Tokopedia",
   "XTRA",
-  "Star"
+  "Star",
+  "PiShip"
  ],
  "ms_english_markers": [
   "the",

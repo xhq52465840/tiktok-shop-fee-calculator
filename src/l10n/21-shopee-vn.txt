@@ -1,0 +1,296 @@
+@@ 0480d62239
+ms: Yuran tetap bukan Mall &amp; yuran perkhidmatan
+ru: Фиксированный сбор не-Mall и сервисные сборы
+zh: 非 Mall 固定费与服务费
+
+@@ 08389ceafc
+ms: Voucher Xtra menghantar baucar kedai anda kepada pembeli setiap minggu. Yuran {0}% dihadkan kepada {1} ₫ seunit, jadi dalam peratusan ia lebih murah untuk item mahal: untuk serum {2} ₫ yurannya {3} ₫ dan bukannya {4} ₫, dan jumlah yuran ialah {5} ₫.
+ru: Voucher Xtra каждую неделю рассылает покупателям купоны вашего магазина. Сбор {0}% ограничен {1} ₫ за единицу, поэтому в процентах он дешевле для дорогих товаров: для сыворотки за {2} ₫ сбор составит {3} ₫ вместо {4} ₫, а всего сборов — {5} ₫.
+zh: Voucher Xtra 每周向买家发放店铺优惠券。其 {0}% 的费用每件封顶 {1} ₫，因此高价商品按比例更便宜：{2} ₫ 的精华液收费 {3} ₫ 而非 {4} ₫，费用合计 {5} ₫。
+
+@@ 0b76d3bcec
+zh: {0} 年的变化
+
+@@ 157d2e2054
+ms: Yuran pilihan dan cukai
+ru: Необязательные сборы и налог
+zh: 可选费用与税
+
+@@ 1610de5c28
+ms: Yuran tetap Mall ialah {0}%: jumlah yuran {1} ₫, untung {2} ₫.
+ru: Фиксированный сбор в Mall — {0}%: всего сборов {1} ₫, прибыль {2} ₫.
+zh: Mall 固定费为 {0}%：费用合计 {1} ₫，利润 {2} ₫。
+
+@@ 169330f51f
+ms: Setiap yuran penjual Shopee Vietnam pada {0}: yuran tetap bukan Mall dan Mall ikut kategori, yuran pemprosesan transaksi {1}%, {2} ₫ sepesanan, Voucher Xtra {3}%, cukai yang ditahan dan contoh pengiraan.
+ru: Все сборы продавца Shopee Вьетнам в {0} году: фиксированный сбор для не-Mall и Mall по категориям, сбор за обработку транзакции {1}%, {2} ₫ за заказ, Voucher Xtra {3}%, удерживаемый налог и пример расчёта.
+zh: {0} 年 Shopee 越南站全部卖家费用：非 Mall 与 Mall 按类目的固定费、{1}% 交易处理费、每单 {2} ₫、Voucher Xtra {3}%、代扣税与计算示例。
+
+@@ 21ad6e2585
+ms: Tambah Voucher Xtra dan cukai yang ditahan: jumlah {0} ₫, untung {1} ₫.
+ru: С Voucher Xtra и удерживаемым налогом: всего {0} ₫, прибыль {1} ₫.
+zh: 加上 Voucher Xtra 与代扣税：合计 {0} ₫，利润 {1} ₫。
+
+@@ 233c286020
+ms: Adakah Shopee menahan cukai?
+ru: Удерживает ли Shopee налог?
+zh: Shopee 会代扣税吗？
+
+@@ 2b542eb5cd
+ms: Adakah yuran pembayaran Shopee Vietnam {0}%?
+ru: Платёжный сбор Shopee Вьетнам — {0}%?
+zh: Shopee 越南站支付费是 {0}% 吗？
+
+@@ 2f55001703
+ms: Untuk penjual individu dan isi rumah perniagaan, ya: VAT {0}% dan cukai pendapatan peribadi {1}% bagi barangan, sejak {2} Julai {3}. Syarikat berdaftar mengisytiharkan cukai sendiri.
+ru: Для индивидуальных продавцов и семейного бизнеса — да: {0}% НДС и {1}% НДФЛ с товаров с {2} июля {3} года. Зарегистрированные компании декларируют налог сами.
+zh: 对个人和个体工商户卖家会：自 {3} 年 7 月 {2} 日起，商品代扣 {0}% 增值税和 {1}% 个人所得税。注册公司自行申报纳税。
+
+@@ 2fe02c9f77
+ms: Yuran tetap bukan Mall ({0} Mei {1}) &amp; Mall ({2} Okt {3}) untuk {4}+ kategori, yuran pemprosesan transaksi {5}%, yuran infrastruktur {6} ₫.
+ru: Фиксированный сбор не-Mall ({0} мая {1}) и Mall ({2} окт. {3}) для {4}+ категорий, сбор за обработку транзакции {5}%, инфраструктурный сбор {6} ₫.
+
+@@ 3076e44e74
+ms: Kalkulator Yuran Shopee Vietnam
+ru: Калькулятор сборов Shopee Вьетнам
+zh: Shopee 越南站费用计算器
+
+@@ 39bd3f1af6
+ms: Nilai setiap item
+ru: Стоимость каждого товара
+zh: 每件商品金额
+
+@@ 3c4b4de47c
+ms: Yuran pemprosesan transaksi
+ru: Сбор за обработку транзакции
+zh: 交易处理费
+
+@@ 3e39e1b943
+ms: Yuran tetap ({0}%)
+ru: Фиксированный сбор ({0}%)
+zh: 固定费（{0}%）
+
+@@ 46af5c0098
+ms: <b1>{0} Mei {1}</b1>: jadual yuran tetap bukan Mall baharu. Kecantikan naik daripada {2}% kepada {3}%, fesyen daripada {4}–{5}% kepada {6}–{7}%. Voucher Xtra naik daripada {8}% kepada {9}% (masih terhad kepada {10} ₫ seunit) dan PiShip daripada {11} ₫ kepada {12} ₫ sepesanan.
+ru: <b1>{0} мая {1}</b1>: новая таблица фиксированного сбора для не-Mall. Красота — с {2}% до {3}%, одежда — с {4}–{5}% до {6}–{7}%. Voucher Xtra — с {8}% до {9}% (лимит по-прежнему {10} ₫ за единицу), PiShip — с {11} ₫ до {12} ₫ за заказ.
+zh: <b1>{1} 年 5 月 {0} 日</b1>：非 Mall 固定费新表。美妆由 {2}% 升至 {3}%，服饰由 {4}–{5}% 升至 {6}–{7}%。Voucher Xtra 由 {8}% 升至 {9}%（仍为每件封顶 {10} ₫），PiShip 由每单 {11} ₫ 升至 {12} ₫。
+
+@@ 4857f20c23
+ms: Yuran tetap ikut kategori. Kalkulator mempunyai kesemua {0} kategori.
+ru: Фиксированный сбор по категориям. В калькуляторе все {0} категорий.
+zh: 按类目的固定费。计算器包含全部 {0} 个类目。
+
+@@ 519e7b3e0c
+ms: Yuran tetap (Phí Cố Định) ialah komisen Shopee, peratusan ikut kategori tahap {0}, dikenakan pada nilai setiap item: {1}% hingga {2}% untuk kedai bukan Mall daripada jadual berkuat kuasa <b1>{3} Mei {4}</b1>, dan {5}% hingga {6}% untuk Shopee Mall daripada jadual berkuat kuasa <b2>{7} Oktober {8}</b2>. Kedai bukan Mall baharu tidak membayar yuran tetap selama {9} hari pertama selepas produk pertama disiarkan.
+ru: Фиксированный сбор (Phí Cố Định) — это комиссия Shopee, процент по категории {0}-го уровня от стоимости каждого товара: от {1}% до {2}% для магазинов не из Mall по таблице с <b1>{3} мая {4}</b1> и от {5}% до {6}% для Shopee Mall по таблице с <b2>{7} октября {8}</b2>. Новые магазины не из Mall не платят фиксированный сбор первые {9} дней после публикации первого товара.
+zh: 固定费（Phí Cố Định）即 Shopee 佣金，按 {0} 级类目百分比对每件商品金额收取：非 Mall 店铺按 <b1>{4} 年 5 月 {3} 日</b1>生效的费率表为 {1}% 至 {2}%，Shopee Mall 按 <b2>{8} 年 10 月 {7} 日</b2>生效的费率表为 {5}% 至 {6}%。非 Mall 新店首个商品上架后前 {9} 天免收固定费。
+
+@@ 54ac3c488a
+ms: Setiap pesanan Shopee Vietnam yang dihantar membayar tiga yuran. Semua kadar termasuk VAT.
+ru: Каждый доставленный заказ Shopee Вьетнам облагается тремя сборами. Все ставки включают НДС.
+zh: Shopee 越南站每笔已送达订单收取三项费用，所有费率均含增值税。
+
+@@ 55eb82b12a
+ms: Contoh {0}: penjual isi rumah dengan Voucher Xtra
+ru: Пример {0}: семейный бизнес с Voucher Xtra
+zh: 示例 {0}：参加 Voucher Xtra 的个体工商户
+
+@@ 5614f1c4d6
+ms: SellerFee ialah laman web bebas yang menerbitkan kalkulator yuran dan keuntungan percuma untuk penjual di marketplace dalam talian, terutamanya penjual rentas sempadan. Kami merangkumi TikTok Shop (Malaysia, Singapura, Thailand, Filipina, Vietnam, Indonesia, AS dan UK), Shopee (Malaysia, Singapura, Filipina, Thailand, Indonesia, Vietnam), Lazada Malaysia, Walmart Marketplace (AS), Etsy (global dan UK), serta marketplace Rusia Ozon, Wildberries dan Yandex Market.
+ru: SellerFee — независимый сайт с бесплатными калькуляторами сборов и прибыли для продавцов на онлайн-маркетплейсах, особенно для тех, кто торгует за рубежом. Мы охватываем TikTok Shop (Малайзия, Сингапур, Таиланд, Филиппины, Вьетнам, Индонезия, США и Великобритания), Shopee (Малайзия, Сингапур, Филиппины, Таиланд, Индонезия, Вьетнам), Lazada Малайзия, Walmart Marketplace (США), Etsy (глобально и Великобритания), а также российские маркетплейсы Ozon, Wildberries и Яндекс Маркет.
+zh: SellerFee 是一个独立网站，为在线上电商平台销售的卖家（尤其是跨境卖家）提供免费的费用与利润计算器。我们覆盖 TikTok Shop（马来西亚、新加坡、泰国、菲律宾、越南、印尼、美国和英国）、Shopee（马来西亚、新加坡、菲律宾、泰国、印尼、越南）、Lazada 马来西亚、Walmart Marketplace（美国）、Etsy（全球与英国），以及俄罗斯平台 Ozon、Wildberries 和 Yandex Market。
+
+@@ 596ec84df7
+ms: Baca gambaran penuh dalam panduan kami tentang <a1>yuran penjual Shopee Vietnam pada {0}</a1>.
+ru: Подробности — в нашем гайде <a1>о сборах продавцов Shopee Вьетнам в {0} году</a1>.
+zh: 完整解读见我们的指南：<a1>{0} 年 Shopee 越南站卖家费用</a1>。
+
+@@ 5a1264441e
+ms: Untung ialah {0} ₫, margin {1}%. Yuran tetap dan yuran transaksi bersama mengambil {2}% daripada harga.
+ru: Прибыль {0} ₫, маржа {1}%. Фиксированный и транзакционный сборы вместе забирают {2}% цены.
+zh: 利润 {0} ₫，利润率 {1}%。固定费与交易费合计占售价的 {2}%。
+
+@@ 5faa4df66a
+ms: {0} ₫ bagi setiap pesanan yang dihantar (Phí Hạ Tầng).
+ru: {0} ₫ за каждый доставленный заказ (Phí Hạ Tầng).
+zh: 每笔已送达订单 {0} ₫（Phí Hạ Tầng）。
+
+@@ 60aef5384f
+ms: {0}. Yuran infrastruktur
+ru: {0}. Инфраструктурный сбор
+zh: {0}. 基础设施费
+
+@@ 6957440970
+ms: Kalkulator yuran dan keuntungan Shopee Vietnam percuma: yuran tetap bukan Mall dan Mall untuk {0}+ kategori, yuran pemprosesan transaksi {1}%, {2} ₫ sepesanan, Voucher Xtra, PiShip dan cukai yang ditahan untuk penjual isi rumah.
+ru: Бесплатный калькулятор сборов и прибыли Shopee Вьетнам: фиксированный сбор для не-Mall и Mall по {0}+ категориям, сбор за обработку транзакции {1}%, {2} ₫ за заказ, Voucher Xtra, PiShip и удерживаемый налог для семейного бизнеса.
+zh: 免费的 Shopee 越南站费用与利润计算器：{0}+ 个类目的非 Mall 与 Mall 固定费、{1}% 交易处理费、每单 {2} ₫、Voucher Xtra、PiShip 以及个体工商户代扣税。
+
+@@ 7390bf50ce
+ms: Shopee Indonesia &amp; Vietnam kini tersedia · <a1>Buka Vietnam <x1/></a1>
+
+@@ 79cef2320f
+ms: {0}. Yuran pemprosesan transaksi
+ru: {0}. Сбор за обработку транзакции
+zh: {0}. 交易处理费
+
+@@ 7a0f34a09d
+ms: Yuran tetap bukan Mall mulai {0} Mei {1} dan yuran tetap Mall mulai {2} Oktober {3} untuk setiap kategori, yuran pemprosesan transaksi {4}%, yuran infrastruktur {5} ₫, Voucher Xtra, PiShip dan cukai yang ditahan.
+ru: Фиксированный сбор не-Mall с {0} мая {1} года и Mall с {2} октября {3} года для всех категорий, сбор за обработку транзакции {4}%, инфраструктурный сбор {5} ₫, Voucher Xtra, PiShip и удерживаемый налог.
+zh: 全部类目的非 Mall 固定费（{1} 年 5 月 {0} 日起）与 Mall 固定费（{3} 年 10 月 {2} 日起）、{4}% 交易处理费、{5} ₫ 基础设施费、Voucher Xtra、PiShip 与代扣税。
+
+@@ 7ce3cece76
+ms: Contoh {0}: serum {1} ₫, bukan Mall
+ru: Пример {0}: сыворотка за {1} ₫, не Mall
+zh: 示例 {0}：{1} ₫ 精华液，非 Mall
+
+@@ 80d4a2d2e1
+ms: Bukan Mall ({0} Mei {1})
+ru: Не Mall ({0} мая {1})
+zh: 非 Mall（{1}年5月{0}日）
+
+@@ 88d83e69f1
+ms: Jadual yuran tetap bukan Mall baharu (cth. Kecantikan {0}% → {1}%); Voucher Xtra {2}% → {3}%; PiShip {4} ₫ → {5} ₫
+ru: Новая таблица фиксированного сбора не-Mall (напр., красота {0}% → {1}%); Voucher Xtra {2}% → {3}%; PiShip {4} ₫ → {5} ₫
+zh: 非 Mall 固定费新表（如美妆 {0}% → {1}%）；Voucher Xtra {2}% → {3}%；PiShip {4} ₫ → {5} ₫
+
+@@ 8973aa2e2d
+ms: Yuran Penjual Shopee Vietnam {0}: Yuran Tetap ikut Kategori, Yuran Transaksi {1}% dan Voucher Xtra
+ru: Сборы Shopee Вьетнам в {0} году: фиксированный сбор по категориям, транзакционный сбор {1}% и Voucher Xtra
+zh: Shopee 越南站卖家费用 {0}：按类目固定费、{1}% 交易费与 Voucher Xtra
+
+@@ 8adcb047ca
+ms: <b1>{0} Mei {1}</b1>: jadual yuran tetap Mall baharu, dikemas kini lagi untuk buku dan majalah pada <b2>{2} Oktober {3}</b2>.
+ru: <b1>{0} мая {1}</b1>: новая таблица фиксированного сбора Mall, снова обновлённая для книг и журналов <b2>{2} октября {3}</b2>.
+zh: <b1>{1} 年 5 月 {0} 日</b1>：Mall 固定费新表，<b2>{3} 年 10 月 {2} 日</b2>再次更新书籍与杂志类目。
+
+@@ 949115e3ad
+ms: Kalkulator Yuran Shopee Vietnam {0} (Yuran Tetap, Yuran Transaksi {1}%, Mall)
+ru: Калькулятор сборов Shopee Вьетнам {0} (фиксированный сбор, транзакционный сбор {1}%, Mall)
+zh: Shopee 越南站费用计算器 {0}（固定费、{1}% 交易费、Mall）
+
+@@ 94bb995dd3
+ms: Shopee Vietnam menaikkan kebanyakan yurannya pada {0}: yuran pemprosesan transaksi {1}% untuk semua kaedah pembayaran mulai Mei, jadual yuran tetap bukan Mall baharu pada <b1>{2} Mei {3}</b1>, dan Voucher Xtra naik daripada {4}% kepada {5}%. Panduan ini menyenaraikan setiap yuran dan menunjukkan contoh. Semua angka diambil daripada <a2>kalkulator yuran Shopee Vietnam</a2>.
+ru: В {0} году Shopee Вьетнам повысил большинство сборов: сбор за обработку транзакции {1}% для всех способов оплаты с мая, новая таблица фиксированного сбора не-Mall с <b1>{2} мая {3}</b1> и Voucher Xtra с {4}% до {5}%. В гайде перечислены все сборы и разобран пример. Все цифры взяты из <a2>калькулятора сборов Shopee Вьетнам</a2>.
+zh: Shopee 越南站在 {0} 年上调了大部分费用：5 月起所有支付方式交易处理费 {1}%，<b1>{3} 年 5 月 {2} 日</b1>启用非 Mall 固定费新表，Voucher Xtra 由 {4}% 升至 {5}%。本指南列出全部费用并给出示例。所有数字均来自 <a2>Shopee 越南站费用计算器</a2>。
+
+@@ 999cd3a42c
+ms: Voucher Xtra berharga {0}% setiap item, terhad kepada {1} ₫ seunit, dan PiShip {2} ₫ sepesanan. Untuk penjual individu dan isi rumah perniagaan, Shopee turut menahan VAT {3}% dan cukai pendapatan peribadi {4}% atas harga item selepas diskaun penjual.
+ru: Voucher Xtra стоит {0}% от каждого товара, не более {1} ₫ за единицу, PiShip — {2} ₫ за заказ. С индивидуальных продавцов и семейного бизнеса Shopee также удерживает {3}% НДС и {4}% НДФЛ с цены товара после скидки продавца.
+zh: Voucher Xtra 按每件商品 {0}% 收取，每件封顶 {1} ₫；PiShip 每单 {2} ₫。对个人和个体工商户卖家，Shopee 还按扣除卖家折扣后的商品价格代扣 {3}% 增值税和 {4}% 个人所得税。
+
+@@ 9a91084523
+ms: Cara yuran Shopee Vietnam berfungsi
+ru: Как устроены сборы Shopee Вьетнам
+zh: Shopee 越南站费用构成
+
+@@ 9ba87ddd52
+ms: Yuran tetap ialah {0}% hingga {1}% untuk kedai bukan Mall dan {2}% hingga {3}% untuk Shopee Mall, ikut kategori. Selain itu terdapat yuran pemprosesan transaksi {4}% dan {5} ₫ sepesanan.
+ru: Фиксированный сбор — от {0}% до {1}% для магазинов не из Mall и от {2}% до {3}% для Shopee Mall, по категориям. Сверху — сбор за обработку транзакции {4}% и {5} ₫ за заказ.
+zh: 固定费按类目计，非 Mall 店铺为 {0}% 至 {1}%，Shopee Mall 为 {2}% 至 {3}%。此外还有 {4}% 交易处理费和每单 {5} ₫。
+
+@@ 9bb4d62cf1
+ms: Yuran infrastruktur
+ru: Инфраструктурный сбор
+zh: 基础设施费
+
+@@ 9e57c57844
+ms: Beberapa kategori alat ganti kenderaan dinamakan berbeza dalam jadual bukan Mall dan Mall, jadi ia menunjukkan kadar untuk satu jenis kedai sahaja.
+ru: Некоторые категории автозапчастей названы в таблицах не-Mall и Mall по-разному, поэтому ставка показана только для одного типа магазина.
+zh: 部分汽车配件类目在非 Mall 与 Mall 费率表中名称不同，因此只显示一种店铺类型的费率。
+
+@@ a0f7241c75
+ms: <b1>{0} Mei {1}</b1> (bukan Mall) dan <b2>{2} Mei {3}</b2> (Mall): yuran pemprosesan transaksi menjadi {4}% untuk semua kaedah pembayaran.
+ru: <b1>{0} мая {1}</b1> (не Mall) и <b2>{2} мая {3}</b2> (Mall): сбор за обработку транзакции стал {4}% для всех способов оплаты.
+zh: <b1>{1} 年 5 月 {0} 日</b1>（非 Mall）和 <b2>{3} 年 5 月 {2} 日</b2>（Mall）：所有支付方式的交易处理费统一为 {4}%。
+
+@@ a1d21374e0
+ms: Adakah kedai baharu membayar yuran tetap?
+ru: Платят ли новые магазины фиксированный сбор?
+zh: 新店需要支付固定费吗？
+
+@@ a2c50d7181
+ms: {0}% hingga {1}% (bukan Mall), {2}% hingga {3}% (Mall) ikut kategori
+ru: От {0}% до {1}% (не Mall), от {2}% до {3}% (Mall) по категориям
+zh: 按类目：{0}% 至 {1}%（非 Mall），{2}% 至 {3}%（Mall）
+
+@@ a2f0574d4c
+ms: Ya. Sejak {0} Mei {1} (bukan Mall) dan {2} Mei {3} (Mall) yuran pemprosesan transaksi ialah {4}% untuk semua kaedah pembayaran, termasuk COD. Ia merangkumi kos penghantaran yang dibayar pembeli.
+ru: Да. С {0} мая {1} года (не Mall) и {2} мая {3} года (Mall) сбор за обработку транзакции — {4}% для всех способов оплаты, включая наложенный платёж. В базу входит доставка, оплаченная покупателем.
+zh: 是的。自 {1} 年 5 月 {0} 日（非 Mall）和 {3} 年 5 月 {2} 日（Mall）起，包括货到付款在内的所有支付方式交易处理费均为 {4}%，并计入买家支付的运费。
+
+@@ a33a4768ed
+ms: Yuran tetap
+ru: Фиксированный сбор
+zh: 固定费
+
+@@ a85450c152
+ms: {0}. Yuran tetap (komisen)
+ru: {0}. Фиксированный сбор (комиссия)
+zh: {0}. 固定费（佣金）
+
+@@ abd49a2e94
+ms: {0}% untuk semua kaedah pembayaran (Phí Xử Lý Giao Dịch, ditukar nama daripada Phí Thanh Toán pada April {1}). Ia dikenakan pada harga item ditambah kos penghantaran yang dibayar pembeli, ditolak promosi penjual.
+ru: {0}% для всех способов оплаты (Phí Xử Lý Giao Dịch, до апреля {1} года — Phí Thanh Toán). Считается от цены товара плюс доставка, оплаченная покупателем, за вычетом акций продавца.
+zh: 所有支付方式均为 {0}%（Phí Xử Lý Giao Dịch，{1} 年 4 月由 Phí Thanh Toán 更名）。按商品价格加买家支付的运费、减去卖家促销计算。
+
+@@ ad834c2948
+ms: Mall ({0} Okt {1})
+ru: Mall ({0} окт. {1})
+zh: Mall（{1}年10月{0}日）
+
+@@ b9a2ede8fd
+ms: Yuran tetap Mall
+ru: Фиксированный сбор Mall
+zh: Mall 固定费
+
+@@ bd98d93d1e
+ms: Kedai bukan Mall baharu tidak membayar yuran tetap selama {0} hari selepas produk pertama disiarkan. Yuran lain masih dikenakan.
+ru: Новые магазины не из Mall не платят фиксированный сбор {0} дней после публикации первого товара. Остальные сборы взимаются.
+zh: 非 Mall 新店首个商品上架后 {0} 天内免收固定费，其他费用照常收取。
+
+@@ c048fe2513
+ms: Sejak {0} Julai {1}, Shopee menahan cukai daripada penjual individu dan isi rumah perniagaan di bawah Dekri {2}/{3}: VAT {4}% dan cukai pendapatan peribadi {5}% bagi barangan ({6}% dan {7}% bagi perkhidmatan), atas harga item selepas diskaun penjual. Untuk serum itu jumlahnya {8} ₫.
+ru: С {0} июля {1} года Shopee удерживает налог с индивидуальных продавцов и семейного бизнеса по Указу {2}/{3}: {4}% НДС и {5}% НДФЛ с товаров ({6}% и {7}% с услуг) от цены товара после скидки продавца. Для сыворотки это {8} ₫.
+zh: 自 {1} 年 7 月 {0} 日起，Shopee 根据第 {2}/{3} 号法令向个人和个体工商户卖家代扣税款：商品为 {4}% 增值税和 {5}% 个人所得税（服务为 {6}% 和 {7}%），按扣除卖家折扣后的商品价格计算。以该精华液为例为 {8} ₫。
+
+@@ c088632d1b
+ms: Yuran pemprosesan transaksi ({0}%)
+ru: Сбор за обработку транзакции ({0}%)
+zh: 交易处理费（{0}%）
+
+@@ c47441561b
+ms: Serum dikenakan yuran tetap {0}%. Kos produk {1} ₫, penghantaran percuma untuk pembeli.
+ru: Для сывороток фиксированный сбор — {0}%. Себестоимость {1} ₫, бесплатная доставка для покупателя.
+zh: 精华液固定费为 {0}%。商品成本 {1} ₫，买家包邮。
+
+@@ cd218fe3ae
+ms: Dikemas kini {0} Mei / {1} Sep {2}
+
+@@ d8392a54ca
+ms: Serum {0} ₫ daripada kedai bukan Mall, kos produk {1} ₫, penghantaran percuma untuk pembeli.
+ru: Сыворотка за {0} ₫ в магазине не из Mall, себестоимость {1} ₫, бесплатная доставка для покупателя.
+zh: 非 Mall 店铺的 {0} ₫ 精华液，商品成本 {1} ₫，买家包邮。
+
+@@ ee2b3aeddb
+ms: Harga item + penghantaran pembeli − promosi penjual
+ru: Цена товара + доставка покупателя − акции продавца
+zh: 商品价格 + 买家运费 − 卖家促销
+
+@@ f1a7c74342
+ms: Shopee Vietnam
+
+@@ f23a4cbc2e
+ms: Yuran tetap Mall baharu untuk kategori Buku &amp; Majalah
+ru: Новый фиксированный сбор Mall для категорий «Книги и журналы»
+zh: 书籍与杂志类目的 Mall 固定费更新
+
+@@ f44e0fd070
+ms: Yuran Shopee Vietnam {0}
+ru: Сборы Shopee Вьетнам {0}
+zh: Shopee 越南站费用 {0}
+
+@@ f691c10a6a
+ms: Berapakah komisen Shopee Vietnam?
+ru: Какая комиссия у Shopee Вьетнам?
+zh: Shopee 越南站佣金是多少？
+

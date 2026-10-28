@@ -536,3 +536,32 @@ S['ru'].update(dict(
   t_liveX='Заказ через Shopee Live или Shopee Video (Live/Video XTRA)', t_liveX_h='3% (2% при участии в Promo XTRA или XTRA+), не более Rp20 000 за единицу. Некоторые категории исключены.',
   c_admin='Административный сбор', c_mallpay='Платёжный сбор Shopee Mall', c_gox='Сбор Gratis Ongkir XTRA', c_promox='Сбор Promo XTRA', c_promoxp='Сбор Promo XTRA+', c_livex='Сбор Live/Video XTRA',
 ))
+# Shopee Vietnam
+S['en'].update(dict(
+  t_svnNew='New non-Mall shop: first 30 days', t_svnNew_h='New non-Mall sellers pay no fixed fee on orders in the 30 days after their first product goes live.',
+  t_vXtra='Joined Voucher Xtra', t_vXtra_h='5.5% of each item, max 50,000 ₫ per item (from 23 May 2026).',
+  t_piShip='Joined PiShip (shipping saver)', t_piShip_h='2,700 ₫ per order (from 23 May 2026).',
+  t_svWht='Individual or business household seller (tax withheld by Shopee)', t_svWht_h='Since 1 July 2025 Shopee withholds 1% VAT + 0.5% personal income tax on the item price after seller discount. Leave off for registered companies.',
+  c_fixedfee='Fixed fee (commission)', c_infra='Infrastructure fee', c_vxtra='Voucher Xtra service fee', c_piship='PiShip service fee',
+))
+S['ms'].update(dict(
+  t_svnNew='Kedai bukan Mall baharu: 30 hari pertama', t_svnNew_h='Penjual bukan Mall baharu tidak membayar yuran tetap untuk pesanan dalam 30 hari selepas produk pertama disiarkan.',
+  t_vXtra='Menyertai Voucher Xtra', t_vXtra_h='5.5% setiap item, maks. 50,000 ₫ seunit (mulai 23 Mei 2026).',
+  t_piShip='Menyertai PiShip (penjimat penghantaran)', t_piShip_h='2,700 ₫ sepesanan (mulai 23 Mei 2026).',
+  t_svWht='Penjual individu atau isi rumah perniagaan (cukai ditahan oleh Shopee)', t_svWht_h='Sejak 1 Julai 2025 Shopee menahan VAT 1% + cukai pendapatan peribadi 0.5% atas harga item selepas diskaun penjual. Biarkan tidak ditanda untuk syarikat berdaftar.',
+  c_fixedfee='Yuran tetap (komisen)', c_infra='Yuran infrastruktur', c_vxtra='Yuran perkhidmatan Voucher Xtra', c_piship='Yuran perkhidmatan PiShip',
+))
+S['zh'].update(dict(
+  t_svnNew='非 Mall 新店：前 30 天', t_svnNew_h='非 Mall 新卖家在首个商品上架后 30 天内的订单免收固定费。',
+  t_vXtra='已参加 Voucher Xtra', t_vXtra_h='每件商品 5.5%，每件最高 50,000 ₫（2026 年 5 月 23 日起）。',
+  t_piShip='已参加 PiShip（运费省钱包）', t_piShip_h='每单 2,700 ₫（2026 年 5 月 23 日起）。',
+  t_svWht='个人或个体工商户卖家（由 Shopee 代扣税）', t_svWht_h='自 2025 年 7 月 1 日起，Shopee 按扣除卖家折扣后的商品价格代扣 1% 增值税 + 0.5% 个人所得税。注册公司请勿勾选。',
+  c_fixedfee='固定费（佣金）', c_infra='基础设施费', c_vxtra='Voucher Xtra 服务费', c_piship='PiShip 服务费',
+))
+S['ru'].update(dict(
+  t_svnNew='Новый магазин не из Mall: первые 30 дней', t_svnNew_h='Новые продавцы не из Mall не платят фиксированный сбор за заказы в течение 30 дней после публикации первого товара.',
+  t_vXtra='Участвую в Voucher Xtra', t_vXtra_h='5,5% от каждого товара, не более 50 000 ₫ за единицу (с 23 мая 2026).',
+  t_piShip='Участвую в PiShip (экономия на доставке)', t_piShip_h='2 700 ₫ за заказ (с 23 мая 2026).',
+  t_svWht='Индивидуальный продавец или семейный бизнес (налог удерживает Shopee)', t_svWht_h='С 1 июля 2025 года Shopee удерживает 1% НДС + 0,5% НДФЛ с цены товара после скидки продавца. Для зарегистрированных компаний не отмечайте.',
+  c_fixedfee='Фиксированный сбор (комиссия)', c_infra='Инфраструктурный сбор', c_vxtra='Сервисный сбор Voucher Xtra', c_piship='Сервисный сбор PiShip',
+))

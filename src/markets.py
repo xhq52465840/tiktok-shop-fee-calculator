@@ -22,7 +22,7 @@ for o in ET:
 def load_ru(p):
     d = load(p); return [{'g': d['groups'][x[0]], 'n': x[1], 'r': x[2]} for x in d['o']], d.get('tables', {})
 OZ, OZ_T = load_ru('ozon/ru.json'); WB, _ = load_ru('wildberries/ru.json'); YM, _ = load_ru('yandex-market/ru.json')
-TT_SG, _ = load_ru('tiktok-shop/sg.json'); TT_TH, _ = load_ru('tiktok-shop/th.json'); TT_VN, _ = load_ru('tiktok-shop/vn.json'); TT_ID, _ = load_ru('tiktok-shop/id.json'); SH_ID, _ = load_ru('shopee/id.json')
+TT_SG, _ = load_ru('tiktok-shop/sg.json'); TT_TH, _ = load_ru('tiktok-shop/th.json'); TT_VN, _ = load_ru('tiktok-shop/vn.json'); TT_ID, _ = load_ru('tiktok-shop/id.json'); SH_ID, _ = load_ru('shopee/id.json'); SH_VN, _ = load_ru('shopee/vn.json')
 # TikTok Shop & Tokopedia ID Platform Commission Savings from 18 May 2026 (GMV Max / Growth Xtra)
 TT_ID_SAV = [('none', 'idsav_none'), ('gmo', 'idsav_gmo'), ('gx', 'idsav_gx'), ('gxgmo', 'idsav_gxgmo'), ('s3', 'idsav_s3'), ('s3gx', 'idsav_s3gx')]
 VND = dict(currency='VND', symbols={'VND': '₫'}, symbolAfter=True, locale='en-US', decimals=0, roundFees=0)
@@ -221,6 +221,31 @@ MARKETS = {
      ('Rincian Persentase Gratis Ongkir XTRA by product (current table, and new table from 1 Dec 2026 non-Mall / 1 Jan 2027 Mall) — Shopee ID Seller Education Hub (14 Oct 2026)', 'https://seller.shopee.co.id/edu/article/7216'),
      ('Program Opsional Promo XTRA — Shopee ID Seller Education Hub (20 Oct 2026)', 'https://seller.shopee.co.id/edu/article/18196'),
      ('Ilustrasi Perhitungan Estimasi Biaya Proses Pesanan (Rp1,250 per completed order) — Shopee ID Seller Education Hub', 'https://seller.shopee.co.id/edu/article/25275')]),
+ 'shopee-vn': dict(
+   platform='shopee', platformName='Shopee', market='VN', marketName='Vietnam', slug='shopee/vietnam',
+   flag='🇻🇳', **VND, langs=['en'], catLang='vi',
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 199000, 'cost': 60000}, selector={'label': 'cat', 'options': SH_VN, 'src': 'shopee-vn'},
+   defaultOption=gidx(SH_VN, 'Sắc Đẹp', 'Chăm sóc da mặt › Tinh chất dưỡng'),
+   store=[('mp', 'mp_nonmall'), ('mall', 'mall')], periods=None,
+   toggles=[dict(id='svnNew', vals=['', '']), dict(id='vXtra', vals=['', '']), dict(id='piShip', vals=['', '']), dict(id='svWht', vals=['', ''])],
+   components=[
+     dict(id='fixedfee', type='pct', rate='opt:{store}', zeroIf='svnNew', base='net', color=C[0]),
+     dict(id='tx', type='pct', rate=6, base='net_ship', color=C[1]),
+     dict(id='infra', type='fixed', rate=3000, color=C[3]),
+     dict(id='vxtra', type='pct', rate=5.5, base='net', capPerItem=50000, when='vXtra', color=C[2]),
+     dict(id='piship', type='fixed', rate=2700, when='piShip', color=C[4]),
+     dict(id='wht', type='pct', rate=1.5, when='svWht', base='net', color=C[5])],
+   compare=None,
+   sources=[
+     ('Một số phí bán hàng trên Shopee (fee overview) — Shopee VN Seller Education Hub (14 May 2026)', 'https://banhang.shopee.vn/edu/article/251'),
+     ('Phí Cố Định for non-Mall sellers from 23 May 2026 (category table PDF attached) — Shopee VN Seller Education Hub (14 May 2026)', 'https://banhang.shopee.vn/edu/article/2139'),
+     ('Phí Cố Định for Shopee Mall sellers from 4 Oct 2026 (category table PDF attached) — Shopee VN Seller Education Hub (14 Sep 2026)', 'https://banhang.shopee.vn/edu/article/2579'),
+     ('Phí Xử Lý Giao Dịch (6% transaction processing fee from 1 May 2026 non-Mall / 8 May 2026 Mall) — Shopee VN Seller Education Hub (24 Apr 2026)', 'https://banhang.shopee.vn/edu/article/2150'),
+     ('Phí Hạ Tầng (infrastructure fee, 3,000 ₫ per order) — Shopee VN Seller Education Hub', 'https://banhang.shopee.vn/edu/article/25223'),
+     ('Fee and policy update from 23 May 2026: Voucher Xtra 5.5% (max 50,000 ₫ per item), PiShip 2,700 ₫ per order — Shopee VN Seller Education Hub (28 May 2026)', 'https://banhang.shopee.vn/edu/article/27540'),
+     ('Ưu đãi Người bán hàng mới: no fixed fee for 30 days — Shopee VN Seller Education Hub', 'https://banhang.shopee.vn/edu/article/19130'),
+     ('Shopee withholds 1% VAT + 0.5% PIT for household and individual sellers from 1 Jul 2025 (Decree 117/2025) — Shopee VN Seller Education Hub', 'https://banhang.shopee.vn/edu/article/24233')]),
  'etsy': dict(
    platform='etsy', platformName='Etsy', market='GLOBAL', marketName='All countries', slug='etsy',
    flag='🧶', currency='USD', symbols={'USD': '$', 'GBP': '£', 'EUR': '€'}, locale='en-US', langs=['en', 'zh'], currencyFromOption=True,
@@ -447,7 +472,7 @@ MARKETS = {
 }
 
 COMING = [
-  ('Shopee', 'Vietnam & more', '🛍️'), ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
+  ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
 
 # ---------- Python mirror of assets/engine.js (used to compute worked examples in the guides)
 from decimal import Decimal, ROUND_HALF_UP

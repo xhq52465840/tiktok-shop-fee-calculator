@@ -194,6 +194,7 @@ C_SUM = {
  'walmart-us': 'Referral fees by category with price bands and tiers, 2026 New-Seller Savings (20–40% off), WFS fees by weight.',
  'shopee-ph': 'Marketplace & Mall commission, 2.24% TX, Platform Shipping Fee (₱100 cap), ₱5 OPF, 1–1.5% growth support fee.',
  'shopee-id': 'Non-Star, Star/Star+ & Mall admin fee by product type (2.5–11.7%), 1.8% Mall payment fee, Rp1,250 per order, Gratis Ongkir XTRA incl. the 1 Dec 2026 table.',
+ 'shopee-vn': 'Non-Mall (23 May 2026) & Mall (4 Oct 2026) fixed fee for 1,500+ categories, 6% transaction processing fee, 3,000 ₫ infrastructure fee.',
  'shopee-th': 'Non-Mall & Mall commission for 1,400+ categories from 4 Aug 2026, 3.21% TX, ฿1.07 per order.',
 }
 C_SUM_RU = {
@@ -221,6 +222,7 @@ C_SUM_ZH = {
  'walmart-us': '按类目的推荐费（含价格档与分段费率）、2026 新卖家优惠（减 20–40%）、按重量计的 WFS 费用。',
  'shopee-ph': 'Marketplace / Mall 佣金，交易手续费 2.24%，平台运费（每件封顶 ₱100），₱5 订单处理费，1–1.5% 卖家成长支持费。',
  'shopee-id': '按商品类型的 Non-Star、Star/Star+ 与 Mall 管理费（2.5–11.7%），Mall 支付费 1.8%，每单 Rp1,250，Gratis Ongkir XTRA（含 2026年12月1日新费率）。',
+ 'shopee-vn': '1,500+ 个类目的非 Mall（2026年5月23日）/ Mall（2026年10月4日）固定费，交易处理费 6%，基础设施费每单 3,000 ₫。',
  'shopee-th': '2026年8月4日起 1,400+ 个类目的非 Mall / Mall 佣金，交易手续费 3.21%，每单 ฿1.07。',
 }
 
@@ -264,7 +266,7 @@ def home(lang='en'):
     live_map = {
       'etsy': [('etsy', 'Etsy'), ('etsy-uk', 'Etsy UK')],
       'walmart': [('walmart-us', 'Walmart Marketplace US')],
-      'shopee': [('shopee-my', 'Shopee Malaysia'), ('shopee-sg', 'Shopee Singapore'), ('shopee-ph', 'Shopee Philippines'), ('shopee-th', 'Shopee Thailand'), ('shopee-id', 'Shopee Indonesia')],
+      'shopee': [('shopee-my', 'Shopee Malaysia'), ('shopee-sg', 'Shopee Singapore'), ('shopee-ph', 'Shopee Philippines'), ('shopee-th', 'Shopee Thailand'), ('shopee-id', 'Shopee Indonesia'), ('shopee-vn', 'Shopee Vietnam')],
       'lazada': [('lazada-my', 'Lazada Malaysia')],
     }
     for name, live in others:
@@ -299,12 +301,13 @@ def home(lang='en'):
      ('🇺🇸', 'Walmart US', 'Referral fee schedule · WFS fees · New-Seller Savings', 'Updated 9 Mar / 27 May 2026', '/en/walmart/united-states/#sources'),
      ('🇵🇭', 'Shopee PH', 'Seller Fees · Commission tables · Growth Support Fee', 'Updated 22 Oct 2026', '/en/shopee/philippines/#sources'),
      ('🇮🇩', 'Shopee ID', 'Fee summary · Admin fee by product · Gratis Ongkir XTRA (new table 1 Dec 2026)', 'Updated 31 Jul / 14 Oct 2026', '/en/shopee/indonesia/#sources'),
+     ('🇻🇳', 'Shopee VN', 'Fixed fee tables (non-Mall 23 May, Mall 4 Oct 2026) · Transaction processing fee', 'Updated 14 May / 14 Sep 2026', '/en/shopee/vietnam/#sources'),
      ('🇹🇭', 'Shopee TH', 'Fee Policy · Sale Transaction Fee from 4 Aug 2026', 'Help Centre article 77254', '/en/shopee/thailand/#sources'),
     ]
     srows = ''.join(f'<tr><td><span class="flag">{f}</span> <b>{esc(m)}</b></td><td><a href="{u}"><span lang="en">{esc(d)}</span> {ic("ext",13)}</a><span class="sub">{esc(note)}</span></td><td>{badge("Checked "+VDATE["en"],"verified","shield")}</td></tr>' for f,m,d,note,u in srcs)
     guides = [g for g in sf_site.GUIDES_ALL if g.get('lang') == lang][:6]
     body = f'''<section class="hero"><div class="wrap">
-<div><div class="announce">{badge("New","new")}<span>Shopee Indonesia live, with the 1 Dec 2026 Gratis Ongkir XTRA rates · <a href="shopee/indonesia/">Open calculator {ic("arrow",13)}</a></span></div>
+<div><div class="announce">{badge("New","new")}<span>Shopee Indonesia &amp; Vietnam live · <a href="shopee/vietnam/">Open Vietnam {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">Know exactly what every marketplace takes from your sale.</h1>
 <p class="lead">SellerFee turns official marketplace rate cards into fast calculators. Pick your platform, enter a price, and see every fee, your payout and your real margin.</p>
 <div class="ctas"><a class="btn btn-primary btn-lg" href="tiktok-shop/malaysia/">{ic("calc",16)} TikTok Shop Malaysia</a>
@@ -455,6 +458,8 @@ def rate_changes(lang='en'):
     path = f'{lang}/rate-changes/'; ctx(path)
     ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (tr(lang, 'nav_rates'), None)], lang)
     rows = [
+     ('4 Oct 2026', 'Shopee VN', 'Mall fixed fee', 'New Mall fixed fee for Books & Magazines categories', 'en/shopee/vietnam/'),
+     ('23 May 2026', 'Shopee VN', 'Non-Mall fixed fee & service fees', 'New non-Mall fixed fee table (e.g. Beauty 14% → 17%); Voucher Xtra 4% → 5.5%; PiShip 1,620 ₫ → 2,700 ₫', 'en/shopee/vietnam/'),
      ('1 Dec 2026', 'Shopee ID', 'Gratis Ongkir XTRA', 'New free-shipping programme rates for non-Mall sellers (Mall from 1 Jan 2027): regular-size cap Rp40,000 → Rp60,000, special-size Rp60,000 → Rp80,000, most regular-size rates up 3–3.5 points', 'en/shopee/indonesia/'),
      ('1 Aug 2026', 'Shopee ID', 'New-seller admin fee waiver', 'Sellers who first upload from 1 Aug 2026 no longer get the free admin fee and Order Processing Fee period', 'en/shopee/indonesia/'),
      ('21 Oct 2026', 'TikTok Shop VN', 'Transaction Fee Savings', '6% transaction fee cut by 0.5–1.5 points for shops with a last-30-day ads take rate of 4% or more', 'en/tiktok-shop/vietnam/'),
@@ -494,7 +499,7 @@ def rate_changes(lang='en'):
 
 def static_pages(lang='en'):
     about = f'''
-<p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (Malaysia, Singapore, Thailand, the Philippines, Vietnam, Indonesia, the US and the UK), Shopee (Malaysia, Singapore, the Philippines, Thailand, Indonesia), Lazada Malaysia, Walmart Marketplace (US), Etsy (global and UK), and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
+<p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (Malaysia, Singapore, Thailand, the Philippines, Vietnam, Indonesia, the US and the UK), Shopee (Malaysia, Singapore, the Philippines, Thailand, Indonesia, Vietnam), Lazada Malaysia, Walmart Marketplace (US), Etsy (global and UK), and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
 <h2 id="how-we-source-rates">How we source rates</h2>
 <p>Every rate comes from the platform’s own seller help — TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Walmart Marketplace Learn, Etsy Help, Ozon Seller Edu, Wildberries instructions and КВВ PDF, Yandex Market help. Each calculator links its sources and shows the date we last checked them. When a platform publishes a rate but not the formula, we say so and make the rate editable. We don’t publish a calculator until rates can be verified from an official source.</p>
 <h2>How we keep them current</h2>
