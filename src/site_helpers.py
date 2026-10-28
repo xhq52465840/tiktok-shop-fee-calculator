@@ -7,6 +7,8 @@ def money(v, cur='MYR', dec=2, lang='en'):
             s = f'{a:,.{dec}f}'.replace(',', '\u00a0').replace('.', ',')
             return ('−' if neg else '') + s + '\u00a0₽'
         return ('−' if neg else '') + f'{a:,.{dec}f} ₽'
+    if cur == 'VND': return ('−' if neg else '') + f'{a:,.0f} ₫'
+    if cur == 'IDR': return ('−' if neg else '') + 'Rp' + f'{a:,.0f}'
     sym = {'MYR': 'RM', 'PHP': '₱', 'USD': '$', 'GBP': '£', 'SGD': 'S$', 'THB': '฿', 'EUR': '€'}.get(cur, cur + ' ')
     return ('−' if neg else '') + sym + f'{a:,.{dec}f}'
 

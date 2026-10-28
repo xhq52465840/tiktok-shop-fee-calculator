@@ -1,0 +1,419 @@
+@@ 59cba19401
+ms: Yuran Penjual TikTok Shop Vietnam {0}: Komisen, Yuran Transaksi {1}% dan Penjimatan Iklan Baharu
+ru: Сборы TikTok Shop Вьетнам для продавцов в {0} году: комиссия, транзакционный сбор {1}% и новая скидка за рекламу
+zh: TikTok Shop 越南站卖家费用 {0}：佣金、{1}% 交易手续费与新的广告减免
+
+@@ 9e8fd22baf
+ms: Setiap yuran penjual TikTok Shop Vietnam pada {0}: komisen kategori untuk Marketplace dan Mall, yuran transaksi {1}% dan peringkat penjimatannya mulai {2} Oktober, {3} ₫ sepesanan, cukai yang ditahan dan contoh pengiraan.
+ru: Все сборы TikTok Shop Вьетнам в {0} году: комиссия по категориям для Marketplace и Mall, транзакционный сбор {1}% и уровни скидки с {2} октября, {3} ₫ за заказ, удерживаемый налог и пример расчёта.
+zh: {0} 年 TikTok Shop 越南站全部卖家费用：Marketplace 与 Mall 类目佣金、{1}% 交易手续费及 10 月 {2} 日起的减免档位、每单 {3} ₫、代扣税与计算示例。
+
+@@ 5207aaf980
+ms: Yuran TikTok Shop Vietnam {0}
+ru: Сборы TikTok Shop Вьетнам {0}
+zh: TikTok Shop 越南站费用 {0}
+
+@@ ad8932b3e4
+ms: TikTok VN
+ru: TikTok VN
+zh: TikTok VN
+
+@@ 68c7ed5fb3
+ms: Yuran berbeza di setiap pasaran: komisen ikut kategori di Malaysia, Thailand, Filipina dan Vietnam, kadar rata termasuk GST di Singapura, yuran rujukan di AS dan satu kadar komisen di UK.
+ru: В каждой стране свои сборы: комиссия по категориям в Малайзии, Таиланде, на Филиппинах и во Вьетнаме, единая ставка с GST в Сингапуре, реферальный сбор в США и одна ставка комиссии в Великобритании.
+zh: 每个市场费用结构不同：马来西亚、泰国、菲律宾、越南按类目佣金，新加坡为统一含 GST 费率，美国是推荐费，英国是统一佣金。
+
+@@ 40729dec04
+ms: Komisen Marketplace &amp; Mall untuk {0}+ kategori (Mall mulai {1} Okt {2}), TX {3}% dengan penjimatan iklan, {4} ₫ sepesanan.
+ru: Комиссия Marketplace и Mall для {0}+ категорий (Mall с {1} окт. {2}), TX {3}% со скидкой за рекламу, {4} ₫ за заказ.
+zh: {0}+ 个类目的 Marketplace / Mall 佣金（Mall 自 {2}年10月{1}日），交易手续费 {3}%（含广告减免），每单 {4} ₫。
+
+@@ 5bd68cf88c
+ms: 🇻🇳 <a1>Vietnam</a1>
+ru: 🇻🇳 <a1>Вьетнам</a1>
+zh: 🇻🇳 <a1>越南</a1>
+
+@@ addb0f87eb
+ms: Kalkulator Yuran TikTok Shop: Malaysia, Singapura, Thailand, Filipina, Vietnam, AS & UK | SellerFee
+ru: Калькуляторы сборов TikTok Shop: Малайзия, Сингапур, Таиланд, Филиппины, Вьетнам, США и Великобритания | SellerFee
+zh: TikTok Shop 费用计算器：马来西亚、新加坡、泰国、菲律宾、越南、美国与英国 | SellerFee
+
+@@ 1e21df8f1d
+ms: Kalkulator yuran penjual TikTok Shop percuma untuk Malaysia, Singapura, Thailand, Filipina, Vietnam, Amerika Syarikat dan United Kingdom, berdasarkan kad kadar rasmi Seller University.
+ru: Бесплатные калькуляторы сборов TikTok Shop для Малайзии, Сингапура, Таиланда, Филиппин, Вьетнама, США и Великобритании на основе официальных тарифов Seller University.
+zh: 免费 TikTok Shop 卖家费用计算器，覆盖马来西亚、新加坡、泰国、菲律宾、越南、美国与英国，基于官方 Seller University 费率表。
+
+@@ 1b657de793
+ms: TikTok Shop VN
+ru: TikTok Shop VN
+zh: TikTok Shop VN
+
+@@ eea31bf9e3
+ms: Penjimatan Yuran Transaksi
+ru: Скидка на транзакционный сбор
+zh: 交易手续费减免
+
+@@ 677ea5723f
+ms: Yuran transaksi {0}% dikurangkan {1}–{2} mata untuk kedai dengan kadar iklan {3} hari lepas {4}% atau lebih
+ru: Транзакционный сбор {0}% снижается на {1}–{2} п. п. для магазинов с долей рекламы за последние {3} дней от {4}%
+zh: 近 {3} 天广告投入占比达 {4}% 及以上的店铺，{0}% 交易手续费减 {1}–{2} 个百分点
+
+@@ a0953610a1
+ms: Komisen Mall
+ru: Комиссия Mall
+zh: Mall 佣金
+
+@@ e673b897b6
+ms: Jadual Mall baharu ikut kategori; kategori buku Mall {0}% → {1}%
+ru: Новая таблица Mall по категориям; книги в Mall {0}% → {1}%
+zh: 新的 Mall 类目费率表；Mall 图书类目 {0}% → {1}%
+
+@@ 8805c240e6
+ms: Yuran Perkhidmatan Logistik
+ru: Сбор за логистические услуги
+zh: 物流服务费
+
+@@ ce3e2b50bb
+ms: Yuran baharu untuk bungkusan melebihi {0} kg, dari {1} ₫, maksimum {2} ₫
+ru: Новый сбор для посылок тяжелее {0} кг: от {1} ₫, не больше {2} ₫
+zh: 超过 {0} 公斤包裹的新费用，{1} ₫ 起，封顶 {2} ₫
+
+@@ 4537161048
+ms: SellerFee ialah laman web bebas yang menerbitkan kalkulator yuran dan keuntungan percuma untuk mereka yang menjual di pasaran dalam talian, terutamanya penjual rentas sempadan. Kami meliputi TikTok Shop (Malaysia, Singapura, Thailand, Filipina, Vietnam, AS dan UK), Shopee (Malaysia, Singapura, Filipina, Thailand), Lazada Malaysia, Walmart Marketplace (AS), Etsy (global dan UK), serta pasaran Rusia Ozon, Wildberries dan Yandex Market.
+ru: SellerFee — независимый сайт с бесплатными калькуляторами сборов и прибыли для тех, кто продаёт на маркетплейсах, особенно для трансграничных продавцов. Мы охватываем TikTok Shop (Малайзия, Сингапур, Таиланд, Филиппины, Вьетнам, США и Великобритания), Shopee (Малайзия, Сингапур, Филиппины, Таиланд), Lazada Малайзия, Walmart Marketplace (США), Etsy (глобальный и UK), а также российские маркетплейсы Ozon, Wildberries и Яндекс Маркет.
+zh: SellerFee 是一个独立网站，为在线上平台开店的卖家（尤其是跨境卖家）提供免费的费用与利润计算器。我们覆盖 TikTok Shop（马来西亚、新加坡、泰国、菲律宾、越南、美国和英国）、Shopee（马来西亚、新加坡、菲律宾、泰国）、Lazada 马来西亚、Walmart Marketplace（美国）、Etsy（全球与英国），以及俄罗斯平台 Ozon、Wildberries 和 Yandex Market。
+
+@@ 1011f1f065
+ms: Kalkulator Yuran TikTok Shop Vietnam {0} (Komisen, Yuran Transaksi {1}%)
+ru: Калькулятор сборов TikTok Shop Вьетнам {0} (комиссия, транзакционный сбор {1}%)
+zh: TikTok Shop 越南站费用计算器 {0}（佣金、{1}% 交易手续费）
+
+@@ fa446c42a9
+ms: Kalkulator yuran dan keuntungan TikTok Shop Vietnam percuma: komisen Marketplace dan Mall untuk {0}+ kategori, yuran transaksi {1}% dengan penjimatan iklan baharu, {2} ₫ sepesanan dan cukai yang ditahan.
+ru: Бесплатный калькулятор сборов и прибыли TikTok Shop Вьетнам: комиссия Marketplace и Mall для {0}+ категорий, транзакционный сбор {1}% с новой скидкой за рекламу, {2} ₫ за заказ и удерживаемый налог.
+zh: 免费 TikTok Shop 越南站费用与利润计算器：{0}+ 个类目的 Marketplace 与 Mall 佣金、含新广告减免的 {1}% 交易手续费、每单 {2} ₫ 及代扣税。
+
+@@ 1f1d63d683
+ms: Kalkulator Yuran TikTok Shop Vietnam
+ru: Калькулятор сборов TikTok Shop Вьетнам
+zh: TikTok Shop 越南站费用计算器
+
+@@ f3dc77bac9
+ms: Komisen Marketplace dan Mall untuk setiap kategori, yuran transaksi {0}% dan penjimatan berasaskan iklan yang baharu mulai {1} Oktober {2}, {3} ₫ sepesanan dan cukai {4}% yang ditahan daripada penjual individu.
+ru: Комиссия Marketplace и Mall для каждой категории, транзакционный сбор {0}% и новая скидка за рекламу с {1} октября {2}, {3} ₫ за заказ и налог {4}%, удерживаемый с физлиц.
+zh: 每个类目的 Marketplace 与 Mall 佣金、{0}% 交易手续费及 {2} 年 10 月 {1} 日起按广告投入的新减免、每单 {3} ₫，以及个人卖家被代扣的 {4}% 税。
+
+@@ f77441f165
+ms: Cara yuran TikTok Shop Vietnam berfungsi
+ru: Как устроены сборы TikTok Shop Вьетнам
+zh: TikTok Shop 越南站费用构成
+
+@@ 3d25bd41f4
+ms: Berapakah komisen TikTok Shop Vietnam?
+ru: Какая комиссия у TikTok Shop Вьетнам?
+zh: TikTok Shop 越南站佣金是多少？
+
+@@ b392660d30
+ms: Ia bergantung pada kategori. Kadar Marketplace antara {0}% hingga {1}% dan kadar Mall antara {2}% hingga {3}%. Kategori yang tidak disenaraikan dikenakan {4}% (Marketplace) atau {5}% (Mall).
+ru: Зависит от категории. Ставки Marketplace — от {0}% до {1}%, ставки Mall — от {2}% до {3}%. Категории, которых нет в таблице, платят {4}% (Marketplace) или {5}% (Mall).
+zh: 取决于类目。Marketplace 费率为 {0}% 至 {1}%，Mall 为 {2}% 至 {3}%。未列出的类目按 {4}%（Marketplace）或 {5}%（Mall）收取。
+
+@@ bb0dbe2e25
+ms: Berapakah yuran transaksi TikTok Shop Vietnam?
+ru: Какой транзакционный сбор у TikTok Shop Вьетнам?
+zh: TikTok Shop 越南站交易手续费是多少？
+
+@@ f455a681d0
+ms: {0}% mulai {1} Mei {2}, atas harga item selepas diskaun penjual ditambah penghantaran yang dibayar pembeli. Mulai {3} Oktober {4}, kedai yang berbelanja untuk iklan boleh mendapat potongan {5} hingga {6} mata.
+ru: {0}% с {1} мая {2} года от цены товара после скидок продавца плюс доставка, оплаченная покупателем. С {3} октября {4} года магазины, которые тратят на рекламу, получают скидку от {5} до {6} п. п.
+zh: 自 {2} 年 5 月 {1} 日起为 {0}%，按扣除卖家折扣后的商品价格加买家支付的运费计算。自 {4} 年 10 月 {3} 日起，投放广告的店铺可减 {5} 至 {6} 个百分点。
+
+@@ f4db95cf3d
+ms: Adakah yuran tetap sepesanan?
+ru: Есть ли фиксированный сбор за заказ?
+zh: 每单有固定费用吗？
+
+@@ 770120208a
+ms: Ya. Yuran Pemprosesan Pesanan ialah {0} ₫ bagi setiap pesanan yang dihantar.
+ru: Да. Сбор за обработку заказа — {0} ₫ за каждый доставленный заказ.
+zh: 有。订单处理费为每笔已送达订单 {0} ₫。
+
+@@ 8b554a23be
+ms: Adakah TikTok Shop menahan cukai di Vietnam?
+ru: Удерживает ли TikTok Shop налог во Вьетнаме?
+zh: TikTok Shop 在越南会代扣税吗？
+
+@@ 6894bdf7a3
+ms: Ya. Sejak {0} Julai {1} ia menahan VAT {2}% dan cukai pendapatan peribadi {3}% daripada penjual individu dan isi rumah perniagaan.
+ru: Да. С {0} июля {1} года платформа удерживает {2}% НДС и {3}% НДФЛ с физлиц и семейных бизнесов.
+zh: 会。自 {1} 年 7 月 {0} 日起，平台向个人和个体工商户卖家代扣 {2}% 增值税和 {3}% 个人所得税。
+
+@@ 55e7e74ebe
+ms: TikTok Shop Vietnam mengenakan tiga yuran pada pesanan biasa yang dihantar. Yuran TikTok sendiri sudah termasuk cukai Vietnam bagi penjual tanpa kod cukai syarikat yang disahkan.
+ru: TikTok Shop Вьетнам берёт три сбора с обычного доставленного заказа. Собственные сборы TikTok уже включают вьетнамские налоги для продавцов без подтверждённого налогового кода компании.
+zh: TikTok Shop 越南站对一笔正常送达的订单收取三项费用。对于没有已验证公司税号的卖家，TikTok 自身的费用已含越南税费。
+
+@@ 7c8dbe6f8e
+ms: {0}. Yuran komisen platform
+ru: {0}. Комиссия платформы
+zh: {0}. 平台佣金
+
+@@ e5e8a30ec3
+ms: Komisen bergantung pada kategori dan sama ada anda menjual sebagai kedai Marketplace atau Mall. Kadar Marketplace diambil daripada jadual berkuat kuasa <b1>{0} Julai {1}</b1>; kadar Mall daripada jadual berkuat kuasa <b2>{2} Oktober {3}</b2>, yang turut menurunkan kategori buku Mall daripada {4}% kepada {5}%. Jadual itu mempunyai lebih {6} kategori, dari {7}% hingga {8}% untuk Marketplace dan {9}% hingga {10}% untuk Mall. Kategori yang tiada dalam jadual dikenakan kadar lalai {11}% (Marketplace) atau {12}% (Mall). Komisen dikenakan atas harga item selepas diskaun penjual. Penghantaran tidak termasuk.
+ru: Комиссия зависит от категории и от того, продаёте вы как магазин Marketplace или Mall. Ставки Marketplace — из таблицы, действующей с <b1>{0} июля {1}</b1>; ставки Mall — из таблицы, действующей с <b2>{2} октября {3}</b2>, которая также снизила ставку для книг в Mall с {4}% до {5}%. В таблице больше {6} категорий: от {7}% до {8}% для Marketplace и от {9}% до {10}% для Mall. Категории, которых нет в таблице, платят базовые {11}% (Marketplace) или {12}% (Mall). Комиссия считается от цены товара после скидок продавца, без доставки.
+zh: 佣金取决于类目，以及你是 Marketplace 还是 Mall 店铺。Marketplace 费率来自 <b1>{1} 年 7 月 {0} 日</b1>生效的费率表；Mall 费率来自 <b2>{3} 年 10 月 {2} 日</b2>生效的费率表，同时把 Mall 图书类目从 {4}% 降至 {5}%。表中有 {6} 多个类目，Marketplace 为 {7}% 至 {8}%，Mall 为 {9}% 至 {10}%。表中未列出的类目按默认 {11}%（Marketplace）或 {12}%（Mall）收取。佣金按扣除卖家折扣后的商品价格计算，不含运费。
+
+@@ 2625844489
+ms: {0}% untuk pesanan yang dibuat mulai {1} Mei {2}, atas jumlah yang dibayar pelanggan ditambah sebarang diskaun platform, tolak bayaran balik. Secara praktiknya, itu ialah harga item selepas diskaun penjual ditambah penghantaran yang dibayar pembeli. Mulai <b1>{3} Oktober {4}</b1>, kedai yang berbelanja untuk iklan mendapat yuran transaksi lebih rendah, berdasarkan kadar iklan mereka dalam {5} hari lepas: potongan {6} mata peratusan pada {7}% hingga bawah {8}%, {9} pada {10}% hingga bawah {11}%, {12} pada {13}% hingga bawah {14}%, {15} pada {16}% hingga bawah {17}%, dan {18} pada {19}% atau lebih.
+ru: {0}% для заказов, созданных с {1} мая {2} года, от суммы, которую заплатил покупатель, плюс скидки платформы, за вычетом возвратов. На практике это цена товара после скидок продавца плюс доставка, оплаченная покупателем. С <b1>{3} октября {4}</b1> магазины, которые тратят на рекламу, платят меньше, в зависимости от доли рекламы за последние {5} дней: минус {6} п. п. при доле от {7}% до {8}%, {9} — от {10}% до {11}%, {12} — от {13}% до {14}%, {15} — от {16}% до {17}% и {18} — от {19}%.
+zh: {2} 年 5 月 {1} 日起创建的订单为 {0}%，按买家实付金额加平台折扣、减去退款计算，实际上就是扣除卖家折扣后的商品价格加买家支付的运费。自 <b1>{4} 年 10 月 {3} 日</b1>起，投放广告的店铺按近 {5} 天广告投入占比享受更低的交易手续费：{7}% 至 {8}% 以下减 {6} 个百分点，{10}% 至 {11}% 以下减 {9}，{13}% 至 {14}% 以下减 {12}，{16}% 至 {17}% 以下减 {15}，{19}% 及以上减 {18}。
+
+@@ 09fceb0948
+ms: {0} ₫ bagi setiap pesanan yang dihantar, sejak {1} Oktober {2}.
+ru: {0} ₫ за каждый доставленный заказ с {1} октября {2} года.
+zh: 自 {2} 年 10 月 {1} 日起，每笔已送达订单 {0} ₫。
+
+@@ 1857b802b9
+ms: {0}. Cukai yang ditahan untuk penjual individu dan isi rumah
+ru: {0}. Налог, удерживаемый с физлиц и семейных бизнесов
+zh: {0}. 个人和个体工商户卖家的代扣税
+
+@@ e5b8b419ee
+ms: Sejak {0} Julai {1}, TikTok Shop menahan VAT {2}% dan cukai pendapatan peribadi {3}% daripada penjual individu dan isi rumah perniagaan, atas harga item selepas diskaun penjual. Tandakan pilihan dalam kalkulator jika ini berkaitan dengan anda. Syarikat berdaftar mengisytiharkan cukai mereka sendiri.
+ru: С {0} июля {1} года TikTok Shop удерживает {2}% НДС и {3}% НДФЛ с физлиц и семейных бизнесов от цены товара после скидки продавца. Если это про вас, включите опцию в калькуляторе. Зарегистрированные компании декларируют налог сами.
+zh: 自 {1} 年 7 月 {0} 日起，TikTok Shop 按扣除卖家折扣后的商品价格向个人和个体工商户卖家代扣 {2}% 增值税和 {3}% 个人所得税。如适用，请在计算器中勾选该选项。注册公司自行申报纳税。
+
+@@ 5f1e19561a
+ms: Apa yang tidak termasuk
+ru: Что не учтено
+zh: 未计入的费用
+
+@@ 036594d5ac
+ms: Mulai {0} Oktober {1} terdapat juga yuran perkhidmatan logistik untuk bungkusan melebihi {2} kg, dari {3} ₫ dan maksimum {4} ₫ setiap bungkusan. Komisen affiliate dan iklan adalah pilihan. Masukkan komisen affiliate dalam medannya, dan kos lain di bawah kos lain.
+ru: С {0} октября {1} года также действует сбор за логистику для посылок тяжелее {2} кг: от {3} ₫, не больше {4} ₫ за посылку. Партнёрская комиссия и реклама необязательны. Укажите партнёрскую комиссию в её поле, а остальные расходы — в прочих расходах.
+zh: 自 {1} 年 10 月 {0} 日起，超过 {2} 公斤的包裹还要收物流服务费，{3} ₫ 起，每个包裹封顶 {4} ₫。联盟佣金和广告是可选的。联盟佣金填在对应字段，其他成本填在“其他成本”。
+
+@@ 5d3732ba50
+ms: Contoh {0}: serum {1} ₫, kedai Marketplace
+ru: Пример {0}: сыворотка за {1} ₫, магазин Marketplace
+zh: 示例 {0}：{1} ₫ 精华，Marketplace 店铺
+
+@@ 587aab1f4c
+ms: Serums &amp; Essences pada {0}%, kos produk {1} ₫, penghantaran percuma untuk pembeli.
+ru: Serums &amp; Essences по ставке {0}%, себестоимость {1} ₫, бесплатная доставка для покупателя.
+zh: Serums &amp; Essences 费率 {0}%，商品成本 {1} ₫，买家包邮。
+
+@@ 9e24b2869d
+ms: Untung {0} ₫ (margin {1}%).
+ru: Прибыль {0} ₫ (маржа {1}%).
+zh: 利润 {0} ₫（利润率 {1}%）。
+
+@@ e1d6a956b7
+ms: Contoh {0}: serum yang sama di kedai Mall
+ru: Пример {0}: та же сыворотка в магазине Mall
+zh: 示例 {0}：同一款精华在 Mall 店铺
+
+@@ 8e77172002
+ms: Kadar Mall ialah {0}%: jumlah yuran {1} ₫, untung {2} ₫.
+ru: Ставка Mall — {0}%: сборы {1} ₫, прибыль {2} ₫.
+zh: Mall 费率为 {0}%：费用合计 {1} ₫，利润 {2} ₫。
+
+@@ a12a4dbbaf
+ms: Contoh {0}: dengan kadar iklan {1}%
+ru: Пример {0}: доля рекламы {1}%
+zh: 示例 {0}：广告投入占比 {1}%
+
+@@ 28b292455b
+ms: Kedai Marketplace dengan kadar iklan antara {0}% dan {1}% mendapat potongan {2} mata pada yuran transaksi mulai {3} Oktober {4}. Yuran turun kepada {5}% ({6} ₫) dan jumlah yuran kepada {7} ₫.
+ru: Магазин Marketplace с долей рекламы от {0}% до {1}% с {3} октября {4} года получает скидку {2} п. п. на транзакционный сбор. Сбор снижается до {5}% ({6} ₫), а все сборы — до {7} ₫.
+zh: 广告投入占比在 {0}% 到 {1}% 之间的 Marketplace 店铺，自 {4} 年 10 月 {3} 日起交易手续费减 {2} 个百分点。手续费降至 {5}%（{6} ₫），费用合计降至 {7} ₫。
+
+@@ 2cc3c40e18
+ms: Contoh {0}: penjual individu
+ru: Пример {0}: продавец-физлицо
+zh: 示例 {0}：个人卖家
+
+@@ f91de08726
+ms: Sebagai penjual individu atau isi rumah, {0} ₫ cukai turut ditahan, jadi bayaran ialah {1} ₫.
+ru: Для физлица или семейного бизнеса дополнительно удерживается {0} ₫ налога, поэтому выплата — {1} ₫.
+zh: 作为个人或个体工商户卖家，还会被代扣 {0} ₫ 税款，因此回款为 {1} ₫。
+
+@@ 46b4f4bd21
+ms: Contoh {0}: telefon bimbit {1} ₫
+ru: Пример {0}: смартфон за {1} ₫
+zh: 示例 {0}：{1} ₫ 手机
+
+@@ 4972aef240
+ms: Telefon bimbit dikenakan {0}% di Marketplace. Yuran: {1} ₫, untung {2} ₫ atas kos {3} ₫.
+ru: Мобильные телефоны платят {0}% на Marketplace. Сборы: {1} ₫, прибыль {2} ₫ при себестоимости {3} ₫.
+zh: 手机在 Marketplace 的费率为 {0}%。费用 {1} ₫，成本 {3} ₫ 时利润 {2} ₫。
+
+@@ 43cd435042
+ms: Kadar Marketplace berkuat kuasa {0} Julai {1} dan kadar Mall berkuat kuasa {2} Oktober {3}. Kalkulator mempunyai semua kategori.
+ru: Ставки Marketplace с {0} июля {1} года и ставки Mall с {2} октября {3} года. В калькуляторе есть все категории.
+zh: Marketplace 费率自 {1} 年 7 月 {0} 日生效，Mall 费率自 {3} 年 10 月 {2} 日生效。计算器包含全部类目。
+
+@@ 9e53e2ff10
+ms: Baca gambaran penuh dalam panduan kami tentang <a1>yuran penjual TikTok Shop Vietnam pada {0}</a1>.
+ru: Подробнее — в нашем руководстве <a1>о сборах TikTok Shop Вьетнам в {0} году</a1>.
+zh: 完整说明见我们的指南：<a1>{0} 年 TikTok Shop 越南站卖家费用</a1>。
+
+@@ 285d6fccc7
+ms: Yuran TikTok Shop Vietnam berubah beberapa kali pada {0}: jadual komisen Marketplace baharu pada {1} Julai, jadual Mall baharu pada {2} Oktober, dan penjimatan yuran transaksi untuk kedai yang beriklan mulai {3} Oktober. Panduan ini menyenaraikan setiap yuran pada pesanan biasa dan menunjukkan contoh pengiraan. Semua angka datang daripada <a1>kalkulator yuran TikTok Shop Vietnam</a1>.
+ru: В {0} году сборы TikTok Shop Вьетнам менялись несколько раз: новая таблица комиссий Marketplace с {1} июля, новая таблица Mall с {2} октября и скидка на транзакционный сбор для рекламирующихся магазинов с {3} октября. В этом руководстве перечислены все сборы с обычного заказа и разобран пример. Все цифры взяты из <a1>калькулятора сборов TikTok Shop Вьетнам</a1>.
+zh: {0} 年 TikTok Shop 越南站费用调整了好几次：7 月 {1} 日新的 Marketplace 佣金表，10 月 {2} 日新的 Mall 费率表，以及 10 月 {3} 日起投放广告店铺的交易手续费减免。本指南列出一笔正常订单的全部费用，并给出计算示例。所有数字均来自 <a1>TikTok Shop 越南站费用计算器</a1>。
+
+@@ e2264321d5
+ms: Yuran pada setiap pesanan
+ru: Сборы с каждого заказа
+zh: 每笔订单的费用
+
+@@ c6e89c9caf
+ms: Yuran
+ru: Сбор
+zh: 费用
+
+@@ 33e7554054
+ms: Dikenakan atas
+ru: База
+zh: 计费基数
+
+@@ f08536de98
+ms: Yuran komisen platform
+ru: Комиссия платформы
+zh: 平台佣金
+
+@@ e5396e9918
+ms: {0}% hingga {1}% ikut kategori (lalai {2}% Marketplace, {3}% Mall)
+ru: От {0}% до {1}% по категориям (базовая {2}% Marketplace, {3}% Mall)
+zh: 按类目 {0}% 至 {1}%（默认 Marketplace {2}%、Mall {3}%）
+
+@@ cf97417d89
+ms: Harga item selepas diskaun penjual
+ru: Цена товара после скидок продавца
+zh: 扣除卖家折扣后的商品价格
+
+@@ 6e38ce9b85
+ms: {0}% (tolak {1} hingga {2} mata dengan penjimatan iklan)
+ru: {0}% (минус {1}–{2} п. п. со скидкой за рекламу)
+zh: {0}%（广告减免可减 {1} 至 {2} 个百分点）
+
+@@ 7a651077f6
+ms: Harga item selepas diskaun penjual + penghantaran pembeli
+ru: Цена товара после скидок продавца + доставка покупателя
+zh: 扣除卖家折扣后的商品价格 + 买家运费
+
+@@ a99e78ce9e
+ms: {0} ₫ sepesanan
+ru: {0} ₫ за заказ
+zh: 每单 {0} ₫
+
+@@ 0feb45fc4b
+ms: Setiap pesanan yang dihantar
+ru: Каждый доставленный заказ
+zh: 每笔已送达订单
+
+@@ 6ff292a7d5
+ms: VAT + cukai pendapatan peribadi yang ditahan
+ru: Удержанные НДС + НДФЛ
+zh: 代扣增值税 + 个人所得税
+
+@@ 75b8390540
+ms: {0}% + {1}% (penjual individu dan isi rumah sahaja)
+ru: {0}% + {1}% (только физлица и семейные бизнесы)
+zh: {0}% + {1}%（仅限个人和个体工商户卖家）
+
+@@ 64c848efb6
+ms: Komisen: Marketplace dan Mall
+ru: Комиссия: Marketplace и Mall
+zh: 佣金：Marketplace 与 Mall
+
+@@ 8b75a842f7
+ms: Komisen bergantung pada kategori tahap {0} produk. Kedai Marketplace menggunakan jadual berkuat kuasa {1} Julai {2} dan kedai Mall jadual berkuat kuasa {3} Oktober {4}. Kadar Mall biasanya {5} hingga {6} mata lebih tinggi: Serums &amp; Essences dikenakan {7}% di Marketplace dan {8}% di Mall. Kategori buku Mall adalah pengecualian. Sejak {9} Oktober {10} ia dikenakan {11}%, lebih rendah daripada kadar Marketplace. Telefon dan komputer riba antara kategori paling murah, pada {12}% hingga {13}%.
+ru: Комиссия зависит от категории {0}-го уровня. Магазины Marketplace используют таблицу с {1} июля {2} года, магазины Mall — таблицу с {3} октября {4} года. Ставки Mall обычно на {5}–{6} п. п. выше: Serums &amp; Essences платят {7}% на Marketplace и {8}% в Mall. Исключение — книги в Mall: с {9} октября {10} года они платят {11}%, меньше, чем на Marketplace. Телефоны и ноутбуки — одни из самых дешёвых категорий: от {12}% до {13}%.
+zh: 佣金取决于商品的 {0} 级类目。Marketplace 店铺使用 {2} 年 7 月 {1} 日生效的费率表，Mall 店铺使用 {4} 年 10 月 {3} 日生效的费率表。Mall 费率通常高 {5} 到 {6} 个百分点：Serums &amp; Essences 在 Marketplace 为 {7}%，在 Mall 为 {8}%。Mall 图书类目是例外：自 {10} 年 10 月 {9} 日起为 {11}%，低于 Marketplace。手机和笔记本电脑是费率最低的类目之一，为 {12}% 至 {13}%。
+
+@@ a89024cfb5
+ms: Yuran transaksi {0}% dan penjimatan baharu
+ru: Транзакционный сбор {0}% и новая скидка
+zh: {0}% 交易手续费与新减免
+
+@@ dff336b39f
+ms: Yuran transaksi ialah {0}% untuk pesanan yang dibuat mulai {1} Mei {2}. Ia dikenakan atas apa yang dibayar pembeli ditambah sebarang diskaun platform, jadi ia termasuk penghantaran yang dibayar pembeli. Mulai {3} Oktober {4} TikTok Shop memberi penjimatan berdasarkan kadar iklan kedai (perbelanjaan iklan sebagai bahagian GMV) dalam {5} hari lepas. Untuk serum {6} ₫ di Marketplace:
+ru: Транзакционный сбор — {0}% для заказов, созданных с {1} мая {2} года. Он считается от суммы, которую заплатил покупатель, плюс скидки платформы, поэтому включает оплаченную покупателем доставку. С {3} октября {4} года TikTok Shop даёт скидку в зависимости от доли рекламы магазина (расходы на рекламу в процентах от GMV) за последние {5} дней. Для сыворотки за {6} ₫ на Marketplace:
+zh: {2} 年 5 月 {1} 日起创建的订单，交易手续费为 {0}%。按买家实付加平台折扣计算，因此包括买家支付的运费。自 {4} 年 10 月 {3} 日起，TikTok Shop 根据店铺近 {5} 天的广告投入占比（广告花费占 GMV 的比例）给予减免。以 Marketplace 上一款 {6} ₫ 的精华为例：
+
+@@ 2e2edd85d9
+ms: Kadar iklan
+ru: Доля рекламы
+zh: 广告投入占比
+
+@@ d175c0f21d
+ms: Bawah {0}%
+ru: Меньше {0}%
+zh: 低于 {0}%
+
+@@ 4fc90c4e82
+ms: {0}% hingga bawah {1}%
+ru: От {0}% до {1}%
+zh: {0}% 至 {1}% 以下
+
+@@ 9efc2ef62d
+ms: {0}% atau lebih
+ru: {0}% и больше
+zh: {0}% 及以上
+
+@@ e7d1b93274
+ms: Penjimatan hanya berbaloi jika iklan membawa jualan. Pada kadar {0}%, anda berbelanja jauh lebih banyak untuk iklan daripada {1} mata yang dijimatkan.
+ru: Скидка окупается, только если реклама приносит продажи. При доле {0}% вы тратите на рекламу гораздо больше, чем экономите {1} п. п.
+zh: 只有广告真正带来销量，这项减免才划算。广告占比 {0}% 时，你在广告上的花费远多于节省的 {1} 个百分点。
+
+@@ d167e9a509
+ms: Contoh pengiraan
+ru: Пример расчёта
+zh: 计算示例
+
+@@ 4c362ac029
+ms: Serum {0} ₫ di Marketplace, kos produk {1} ₫, penghantaran percuma untuk pembeli dan tiada penjimatan iklan.
+ru: Сыворотка за {0} ₫ на Marketplace, себестоимость {1} ₫, бесплатная доставка для покупателя, без скидки за рекламу.
+zh: Marketplace 上一款 {0} ₫ 的精华，商品成本 {1} ₫，买家包邮，无广告减免。
+
+@@ b96c67fda0
+ms: Untung ialah {0} ₫, margin {1}%. Di kedai Mall, jualan yang sama dikenakan yuran {2} ₫, meninggalkan {3} ₫.
+ru: Прибыль — {0} ₫, маржа {1}%. В магазине Mall та же продажа стоит {2} ₫ сборов, остаётся {3} ₫.
+zh: 利润 {0} ₫，利润率 {1}%。在 Mall 店铺，同一笔销售的费用为 {2} ₫，剩下 {3} ₫。
+
+@@ 57e9ab130c
+ms: Cukai untuk penjual individu dan isi rumah
+ru: Налог для физлиц и семейных бизнесов
+zh: 个人和个体工商户卖家的税
+
+@@ 5840d1538f
+ms: Sejak {0} Julai {1}, TikTok Shop menahan cukai daripada penjual individu dan isi rumah perniagaan: VAT {2}% dan cukai pendapatan peribadi {3}% atas harga item selepas diskaun penjual. Bagi serum itu, jumlahnya {4} ₫. Yuran TikTok sendiri termasuk cukai Vietnam melainkan anda syarikat dengan kod cukai yang disahkan.
+ru: С {0} июля {1} года TikTok Shop удерживает налог с физлиц и семейных бизнесов: {2}% НДС и {3}% НДФЛ от цены товара после скидки продавца. Для сыворотки это {4} ₫. Собственные сборы TikTok включают вьетнамские налоги, если вы не компания с подтверждённым налоговым кодом.
+zh: 自 {1} 年 7 月 {0} 日起，TikTok Shop 向个人和个体工商户卖家代扣税款：按扣除卖家折扣后的商品价格代扣 {2}% 增值税和 {3}% 个人所得税。这款精华为 {4} ₫。除非你是持有已验证税号的公司，TikTok 自身的费用均已含越南税费。
+
+@@ 36601bc818
+ms: Yuran yang dikenakan hanya kadangkala
+ru: Сборы, которые берутся не всегда
+zh: 仅部分情况收取的费用
+
+@@ 50dfd5eae4
+ms: <b1>Yuran perkhidmatan logistik</b1>: mulai {0} Oktober {1}, untuk bungkusan melebihi {2} kg sahaja. Ia bermula pada {3} ₫ dan maksimum {4} ₫ setiap bungkusan.
+ru: <b1>Сбор за логистику</b1>: с {0} октября {1} года, только для посылок тяжелее {2} кг. От {3} ₫, не больше {4} ₫ за посылку.
+zh: <b1>物流服务费</b1>：自 {1} 年 10 月 {0} 日起，仅对超过 {2} 公斤的包裹收取。{3} ₫ 起，每个包裹封顶 {4} ₫。
+
+@@ 72f64fd605
+ms: <b1>Komisen affiliate</b1>: kadar yang anda tetapkan untuk pencipta, pada pesanan affiliate sahaja.
+ru: <b1>Партнёрская комиссия</b1>: ставка, которую вы назначаете авторам, только для партнёрских заказов.
+zh: <b1>联盟佣金</b1>：你为达人设置的比例，仅对联盟订单收取。
+
+@@ 9dd3ae1e59
+ms: TikTok Shop Vietnam kini tersedia · <a1>Buka kalkulator <x1/></a1>
+ru: TikTok Shop Вьетнам уже работает · <a1>Открыть калькулятор <x1/></a1>
+zh: TikTok Shop 越南站已上线 · <a1>打开计算器 <x1/></a1>
+
+@@ 87dd9f649c
+ms: Dikemas kini {0} Sep / {1} Okt {2}
+ru: Обновлено {0} сент. / {1} окт. {2}
+zh: 更新于 {2} 年 9 月 {0} 日 / 10 月 {1} 日

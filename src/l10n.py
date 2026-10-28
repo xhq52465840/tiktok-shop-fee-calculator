@@ -21,7 +21,7 @@ ATTRS = ('placeholder', 'aria-label', 'title', 'alt', 'data-copy-link')
 NUM = re.compile(r'\d+(?:[.,]\d+)*')
 LETTER = re.compile(r'[A-Za-z]')
 # text with only numbers, currency, units, codes and punctuation needs no translation
-NOTR = re.compile(r'^(?:[\s\d.,:;%()\[\]/+\-−–—×→←·•*&=<>~≈≤≥$£€₱₽฿?!\'"’‘“”]|RM|S\$|US\$|MYR|SGD|USD|GBP|PHP|THB|RUB|EUR|BXP|PXP|SCP|SST|GST|VAT|MP|FBO|FBS|FBW|FBY|DBS|realFBS|TX|CGF|PIF|PSF|OPF|SFP|KVV|ID|N/A|L|kg|g|cm|ml|x|h)*$')
+NOTR = re.compile(r'^(?:[\s\d.,:;%()\[\]/+\-−–—×→←·•*&=<>~≈≤≥$£€₱₽฿₫?!\'"’‘“”]|RM|Rp|S\$|US\$|MYR|SGD|USD|GBP|PHP|THB|RUB|EUR|VND|IDR|BXP|PXP|SCP|SST|GST|VAT|MP|FBO|FBS|FBW|FBY|DBS|realFBS|TX|CGF|PIF|PSF|OPF|SFP|KVV|ID|N/A|L|kg|g|cm|ml|x|h)*$')
 CAT = {}   # lang code of official names, filled lazily
 _cat = None; _cache = {}; MISSING = {}; USED = {}
 
@@ -61,7 +61,7 @@ def official():
         root = os.path.dirname(DIR)
         for mid, m in MARKETS.items():
             if mid in skip: continue
-            lg = 'ru' if m['market'] == 'RU' else 'en'
+            lg = m.get('catLang') or ('ru' if m['market'] == 'RU' else 'en')
             opts = m['selector']['options']
             for o in opts:
                 for nm in (o.get('n'), o.get('g'), (o['g'] + ' › ' + o['n']) if o.get('g') else None):

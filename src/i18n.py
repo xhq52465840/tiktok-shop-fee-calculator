@@ -425,3 +425,32 @@ S['ru'].update(dict(
 ))
 S['ru']['js'].update(dict(lb='фунт.', noWt='Укажите вес товара', wtOver='Больше 150 фунтов: не стандартный товар WFS', above='свыше', item='шт.',
   condnote_u10='Для товаров дешевле $10 WFS берёт надбавку $1,00 за единицу.'))
+# TikTok Shop Vietnam
+S['en'].update(dict(
+  txs_label='Transaction Fee Savings (from 21 Oct 2026, by last-30-day ads take rate)', txs_none='None (ads take rate under 4%)',
+  txs_t05='−0.5 pt (ads take rate 4% to under 7%)', txs_t07='−0.7 pt (7% to under 10%)', txs_t10='−1.0 pt (10% to under 15%)',
+  txs_t12='−1.2 pt (15% to under 20%)', txs_t15='−1.5 pt (20% or more)',
+  t_vnWht='Individual or business household seller (tax withheld by TikTok Shop)', t_vnWht_h='Since 1 July 2025 the platform withholds 1% VAT + 0.5% personal income tax on the item price after seller discount. Leave off for registered companies.',
+  c_wht='Withheld VAT + personal income tax',
+))
+S['ms'].update(dict(
+  txs_label='Penjimatan Yuran Transaksi (mulai 21 Okt 2026, ikut kadar iklan 30 hari lepas)', txs_none='Tiada (kadar iklan di bawah 4%)',
+  txs_t05='−0.5 mata (kadar iklan 4% hingga bawah 7%)', txs_t07='−0.7 mata (7% hingga bawah 10%)', txs_t10='−1.0 mata (10% hingga bawah 15%)',
+  txs_t12='−1.2 mata (15% hingga bawah 20%)', txs_t15='−1.5 mata (20% atau lebih)',
+  t_vnWht='Penjual individu atau isi rumah perniagaan (cukai ditahan oleh TikTok Shop)', t_vnWht_h='Sejak 1 Julai 2025 platform menahan VAT 1% + cukai pendapatan peribadi 0.5% atas harga item selepas diskaun penjual. Biarkan tidak ditanda untuk syarikat berdaftar.',
+  c_wht='VAT + cukai pendapatan peribadi yang ditahan',
+))
+S['zh'].update(dict(
+  txs_label='交易手续费减免（2026 年 10 月 21 日起，按近 30 天广告投入占比）', txs_none='无（广告占比低于 4%）',
+  txs_t05='减 0.5 个百分点（广告占比 4% 至 7% 以下）', txs_t07='减 0.7 个百分点（7% 至 10% 以下）', txs_t10='减 1.0 个百分点（10% 至 15% 以下）',
+  txs_t12='减 1.2 个百分点（15% 至 20% 以下）', txs_t15='减 1.5 个百分点（20% 及以上）',
+  t_vnWht='个人或个体工商户卖家（由 TikTok Shop 代扣税）', t_vnWht_h='自 2025 年 7 月 1 日起，平台按扣除卖家折扣后的商品价格代扣 1% 增值税 + 0.5% 个人所得税。注册公司请勿勾选。',
+  c_wht='代扣增值税 + 个人所得税',
+))
+S['ru'].update(dict(
+  txs_label='Скидка на транзакционный сбор (с 21 окт. 2026, по доле рекламы за 30 дней)', txs_none='Нет (доля рекламы меньше 4%)',
+  txs_t05='−0,5 п. п. (доля рекламы от 4% до 7%)', txs_t07='−0,7 п. п. (от 7% до 10%)', txs_t10='−1,0 п. п. (от 10% до 15%)',
+  txs_t12='−1,2 п. п. (от 15% до 20%)', txs_t15='−1,5 п. п. (20% и больше)',
+  t_vnWht='Физлицо или семейный бизнес (налог удерживает TikTok Shop)', t_vnWht_h='С 1 июля 2025 года платформа удерживает 1% НДС + 0,5% НДФЛ с цены товара после скидки продавца. Не включайте для зарегистрированных компаний.',
+  c_wht='Удержанные НДС + НДФЛ',
+))

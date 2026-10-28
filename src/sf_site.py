@@ -228,7 +228,7 @@ def widget(mid, lang):
     opts = m['selector']['options']; big = bool(m['selector'].get('src'))
     if lang != 'en' and mid in TR_OPTS:
         opts = [dict(o, n=l10n.text(lang, o['n'])) for o in opts]
-    src_lang = 'ru' if m['market'] == 'RU' else 'en'
+    src_lang = m.get('catLang') or ('ru' if m['market'] == 'RU' else 'en')
     sl = f' lang="{src_lang}"' if (mid not in TR_OPTS and src_lang != lang) else ''
     if big:
         cat = (f'<div class="field full"><span class="label">{esc(L(m["selector"]["label"]))} <span class="hint"><span id="sf-selcount">{len(opts):,}</span> {esc(L("n_cats"))}</span></span>'

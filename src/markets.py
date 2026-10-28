@@ -22,7 +22,11 @@ for o in ET:
 def load_ru(p):
     d = load(p); return [{'g': d['groups'][x[0]], 'n': x[1], 'r': x[2]} for x in d['o']], d.get('tables', {})
 OZ, OZ_T = load_ru('ozon/ru.json'); WB, _ = load_ru('wildberries/ru.json'); YM, _ = load_ru('yandex-market/ru.json')
-TT_SG, _ = load_ru('tiktok-shop/sg.json'); TT_TH, _ = load_ru('tiktok-shop/th.json')
+TT_SG, _ = load_ru('tiktok-shop/sg.json'); TT_TH, _ = load_ru('tiktok-shop/th.json'); TT_VN, _ = load_ru('tiktok-shop/vn.json')
+VND = dict(currency='VND', symbols={'VND': '₫'}, symbolAfter=True, locale='en-US', decimals=0, roundFees=0)
+IDR = dict(currency='IDR', symbols={'IDR': 'Rp'}, locale='en-US', decimals=0, roundFees=0)
+# TikTok Shop VN Transaction Fee Savings from 21 Oct 2026, by the shop's L30D ads take rate
+TT_VN_TXS = [('none', 'txs_none'), ('t05', 'txs_t05'), ('t07', 'txs_t07'), ('t10', 'txs_t10'), ('t12', 'txs_t12'), ('t15', 'txs_t15')]
 # Etsy UK: Etsy bills the listing fee (US$0.20) and caps Offsite Ads (US$100/order) in US dollars.
 # Converted at the ECB reference rate published 26 Oct 2026 (1 USD = 0.7492 GBP); both are editable in the calculator.
 USD_GBP = 0.7492
@@ -137,6 +141,29 @@ MARKETS = {
      ('Transaction Fee — TikTok Shop TH Seller University (20 Feb 2026)', 'https://seller-th.tiktok.com/university/essay?knowledge_id=6837804139087618&lang=en'),
      ('Commerce Growth Fee — TikTok Shop TH Seller University (21 Sep 2026)', 'https://seller-th.tiktok.com/university/essay?knowledge_id=4831419884979969&lang=en'),
      ('Platform Infrastructure Fee — TikTok Shop TH Seller University (3 Jul 2026)', 'https://seller-th.tiktok.com/university/essay?knowledge_id=4832028500215569&lang=en')]),
+ 'tiktok-shop-vn': dict(
+   platform='tiktok-shop', platformName='TikTok Shop', market='VN', marketName='Vietnam', slug='tiktok-shop/vietnam',
+   flag='🇻🇳', **VND, langs=['en'], catLang='en',
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 199000, 'cost': 60000}, selector={'label': 'cat', 'options': TT_VN, 'src': 'tiktok-vn'},
+   defaultOption=gidx(TT_VN, 'Beauty & Personal Care', 'Skincare › Serums & Essences'),
+   store=[('mp', 'mp'), ('mall', 'mall')], periods=None,
+   selects=[dict(id='txs', label='txs_label', options=TT_VN_TXS, def_='none')],
+   toggles=[dict(id='vnWht', vals=['', ''])],
+   components=[
+     dict(id='commission', type='pct', rate='opt:{store}', base='net', color=C[0]),
+     dict(id='tx', type='pct', rate=6, base='net_ship', adj=[{'x': 'txs', 'v': 't05', 'd': -0.5}, {'x': 'txs', 'v': 't07', 'd': -0.7}, {'x': 'txs', 'v': 't10', 'd': -1.0},
+                                                         {'x': 'txs', 'v': 't12', 'd': -1.2}, {'x': 'txs', 'v': 't15', 'd': -1.5}], color=C[1]),
+     dict(id='opf', type='fixed', rate=3000, color=C[3]),
+     dict(id='wht', type='pct', rate=1.5, when='vnWht', base='net', color=C[5])],
+   compare=None,
+   sources=[
+     ('Platform Commission Fee (Marketplace table from 3 Jul 2026, Mall table from 20 Oct 2026) — TikTok Shop VN Seller University (updated 30 Sep 2026)', 'https://seller-vn.tiktok.com/university/essay?knowledge_id=3396736626312961&lang=en'),
+     ('Introduction to Seller Fees — TikTok Shop VN Seller University (4 Aug 2026)', 'https://seller-vn.tiktok.com/university/essay?knowledge_id=8858869405370113&lang=en'),
+     ('Transaction Fee (6% from 9 May 2026; savings tiers from 21 Oct 2026) — TikTok Shop VN Seller University (13 Oct 2026)', 'https://seller-vn.tiktok.com/university/essay?knowledge_id=753295858337537&lang=en'),
+     ('Order Processing Fee (VND 3,000 per order from 27 Oct 2025) — TikTok Shop VN Seller University', 'https://seller-vn.tiktok.com/university/essay?knowledge_id=2968734088120080&lang=en'),
+     ('Logistics Service Fee for parcels over 10 kg (from 12 Oct 2026) — TikTok Shop VN Seller University (8 Oct 2026)', 'https://seller-vn.tiktok.com/university/essay?knowledge_id=4723305845458708&lang=en'),
+     ('Withholding Taxes for Individual and Business Household Sellers (1% VAT + 0.5% PIT) — TikTok Shop VN Seller University', 'https://seller-vn.tiktok.com/university/essay?knowledge_id=2632156783101712&lang=en')]),
  'etsy': dict(
    platform='etsy', platformName='Etsy', market='GLOBAL', marketName='All countries', slug='etsy',
    flag='🧶', currency='USD', symbols={'USD': '$', 'GBP': '£', 'EUR': '€'}, locale='en-US', langs=['en', 'zh'], currencyFromOption=True,
@@ -363,7 +390,7 @@ MARKETS = {
 }
 
 COMING = [
-  ('TikTok Shop', 'Vietnam', '🇻🇳'), ('TikTok Shop', 'Indonesia', '🇮🇩'),
+  ('TikTok Shop', 'Indonesia', '🇮🇩'),
   ('Shopee', 'Indonesia, Vietnam & more', '🛍️'), ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
 
 # ---------- Python mirror of assets/engine.js (used to compute worked examples in the guides)
