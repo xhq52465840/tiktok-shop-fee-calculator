@@ -180,6 +180,7 @@ C_SUM = {
  'tiktok-shop-us': '6% referral fee by category, 5% fine jewelry and Pre-Owned, 3% over $10K.',
  'tiktok-shop-uk': '9% commission, 5% for specified electronics and beauty categories.',
  'tiktok-shop-sg': '9.81% / 7.085% BXP commission from 1 Sep 2026, S$30 electronics cap, 3.27% TX, BXP fee.',
+ 'tiktok-shop-id': 'TikTok Shop & Tokopedia: Marketplace & Mall commission from 18 May 2026, GMV Max savings, 3–8% dynamic fee, Rp1,250 per order.',
  'tiktok-shop-vn': 'Marketplace & Mall commission for 2,000+ categories (Mall from 20 Oct 2026), 6% TX with ads savings, 3,000 ₫ per order.',
  'tiktok-shop-th': 'Marketplace & Mall commission from 5 Jul 2026, 3.21% TX, 6.96%/8.03% growth fee, ฿1.07.',
  'etsy': '6.5% transaction fee, US$0.20 listing fee and payment processing for 60+ bank countries.',
@@ -205,6 +206,7 @@ C_SUM_ZH = {
  'tiktok-shop-us': '按类目推荐费 6%，精品珠宝与二手 5%，超 $10K 部分 3%。',
  'tiktok-shop-uk': '佣金 9%，指定电子与美妆类目 5%。',
  'tiktok-shop-sg': '2026年9月1日起佣金 9.81%（BXP 7.085%），电子类 S$30 封顶，交易手续费 3.27%，BXP 服务费。',
+ 'tiktok-shop-id': 'TikTok Shop 与 Tokopedia：2026年5月18日起 Marketplace / Mall 佣金、GMV Max 减免、3–8% 动态佣金，每单 Rp1,250。',
  'tiktok-shop-vn': '2,000+ 个类目的 Marketplace / Mall 佣金（Mall 自 2026年10月20日），交易手续费 6%（含广告减免），每单 3,000 ₫。',
  'tiktok-shop-th': '2026年7月5日起 Marketplace / Mall 佣金，交易手续费 3.21%，商业增长费 6.96%/8.03%，每单 ฿1.07。',
  'etsy': '交易手续费 6.5%、刊登费 US$0.20，以及 60+ 国家支付处理费。',
@@ -283,6 +285,7 @@ def home(lang='en'):
      ('🇸🇬', 'TikTok Shop SG', 'Platform Commission Fee (table from 1 Sep 2026)', 'Updated 17 Aug 2026', '/en/tiktok-shop/singapore/#sources'),
      ('🇹🇭', 'TikTok Shop TH', 'Commission (5 Jul 2026) · Commerce Growth Fee', 'Updated 17 Jul / 21 Sep 2026', '/en/tiktok-shop/thailand/#sources'),
      ('🇻🇳', 'TikTok Shop VN', 'Platform Commission Fee (Mall from 20 Oct 2026) · Transaction Fee', 'Updated 30 Sep / 13 Oct 2026', '/en/tiktok-shop/vietnam/#sources'),
+     ('🇮🇩', 'TikTok Shop ID', 'Platform Commission Fee & Savings (18 May 2026) · Dynamic Commission Fee', 'Updated 28 Apr / 16 Sep 2026', '/en/tiktok-shop/indonesia/#sources'),
      ('🌐', 'Etsy', 'Fee Basics · Payment Processing', 'Etsy Help Center', '/en/etsy/#sources'),
      ('🇬🇧', 'Etsy UK', 'Regulatory Operating Fee · VAT on seller fees', '0.48% from 22 Jun 2026', '/en/etsy/uk/#sources'),
      ('🇷🇺', 'Ozon', 'Commissions XLSX 28 Aug · Logistics 30 Oct', 'Seller Edu', '/en/ozon/#sources'),
@@ -298,7 +301,7 @@ def home(lang='en'):
     srows = ''.join(f'<tr><td><span class="flag">{f}</span> <b>{esc(m)}</b></td><td><a href="{u}"><span lang="en">{esc(d)}</span> {ic("ext",13)}</a><span class="sub">{esc(note)}</span></td><td>{badge("Checked "+VDATE["en"],"verified","shield")}</td></tr>' for f,m,d,note,u in srcs)
     guides = [g for g in sf_site.GUIDES_ALL if g.get('lang') == lang][:6]
     body = f'''<section class="hero"><div class="wrap">
-<div><div class="announce">{badge("New","new")}<span>TikTok Shop Vietnam live · <a href="tiktok-shop/vietnam/">Open calculator {ic("arrow",13)}</a></span></div>
+<div><div class="announce">{badge("New","new")}<span>TikTok Shop Vietnam &amp; Indonesia live · <a href="tiktok-shop/indonesia/">Open Indonesia {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">Know exactly what every marketplace takes from your sale.</h1>
 <p class="lead">SellerFee turns official marketplace rate cards into fast calculators. Pick your platform, enter a price, and see every fee, your payout and your real margin.</p>
 <div class="ctas"><a class="btn btn-primary btn-lg" href="tiktok-shop/malaysia/">{ic("calc",16)} TikTok Shop Malaysia</a>
@@ -414,15 +417,15 @@ def tiktok_hub(lang='en'):
     guides = [g for g in sf_site.GUIDES_ALL if g.get('lang') == lang and (g.get('market') or '').startswith('tiktok')]
     body = f'''<div class="phead"><div class="wrap"><!--CRUMBS-->
 <h1 class="h-display" style="margin-top:18px">TikTok Shop fee calculators by country</h1>
-<p class="lead" style="margin-top:12px">Different fees in every market: category commission in Malaysia, Thailand, the Philippines and Vietnam, a flat GST-inclusive rate in Singapore, a referral fee in the US and a single commission rate in the UK.</p></div></div>
+<p class="lead" style="margin-top:12px">Different fees in every market: category commission in Malaysia, Thailand, the Philippines, Vietnam and Indonesia, a flat GST-inclusive rate in Singapore, a referral fee in the US and a single commission rate in the UK.</p></div></div>
 <section class="s"><div class="wrap"><div class="cards">{cards}{soon}</div>
 <h2 class="h2" style="margin-top:48px">How fees differ by market</h2>
 <div class="tablewrap"><table><thead><tr><th>Market</th><th>Main fees</th></tr></thead><tbody>{rows}</tbody></table></div>
 <div class="sh" style="margin-top:48px"><h2 class="h2">Guides</h2></div>
 <div class="cards"><!--GUIDES--></div></div></section>'''
     body = LB(lang, body).replace('<!--GUIDES-->', gcards(path, lang, guides)).replace('<!--CRUMBS-->', ch)
-    w(path, page(path, lang, LZ(lang, 'TikTok Shop Fee Calculators: Malaysia, Singapore, Thailand, Philippines, Vietnam, US & UK | SellerFee'),
-                 LZ(lang, 'Free TikTok Shop seller fee calculators for Malaysia, Singapore, Thailand, the Philippines, Vietnam, the United States and the United Kingdom, built on official Seller University rate cards.'),
+    w(path, page(path, lang, LZ(lang, 'TikTok Shop Fee Calculators: Malaysia, Singapore, Thailand, Philippines, Vietnam, Indonesia, US & UK | SellerFee'),
+                 LZ(lang, 'Free TikTok Shop seller fee calculators for Malaysia, Singapore, Thailand, the Philippines, Vietnam, Indonesia, the United States and the United Kingdom, built on official Seller University rate cards.'),
                  body, [cld], alt=ALT('tiktok-shop/')))
 
 def russia_hub(lang='en'):
@@ -452,6 +455,8 @@ def rate_changes(lang='en'):
      ('21 Oct 2026', 'TikTok Shop VN', 'Transaction Fee Savings', '6% transaction fee cut by 0.5–1.5 points for shops with a last-30-day ads take rate of 4% or more', 'en/tiktok-shop/vietnam/'),
      ('20 Oct 2026', 'TikTok Shop VN', 'Mall commission', 'New Mall table by category; Mall book categories 15% → 12.5%', 'en/tiktok-shop/vietnam/'),
      ('12 Oct 2026', 'TikTok Shop VN', 'Logistics Service Fee', 'New fee for parcels over 10 kg, from 3,000 ₫, capped at 65,000 ₫', 'en/tiktok-shop/vietnam/'),
+     ('18 May 2026', 'TikTok Shop ID', 'Platform commission & savings', 'New Marketplace and Mall table by category with GMV Max and Growth Xtra savings (up to 8.18 points); Dynamic Commission Fee 3–8%', 'en/tiktok-shop/indonesia/'),
+     ('1 May 2026', 'TikTok Shop ID', 'Logistics Service Fee', 'New flat fee per order by service, route and weight: Rp540–5,060', 'en/tiktok-shop/indonesia/'),
      ('30 Oct 2026', 'Ozon', 'FBO/FBS logistics tariffs', 'New cluster × volume × price-band table', 'en/ozon/'),
      ('1 Nov 2026', 'TikTok Shop PH', 'Seller Growth Fee', 'Charged on every order for all sellers; Lifestyle (except Large Appliances) 1% → 1.5% (reported)', 'en/tiktok-shop/philippines/'),
      ('31 Oct 2026', 'TikTok Shop MY', 'Category commission', 'New commission table (side-by-side with old rates in the calculator)', 'en/tiktok-shop/malaysia/'),
@@ -484,7 +489,7 @@ def rate_changes(lang='en'):
 
 def static_pages(lang='en'):
     about = f'''
-<p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (Malaysia, Singapore, Thailand, the Philippines, Vietnam, the US and the UK), Shopee (Malaysia, Singapore, the Philippines, Thailand), Lazada Malaysia, Walmart Marketplace (US), Etsy (global and UK), and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
+<p>SellerFee is an independent website that publishes free fee and profit calculators for people who sell on online marketplaces, especially sellers working across borders. We cover TikTok Shop (Malaysia, Singapore, Thailand, the Philippines, Vietnam, Indonesia, the US and the UK), Shopee (Malaysia, Singapore, the Philippines, Thailand), Lazada Malaysia, Walmart Marketplace (US), Etsy (global and UK), and the Russian marketplaces Ozon, Wildberries and Yandex Market.</p>
 <h2 id="how-we-source-rates">How we source rates</h2>
 <p>Every rate comes from the platform’s own seller help — TikTok Shop Seller University, Shopee Seller Education Hub, Lazada Seller Center, Walmart Marketplace Learn, Etsy Help, Ozon Seller Edu, Wildberries instructions and КВВ PDF, Yandex Market help. Each calculator links its sources and shows the date we last checked them. When a platform publishes a rate but not the formula, we say so and make the rate editable. We don’t publish a calculator until rates can be verified from an official source.</p>
 <h2>How we keep them current</h2>

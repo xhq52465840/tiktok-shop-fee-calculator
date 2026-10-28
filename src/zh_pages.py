@@ -11,6 +11,7 @@ C_SUM_ZH = {
  'tiktok-shop-us': '按类目推荐费 6%，精品珠宝与二手 5%，超 $10K 部分 3%。',
  'tiktok-shop-uk': '佣金 9%，指定电子与美妆类目 5%。',
  'tiktok-shop-sg': '2026年9月1日起佣金 9.81%（BXP 7.085%），电子类 S$30 封顶，交易手续费 3.27%，BXP 服务费。',
+ 'tiktok-shop-id': 'TikTok Shop 与 Tokopedia：2026年5月18日起 Marketplace / Mall 佣金、GMV Max 减免、3–8% 动态佣金，每单 Rp1,250。',
  'tiktok-shop-vn': '2,000+ 个类目的 Marketplace / Mall 佣金（Mall 自 2026年10月20日），交易手续费 6%（含广告减免），每单 3,000 ₫。',
  'tiktok-shop-th': '2026年7月5日起 Marketplace / Mall 佣金，交易手续费 3.21%，商业增长费 6.96%/8.03%，每单 ฿1.07。',
  'etsy': '交易手续费 6.5%、刊登费 US$0.20，以及 60+ 国家支付处理费。',
@@ -117,7 +118,7 @@ def home_zh():
     from sf_site import GUIDES_ALL
     guides = [g for g in GUIDES_ALL if g.get('lang') == 'zh'][:6]
     body = f'''<section class="hero"><div class="wrap">
-<div><div class="announce">{badge("新","new")}<span>TikTok Shop 越南站已上线 · <a href="tiktok-shop/vietnam/">打开计算器 {ic("arrow",13)}</a></span></div>
+<div><div class="announce">{badge("新","new")}<span>TikTok Shop 越南站、印尼站已上线 · <a href="tiktok-shop/indonesia/">打开印尼站 {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">看清每个平台从你这一单拿走多少。</h1>
 <p class="lead">SellerFee 把官方费率表变成可即时计算的工具。选平台、填售价，立刻看到每项费用、结算金额与真实利润率。</p>
 <div class="ctas"><a class="btn btn-primary btn-lg" href="tiktok-shop/malaysia/">{ic("calc",16)} TikTok Shop 马来西亚</a>
@@ -172,10 +173,10 @@ def tiktok_hub_zh():
         for k, m in MARKETS.items() if m['platform'] == 'tiktok-shop')
     body = f'''<div class="phead"><div class="wrap">{ch}
 <h1 class="h-display" style="margin-top:18px">按国家划分的 TikTok Shop 费用计算器</h1>
-<p class="lead" style="margin-top:12px">每个市场费用结构不同：马来西亚、泰国、菲律宾、越南按类目佣金，新加坡为统一含 GST 费率，美国是推荐费，英国是统一佣金。</p></div></div>
+<p class="lead" style="margin-top:12px">每个市场费用结构不同：马来西亚、泰国、菲律宾、越南、印尼按类目佣金，新加坡为统一含 GST 费率，美国是推荐费，英国是统一佣金。</p></div></div>
 <section class="s"><div class="wrap"><div class="cards">{cards}</div></div></section>'''
-    _w(path, page(path, 'zh', 'TikTok Shop 费用计算器：马来西亚、新加坡、泰国、菲律宾、越南、美国与英国 | SellerFee',
-                  '免费 TikTok Shop 卖家费用计算器，覆盖马来西亚、新加坡、泰国、菲律宾、越南、美国与英国，基于官方 Seller University 费率。',
+    _w(path, page(path, 'zh', 'TikTok Shop 费用计算器：马来西亚、新加坡、泰国、菲律宾、越南、印尼、美国与英国 | SellerFee',
+                  '免费 TikTok Shop 卖家费用计算器，覆盖马来西亚、新加坡、泰国、菲律宾、越南、印尼、美国与英国，基于官方 Seller University 费率。',
                   body, [cld], alt={l: f'{l}/tiktok-shop/' for l in ('en', 'ms', 'ru', 'zh')}))
 
 def russia_hub_zh():

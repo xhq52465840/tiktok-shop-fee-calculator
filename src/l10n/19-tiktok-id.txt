@@ -1,0 +1,444 @@
+@@ 8dc65cb99c
+ms: Yuran Penjual TikTok Shop Indonesia {0}: Komisen, Yuran Komisen Dinamik dan Penjimatan GMV Max
+ru: Сборы TikTok Shop Индонезия в {0} году: комиссия, динамическая комиссия и скидки за GMV Max
+zh: TikTok Shop 印尼站卖家费用 {0}：佣金、动态佣金与 GMV Max 减免
+
+@@ 0e1ce4e6fe
+ms: Setiap yuran penjual TikTok Shop dan Tokopedia di Indonesia pada {0}: komisen ikut kategori mulai {1} Mei, Yuran Komisen Dinamik {2}–{3}%, penjimatan GMV Max dan Growth Xtra, Rp{4} sepesanan, Yuran Perkhidmatan Logistik dan contoh pengiraan.
+ru: Все сборы TikTok Shop и Tokopedia в Индонезии в {0} году: комиссия по категориям с {1} мая, динамическая комиссия {2}–{3}%, скидки за GMV Max и Growth Xtra, Rp{4} за заказ, логистический сбор и пример расчёта.
+zh: {0} 年 TikTok Shop 与 Tokopedia 印尼站全部卖家费用：5 月 {1} 日起的类目佣金、{2}–{3}% 动态佣金、GMV Max 与 Growth Xtra 减免、每单 Rp{4}、物流服务费与计算示例。
+
+@@ 2c8ce67e50
+ms: Yuran TikTok Shop Indonesia {0}
+ru: Сборы TikTok Shop Индонезия {0}
+zh: TikTok Shop 印尼站费用 {0}
+
+@@ 9d5818267c
+ms: Yuran berbeza di setiap pasaran: komisen ikut kategori di Malaysia, Thailand, Filipina, Vietnam dan Indonesia, kadar rata termasuk GST di Singapura, yuran rujukan di AS dan satu kadar komisen di UK.
+ru: В каждой стране свои сборы: комиссия по категориям в Малайзии, Таиланде, на Филиппинах, во Вьетнаме и Индонезии, единая ставка с GST в Сингапуре, реферальный сбор в США и одна ставка комиссии в Великобритании.
+zh: 每个市场费用结构不同：马来西亚、泰国、菲律宾、越南、印尼按类目佣金，新加坡为统一含 GST 费率，美国是推荐费，英国是统一佣金。
+
+@@ cd9ca9c6f2
+ms: TikTok Shop &amp; Tokopedia: komisen Marketplace &amp; Mall mulai {0} Mei {1}, penjimatan GMV Max, yuran dinamik {2}–{3}%, Rp{4} sepesanan.
+ru: TikTok Shop и Tokopedia: комиссия Marketplace и Mall с {0} мая {1}, скидки за GMV Max, динамическая комиссия {2}–{3}%, Rp{4} за заказ.
+zh: TikTok Shop 与 Tokopedia：{1}年5月{0}日起 Marketplace / Mall 佣金、GMV Max 减免、{2}–{3}% 动态佣金，每单 Rp{4}。
+
+@@ 7fed2a9947
+ms: 🇮🇩 <a1>Indonesia</a1>
+ru: 🇮🇩 <a1>Индонезия</a1>
+zh: 🇮🇩 <a1>印度尼西亚</a1>
+
+@@ e86a4781c0
+ms: Kalkulator Yuran TikTok Shop: Malaysia, Singapura, Thailand, Filipina, Vietnam, Indonesia, AS & UK | SellerFee
+ru: Калькуляторы сборов TikTok Shop: Малайзия, Сингапур, Таиланд, Филиппины, Вьетнам, Индонезия, США и Великобритания | SellerFee
+zh: TikTok Shop 费用计算器：马来西亚、新加坡、泰国、菲律宾、越南、印尼、美国与英国 | SellerFee
+
+@@ aa6eab1860
+ms: Kalkulator yuran penjual TikTok Shop percuma untuk Malaysia, Singapura, Thailand, Filipina, Vietnam, Indonesia, Amerika Syarikat dan United Kingdom, berdasarkan kad kadar rasmi Seller University.
+ru: Бесплатные калькуляторы сборов TikTok Shop для Малайзии, Сингапура, Таиланда, Филиппин, Вьетнама, Индонезии, США и Великобритании на основе официальных тарифов Seller University.
+zh: 免费 TikTok Shop 卖家费用计算器，覆盖马来西亚、新加坡、泰国、菲律宾、越南、印尼、美国与英国，基于官方 Seller University 费率表。
+
+@@ 26c0277c9a
+ms: Komisen platform &amp; penjimatan
+ru: Комиссия платформы и скидки
+zh: 平台佣金与减免
+
+@@ 427dac607f
+ms: Jadual Marketplace dan Mall baharu ikut kategori dengan penjimatan GMV Max dan Growth Xtra (sehingga {0} mata); Yuran Komisen Dinamik {1}–{2}%
+ru: Новая таблица Marketplace и Mall по категориям со скидками за GMV Max и Growth Xtra (до {0} п. п.); динамическая комиссия {1}–{2}%
+zh: 新的 Marketplace 与 Mall 类目费率表，含 GMV Max 与 Growth Xtra 减免（最多 {0} 个百分点）；动态佣金 {1}–{2}%
+
+@@ 206b2c336d
+ms: Yuran rata baharu sepesanan ikut perkhidmatan, laluan dan berat: Rp{0}–{1}
+ru: Новый фиксированный сбор за заказ по услуге, маршруту и весу: Rp{0}–{1}
+zh: 按配送服务、线路和重量收取的每单固定新费用：Rp{0}–{1}
+
+@@ 0265195c0c
+ms: SellerFee ialah laman web bebas yang menerbitkan kalkulator yuran dan keuntungan percuma untuk mereka yang menjual di pasaran dalam talian, terutamanya penjual rentas sempadan. Kami meliputi TikTok Shop (Malaysia, Singapura, Thailand, Filipina, Vietnam, Indonesia, AS dan UK), Shopee (Malaysia, Singapura, Filipina, Thailand), Lazada Malaysia, Walmart Marketplace (AS), Etsy (global dan UK), serta pasaran Rusia Ozon, Wildberries dan Yandex Market.
+ru: SellerFee — независимый сайт с бесплатными калькуляторами сборов и прибыли для тех, кто продаёт на маркетплейсах, особенно для трансграничных продавцов. Мы охватываем TikTok Shop (Малайзия, Сингапур, Таиланд, Филиппины, Вьетнам, Индонезия, США и Великобритания), Shopee (Малайзия, Сингапур, Филиппины, Таиланд), Lazada Малайзия, Walmart Marketplace (США), Etsy (глобальный и UK), а также российские маркетплейсы Ozon, Wildberries и Яндекс Маркет.
+zh: SellerFee 是一个独立网站，为在线上平台开店的卖家（尤其是跨境卖家）提供免费的费用与利润计算器。我们覆盖 TikTok Shop（马来西亚、新加坡、泰国、菲律宾、越南、印尼、美国和英国）、Shopee（马来西亚、新加坡、菲律宾、泰国）、Lazada 马来西亚、Walmart Marketplace（美国）、Etsy（全球与英国），以及俄罗斯平台 Ozon、Wildberries 和 Yandex Market。
+
+@@ 3040d3173e
+ms: Kalkulator Yuran TikTok Shop Indonesia {0} (Tokopedia, Komisen + Yuran Dinamik)
+ru: Калькулятор сборов TikTok Shop Индонезия {0} (Tokopedia, комиссия + динамическая комиссия)
+zh: TikTok Shop 印尼站费用计算器 {0}（Tokopedia，佣金 + 动态佣金）
+
+@@ 103b18c509
+ms: Kalkulator yuran dan keuntungan TikTok Shop & Tokopedia Indonesia percuma: komisen Marketplace dan Mall untuk {0} kategori, penjimatan GMV Max dan Growth Xtra, Yuran Komisen Dinamik {1}–{2}%, Rp{3} sepesanan dan Yuran Perkhidmatan Logistik.
+ru: Бесплатный калькулятор сборов и прибыли TikTok Shop и Tokopedia Индонезия: комиссия Marketplace и Mall для {0} категорий, скидки за GMV Max и Growth Xtra, динамическая комиссия {1}–{2}%, Rp{3} за заказ и логистический сбор.
+zh: 免费 TikTok Shop 与 Tokopedia 印尼站费用与利润计算器：{0} 个类目的 Marketplace 与 Mall 佣金、GMV Max 与 Growth Xtra 减免、{1}–{2}% 动态佣金、每单 Rp{3} 及物流服务费。
+
+@@ 79061d289a
+ms: Kalkulator Yuran TikTok Shop Indonesia
+ru: Калькулятор сборов TikTok Shop Индонезия
+zh: TikTok Shop 印尼站费用计算器
+
+@@ 7b02615195
+ms: Komisen Marketplace dan Mall untuk setiap kategori mulai {0} Mei {1}, dengan penjimatan GMV Max dan Growth Xtra, Yuran Komisen Dinamik maksimum Rp{2}, Yuran Perkhidmatan Mall, Rp{3} sepesanan dan Yuran Perkhidmatan Logistik.
+ru: Комиссия Marketplace и Mall для каждой категории с {0} мая {1} года со скидками за GMV Max и Growth Xtra, динамическая комиссия не больше Rp{2}, сервисный сбор Mall, Rp{3} за заказ и логистический сбор.
+zh: {1} 年 5 月 {0} 日起每个类目的 Marketplace 与 Mall 佣金，含 GMV Max 与 Growth Xtra 减免、封顶 Rp{2} 的动态佣金、Mall 服务费、每单 Rp{3} 及物流服务费。
+
+@@ 55541ae728
+ms: Cara yuran TikTok Shop Indonesia berfungsi
+ru: Как устроены сборы TikTok Shop Индонезия
+zh: TikTok Shop 印尼站费用构成
+
+@@ d2e4bae961
+ms: Berapakah komisen TikTok Shop Indonesia?
+ru: Какая комиссия у TikTok Shop Индонезия?
+zh: TikTok Shop 印尼站佣金是多少？
+
+@@ ccd7987932
+ms: Yuran komisen platform ialah {0}% hingga {1}% untuk Marketplace dan {2}% hingga {3}% untuk Mall, ikut kategori, mulai {4} Mei {5}. Selain itu terdapat Yuran Komisen Dinamik {6}% hingga {7}%, maksimum Rp{8} seitem.
+ru: Комиссия платформы — от {0}% до {1}% для Marketplace и от {2}% до {3}% для Mall в зависимости от категории, с {4} мая {5} года. Сверху берётся динамическая комиссия от {6}% до {7}%, не больше Rp{8} за товар.
+zh: 自 {5} 年 5 月 {4} 日起，平台佣金按类目为 Marketplace {0}% 至 {1}%、Mall {2}% 至 {3}%。另外还有 {6}% 至 {7}% 的动态佣金，每件封顶 Rp{8}。
+
+@@ 4d46c60bf3
+ms: Adakah yuran TikTok Shop dan Tokopedia sama?
+ru: Одинаковы ли сборы TikTok Shop и Tokopedia?
+zh: TikTok Shop 和 Tokopedia 的费用一样吗？
+
+@@ c7bfccbee2
+ms: Ya. Sejak penggabungan, kedua-duanya menggunakan satu platform penjual dan satu jadual yuran di Indonesia.
+ru: Да. После слияния в Индонезии у них одна платформа для продавцов и одна сетка сборов.
+zh: 一样。合并后，两者在印尼使用同一个卖家平台和同一套费率。
+
+@@ 5f753629e9
+ms: Apakah Yuran Komisen Dinamik?
+ru: Что такое динамическая комиссия?
+zh: 什么是动态佣金？
+
+@@ 9d7999437f
+ms: Komisen kedua sebanyak {0}% hingga {1}% ikut kategori yang membiayai promosi standard platform seperti penghantaran percuma dan Bonus Cashback. Maksimum Rp{2} seitem.
+ru: Вторая комиссия от {0}% до {1}% по категориям, которая оплачивает стандартные акции платформы, например бесплатную доставку и Bonus Cashback. Не больше Rp{2} за товар.
+zh: 按类目收取的第二笔佣金，{0}% 至 {1}%，用于支付平台的免运费、Bonus Cashback 等标准促销。每件封顶 Rp{2}。
+
+@@ 0a6d32e8ed
+ms: Bagaimanakah penjimatan komisen berfungsi?
+ru: Как работают скидки на комиссию?
+zh: 佣金减免怎么算？
+
+@@ d8538b8011
+ms: Penjual yang menggunakan iklan GMV Max atau menyertai Growth Xtra Program mendapat kadar komisen lebih rendah. Pesanan GMV Max mendapat penjimatan setiap pesanan. Kedai yang perbelanjaan GMV Max-nya {0}% atau lebih daripada GMV mendapat penjimatan seluruh kedai, dan menggabungkannya dengan Growth Xtra memberi penjimatan terbesar, sehingga {1} mata.
+ru: Продавцы, которые используют рекламу GMV Max или участвуют в Growth Xtra Program, платят меньшую комиссию. Заказы через GMV Max получают скидку на заказ. Магазины, у которых расходы на GMV Max составляют от {0}% GMV, получают скидку на весь магазин, а вместе с Growth Xtra — максимальную, до {1} п. п.
+zh: 使用 GMV Max 广告或参加 Growth Xtra 项目的卖家可享更低佣金。GMV Max 订单按单减免；GMV Max 投入达到 GMV {0}% 及以上的店铺享全店减免，再加上 Growth Xtra 减免最多，最高 {1} 个百分点。
+
+@@ f209e3169a
+ms: Adakah yuran sepesanan?
+ru: Есть ли сбор за заказ?
+zh: 每单有固定费用吗？
+
+@@ 8ba312c69a
+ms: Ya. Yuran Pemprosesan Pesanan ialah Rp{0} bagi setiap pesanan yang dihantar (percuma untuk {1} pesanan pertama penjual baharu), dan Yuran Perkhidmatan Logistik ialah Rp{2} hingga Rp{3} sepesanan.
+ru: Да. Сбор за обработку заказа — Rp{0} за каждый доставленный заказ (бесплатно для первых {1} заказов нового продавца), а логистический сбор — от Rp{2} до Rp{3} за заказ.
+zh: 有。订单处理费为每笔已送达订单 Rp{0}（新卖家前 {1} 单免费），物流服务费为每单 Rp{2} 至 Rp{3}。
+
+@@ c1ab8bd751
+ms: TikTok Shop dan Tokopedia berkongsi satu platform penjual dan satu jadual yuran di Indonesia. Pesanan biasa yang dihantar membayar empat yuran teras, ditambah yang kelima untuk kedai Mall. Semua kadar termasuk cukai.
+ru: В Индонезии у TikTok Shop и Tokopedia одна платформа для продавцов и одна сетка сборов. С обычного доставленного заказа берутся четыре основных сбора и пятый — для магазинов Mall. Все ставки включают налоги.
+zh: TikTok Shop 和 Tokopedia 在印尼共用一个卖家平台和一套费率。一笔正常送达的订单要付四项核心费用，Mall 店铺再加第五项。所有费率均含税。
+
+@@ bd11007327
+ms: Kadar bergantung pada kategori dan sama ada anda penjual Marketplace atau Mall: {0}% hingga {1}% untuk Marketplace dan {2}% hingga {3}% untuk Mall, daripada jadual berkuat kuasa <b1>{4} Mei {5}</b1>. Ia dikenakan atas harga item selepas diskaun penjual. Penghantaran dan diskaun platform tidak termasuk.
+ru: Ставка зависит от категории и от того, продаёте вы на Marketplace или в Mall: от {0}% до {1}% для Marketplace и от {2}% до {3}% для Mall по таблице, действующей с <b1>{4} мая {5}</b1>. Комиссия считается от цены товара после скидок продавца, без доставки и скидок платформы.
+zh: 费率取决于类目，以及你是 Marketplace 还是 Mall 卖家：按 <b1>{5} 年 5 月 {4} 日</b1>生效的费率表，Marketplace 为 {0}% 至 {1}%，Mall 为 {2}% 至 {3}%。按扣除卖家折扣后的商品价格计算，不含运费和平台折扣。
+
+@@ f8a004dc88
+ms: Jadual yang sama menyenaraikan kadar lebih rendah untuk penjual yang menggunakan iklan GMV Max atau menyertai Growth Xtra Program: setiap pesanan untuk pesanan GMV Max, atau untuk seluruh kedai apabila perbelanjaan GMV Max {0}% atau lebih daripada GMV dalam {1} hari lepas. Dengan kedua-duanya, penjimatan sehingga {2}%. Pilih situasi anda dalam kalkulator.
+ru: В той же таблице есть пониженные ставки для продавцов с рекламой GMV Max или в Growth Xtra Program: на заказ — для заказов через GMV Max, или на весь магазин, если расходы на GMV Max за последние {1} дней составляют от {0}% GMV. При обоих условиях скидка — до {2}%. Выберите свой вариант в калькуляторе.
+zh: 同一张表还列出了使用 GMV Max 广告或参加 Growth Xtra 项目卖家的较低费率：GMV Max 订单按单减免；近 {1} 天 GMV Max 投入达到 GMV {0}% 及以上时全店减免。两者兼有时最多减 {2}%。请在计算器中选择你的情况。
+
+@@ b9d54a780c
+ms: {0}. Yuran Komisen Dinamik
+ru: {0}. Динамическая комиссия
+zh: {0}. 动态佣金
+
+@@ 29c92daebc
+ms: {0}% hingga {1}% ikut kategori, atas harga item selepas diskaun penjual, maksimum <b1>Rp{2} seitem</b1>. Ia membiayai promosi standard platform seperti penghantaran percuma dan Bonus Cashback, dan tidak dikembalikan jika pesanan yang dihantar kemudiannya dipulangkan.
+ru: От {0}% до {1}% по категориям от цены товара после скидок продавца, не больше <b1>Rp{2} за товар</b1>. Она оплачивает стандартные акции платформы, например бесплатную доставку и Bonus Cashback, и не возвращается, если доставленный заказ потом вернули.
+zh: 按类目 {0}% 至 {1}%，按扣除卖家折扣后的商品价格计算，<b1>每件封顶 Rp{2}</b1>。用于支付平台的免运费、Bonus Cashback 等标准促销；已送达订单之后退货也不退还。
+
+@@ f8bab71f36
+ms: Rp{0} bagi setiap pesanan yang dihantar, tidak kira berapa item. Penjual baharu tidak membayar apa-apa untuk {1} pesanan pertama.
+ru: Rp{0} за каждый доставленный заказ, сколько бы в нём ни было товаров. Новые продавцы не платят за первые {1} заказов.
+zh: 每笔已送达订单 Rp{0}，不论件数。新卖家前 {1} 单免收。
+
+@@ 6c8fc48768
+ms: {0}. Yuran Perkhidmatan Logistik
+ru: {0}. Логистический сбор
+zh: {0}. 物流服务费
+
+@@ 2a1876f8bf
+ms: Yuran rata sepesanan sejak {0} Mei {1}, dari Rp{2} hingga Rp{3} bergantung pada perkhidmatan penghantaran, laluan dan berat bungkusan. Kalkulator bermula pada Rp{4} (penghantaran standard dalam Jawa ke Jakarta, sehingga {5} kg). Tukar mengikut bungkusan anda.
+ru: Фиксированный сбор за заказ с {0} мая {1} года: от Rp{2} до Rp{3} в зависимости от службы доставки, маршрута и веса посылки. В калькуляторе по умолчанию Rp{4} (стандартная доставка по Яве в Джакарту, до {5} кг). Измените под свои посылки.
+zh: 自 {1} 年 5 月 {0} 日起按单收取的固定费用，按配送服务、线路和包裹重量为 Rp{2} 至 Rp{3}。计算器默认 Rp{4}（爪哇岛内寄往雅加达的标准配送，{5} 公斤以内），请按你的包裹修改。
+
+@@ 851faf7675
+ms: {0}. Yuran Perkhidmatan Mall
+ru: {0}. Сервисный сбор Mall
+zh: {0}. Mall 服务费
+
+@@ 6ac55f60ea
+ms: Kedai Mall membayar tambahan {0}%, maksimum Rp{1} setiap produk.
+ru: Магазины Mall платят ещё {0}%, не больше Rp{1} за товар.
+zh: Mall 店铺另付 {0}%，每件商品封顶 Rp{1}。
+
+@@ 8c4f57cf4e
+ms: Yuran pilihan
+ru: Необязательные сборы
+zh: 可选费用
+
+@@ d61b03cb60
+ms: Produk pra-pesanan membayar tambahan {0}%. Growth Xtra Program mengenakan yuran perkhidmatannya sendiri sebanyak {1}% hingga {2}% ikut kategori. Masukkan dalam kalkulator jika anda menyertainya. Komisen affiliate ada medannya sendiri.
+ru: Товары по предзаказу платят ещё {0}%. Growth Xtra Program берёт свой сервисный сбор от {1}% до {2}% по категориям — укажите его в калькуляторе, если участвуете. Партнёрская комиссия вводится в отдельное поле.
+zh: 预售商品另收 {0}%。Growth Xtra 项目按类目另收 {1}% 至 {2}% 的服务费，如参加请在计算器中填写。联盟佣金有单独的字段。
+
+@@ 067bf03bb6
+ms: Contoh {0}: serum Rp{1}, Marketplace
+ru: Пример {0}: сыворотка за Rp{1}, Marketplace
+zh: 示例 {0}：Rp{1} 精华，Marketplace
+
+@@ 2d0a3fd714
+ms: Serums &amp; Essences: komisen {0}% dan Yuran Komisen Dinamik {1}%. Kos produk Rp{2}, penghantaran percuma untuk pembeli.
+ru: Serums &amp; Essences: комиссия {0}% и динамическая комиссия {1}%. Себестоимость Rp{2}, бесплатная доставка для покупателя.
+zh: Serums &amp; Essences：佣金 {0}%，动态佣金 {1}%。商品成本 Rp{2}，买家包邮。
+
+@@ e31a9fee03
+ms: Yuran Komisen Dinamik ({0}%)
+ru: Динамическая комиссия ({0}%)
+zh: 动态佣金（{0}%）
+
+@@ 80d6ae8aa0
+ms: Untung Rp{0} (margin {1}%).
+ru: Прибыль Rp{0} (маржа {1}%).
+zh: 利润 Rp{0}（利润率 {1}%）。
+
+@@ 18545449e1
+ms: Kadar Mall ialah {0}%, ditambah Yuran Perkhidmatan Mall {1}%: jumlah yuran Rp{2}, untung Rp{3}.
+ru: Ставка Mall — {0}% плюс сервисный сбор Mall {1}%: сборы Rp{2}, прибыль Rp{3}.
+zh: Mall 费率为 {0}%，另加 {1}% Mall 服务费：费用合计 Rp{2}，利润 Rp{3}。
+
+@@ a143b26492
+ms: Contoh {0}: dengan GMV Max dan Growth Xtra
+ru: Пример {0}: с GMV Max и Growth Xtra
+zh: 示例 {0}：使用 GMV Max 并参加 Growth Xtra
+
+@@ e0cd2e2f96
+ms: Kedai Marketplace dengan perbelanjaan GMV Max {0}% atau lebih yang juga menyertai Growth Xtra membayar komisen {1}% untuk serum ini. Yuran turun kepada Rp{2} sebelum yuran Growth Xtra dan kos iklan itu sendiri.
+ru: Магазин Marketplace с расходами на GMV Max от {0}%, который также участвует в Growth Xtra, платит за эту сыворотку комиссию {1}%. Сборы снижаются до Rp{2} без учёта сбора Growth Xtra и самой рекламы.
+zh: GMV Max 投入达到 {0}% 及以上、同时参加 Growth Xtra 的 Marketplace 店铺，这款精华的佣金为 {1}%。不计 Growth Xtra 服务费和广告费本身，费用降至 Rp{2}。
+
+@@ 9890175d20
+ms: Contoh {0}: telefon Rp{1}
+ru: Пример {0}: телефон за Rp{1}
+zh: 示例 {0}：Rp{1} 手机
+
+@@ 66f5031e56
+ms: Telefon dikenakan komisen {0}% di Marketplace. Yuran Komisen Dinamik {1}% sepatutnya Rp{2} tetapi dihadkan pada Rp{3}. Jumlah yuran Rp{4}, untung Rp{5} atas kos Rp{6}.
+ru: Телефоны платят {0}% комиссии на Marketplace. Динамическая комиссия {1}% составила бы Rp{2}, но ограничена Rp{3}. Сборы Rp{4}, прибыль Rp{5} при себестоимости Rp{6}.
+zh: 手机在 Marketplace 的佣金为 {0}%。{1}% 的动态佣金本应为 Rp{2}，但封顶 Rp{3}。费用合计 Rp{4}，成本 Rp{6} 时利润 Rp{5}。
+
+@@ ca9c51f826
+ms: Kadar daripada jadual berkuat kuasa {0} Mei {1}. Kalkulator mempunyai semua kategori dan semua lajur penjimatan.
+ru: Ставки из таблицы, действующей с {0} мая {1} года. В калькуляторе есть все категории и все варианты скидок.
+zh: 费率来自 {1} 年 5 月 {0} 日生效的费率表。计算器包含全部类目和全部减免列。
+
+@@ ab1776e34e
+ms: Marketplace, GMV Max {0}%+ dan Growth Xtra
+ru: Marketplace, GMV Max от {0}% и Growth Xtra
+zh: Marketplace，GMV Max {0}%+ 且参加 Growth Xtra
+
+@@ 2c2037c7d0
+ms: Yuran Komisen Dinamik
+ru: Динамическая комиссия
+zh: 动态佣金
+
+@@ c55aa4d4c1
+ms: Baca gambaran penuh dalam panduan kami tentang <a1>yuran penjual TikTok Shop Indonesia pada {0}</a1>.
+ru: Подробнее — в нашем руководстве <a1>о сборах TikTok Shop Индонезия в {0} году</a1>.
+zh: 完整说明见我们的指南：<a1>{0} 年 TikTok Shop 印尼站卖家费用</a1>。
+
+@@ fef3b930a1
+ms: TikTok Shop dan Tokopedia kini berkongsi satu platform penjual di Indonesia, dan yuran mereka berubah pada <b1>{0} Mei {1}</b1>: jadual komisen baharu ikut kategori, Yuran Komisen Dinamik yang lebih tinggi, dan kadar lebih rendah untuk penjual yang menggunakan iklan GMV Max atau Growth Xtra Program. Panduan ini menyenaraikan setiap yuran pada pesanan biasa dan menunjukkan contoh pengiraan. Semua angka datang daripada <a2>kalkulator yuran TikTok Shop Indonesia</a2>.
+ru: TikTok Shop и Tokopedia теперь работают на одной платформе для продавцов в Индонезии, и <b1>{0} мая {1}</b1> их сборы изменились: новая таблица комиссий по категориям, более высокая динамическая комиссия и пониженные ставки для продавцов с рекламой GMV Max или в Growth Xtra Program. В этом руководстве перечислены все сборы с обычного заказа и разобран пример. Все цифры взяты из <a2>калькулятора сборов TikTok Shop Индонезия</a2>.
+zh: TikTok Shop 和 Tokopedia 现在在印尼共用一个卖家平台，费用在 <b1>{1} 年 5 月 {0} 日</b1>调整：新的类目佣金表、更高的动态佣金，以及使用 GMV Max 广告或参加 Growth Xtra 项目卖家的更低费率。本指南列出一笔正常订单的全部费用，并给出计算示例。所有数字均来自 <a2>TikTok Shop 印尼站费用计算器</a2>。
+
+@@ 599d44a86d
+ms: {0}% hingga {1}% (Marketplace), {2}% hingga {3}% (Mall) ikut kategori
+ru: От {0}% до {1}% (Marketplace), от {2}% до {3}% (Mall) по категориям
+zh: 按类目 {0}% 至 {1}%（Marketplace）、{2}% 至 {3}%（Mall）
+
+@@ f60c2b4b38
+ms: {0}% hingga {1}% ikut kategori, sehingga Rp{2} seitem
+ru: От {0}% до {1}% по категориям, не больше Rp{2} за товар
+zh: 按类目 {0}% 至 {1}%，每件最高 Rp{2}
+
+@@ 358541635c
+ms: Rp{0} sepesanan ({1} pesanan pertama percuma untuk penjual baharu)
+ru: Rp{0} за заказ (первые {1} заказов бесплатно для новых продавцов)
+zh: 每单 Rp{0}（新卖家前 {1} 单免费）
+
+@@ 71f7bf395d
+ms: Rp{0} hingga Rp{1} sepesanan
+ru: От Rp{0} до Rp{1} за заказ
+zh: 每单 Rp{0} 至 Rp{1}
+
+@@ 63fbeeaaf2
+ms: Perkhidmatan penghantaran, laluan dan berat bungkusan
+ru: Служба доставки, маршрут и вес посылки
+zh: 配送服务、线路和包裹重量
+
+@@ c5a650c09e
+ms: Yuran Perkhidmatan Mall
+ru: Сервисный сбор Mall
+zh: Mall 服务费
+
+@@ d5426dc466
+ms: {0}%, sehingga Rp{1} setiap produk (Mall sahaja)
+ru: {0}%, не больше Rp{1} за товар (только Mall)
+zh: {0}%，每件商品最高 Rp{1}（仅 Mall）
+
+@@ be301fc84e
+ms: Serum Rp{0} di Marketplace, kos produk Rp{1}, penghantaran percuma untuk pembeli, tiada program penjimatan.
+ru: Сыворотка за Rp{0} на Marketplace, себестоимость Rp{1}, бесплатная доставка для покупателя, без программ скидок.
+zh: Marketplace 上一款 Rp{0} 的精华，商品成本 Rp{1}，买家包邮，未参加减免项目。
+
+@@ 00d8037271
+ms: Untung ialah Rp{0}, margin {1}%. Komisen dan Yuran Komisen Dinamik bersama-sama mengambil {2}% daripada harga.
+ru: Прибыль — Rp{0}, маржа {1}%. Комиссия и динамическая комиссия вместе забирают {2}% цены.
+zh: 利润 Rp{0}，利润率 {1}%。佣金加动态佣金合计占售价的 {2}%。
+
+@@ 6c4a0dbe9a
+ms: Penjimatan GMV Max dan Growth Xtra
+ru: Скидки за GMV Max и Growth Xtra
+zh: GMV Max 与 Growth Xtra 减免
+
+@@ ebc0a8ef7b
+ms: Sejak {0} Mei {1} jadual komisen mempunyai lajur untuk setiap situasi penjimatan. Pesanan GMV Max mendapat kadar lebih rendah setiap pesanan. Kedai yang perbelanjaan GMV Max-nya (Product GMV Max dan LIVE GMV Max) {2}% atau lebih daripada GMV dalam {3} hari lepas mendapat kadar lebih rendah untuk setiap pesanan. Ahli Growth Xtra juga mendapat penjimatan seluruh kedai, dan penjimatan terbesar, sehingga {4} mata, untuk kedai yang melakukan kedua-duanya. Untuk serum yang sama di Marketplace:
+ru: С {0} мая {1} года в таблице комиссий есть колонка для каждого варианта скидки. Заказы через GMV Max получают меньшую ставку на заказ. Магазин, у которого расходы на GMV Max (Product GMV Max и LIVE GMV Max) за последние {3} дней составляют от {2}% GMV, получает меньшую ставку на все заказы. Участники Growth Xtra тоже получают скидку на весь магазин, а максимальная скидка, до {4} п. п., — у магазинов, где выполнено и то и другое. Для той же сыворотки на Marketplace:
+zh: 自 {1} 年 5 月 {0} 日起，佣金表为每种减免情况单列一栏。GMV Max 订单按单享更低费率。近 {3} 天 GMV Max（Product GMV Max 与 LIVE GMV Max）投入达到 GMV {2}% 及以上的店铺，全部订单享更低费率。Growth Xtra 成员也享全店减免，两者兼有的店铺减免最多，最高 {4} 个百分点。同一款精华在 Marketplace 上：
+
+@@ 30f6fed844
+ms: Situasi
+ru: Вариант
+zh: 情况
+
+@@ 4897241e5d
+ms: Kadar lalai
+ru: Базовая ставка
+zh: 默认费率
+
+@@ 6e11b55617
+ms: Pesanan GMV Max, kedai di bawah {0}%
+ru: Заказ через GMV Max, магазин меньше {0}%
+zh: GMV Max 订单，店铺低于 {0}%
+
+@@ 6758dbaff1
+ms: Growth Xtra, pesanan bukan GMV Max
+ru: Growth Xtra, заказ не через GMV Max
+zh: Growth Xtra，非 GMV Max 订单
+
+@@ d47d8683b2
+ms: Growth Xtra + pesanan GMV Max
+ru: Growth Xtra + заказ через GMV Max
+zh: Growth Xtra + GMV Max 订单
+
+@@ a6f7e98ee0
+ms: Perbelanjaan GMV Max kedai {0}% atau lebih
+ru: Расходы магазина на GMV Max от {0}%
+zh: 店铺 GMV Max 投入 {0}% 及以上
+
+@@ 81e91894df
+ms: Perbelanjaan GMV Max kedai {0}% atau lebih + Growth Xtra
+ru: Расходы магазина на GMV Max от {0}% + Growth Xtra
+zh: 店铺 GMV Max 投入 {0}% 及以上 + Growth Xtra
+
+@@ 9ea37b2a94
+ms: Penjimatan ini tidak percuma. GMV Max ialah iklan berbayar, dan Growth Xtra mempunyai yuran perkhidmatannya sendiri sebanyak {0}% hingga {1}%. Pastikan jualan tambahan menampung kedua-duanya.
+ru: Эти скидки не бесплатны. GMV Max — платная реклама, а у Growth Xtra свой сервисный сбор от {0}% до {1}%. Проверьте, что дополнительные продажи окупают и то и другое.
+zh: 这些减免不是白给的。GMV Max 是付费广告，Growth Xtra 也有 {0}% 至 {1}% 的服务费。要确认新增销量能覆盖这两项成本。
+
+@@ 3abb87acbc
+ms: Yuran Perkhidmatan Logistik
+ru: Логистический сбор
+zh: 物流服务费
+
+@@ b855c7e6f0
+ms: Sejak {0} Mei {1} setiap pesanan juga membayar Yuran Perkhidmatan Logistik yang rata. Ia bergantung pada perkhidmatan penghantaran, laluan dan berat boleh caj (yang lebih tinggi antara berat sebenar dan berat volumetrik, panjang × lebar × tinggi dalam cm ÷ {2}). Penghantaran standard:
+ru: С {0} мая {1} года каждый заказ также платит фиксированный логистический сбор. Он зависит от службы доставки, маршрута и расчётного веса (больший из фактического и объёмного веса: длина × ширина × высота в см ÷ {2}). Стандартная доставка:
+zh: 自 {1} 年 5 月 {0} 日起，每笔订单还要付固定的物流服务费，取决于配送服务、线路和计费重量（实重与体积重取大者，体积重 = 长 × 宽 × 高（厘米）÷ {2}）。标准配送：
+
+@@ 4999528efe
+ms: Laluan
+ru: Маршрут
+zh: 线路
+
+@@ 40156e13e0
+ms: Sehingga {0} kg
+ru: До {0} кг
+zh: {0} 公斤以内
+
+@@ 160831e39e
+ms: Jawa ↔ Jakarta
+ru: Ява ↔ Джакарта
+zh: 爪哇 ↔ 雅加达
+
+@@ 8dfc912f80
+ms: Jawa ↔ Jawa (luar Jakarta)
+ru: Ява ↔ Ява (кроме Джакарты)
+zh: 爪哇 ↔ 爪哇（雅加达以外）
+
+@@ bd3ad190fd
+ms: Jawa ↔ Bali
+ru: Ява ↔ Бали
+zh: 爪哇 ↔ 巴厘岛
+
+@@ 2d8e64ad78
+ms: Jawa ↔ Sumatera
+ru: Ява ↔ Суматра
+zh: 爪哇 ↔ 苏门答腊
+
+@@ 40196ecb7c
+ms: Jawa ↔ Sulawesi
+ru: Ява ↔ Сулавеси
+zh: 爪哇 ↔ 苏拉威西
+
+@@ d495411455
+ms: Jawa ↔ Papua & Maluku
+ru: Ява ↔ Папуа и Молукки
+zh: 爪哇 ↔ 巴布亚与马鲁古
+
+@@ 026f35947f
+ms: Dalam Bali
+ru: Внутри Бали
+zh: 巴厘岛内
+
+@@ a54e139339
+ms: Dalam Sumatera
+ru: Внутри Суматры
+zh: 苏门答腊岛内
+
+@@ 1d5ee983a0
+ms: Penghantaran ekonomi, kargo dan segera atau hari yang sama mempunyai kadar tersendiri. Yuran tidak dikembalikan apabila pesanan yang dihantar dipulangkan.
+ru: У экономичной, грузовой и срочной доставки или доставки в тот же день свои тарифы. Сбор не возвращается, если доставленный заказ вернули.
+zh: 经济、货运和即时/当日达配送有各自的费率。已送达订单退货时，该费用不退还。
+
+@@ 2bfeb98f96
+ms: <b1>Yuran perkhidmatan pra-pesanan</b1>: {0}% daripada harga item selepas diskaun penjual, untuk produk pra-pesanan.
+ru: <b1>Сбор за предзаказ</b1>: {0}% от цены товара после скидки продавца, для товаров по предзаказу.
+zh: <b1>预售服务费</b1>：预售商品按扣除卖家折扣后的商品价格收 {0}%。
+
+@@ d1559de773
+ms: <b1>Yuran Growth Xtra Program</b1>: {0}% hingga {1}% ikut kategori untuk ahli, ditambah {2}% (sehingga Rp{3} seitem) untuk GXP Super.
+ru: <b1>Сбор Growth Xtra Program</b1>: от {0}% до {1}% по категориям для участников плюс {2}% (не больше Rp{3} за товар) для GXP Super.
+zh: <b1>Growth Xtra 项目服务费</b1>：成员按类目 {0}% 至 {1}%，GXP Super 另加 {2}%（每件最高 Rp{3}）。
+
+@@ 65da0a1311
+ms: TikTok Shop Vietnam &amp; Indonesia kini tersedia · <a1>Buka Indonesia <x1/></a1>
+ru: TikTok Shop Вьетнам и Индонезия уже работают · <a1>Открыть Индонезию <x1/></a1>
+zh: TikTok Shop 越南站、印尼站已上线 · <a1>打开印尼站 <x1/></a1>
+
+@@ d3bab3f556
+ms: Dikemas kini {0} Apr / {1} Sep {2}
+ru: Обновлено {0} апр. / {1} сент. {2}
+zh: 更新于 {2} 年 4 月 {0} 日 / 9 月 {1} 日

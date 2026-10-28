@@ -6,12 +6,16 @@ VN = MARKETS['tiktok-shop-vn']['selector']['options']
 VND = lambda v: money(v, 'VND')
 E = lambda s: f'<span lang="en">{s}</span>'
 
-LBL = dict(commission='Commission fee', tx='Transaction fee', opf='Order Processing Fee', wht='Withheld VAT + personal income tax')
-PCT_ROWS = {'commission', 'tx', 'wht'}
+LBL = dict(commission='Commission fee', tx='Transaction fee', opf='Order Processing Fee', wht='Withheld VAT + personal income tax',
+           dcf='Dynamic Commission Fee', mallsf='Mall Service Fee', lsf='Logistics Service Fee', preorder='Pre-order service fee', gxp='Growth Xtra Program fee')
+PCT_ROWS = {'commission', 'tx', 'wht', 'dcf', 'mallsf', 'preorder', 'gxp'}
+ID = MARKETS['tiktok-shop-id']['selector']['options']
+IDR = lambda v: money(v, 'IDR')
 
 def _ex(f, cur):
     M = lambda v: money(v, cur); rows = []
     for k, r, a in f['rows']:
+        if k == 'gxp' and not a: continue
         lab = f"{LBL[k]} ({pct(r)})" if k in PCT_ROWS and r else LBL[k]
         rows.append((lab, ('+' + M(-a)) if a < 0 else ('−' + M(a))))
     rows.append(('Total fees', M(f['total']), True))
@@ -90,12 +94,130 @@ def tiktok_vn_page():
                 lede='Marketplace and Mall commission for every category, the 6% transaction fee and its new ads-based savings from 21 October 2026, 3,000 ₫ per order and the 1.5% tax withheld from individual sellers.',
                 body=body, faq=faq, toc=toc)
 
+# ---------------------------------------------------------------- TikTok Shop ID
+def _id(n):
+    return next(o for o in ID if o['n'] == n)
+ID_SAMPLE = ['Skincare › Serums & Essences', "Women's Tops", "Men's Tops", 'Hijabs', "Women's Islamic Clothing › Abayas", 'Phones & Tablets',
+             'Desktop Computers, Laptops & Tablets', 'Instant Food › Instant Noodles', 'Formula Milk & Baby Food › Growth Milk Formula',
+             'Baby Care & Health › Diapers', 'Gold']
+SAV = [('none', 'Default rate'), ('gmo', 'GMV Max order, shop under 3%'), ('gx', 'Growth Xtra, non-GMV Max order'), ('gxgmo', 'Growth Xtra + GMV Max order'),
+       ('s3', 'Shop GMV Max spend 3% or more'), ('s3gx', 'Shop GMV Max spend 3% or more + Growth Xtra')]
+
+def _id_rows():
+    rows = ''
+    for n in ID_SAMPLE:
+        o = _id(n); r = o['r']
+        rows += (f"<tr><td>{E(o['g'] + ' › ' + n)}</td><td class='n'>{pct(r['mp.none'])}</td><td class='n'>{pct(r['mall.none'])}</td>"
+                 f"<td class='n'>{pct(r['mp.s3gx'])}</td><td class='n'>{pct(r['dcf'])}</td></tr>")
+    return rows
+
+def tiktok_id_page():
+    o = _id(SK)['r']
+    a = compute('tiktok-shop-id', sel=SK, price=89000, cost=30000)
+    m = compute('tiktok-shop-id', sel=SK, store='mall', price=89000, cost=30000)
+    s = compute('tiktok-shop-id', sel=SK, price=89000, cost=30000, x={'sav': 's3gx'})
+    ph = 'Phones & Tablets'
+    p = compute('tiktok-shop-id', sel=ph, price=3499000, cost=3100000)
+    toc = [('how', 'How TikTok Shop Indonesia fees work'), ('examples', 'Worked examples'), ('rates', 'Sample commission rates'),
+           ('faq', 'FAQ'), ('sources', 'Sources')]
+    body = f"""
+<h2 id="how">How TikTok Shop Indonesia fees work</h2>
+<p>TikTok Shop and Tokopedia share one seller platform and one fee schedule in Indonesia. A normal delivered order pays four core fees, plus a fifth for Mall shops. All rates include tax.</p>
+<h3>1. Platform commission fee</h3>
+<p>The rate depends on the category and on whether you are a Marketplace or a Mall seller: {pct(min(x['r']['mp.none'] for x in ID))} to {pct(max(x['r']['mp.none'] for x in ID))} for Marketplace and {pct(min(x['r']['mall.none'] for x in ID))} to {pct(max(x['r']['mall.none'] for x in ID))} for Mall, from the table effective <b>18 May 2026</b>. It is charged on the item price after seller discounts. Shipping and platform discounts are not included.</p>
+<p>The same table lists lower rates for sellers who use GMV Max ads or join the Growth Xtra Program: per order for GMV Max orders, or for the whole shop when GMV Max spend is 3% or more of GMV over the last 30 days. With both, the saving is up to {pct(max(x['r']['mall.none'] - x['r']['mall.s3gx'] for x in ID))}. Choose your situation in the calculator.</p>
+<h3>2. Dynamic Commission Fee</h3>
+<p>3% to 8% by category, on the item price after seller discounts, capped at <b>{IDR(60000)} per item</b>. It funds the platform’s standard promotions such as free shipping and Bonus Cashback, and it is not refunded if a delivered order is later returned.</p>
+<h3>3. Order Processing Fee</h3>
+<p>{IDR(1250)} per delivered order, however many items it has. New sellers pay nothing on their first 50 orders.</p>
+<h3>4. Logistics Service Fee</h3>
+<p>A flat fee per order since 1 May 2026, from {IDR(540)} to {IDR(5060)} depending on the shipping service, the route and the parcel weight. The calculator starts at {IDR(690)} (standard shipping within Java to Jakarta, up to 1 kg). Change it to match your parcels.</p>
+<h3>5. Mall Service Fee</h3>
+<p>Mall shops pay another 1.8%, capped at {IDR(50000)} per product.</p>
+<h3>Optional fees</h3>
+<p>Pre-order products pay an extra 3%. The Growth Xtra Program charges its own service fee of 2% to 4% by category. Enter it in the calculator if you take part. Affiliate commission goes in its own field.</p>
+
+<h2 id="examples">Worked examples</h2>
+<div class="example"><h4>Example 1: {IDR(89000)} serum, Marketplace</h4>
+<p>Serums &amp; Essences: {pct(o['mp.none'])} commission and {pct(o['dcf'])} Dynamic Commission Fee. Product cost {IDR(30000)}, free shipping for the buyer.</p>
+{ex_table(_ex(a, 'IDR'))}
+<p>Profit {IDR(a['profit'])} ({a['margin']:.1f}% margin).</p></div>
+<div class="example"><h4>Example 2: the same serum in a Mall shop</h4>
+<p>The Mall rate is {pct(o['mall.none'])}, plus the 1.8% Mall Service Fee: total fees {IDR(m['total'])}, profit {IDR(m['profit'])}.</p></div>
+<div class="example"><h4>Example 3: with GMV Max and Growth Xtra</h4>
+<p>A Marketplace shop with GMV Max spend of 3% or more that also joins Growth Xtra pays {pct(o['mp.s3gx'])} commission on this serum. Fees fall to {IDR(s['total'])} before the Growth Xtra fee and the ads themselves.</p></div>
+<div class="example"><h4>Example 4: {IDR(3499000)} phone</h4>
+<p>Phones pay {pct(_id(ph)['r']['mp.none'])} commission on Marketplace. The {pct(_id(ph)['r']['dcf'])} Dynamic Commission Fee would be {IDR(round(3499000 * 0.03))} but is capped at {IDR(60000)}. Total fees {IDR(p['total'])}, profit {IDR(p['profit'])} on a {IDR(3100000)} cost.</p></div>
+
+<h2 id="rates">Sample commission rates</h2>
+<p>Rates from the table effective 18 May 2026. The calculator has all categories and all savings columns.</p>
+<div class="tablewrap"><table class="tbl"><thead><tr><th>Category</th><th class="n">Marketplace</th><th class="n">Mall</th><th class="n">Marketplace, GMV Max 3%+ and Growth Xtra</th><th class="n">Dynamic Commission Fee</th></tr></thead><tbody>{_id_rows()}</tbody></table></div>
+<p>Read the full picture in our guide to <a href="../../guides/tiktok-shop-indonesia-fees-2026/">TikTok Shop Indonesia seller fees in 2026</a>.</p>
+"""
+    faq = [
+     ('How much is the TikTok Shop Indonesia commission?', 'The platform commission fee is 2.5% to 10.2% for Marketplace and 2.5% to 12.2% for Mall, by category, from 18 May 2026. On top of that there is a Dynamic Commission Fee of 3% to 8%, capped at Rp60,000 per item.'),
+     ('Are TikTok Shop and Tokopedia fees the same?', 'Yes. Since the merger they use one seller platform and one fee schedule in Indonesia.'),
+     ('What is the Dynamic Commission Fee?', 'A second commission of 3% to 8% by category that pays for the platform’s standard promotions such as free shipping and Bonus Cashback. It is capped at Rp60,000 per item.'),
+     ('How do the commission savings work?', 'Sellers who use GMV Max ads or join the Growth Xtra Program get lower commission rates. GMV Max orders get a per-order saving. Shops whose GMV Max spend is 3% or more of GMV get a shop-wide saving, and combining it with Growth Xtra gives the biggest saving, up to 8.18 points.'),
+     ('Is there a fee per order?', 'Yes. The Order Processing Fee is Rp1,250 per delivered order (free for a new seller’s first 50 orders), and the Logistics Service Fee is Rp540 to Rp5,060 per order.'),
+    ]
+    return dict(title='TikTok Shop Indonesia Fee Calculator 2026 (Tokopedia, Commission + Dynamic Fee)',
+                desc='Free TikTok Shop & Tokopedia Indonesia fee and profit calculator: Marketplace and Mall commission for 1,100 categories, GMV Max and Growth Xtra savings, the 3–8% Dynamic Commission Fee, Rp1,250 per order and the Logistics Service Fee.',
+                h1='TikTok Shop Indonesia Fee Calculator',
+                lede='Marketplace and Mall commission for every category from 18 May 2026, with GMV Max and Growth Xtra savings, the Dynamic Commission Fee capped at Rp60,000, the Mall Service Fee, Rp1,250 per order and the Logistics Service Fee.',
+                body=body, faq=faq, toc=toc)
+
+def g_tiktok_id():
+    o = _id(SK)['r']
+    a = compute('tiktok-shop-id', sel=SK, price=89000, cost=30000)
+    trs = ''
+    for k, lab in SAV:
+        f = compute('tiktok-shop-id', sel=SK, price=89000, cost=30000, x={'sav': k})
+        trs += f"<tr><td>{lab}</td><td class='n'>{pct(f['rate']['commission'])}</td><td class='n'>{IDR(f['total'])}</td><td class='n'>{IDR(f['profit'])}</td></tr>"
+    lsf = [('Java ↔ Jakarta', 690, 890, 1620), ('Java ↔ Java (outside Jakarta)', 990, 1090, 2220), ('Java ↔ Bali', 1720, 2220, 4150),
+           ('Java ↔ Sumatra', 2830, 3330, 5060), ('Java ↔ Sulawesi', 3940, 4850, 5060), ('Java ↔ Papua & Maluku', 5060, 5060, 5060),
+           ('Within Bali', 540, 680, 1340), ('Within Sumatra', 750, 1090, 1880)]
+    lrows = ''.join(f"<tr><td>{r}</td><td class='n'>{IDR(x)}</td><td class='n'>{IDR(y)}</td><td class='n'>{IDR(z)}</td></tr>" for r, x, y, z in lsf)
+    return f"""
+<p>TikTok Shop and Tokopedia now share one seller platform in Indonesia, and their fees changed on <b>18 May 2026</b>: a new commission table by category, a higher Dynamic Commission Fee, and lower rates for sellers who use GMV Max ads or the Growth Xtra Program. This guide lists every fee on a normal order and works through an example. All the numbers come from the <a href="../../tiktok-shop/indonesia/">TikTok Shop Indonesia fee calculator</a>.</p>
+<h2 id="fees">The fees on every order</h2>
+<div class="tablewrap"><table><thead><tr><th>Fee</th><th>Rate</th><th>Charged on</th></tr></thead><tbody>
+<tr><td>Platform commission fee</td><td>2.5% to 10.2% (Marketplace), 2.5% to 12.2% (Mall) by category</td><td>Item price after seller discounts</td></tr>
+<tr><td>Dynamic Commission Fee</td><td>3% to 8% by category, up to {IDR(60000)} per item</td><td>Item price after seller discounts</td></tr>
+<tr><td>Order Processing Fee</td><td>{IDR(1250)} per order (first 50 orders free for new sellers)</td><td>Each delivered order</td></tr>
+<tr><td>Logistics Service Fee</td><td>{IDR(540)} to {IDR(5060)} per order</td><td>Shipping service, route and parcel weight</td></tr>
+<tr><td>Mall Service Fee</td><td>1.8%, up to {IDR(50000)} per product (Mall only)</td><td>Item price after seller discounts</td></tr>
+</tbody></table></div>
+<h2 id="example">Worked example</h2>
+<p>An {IDR(89000)} serum on Marketplace, product cost {IDR(30000)}, free shipping for the buyer, no savings programme.</p>
+{ex_table(_ex(a, 'IDR'))}
+<p>Profit is {IDR(a['profit'])}, a {a['margin']:.1f}% margin. Commission and the Dynamic Commission Fee together take {pct(o['mp.none'] + o['dcf'])} of the price.</p>
+<h2 id="savings">GMV Max and Growth Xtra savings</h2>
+<p>Since 18 May 2026 the commission table has a column for each savings situation. GMV Max orders get a lower rate per order. A shop whose GMV Max spend (Product and LIVE GMV Max) is 3% or more of its GMV over the last 30 days gets a lower rate on every order. Growth Xtra members get a shop-wide saving too, and the biggest saving, up to 8.18 points, goes to shops that do both. For the same serum on Marketplace:</p>
+<div class="tablewrap"><table><thead><tr><th>Situation</th><th class="n">Commission</th><th class="n">Fees</th><th class="n">Profit</th></tr></thead><tbody>{trs}</tbody></table></div>
+<p>The savings are not free. GMV Max is paid advertising, and Growth Xtra has its own service fee of 2% to 4%. Check that the extra sales cover both.</p>
+<h2 id="logistics">The Logistics Service Fee</h2>
+<p>Since 1 May 2026 every order also pays a flat Logistics Service Fee. It depends on the shipping service, the route and the chargeable weight (the higher of actual and volumetric weight, length × width × height in cm ÷ 6,000). Standard shipping:</p>
+<div class="tablewrap"><table><thead><tr><th>Route</th><th class="n">Up to 1 kg</th><th class="n">1–2 kg</th><th class="n">2–3 kg</th></tr></thead><tbody>{lrows}</tbody></table></div>
+<p>Economy, cargo and instant or same-day shipping have their own rates. The fee is not refunded when a delivered order is returned.</p>
+<h2 id="other">Fees that apply only sometimes</h2>
+<ul>
+<li><b>Pre-order service fee</b>: 3% of the item price after seller discount, on pre-order products.</li>
+<li><b>Growth Xtra Program fee</b>: 2% to 4% by category for members, plus 2% (up to Rp20,000 per item) for GXP Super.</li>
+<li><b>Affiliate commission</b>: the rate you set for creators, on affiliate orders only.</li>
+</ul>
+"""
+
 # ---------------------------------------------------------------- guide
 GUIDES_VN = [
  dict(lang='en', slug='tiktok-shop-vietnam-fees-2026', short='TikTok Shop Vietnam fees 2026',
       title='TikTok Shop Vietnam Seller Fees 2026: Commission, 6% Transaction Fee and the New Ads Savings',
       desc='Every TikTok Shop Vietnam seller fee in 2026: category commission for Marketplace and Mall, the 6% transaction fee and its savings tiers from 21 October, 3,000 ₫ per order, withheld tax and a worked example.',
       market='tiktok-shop-vn', cov='cov-ink', fig='6%'),
+ dict(lang='en', slug='tiktok-shop-indonesia-fees-2026', short='TikTok Shop Indonesia fees 2026',
+      title='TikTok Shop Indonesia Seller Fees 2026: Commission, Dynamic Commission Fee and GMV Max Savings',
+      desc='Every TikTok Shop and Tokopedia seller fee in Indonesia in 2026: commission by category from 18 May, the 3–8% Dynamic Commission Fee, GMV Max and Growth Xtra savings, Rp1,250 per order, the Logistics Service Fee and a worked example.',
+      market='tiktok-shop-id', cov='cov-amber', fig='8.18%'),
 ]
 
 def g_tiktok_vn():
@@ -135,6 +257,6 @@ def g_tiktok_vn():
 </ul>
 '''
 
-GUIDE_BODY_VN = {'tiktok-shop-vietnam-fees-2026': g_tiktok_vn}
-GUIDE_SOURCES_VN = {'tiktok-shop-vietnam-fees-2026': MARKETS['tiktok-shop-vn']['sources']}
-PAGE_FN_VN = {('tiktok-shop-vn', 'en'): tiktok_vn_page}
+GUIDE_BODY_VN = {'tiktok-shop-vietnam-fees-2026': g_tiktok_vn, 'tiktok-shop-indonesia-fees-2026': g_tiktok_id}
+GUIDE_SOURCES_VN = {'tiktok-shop-vietnam-fees-2026': MARKETS['tiktok-shop-vn']['sources'], 'tiktok-shop-indonesia-fees-2026': MARKETS['tiktok-shop-id']['sources']}
+PAGE_FN_VN = {('tiktok-shop-vn', 'en'): tiktok_vn_page, ('tiktok-shop-id', 'en'): tiktok_id_page}

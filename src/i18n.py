@@ -454,3 +454,44 @@ S['ru'].update(dict(
   t_vnWht='Физлицо или семейный бизнес (налог удерживает TikTok Shop)', t_vnWht_h='С 1 июля 2025 года платформа удерживает 1% НДС + 0,5% НДФЛ с цены товара после скидки продавца. Не включайте для зарегистрированных компаний.',
   c_wht='Удержанные НДС + НДФЛ',
 ))
+# TikTok Shop Indonesia (TikTok Shop & Tokopedia)
+S['en'].update(dict(
+  idsav_label='Platform Commission Savings (from 18 May 2026)', idsav_none='None (default rate)',
+  idsav_gmo='GMV Max order, shop GMV Max spend under 3%', idsav_gx='Growth Xtra, order not from GMV Max', idsav_gxgmo='Growth Xtra + GMV Max order',
+  idsav_s3='Shop GMV Max spend 3% or more (all orders)', idsav_s3gx='Shop GMV Max spend 3% or more + Growth Xtra (all orders)',
+  t_idNew='New seller: within the first 50 orders', t_idNew_h='New sellers pay no Order Processing Fee on their first 50 orders (refunded at the end of the month).',
+  t_preOrder='Pre-order product', t_preOrder_h='Pre-order products pay an extra 3% pre-order service fee.',
+  c_dcf='Dynamic Commission Fee', c_mallsf='Mall Service Fee', c_lsf='Logistics Service Fee', c_preorder='Pre-order service fee', c_gxp='Growth Xtra Program fee',
+  c_lsf_h='Rp540–5,060 per order by route and parcel weight. Default: standard shipping within Java to Jakarta, up to 1 kg (Rp690).',
+  c_gxp_h='Optional. If you joined the Growth Xtra Program, enter its rate (2%–4% by category, plus 2% for GXP Super).',
+))
+S['ms'].update(dict(
+  idsav_label='Penjimatan Komisen Platform (mulai 18 Mei 2026)', idsav_none='Tiada (kadar lalai)',
+  idsav_gmo='Pesanan GMV Max, perbelanjaan GMV Max kedai di bawah 3%', idsav_gx='Growth Xtra, pesanan bukan daripada GMV Max', idsav_gxgmo='Growth Xtra + pesanan GMV Max',
+  idsav_s3='Perbelanjaan GMV Max kedai 3% atau lebih (semua pesanan)', idsav_s3gx='Perbelanjaan GMV Max kedai 3% atau lebih + Growth Xtra (semua pesanan)',
+  t_idNew='Penjual baharu: dalam 50 pesanan pertama', t_idNew_h='Penjual baharu tidak membayar Yuran Pemprosesan Pesanan untuk 50 pesanan pertama (dikembalikan pada akhir bulan).',
+  t_preOrder='Produk pra-pesanan', t_preOrder_h='Produk pra-pesanan dikenakan yuran perkhidmatan pra-pesanan tambahan 3%.',
+  c_dcf='Yuran Komisen Dinamik', c_mallsf='Yuran Perkhidmatan Mall', c_lsf='Yuran Perkhidmatan Logistik', c_preorder='Yuran perkhidmatan pra-pesanan', c_gxp='Yuran Growth Xtra Program',
+  c_lsf_h='Rp540–5,060 sepesanan ikut laluan dan berat bungkusan. Lalai: penghantaran standard dalam Jawa ke Jakarta, sehingga 1 kg (Rp690).',
+  c_gxp_h='Pilihan. Jika anda menyertai Growth Xtra Program, masukkan kadarnya (2%–4% ikut kategori, tambah 2% untuk GXP Super).',
+))
+S['zh'].update(dict(
+  idsav_label='平台佣金减免（2026 年 5 月 18 日起）', idsav_none='无（默认费率）',
+  idsav_gmo='GMV Max 订单，店铺 GMV Max 投入低于 3%', idsav_gx='Growth Xtra，非 GMV Max 订单', idsav_gxgmo='Growth Xtra + GMV Max 订单',
+  idsav_s3='店铺 GMV Max 投入 3% 及以上（全部订单）', idsav_s3gx='店铺 GMV Max 投入 3% 及以上 + Growth Xtra（全部订单）',
+  t_idNew='新卖家：前 50 笔订单内', t_idNew_h='新卖家前 50 笔订单免订单处理费（月底一次性返还）。',
+  t_preOrder='预售商品', t_preOrder_h='预售商品另收 3% 预售服务费。',
+  c_dcf='动态佣金', c_mallsf='Mall 服务费', c_lsf='物流服务费', c_preorder='预售服务费', c_gxp='Growth Xtra 项目服务费',
+  c_lsf_h='按线路和包裹重量每单 Rp540–5,060。默认：爪哇岛内寄往雅加达的标准配送，1 公斤以内（Rp690）。',
+  c_gxp_h='可选。如参加了 Growth Xtra 项目，请填写其费率（按类目 2%–4%，GXP Super 另加 2%）。',
+))
+S['ru'].update(dict(
+  idsav_label='Скидка на комиссию платформы (с 18 мая 2026)', idsav_none='Нет (базовая ставка)',
+  idsav_gmo='Заказ через GMV Max, расходы магазина на GMV Max меньше 3%', idsav_gx='Growth Xtra, заказ не через GMV Max', idsav_gxgmo='Growth Xtra + заказ через GMV Max',
+  idsav_s3='Расходы магазина на GMV Max от 3% (все заказы)', idsav_s3gx='Расходы на GMV Max от 3% + Growth Xtra (все заказы)',
+  t_idNew='Новый продавец: первые 50 заказов', t_idNew_h='Новые продавцы не платят сбор за обработку заказа за первые 50 заказов (возврат в конце месяца).',
+  t_preOrder='Товар по предзаказу', t_preOrder_h='Для товаров по предзаказу берётся дополнительный сбор 3%.',
+  c_dcf='Динамическая комиссия', c_mallsf='Сервисный сбор Mall', c_lsf='Сбор за логистические услуги', c_preorder='Сбор за предзаказ', c_gxp='Сбор программы Growth Xtra',
+  c_lsf_h='Rp540–5 060 за заказ в зависимости от маршрута и веса посылки. По умолчанию: стандартная доставка по Яве в Джакарту, до 1 кг (Rp690).',
+  c_gxp_h='Необязательно. Если вы участвуете в Growth Xtra Program, укажите её ставку (2%–4% по категориям, плюс 2% для GXP Super).',
+))

@@ -94,7 +94,12 @@
   "PPC Land",
   "Seller Essentials",
   "Seller Central",
-  "Fulfillment by Amazon"
+  "Fulfillment by Amazon",
+  "Growth Xtra Program",
+  "Growth Xtra",
+  "GXP Super",
+  "Product GMV Max",
+  "LIVE GMV Max"
  ],
  "words": [
   "BXP",
@@ -226,7 +231,9 @@
   "FBM",
   "FBA",
   "Amazon",
-  "VN"
+  "VN",
+  "Rp",
+  "Tokopedia"
  ],
  "ms_english_markers": [
   "the",

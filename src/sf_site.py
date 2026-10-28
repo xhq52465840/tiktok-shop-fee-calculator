@@ -277,7 +277,7 @@ def widget(mid, lang):
     for c in m['components']:
         if c.get('manual') or c['type'] in ('vol', 'voltab', 'wt'): continue
         unit = '%' if c['type'] == 'pct' else (curh + ' ' + (L('u_item') if c.get('per') == 'item' else L('u_order')))
-        h = f'<p class="hint">{esc(L("ozproc_h"))}</p>' if c['id'] == 'oz_proc' else ''
+        h = f'<p class="hint">{esc(L("ozproc_h"))}</p>' if c['id'] == 'oz_proc' else (f'<p class="hint">{esc(L("c_" + c["id"] + "_h"))}</p>' if c['id'] in ('lsf',) else '')
         rates.append(f'<div class="field sf-rate"><label class="label" for="sf-r-{c["id"]}">{esc(L("c_" + c["id"]))}</label><div class="input"><input id="sf-r-{c["id"]}" type="number" step="0.01" min="0"><span class="suf">{esc(unit)}</span></div>{h}</div>')
     n = lambda i, k, opt=False: f'<h3><span class="n">{i}</span>{esc(L(k))}{('<span class="opt">' + esc(L('optional')) + '</span>') if opt else ''}</h3>'
     sec4 = f'<div class="cs">{n(4, "sec_n4")}<div class="tgs">{tg}</div></div>' if tg else ''

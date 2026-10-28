@@ -22,7 +22,9 @@ for o in ET:
 def load_ru(p):
     d = load(p); return [{'g': d['groups'][x[0]], 'n': x[1], 'r': x[2]} for x in d['o']], d.get('tables', {})
 OZ, OZ_T = load_ru('ozon/ru.json'); WB, _ = load_ru('wildberries/ru.json'); YM, _ = load_ru('yandex-market/ru.json')
-TT_SG, _ = load_ru('tiktok-shop/sg.json'); TT_TH, _ = load_ru('tiktok-shop/th.json'); TT_VN, _ = load_ru('tiktok-shop/vn.json')
+TT_SG, _ = load_ru('tiktok-shop/sg.json'); TT_TH, _ = load_ru('tiktok-shop/th.json'); TT_VN, _ = load_ru('tiktok-shop/vn.json'); TT_ID, _ = load_ru('tiktok-shop/id.json')
+# TikTok Shop & Tokopedia ID Platform Commission Savings from 18 May 2026 (GMV Max / Growth Xtra)
+TT_ID_SAV = [('none', 'idsav_none'), ('gmo', 'idsav_gmo'), ('gx', 'idsav_gx'), ('gxgmo', 'idsav_gxgmo'), ('s3', 'idsav_s3'), ('s3gx', 'idsav_s3gx')]
 VND = dict(currency='VND', symbols={'VND': '₫'}, symbolAfter=True, locale='en-US', decimals=0, roundFees=0)
 IDR = dict(currency='IDR', symbols={'IDR': 'Rp'}, locale='en-US', decimals=0, roundFees=0)
 # TikTok Shop VN Transaction Fee Savings from 21 Oct 2026, by the shop's L30D ads take rate
@@ -164,6 +166,31 @@ MARKETS = {
      ('Order Processing Fee (VND 3,000 per order from 27 Oct 2025) — TikTok Shop VN Seller University', 'https://seller-vn.tiktok.com/university/essay?knowledge_id=2968734088120080&lang=en'),
      ('Logistics Service Fee for parcels over 10 kg (from 12 Oct 2026) — TikTok Shop VN Seller University (8 Oct 2026)', 'https://seller-vn.tiktok.com/university/essay?knowledge_id=4723305845458708&lang=en'),
      ('Withholding Taxes for Individual and Business Household Sellers (1% VAT + 0.5% PIT) — TikTok Shop VN Seller University', 'https://seller-vn.tiktok.com/university/essay?knowledge_id=2632156783101712&lang=en')]),
+ 'tiktok-shop-id': dict(
+   platform='tiktok-shop', platformName='TikTok Shop', market='ID', marketName='Indonesia', slug='tiktok-shop/indonesia',
+   flag='🇮🇩', **IDR, langs=['en'], catLang='en',
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 89000, 'cost': 30000}, selector={'label': 'cat', 'options': TT_ID, 'src': 'tiktok-id'},
+   defaultOption=gidx(TT_ID, 'Beauty & Personal Care', 'Skincare › Serums & Essences'),
+   store=[('mp', 'mp'), ('mall', 'mall')], periods=None,
+   selects=[dict(id='sav', label='idsav_label', options=TT_ID_SAV, def_='none')],
+   toggles=[dict(id='idNew', vals=['', '']), dict(id='preOrder', vals=['', ''])],
+   components=[
+     dict(id='commission', type='pct', rate='opt:{store}.{x:sav}', base='net', color=C[0]),
+     dict(id='dcf', type='pct', rate='opt:dcf', base='net', capPerItem=60000, color=C[1]),
+     dict(id='mallsf', type='pct', rate=1.8, base='net', capPerItem=50000, whenStore='mall', color=C[2]),
+     dict(id='opf', type='fixed', rate=1250, zeroIf='idNew', color=C[3]),
+     dict(id='lsf', type='fixed', rate=690, color=C[4]),
+     dict(id='preorder', type='pct', rate=3, base='net', when='preOrder', color=C[5]),
+     dict(id='gxp', type='pct', rate=None, base='net_ship', manual=True, color=C[0])],
+   compare=None,
+   sources=[
+     ('Platform Commission Fee and Platform Commission Savings from 18 May 2026 (PDF and fee calculator XLSX) — TikTok Shop & Tokopedia Seller University (updated 28 Apr 2026)', 'https://seller-id.tokopedia.com/university/essay?knowledge_id=5411650459305729&lang=en'),
+     ('Dynamic Commission Fee (3%–8% by category, capped at Rp60,000 per item) — TikTok Shop & Tokopedia Seller University (16 Sep 2026)', 'https://seller-id.tokopedia.com/university/essay?knowledge_id=6385751723132688&lang=en'),
+     ('Introduction to Seller Fees — TikTok Shop & Tokopedia Seller University (15 Sep 2026)', 'https://seller-id.tokopedia.com/university/essay?knowledge_id=7753828090824449&lang=en'),
+     ('Mall Service Fee (1.8%, capped at Rp50,000 per product) — TikTok Shop & Tokopedia Seller University', 'https://seller-id.tokopedia.com/university/essay?knowledge_id=7868735055857409&lang=en'),
+     ('Order Processing Fee (Rp1,250 per order; first 50 orders free for new sellers) — TikTok Shop & Tokopedia Seller University (28 Apr 2026)', 'https://seller-id.tokopedia.com/university/essay?knowledge_id=2767365667784464&lang=en'),
+     ('Logistics Service Fee effective 1 May 2026 (rate table XLSX) — TikTok Shop & Tokopedia Seller University (7 Aug 2026)', 'https://seller-id.tokopedia.com/university/essay?knowledge_id=3039885401655041&lang=en')]),
  'etsy': dict(
    platform='etsy', platformName='Etsy', market='GLOBAL', marketName='All countries', slug='etsy',
    flag='🧶', currency='USD', symbols={'USD': '$', 'GBP': '£', 'EUR': '€'}, locale='en-US', langs=['en', 'zh'], currencyFromOption=True,
@@ -390,7 +417,6 @@ MARKETS = {
 }
 
 COMING = [
-  ('TikTok Shop', 'Indonesia', '🇮🇩'),
   ('Shopee', 'Indonesia, Vietnam & more', '🛍️'), ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
 
 # ---------- Python mirror of assets/engine.js (used to compute worked examples in the guides)
