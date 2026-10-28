@@ -1,0 +1,140 @@
+@@ d2b6b70443
+ms: Peraturan Label Pemulangan Prabayar Amazon FBM mulai {0} Disember {1}: Tarikh Akhir {2} Hari dan Kalkulator Pulangan vs Bayaran Balik Tanpa Pulangan
+ru: Правило предоплаченных этикеток возврата Amazon FBM с {0} декабря {1}: срок {2} дней и калькулятор «возврат или возврат денег без товара»
+zh: Amazon FBM 预付退货标签新规（{1}年12月{0}日起）：{2} 天期限与“退货 vs 仅退款”保本计算器
+@@ c2f203c8da
+ms: Mulai {0} Dis {1}, penjual Amazon AS yang memenuhi pesanan sendiri mesti memuat naik label pemulangan prabayar dalam {2} hari atau Amazon boleh membuat bayaran balik automatik kepada pembeli. Apa yang berubah, dan kalkulator pulang modal untuk pulangan vs bayaran balik tanpa pulangan.
+ru: С {0} дек. {1} продавцы Amazon США, которые сами отправляют заказы, должны загружать предоплаченную этикетку возврата в течение {2} дней, иначе Amazon может автоматически вернуть деньги покупателю. Что меняется, и калькулятор точки безубыточности: возврат товара или возврат денег без товара.
+zh: {1}年12月{0}日起，自发货（FBM）的 Amazon 美国站卖家须在 {2} 天内上传预付退货标签，否则 Amazon 可能自动给买家退款。新规要点，以及“退货再卖”与“仅退款不退货”的保本计算器。
+@@ 2537c90960
+ms: Label pemulangan prabayar Amazon FBM ({0} Dis {1})
+ru: Предоплаченные этикетки возврата Amazon FBM ({0} дек. {1})
+zh: Amazon FBM 预付退货标签（{1}年12月{0}日）
+@@ 536c16bd9f
+ms: {0} hari
+ru: {0} дней
+zh: {0} 天
+@@ 506e0f635a
+ms: Mulai <b1>{0} Disember {1}</b1>, Amazon akan mewajibkan label pemulangan prabayar bagi hampir setiap pulangan AS untuk pesanan yang dipenuhi penjual (FBM). Penjual yang hanya memberi alamat pemulangan dan membiarkan pembeli membayar pos tidak lagi memenuhi peraturan. Panduan ini menerangkan perubahan tersebut dan menyertakan kalkulator untuk memutuskan, bagi setiap pulangan, sama ada membayar label atau membuat bayaran balik tanpa mendapatkan semula item.
+ru: С <b1>{0} декабря {1}</b1> Amazon будет требовать предоплаченную этикетку возврата почти для каждого возврата в США по заказам, которые отправляет сам продавец (FBM). Продавцы, которые дают покупателю только адрес и оставляют оплату доставки ему, больше не будут соответствовать правилу. В гайде — суть изменения и калькулятор, который помогает для каждого возврата решить: платить за этикетку или вернуть деньги, не забирая товар.
+zh: 自 <b1>{1}年12月{0}日</b1>起，Amazon 将要求几乎所有美国站自发货（FBM）订单的退货都使用预付退货标签。只给买家退货地址、让买家自付运费的做法将不再合规。本文解读这项变化，并提供一个计算器，帮你逐单判断是付费让买家寄回，还是直接退款不退货。
+@@ 229273904c
+ms: Amazon mengumumkan perubahan ini melalui e-mel kepada penjual, seperti dilaporkan oleh PPC Land dan Seller Essentials. Kami tidak menemui halaman Amazon awam yang memuatkan peraturan baharu: halaman bantuan Seller Central memerlukan log masuk, dan PPC Land melaporkan bahawa halaman bantuan yang disemaknya pada {0} Oktober {1} belum menyebutnya. Semak notis dalam akaun Seller Central anda.
+ru: Amazon сообщил об изменении в письме продавцам — об этом писали PPC Land и Seller Essentials. Публичной страницы Amazon с новым правилом мы не нашли: справка Seller Central доступна только после входа, а по данным PPC Land, страница справки, которую издание просмотрело {0} октября {1}, ещё не упоминала изменение. Проверьте уведомление в своём аккаунте Seller Central.
+zh: Amazon 通过发给卖家的邮件宣布了这项变化，PPC Land 和 Seller Essentials 均有报道。我们没有找到公开的 Amazon 官方页面：Seller Central 帮助页需要登录，而且据 PPC Land 报道，其 {1}年10月{0}日查看的帮助页尚未提及此变化。请以你 Seller Central 账户中的通知为准。
+@@ 6452ed3885
+ms: Apa yang berubah pada {0} Disember {1}
+ru: Что меняется с {0} декабря {1}
+zh: {1}年12月{0}日起有哪些变化
+@@ 3e406650a8
+ms: Semua pulangan AS untuk pesanan yang dipenuhi penjual memerlukan <b1>label penghantaran pemulangan prabayar</b1>. Label alamat sahaja, di mana pelanggan menguruskan dan membayar pulangan, tidak lagi dikira.
+ru: Для всех возвратов в США по заказам, которые отправляет продавец, нужна <b1>предоплаченная этикетка обратной доставки</b1>. Этикетки только с адресом, когда покупатель сам организует и оплачивает возврат, больше не засчитываются.
+zh: 美国站所有自发货订单的退货都需要<b1>预付退货运单</b1>。只写地址、由买家自行寄回并付运费的标签不再算数。
+@@ d373b88a4a
+ms: <b1>Item berat dan pukal</b1> dikecualikan buat masa ini. Amazon menyebut ini sementara dan belum mentakrifkan kategori itu atau memberi tarikh tamat.
+ru: <b1>Тяжёлые и крупногабаритные товары</b1> пока исключены. Amazon называет это временным и не уточняет ни границы категории, ни дату окончания.
+zh: <b1>重货和大件商品</b1>暂时豁免。Amazon 称这是临时安排，既没有定义该类别，也没有给出结束日期。
+@@ d27527acca
+ms: Dalam masa <b1>{0} hari kalendar</b1> bagi setiap permintaan pulangan, anda mesti sama ada memuat naik label prabayar bagi permintaan itu dalam <b2>Manage Seller-Fulfilled Returns</b2>, atau membuat bayaran balik penuh tanpa meminta item dipulangkan.
+ru: В течение <b1>{0} календарных дней</b1> с каждого запроса на возврат нужно либо загрузить предоплаченную этикетку к запросу в <b2>Manage Seller-Fulfilled Returns</b2>, либо полностью вернуть деньги, не требуя товар обратно.
+zh: 每个退货申请发起后 <b1>{0} 个自然日</b1>内，你必须在 <b2>Manage Seller-Fulfilled Returns</b2> 中针对该申请上传预付标签，或者全额退款且不要求买家退回商品。
+@@ 4ebae4a850
+ms: Jika anda tidak melakukan kedua-duanya, Amazon boleh membuat <b1>bayaran balik tanpa pulangan secara automatik</b1> dan menolaknya daripada akaun jualan anda. Pembeli menyimpan item itu.
+ru: Если не сделать ни того ни другого, Amazon может <b1>автоматически вернуть деньги без возврата товара</b1> и списать сумму с вашего аккаунта продавца. Товар остаётся у покупателя.
+zh: 如果两者都没做，Amazon 可能<b1>自动发起仅退款</b1>，并从你的卖家账户扣款，商品留在买家手里。
+@@ c968134d15
+ms: Label yang dihantar melalui Buyer-Seller Messaging atau saluran lain di luar aliran kerja Manage Returns <b1>tidak dikira</b1>.
+ru: Этикетки, отправленные через Buyer-Seller Messaging или другие каналы вне процесса Manage Returns, <b1>не засчитываются</b1>.
+zh: 通过 Buyer-Seller Messaging 或 Manage Returns 流程以外的其他渠道发送的标签<b1>不算数</b1>。
+@@ 65a7a88052
+ms: Pesanan Fulfillment by Amazon (FBA) tidak terjejas. Amazon sudah mendaftarkan penjual AS dalam pulangan prabayar melalui Buy Shipping; peraturan baharu ini membuang pilihan alamat sahaja yang masih tinggal. Siapa yang akhirnya membayar label masih boleh bergantung pada sebab pulangan, jadi semak cara Amazon mengendalikan pulangan kerana kesilapan penjual dan pulangan kerana pembeli berubah fikiran bagi akaun anda.
+ru: Заказы Fulfillment by Amazon (FBA) это не затрагивает. Amazon уже подключает продавцов США к предоплаченным возвратам через Buy Shipping; новое правило убирает оставшийся вариант «только адрес». Кто в итоге платит за этикетку, по-прежнему может зависеть от причины возврата, поэтому проверьте, как Amazon учитывает возвраты по вине продавца и возвраты, когда покупатель передумал.
+zh: 亚马逊物流（FBA）订单不受影响。Amazon 已通过 Buy Shipping 把美国卖家自动纳入预付退货；新规取消的是剩下的“仅地址”方式。标签费最终由谁承担仍可能取决于退货原因，请查看 Amazon 对卖家责任退货和买家无理由退货的处理方式。
+@@ c0068eb07b
+ms: Pulangan atau bayaran balik tanpa pulangan? Kalkulator pulang modal
+ru: Возврат или деньги без возврата? Калькулятор безубыточности
+zh: 退货还是仅退款？保本计算器
+@@ decc13b12b
+ms: Apabila pulangan masuk, anda tetap membuat bayaran balik kepada pembeli. Persoalannya ialah sama ada mendapatkan semula item itu berbaloi dengan kos label, pengendalian dan kos menjualnya semula.
+ru: Когда приходит запрос на возврат, деньги покупателю вы возвращаете в любом случае. Вопрос в том, окупит ли возвращённый товар этикетку, обработку и затраты на повторную продажу.
+zh: 收到退货申请时，无论哪种方式你都要给买家退款。问题在于：把商品拿回来，值不值得付标签费、处理费和再次销售的成本。
+@@ d8416d0f8d
+ms: Harga jualan semula jika item dipulangkan
+ru: Цена повторной продажи, если товар вернётся
+zh: 商品退回后的再售价格
+@@ f46c8e36df
+ms: Kos label pemulangan prabayar
+ru: Стоимость предоплаченной этикетки возврата
+zh: 预付退货标签费用
+@@ 1ce3bc1223
+ms: Pemeriksaan, pembungkusan semula dan tenaga kerja
+ru: Проверка, переупаковка и работа
+zh: 检查、重新包装和人工
+@@ 964fe1bf2a
+ms: Yuran jualan apabila anda menjualnya semula
+ru: Сборы площадки при повторной продаже
+zh: 再次销售时的平台费用
+@@ 0c3b79e0e3
+ms: Kos penghantaran kepada pembeli seterusnya
+ru: Стоимость доставки следующему покупателю
+zh: 发给下一位买家的运费
+@@ d62518a145
+ms: Peluang pulangan boleh dijual semula sebagai baharu
+ru: Вероятность продать возврат как новый
+zh: 退货能按新品再卖的概率
+@@ f2d42f27b5
+ms: Jangkaan keuntungan daripada pulangan dan jual semula
+ru: Ожидаемая выгода от возврата и перепродажи
+zh: 退货再卖的预期收益
+@@ a2f57c4b53
+ms: Harga jualan semula pulang modal
+ru: Цена перепродажи для безубыточности
+zh: 保本再售价格
+@@ 03cbe8bf21
+ms: <b1>Pulangan dan jual semula.</b1> Item itu lebih bernilai jika dipulangkan berbanding kos label dan pengendalian. Muat naik label prabayar dalam Manage Seller-Fulfilled Returns dalam masa {0} hari.
+ru: <b1>Возврат и перепродажа.</b1> Возвращённый товар стоит больше, чем этикетка и обработка. Загрузите предоплаченную этикетку в Manage Seller-Fulfilled Returns в течение {0} дней.
+zh: <b1>退货再卖。</b1>商品拿回来的价值高于标签费和处理成本。请在 {0} 天内到 Manage Seller-Fulfilled Returns 上传预付标签。
+@@ 42b26465a1
+ms: <b1>Bayaran balik tanpa pulangan.</b1> Mendapatkan semula item lebih mahal daripada nilainya. Buat bayaran balik penuh tanpa meminta pulangan.
+ru: <b1>Возврат денег без товара.</b1> Вернуть товар дороже, чем он стоит. Верните деньги полностью, не требуя возврата.
+zh: <b1>仅退款不退货。</b1>把商品拿回来的成本高于它的价值。直接全额退款，不要求退货。
+@@ ddf65cacae
+ms: Kedua-dua pilihan membuat bayaran balik penuh kepada pembeli, jadi bayaran balik itu sendiri tidak dikira. Nilai contoh hanyalah ilustrasi: masukkan kos label dan yuran anda sendiri.
+ru: В обоих вариантах покупатель получает деньги полностью, поэтому сам возврат денег в расчёт не входит. Значения по умолчанию — лишь пример: введите свою стоимость этикетки и сборы.
+zh: 两种方式都要全额退款，所以退款本身不计入。示例数值仅供参考，请填入你自己的标签费和费率。
+@@ f6602b27b8
+ms: Dengan label ${0}, pengendalian ${1}, yuran jualan {2}%, ${3} untuk menghantarnya semula dan peluang {4}% ia boleh dijual semula, item ${5} berbaloi untuk dipulangkan: jangkaan keuntungan ialah ${6}. Harga jualan semula pulang modal ialah ${7}. Di bawah harga itu, bayaran balik tanpa pulangan lebih murah. Item yang sama pada harga ${8} akan rugi purata ${9} jika anda membayar pulangan, jadi buat bayaran balik tanpa pulangan.
+ru: При этикетке за ${0}, обработке на ${1}, сборах {2}%, ${3} на повторную отправку и вероятности перепродажи {4}% товар за ${5} стоит возвращать: ожидаемая выгода — ${6}. Цена безубыточности — ${7}. Ниже неё дешевле вернуть деньги без товара. Тот же товар за ${8} в среднем принесёт убыток ${9}, если оплачивать возврат, поэтому верните деньги без возврата.
+zh: 假设标签费 ${0}、处理成本 ${1}、平台费率 {2}%、再次发货运费 ${3}、可再售概率 {4}%，一件 ${5} 的商品值得退回：预期收益 ${6}。保本再售价格是 ${7}，低于这个价格，仅退款更划算。同样的商品如果售价 ${8}，付费退回平均会亏 ${9}，应直接仅退款。
+@@ 1a01af8783
+ms: Formula: jangkaan keuntungan = peluang jualan semula × (harga jualan semula × ({0} − yuran jualan) − kos penghantaran kepada pembeli seterusnya) − kos label − pengendalian.
+ru: Формула: ожидаемая выгода = вероятность перепродажи × (цена перепродажи × ({0} − сборы площадки) − доставка следующему покупателю) − этикетка − обработка.
+zh: 公式：预期收益 = 再售概率 ×（再售价格 ×（{0} − 平台费率）− 发给下一位买家的运费）− 标签费 − 处理成本。
+@@ bddbad131f
+ms: Jangan biarkan tarikh akhir membuat keputusan untuk anda
+ru: Не позволяйте сроку решать за вас
+zh: 别让截止期限替你做决定
+@@ 0385a0a00c
+ms: Bayaran balik tanpa pulangan yang anda pilih untuk item murah ialah keputusan perniagaan yang wajar. Bayaran balik yang dibuat Amazon kerana tiada siapa memuat naik label dalam {0} hari boleh menyebabkan anda kehilangan item mahal serta jualan. Semak permintaan pulangan terbuka setiap hari, tetapkan pemilik dan pengganti bagi baris gilir itu, dan tetapkan had harga yang membolehkan pasukan anda membuat bayaran balik tanpa pulangan.
+ru: Возврат денег без товара, который вы выбрали для дешёвой позиции, — разумное решение. А тот, что Amazon оформил потому, что за {0} дней никто не загрузил этикетку, может стоить вам и дорогого товара, и продажи. Проверяйте открытые запросы каждый день, назначьте ответственного и замену и задайте порог цены, ниже которого команда возвращает деньги без возврата товара.
+zh: 对便宜商品主动选择仅退款，是合理的经营决定；但如果是因为 {0} 天内没人上传标签而被 Amazon 自动仅退款，你可能连货带单一起损失。每天检查未处理的退货申请，指定负责人和备岗，并设定一个价格线，低于该价格团队可直接仅退款。
+@@ 76890b89db
+ms: Senarai semak sebelum {0} Disember
+ru: Чек-лист до {0} декабря
+zh: 12月{0}日前的检查清单
+@@ e15bf472d1
+ms: Kenal pasti produk dan prosedur yang masih menggunakan label alamat sahaja atau menghantar label melalui mesej.
+ru: Найдите товары и процессы, где ещё используются этикетки только с адресом или этикетки отправляются в сообщениях.
+zh: 找出仍在使用“仅地址”标签或通过消息发送标签的商品和流程。
+@@ e1786cfbae
+ms: Pastikan setiap label dimuat naik dalam Manage Seller-Fulfilled Returns.
+ru: Убедитесь, что каждая этикетка загружается в Manage Seller-Fulfilled Returns.
+zh: 确保每张标签都在 Manage Seller-Fulfilled Returns 中上传。
+@@ f1b44de68a
+ms: Kira harga jualan semula pulang modal bagi setiap produk dengan kalkulator di atas.
+ru: Посчитайте цену безубыточности для каждого товара в калькуляторе выше.
+zh: 用上面的计算器算出每个商品的保本再售价格。
+@@ d842996572
+ms: Semak cara Amazon mengklasifikasikan produk yang anda anggap berat dan pukal.
+ru: Проверьте, как Amazon классифицирует товары, которые вы считаете тяжёлыми и крупногабаритными.
+zh: 确认 Amazon 如何归类你认为属于重货和大件的商品。

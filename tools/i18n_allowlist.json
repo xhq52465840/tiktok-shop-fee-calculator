@@ -86,7 +86,15 @@
   "Non-Mall",
   "Big & Bulky",
   "Oversize",
-  "lb"
+  "lb",
+  "Manage Seller-Fulfilled Returns",
+  "Manage Returns",
+  "Buyer-Seller Messaging",
+  "Buy Shipping",
+  "PPC Land",
+  "Seller Essentials",
+  "Seller Central",
+  "Fulfillment by Amazon"
  ],
  "words": [
   "BXP",
@@ -214,7 +222,10 @@
   "T",
   "cookie",
   "Cookie",
-  "AMZ"
+  "AMZ",
+  "FBM",
+  "FBA",
+  "Amazon"
  ],
  "ms_english_markers": [
   "the",
