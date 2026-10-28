@@ -1,0 +1,119 @@
+@@ a11ead050e
+ms: Yuran Pertumbuhan Penjual TikTok Shop vs Shopee vs Lazada {0}: Malaysia, Filipina, Singapura, Thailand
+ru: Сборы за рост продавца в TikTok Shop, Shopee и Lazada в {0} году: Малайзия, Филиппины, Сингапур, Таиланд
+zh: TikTok Shop、Shopee、Lazada 卖家成长费对比（{0}）：马来西亚、菲律宾、新加坡、泰国
+@@ bf00f457ef
+ms: Platform mana yang mengenakan yuran pertumbuhan penjual di Asia Tenggara dan pada kadar berapa: Yuran Pertumbuhan Penjual dan Yuran Pertumbuhan Perdagangan TikTok Shop, Yuran Sokongan Pertumbuhan Penjual Shopee, dan apa yang dikenakan Lazada, mengikut negara.
+ru: Какие площадки в Юго-Восточной Азии берут сбор за рост продавца и по какой ставке: сбор за рост продавца и сбор за развитие торговли в TikTok Shop, сбор поддержки роста продавца в Shopee и что берёт Lazada — по странам.
+zh: 东南亚哪些平台收卖家成长费、费率多少：TikTok Shop 的卖家成长费与商业增长费、Shopee 的卖家成长支持费，以及 Lazada 的情况，按国家对比。
+@@ 7db7e17149
+ms: Perbandingan yuran pertumbuhan: TikTok Shop vs Shopee
+ru: Сборы за рост: TikTok Shop и Shopee
+zh: 成长费对比：TikTok Shop vs Shopee
+@@ 9fbbbece6b
+ms: {0}% atau {1}% daripada harga item selepas diskaun, bergantung pada kategori (senarai dikemas kini {2} Oktober {3}). Penjual baharu dikecualikan untuk {4} hari pertama. Lihat perbandingannya dengan yuran pertumbuhan TikTok Shop dalam <a1>perbandingan yuran pertumbuhan</a1> kami.
+ru: {0}% или {1}% от цены товара после скидок, в зависимости от категории (список обновлён {2} октября {3}). Новые продавцы освобождены от сбора на первые {4} дней. Сравнение со сборами TikTok Shop — в нашем <a1>сравнении сборов за рост</a1>.
+zh: 按类目收取商品折后价的 {0}% 或 {1}%（类目清单 {3}年10月{2}日更新）。新卖家前 {4} 天免收。与 TikTok Shop 成长费的对比见我们的<a1>成长费对比</a1>。
+@@ c149040bc5
+ms: TikTok Shop dan Shopee kini sama-sama mengenakan yuran “pertumbuhan” bagi setiap pesanan di beberapa pasaran Asia Tenggara, di samping komisen dan yuran transaksi. Namanya hampir sama tetapi kadar, kategori dan had maksimumnya berbeza. Halaman ini membandingkannya mengikut pasaran berdasarkan halaman pusat penjual setiap platform, dan memaut ke kalkulator yang merangkumi setiap yuran.
+ru: TikTok Shop и Shopee теперь берут с каждого заказа сбор «за рост» на ряде рынков Юго-Восточной Азии — сверх комиссии и транзакционного сбора. Названия похожи, а ставки, категории и лимиты — нет. Здесь они сравниваются по рынкам на основе страниц продавца каждой площадки, со ссылками на калькуляторы, которые учитывают каждый сбор.
+zh: TikTok Shop 和 Shopee 如今在部分东南亚站点都会在佣金和交易手续费之外，按单收取“成长”类费用。名称相近，但费率、类目和封顶各不相同。本文依据各平台卖家中心官方页面逐个站点对比，并链接到包含该费用的计算器。
+@@ 2376398a40
+ms: Yuran pertumbuhan mengikut pasaran
+ru: Сборы за рост по рынкам
+zh: 各站点成长费一览
+@@ ce94392ef3
+ms: <b1>Yuran Pertumbuhan Penjual</b1>: {0}% untuk Elektronik, Barangan Runcit dan Perkakas Besar; {1}% untuk Kecantikan &amp; Penjagaan Diri, Fesyen, Ibu &amp; Bayi, Kesihatan dan Gaya Hidup (kecuali Perkakas Besar). Termasuk VAT, setiap pesanan berjaya.
+ru: <b1>Сбор за рост продавца</b1>: {0}% для электроники, продуктов и крупной бытовой техники; {1}% для красоты и ухода, моды, товаров для мам и малышей, здоровья и лайфстайла (кроме крупной бытовой техники). С НДС, с каждого успешного заказа.
+zh: <b1>卖家成长费</b1>：电子、杂货、大家电 {0}%；美妆个护、服饰、母婴、健康与生活方式（大家电除外）{1}%。含增值税，每笔成功订单收取。
+@@ 366be87400
+ms: <b1>Yuran Sokongan Pertumbuhan Penjual</b1>: {0}% atau {1}% daripada harga item selepas diskaun, mengikut kategori (senarai dikemas kini {2} Oktober {3}). Penjual baharu dikecualikan untuk {4} hari pertama.
+ru: <b1>Сбор поддержки роста продавца</b1>: {0}% или {1}% от цены товара после скидок, по категориям (список обновлён {2} октября {3}). Новые продавцы освобождены на первые {4} дней.
+zh: <b1>卖家成长支持费</b1>：按类目收取商品折后价的 {0}% 或 {1}%（类目清单 {3}年10月{2}日更新）。新卖家前 {4} 天免收。
+@@ 2347bce7c5
+ms: <b1>Yuran Pertumbuhan Perdagangan</b1>: {0}% untuk Elektronik, {1}% untuk semua yang lain, had ฿{2} setiap item, termasuk cukai, mulai {3} Mei {4}. Penjual Marketplace kecil (GMV bawah ฿{5} dalam {6} hari lalu) membayar {7}% kurang.
+ru: <b1>Сбор за развитие торговли</b1>: {0}% для электроники, {1}% для остальных категорий, не более ฿{2} за товар, с налогом, с {3} мая {4}. Небольшие продавцы Marketplace (GMV меньше ฿{5} за последние {6} дней) платят на {7}% меньше.
+zh: <b1>商业增长费</b1>：电子类 {0}%，其他类目 {1}%，每件封顶 ฿{2}，含税，自 {4}年5月{3}日起。小型 Marketplace 卖家（近 {6} 天 GMV 低于 ฿{5}）少付 {7}%。
+@@ a91086232a
+ms: Tiada yuran pertumbuhan berasingan. Shopee menaikkan yuran transaksi jualan (komisen) sebanyak {0} atau {1} mata sebelum VAT pada {2} Ogos {3} dan menyatakan kenaikan itu menyokong pertumbuhan penjual.
+ru: Отдельного сбора за рост нет. {2} августа {3} Shopee повысила сбор с продажи (комиссию) на {0} или {1} п. п. без НДС и объясняет повышение поддержкой роста продавцов.
+zh: 没有单独的成长费。Shopee 于 {3}年8月{2}日将销售交易费（佣金）上调 {0} 或 {1} 个百分点（不含增值税），并称此次上调用于支持卖家成长。
+@@ 8035a98535
+ms: Tiada yuran pertumbuhan. Yuran terdiri daripada komisen, yuran transaksi {0}%, Yuran Sokongan Platform RM{1} dan, bagi penjual Bonus Extra Program, yuran BXP {2}%.
+ru: Сбора за рост нет. Сборы: комиссия, транзакционный сбор {0}%, сбор поддержки платформы RM{1} и, для участников Bonus Extra Program, сбор BXP {2}%.
+zh: 没有成长费。费用为佣金、{0}% 交易手续费、RM{1} 平台支持费，参加 Bonus Extra Program 的卖家另收 {2}% BXP 服务费。
+@@ 7f1bcbfb42
+ms: Tiada yuran pertumbuhan. Yuran untuk penjual tempatan ialah komisen, yuran transaksi {0}% dan Yuran Sokongan Platform RM{1}.
+ru: Сбора за рост нет. Для местных продавцов: комиссия, транзакционный сбор {0}% и сбор поддержки платформы RM{1}.
+zh: 没有成长费。本地卖家的费用为佣金、{0}% 交易手续费和 RM{1} 平台支持费。
+@@ 04610f286d
+ms: Tiada yuran pertumbuhan. TikTok menyenaraikan komisen dan yuran transaksi {0}%; yuran Bonus Extra Program hanya dikenakan jika anda menyertainya.
+ru: Сбора за рост нет. TikTok указывает комиссию и транзакционный сбор {0}%; сбор Bonus Extra Program — только для участников программы.
+zh: 没有成长费。TikTok 列出的费用为佣金和 {0}% 交易手续费；Bonus Extra Program 服务费仅在加入后收取。
+@@ 103050c3e4
+ms: Tiada yuran pertumbuhan. Shopee menyenaraikan yuran komisen, transaksi, perkhidmatan dan penghantaran; yuran perkhidmatan dikenakan bagi program yang anda sertai.
+ru: Сбора за рост нет. Shopee указывает комиссию, транзакционный, сервисный сборы и доставку; сервисные сборы — за программы, в которых вы участвуете.
+zh: 没有成长费。Shopee 列出的费用为佣金、交易手续费、服务费和运费；服务费仅针对你参加的项目收取。
+@@ 19dec4cc12
+ms: <b1>Lazada tiada dalam jadual.</b1> Sumber sekunder yang kami semak tidak menyenaraikan yuran pertumbuhan Lazada di Malaysia, Filipina, Singapura atau Thailand, tetapi jadual yuran penuh Lazada bagi pasaran ini berada di sebalik log masuk Seller Center atau diterbitkan sebagai imej, jadi kami tidak dapat mengesahkannya daripada halaman rasmi. Kami akan menambah Lazada apabila dapat.
+ru: <b1>Lazada в таблице нет.</b1> Во вторичных источниках, которые мы проверили, сбора за рост у Lazada в Малайзии, на Филиппинах, в Сингапуре и Таиланде нет, но полные тарифы Lazada по этим рынкам доступны только после входа в Seller Center или опубликованы картинками, поэтому подтвердить их по официальной странице мы не смогли. Добавим Lazada, когда сможем.
+zh: <b1>表中没有 Lazada。</b1>我们查阅的第三方资料显示，Lazada 在马来西亚、菲律宾、新加坡、泰国都没有成长费；但 Lazada 这些站点的完整费用表需要登录 Seller Center 才能查看，或以图片形式发布，我们无法从官方页面核实，因此暂不列入。能核实后再补上。
+@@ e8d9024b4c
+ms: Filipina: dua yuran dengan idea sama, kategori berbeza
+ru: Филиппины: два сбора с одной идеей, но разными категориями
+zh: 菲律宾：思路相同、类目划分不同的两种费用
+@@ b837d3e9fc
+ms: Kedua-dua platform mengenakan {0}% atau {1}%, tetapi mengasingkan kategori secara berbeza. Di TikTok Shop fesyen membayar {2}%; di Shopee, pakaian wanita membayar {3}%. Bagi baju ₱{4}, yuran pertumbuhan TikTok Shop ialah ₱{5} dan Shopee ₱{6} (Shopee membundarkan yuran kepada peso). Barangan rumah membayar {7}% pada kedua-duanya: ₱{8} di Shopee bagi item rumah ₱{9}.
+ru: Обе площадки берут {0}% или {1}%, но распределяют категории по-разному. В TikTok Shop одежда платит {2}%, а в Shopee женская одежда — {3}%. На топ за ₱{4} сбор TikTok Shop составит ₱{5}, а Shopee — ₱{6} (Shopee округляет сборы до песо). Товары для дома платят {7}% на обеих площадках: ₱{8} в Shopee за товар за ₱{9}.
+zh: 两个平台都收 {0}% 或 {1}%，但类目划分不同。TikTok Shop 服饰收 {2}%，Shopee 女装只收 {3}%。一件 ₱{4} 的上衣，TikTok Shop 成长费 ₱{5}，Shopee ₱{6}（Shopee 费用按比索取整）。家居类两边都是 {7}%：₱{9} 的家居商品在 Shopee 收 ₱{8}。
+@@ eb9acc290e
+ms: AMZ{0} melaporkan pada {1} Oktober {2} bahawa TikTok Shop Filipina telah mengumumkan perubahan mulai {3} November {4}: yuran pertumbuhan dikenakan pada setiap pesanan berjaya untuk semua penjual, dan produk Gaya Hidup (kecuali Perkakas Besar) naik daripada {5}% kepada {6}%. Lihat <a1>panduan Yuran Pertumbuhan Penjual TikTok Shop Filipina</a1> kami untuk butirannya.
+ru: AMZ{0} сообщил {1} октября {2}, что TikTok Shop Филиппины объявил изменение с {3} ноября {4}: сбор за рост взимается с каждого успешного заказа у всех продавцов, а для товаров лайфстайл (кроме крупной бытовой техники) ставка растёт с {5}% до {6}%. Подробности — в нашем <a1>гайде по сбору за рост продавца TikTok Shop Филиппины</a1>.
+zh: AMZ{0} 于 {2}年10月{1}日报道，TikTok Shop 菲律宾站宣布自 {4}年11月{3}日起调整：对所有卖家的每笔成功订单收取成长费，生活方式类（大家电除外）由 {5}% 上调至 {6}%。详见我们的<a1>TikTok Shop 菲律宾卖家成长费指南</a1>。
+@@ 55cb1816f0
+ms: Thailand: yuran pertumbuhan paling besar
+ru: Таиланд: самый большой сбор за рост
+zh: 泰国：成长费最高的站点
+@@ 8ac28cdb7c
+ms: Yuran Pertumbuhan Perdagangan TikTok Shop Thailand beberapa kali lebih besar daripada yuran di Filipina. Item penjagaan kulit ฿{0} membayar ฿{1} ({2}%). Had ฿{3} penting bagi item mahal: item elektronik ฿{4} sepatutnya membayar ฿{5} pada {6}%, tetapi had mengehadkannya kepada ฿{7}. Penjual baharu tidak membayarnya untuk {8} hari pertama (had ฿{9} bagi penjual yang menyertai selepas {10} Julai {11}), dan penjual yang menghantar hanya dengan armada sendiri tidak dikenakan.
+ru: Сбор за развитие торговли в TikTok Shop Таиланд в несколько раз больше филиппинских сборов. Уходовое средство за ฿{0} платит ฿{1} ({2}%). Лимит ฿{3} важен для дорогих товаров: электроника за ฿{4} заплатила бы ฿{5} по ставке {6}%, но лимит ограничивает сбор суммой ฿{7}. Новые продавцы не платят его первые {8} дней (не более ฿{9} для продавцов, подключившихся после {10} июля {11}), а с продавцов, которые доставляют только своими силами, сбор не берётся.
+zh: TikTok Shop 泰国的商业增长费是菲律宾成长费的好几倍。一件 ฿{0} 的护肤品要付 ฿{1}（{2}%）。฿{3} 封顶对高价商品很关键：一件 ฿{4} 的电子产品按 {6}% 本应付 ฿{5}，封顶后只付 ฿{7}。新卖家前 {8} 天免收（{11}年7月{10}日后入驻的卖家减免上限 ฿{9}），只用自有车队配送的卖家不收此费。
+@@ a9ff0f927c
+ms: Kalkulator yang merangkumi yuran ini
+ru: Калькуляторы, которые учитывают эти сборы
+zh: 包含这些费用的计算器
+@@ 4509b273d3
+ms: <a1>Kalkulator yuran TikTok Shop Filipina</a1> (Yuran Pertumbuhan Penjual mengikut kategori)
+ru: <a1>Калькулятор сборов TikTok Shop Филиппины</a1> (сбор за рост продавца по категориям)
+zh: <a1>TikTok Shop 菲律宾费用计算器</a1>（按类目计算卖家成长费）
+@@ bc8a7b9b59
+ms: <a1>Kalkulator yuran Shopee Filipina</a1> (Yuran Sokongan Pertumbuhan Penjual mengikut kategori)
+ru: <a1>Калькулятор сборов Shopee Филиппины</a1> (сбор поддержки роста продавца по категориям)
+zh: <a1>Shopee 菲律宾费用计算器</a1>（按类目计算卖家成长支持费）
+@@ 18c21fb076
+ms: <a1>Kalkulator yuran TikTok Shop Thailand</a1> (Yuran Pertumbuhan Perdagangan dengan had ฿{0} dan diskaun penjual kecil)
+ru: <a1>Калькулятор сборов TikTok Shop Таиланд</a1> (сбор за развитие торговли с лимитом ฿{0} и скидкой для небольших продавцов)
+zh: <a1>TikTok Shop 泰国费用计算器</a1>（商业增长费，含 ฿{0} 封顶和小卖家减免）
+@@ 15e79cb1d7
+ms: <a1>Kalkulator yuran Shopee Thailand</a1>, <a2>TikTok Shop Malaysia</a2>, <a3>Shopee Malaysia</a3>, <a4>TikTok Shop Singapura</a4> dan <a5>Shopee Singapura</a5>
+ru: <a1>Калькулятор сборов Shopee Таиланд</a1>, <a2>TikTok Shop Малайзия</a2>, <a3>Shopee Малайзия</a3>, <a4>TikTok Shop Сингапур</a4> и <a5>Shopee Сингапур</a5>
+zh: <a1>Shopee 泰国费用计算器</a1>、<a2>TikTok Shop 马来西亚</a2>、<a3>Shopee 马来西亚</a3>、<a4>TikTok Shop 新加坡</a4>和<a5>Shopee 新加坡</a5>
+@@ 730f2ae998
+ms: Apa yang perlu dilakukan
+ru: Что с этим делать
+zh: 卖家怎么应对
+@@ d4e4838c81
+ms: <b1>Semak kategori anda di setiap platform.</b1> Produk yang sama boleh membayar {0}% di satu platform dan {1}% di platform lain.
+ru: <b1>Проверьте свою категорию на каждой площадке.</b1> Один и тот же товар может платить {0}% на одной площадке и {1}% на другой.
+zh: <b1>逐个平台核对类目。</b1>同一件商品在一个平台可能收 {0}%，在另一个平台收 {1}%。
+@@ f5bcce9587
+ms: <b1>Tetapkan harga dengan mengambil kira yuran.</b1> Tiada yuran ini yang mempunyai pengecualian umum selain tempoh penjual baharu, jadi masukkan ia dalam harga anda.
+ru: <b1>Закладывайте сбор в цену.</b1> Общих исключений, кроме периодов для новых продавцов, ни у одного из этих сборов нет, поэтому учитывайте их в цене.
+zh: <b1>把费用算进售价。</b1>除新卖家减免期外，这些费用都没有通用豁免，请直接计入定价。
+@@ d970164520
+ms: <b1>Perhatikan had di Thailand.</b1> Melebihi kira-kira ฿{0} setiap item, yuran TikTok Shop Thailand berhenti meningkat.
+ru: <b1>Следите за лимитом в Таиланде.</b1> Начиная примерно с ฿{0} за товар сбор TikTok Shop Таиланд перестаёт расти.
+zh: <b1>留意泰国的封顶。</b1>单件售价超过约 ฿{0} 后，TikTok Shop 泰国的这项费用不再增加。
+@@ 6ede8e61e7
+ms: Shopee Filipina mengenakan Yuran Sokongan Pertumbuhan Penjual yang serupa, dan TikTok Shop Thailand Yuran Pertumbuhan Perdagangan yang jauh lebih besar. Lihat <a1>perbandingan yuran pertumbuhan TikTok Shop, Shopee dan Lazada</a1>.
+ru: Shopee Филиппины берёт похожий сбор поддержки роста продавца, а TikTok Shop Таиланд — гораздо больший сбор за развитие торговли. См. <a1>сравнение сборов за рост в TikTok Shop, Shopee и Lazada</a1>.

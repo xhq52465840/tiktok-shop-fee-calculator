@@ -136,7 +136,7 @@ def shopee_ph_page():
 <h3>3. Platform Shipping Fee</h3>
 <p>5.6% of the item price after discounts for Marketplace sellers, or 4.48% for Mall, up to ₱100 per item. It applies to orders shipped with Shopee-supported logistics.</p>
 <h3>4. Seller Growth Support Fee</h3>
-<p>1.00% or 1.50% of the item price after discounts, depending on the category (list updated 22 October 2026). New sellers are exempt for their first 90 days.</p>
+<p>1.00% or 1.50% of the item price after discounts, depending on the category (list updated 22 October 2026). New sellers are exempt for their first 90 days. See how it compares with TikTok Shop’s growth fees in our <a href="../../guides/seller-growth-fee-tiktok-shopee-lazada/">growth fee comparison</a>.</p>
 <h3>5. Order Processing Fee</h3>
 <p>₱5 per completed order. You don’t pay it on your first 50 orders each month, or during a new seller’s first 90 days.</p>
 <h3>6. Optional programmes</h3>

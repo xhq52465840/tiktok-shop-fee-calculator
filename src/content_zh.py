@@ -473,6 +473,7 @@ def g_ph_zh():
 <li>部分类目未出现在官方成长费名单时，我们按 1.5% 估算并注明——请以结算单为准。</li>
 <li>每月前 50 单可豁免 ₱5 处理费；新卖家另有豁免窗口。</li>
 </ul>
+<p>Shopee 菲律宾也收类似的卖家成长支持费，TikTok Shop 泰国则收高得多的商业增长费。详见 <a href="../seller-growth-fee-tiktok-shopee-lazada/">TikTok Shop、Shopee、Lazada 成长费对比</a>。</p>
 '''
 
 def g_price_zh():

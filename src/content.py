@@ -412,6 +412,7 @@ def g_ph():
 <p>TikTok's overview gives the rate but not the base. We assume it works like commission and the Shipping Service Fee, on item price minus seller discount. Check one order's settlement detail to confirm: divide the Seller Growth Fee line by the item subtotal after your discount and you should get 1% or 1.5%.</p>
 <h2 id="reduce">Can you reduce it?</h2>
 <p>There is no published exemption. What you can control is pricing: the growth fee is a percentage, so it scales with price, while the ₱5 processing fee is flat. Use the <a href="../tiktok-shop-pricing-target-margin/">target-margin pricing method</a> with all five fees included.</p>
+<p>Shopee Philippines charges a similar Seller Growth Support Fee, and TikTok Shop Thailand a much larger Commerce Growth Fee. See <a href="../seller-growth-fee-tiktok-shopee-lazada/">growth fees compared across TikTok Shop, Shopee and Lazada</a>.</p>
 '''
     return body
 
@@ -588,3 +589,5 @@ GUIDE_BODY.update(GUIDE_BODY_NEW); GUIDE_SOURCES.update(GUIDE_SOURCES_NEW)
 from content_more import PAGE_FN_MORE, GUIDES_MORE, GUIDE_BODY_MORE, GUIDE_SOURCES_MORE
 PAGE_FN.update(PAGE_FN_MORE); GUIDES.extend(GUIDES_MORE)
 GUIDE_BODY.update(GUIDE_BODY_MORE); GUIDE_SOURCES.update(GUIDE_SOURCES_MORE)
+from content_growth import GUIDES_GROWTH, GUIDE_BODY_GROWTH, GUIDE_SOURCES_GROWTH
+GUIDES[:0] = GUIDES_GROWTH; GUIDE_BODY.update(GUIDE_BODY_GROWTH); GUIDE_SOURCES.update(GUIDE_SOURCES_GROWTH)
