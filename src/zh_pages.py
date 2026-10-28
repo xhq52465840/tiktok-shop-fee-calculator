@@ -24,6 +24,7 @@ C_SUM_ZH = {
  'lazada-my': 'Marketplace 与 LazMall 集群佣金自 2026年8月14日（含 SST 下限）。',
  'walmart-us': '按类目的推荐费（含价格档与分段费率）、2026 新卖家优惠（减 20–40%）、按重量计的 WFS 费用。',
  'shopee-ph': 'Marketplace / Mall 佣金，交易手续费 2.24%，平台运费（每件封顶 ₱100），₱5 订单处理费，1–1.5% 卖家成长支持费。',
+ 'shopee-id': '按商品类型的 Non-Star、Star/Star+ 与 Mall 管理费（2.5–11.7%），Mall 支付费 1.8%，每单 Rp1,250，Gratis Ongkir XTRA（含 2026年12月1日新费率）。',
  'shopee-th': '2026年8月4日起 1,400+ 个类目的非 Mall / Mall 佣金，交易手续费 3.21%，每单 ฿1.07。',
 }
 
@@ -95,7 +96,7 @@ def home_zh():
     live_map = {
         'etsy': [('etsy', 'Etsy'), ('etsy-uk', 'Etsy 英国')],
         'walmart': [('walmart-us', 'Walmart 美国站')],
-        'shopee': [('shopee-my', 'Shopee 马来西亚'), ('shopee-sg', 'Shopee 新加坡'), ('shopee-ph', 'Shopee 菲律宾'), ('shopee-th', 'Shopee 泰国')],
+        'shopee': [('shopee-my', 'Shopee 马来西亚'), ('shopee-sg', 'Shopee 新加坡'), ('shopee-ph', 'Shopee 菲律宾'), ('shopee-th', 'Shopee 泰国'), ('shopee-id', 'Shopee 印度尼西亚')],
         'lazada': [('lazada-my', 'Lazada 马来西亚')],
     }
     ohtml = ''
@@ -118,7 +119,7 @@ def home_zh():
     from sf_site import GUIDES_ALL
     guides = [g for g in GUIDES_ALL if g.get('lang') == 'zh'][:6]
     body = f'''<section class="hero"><div class="wrap">
-<div><div class="announce">{badge("新","new")}<span>TikTok Shop 越南站、印尼站已上线 · <a href="tiktok-shop/indonesia/">打开印尼站 {ic("arrow",13)}</a></span></div>
+<div><div class="announce">{badge("新","new")}<span>Shopee 印尼站已上线，含 2026年12月1日起的 Gratis Ongkir XTRA 新费率 · <a href="shopee/indonesia/">打开计算器 {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">看清每个平台从你这一单拿走多少。</h1>
 <p class="lead">SellerFee 把官方费率表变成可即时计算的工具。选平台、填售价，立刻看到每项费用、结算金额与真实利润率。</p>
 <div class="ctas"><a class="btn btn-primary btn-lg" href="tiktok-shop/malaysia/">{ic("calc",16)} TikTok Shop 马来西亚</a>

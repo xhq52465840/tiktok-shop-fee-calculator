@@ -1,0 +1,368 @@
+@@ ab0d941ee8
+ms: Yuran Penjual Shopee Indonesia {0}: Yuran Pentadbiran, Gratis Ongkir XTRA mulai {1} Disember dan Yuran Mall
+ru: Сборы Shopee Индонезия в {0} году: административный сбор, Gratis Ongkir XTRA с {1} декабря и сборы Mall
+zh: Shopee 印尼站卖家费用 {0}：管理费、12 月 {1} 日起的 Gratis Ongkir XTRA 与 Mall 费用
+
+@@ 78c82e3a17
+ms: Setiap yuran penjual Shopee Indonesia pada {0}: yuran pentadbiran untuk Non-Star, Star/Star+ dan Mall ikut jenis produk, yuran pembayaran Mall {1}%, Rp{2} sepesanan, kadar baharu Gratis Ongkir XTRA mulai {3} Disember {4} dan contoh pengiraan.
+ru: Все сборы продавца Shopee Индонезия в {0} году: административный сбор для Non-Star, Star/Star+ и Mall по типам товаров, платёжный сбор Mall {1}%, Rp{2} за заказ, новые ставки Gratis Ongkir XTRA с {3} декабря {4} года и примеры расчёта.
+zh: {0} 年 Shopee 印尼站全部卖家费用：Non-Star、Star/Star+ 与 Mall 按商品类型的管理费、Mall 支付费 {1}%、每单 Rp{2}、{4} 年 12 月 {3} 日起的 Gratis Ongkir XTRA 新费率与计算示例。
+
+@@ 90262c6eae
+ms: Yuran Shopee Indonesia {0}
+ru: Сборы Shopee Индонезия {0}
+zh: Shopee 印尼站费用 {0}
+
+@@ f3c387deeb
+ms: {0} Dis
+ru: {0} дек.
+zh: 12月{0}日
+
+@@ 54fa90739d
+ms: Shopee Indonesia kini tersedia, dengan kadar Gratis Ongkir XTRA {0} Dis {1} · <a1>Buka kalkulator <x1/></a1>
+
+@@ 6841babb93
+ms: Shopee Indonesia
+
+@@ 27c4982d9f
+ms: Yuran pentadbiran Non-Star, Star/Star+ &amp; Mall ikut jenis produk ({0}–{1}%), yuran pembayaran Mall {2}%, Rp{3} sepesanan, Gratis Ongkir XTRA termasuk jadual {4} Dis {5}.
+ru: Административный сбор Non-Star, Star/Star+ и Mall по типам товаров ({0}–{1}%), платёжный сбор Mall {2}%, Rp{3} за заказ, Gratis Ongkir XTRA, включая таблицу с {4} дек. {5}.
+
+@@ 82902319d9
+ms: Dikemas kini {0} Jul / {1} Okt {2}
+
+@@ a006ae815f
+ms: Vietnam &amp; lain-lain
+ru: Вьетнам и другие
+zh: 越南及更多
+
+@@ 0584e720c1
+ms: {0} Dis {1}
+ru: {0} дек. {1}
+zh: {1}年12月{0}日
+
+@@ cc45821902
+ms: Gratis Ongkir XTRA
+ru: Gratis Ongkir XTRA
+zh: Gratis Ongkir XTRA
+
+@@ 9de5eff8f2
+ms: Kadar baharu program penghantaran percuma untuk penjual bukan Mall (Mall mulai {0} Jan {1}): had saiz biasa Rp{2} → Rp{3}, saiz khas Rp{4} → Rp{5}, kebanyakan kadar saiz biasa naik {6}–{7} mata
+ru: Новые ставки программы бесплатной доставки для продавцов не из Mall (Mall — с {0} янв. {1}): лимит для обычного размера Rp{2} → Rp{3}, для особого Rp{4} → Rp{5}, большинство ставок для обычного размера выросли на {6}–{7} п.п.
+zh: 非 Mall 卖家包邮项目新费率（Mall 自 {1}年1月{0}日）：常规尺寸封顶 Rp{2} → Rp{3}，特殊尺寸 Rp{4} → Rp{5}，多数常规尺寸费率上调 {6}–{7} 个百分点
+
+@@ 5865f3c568
+ms: Pengecualian yuran pentadbiran penjual baharu
+ru: Освобождение новых продавцов от административного сбора
+zh: 新卖家管理费减免
+
+@@ 28ef2dca96
+ms: Penjual yang mula memuat naik dari {0} Ogos {1} tidak lagi mendapat tempoh percuma yuran pentadbiran dan Yuran Pemprosesan Pesanan
+ru: Продавцы, впервые загрузившие товар с {0} авг. {1}, больше не получают льготный период без административного сбора и сбора за обработку заказа
+zh: {1}年8月{0}日起首次上架的卖家不再享受管理费与订单处理费免收期
+
+@@ 5837fd4752
+ms: SellerFee ialah laman web bebas yang menerbitkan kalkulator yuran dan keuntungan percuma untuk penjual di marketplace dalam talian, terutamanya penjual rentas sempadan. Kami merangkumi TikTok Shop (Malaysia, Singapura, Thailand, Filipina, Vietnam, Indonesia, AS dan UK), Shopee (Malaysia, Singapura, Filipina, Thailand, Indonesia), Lazada Malaysia, Walmart Marketplace (AS), Etsy (global dan UK), serta marketplace Rusia Ozon, Wildberries dan Yandex Market.
+ru: SellerFee — независимый сайт с бесплатными калькуляторами сборов и прибыли для продавцов на онлайн-маркетплейсах, особенно для тех, кто торгует за рубежом. Мы охватываем TikTok Shop (Малайзия, Сингапур, Таиланд, Филиппины, Вьетнам, Индонезия, США и Великобритания), Shopee (Малайзия, Сингапур, Филиппины, Таиланд, Индонезия), Lazada Малайзия, Walmart Marketplace (США), Etsy (глобально и Великобритания), а также российские маркетплейсы Ozon, Wildberries и Яндекс Маркет.
+zh: SellerFee 是一个独立网站，为在线上电商平台销售的卖家（尤其是跨境卖家）提供免费的费用与利润计算器。我们覆盖 TikTok Shop（马来西亚、新加坡、泰国、菲律宾、越南、印尼、美国和英国）、Shopee（马来西亚、新加坡、菲律宾、泰国、印尼）、Lazada 马来西亚、Walmart Marketplace（美国）、Etsy（全球与英国），以及俄罗斯平台 Ozon、Wildberries 和 Yandex Market。
+
+@@ 8cc2c932f6
+ms: Kalkulator Yuran Shopee Indonesia {0} (Yuran Pentadbiran, Gratis Ongkir XTRA, Mall)
+ru: Калькулятор сборов Shopee Индонезия {0} (административный сбор, Gratis Ongkir XTRA, Mall)
+zh: Shopee 印尼站费用计算器 {0}（管理费、Gratis Ongkir XTRA、Mall）
+
+@@ d655e33a65
+ms: Kalkulator yuran dan keuntungan Shopee Indonesia percuma: yuran pentadbiran untuk Non-Star, Star/Star+ dan Mall ikut jenis produk, yuran pembayaran Mall {0}%, Rp{1} sepesanan, Gratis Ongkir XTRA dengan kadar {2} Dis {3}, Promo XTRA dan Live XTRA.
+ru: Бесплатный калькулятор сборов и прибыли Shopee Индонезия: административный сбор для Non-Star, Star/Star+ и Mall по типам товаров, платёжный сбор Mall {0}%, Rp{1} за заказ, Gratis Ongkir XTRA со ставками с {2} дек. {3}, Promo XTRA и Live XTRA.
+zh: 免费的 Shopee 印尼站费用与利润计算器：Non-Star、Star/Star+ 与 Mall 按商品类型的管理费、Mall 支付费 {0}%、每单 Rp{1}、含 {3}年12月{2}日新费率的 Gratis Ongkir XTRA、Promo XTRA 与 Live XTRA。
+
+@@ 258c267cd6
+ms: Kalkulator Yuran Shopee Indonesia
+ru: Калькулятор сборов Shopee Индонезия
+zh: Shopee 印尼站费用计算器
+
+@@ 1eda0cd954
+ms: Yuran pentadbiran untuk Non-Star, Star/Star+ dan Shopee Mall ikut jenis produk, yuran pembayaran Mall, Rp{0} sepesanan, serta yuran pilihan Gratis Ongkir XTRA, Promo XTRA dan Live/Video XTRA, termasuk kadar baharu mulai {1} Disember {2}.
+ru: Административный сбор для Non-Star, Star/Star+ и Shopee Mall по типам товаров, платёжный сбор Mall, Rp{0} за заказ и необязательные сборы Gratis Ongkir XTRA, Promo XTRA и Live/Video XTRA, включая новые ставки с {1} декабря {2} года.
+zh: Non-Star、Star/Star+ 与 Shopee Mall 按商品类型的管理费、Mall 支付费、每单 Rp{0}，以及可选的 Gratis Ongkir XTRA、Promo XTRA 与 Live/Video XTRA 费用，含 {2} 年 12 月 {1} 日起的新费率。
+
+@@ 8acafc7a3b
+ms: Cara yuran Shopee Indonesia berfungsi
+ru: Как устроены сборы Shopee Индонезия
+zh: Shopee 印尼站费用构成
+
+@@ e3b6ad6db0
+ms: Contoh kadar
+ru: Примеры ставок
+zh: 费率示例
+
+@@ 92f7263abd
+ms: Berapakah yuran pentadbiran Shopee Indonesia?
+ru: Сколько составляет административный сбор Shopee Индонезия?
+zh: Shopee 印尼站管理费是多少？
+
+@@ 1eea3417f4
+ms: {0}% hingga {1}% daripada harga item untuk penjual Non-Star dan Star/Star+, dan {2}% hingga {3}% untuk Shopee Mall, ikut jenis produk, tanpa had seunit.
+ru: От {0}% до {1}% цены товара для продавцов Non-Star и Star/Star+ и от {2}% до {3}% для Shopee Mall, в зависимости от типа товара, без лимита на единицу.
+zh: Non-Star 与 Star/Star+ 卖家为商品价格的 {0}% 至 {1}%，Shopee Mall 为 {2}% 至 {3}%，按商品类型计算，每件不封顶。
+
+@@ d30b767f9f
+ms: Adakah penjual Star membayar kurang daripada penjual Non-Star?
+ru: Платят ли продавцы Star меньше, чем Non-Star?
+zh: Star 卖家比 Non-Star 卖家付得少吗？
+
+@@ 49b81457a9
+ms: Tidak. Penjual Non-Star dan Star/Star+ membayar kadar yuran pentadbiran yang sama. Hanya penjual Non-Star baharu yang bermula sebelum {0} Ogos {1} masih mendapat tempoh percuma.
+ru: Нет. Продавцы Non-Star и Star/Star+ платят одинаковые ставки административного сбора. Льготный период остаётся только у новых продавцов Non-Star, начавших до {0} августа {1} года.
+zh: 不会。Non-Star 与 Star/Star+ 卖家的管理费费率相同。只有 {1} 年 8 月 {0} 日前开店的 Non-Star 新卖家仍享有免收期。
+
+@@ a2c9ecb27c
+ms: Adakah Gratis Ongkir XTRA wajib?
+ru: Обязательна ли Gratis Ongkir XTRA?
+zh: Gratis Ongkir XTRA 是必须参加的吗？
+
+@@ 33a26a7247
+ms: Tidak. Ia program pilihan. Anda membayar yurannya hanya jika menyertai, dan anda boleh keluar pada bila-bila masa.
+ru: Нет. Это необязательная программа. Сбор взимается, только если вы в ней участвуете, и выйти можно в любой момент.
+zh: 不是。这是可选项目，只有参加才收费，并可随时退出。
+
+@@ 93763f67ab
+ms: Apakah yang berubah pada {0} Disember {1}?
+ru: Что меняется {0} декабря {1} года?
+zh: {1} 年 12 月 {0} 日有什么变化？
+
+@@ 6bc7f2e463
+ms: Kadar baharu Gratis Ongkir XTRA untuk penjual bukan Mall, diikuti Mall pada {0} Januari {1}. Kebanyakan kadar saiz biasa naik {2} hingga {3} mata (saiz khas {4} hingga {5}) dan had naik daripada Rp{6} kepada Rp{7} (saiz biasa) dan daripada Rp{8} kepada Rp{9} (saiz khas).
+ru: Новые ставки Gratis Ongkir XTRA для продавцов не из Mall, а для Mall — с {0} января {1} года. Большинство ставок для обычного размера растут на {2}–{3} п.п. (для особого — на {4}–{5}), а лимиты — с Rp{6} до Rp{7} (обычный размер) и с Rp{8} до Rp{9} (особый размер).
+zh: 非 Mall 卖家启用新的 Gratis Ongkir XTRA 费率，Mall 卖家于 {1} 年 1 月 {0} 日跟进。多数常规尺寸费率上调 {2} 至 {3} 个百分点（特殊尺寸上调 {4} 至 {5} 个），封顶从 Rp{6} 提高到 Rp{7}（常规尺寸），从 Rp{8} 提高到 Rp{9}（特殊尺寸）。
+
+@@ 200c784c8a
+ms: Ya. Yuran Pemprosesan Pesanan ialah Rp{0} bagi setiap pesanan yang selesai.
+ru: Да. Сбор за обработку заказа — Rp{0} за каждый выполненный заказ.
+zh: 有。订单处理费为每笔完成订单 Rp{0}。
+
+@@ 02da9d31a4
+ms: Shopee Indonesia mengenakan yuran ikut jenis penjual: Non-Star, Star/Star+ dan Shopee Mall. Penjual Non-Star dan Star membayar kadar yang sama. Semua yuran termasuk PPN dan dikenakan pada harga item selepas diskaun dan baucar penjual, tidak pernah pada kos penghantaran.
+ru: Shopee Индонезия берёт сборы в зависимости от типа продавца: Non-Star, Star/Star+ и Shopee Mall. Продавцы Non-Star и Star платят по одинаковым ставкам. Все сборы включают НДС и считаются от цены товара после скидок и купонов продавца, но никогда не от доставки.
+zh: Shopee 印尼站按卖家类型收费：Non-Star、Star/Star+ 与 Shopee Mall。Non-Star 与 Star 卖家费率相同。所有费用均含增值税，按扣除卖家折扣和卖家优惠券后的商品价格计算，从不计入运费。
+
+@@ 4723690ad2
+ms: {0}. Yuran pentadbiran
+ru: {0}. Административный сбор
+zh: {0}. 管理费
+
+@@ 506283450d
+ms: Yuran pentadbiran (Biaya Administrasi) bergantung pada jenis produk: {0}% hingga {1}% untuk penjual Non-Star dan Star, dan {2}% hingga {3}% untuk Shopee Mall. Tiada had seunit. Kadar tertinggi {4}% sudah {5}% lebih rendah daripada kadar asas {6}%.
+ru: Административный сбор (Biaya Administrasi) зависит от типа товара: от {0}% до {1}% для продавцов Non-Star и Star и от {2}% до {3}% для Shopee Mall. Лимита на единицу нет. Максимальная ставка {4}% уже на {5}% ниже базовой ставки {6}%.
+zh: 管理费（Biaya Administrasi）按商品类型计算：Non-Star 与 Star 卖家为 {0}% 至 {1}%，Shopee Mall 为 {2}% 至 {3}%。每件不封顶。最高的 {4}% 已比 {6}% 的基础费率低 {5}%。
+
+@@ 2dd5b07f2c
+ms: Penjual Non-Star yang memuat naik produk pertama sebelum {0} Ogos {1} tidak membayar yuran pentadbiran dan Yuran Pemprosesan Pesanan sehingga mereka menyelesaikan {2} pesanan atau mencapai {3} bulan. Penjual yang bermula pada atau selepas {4} Ogos {5} membayar dari pesanan pertama.
+ru: Продавцы Non-Star, загрузившие первый товар до {0} августа {1} года, не платят административный сбор и сбор за обработку заказа, пока не выполнят {2} заказов или не пройдёт {3} месяцев. Продавцы, начавшие {4} августа {5} года или позже, платят с первого заказа.
+zh: {1} 年 8 月 {0} 日前首次上架商品的 Non-Star 卖家，在完成 {2} 笔订单或满 {3} 个月之前免收管理费和订单处理费。{5} 年 8 月 {4} 日及之后开店的卖家从第一笔订单起付费。
+
+@@ 7b7a64881c
+ms: {0}. Yuran pembayaran Shopee Mall
+ru: {0}. Платёжный сбор Shopee Mall
+zh: {0}. Shopee Mall 支付费
+
+@@ 725afc8d03
+ms: Penjual Mall turut membayar {0}%, terhad kepada Rp{1} seunit, dalam semua kategori.
+ru: Продавцы Mall дополнительно платят {0}%, но не более Rp{1} за единицу, во всех категориях.
+zh: Mall 卖家还需支付 {0}%，每件封顶 Rp{1}，适用所有类目。
+
+@@ c78f4da3cf
+ms: Rp{0} bagi setiap pesanan yang selesai. Bagi pesanan berbilang produk, ia dibahagikan antara produk ikut nilai.
+ru: Rp{0} за каждый выполненный заказ. В заказе из нескольких товаров сбор распределяется между ними пропорционально стоимости.
+zh: 每笔完成订单 Rp{0}。多商品订单按商品金额分摊。
+
+@@ 32242a9476
+ms: Gratis Ongkir XTRA (penghantaran percuma) mengenakan kadar ikut jenis produk: {0}% hingga {1}% untuk produk saiz biasa, terhad kepada Rp{2} seunit, dan sehingga {3}% untuk produk saiz khas, terhad kepada Rp{4}. Kadar baharu berkuat kuasa mulai <b1>{5} Disember {6}</b1> untuk penjual bukan Mall dan mulai <b2>{7} Januari {8}</b2> untuk Mall: sehingga {9}% dengan had Rp{10} untuk saiz biasa dan sehingga {11}% dengan had Rp{12} untuk saiz khas. Pilih kadar semasa atau kadar baharu dalam kalkulator.
+ru: Gratis Ongkir XTRA (бесплатная доставка) берёт ставку по типу товара: от {0}% до {1}% для товаров обычного размера с лимитом Rp{2} за единицу и до {3}% для товаров особого размера с лимитом Rp{4}. Новые ставки действуют с <b1>{5} декабря {6}</b1> для продавцов не из Mall и с <b2>{7} января {8}</b2> для Mall: до {9}% с лимитом Rp{10} для обычного размера и до {11}% с лимитом Rp{12} для особого. Выберите текущие или новые ставки в калькуляторе.
+zh: Gratis Ongkir XTRA（包邮）按商品类型收费：常规尺寸商品 {0}% 至 {1}%，每件封顶 Rp{2}；特殊尺寸商品最高 {3}%，封顶 Rp{4}。新费率对非 Mall 卖家自 <b1>{6} 年 12 月 {5} 日</b1>起、对 Mall 自 <b2>{8} 年 1 月 {7} 日</b2>起生效：常规尺寸最高 {9}%，封顶 Rp{10}；特殊尺寸最高 {11}%，封顶 Rp{12}。可在计算器中选择现行或新费率。
+
+@@ fb814144f7
+ms: Promo XTRA berharga {0}% (maks. Rp{1} seunit) dan Promo XTRA+ {2}% (maks. Rp{3}). Pesanan melalui Shopee Live atau Shopee Video dikenakan {4}%, atau {5}% jika anda menyertai Promo XTRA, terhad kepada Rp{6} seunit. Produk pra-pesanan dikenakan {7}% lagi.
+ru: Promo XTRA стоит {0}% (не более Rp{1} за единицу), Promo XTRA+ — {2}% (не более Rp{3}). Заказы через Shopee Live или Shopee Video облагаются {4}%, или {5}% при участии в Promo XTRA, не более Rp{6} за единицу. Товары по предзаказу — ещё {7}%.
+zh: Promo XTRA 收 {0}%（每件最高 Rp{1}），Promo XTRA+ 收 {2}%（最高 Rp{3}）。通过 Shopee Live 或 Shopee Video 成交的订单收 {4}%，参加 Promo XTRA 时为 {5}%，每件封顶 Rp{6}。预售商品另收 {7}%。
+
+@@ 0da1d565f1
+ms: Contoh {0}: produk penjagaan wajah Rp{1}, Non-Star atau Star
+ru: Пример {0}: средство для ухода за лицом за Rp{1}, Non-Star или Star
+zh: 示例 {0}：Rp{1} 的面部护理产品，Non-Star 或 Star
+
+@@ a1342160d0
+ms: Kos produk Rp{0}, penghantaran percuma untuk pembeli, tiada program pilihan.
+ru: Себестоимость Rp{0}, бесплатная доставка для покупателя, без дополнительных программ.
+zh: 商品成本 Rp{0}，买家包邮，不参加可选项目。
+
+@@ c9f824ba79
+ms: Yuran pentadbiran ({0}%)
+ru: Административный сбор ({0}%)
+zh: 管理费（{0}%）
+
+@@ c5dbe13669
+ms: Contoh {0}: produk yang sama di Shopee Mall
+ru: Пример {0}: тот же товар в Shopee Mall
+zh: 示例 {0}：同一商品在 Shopee Mall
+
+@@ f219454ee0
+ms: Yuran pentadbiran Mall ialah {0}%, ditambah yuran pembayaran {1}%: jumlah yuran Rp{2}, untung Rp{3}.
+ru: Административный сбор в Mall — {0}%, плюс платёжный сбор {1}%: всего сборов Rp{2}, прибыль Rp{3}.
+zh: Mall 管理费为 {0}%，另加 {1}% 支付费：费用合计 Rp{2}，利润 Rp{3}。
+
+@@ 78866283b4
+ms: Contoh {0}: dengan Gratis Ongkir XTRA, sekarang dan mulai {1} Disember {2}
+ru: Пример {0}: с Gratis Ongkir XTRA сейчас и с {1} декабря {2} года
+zh: 示例 {0}：参加 Gratis Ongkir XTRA，现在与 {2} 年 12 月 {1} 日起
+
+@@ 532890cbc5
+ms: Pada kadar semasa {0}%, jumlah yuran ialah Rp{1}. Mulai {2} Disember {3} kadar untuk produk ini naik kepada {4}% dan yuran kepada Rp{5}, meninggalkan untung Rp{6}.
+ru: По текущей ставке {0}% сборы составляют Rp{1}. С {2} декабря {3} года ставка для этого товара растёт до {4}%, а сборы — до Rp{5}, прибыль Rp{6}.
+zh: 按现行 {0}% 费率，费用为 Rp{1}。{3} 年 12 月 {2} 日起该商品费率升至 {4}%，费用升至 Rp{5}，利润 Rp{6}。
+
+@@ 29b8c9a55d
+ms: Yuran pentadbiran dan kadar Gratis Ongkir XTRA untuk produk saiz biasa. Kalkulator mempunyai kesemua {0} jenis produk.
+ru: Административный сбор и ставка Gratis Ongkir XTRA для товаров обычного размера. В калькуляторе все {0} типов товаров.
+zh: 管理费与常规尺寸商品的 Gratis Ongkir XTRA 费率。计算器包含全部 {0} 种商品类型。
+
+@@ 6de78f3545
+ms: Yuran pentadbiran, Non-Star &amp; Star
+ru: Адм. сбор, Non-Star и Star
+zh: 管理费，Non-Star 与 Star
+
+@@ b9e704ff1f
+ms: Yuran pentadbiran, Mall
+ru: Адм. сбор, Mall
+zh: 管理费，Mall
+
+@@ c872609445
+ms: Gratis Ongkir XTRA sekarang
+ru: Gratis Ongkir XTRA сейчас
+zh: Gratis Ongkir XTRA 现行
+
+@@ f739a1de28
+ms: Gratis Ongkir XTRA mulai {0} Dis {1}
+ru: Gratis Ongkir XTRA с {0} дек. {1}
+zh: Gratis Ongkir XTRA {1}年12月{0}日起
+
+@@ 3734d24e16
+ms: Baca gambaran penuh dalam panduan kami tentang <a1>yuran penjual Shopee Indonesia pada {0}</a1>.
+ru: Подробности — в нашем гайде <a1>о сборах продавцов Shopee Индонезия в {0} году</a1>.
+zh: 完整解读见我们的指南：<a1>{0} 年 Shopee 印尼站卖家费用</a1>。
+
+@@ 3da2acaad4
+ms: Yuran Shopee Indonesia bergantung pada jenis penjual dan jenis produk anda. Pada {0}, tempoh percuma penjual baharu tamat bagi penjual yang bermula dari {1} Ogos, dan program pilihan Gratis Ongkir XTRA mendapat kadar baharu yang lebih tinggi mulai <b1>{2} Disember {3}</b1> ({4} Januari {5} untuk Mall). Panduan ini menyenaraikan setiap yuran dan menunjukkan contoh pengiraan. Semua angka diambil daripada <a2>kalkulator yuran Shopee Indonesia</a2>.
+ru: Сборы Shopee Индонезия зависят от типа продавца и типа товара. В {0} году льготный период закончился для продавцов, начавших с {1} августа, а необязательная программа Gratis Ongkir XTRA получает новые, более высокие ставки с <b1>{2} декабря {3}</b1> ({4} января {5} для Mall). В гайде перечислены все сборы и разобраны примеры. Все цифры взяты из <a2>калькулятора сборов Shopee Индонезия</a2>.
+zh: Shopee 印尼站的费用取决于卖家类型和商品类型。{0} 年，8 月 {1} 日起开店的卖家不再享有新卖家免收期；可选的 Gratis Ongkir XTRA 项目自 <b1>{3} 年 12 月 {2} 日</b1>起（Mall 为 {5} 年 1 月 {4} 日）启用更高的新费率。本指南列出全部费用并给出计算示例。所有数字均来自 <a2>Shopee 印尼站费用计算器</a2>。
+
+@@ 6224a6b9c2
+ms: Non-Star dan Star/Star+
+ru: Non-Star и Star/Star+
+zh: Non-Star 与 Star/Star+
+
+@@ e07131f108
+ms: Yuran pentadbiran
+ru: Административный сбор
+zh: 管理费
+
+@@ ae13693c40
+ms: {0}% hingga {1}% ikut jenis produk
+ru: От {0}% до {1}% по типу товара
+zh: 按商品类型 {0}% 至 {1}%
+
+@@ 930244f56d
+ms: Yuran pembayaran
+ru: Платёжный сбор
+zh: 支付费
+
+@@ 6eef664840
+ms: Tiada
+ru: Нет
+zh: 无
+
+@@ c765150f4a
+ms: {0}%, sehingga Rp{1} seunit
+ru: {0}%, не более Rp{1} за единицу
+zh: {0}%，每件最高 Rp{1}
+
+@@ 7893eaa0cd
+ms: Rp{0} bagi setiap pesanan yang selesai
+ru: Rp{0} за выполненный заказ
+zh: 每笔完成订单 Rp{0}
+
+@@ 8fb6530c81
+ms: Yuran peratusan dikenakan pada harga asal ditolak diskaun dan baucar penjual. Kos penghantaran tidak pernah dimasukkan.
+ru: Процентные сборы считаются от исходной цены за вычетом скидок и купонов продавца. Доставка никогда не учитывается.
+zh: 百分比费用按原价扣除卖家折扣和卖家优惠券后计算，从不包含运费。
+
+@@ 0721601154
+ms: Produk penjagaan wajah Rp{0} daripada penjual Non-Star atau Star, kos produk Rp{1}, penghantaran percuma untuk pembeli, tiada program pilihan.
+ru: Средство для ухода за лицом за Rp{0} у продавца Non-Star или Star, себестоимость Rp{1}, бесплатная доставка для покупателя, без дополнительных программ.
+zh: Non-Star 或 Star 卖家的 Rp{0} 面部护理产品，商品成本 Rp{1}，买家包邮，不参加可选项目。
+
+@@ 91f1908b95
+ms: Untung ialah Rp{0}, margin {1}%.
+ru: Прибыль Rp{0}, маржа {1}%.
+zh: 利润 Rp{0}，利润率 {1}%。
+
+@@ c934c72b1a
+ms: Gratis Ongkir XTRA mulai {0} Disember {1}
+ru: Gratis Ongkir XTRA с {0} декабря {1}
+zh: {1} 年 12 月 {0} 日起的 Gratis Ongkir XTRA
+
+@@ 3f73781ff1
+ms: Gratis Ongkir XTRA memberi produk anda baucar penghantaran percuma sebagai pertukaran untuk yuran ikut jenis produk. Mulai {0} Disember {1} (bukan Mall) dan {2} Januari {3} (Mall), kebanyakan kadar saiz biasa naik {4} hingga {5} mata dan kebanyakan kadar saiz khas {6} hingga {7}. Had seunit naik daripada Rp{8} kepada Rp{9} untuk produk saiz biasa dan daripada Rp{10} kepada Rp{11} untuk produk saiz khas. Untuk produk penjagaan wajah yang sama ({12}% sekarang, {13}% mulai Disember):
+ru: Gratis Ongkir XTRA даёт вашим товарам купоны на бесплатную доставку в обмен на сбор по типу товара. С {0} декабря {1} года (не Mall) и {2} января {3} года (Mall) большинство ставок для обычного размера растут на {4}–{5} п.п., для особого — на {6}–{7}. Лимит на единицу растёт с Rp{8} до Rp{9} для обычного размера и с Rp{10} до Rp{11} для особого. Для того же средства для лица ({12}% сейчас, {13}% с декабря):
+zh: Gratis Ongkir XTRA 为商品提供包邮券，按商品类型收费。自 {1} 年 12 月 {0} 日（非 Mall）和 {3} 年 1 月 {2} 日（Mall）起，多数常规尺寸费率上调 {4} 至 {5} 个百分点，多数特殊尺寸费率上调 {6} 至 {7} 个。每件封顶由 Rp{8} 提高到 Rp{9}（常规尺寸），由 Rp{10} 提高到 Rp{11}（特殊尺寸）。以同一面部护理产品为例（现行 {12}%，12 月起 {13}%）：
+
+@@ aff51d6165
+ms: Tidak menyertai Gratis Ongkir XTRA
+ru: Без Gratis Ongkir XTRA
+zh: 未参加 Gratis Ongkir XTRA
+
+@@ 05243f4a52
+ms: Gratis Ongkir XTRA, kadar semasa
+ru: Gratis Ongkir XTRA, текущая ставка
+zh: Gratis Ongkir XTRA，现行费率
+
+@@ 1f58626970
+ms: Had yang lebih tinggi penting untuk produk mahal. Untuk item Rp{0}, yuran kini terhad kepada Rp{1}. Mulai Disember ia terhad kepada Rp{2}: jumlah yuran naik daripada Rp{3} kepada Rp{4}.
+ru: Более высокий лимит важен для дорогих товаров. Для товара за Rp{0} сбор сейчас ограничен Rp{1}. С декабря лимит — Rp{2}: сумма сборов растёт с Rp{3} до Rp{4}.
+zh: 封顶提高对高价商品影响更大。Rp{0} 的商品目前封顶 Rp{1}，12 月起封顶 Rp{2}：费用合计由 Rp{3} 升至 Rp{4}。
+
+@@ ea440ce2db
+ms: Tempoh percuma penjual baharu
+ru: Льготный период для новых продавцов
+zh: 新卖家免收期
+
+@@ 2cb5e8c794
+ms: Penjual Non-Star yang memuat naik produk pertama sebelum {0} Ogos {1} tidak membayar yuran pentadbiran dan Yuran Pemprosesan Pesanan sehingga {2} pesanan selesai atau {3} bulan, mana yang lebih awal. Penjual yang bermula pada atau selepas {4} Ogos {5} membayar yuran biasa dari pesanan pertama. Shopee menjalankan program sokongan berasingan untuk perniagaan kecil baharu sebagai ganti.
+ru: Продавцы Non-Star, загрузившие первый товар до {0} августа {1} года, не платят административный сбор и сбор за обработку заказа до {2} выполненных заказов или {3} месяцев — что наступит раньше. Продавцы, начавшие {4} августа {5} года или позже, платят обычные сборы с первого заказа. Вместо этого Shopee проводит отдельные программы поддержки для новых малых предприятий.
+zh: {1} 年 8 月 {0} 日前首次上架商品的 Non-Star 卖家，在完成 {2} 笔订单或满 {3} 个月（以先到者为准）之前免收管理费和订单处理费。{5} 年 8 月 {4} 日及之后开店的卖家从第一笔订单起按正常费率付费。Shopee 改为为新小微商家另设扶持项目。
+
+@@ 645be6f04b
+ms: Yuran pilihan lain
+ru: Другие необязательные сборы
+zh: 其他可选费用
+
+@@ 376d17ecc2
+ms: <b1>Promo XTRA</b1>: {0}% (maks. Rp{1} seunit), atau {2}% untuk Promo XTRA+ (maks. Rp{3}).
+ru: <b1>Promo XTRA</b1>: {0}% (не более Rp{1} за единицу) или {2}% для Promo XTRA+ (не более Rp{3}).
+zh: <b1>Promo XTRA</b1>：{0}%（每件最高 Rp{1}），Promo XTRA+ 为 {2}%（最高 Rp{3}）。
+
+@@ 326b3ec39e
+ms: <b1>Live/Video XTRA</b1>: {0}% untuk pesanan melalui Shopee Live atau Shopee Video, atau {1}% dengan Promo XTRA, maks. Rp{2} seunit.
+ru: <b1>Live/Video XTRA</b1>: {0}% с заказов через Shopee Live или Shopee Video, или {1}% при участии в Promo XTRA, не более Rp{2} за единицу.
+zh: <b1>Live/Video XTRA</b1>：通过 Shopee Live 或 Shopee Video 成交的订单收 {0}%，参加 Promo XTRA 时为 {1}%，每件最高 Rp{2}。
+
+@@ 4cdcd6bedf
+ms: <b1>Yuran perkhidmatan pra-pesanan</b1>: {0}% untuk produk pra-pesanan.
+ru: <b1>Сбор за предзаказ</b1>: {0}% для товаров по предзаказу.
+zh: <b1>预售服务费</b1>：预售商品收 {0}%。
+
+@@ 7d61e29033
+ms: <b1>SPayLater XTRA {0}%</b1>: {1}% (tempoh {2} bulan) atau {3}% (tempoh {4} bulan) untuk pesanan yang dibayar dengan ansuran SPayLater.
+ru: <b1>SPayLater XTRA {0}%</b1>: {1}% (рассрочка на {2} месяца) или {3}% (на {4} месяцев) для заказов, оплаченных рассрочкой SPayLater.
+zh: <b1>SPayLater XTRA {0}%</b1>：使用 SPayLater 分期付款的订单，{2} 个月分期收 {1}%，{4} 个月分期收 {3}%。
+

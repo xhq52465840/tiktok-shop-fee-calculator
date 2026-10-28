@@ -495,3 +495,44 @@ S['ru'].update(dict(
   c_lsf_h='Rp540–5 060 за заказ в зависимости от маршрута и веса посылки. По умолчанию: стандартная доставка по Яве в Джакарту, до 1 кг (Rp690).',
   c_gxp_h='Необязательно. Если вы участвуете в Growth Xtra Program, укажите её ставку (2%–4% по категориям, плюс 2% для GXP Super).',
 ))
+# Shopee Indonesia
+S['en'].update(dict(
+  nonstar='Non-Star', star='Star / Star+',
+  sidgox_label='Gratis Ongkir XTRA (optional free-shipping programme)', sidgox_none='Not joined',
+  sidgox_cur_reg='Joined, regular-size product (current rates)', sidgox_cur_spec='Joined, special-size product (current rates)',
+  sidgox_new_reg='Joined, regular-size product (from 1 Dec 2026; Mall from 1 Jan 2027)', sidgox_new_spec='Joined, special-size product (from 1 Dec 2026; Mall from 1 Jan 2027)',
+  sidpx_label='Promo XTRA (optional voucher programme)', sidpx_none='Not joined', sidpx_px='Promo XTRA (4.5%, max Rp60,000 per item)', sidpx_pxp='Promo XTRA+ (6.5%, max Rp80,000 per item)',
+  t_sidNew='Non-Star new seller (first product uploaded before 1 Aug 2026)', t_sidNew_h='No admin fee or Order Processing Fee until 50 completed orders or 6 months after the first upload. Sellers who first upload from 1 Aug 2026 get no waiver.',
+  t_liveX='Order came through Shopee Live or Shopee Video (Live/Video XTRA)', t_liveX_h='3% (2% if you are in Promo XTRA or XTRA+), max Rp20,000 per item. Some categories are excluded.',
+  c_admin='Admin fee', c_mallpay='Shopee Mall payment fee', c_gox='Gratis Ongkir XTRA fee', c_promox='Promo XTRA fee', c_promoxp='Promo XTRA+ fee', c_livex='Live/Video XTRA fee',
+))
+S['ms'].update(dict(
+  nonstar='Non-Star', star='Star / Star+',
+  sidgox_label='Gratis Ongkir XTRA (program penghantaran percuma pilihan)', sidgox_none='Tidak menyertai',
+  sidgox_cur_reg='Menyertai, produk saiz biasa (kadar semasa)', sidgox_cur_spec='Menyertai, produk saiz khas (kadar semasa)',
+  sidgox_new_reg='Menyertai, produk saiz biasa (mulai 1 Dis 2026; Mall mulai 1 Jan 2027)', sidgox_new_spec='Menyertai, produk saiz khas (mulai 1 Dis 2026; Mall mulai 1 Jan 2027)',
+  sidpx_label='Promo XTRA (program baucar pilihan)', sidpx_none='Tidak menyertai', sidpx_px='Promo XTRA (4.5%, maks. Rp60,000 seunit)', sidpx_pxp='Promo XTRA+ (6.5%, maks. Rp80,000 seunit)',
+  t_sidNew='Penjual baharu Non-Star (produk pertama dimuat naik sebelum 1 Ogos 2026)', t_sidNew_h='Tiada yuran pentadbiran atau Yuran Pemprosesan Pesanan sehingga 50 pesanan selesai atau 6 bulan selepas muat naik pertama. Penjual yang mula memuat naik dari 1 Ogos 2026 tidak mendapat pengecualian.',
+  t_liveX='Pesanan melalui Shopee Live atau Shopee Video (Live/Video XTRA)', t_liveX_h='3% (2% jika anda menyertai Promo XTRA atau XTRA+), maks. Rp20,000 seunit. Sesetengah kategori dikecualikan.',
+  c_admin='Yuran pentadbiran', c_mallpay='Yuran pembayaran Shopee Mall', c_gox='Yuran Gratis Ongkir XTRA', c_promox='Yuran Promo XTRA', c_promoxp='Yuran Promo XTRA+', c_livex='Yuran Live/Video XTRA',
+))
+S['zh'].update(dict(
+  nonstar='Non-Star', star='Star / Star+',
+  sidgox_label='Gratis Ongkir XTRA（可选包邮项目）', sidgox_none='未参加',
+  sidgox_cur_reg='已参加，常规尺寸商品（现行费率）', sidgox_cur_spec='已参加，特殊尺寸商品（现行费率）',
+  sidgox_new_reg='已参加，常规尺寸商品（2026 年 12 月 1 日起；Mall 2027 年 1 月 1 日起）', sidgox_new_spec='已参加，特殊尺寸商品（2026 年 12 月 1 日起；Mall 2027 年 1 月 1 日起）',
+  sidpx_label='Promo XTRA（可选优惠券项目）', sidpx_none='未参加', sidpx_px='Promo XTRA（4.5%，每件最高 Rp60,000）', sidpx_pxp='Promo XTRA+（6.5%，每件最高 Rp80,000）',
+  t_sidNew='Non-Star 新卖家（2026 年 8 月 1 日前首次上架商品）', t_sidNew_h='完成 50 笔订单或首次上架满 6 个月前，免管理费和订单处理费。2026 年 8 月 1 日起首次上架的卖家不享受减免。',
+  t_liveX='订单来自 Shopee Live 或 Shopee Video（Live/Video XTRA）', t_liveX_h='3%（参加 Promo XTRA 或 XTRA+ 时为 2%），每件最高 Rp20,000。部分类目除外。',
+  c_admin='管理费', c_mallpay='Shopee Mall 支付费', c_gox='Gratis Ongkir XTRA 费用', c_promox='Promo XTRA 费用', c_promoxp='Promo XTRA+ 费用', c_livex='Live/Video XTRA 费用',
+))
+S['ru'].update(dict(
+  nonstar='Non-Star', star='Star / Star+',
+  sidgox_label='Gratis Ongkir XTRA (необязательная программа бесплатной доставки)', sidgox_none='Не участвую',
+  sidgox_cur_reg='Участвую, товар обычного размера (текущие ставки)', sidgox_cur_spec='Участвую, товар особого размера (текущие ставки)',
+  sidgox_new_reg='Участвую, товар обычного размера (с 1 дек. 2026; Mall с 1 янв. 2027)', sidgox_new_spec='Участвую, товар особого размера (с 1 дек. 2026; Mall с 1 янв. 2027)',
+  sidpx_label='Promo XTRA (необязательная программа купонов)', sidpx_none='Не участвую', sidpx_px='Promo XTRA (4,5%, не более Rp60 000 за единицу)', sidpx_pxp='Promo XTRA+ (6,5%, не более Rp80 000 за единицу)',
+  t_sidNew='Новый продавец Non-Star (первый товар загружен до 1 августа 2026)', t_sidNew_h='Без административного сбора и сбора за обработку заказа до 50 выполненных заказов или 6 месяцев после первой загрузки. Для продавцов, начавших с 1 августа 2026, льготы нет.',
+  t_liveX='Заказ через Shopee Live или Shopee Video (Live/Video XTRA)', t_liveX_h='3% (2% при участии в Promo XTRA или XTRA+), не более Rp20 000 за единицу. Некоторые категории исключены.',
+  c_admin='Административный сбор', c_mallpay='Платёжный сбор Shopee Mall', c_gox='Сбор Gratis Ongkir XTRA', c_promox='Сбор Promo XTRA', c_promoxp='Сбор Promo XTRA+', c_livex='Сбор Live/Video XTRA',
+))

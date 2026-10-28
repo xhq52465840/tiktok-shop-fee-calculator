@@ -99,7 +99,20 @@
   "Growth Xtra",
   "GXP Super",
   "Product GMV Max",
-  "LIVE GMV Max"
+  "LIVE GMV Max",
+  "Gratis Ongkir XTRA",
+  "Promo XTRA",
+  "Promo XTRA+",
+  "Live/Video XTRA",
+  "Shopee Live",
+  "Shopee Video",
+  "SPayLater XTRA",
+  "Biaya Administrasi",
+  "Non-Star",
+  "Non Star",
+  "Star/Star+",
+  "Star / Star+",
+  "Live XTRA"
  ],
  "words": [
   "BXP",
@@ -233,7 +246,9 @@
   "Amazon",
   "VN",
   "Rp",
-  "Tokopedia"
+  "Tokopedia",
+  "XTRA",
+  "Star"
  ],
  "ms_english_markers": [
   "the",

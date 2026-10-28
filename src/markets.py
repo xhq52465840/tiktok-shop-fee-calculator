@@ -22,11 +22,14 @@ for o in ET:
 def load_ru(p):
     d = load(p); return [{'g': d['groups'][x[0]], 'n': x[1], 'r': x[2]} for x in d['o']], d.get('tables', {})
 OZ, OZ_T = load_ru('ozon/ru.json'); WB, _ = load_ru('wildberries/ru.json'); YM, _ = load_ru('yandex-market/ru.json')
-TT_SG, _ = load_ru('tiktok-shop/sg.json'); TT_TH, _ = load_ru('tiktok-shop/th.json'); TT_VN, _ = load_ru('tiktok-shop/vn.json'); TT_ID, _ = load_ru('tiktok-shop/id.json')
+TT_SG, _ = load_ru('tiktok-shop/sg.json'); TT_TH, _ = load_ru('tiktok-shop/th.json'); TT_VN, _ = load_ru('tiktok-shop/vn.json'); TT_ID, _ = load_ru('tiktok-shop/id.json'); SH_ID, _ = load_ru('shopee/id.json')
 # TikTok Shop & Tokopedia ID Platform Commission Savings from 18 May 2026 (GMV Max / Growth Xtra)
 TT_ID_SAV = [('none', 'idsav_none'), ('gmo', 'idsav_gmo'), ('gx', 'idsav_gx'), ('gxgmo', 'idsav_gxgmo'), ('s3', 'idsav_s3'), ('s3gx', 'idsav_s3gx')]
 VND = dict(currency='VND', symbols={'VND': '₫'}, symbolAfter=True, locale='en-US', decimals=0, roundFees=0)
 IDR = dict(currency='IDR', symbols={'IDR': 'Rp'}, locale='en-US', decimals=0, roundFees=0)
+# Shopee ID optional programmes: Gratis Ongkir XTRA (current table, and the table from 1 Dec 2026 non-Mall / 1 Jan 2027 Mall) and Promo XTRA
+SH_ID_GOX = [('none', 'sidgox_none'), ('cur_reg', 'sidgox_cur_reg'), ('cur_spec', 'sidgox_cur_spec'), ('new_reg', 'sidgox_new_reg'), ('new_spec', 'sidgox_new_spec')]
+SH_ID_PX = [('none', 'sidpx_none'), ('px', 'sidpx_px'), ('pxp', 'sidpx_pxp')]
 # TikTok Shop VN Transaction Fee Savings from 21 Oct 2026, by the shop's L30D ads take rate
 TT_VN_TXS = [('none', 'txs_none'), ('t05', 'txs_t05'), ('t07', 'txs_t07'), ('t10', 'txs_t10'), ('t12', 'txs_t12'), ('t15', 'txs_t15')]
 # Etsy UK: Etsy bills the listing fee (US$0.20) and caps Offsite Ads (US$100/order) in US dollars.
@@ -191,6 +194,33 @@ MARKETS = {
      ('Mall Service Fee (1.8%, capped at Rp50,000 per product) — TikTok Shop & Tokopedia Seller University', 'https://seller-id.tokopedia.com/university/essay?knowledge_id=7868735055857409&lang=en'),
      ('Order Processing Fee (Rp1,250 per order; first 50 orders free for new sellers) — TikTok Shop & Tokopedia Seller University (28 Apr 2026)', 'https://seller-id.tokopedia.com/university/essay?knowledge_id=2767365667784464&lang=en'),
      ('Logistics Service Fee effective 1 May 2026 (rate table XLSX) — TikTok Shop & Tokopedia Seller University (7 Aug 2026)', 'https://seller-id.tokopedia.com/university/essay?knowledge_id=3039885401655041&lang=en')]),
+ 'shopee-id': dict(
+   platform='shopee', platformName='Shopee', market='ID', marketName='Indonesia', slug='shopee/indonesia',
+   flag='🇮🇩', **IDR, langs=['en'], catLang='id',
+   inputs=['price', 'qty', 'sellerDisc', 'cost', 'buyerShip', 'shipCost', 'affPct', 'other'],
+   defaults={'price': 89000, 'cost': 30000}, selector={'label': 'cat', 'options': SH_ID, 'src': 'shopee-id'},
+   defaultOption=gidx(SH_ID, 'Perawatan & Kecantikan', 'Perawatan Wajah'),
+   store=[('nonstar', 'nonstar'), ('star', 'star'), ('mall', 'mall')], periods=None,
+   selects=[dict(id='gox', label='sidgox_label', options=SH_ID_GOX, def_='none'), dict(id='px', label='sidpx_label', options=SH_ID_PX, def_='none')],
+   toggles=[dict(id='sidNew', vals=['', '']), dict(id='liveX', vals=['', '']), dict(id='preOrder', vals=['', ''])],
+   components=[
+     dict(id='admin', type='pct', rate='opt:{store}', zeroIf='sidNew', base='net', color=C[0]),
+     dict(id='mallpay', type='pct', rate=1.8, base='net', capPerItem=50000, whenStore='mall', color=C[1]),
+     dict(id='opf', type='fixed', rate=1250, zeroIf='sidNew', color=C[3]),
+     dict(id='gox', type='pct', rate='opt:{x:gox}', base='net', capPerItem='opt:cap_{x:gox}', whenX=['gox', ['cur_reg', 'cur_spec', 'new_reg', 'new_spec']], color=C[2]),
+     dict(id='promox', type='pct', rate=4.5, base='net', capPerItem=60000, whenX=['px', ['px']], color=C[4]),
+     dict(id='promoxp', type='pct', rate=6.5, base='net', capPerItem=80000, whenX=['px', ['pxp']], color=C[4]),
+     dict(id='livex', type='pct', rate=3, base='net', capPerItem=20000, when='liveX', adj=[{'x': 'px', 'v': 'px', 'd': -1}, {'x': 'px', 'v': 'pxp', 'd': -1}], color=C[5]),
+     dict(id='preorder', type='pct', rate=3, base='net', when='preOrder', color=C[0])],
+   compare=None,
+   sources=[
+     ('Ringkasan Jenis Biaya untuk Berjualan di Shopee (fee summary by seller type) — Shopee ID Seller Education Hub (31 Jul 2026)', 'https://seller.shopee.co.id/edu/article/3489'),
+     ('Biaya Administrasi Penjual Shopee (Non-Star, Star/Star+, Mall; no cap; new-seller waiver) — Shopee ID Seller Education Hub (31 Jul 2026)', 'https://seller.shopee.co.id/edu/article/7187'),
+     ('Rincian Biaya Penjual Shopee per Kategori Produk (admin fee by product type) — Shopee ID Seller Education Hub (31 Jul 2026)', 'https://seller.shopee.co.id/edu/article/15965'),
+     ('Ketentuan Biaya untuk Penjual Shopee Mall (1.8% payment fee, max Rp50,000 per item) — Shopee ID Seller Education Hub (23 Jul 2026)', 'https://seller.shopee.co.id/edu/article/6756'),
+     ('Rincian Persentase Gratis Ongkir XTRA by product (current table, and new table from 1 Dec 2026 non-Mall / 1 Jan 2027 Mall) — Shopee ID Seller Education Hub (14 Oct 2026)', 'https://seller.shopee.co.id/edu/article/7216'),
+     ('Program Opsional Promo XTRA — Shopee ID Seller Education Hub (20 Oct 2026)', 'https://seller.shopee.co.id/edu/article/18196'),
+     ('Ilustrasi Perhitungan Estimasi Biaya Proses Pesanan (Rp1,250 per completed order) — Shopee ID Seller Education Hub', 'https://seller.shopee.co.id/edu/article/25275')]),
  'etsy': dict(
    platform='etsy', platformName='Etsy', market='GLOBAL', marketName='All countries', slug='etsy',
    flag='🧶', currency='USD', symbols={'USD': '$', 'GBP': '£', 'EUR': '€'}, locale='en-US', langs=['en', 'zh'], currencyFromOption=True,
@@ -417,7 +447,7 @@ MARKETS = {
 }
 
 COMING = [
-  ('Shopee', 'Indonesia, Vietnam & more', '🛍️'), ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
+  ('Shopee', 'Vietnam & more', '🛍️'), ('Lazada', 'Singapore, Philippines & more', '📦'), ('Amazon', 'US, UK & more', '📦'), ('eBay', 'US & UK', '🏷️')]
 
 # ---------- Python mirror of assets/engine.js (used to compute worked examples in the guides)
 from decimal import Decimal, ROUND_HALF_UP
