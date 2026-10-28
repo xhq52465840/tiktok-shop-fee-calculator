@@ -1,0 +1,15 @@
+@@ 78339a23ab
+en: Questions: email <x1/> or see the <a1>contact page</a1>.
+ms: Soalan: e-mel <x1/> atau lihat <a1>halaman hubungi</a1>.
+ru: Вопросы: пишите на <x1/> или откройте <a1>страницу контактов</a1>.
+zh: 有疑问请发邮件至 <x1/>，或查看<a1>联系页面</a1>。
+@@ 065bcdcb9c
+en: SellerFee is a small independent project. The quickest way to reach us is email: <x1/>.
+ms: SellerFee ialah projek bebas yang kecil. Cara paling cepat untuk menghubungi kami ialah e-mel: <x1/>.
+ru: SellerFee — небольшой независимый проект. Быстрее всего связаться с нами по почте: <x1/>.
+zh: SellerFee 是一个小型独立项目。联系我们最快的方式是发邮件：<x1/>。
+@@ b3325ff2b4
+en: <b1>Partnerships, embedding and everything else</b1> — email <x1/>. We usually reply within two working days.
+ms: <b1>Kerjasama, pembenaman kalkulator dan lain-lain</b1> — e-mel <x1/>. Kami biasanya membalas dalam masa dua hari bekerja.
+ru: <b1>Сотрудничество, встраивание калькуляторов и всё остальное</b1> — пишите на <x1/>. Обычно отвечаем в течение двух рабочих дней.
+zh: <b1>合作、嵌入计算器及其他事项</b1> — 发邮件至 <x1/>。我们通常在两个工作日内回复。

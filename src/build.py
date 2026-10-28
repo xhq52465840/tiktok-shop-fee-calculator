@@ -521,7 +521,7 @@ def static_pages(lang='en'):
 <h2>Cookies</h2>
 <p>We don’t set analytics or advertising cookies. The language you pick is not stored as a tracking cookie.</p>
 <h2>Contact</h2>
-<p>Questions: use the <a href="../contact/">contact page</a> or open a GitHub issue on the project repository.</p>
+<p>Questions: email <a href="mailto:hello@sellerfee.app" translate="no">hello@sellerfee.app</a> or see the <a href="../contact/">contact page</a>.</p>
 '''),
      'terms': ('Terms of use', 'Terms of use for SellerFee calculators and guides.', f'''
 <p>Last updated 26 October 2026.</p>
@@ -540,11 +540,11 @@ def static_pages(lang='en'):
 <p>We may update these terms; the date above shows the latest version.</p>
 '''),
      'contact': ('Contact', 'Contact SellerFee about rate errors, calculator requests or the project.', f'''
-<p>SellerFee is a small independent project.</p>
+<p>SellerFee is a small independent project. The quickest way to reach us is email: <a href="mailto:hello@sellerfee.app" translate="no">hello@sellerfee.app</a>.</p>
 <ul>
 <li><b>Wrong rate on a page</b> — <a href="{issue_url("Wrong rate: ", "Page:\nWhich fee looks wrong:\nLink to the official source:")}">open a GitHub issue</a> with the page URL and the official source.</li>
 <li><b>Request a calculator</b> — <a href="{issue_url("Calculator request: ", "Platform:\nMarket:\nLink to official rates:")}">tell us the platform and the official rate page</a>.</li>
-<li><b>Everything else</b> — open an issue on <a href="https://github.com/xhq52465840/tiktok-shop-fee-calculator">the GitHub repository</a>.</li>
+<li><b>Partnerships, embedding and everything else</b> — email <a href="mailto:hello@sellerfee.app" translate="no">hello@sellerfee.app</a>. We usually reply within two working days.</li>
 </ul>
 '''),
     }
