@@ -1,0 +1,43 @@
+@@ ca226be24b
+ms: Yuran Pertumbuhan Penjual TikTok Shop Filipina: Kenaikan Yuran {0} Nov {1}, Kadar dan Contoh Sebenar
+ru: Сбор за рост продавца в TikTok Shop Филиппины: повышение сборов с {0} нояб. {1}, ставки и реальные примеры
+zh: TikTok Shop 菲律宾卖家成长费：{1}年11月{0}日费用上调、费率与实例
+@@ 2c5c40ac76
+ms: Yuran Pertumbuhan Penjual TikTok Shop PH diterangkan: kenaikan yuran {0} November {1} untuk semua penjual, {2}% atau {3}% mengikut kategori, cara ia bertindih dengan yuran pemprosesan ₱{4}, dan kosnya pada pesanan sebenar.
+ru: Разбор сбора за рост продавца в TikTok Shop PH: повышение с {0} ноября {1} для всех продавцов, {2}% или {3}% по категориям, как сбор складывается с ₱{4} за обработку заказа и сколько он стоит на реальных заказах.
+zh: 解读 TikTok Shop PH 卖家成长费：{1}年11月{0}日起对所有卖家上调，按类目 {2}% 或 {3}%，如何与 ₱{4} 订单处理费叠加，真实订单要付多少。
+@@ 8cb9c6c8b9
+ms: {0} Nov {1}
+ru: {0} нояб. {1}
+zh: {1}年11月{0}日
+@@ 2f9a11d65f
+ms: Dikenakan pada setiap pesanan untuk semua penjual; Gaya Hidup (kecuali Perkakas Besar) {0}% → {1}% (dilaporkan)
+ru: Взимается с каждого заказа у всех продавцов; лайфстайл (кроме крупной бытовой техники) {0}% → {1}% (по сообщениям)
+zh: 对所有卖家的每笔订单收取；生活方式类（大家电除外）{0}% → {1}%（据报道）
+@@ 0251d78dce
+ms: Adakah yuran TikTok Shop naik pada {0} November {1}?
+ru: Повышаются ли сборы TikTok Shop с {0} ноября {1}?
+zh: TikTok Shop {1}年11月{0}日会涨费吗？
+@@ e71311b5f7
+ms: Ya, menurut laporan AMZ{0} pada {1} Oktober {2}: mulai {3} November, Yuran Pertumbuhan Penjual dikenakan pada setiap pesanan berjaya untuk semua penjual, dan produk Gaya Hidup (kecuali Perkakas Besar) naik daripada {4}% kepada {5}%. Kalkulator sudah menggunakan kadar ini.
+ru: Да, по сообщению AMZ{0} от {1} октября {2}: с {3} ноября сбор за рост продавца взимается с каждого успешного заказа у всех продавцов, а для товаров категории «лайфстайл» (кроме крупной бытовой техники) ставка растёт с {4}% до {5}%. Калькулятор уже использует эти ставки.
+zh: 是的。据 AMZ{0} {2}年10月{1}日报道：自11月{3}日起，卖家成长费对所有卖家的每笔成功订单收取，生活方式类（大家电除外）由 {4}% 上调至 {5}%。计算器已按这些费率计算。
+@@ 44ac6ab4aa
+ms: {0} Nov {1} (dilaporkan)
+ru: {0} нояб. {1} (по сообщениям)
+zh: {1}年11月{0}日（据报道）
+@@ e6bc6dfe44
+ms: Notis Yuran Pertumbuhan Penjual: mulai {0}:{1} waktu Filipina, dikenakan pada setiap pesanan berjaya untuk semua penjual. Gaya Hidup (kecuali Perkakas Besar) pada {2}%, dilaporkan naik daripada {3}%; Elektronik, Barangan Runcit dan Perkakas Besar kekal {4}%. Kalkulator sudah menggunakan kadar ini, yang sepadan dengan gambaran keseluruhan yuran TikTok bertarikh {5} Oktober {6}.
+ru: Уведомление о сборе за рост продавца: с {0}:{1} по филиппинскому времени сбор взимается с каждого успешного заказа у всех продавцов. Лайфстайл (кроме крупной бытовой техники) — {2}%, по сообщениям, вместо {3}%; электроника, продукты и крупная бытовая техника остаются на {4}%. Калькулятор уже использует эти ставки — они совпадают с обзором сборов TikTok от {5} октября {6}.
+zh: 卖家成长费公告：菲律宾时间 {0}:{1} 起，对所有卖家的每笔成功订单收取。生活方式类（大家电除外）{2}%，据报道由 {3}% 上调；电子、杂货、大家电维持 {4}%。计算器已按这些费率计算，与 TikTok {6}年10月{5}日的费用总览一致。
+@@ 6b856b702f
+ms: Kenaikan yuran {0} November {1}
+ru: Повышение сборов с {0} ноября {1}
+zh: {1}年11月{0}日费用上调
+@@ 20aab48d33
+ms: AMZ{0} melaporkan pada {1} Oktober {2} bahawa TikTok Shop Filipina telah mengeluarkan notis pelarasan yuran: mulai {3}:{4} waktu Filipina pada {5} November {6}, Yuran Pertumbuhan Penjual dikenakan kepada semua penjual pada setiap pesanan berjaya. Menurut laporan itu, produk Gaya Hidup (kecuali Perkakas Besar) naik daripada {7}% kepada {8}%, manakala Elektronik, Barangan Runcit dan Perkakas Besar kekal {9}% dan Kecantikan &amp; Penjagaan Diri, Fesyen, Ibu &amp; Bayi serta Kesihatan kekal {10}%. Semua kadar termasuk VAT.
+ru: AMZ{0} сообщил {1} октября {2}, что TikTok Shop Филиппины опубликовал уведомление об изменении сборов: с {3}:{4} по филиппинскому времени {5} ноября {6} сбор за рост продавца взимается со всех продавцов с каждого успешного заказа. По данным издания, для товаров категории «лайфстайл» (кроме крупной бытовой техники) ставка растёт с {7}% до {8}%, электроника, продукты и крупная бытовая техника остаются на {9}%, а красота и уход, одежда, товары для мам и детей и здоровье — на {10}%. Все ставки включают НДС.
+zh: AMZ{0} 于 {2}年10月{1}日报道，TikTok Shop 菲律宾站已发布费用调整公告：自 {6}年11月{5}日 {3}:{4}（菲律宾时间）起，对所有卖家的每笔成功订单收取卖家成长费。报道称生活方式类（大家电除外）由 {7}% 上调至 {8}%，电子、杂货、大家电维持 {9}%，美妆个护、服饰、母婴、健康维持 {10}%。以上费率均含增值税。
+@@ e7fd3e5038
+ms: Kami tidak dapat membuka notis itu sendiri, jadi anggap tarikh ini sebagai dilaporkan. Kadar baharu sama dengan gambaran keseluruhan yuran rasmi TikTok bertarikh {0} Oktober {1}, dan kalkulator kami sudah menggunakannya. Jika anda menjual produk rumah, dapur, haiwan peliharaan atau gaya hidup lain, semak semula harga jualan November anda dengan tambahan {2}%.
+ru: Сам текст уведомления открыть не удалось, поэтому дату считайте сообщённой, а не подтверждённой. Новые ставки совпадают с официальным обзором сборов TikTok от {0} октября {1}, и калькулятор уже их использует. Если вы продаёте товары для дома, кухни, животных или другие товары для лайфстайла, пересчитайте цены ноябрьских распродаж с учётом дополнительных {2}%.

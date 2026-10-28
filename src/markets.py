@@ -78,7 +78,8 @@ MARKETS = {
      ('Introduction to Seller Fees — TikTok Shop PH Seller University (updated 13 Oct 2026)', 'https://seller-ph.tiktok.com/university/essay?knowledge_id=2675772847064834&lang=en'),
      ('Platform Commission Fee — TikTok Shop PH Seller University', 'https://seller-ph.tiktok.com/university/essay?knowledge_id=3157977859229442&lang=en'),
      ('[Philippines] Order Processing Fee — TikTok Shop Academy (18 Aug 2026)', 'https://seller.tiktokglobalshop.com/university/essay?knowledge_id=6361124523788048'),
-     ('Seller Growth Fee start date (27 Apr 2026) — Baijing report, secondary source', 'https://www.baijing.cn/article/55291')]),
+     ('Seller Growth Fee start date (27 Apr 2026) — Baijing report, secondary source', 'https://www.baijing.cn/article/55291'),
+     ('Seller Growth Fee change from 1 Nov 2026 — AMZ123 report (27 Oct 2026), secondary source', 'https://www.amz123.com/t/InpmAzN5')]),
  'tiktok-shop-us': dict(
    platform='tiktok-shop', platformName='TikTok Shop', market='US', marketName='United States', slug='tiktok-shop/united-states',
    flag='🇺🇸', currency='USD', symbols={'USD': '$'}, locale='en-US', langs=['en', 'zh'],

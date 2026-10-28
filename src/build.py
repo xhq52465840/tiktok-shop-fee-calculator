@@ -447,6 +447,7 @@ def rate_changes(lang='en'):
     ch, cld = crumbs(path, [('SellerFee', f'{lang}/'), (tr(lang, 'nav_rates'), None)], lang)
     rows = [
      ('30 Oct 2026', 'Ozon', 'FBO/FBS logistics tariffs', 'New cluster × volume × price-band table', 'en/ozon/'),
+     ('1 Nov 2026', 'TikTok Shop PH', 'Seller Growth Fee', 'Charged on every order for all sellers; Lifestyle (except Large Appliances) 1% → 1.5% (reported)', 'en/tiktok-shop/philippines/'),
      ('31 Oct 2026', 'TikTok Shop MY', 'Category commission', 'New commission table (side-by-side with old rates in the calculator)', 'en/tiktok-shop/malaysia/'),
      ('1 Sep 2026', 'TikTok Shop SG', 'Platform commission', 'Flat 9.81% standard / 7.085% BXP (GST-incl.), S$30 cap on electronics, toys & collectibles', 'en/tiktok-shop/singapore/'),
      ('5 Jul 2026', 'TikTok Shop TH', 'Marketplace & Mall commission', 'Most Marketplace categories 8.56% → 10.70%, most Mall 11.77% → 13.91%', 'en/tiktok-shop/thailand/'),

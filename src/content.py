@@ -12,8 +12,8 @@ GUIDES = [
       desc='What changes in TikTok Shop Malaysia commission on 31 Oct 2026: which categories go up or down, BXP vs non-BXP, worked examples in ringgit and how to reprice.',
       market='tiktok-shop-my'),
  dict(lang='en', slug='tiktok-shop-philippines-seller-growth-fee', short='Philippines Seller Growth Fee',
-      title='TikTok Shop Philippines Seller Growth Fee: Rates, Categories and Real Examples',
-      desc='The TikTok Shop PH Seller Growth Fee explained: 1% or 1.5% by category, how it stacks with the ₱5 processing fee, and what it costs on real orders.',
+      title='TikTok Shop Philippines Seller Growth Fee: 1 Nov 2026 Fee Increase, Rates and Real Examples',
+      desc='The TikTok Shop PH Seller Growth Fee explained: the 1 November 2026 fee increase for all sellers, 1% or 1.5% by category, how it stacks with the ₱5 processing fee, and what it costs on real orders.',
       market='tiktok-shop-ph'),
  dict(lang='en', slug='tiktok-shop-pricing-target-margin', short='Price for a target margin',
       title='How to Price Products on TikTok Shop to Hit a Target Margin',
@@ -182,6 +182,7 @@ def ph_page():
 <div class="tablewrap"><table><thead><tr><th>Effective</th><th>Change</th></tr></thead><tbody>
 <tr><td>27 Apr 2026 (reported)</td><td>Seller Growth Fee of 1% or 1.5% per order introduced; Bonus Cashback becomes free for eligible sellers.</td></tr>
 <tr><td>1 Sep 2026</td><td>Order Processing Fee discount ends: ₱3 → ₱5 per delivered order. Exemptions for new sellers and the first 50 orders a month remain.</td></tr>
+<tr><td>1 Nov 2026 (reported)</td><td>Seller Growth Fee notice: from 00:00 Philippine time, charged on every successful order for all sellers. Lifestyle (except Large Appliances) at 1.5%, reported as up from 1%; Electronics, Grocery and Large Appliances stay at 1%. The calculator already uses these rates, which match TikTok's fee overview of 13 October 2026.</td></tr>
 <tr><td>Unchanged</td><td>Commission (15 January 2025 table), 2.24% transaction fee, 5.5%/5% Shipping Service Fee capped at ₱100 per item.</td></tr>
 </tbody></table></div>
 
@@ -205,6 +206,7 @@ def ph_page():
      ("Is the order processing fee ₱3 or ₱5?", "₱5 since 00:00 on 1 September 2026. It was ₱3 from 1 December 2025 to 31 August 2026."),
      ("Who doesn't pay the ₱5 fee?", "New sellers whose first product was listed within the last 90 days are exempt for the following month. Existing sellers' first 50 orders each month are exempt."),
      ("What is the Seller Growth Fee?", "A 1% (Electronics, Grocery, Large Appliances) or 1.5% (Beauty & Personal Care, Fashion, Mom & Baby, Health, Lifestyle) fee per successful order that funds platform growth incentives, including free Bonus Cashback for eligible sellers."),
+     ("Is there a TikTok Shop fee increase on 1 November 2026?", "Yes, as reported by AMZ123 on 27 October 2026: from 1 November the Seller Growth Fee is charged on every successful order for all sellers, and Lifestyle products (except Large Appliances) go from 1% to 1.5%. The calculator already uses these rates."),
      ("Do new sellers pay commission?", "No. New sellers get 0% commission for 90 days. The other fees still apply."),
      ("Are these fees VAT inclusive?", "Yes. TikTok publishes all Philippine seller fee rates inclusive of VAT."),
     ]
@@ -398,6 +400,9 @@ def g_ph():
 <p>TikTok's list uses broad groups rather than its commission sub-categories. Two commission categories aren't clearly covered: Kids' Fashion and Pet Supplies. Our <a href="../../tiktok-shop/philippines/">Philippines calculator</a> assumes 1.5% for both and lets you edit the rate.</p>
 <h2 id="when">When did it start?</h2>
 <p>Seller news reports put the start at 27 April 2026, when TikTok expanded Bonus Cashback to all eligible sellers and cut its service fee from 2% to 0%. We couldn't read an official page that states the date, so treat it as reported rather than confirmed. TikTok's current fee overview, updated 13 October 2026, lists the growth fee as a standard seller fee.</p>
+<h2 id="nov-2026">The 1 November 2026 fee increase</h2>
+<p>AMZ123 reported on 27 October 2026 that TikTok Shop Philippines has issued a fee adjustment notice: from 00:00 Philippine time on 1 November 2026, the Seller Growth Fee is charged to all sellers on every successful order. The report says Lifestyle products (except Large Appliances) go from 1% to 1.5%, while Electronics, Grocery and Large Appliances stay at 1% and Beauty &amp; Personal Care, Fashion, Mom &amp; Baby and Health stay at 1.5%. All rates include VAT.</p>
+<p>We could not open the notice itself, so treat the date as reported. The new rates are the same as the ones in TikTok's official fee overview of 13 October 2026, and our calculator already uses them. If you sell home, kitchen, pet or other lifestyle products, re-check your November sale prices with the extra 0.5%.</p>
 <p>Bonus Cashback benefits only apply to eligible sellers: TikTok's overview says a Seller Shop Experience Score of at least 2.8 or fewer than 36 violation points. The growth fee itself is charged to all sellers.</p>
 <h2 id="stack">How it stacks with the other fees</h2>
 <p>The growth fee comes on top of commission (5%–7.3% Marketplace), the 2.24% transaction fee, the 5.5% Shipping Service Fee (5% Mall, capped at ₱100 per item) and the ₱5 Order Processing Fee, which rose from ₱3 on 1 September 2026. The table compares total fees per order now with January–April 2026 (₱3 processing fee, no growth fee), for Marketplace sellers with no discount and no buyer-paid shipping:</p>

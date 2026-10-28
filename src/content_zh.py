@@ -116,6 +116,7 @@ def ph_zh():
 <div class="tablewrap"><table><thead><tr><th>生效</th><th>变化</th></tr></thead><tbody>
 <tr><td>约 2026年4月27日</td><td>引入 1%/1.5% 卖家成长费；符合条件卖家 Bonus Cashback 免费。</td></tr>
 <tr><td>2026年9月1日</td><td>订单处理费优惠结束：₱3 → ₱5。</td></tr>
+<tr><td>2026年11月1日（据报道）</td><td>卖家成长费公告：菲律宾时间 0 点起对所有卖家的每笔成功订单收取；生活方式类（大家电除外）1.5%，据报道由 1% 上调；电子、杂货、大家电维持 1%。计算器已按此费率计算，与 TikTok 2026年10月13日官方费用总览一致。</td></tr>
 <tr><td>未变</td><td>佣金（2025年1月15日表）、交易手续费 2.24%、物流服务费 5.5%/5% 封顶 ₱100。</td></tr>
 </tbody></table></div>
 '''
@@ -464,6 +465,9 @@ def g_ph_zh():
 <p>菲律宾站的卖家成长费按成功订单收取：电子、杂货、大家电 <b>1%</b>；美妆、服饰、母婴、健康与生活方式等 <b>1.5%</b>。它与 ₱5 订单处理费、2.24% 交易手续费、物流服务费叠加。</p>
 <p>以 ₱499 女装为例（Marketplace），成长费约 1.5%，本计算器费用合计 {PHP(top['total'])}，利润 {PHP(top['profit'])}。</p>
 <p>打开 <a href="../../tiktok-shop/philippines/">菲律宾费用计算器</a>，切换类目即可看到成长费列。</p>
+<h2 id="nov-2026">2026年11月1日费用上调</h2>
+<p>据 AMZ123 2026年10月27日报道，TikTok Shop 菲律宾站发布费用调整公告：自 2026年11月1日 00:00（菲律宾时间）起，对所有卖家的每笔成功订单收取卖家成长费。报道称生活方式类（大家电除外）由 1% 上调至 1.5%；电子、杂货、大家电维持 1%；美妆个护、服饰、母婴、健康维持 1.5%。以上费率均含增值税。</p>
+<p>我们没能打开公告原文，因此生效日期按“据报道”处理。新费率与 TikTok 2026年10月13日官方费用总览一致，计算器已按此计算。家居、厨具、宠物等生活方式类卖家，请在 11.11 前按多出的 0.5% 重新核算价格。</p>
 <h2 id="tips">注意</h2>
 <ul>
 <li>部分类目未出现在官方成长费名单时，我们按 1.5% 估算并注明——请以结算单为准。</li>
@@ -489,8 +493,8 @@ GUIDES_ZH = [
       market='tiktok-shop-my', cov='cov-ink', fig='10月31日', body=g_my_zh,
       sources=MARKETS['tiktok-shop-my']['sources']),
  dict(lang='zh', slug='tiktok-shop-philippines-seller-growth-fee', short='菲律宾卖家成长费',
-      title='TikTok Shop 菲律宾卖家成长费：费率、类目与实例',
-      desc='PH 卖家成长费 1% / 1.5% 怎么收，如何与 ₱5 处理费叠加，真实订单成本多少。',
+      title='TikTok Shop 菲律宾卖家成长费：2026年11月1日费用上调、费率与实例',
+      desc='PH 卖家成长费 11月1日起对所有卖家收取：1% / 1.5% 怎么收，如何与 ₱5 处理费叠加，真实订单成本多少。',
       market='tiktok-shop-ph', cov='cov-amber', fig='1–1.5%', body=g_ph_zh,
       sources=MARKETS['tiktok-shop-ph']['sources']),
  dict(lang='zh', slug='tiktok-shop-pricing-target-margin', short='按目标利润率定价',
