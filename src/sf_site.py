@@ -163,9 +163,9 @@ def page(path, lang, title, desc, body, schema=None, alt=None, og_type='website'
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{url}">{alts}
-<meta property="og:site_name" content="SellerFee"><meta property="og:type" content="{og_type}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}assets/og.png"><meta property="og:locale" content="{LANGS[lang]['og']}">
-<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0B1220">
-<link rel="icon" href="{r}assets/favicon.svg" type="image/svg+xml">
+<meta property="og:site_name" content="SellerFee"><meta property="og:type" content="{og_type}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:locale" content="{LANGS[lang]['og']}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE}assets/og.png"><meta name="theme-color" content="#0B1220">
+<link rel="icon" href="{r}assets/favicon.svg" type="image/svg+xml"><link rel="icon" href="{r}assets/favicon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">
 <link rel="stylesheet" href="{r}assets/style.css">
 {ld}
 </head>
