@@ -5,6 +5,7 @@ from markets import MARKETS, VERIFIED, compute
 from site_helpers import money, pct, ex_table
 from i18n import S, tr, LANGS
 import l10n
+from ads_config import ADSENSE_CLIENT, ADSENSE_SLOT_INARTICLE, ADSENSE_SLOT_DISPLAY, ADSENSE_AUTO_ADS, ads_enabled, active_affiliates
 GUIDES_ALL = []   # filled by build.py: every guide in every language (native or localised)
 LORDER = ['en', 'zh', 'ru', 'ms']
 BASE = os.environ.get('SITE_BASE', 'https://sellerfee.app/')
@@ -156,6 +157,8 @@ def page(path, lang, title, desc, body, schema=None, alt=None, og_type='website'
     ld = ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (schema or []))
     r = rel(path)
     PAGES.append((path, alt))
+    ads_h = ads_head()
+    ads_boot = ads_boot_script()
     return f'''<!doctype html>
 <html lang="{LANGS[lang]['html']}">
 <head>
@@ -168,14 +171,14 @@ def page(path, lang, title, desc, body, schema=None, alt=None, og_type='website'
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE}assets/og.png"><meta name="theme-color" content="#0B1220">
 <link rel="icon" href="{r}assets/favicon.svg" type="image/svg+xml"><link rel="icon" href="{r}assets/favicon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">
 <link rel="stylesheet" href="{r}assets/style.css">
-{ld}
+{ads_h}{ld}
 </head>
 <body>
 <a class="skip" href="#main">{esc(tr(lang, 'skip'))}</a>
 {topbar(lang, path) if topbar_on else ''}{header(lang, path, alt)}<main id="main">
 {body}
 </main>
-{footer(lang, path, alt)}<script src="{r}assets/site.js" defer></script>{scripts}</body>
+{footer(lang, path, alt)}<script src="{r}assets/site.js" defer></script>{ads_boot}{scripts}</body>
 </html>
 '''
 
@@ -203,7 +206,73 @@ def sources_block(src, lang='en', path=''):
     return (f'<h2 id="sources">{esc(tr(lang, "sources"))}</h2><p class="muted small">{esc(tr(lang, "verified"))}: <time datetime="{VERIFIED}">{VFULL[lang]}</time></p><ol class="srcs">{items}</ol>'
             f'<p class="report">{ic("alert", 14)}<span>{esc(tr(lang, "report_rate"))} <a href="{rep}" rel="noopener">{esc(tr(lang, "report_link"))}</a> {esc(tr(lang, "report_tail"))}</span></p>')
 
-AD = lambda slot: f'<div class="ad-slot" data-ad-slot="{slot}" hidden></div>'
+def AD(slot, kind='inarticle'):
+    """AdSense placeholder. Hidden until ADSENSE_CLIENT is set at build time.
+    kind: 'inarticle' (between calculator and guide) or 'display' (guide/bottom)."""
+    unit = ADSENSE_SLOT_INARTICLE if kind == 'inarticle' else ADSENSE_SLOT_DISPLAY
+    if not ads_enabled():
+        return f'<div class="ad-slot ad-slot--off" data-ad-slot="{esc(slot)}" data-ad-kind="{esc(kind)}" hidden aria-hidden="true"></div>'
+    # Live shell: Auto ads can fill even without a unit id; with a unit id we render <ins>.
+    if unit:
+        return (
+            f'<div class="ad-slot ad-slot--on" data-ad-slot="{esc(slot)}" data-ad-kind="{esc(kind)}">'
+            f'<ins class="adsbygoogle" style="display:block" data-ad-client="{esc(ADSENSE_CLIENT)}" '
+            f'data-ad-slot="{esc(unit)}" data-ad-format="auto" data-full-width-responsive="true"></ins>'
+            f'</div>'
+        )
+    return f'<div class="ad-slot ad-slot--auto" data-ad-slot="{esc(slot)}" data-ad-kind="{esc(kind)}" aria-hidden="true"></div>'
+
+
+def affiliate_rail(lang='en'):
+    """Compact 'seller tools' card. Renders only when at least one affiliate URL is configured."""
+    items = active_affiliates()
+    if not items:
+        return ''
+    disc = {
+        'en': 'We may earn a commission if you buy through these links. Calculator results are never affected.',
+        'zh': '通过以下链接购买，我们可能获得佣金；计算器结果不会因此改变。',
+        'ru': 'Мы можем получить комиссию по этим ссылкам. Результаты калькулятора не меняются.',
+        'ms': 'Kami mungkin menerima komisen melalui pautan ini. Keputusan kalkulator tidak terjejas.',
+    }[lang]
+    title = {
+        'en': 'Seller tools',
+        'zh': '卖家工具推荐',
+        'ru': 'Инструменты продавца',
+        'ms': 'Alat penjual',
+    }[lang]
+    lis = ''.join(
+        f'<li><a href="{esc(a["url"])}" rel="sponsored noopener" target="_blank"><b>{esc(a["name"])}</b>'
+        f'<small>{esc(a["blurb"].get(lang) or a["blurb"]["en"])}</small></a></li>'
+        for a in items
+    )
+    return (
+        f'<div class="card railcard affcard">'
+        f'<div class="t">{esc(title)}</div><ul>{lis}</ul>'
+        f'<p class="aff-disc">{esc(disc)}</p></div>'
+    )
+
+
+def ads_head():
+    """Script tags for <head> when AdSense is enabled. Empty string when off."""
+    if not ads_enabled():
+        return ''
+    # client script; Auto ads are toggled in the AdSense UI. pagead loads once per page.
+    return (
+        f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={esc(ADSENSE_CLIENT)}" '
+        f'crossorigin="anonymous"></script>\n'
+        f'<meta name="google-adsense-account" content="{esc(ADSENSE_CLIENT)}">'
+    )
+
+
+def ads_boot_script():
+    """Push adsbygoogle for each manual <ins> on the page."""
+    if not ads_enabled():
+        return ''
+    return (
+        '<script src="/assets/ads.js" defer></script>'
+        if (ADSENSE_SLOT_INARTICLE or ADSENSE_SLOT_DISPLAY)
+        else ''
+    )
 
 def badge(text, kind='soon', icon=None):
     return f'<span class="badge b-{kind}">{ic(icon, 13) if icon else ""}{text}</span>'

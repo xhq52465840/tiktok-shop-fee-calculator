@@ -4,7 +4,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 from markets import MARKETS, COMING, VERIFIED, compute
 from sf_site import (page, crumbs, faq_block, sources_block, widget, AD, esc, BASE, PAGES,
                      VERIFIED_H, VFULL, VDATE, LOGO, ic, ptile, calc_name, calc_links, badge,
-                     issue_url, rel as rel_, rootify, MARK)
+                     issue_url, rel as rel_, rootify, MARK, affiliate_rail)
+from ads_config import ads_enabled, ADSENSE_CLIENT
 from site_helpers import money, pct
 from i18n import tr, LANGS
 import content as C
@@ -48,9 +49,9 @@ def toc_html(toc, lang='en'):
     return (f'<aside class="toc" aria-label="{esc(tr(lang, "on_this_page"))}"><b>' + esc(tr(lang, 'on_this_page')) + '</b><div class="lst">'
             + ''.join(f'<a href="#{i}">{esc(t)}</a>' for i, t in toc) + '</div></aside>')
 
-def rail_calcs(path, lang, mid=None):
+def rail_calcs(path, lang, mid=None, extra=''):
     items = ''.join(f'<li><a href="{rel_(path)}{u}">{ptile(p, 22)}{esc(n)}</a></li>' for u, n, p, f, k in calc_links(lang) if k != mid)
-    return f'<aside class="rail"><div class="card railcard"><div class="t">{esc(tr(lang, "more_calcs"))}</div><ul>{items}</ul></div></aside>'
+    return f'<aside class="rail"><div class="card railcard"><div class="t">{esc(tr(lang, "more_calcs"))}</div><ul>{items}</ul></div>{extra}</aside>'
 
 def gcard(path, g, lang):
     cov = g.get('cov', 'cov-ink'); fig = g.get('fig', '')
@@ -101,11 +102,11 @@ def calc_page(mid, lang):
     guides_h = ''
     if rel_g:
         guides_h = f'<section class="blk"><div class="wrap"><div class="sh"><h2 class="h2">{esc(tr(lang,"related"))}</h2></div><div class="cards">{"".join(gcard(path,g,lang) for g in rel_g)}</div></div></section>'
-    body = f'''{head}<div class="wrap">{widget(mid, lang)}{EMB.cta_link(mid, lang)}</div>
-{AD(mid + '-1')}
+    body = f'''{head}<div class="wrap">{widget(mid, lang)}{EMB.cta_link(mid, lang)}
+<div class="wrap-ad">{AD(mid + "-top", "display")}</div></div>
 <section class="blk"><div class="wrap"><div class="contentgrid">{toc_html(d["toc"], lang)}
-<article class="prose">{body_html}{fh}{sources_block(m["sources"], lang, path)}</article>
-{rail_calcs(path, lang, mid)}</div></div></section>
+<article class="prose">{body_html}{AD(mid + "-mid", "inarticle")}{fh}{sources_block(m["sources"], lang, path)}</article>
+{rail_calcs(path, lang, mid, affiliate_rail(lang))}</div></div></section>
 {guides_h}'''
     app = {"@context": "https://schema.org", "@type": "WebApplication", "name": d['h1'], "url": BASE + path,
            "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "inLanguage": LANGS[lang]['html'],
@@ -135,14 +136,21 @@ def guide_page(g):
 <span>{ic("cal",14)}<time datetime="{VERIFIED}">{VFULL[lang]}</time></span>
 <span>{ic("clock",14)}{max(3, round(words/220))} {esc(tr(lang,"min_read"))}</span>
 <span class="act"><button type="button" class="btn btn-secondary btn-sm" data-copy-link="{esc(tr(lang,"link_copied"))}">{ic("link",14)}{esc(tr(lang,"share_calc"))}</button></span></div>'''
-    rail = f'<aside class="rail"><div class="card railcard"><div class="t">{esc(tr(lang,"open_calc"))}</div><ul>' + ''.join(
-        f'<li><a href="{rel_(path)}{u}">{esc(t)} {ic("arrow",13)}</a></li>' for u, t, _ in calcs) + '</ul></div></aside>' if calcs else ''
+    aff = affiliate_rail(lang)
+    if calcs:
+        rail = (f'<aside class="rail"><div class="card railcard"><div class="t">{esc(tr(lang,"open_calc"))}</div><ul>'
+                + ''.join(f'<li><a href="{rel_(path)}{u}">{esc(t)} {ic("arrow",13)}</a></li>' for u, t, _ in calcs)
+                + f'</ul></div>{aff}</aside>')
+    elif aff:
+        rail = f'<aside class="rail">{aff}</aside>'
+    else:
+        rail = ''
     body = f'''<div class="ahead"><div class="wrap">{ch}
 <span class="badge b-brand">{esc(tr(lang,"guide"))}</span>
 <h1 class="h-display">{esc(g["title"])}</h1>
 <p class="lead">{esc(g["desc"])}</p>{byline}</div></div>
 <div class="wrap alayout"><div class="contentgrid">{toc_html(toc, lang)}
-<article class="prose">{body_html}{sources_block(src, lang, path)}</article>{rail}</div>
+<article class="prose">{body_html}{AD(g["slug"] + "-mid", "inarticle")}{sources_block(src, lang, path)}</article>{rail}</div>
 {('<section class="blk"><div class="sh"><h2 class="h2">' + esc(tr(lang,"related")) + '</h2></div><div class="cards">' + ''.join(gcard(path,x,lang) for x in more) + '</div></section>') if more else ''}
 </div>'''
     art = {"@context": "https://schema.org", "@type": "Article", "headline": g['title'], "description": g['desc'],
@@ -508,18 +516,23 @@ def static_pages(lang='en'):
 <h2>How the calculators work</h2>
 <p>The calculators run entirely in your browser. Nothing you type is sent to us. Results are estimates based on published rates; your account may have waivers, program fees or promotions that change the numbers, so your seller cabinet is always the final word.</p>
 <h2>Independence</h2>
-<p>SellerFee is not affiliated with TikTok, Shopee, Lazada, Walmart, Etsy, Ozon, Wildberries, Yandex or any other marketplace. We don’t take listing fees or referral kickbacks for calculator results.</p>
+<p>SellerFee is not affiliated with TikTok, Shopee, Lazada, Walmart, Etsy, Ozon, Wildberries, Yandex or any other marketplace. Marketplace fee estimates are never paid placements: we don’t take listing fees or kickbacks that change calculator results. Separately, we may earn a commission from disclosed affiliate links to third-party seller tools; those links never alter the maths.</p>
 <p>Found a wrong rate? <a href="{issue_url("Wrong rate: ", "Page:\nWhich fee:\nOfficial source:")}">Open a GitHub issue</a> with the page and the official source.</p>
 '''
     P = {
      'about': ('About SellerFee', 'About SellerFee: who we are, how we verify marketplace fee rates and how the calculators work.', about),
-     'privacy': ('Privacy', 'SellerFee privacy notice: calculators run in your browser; we don’t collect the numbers you type.', f'''
-<p>Last updated 26 October 2026.</p>
-<p>SellerFee calculators run entirely in your browser. The prices, costs and rates you enter are not sent to our servers. We don’t run an account system and we don’t sell personal data.</p>
+     'privacy': ('Privacy', 'SellerFee privacy notice: calculators run in your browser; ads and affiliate links explained.', f'''
+<p>Last updated 4 November 2026.</p>
+<p>SellerFee calculators run entirely in your browser. The prices, costs and rates you enter are not sent to our servers. We don’t run an account system and we don’t sell the numbers you type.</p>
 <h2>Logs and hosting</h2>
 <p>Like most static sites, our host may keep standard access logs (IP address, URL, user agent). We use them only to keep the site reliable.</p>
+<h2>Advertising</h2>
+<p>We use Google AdSense to show ads on some pages. Google and its partners may use cookies or similar technologies to serve and measure ads, including personalised ads where allowed by your region and settings. You can learn more and manage ad personalisation in <a href="https://adssettings.google.com/" rel="noopener" target="_blank">Google Ads Settings</a> and read Google’s partner practices at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">How Google uses data when you use our partners’ sites</a>.</p>
+<p>Ad code is only loaded after our AdSense account is approved and enabled on this site. Until then, empty ad placeholders stay hidden and set no cookies.</p>
+<h2>Affiliate links</h2>
+<p>Some pages may recommend third-party seller tools (for example product-research software). If you buy through those links we may earn a commission. Affiliate links never change calculator maths or fee estimates. Sponsored links are marked with <code>rel="sponsored"</code>.</p>
 <h2>Cookies</h2>
-<p>We don’t set analytics or advertising cookies. The language you pick is not stored as a tracking cookie.</p>
+<p>We do not set our own analytics cookies. The language you pick is not stored as a tracking cookie. When ads are enabled, Google AdSense and its partners may set advertising cookies as described above. Essential hosting cookies, if any, are limited to keeping the site working.</p>
 <h2>Contact</h2>
 <p>Questions: email <a href="mailto:hello@sellerfee.app" translate="no">hello@sellerfee.app</a> or see the <a href="../contact/">contact page</a>.</p>
 '''),
@@ -602,6 +615,20 @@ def plumbing():
 <body><main class="wrap narrow spage">{blocks}</main>
 <script>(function(){{var m=location.pathname.match(/^\\/(zh|ru|ms)\\//);if(!m)return;var t={json.dumps({l: NF[l][0] + ' | SellerFee' for l in ALL}, ensure_ascii=False)};document.querySelectorAll('.nf').forEach(function(e){{e.hidden=e.getAttribute('data-l')!==m[1]}});document.documentElement.lang=document.querySelector('.nf[data-l='+m[1]+']').getAttribute('lang');document.title=t[m[1]]}})()</script></body></html>''')
     open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n')
+    # ads.txt: authorised sellers for ad inventory. Until AdSense approves, keep a commented stub
+    # so crawlers don't see a fake publisher id. After approval, set ADSENSE_CLIENT and rebuild.
+    if ads_enabled():
+        pub = ADSENSE_CLIENT.replace('ca-', '', 1) if ADSENSE_CLIENT.startswith('ca-') else ADSENSE_CLIENT
+        ads_txt = f'google.com, {pub}, DIRECT, f08c47fec0942fa0\n'
+    else:
+        ads_txt = (
+            '# SellerFee ads.txt — replace after Google AdSense approval.\n'
+            '# 1. Sign up at https://www.google.com/adsense/ and add sellerfee.app\n'
+            '# 2. Copy your publisher id (pub-xxxxxxxxxxxxxxxx) from Account → Settings.\n'
+            '# 3. Set ADSENSE_CLIENT=ca-pub-xxxxxxxxxxxxxxxx and rebuild, or paste the line below:\n'
+            '# google.com, pub-xxxxxxxxxxxxxxxx, DIRECT, f08c47fec0942fa0\n'
+        )
+    open(os.path.join(ROOT, 'ads.txt'), 'w').write(ads_txt)
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for path, alt in PAGES:

@@ -1,0 +1,5 @@
+# SellerFee ads.txt — replace after Google AdSense approval.
+# 1. Sign up at https://www.google.com/adsense/ and add sellerfee.app
+# 2. Copy your publisher id (pub-xxxxxxxxxxxxxxxx) from Account → Settings.
+# 3. Set ADSENSE_CLIENT=ca-pub-xxxxxxxxxxxxxxxx and rebuild, or paste the line below:
+# google.com, pub-xxxxxxxxxxxxxxxx, DIRECT, f08c47fec0942fa0
