@@ -604,13 +604,14 @@ def plumbing():
 <link rel="canonical" href="{BASE}en/">
 <link rel="alternate" hreflang="en" href="{BASE}en/"><link rel="alternate" hreflang="ms" href="{BASE}ms/"><link rel="alternate" hreflang="ru" href="{BASE}ru/"><link rel="alternate" hreflang="zh-CN" href="{BASE}zh/"><link rel="alternate" hreflang="x-default" href="{BASE}en/">
 <meta http-equiv="refresh" content="0; url=/en/"><meta name="robots" content="noindex,follow">
+{sf_site.ads_head()}
 <script>(function(){{var l=(navigator.language||'').toLowerCase();location.replace(l.indexOf('zh')===0?'/zh/':l.indexOf('ru')===0?'/ru/':l.indexOf('ms')===0?'/ms/':'/en/')}})()</script></head>
 <body><a href="/en/">SellerFee</a> · <a href="/zh/">中文</a> · <a href="/ru/">Русский</a> · <a href="/ms/">Bahasa Melayu</a></body></html>''')
     for old, new in [('malaysia/', 'en/tiktok-shop/malaysia/'), ('philippines/', 'en/tiktok-shop/philippines/')]:
         w(old, f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{BASE}{new}"><meta http-equiv="refresh" content="0; url=../{new}"><meta name="robots" content="noindex"></head><body><a href="../{new}">This page has moved.</a></body></html>')
     # GitHub Pages serves this one file for every missing URL: show the message in the language of the URL prefix
     blocks = ''.join(f'<div class="nf" data-l="{l}" lang="{LANGS[l]["html"]}"{"" if l == "en" else " hidden"}><h1>{esc(NF[l][0])}</h1><p>{esc(NF[l][1])}</p><p><a class="btn btn-primary" href="/{l}/">{esc(NF[l][2])}</a></p></div>' for l in ALL)
-    open(os.path.join(ROOT, '404.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | SellerFee</title><meta name="robots" content="noindex">
+    open(os.path.join(ROOT, '404.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | SellerFee</title><meta name="robots" content="noindex">{sf_site.ads_head()}
 <link rel="stylesheet" href="/assets/style.css"></head>
 <body><main class="wrap narrow spage">{blocks}</main>
 <script>(function(){{var m=location.pathname.match(/^\\/(zh|ru|ms)\\//);if(!m)return;var t={json.dumps({l: NF[l][0] + ' | SellerFee' for l in ALL}, ensure_ascii=False)};document.querySelectorAll('.nf').forEach(function(e){{e.hidden=e.getAttribute('data-l')!==m[1]}});document.documentElement.lang=document.querySelector('.nf[data-l='+m[1]+']').getAttribute('lang');document.title=t[m[1]]}})()</script></body></html>''')

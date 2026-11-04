@@ -11,7 +11,7 @@ Enable at build time either by editing the defaults below, or with env vars:
 import os
 
 # AdSense publisher client id, e.g. "ca-pub-1234567890123456". Empty = ads off.
-ADSENSE_CLIENT = os.environ.get('ADSENSE_CLIENT', '').strip()
+ADSENSE_CLIENT = os.environ.get('ADSENSE_CLIENT', 'ca-pub-1054587702374293').strip()
 
 # Optional unit slot IDs from AdSense → Ads → By ad unit (digits only).
 # Leave empty to rely on Auto ads only (still needs ADSENSE_CLIENT + Auto ads enabled).
