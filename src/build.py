@@ -599,14 +599,48 @@ def all_guides():
                                 sources=g.get('sources') or C.GUIDE_SOURCES.get(g['slug'], [])))
     return out
 
+LLMS_PLATFORMS = [('tiktok-shop', 'TikTok Shop'), ('shopee', 'Shopee'), ('lazada', 'Lazada'), ('walmart', 'Walmart Marketplace'),
+                  ('etsy', 'Etsy'), ('ozon', 'Ozon'), ('wildberries', 'Wildberries'), ('yandex-market', 'Yandex Market')]
+
+def write_llms_txt():
+    """/llms.txt: plain-text map of the site for AI assistants (llmstxt.org convention)."""
+    en = os.path.join(ROOT, 'en')
+    nice = lambda slug: {'uk': 'United Kingdom'}.get(slug, slug.replace('-', ' ').title())
+    L = ['# SellerFee', '',
+         '> Free, no-signup fee and profit calculators for cross-border marketplace sellers: TikTok Shop, Shopee, Lazada, '
+         'Walmart, Etsy, Ozon, Wildberries and Yandex Market, across the US, UK, Southeast Asia and Russia. '
+         'Rates come from each marketplace\'s official fee pages, with the verification date and source shown on every calculator.',
+         '', 'Available in English, Chinese (简体中文), Russian and Malay. Contact: hello@sellerfee.app', '',
+         '## Calculators', '']
+    for slug, name in LLMS_PLATFORMS:
+        d = os.path.join(en, slug)
+        if not os.path.isdir(d): continue
+        if os.path.exists(os.path.join(d, 'index.html')):
+            L.append(f'- [{name} fee calculator]({BASE}en/{slug}/): {name} commission, payment and service fees and net profit per order')
+        for c in sorted(x for x in os.listdir(d) if os.path.isdir(os.path.join(d, x))):
+            L.append(f'- [{name} {nice(c)}]({BASE}en/{slug}/{c}/): {name} {nice(c)} seller fees and profit, official local rates')
+    L += ['', '## Guides', '', f'- [All guides]({BASE}en/guides/): dated explanations of marketplace fee changes']
+    gd = os.path.join(en, 'guides')
+    if os.path.isdir(gd):
+        for g in sorted(x for x in os.listdir(gd) if os.path.isdir(os.path.join(gd, x))):
+            L.append(f'- [{g.replace("-", " ").capitalize()}]({BASE}en/guides/{g}/)')
+    L += ['', '## Languages', '', f'- [English]({BASE}en/): home page, all calculators', f'- [简体中文]({BASE}zh/): Chinese version',
+          f'- [Русский]({BASE}ru/): Russian version', f'- [Bahasa Melayu]({BASE}ms/): Malay version',
+          '', '## Optional', '', f'- [Rate changes]({BASE}en/rate-changes/): log of fee updates by marketplace',
+          f'- [Russia marketplaces]({BASE}en/russia/): Ozon, Wildberries and Yandex Market overview',
+          f'- [Embed a calculator]({BASE}en/embed/): free widget for blogs and seller communities',
+          f'- [About]({BASE}en/about/): methodology and sources', f'- [Sitemap]({BASE}sitemap.xml)', '']
+    open(os.path.join(ROOT, 'llms.txt'), 'w').write('\n'.join(L))
+
 def plumbing():
-    open(os.path.join(ROOT, 'index.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SellerFee</title>
+    open(os.path.join(ROOT, 'index.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SellerFee: Fee &amp; Profit Calculators for Online Sellers</title>
 <link rel="canonical" href="{BASE}en/">
 <link rel="alternate" hreflang="en" href="{BASE}en/"><link rel="alternate" hreflang="ms" href="{BASE}ms/"><link rel="alternate" hreflang="ru" href="{BASE}ru/"><link rel="alternate" hreflang="zh-CN" href="{BASE}zh/"><link rel="alternate" hreflang="x-default" href="{BASE}en/">
 <meta http-equiv="refresh" content="0; url=/en/"><meta name="robots" content="noindex,follow">
 {sf_site.ads_head()}
 <script>(function(){{var l=(navigator.language||'').toLowerCase();location.replace(l.indexOf('zh')===0?'/zh/':l.indexOf('ru')===0?'/ru/':l.indexOf('ms')===0?'/ms/':'/en/')}})()</script></head>
-<body><a href="/en/">SellerFee</a> · <a href="/zh/">中文</a> · <a href="/ru/">Русский</a> · <a href="/ms/">Bahasa Melayu</a></body></html>''')
+<body><p>Redirecting to <a href="/en/">SellerFee (English)</a>…</p><p><a href="/en/">English</a> · <a href="/zh/">中文</a> · <a href="/ru/">Русский</a> · <a href="/ms/">Bahasa Melayu</a></p></body></html>''')
+    write_llms_txt()
     for old, new in [('malaysia/', 'en/tiktok-shop/malaysia/'), ('philippines/', 'en/tiktok-shop/philippines/')]:
         w(old, f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{BASE}{new}"><meta http-equiv="refresh" content="0; url=../{new}"><meta name="robots" content="noindex"></head><body><a href="../{new}">This page has moved.</a></body></html>')
     # GitHub Pages serves this one file for every missing URL: show the message in the language of the URL prefix

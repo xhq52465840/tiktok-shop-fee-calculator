@@ -1,0 +1,68 @@
+# SellerFee
+
+> Free, no-signup fee and profit calculators for cross-border marketplace sellers: TikTok Shop, Shopee, Lazada, Walmart, Etsy, Ozon, Wildberries and Yandex Market, across the US, UK, Southeast Asia and Russia. Rates come from each marketplace's official fee pages, with the verification date and source shown on every calculator.
+
+Available in English, Chinese (简体中文), Russian and Malay. Contact: hello@sellerfee.app
+
+## Calculators
+
+- [TikTok Shop fee calculator](https://sellerfee.app/en/tiktok-shop/): TikTok Shop commission, payment and service fees and net profit per order
+- [TikTok Shop Indonesia](https://sellerfee.app/en/tiktok-shop/indonesia/): TikTok Shop Indonesia seller fees and profit, official local rates
+- [TikTok Shop Malaysia](https://sellerfee.app/en/tiktok-shop/malaysia/): TikTok Shop Malaysia seller fees and profit, official local rates
+- [TikTok Shop Philippines](https://sellerfee.app/en/tiktok-shop/philippines/): TikTok Shop Philippines seller fees and profit, official local rates
+- [TikTok Shop Singapore](https://sellerfee.app/en/tiktok-shop/singapore/): TikTok Shop Singapore seller fees and profit, official local rates
+- [TikTok Shop Thailand](https://sellerfee.app/en/tiktok-shop/thailand/): TikTok Shop Thailand seller fees and profit, official local rates
+- [TikTok Shop United Kingdom](https://sellerfee.app/en/tiktok-shop/united-kingdom/): TikTok Shop United Kingdom seller fees and profit, official local rates
+- [TikTok Shop United States](https://sellerfee.app/en/tiktok-shop/united-states/): TikTok Shop United States seller fees and profit, official local rates
+- [TikTok Shop Vietnam](https://sellerfee.app/en/tiktok-shop/vietnam/): TikTok Shop Vietnam seller fees and profit, official local rates
+- [Shopee Indonesia](https://sellerfee.app/en/shopee/indonesia/): Shopee Indonesia seller fees and profit, official local rates
+- [Shopee Malaysia](https://sellerfee.app/en/shopee/malaysia/): Shopee Malaysia seller fees and profit, official local rates
+- [Shopee Philippines](https://sellerfee.app/en/shopee/philippines/): Shopee Philippines seller fees and profit, official local rates
+- [Shopee Singapore](https://sellerfee.app/en/shopee/singapore/): Shopee Singapore seller fees and profit, official local rates
+- [Shopee Thailand](https://sellerfee.app/en/shopee/thailand/): Shopee Thailand seller fees and profit, official local rates
+- [Shopee Vietnam](https://sellerfee.app/en/shopee/vietnam/): Shopee Vietnam seller fees and profit, official local rates
+- [Lazada Malaysia](https://sellerfee.app/en/lazada/malaysia/): Lazada Malaysia seller fees and profit, official local rates
+- [Walmart Marketplace United States](https://sellerfee.app/en/walmart/united-states/): Walmart Marketplace United States seller fees and profit, official local rates
+- [Etsy fee calculator](https://sellerfee.app/en/etsy/): Etsy commission, payment and service fees and net profit per order
+- [Etsy United Kingdom](https://sellerfee.app/en/etsy/uk/): Etsy United Kingdom seller fees and profit, official local rates
+- [Ozon fee calculator](https://sellerfee.app/en/ozon/): Ozon commission, payment and service fees and net profit per order
+- [Wildberries fee calculator](https://sellerfee.app/en/wildberries/): Wildberries commission, payment and service fees and net profit per order
+- [Yandex Market fee calculator](https://sellerfee.app/en/yandex-market/): Yandex Market commission, payment and service fees and net profit per order
+
+## Guides
+
+- [All guides](https://sellerfee.app/en/guides/): dated explanations of marketplace fee changes
+- [Amazon fbm prepaid return label 2026](https://sellerfee.app/en/guides/amazon-fbm-prepaid-return-label-2026/)
+- [Etsy uk fees vat regulatory fee](https://sellerfee.app/en/guides/etsy-uk-fees-vat-regulatory-fee/)
+- [Ozon fbo fbs realfbs 2026](https://sellerfee.app/en/guides/ozon-fbo-fbs-realfbs-2026/)
+- [Read tiktok shop settlement check fees](https://sellerfee.app/en/guides/read-tiktok-shop-settlement-check-fees/)
+- [Seller growth fee tiktok shopee lazada](https://sellerfee.app/en/guides/seller-growth-fee-tiktok-shopee-lazada/)
+- [Shopee indonesia fees 2026](https://sellerfee.app/en/guides/shopee-indonesia-fees-2026/)
+- [Shopee malaysia fees august 2026](https://sellerfee.app/en/guides/shopee-malaysia-fees-august-2026/)
+- [Shopee singapore commission gst](https://sellerfee.app/en/guides/shopee-singapore-commission-gst/)
+- [Shopee vietnam fees 2026](https://sellerfee.app/en/guides/shopee-vietnam-fees-2026/)
+- [Tiktok shop indonesia fees 2026](https://sellerfee.app/en/guides/tiktok-shop-indonesia-fees-2026/)
+- [Tiktok shop malaysia commission changes october 2026](https://sellerfee.app/en/guides/tiktok-shop-malaysia-commission-changes-october-2026/)
+- [Tiktok shop philippines seller growth fee](https://sellerfee.app/en/guides/tiktok-shop-philippines-seller-growth-fee/)
+- [Tiktok shop pricing target margin](https://sellerfee.app/en/guides/tiktok-shop-pricing-target-margin/)
+- [Tiktok shop singapore commission september 2026](https://sellerfee.app/en/guides/tiktok-shop-singapore-commission-september-2026/)
+- [Tiktok shop thailand seller fees 2026](https://sellerfee.app/en/guides/tiktok-shop-thailand-seller-fees-2026/)
+- [Tiktok shop vietnam fees 2026](https://sellerfee.app/en/guides/tiktok-shop-vietnam-fees-2026/)
+- [Walmart new seller savings 2026](https://sellerfee.app/en/guides/walmart-new-seller-savings-2026/)
+- [Wildberries logistics commission 2026](https://sellerfee.app/en/guides/wildberries-logistics-commission-2026/)
+- [Yandex market 42 percent low price 2026](https://sellerfee.app/en/guides/yandex-market-42-percent-low-price-2026/)
+
+## Languages
+
+- [English](https://sellerfee.app/en/): home page, all calculators
+- [简体中文](https://sellerfee.app/zh/): Chinese version
+- [Русский](https://sellerfee.app/ru/): Russian version
+- [Bahasa Melayu](https://sellerfee.app/ms/): Malay version
+
+## Optional
+
+- [Rate changes](https://sellerfee.app/en/rate-changes/): log of fee updates by marketplace
+- [Russia marketplaces](https://sellerfee.app/en/russia/): Ozon, Wildberries and Yandex Market overview
+- [Embed a calculator](https://sellerfee.app/en/embed/): free widget for blogs and seller communities
+- [About](https://sellerfee.app/en/about/): methodology and sources
+- [Sitemap](https://sellerfee.app/sitemap.xml)
