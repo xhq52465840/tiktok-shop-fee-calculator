@@ -92,6 +92,10 @@ T = {
 def cta_link(mid, lang):
     return f'<div class="embedcta"><a href="/{lang}/embed/#{mid}">{ic("ext", 14)}{esc(T[lang]["cta"])}</a></div>'
 
+def cesc(s):
+    """Escape a code sample for display; slashes as &#47; so crawlers don't read URLs out of it (copy/textContent unchanged)."""
+    return esc(s).replace('/', '&#47;')
+
 def credit_html(mid, lang, inline_style=True):
     """The credit line that ships in the host page's HTML (dofollow, points to the matching calculator page)."""
     m = MARKETS[mid]; url = f'{BASE}{lang}/{m["slug"]}/'; t = T[lang]
@@ -153,7 +157,7 @@ def embed_doc(lang, w, alt):
     data = {k: {l: {'script': snippet(k, l, 'script'), 'iframe': snippet(k, l, 'iframe')} for l in ('en', 'zh', 'ru', 'ms')} for k in mids}
     cpbtn = lambda tgt: f'<button type="button" class="btn btn-secondary btn-sm" data-embed-copy="{tgt}" data-done="{esc(t["copied"])}">{ic("copy", 14)}{esc(t["copy"])}</button>'
     rows = ''.join(f'''<details class="q emb" id="{k}"><summary>{ptile(MARKETS[k]["platform"], 22)} {esc(calc_name(MARKETS[k], lang))}{ic("plus", 18)}</summary>
-<div class="embrow"><pre class="code"><code id="code-{k}">{esc(snippet(k, lang))}</code></pre>
+<div class="embrow"><pre class="code"><code id="code-{k}">{cesc(snippet(k, lang))}</code></pre>
 <div class="embact">{cpbtn("code-" + k)}<a class="btn btn-link" href="/{lang}/embed/{MARKETS[k]["slug"]}/" target="_blank" rel="noopener">{esc(t["preview"])} {ic("ext", 13)}</a></div></div></details>''' for k in mids)
     ul = lambda xs: '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in xs) + '</ul>'
     ol = lambda xs: '<ol>' + ''.join(f'<li>{esc(x)}</li>' for x in xs) + '</ol>'
@@ -167,14 +171,14 @@ def embed_doc(lang, w, alt):
 <div class="field"><label class="label" for="eb-lang">{esc(t["f_lang"])}</label><div class="input select"><select id="eb-lang">{lopts}</select>{ic("chev", 16, "chev")}</div></div></div>
 <div class="field" style="margin-top:14px"><span class="label">{esc(t["f_mode"])}</span><div class="seg" role="radiogroup" aria-label="{esc(t["f_mode"])}">
 <label><input type="radio" name="eb-mode" value="script" checked><span>{esc(t["m_script"])}</span></label><label><input type="radio" name="eb-mode" value="iframe"><span>{esc(t["m_iframe"])}</span></label></div></div>
-<pre class="code"><code id="eb-out">{esc(data[demo][lang]["script"])}</code></pre><div class="embact">{cpbtn("eb-out")}</div></div>
+<pre class="code"><code id="eb-out">{cesc(data[demo][lang]["script"])}</code></pre><div class="embact">{cpbtn("eb-out")}</div></div>
 <h2 id="how">{esc(t["how_h"])}</h2>{ol(t["how"])}
 <h2 id="preview">{esc(t["demo_h"])}</h2><p>{esc(t["demo_p"])}</p></div>
 <div class="wrap embdemo">{snippet(demo, lang).replace(BASE + "assets/embed.js", "/assets/embed.js")}</div>
 <div class="wrap narrow prose embdoc"><h2 id="all">{esc(t["all_h"])}</h2><p>{esc(t["all_p"])}</p><div class="faq">{rows}</div>
 <h2 id="terms">{esc(t["rules_h"])}</h2>{ul(t["rules"])}
 <h2 id="faq">{esc(t["faq_h"])}</h2><div class="faq">{faq}</div></div></section>
-<script>window.SF_EMBED={json.dumps(data, ensure_ascii=False).replace('</', '<\\/')};</script>
+<script>window.SF_EMBED={json.dumps(data, ensure_ascii=False).replace('\\"', '\\u0022').replace('<', '\\u003c').replace('>', '\\u003e')};</script>
 <script>(function(){{var D=window.SF_EMBED,c=document.getElementById('eb-calc'),l=document.getElementById('eb-lang'),o=document.getElementById('eb-out');
 function upd(){{var m=document.querySelector('input[name=eb-mode]:checked').value;o.textContent=D[c.value][l.value][m]}}
 [c,l].forEach(function(e){{e.addEventListener('change',upd)}});document.querySelectorAll('input[name=eb-mode]').forEach(function(e){{e.addEventListener('change',upd)}});
