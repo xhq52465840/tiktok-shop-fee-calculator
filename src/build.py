@@ -633,7 +633,7 @@ def write_llms_txt():
     open(os.path.join(ROOT, 'llms.txt'), 'w').write('\n'.join(L))
 
 def plumbing():
-    open(os.path.join(ROOT, 'index.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SellerFee: Fee &amp; Profit Calculators for Online Sellers</title>
+    open(os.path.join(ROOT, 'index.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SellerFee: Fee &amp; Profit Calculators for Online Sellers</title><meta name='impact-site-verification' value='a40dd7d0-2f45-43a9-b0a3-df42d3d81b87'>
 <link rel="canonical" href="{BASE}en/">
 <link rel="alternate" hreflang="en" href="{BASE}en/"><link rel="alternate" hreflang="ms" href="{BASE}ms/"><link rel="alternate" hreflang="ru" href="{BASE}ru/"><link rel="alternate" hreflang="zh-CN" href="{BASE}zh/"><link rel="alternate" hreflang="x-default" href="{BASE}en/">
 <meta http-equiv="refresh" content="0; url=/en/"><meta name="robots" content="noindex,follow">
