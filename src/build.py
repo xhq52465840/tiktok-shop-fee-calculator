@@ -643,6 +643,27 @@ def plumbing():
     write_llms_txt()
     for old, new in [('malaysia/', 'en/tiktok-shop/malaysia/'), ('philippines/', 'en/tiktok-shop/philippines/')]:
         w(old, f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="{BASE}{new}"><meta http-equiv="refresh" content="0; url=../{new}"><meta name="robots" content="noindex"></head><body><a href="../{new}">This page has moved.</a></body></html>')
+    # Short /<lang>/<country>/ paths 404 while /<lang>/tiktok-shop/<country>/ exists; add static stubs (not in the sitemap).
+    for lang in ALL:
+        tt = os.path.join(ROOT, lang, 'tiktok-shop')
+        if not os.path.isdir(tt):
+            continue
+        for country in sorted(x for x in os.listdir(tt) if os.path.isdir(os.path.join(tt, x))):
+            if not os.path.isfile(os.path.join(tt, country, 'index.html')):
+                continue
+            stub = f'{lang}/{country}/'
+            if os.path.isfile(os.path.join(ROOT, stub, 'index.html')):
+                continue
+            dest = f'/{lang}/tiktok-shop/{country}/'
+            html_lang = LANGS[lang]['html']
+            w(stub, (
+                f'<!doctype html><html lang="{html_lang}"><head><meta charset="utf-8"><title>Moved</title>'
+                f'<link rel="canonical" href="{BASE}{lang}/tiktok-shop/{country}/">'
+                f'<meta http-equiv="refresh" content="0; url={dest}">'
+                f'<meta name="robots" content="noindex">'
+                f'<script>location.replace({json.dumps(dest)})</script></head>'
+                f'<body><a href="{dest}">This page has moved.</a></body></html>'
+            ))
     # GitHub Pages serves this one file for every missing URL: show the message in the language of the URL prefix
     blocks = ''.join(f'<div class="nf" data-l="{l}" lang="{LANGS[l]["html"]}"{"" if l == "en" else " hidden"}><h1>{esc(NF[l][0])}</h1><p>{esc(NF[l][1])}</p><p><a class="btn btn-primary" href="/{l}/">{esc(NF[l][2])}</a></p></div>' for l in ALL)
     open(os.path.join(ROOT, '404.html'), 'w').write(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | SellerFee</title><meta name="robots" content="noindex">{sf_site.ads_head()}
