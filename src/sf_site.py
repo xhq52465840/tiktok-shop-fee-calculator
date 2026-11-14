@@ -98,10 +98,10 @@ def calc_links(lang):
     return out
 
 TOPBAR = {
- 'en': ('UPDATE', 'TikTok Shop Malaysia commission rates change on <b>31 Oct 2026</b>', 'en/guides/tiktok-shop-malaysia-commission-changes-october-2026/', 'See what changes'),
- 'ms': ('BAHARU', 'Kadar komisen TikTok Shop Malaysia berubah pada <b>31 Okt 2026</b>', 'ms/tiktok-shop/malaysia/', 'Lihat perubahan'),
+ 'en': ('UPDATE', 'TikTok Shop Malaysia commission rates changed on <b>31 Oct 2026</b>', 'en/guides/tiktok-shop-malaysia-commission-changes-october-2026/', 'See what changed'),
+ 'ms': ('BAHARU', 'Kadar komisen TikTok Shop Malaysia telah berubah pada <b>31 Okt 2026</b>', 'ms/tiktok-shop/malaysia/', 'Lihat perubahan'),
  'ru': ('НОВОЕ', 'Ozon обновляет тарифы логистики FBO и FBS с <b>30 октября 2026</b>', 'ru/ozon/', 'Посчитать'),
- 'zh': ('新', 'TikTok Shop 马来西亚佣金费率将于 <b>2026年10月31日</b> 调整', 'zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/', '查看变化'),
+ 'zh': ('已更新', 'TikTok Shop 马来西亚佣金费率已于 <b>2026年10月31日</b> 调整', 'zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/', '查看变化'),
 }
 def topbar(lang, path):
     pill, txt, href, cta = TOPBAR[lang]

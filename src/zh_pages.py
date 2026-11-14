@@ -118,7 +118,26 @@ def home_zh():
         )
 
     from sf_site import GUIDES_ALL
-    guides = [g for g in GUIDES_ALL if g.get('lang') == 'zh'][:6]
+    zh_guides = [g for g in GUIDES_ALL if g.get('lang') == 'zh']
+    prefer = [
+        'tiktok-shop-malaysia-commission-changes-october-2026',
+        'shopee-malaysia-fees-august-2026',
+        'tiktok-shop-pricing-target-margin',
+    ]
+    guides, seen = [], set()
+    for slug in prefer:
+        g = next((x for x in zh_guides if x['slug'] == slug), None)
+        if g:
+            guides.append(g)
+            seen.add(slug)
+    for g in zh_guides:
+        if g['slug'] in seen:
+            continue
+        guides.append(g)
+        seen.add(g['slug'])
+        if len(guides) >= 6:
+            break
+    guides = guides[:6]
     body = f'''<section class="hero"><div class="wrap">
 <div><div class="announce">{badge("新","new")}<span>Shopee 印尼站、越南站已上线 · <a href="shopee/vietnam/">打开越南站 {ic("arrow",13)}</a></span></div>
 <h1 class="h-display">看清每个平台从你这一单拿走多少。</h1>
