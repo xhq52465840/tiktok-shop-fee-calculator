@@ -4,6 +4,7 @@ from site_helpers import money, pct, ex_table
 
 MYO = MARKETS['tiktok-shop-my']['selector']['options']
 PHO = MARKETS['tiktok-shop-ph']['selector']['options']
+SH_MY = MARKETS['shopee-my']['selector']['options']
 myr = lambda n: next(o for o in MYO if o['n'] == n)['r']
 RM = lambda v: money(v, 'MYR'); PHP = lambda v: money(v, 'PHP')
 USD = lambda v: money(v, 'USD'); GBP = lambda v: money(v, 'GBP')
@@ -32,20 +33,48 @@ def my_zh():
     old = compute('tiktok-shop-my', sel=sk, period='old', price=39.90, cost=12)
     new = compute('tiktok-shop-my', sel=sk, period='new', price=39.90, cost=12)
     bxp = compute('tiktok-shop-my', sel=sk, period='new', tg={'bxp': True}, price=39.90, cost=12)
+    bxpc = compute('tiktok-shop-my', sel=sk, period='new', tg={'bxp': True, 'campaign': True}, price=39.90, cost=12)
     g = compute('tiktok-shop-my', sel='Toys & Hobbies › Musical Instruments & Accessories', price=1000, sellerDisc=100)
-    toc = [('how', '马来西亚费用怎么算'), ('examples', '计算示例'), ('changes', '2026 年费率变化'), ('faq', '常见问题'), ('sources', '官方来源')]
+    wt = "Womenswear & Underwear › Women's Tops"
+    pl = compute('tiktok-shop-my', sel=wt, store='mall', tg={'paylater': True}, price=60, qty=2, sellerDisc=10, buyerShip=6, cost=22)
+    rows_up = sorted(((o['r']['new.mp.non'] - o['r']['old.mp.non'], o) for o in MYO if o['r']['old.mp.non'] is not None), key=lambda x: -x[0])
+    n_up = sum(1 for d, _ in rows_up if d > 0.001); n_dn = sum(1 for d, _ in rows_up if d < -0.001); n_eq = len(rows_up) - n_up - n_dn
+    downs = [o for d, o in rows_up if d < -0.001]
+    baby = myr('Baby & Maternity › Baby Care & Health')
+    typ = sorted(o['r']['new.mp.non'] - o['r']['new.mp.bxp'] for o in MYO
+                 if o['r'].get('new.mp.non') is not None and o['r'].get('new.mp.bxp') is not None and 2.0 <= (o['r']['new.mp.non'] - o['r']['new.mp.bxp']) <= 3.0)
+    save_lo, save_hi = (typ[0], typ[-1]) if typ else (2.17, 2.70)
+    def rr(o, k):
+        return pct(o['r'][k]) if o['r'][k] is not None else '–'
+    sample = ['Beauty & Personal Care › Skincare', 'Beauty & Personal Care › Makeup', "Womenswear & Underwear › Women's Dresses", 'Muslim Fashion › Hijabs',
+              'Phones & Electronics › Mobile Phone Accessories', 'Phones & Electronics › Phones & Tablets', 'Home Supplies › Home Decor', 'Food & Beverages › Snacks',
+              'Food & Beverages › Fresh & Frozen Food', 'Health › Nutrition & Wellness', 'Baby & Maternity › Nursing & Feeding', 'Sports & Outdoor › Water Sports']
+    def trow(n):
+        o = next(x for x in MYO if x['n'] == n)
+        return (f"<tr><td>{n}</td><td class='n'>{rr(o,'old.mp.non')}</td><td class='n'><b>{rr(o,'new.mp.non')}</b></td>"
+                f"<td class='n'>{rr(o,'old.mp.bxp')}</td><td class='n'><b>{rr(o,'new.mp.bxp')}</b></td>"
+                f"<td class='n'><b>{rr(o,'new.mall.non')}</b></td></tr>")
+    full = ''.join(
+        f"<tr><td>{o['n']}</td>" + ''.join(f"<td class='n'>{rr(o,k)}</td>" for k in
+            ['old.mp.bxp','old.mp.non','old.mall.bxp','old.mall.non','new.mp.bxp','new.mp.non','new.mall.bxp','new.mall.non']) + '</tr>'
+        for o in MYO)
+    toc = [('how', '马来西亚费用怎么算'), ('examples', '计算示例'), ('changes', '2026 年费率变化'),
+           ('rates', '按类目佣金表'), ('tips', '如何守住利润率'), ('faq', '常见问题'), ('sources', '官方来源')]
     body = f'''
 <h2 id="how">TikTok Shop 马来西亚费用怎么算</h2>
 <p>每笔成功签收订单，TikTok Shop 马来西亚会从结算中扣除三项费用；若你加入 Bonus Extra Program（BXP），还有第四项。TikTok 公布的马来西亚费率<strong>已含 8% SST</strong>，无需再加税。</p>
-<ul>
-<li><b>佣金：</b>按商品子类目、Marketplace / Mall、是否 BXP 卖家计收。佣金 =（商品售价 − 卖家折扣）× 费率。运费与平台出资优惠不计入基数。自 <b>2026年10月31日</b> 起，费率区间约 0%–20.52%。</li>
-<li><b>交易手续费：</b>3.78%。自 2026年2月15日起，基数为「原价 − 卖家折扣 + 买家支付运费」。自 2026年10月16日 00:00 起，TikTok PayLater 订单按 <b>4.86%</b> 收取。</li>
-<li><b>平台支持费：</b>每笔成功签收订单固定 <b>RM0.54</b>（RM0.50 + SST），与订单金额、件数无关。签收后退货不退还该费用。</li>
-<li><b>BXP 服务费（仅 BXP 卖家）：</b>每笔成交订单 4.86%；自 2026年10月7日起，活动日（Double Day、Payday）为 7.02%，每件封顶 RM54。</li>
-</ul>
+<h3>1. 佣金</h3>
+<p>佣金按商品子类目、Marketplace / Mall、是否 BXP 卖家计收，基数为商品售价减去你自己出资的折扣：<b>佣金 =（商品售价 − 卖家折扣）× 费率</b>。运费与平台出资优惠不计入基数。自 <b>2026年10月31日</b> 起，费率区间约 0%（生鲜冷冻、烘焙、乳品、主食等）至 20.52%（非 BXP 的 Mall 香氛、彩妆等美妆类目）。</p>
+<h3>2. 交易手续费</h3>
+<p>交易手续费为 3.78%。自 2026年2月15日起，基数为「原价 − 卖家折扣 + 买家支付运费」，平台出资优惠不再从该基数中扣除。自 2026年10月16日 00:00 起，买家使用 TikTok PayLater 付款的订单按 <b>4.86%</b> 收取。付款方式由买家选择，定价时宜按部分订单会走更高费率来测算。</p>
+<h3>3. 平台支持费</h3>
+<p>每笔成功签收订单固定 <b>RM0.54</b>（RM0.50 + SST），与订单金额、件数无关，自 2026年2月15日起收取。签收后退货不退还该费用。因为是固定费用，对小金额订单影响更大：在 RM100 订单里约占 0.54%，在 RM20 订单里约占 2.7%。</p>
+<h3>4. BXP 服务费（仅 BXP 卖家）</h3>
+<p>BXP 卖家佣金更低，并可使用 Bonus Cashback、Voucher Xtra、LIVE Specials 以及限时券等平台券。作为交换，每笔成交订单都要付 4.86% 的 BXP 服务费，不论买家是否使用了 BXP 优惠券。自 2026年10月7日起，活动日（Double Day、Payday）费率为 7.02%，每件封顶 RM54。</p>
 <h2 id="examples">计算示例</h2>
+<p>以下示例均使用官方费率表，计算方式与上方计算器相同。</p>
 <div class="example"><h4>示例 1：RM39.90 护肤精华，Marketplace，非 BXP，成本 RM12</h4>
-<p>护肤类目非 BXP Marketplace 佣金由 {pct(r['old.mp.non'])} 调整为 {pct(r['new.mp.non'])}（10月31日起）。</p>
+<p>护肤类目非 BXP Marketplace 佣金由 {pct(r['old.mp.non'])} 调整为 {pct(r['new.mp.non'])}（10月31日起）。无卖家折扣，运费由平台承担。</p>
 <div class="tablewrap"><table><thead><tr><th></th><th class="n">10月31日前</th><th class="n">10月31日起</th></tr></thead><tbody>
 <tr><td>佣金</td><td class="n">−{RM(old['fee']['commission'])}</td><td class="n">−{RM(new['fee']['commission'])}</td></tr>
 <tr><td>交易手续费（3.78%）</td><td class="n">−{RM(old['fee']['tx'])}</td><td class="n">−{RM(new['fee']['tx'])}</td></tr>
@@ -57,23 +86,45 @@ def my_zh():
 <div class="example"><h4>示例 2：同一商品，BXP 卖家</h4>
 <p>BXP 新佣金为 {pct(r['new.mp.bxp'])}，但需加收 BXP 服务费。</p>
 {ex_table(_ex_rows(bxp, 'MYR', LBL))}
-<p>普通日利润 {RM(bxp['profit'])}（{bxp['margin']:.1f}%）。是否加入 BXP，取决于优惠券带来的增量订单是否覆盖服务费——请用计算器上的 BXP 开关自测。</p></div>
+<p>普通日利润 {RM(bxp['profit'])}（{bxp['margin']:.1f}%），活动日 BXP 费率为 7.02% 时利润为 {RM(bxpc['profit'])}。对比非 BXP 的 {RM(new['profit'])}，是否加入取决于优惠券带来的增量订单是否覆盖服务费——请用计算器上的 BXP 开关自测。</p></div>
 <div class="example"><h4>示例 3：TikTok 官方例题</h4>
 <p>Seller University 以 RM1,000 吉他、RM100 卖家折扣、非 BXP Marketplace 12.96% 佣金为例。本计算器复现：佣金 {RM(g['fee']['commission'])}，交易手续费 {RM(g['fee']['tx'])}，另加平台支持费 RM0.54（官方例题写作 SST 前的 RM0.50）。</p></div>
+<div class="example"><h4>示例 4：Mall 订单，买家使用 TikTok PayLater</h4>
+<p>两件女装上衣各 RM60，店铺优惠券 RM10，买家支付运费 RM6，Mall 非 BXP 卖家，付款方式为 TikTok PayLater。</p>
+{ex_table(_ex_rows(pl, 'MYR', LBL, extra_top=[('扣除你出资折扣后的商品小计', RM(pl['b']['net'])), ('买家支付运费', '+' + RM(6))]))}
+<p>交易手续费按 {RM(pl['b']['net_ship'])}（商品小计 + 买家运费）的 4.86% 计，佣金只按 {RM(pl['b']['net'])} 计。</p></div>
 <h2 id="changes">2026 年费率变化</h2>
 <div class="tablewrap"><table><thead><tr><th>生效日</th><th>变化</th></tr></thead><tbody>
 <tr><td>2026年2月15日</td><td>新增平台支持费 RM0.54；交易手续费基数改为售价 − 卖家折扣 + 买家运费。</td></tr>
-<tr><td>2026年10月7日</td><td>BXP 活动日费率由 4.86% 升至 7.02%。</td></tr>
-<tr><td>2026年10月16日</td><td>TikTok PayLater 订单交易手续费升至 4.86%。</td></tr>
+<tr><td>2026年10月7日</td><td>BXP 活动日费率由 4.86% 升至 7.02%；非活动日费率与每件 RM54 封顶不变。</td></tr>
+<tr><td>2026年10月16日</td><td>TikTok PayLater 订单交易手续费升至 4.86%；其他付款方式仍为 3.78%。</td></tr>
 <tr><td>2026年10月31日</td><td>Marketplace / Mall 新佣金表生效；此前下单仍按旧表。</td></tr>
 </tbody></table></div>
-<p>全部 {len(MYO)} 个子类目对照表见 <a href="../../../en/tiktok-shop/malaysia/">英文版完整页面</a>。</p>
+<p>对非 BXP 的 Marketplace 卖家而言，在有旧费率的 {len(rows_up)} 个子类目中，{n_up} 个上调、{n_dn} 个下调、{n_eq} 个不变。下调集中在必需品类：{", ".join(o["n"] for o in downs)}。上调最多的是水上与冬季运动（升 {rows_up[0][0]:.2f} 个百分点）以及婴幼儿护理与健康（升 {next(d for d,o in rows_up if o["n"]=="Baby & Maternity › Baby Care & Health"):.2f} 个百分点）。完整解读见 <a href="../../guides/tiktok-shop-malaysia-commission-changes-october-2026/">10月31日佣金调整指南</a>。</p>
+<h2 id="rates">按类目佣金表</h2>
+<p>以下为部分热门子类目。MP = Marketplace。费率均含 SST。</p>
+<div class="tablewrap"><table class="tbl"><thead><tr><th>子类目</th><th class="n">MP 非 BXP（10月31日前）</th><th class="n">MP 非 BXP（10月31日起）</th><th class="n">MP BXP（10月31日前）</th><th class="n">MP BXP（10月31日起）</th><th class="n">Mall 非 BXP（10月31日起）</th></tr></thead><tbody>{"".join(trow(n) for n in sample)}</tbody></table></div>
+<details class="adv"><summary>展开全部 {len(MYO)} 个子类目</summary>
+<p style="margin-top:12px"><input id="sf-filter" class="search" type="search" placeholder="筛选类目，例如护肤" aria-label="筛选类目"></p>
+<div class="tablewrap tall"><table class="tbl" id="sf-rates"><thead><tr><th>类目 › 子类目</th><th class="n">MP BXP（旧）</th><th class="n">MP 非 BXP（旧）</th><th class="n">Mall BXP（旧）</th><th class="n">Mall 非 BXP（旧）</th><th class="n">MP BXP（新）</th><th class="n">MP 非 BXP（新）</th><th class="n">Mall BXP（新）</th><th class="n">Mall 非 BXP（新）</th></tr></thead><tbody>{full}</tbody></table></div></details>
+<h2 id="tips">如何守住利润率</h2>
+<ul>
+<li><b>按 10月31日起的新表重新定价。</b>新表适用于 2026年10月31日 00:00 之后下的订单。在计算器中选择「2026年10月31日起的订单（新费率）」核对主销 SKU，并在下一场活动前调整售价或组合装。</li>
+<li><b>低单价商品尽量合并发单。</b>平台支持费 RM0.54 按订单收取，不按件数。两件商品在同一订单里只收一次。</li>
+<li><b>把 PayLater 算进定价。</b>若有一定比例买家使用 TikTok PayLater，这些订单会多 1.08 个百分点交易手续费，直接从利润里扣。</li>
+<li><b>按类目核算 BXP。</b>多数类目加入 BXP 可少 {save_lo:.2f} 到 {save_hi:.2f} 个佣金点，但要另付 4.86% 服务费（活动日 7.02%），单笔费用往往更高，需要优惠券带来的增量订单来覆盖。婴幼儿护理与健康是例外：BXP 佣金为 {pct(baby['new.mp.bxp'])}，非 BXP 为 {pct(baby['new.mp.non'])}，即使不考虑增量订单，BXP 也更便宜。</li>
+<li><b>谨慎使用卖家出资折扣。</b>你出资的折扣会降低佣金和交易手续费的计费基数，但每一林吉特折扣仍从结算中扣除。平台出资优惠券不占用你的成本，也不改变你的费率。</li>
+<li><b>把达人联盟佣金算进去。</b>达人佣金叠加在平台费用之上。请在计算器中填写你的比例，看到的利润率才是实际能留下的。</li>
+</ul>
+<p>分步定价方法见 <a href="../../guides/tiktok-shop-pricing-target-margin/">如何按目标利润率定价</a>。</p>
 '''
     faq = [
-     ('2026 年 TikTok Shop 马来西亚卖家费用有哪些？', '类目佣金、交易手续费 3.78%（PayLater 自 10月16日起 4.86%）、平台支持费 RM0.54。BXP 卖家另付 BXP 服务费 4.86%（活动日 7.02%）。全部含 8% SST。'),
+     ('2026 年 TikTok Shop 马来西亚卖家费用有哪些？', '类目佣金（Marketplace 与 Mall 不同，加入 BXP 更低）、交易手续费 3.78%（PayLater 自 10月16日起 4.86%）、每笔签收订单平台支持费 RM0.54。BXP 卖家另付 BXP 服务费 4.86%（活动日 7.02%）。全部含 8% SST。'),
      ('新佣金什么时候开始？', '马来西亚时间 2026年10月31日 00:00。此前下单按旧费率。'),
      ('佣金怎么算？', '佣金 =（商品售价 − 卖家折扣）× 类目费率。运费与平台出资优惠不计入。'),
-     ('签收后退货，平台支持费退吗？', '不退。仅整单在发货前取消时才可能退还。'),
+     ('交易手续费是否含运费？', '是。自 2026年2月15日起，基数为原价减去你的折扣，再加上买家支付的运费。'),
+     ('签收后退货，平台支持费退吗？', '不退。仅整单在发货前取消时才可能退还。一旦签收，即使之后退货也不退还该费用。'),
+     ('10月31日后加入 BXP 还划算吗？', '取决于类目，以及优惠券能带来多少增量订单。多数类目 BXP 可少约 2 至 3 个佣金点，但要另付 4.86%（活动日 7.02%）服务费，单笔费用往往更高。请用计算器对比两种方案。'),
      ('这些费率含 SST 吗？', '是。TikTok 公布的佣金、交易手续费、BXP 与平台支持费均已含 8% SST。'),
     ]
     return dict(title='TikTok Shop 马来西亚费用计算器 2026（10月31日新佣金）| SellerFee',
@@ -349,39 +400,90 @@ def ym_zh():
 # ======================================================================= Shopee / Lazada
 def shopee_my_zh():
     sk = 'Beauty › Skincare'
-    r = next(o for o in MARKETS['shopee-my']['selector']['options'] if o['n'] == sk)['r']
+    r = next(o for o in SH_MY if o['n'] == sk)['r']
     old = compute('shopee-my', sel=sk, period='old', price=39.90, cost=12)
     new = compute('shopee-my', sel=sk, period='new', price=39.90, cost=12)
     scp = compute('shopee-my', sel=sk, period='new', tg={'scp': True}, price=39.90, cost=12)
-    toc = [('how', 'Shopee 马来西亚费用'), ('examples', '计算示例'), ('faq', '常见问题'), ('sources', '官方来源')]
+    cam = compute('shopee-my', sel='Cameras & Drones › Cameras', period='old', store='mall', tg={'scp': True},
+                  price=100, sellerDisc=30, cost=40)
+    cam_new = next(o for o in SH_MY if o['n'] == 'Cameras & Drones › Cameras')['r']
+    sample = ['Beauty › Skincare', 'Beauty › Makeup', 'Mobile & Gadgets › Mobile Phones',
+              'Cameras & Drones › Cameras', 'Women Clothes › Dresses', 'Men Shoes › Sneakers',
+              'Mom & Baby › Diapering & Potty', 'Home & Living › Furniture', 'Pets › Pet Food',
+              'Books & Magazines › Books']
+    def rr(o, k):
+        v = o['r'].get(k); return pct(v) if v is not None else '–'
+    def trow(n):
+        o = next(x for x in SH_MY if x['n'] == n)
+        return (f"<tr><td>{n}</td><td class='n'>{rr(o,'old.mp.non')}</td><td class='n'><b>{rr(o,'new.mp.non')}</b></td>"
+                f"<td class='n'>{rr(o,'new.mp.scp')}</td><td class='n'><b>{rr(o,'new.mall.non')}</b></td></tr>")
+    full = ''.join(
+        f"<tr><td>{o['n']}</td>" + ''.join(f"<td class='n'>{rr(o,k)}</td>" for k in
+            ['old.mp.scp','old.mp.non','old.mall.scp','old.mall.non','new.mp.scp','new.mp.non','new.mall.scp','new.mall.non']) + '</tr>'
+        for o in SH_MY)
+    toc = [('how', 'Shopee 马来西亚费用怎么算'), ('examples', '计算示例'),
+           ('changes', '2026 年费率变化'), ('rates', '按类目佣金表'),
+           ('tips', '如何守住利润率'), ('faq', '常见问题'), ('sources', '官方来源')]
     body = f'''
 <h2 id="how">Shopee 马来西亚费用怎么算</h2>
 <p>本地成交订单通常扣除：类目佣金、交易手续费、平台支持费。佣金取决于类目、Marketplace / Mall、是否加入返现计划（SCP）。我们加载的佣金百分比为<strong>含 SST</strong>（官方表 × 1.08），与 Shopee 例题把 9.0% 写成 9.72% 的口径一致。</p>
-<ul>
-<li><b>佣金</b> =（售价 − 卖家折扣）× 类目费率。平台出资券不减基数。自 <b>2026年8月14日</b> 起 Marketplace / Mall 表再次更新。</li>
-<li><b>交易手续费</b>：买家实付金额（含运费）的 <b>3.78%</b>（含 SST），四舍五入到分。</li>
-<li><b>平台支持费</b>：每笔成交 <b>RM0.54</b>（含 SST）。</li>
-<li><b>新卖家</b>：自 2026年8月1日起，Marketplace 佣金在「首件上架满 120 天」或「成交超 200 单」较早者之后才开始收取。可用「新卖家」开关模拟。</li>
-</ul>
+<h3>1. 佣金</h3>
+<p>佣金 =（售价 − 卖家折扣）× 类目费率。平台出资券不减基数。Marketplace 与 Mall 使用不同费率表，SCP 卖家走更低的一列。自 <b>2026年8月14日</b> 起 Marketplace / Mall 表再次更新。</p>
+<h3>2. 交易手续费</h3>
+<p>买家实付金额（含运费）的 <b>3.78%</b>（含 SST），四舍五入到分，在成交订单上自动扣除。</p>
+<h3>3. 平台支持费</h3>
+<p>每笔成交 <b>RM0.54</b>（含 SST），与订单金额无关。</p>
+<h3>4. 新卖家佣金豁免</h3>
+<p>自 2026年8月1日起，Marketplace 佣金在「首件上架满 120 天」或「成交超 200 单」较早者之后才开始收取。可用计算器上的「新卖家」开关模拟豁免期。</p>
 <h2 id="examples">计算示例</h2>
-<div class="example"><h4>示例：RM39.90 护肤，Marketplace，非 SCP</h4>
-<p>8月14日后护肤非 SCP Marketplace 佣金为 {pct(r['new.mp.non'])}（含 SST）。</p>
+<div class="example"><h4>示例 1：RM39.90 护肤，Marketplace，非 SCP</h4>
+<p>护肤类目非 SCP 的 Marketplace 佣金在 8月14日前后均为 {pct(r['new.mp.non'])}（含 SST），这一列没有变化。成本 RM12。</p>
 <div class="tablewrap"><table><thead><tr><th></th><th class="n">8月14日前</th><th class="n">8月14日起</th></tr></thead><tbody>
 <tr><td>佣金</td><td class="n">−{RM(old['fee']['commission'])}</td><td class="n">−{RM(new['fee']['commission'])}</td></tr>
 <tr><td>交易手续费（3.78%）</td><td class="n">−{RM(old['fee']['tx'])}</td><td class="n">−{RM(new['fee']['tx'])}</td></tr>
 <tr><td>平台支持费</td><td class="n">−{RM(old['fee']['psf'])}</td><td class="n">−{RM(new['fee']['psf'])}</td></tr>
 <tr><td><b>结算</b></td><td class="n"><b>{RM(old['payout'])}</b></td><td class="n"><b>{RM(new['payout'])}</b></td></tr>
-<tr><td><b>利润</b></td><td class="n"><b>{RM(old['profit'])}</b></td><td class="n"><b>{RM(new['profit'])}</b></td></tr>
+<tr><td><b>扣除成本后利润</b></td><td class="n"><b>{RM(old['profit'])}</b></td><td class="n"><b>{RM(new['profit'])}</b></td></tr>
 </tbody></table></div></div>
-<div class="example"><h4>同一商品，SCP 卖家</h4>
-<p>SCP 使新佣金降至 {pct(r['new.mp.scp'])}。</p>
+<div class="example"><h4>示例 2：同一商品，SCP 卖家</h4>
+<p>SCP 列在 8月14日有调整：护肤 Marketplace 佣金由 {pct(r['old.mp.scp'])} 变为 {pct(r['new.mp.scp'])}。</p>
 {ex_table(_ex_rows(scp, 'MYR', LBL))}
-<p>利润 {RM(scp['profit'])}，对比非 SCP 的 {RM(new['profit'])}。</p></div>
+<p>利润 {RM(scp['profit'])}（利润率 {scp['margin']:.1f}%），对比非 SCP 的 {RM(new['profit'])}。</p></div>
+<div class="example"><h4>示例 3：Shopee 官方 Mall 相机例题</h4>
+<p>Mall SCP 相机，促销价 RM100、卖家券 RM30（佣金基数 RM70）。官方例题：表列 9.0% × 8% SST = 9.72% → RM6.80。本计算器复现：佣金 {RM(cam['fee']['commission'])}。该例题使用调整前费率；8月14日起该类目 Mall SCP 佣金为 {pct(cam_new['new.mall.scp'])}，请在计算器中选择新表核对。</p>
+{ex_table(_ex_rows(cam, 'MYR', LBL, extra_top=[('扣除你出资折扣后的商品小计', RM(cam['b']['net']))]))}</div>
+<h2 id="changes">2026 年费率变化</h2>
+<div class="tablewrap"><table><thead><tr><th>生效日</th><th>变化</th></tr></thead><tbody>
+<tr><td>2026年5月21日</td><td>100 多个必需品类目佣金豁免或下调。</td></tr>
+<tr><td>2026年8月1日</td><td>Marketplace 佣金在上架满 120 天或成交超 200 单后才开始收取；更多必需品类目纳入优惠费率。</td></tr>
+<tr><td>2026年8月14日</td><td>Marketplace 与 Mall 启用新佣金表（含 SCP / 非 SCP 列）。部分类目的非 SCP 列并未变化，变化主要出现在 SCP 列。</td></tr>
+</tbody></table></div>
+<h2 id="rates">按类目佣金表</h2>
+<p>以下为部分热门子类目。下列费率均<strong>含 SST</strong>。MP = Marketplace。</p>
+<div class="tablewrap"><table class="tbl"><thead><tr><th>子类目</th><th class="n">MP 非 SCP（8月14日前）</th><th class="n">MP 非 SCP（8月14日起）</th><th class="n">MP SCP（8月14日起）</th><th class="n">Mall 非 SCP（8月14日起）</th></tr></thead><tbody>
+{''.join(trow(n) for n in sample if any(o['n']==n for o in SH_MY))}</tbody></table></div>
+<details class="adv"><summary>展开全部 {len(SH_MY)} 个子类目</summary>
+<p style="margin-top:12px"><input id="sf-filter" class="search" type="search" placeholder="筛选类目，例如护肤" aria-label="筛选类目"></p>
+<div class="tablewrap tall"><table class="tbl" id="sf-rates"><thead><tr><th>类目 › 子类目</th>
+<th class="n">MP SCP（旧）</th><th class="n">MP 非 SCP（旧）</th><th class="n">Mall SCP（旧）</th><th class="n">Mall 非 SCP（旧）</th>
+<th class="n">MP SCP（新）</th><th class="n">MP 非 SCP（新）</th><th class="n">Mall SCP（新）</th><th class="n">Mall 非 SCP（新）</th>
+</tr></thead><tbody>{full}</tbody></table></div></details>
+<h2 id="tips">如何守住利润率</h2>
+<ul>
+<li><b>对照 8月14日费率表重新定价。</b>SCP 与非 SCP 两列是分别调整的；许多 Marketplace 非 SCP 费率并未改变，但 SCP 列往往有变化。请用计算器的两个开关核对主销 SKU。</li>
+<li><b>低单价商品尽量合并发单。</b>平台支持费 RM0.54 按订单收取，不按件数。</li>
+<li><b>确认你是 Mall 还是 Marketplace。</b>多数类目的 Mall 佣金比 Marketplace 高出数个百分点。</li>
+<li><b>若与卖家中心不一致，请直接改费率。</b>类目归类可能与公开表不同；计算器里的每项费率都可以按你的账户修改。</li>
+</ul>
 '''
     faq = [
+     ('Shopee 马来西亚向本地卖家收哪些费用？', '类目佣金（Marketplace 或 Mall，SCP 或非 SCP）、按买家实付（含运费）计的 3.78% 交易手续费，以及每笔成交 RM0.54 平台支持费。部分计划或预售还可能有其他费用。'),
+     ('佣金费率含 SST 吗？', 'Shopee 公布的是尚未加 8% SST 的表列费率。本计算器存储的是含 SST 费率（表列 × 1.08），与 Shopee 官方例题口径一致（例如 9.0% → 9.72%）。'),
+     ('2026年8月的佣金调整何时生效？', 'Marketplace 与 Mall 新表均自 2026年8月14日 00:00 起生效。此前订单按旧列计。部分类目的非 SCP 列在此次调整中没有变化。'),
+     ('谁能享受新卖家佣金豁免？', '自 2026年8月1日起，Marketplace 佣金在首件上架超过 120 天或成交超过 200 单（以较早者为准）之后才开始收取。'),
+     ('SCP 是什么？', '加入 Shopee 返现计划（Cashback Programme）的卖家可走更低的 SCP 佣金列。资格与是否另收服务费，请以卖家中心为准。'),
      ('Shopee 马来西亚交易手续费是多少？', '含 SST 后为 3.78%，按买家实付（含运费）计。'),
      ('平台支持费是多少？', '每笔成交 RM0.54（含 SST）。'),
-     ('SCP 是什么？', '返现计划卖家可走更低佣金列；请以卖家中心资格为准。'),
     ]
     return dict(title='Shopee 马来西亚费用计算器 2026（佣金 / 3.78% / RM0.54）| SellerFee',
                 desc='免费 Shopee 马来西亚费用计算器：2026年8月14日佣金表（含 SST）、交易手续费 3.78%、平台支持费 RM0.54。',
