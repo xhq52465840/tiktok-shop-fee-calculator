@@ -1,4 +1,5 @@
 """Chinese locale home and hub pages for the static build."""
+import content_dates as D
 from markets import MARKETS, COMING, compute
 from sf_site import page, crumbs, badge, esc, ic, ptile, issue_url, VDATE, market_name
 from site_helpers import money
@@ -47,7 +48,7 @@ def gcard(path, g, lang):
 <div class="cov {cov}"><div class="fig">{esc(fig)}</div><div class="cap">{esc(g["short"])}</div></div>
 <div class="body"><span class="badge b-brand sm">{esc(tr(lang,"guide"))}</span>
 <h3>{esc(g["title"])}</h3><p>{esc(g["desc"])}</p>
-<div class="gmeta"><span>{ic("clock",13)}{max(3, round(words/220))} {esc(tr(lang,"min_read"))}</span><span>{ic("cal",13)}{VDATE[lang]}</span></div></div></a>'''
+<div class="gmeta"><span>{ic("clock",13)}{max(3, round(words/220))} {esc(tr(lang,"min_read"))}</span><span>{ic("cal",13)}{D.time_html(href, lang)}</span></div></div></a>'''
 
 def home_zh():
     path = 'zh/'

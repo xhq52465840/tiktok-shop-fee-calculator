@@ -1,0 +1,802 @@
+{
+  "en/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ms/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ru/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "zh/": {
+    "modified": "2026-11-14",
+    "source_commit": "2772c122f092dba73de0896cbd0ff90bb56583a5"
+  },
+  "en/tiktok-shop/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "en/russia/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "en/rate-changes/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "en/about/": {
+    "modified": "2026-11-04",
+    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+  },
+  "en/privacy/": {
+    "modified": "2026-11-04",
+    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+  },
+  "en/terms/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "en/contact/": {
+    "modified": "2026-10-28",
+    "source_commit": "716b9a1ac6946a49d6e5ca361401eba40dcc5ba7"
+  },
+  "en/guides/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "zh/tiktok-shop/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "zh/russia/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "zh/rate-changes/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "zh/about/": {
+    "modified": "2026-11-04",
+    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+  },
+  "zh/privacy/": {
+    "modified": "2026-11-04",
+    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+  },
+  "zh/terms/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "zh/contact/": {
+    "modified": "2026-10-28",
+    "source_commit": "716b9a1ac6946a49d6e5ca361401eba40dcc5ba7"
+  },
+  "zh/guides/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ru/tiktok-shop/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "ru/russia/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/rate-changes/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ru/about/": {
+    "modified": "2026-11-04",
+    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+  },
+  "ru/privacy/": {
+    "modified": "2026-11-04",
+    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+  },
+  "ru/terms/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "ru/contact/": {
+    "modified": "2026-10-28",
+    "source_commit": "716b9a1ac6946a49d6e5ca361401eba40dcc5ba7"
+  },
+  "ru/guides/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ms/tiktok-shop/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "ms/russia/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/rate-changes/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ms/about/": {
+    "modified": "2026-11-04",
+    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+  },
+  "ms/privacy/": {
+    "modified": "2026-11-04",
+    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+  },
+  "ms/terms/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "ms/contact/": {
+    "modified": "2026-10-28",
+    "source_commit": "716b9a1ac6946a49d6e5ca361401eba40dcc5ba7"
+  },
+  "ms/guides/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "en/tiktok-shop/malaysia/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "zh/tiktok-shop/malaysia/": {
+    "modified": "2026-11-14",
+    "source_commit": "2772c122f092dba73de0896cbd0ff90bb56583a5"
+  },
+  "ru/tiktok-shop/malaysia/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/tiktok-shop/malaysia/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/tiktok-shop/philippines/": {
+    "modified": "2026-10-28",
+    "source_commit": "ab6c17a61fb2d8ac3cb15d3fd8e3459321037f7b"
+  },
+  "zh/tiktok-shop/philippines/": {
+    "modified": "2026-10-28",
+    "source_commit": "ab6c17a61fb2d8ac3cb15d3fd8e3459321037f7b"
+  },
+  "ru/tiktok-shop/philippines/": {
+    "modified": "2026-10-28",
+    "source_commit": "ab6c17a61fb2d8ac3cb15d3fd8e3459321037f7b"
+  },
+  "ms/tiktok-shop/philippines/": {
+    "modified": "2026-10-28",
+    "source_commit": "ab6c17a61fb2d8ac3cb15d3fd8e3459321037f7b"
+  },
+  "en/tiktok-shop/united-states/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "zh/tiktok-shop/united-states/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/tiktok-shop/united-states/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/tiktok-shop/united-states/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/tiktok-shop/united-kingdom/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "zh/tiktok-shop/united-kingdom/": {
+    "modified": "2026-10-26",
+    "source_commit": "e1b2126b4f9bdc5c08959354d944c674f35d9c38"
+  },
+  "ru/tiktok-shop/united-kingdom/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/tiktok-shop/united-kingdom/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/tiktok-shop/singapore/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "zh/tiktok-shop/singapore/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/tiktok-shop/singapore/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/tiktok-shop/singapore/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/tiktok-shop/thailand/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "zh/tiktok-shop/thailand/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/tiktok-shop/thailand/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/tiktok-shop/thailand/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/tiktok-shop/vietnam/": {
+    "modified": "2026-10-28",
+    "source_commit": "3b341e6c67902f6627ba606274c3dd70e16c383d"
+  },
+  "zh/tiktok-shop/vietnam/": {
+    "modified": "2026-10-28",
+    "source_commit": "3b341e6c67902f6627ba606274c3dd70e16c383d"
+  },
+  "ru/tiktok-shop/vietnam/": {
+    "modified": "2026-10-28",
+    "source_commit": "3b341e6c67902f6627ba606274c3dd70e16c383d"
+  },
+  "ms/tiktok-shop/vietnam/": {
+    "modified": "2026-10-28",
+    "source_commit": "3b341e6c67902f6627ba606274c3dd70e16c383d"
+  },
+  "en/tiktok-shop/indonesia/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "zh/tiktok-shop/indonesia/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "ru/tiktok-shop/indonesia/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "ms/tiktok-shop/indonesia/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "en/shopee/indonesia/": {
+    "modified": "2026-10-28",
+    "source_commit": "16557977805fa06f161ada37aae92444587b0351"
+  },
+  "zh/shopee/indonesia/": {
+    "modified": "2026-10-28",
+    "source_commit": "16557977805fa06f161ada37aae92444587b0351"
+  },
+  "ru/shopee/indonesia/": {
+    "modified": "2026-10-28",
+    "source_commit": "16557977805fa06f161ada37aae92444587b0351"
+  },
+  "ms/shopee/indonesia/": {
+    "modified": "2026-10-28",
+    "source_commit": "16557977805fa06f161ada37aae92444587b0351"
+  },
+  "en/shopee/vietnam/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "zh/shopee/vietnam/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ru/shopee/vietnam/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ms/shopee/vietnam/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "en/etsy/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "zh/etsy/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/etsy/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/etsy/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/etsy/uk/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "zh/etsy/uk/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/etsy/uk/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/etsy/uk/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/ozon/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "zh/ozon/": {
+    "modified": "2026-10-26",
+    "source_commit": "e1b2126b4f9bdc5c08959354d944c674f35d9c38"
+  },
+  "ru/ozon/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/ozon/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/wildberries/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "zh/wildberries/": {
+    "modified": "2026-10-26",
+    "source_commit": "e1b2126b4f9bdc5c08959354d944c674f35d9c38"
+  },
+  "ru/wildberries/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/wildberries/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/yandex-market/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "zh/yandex-market/": {
+    "modified": "2026-10-26",
+    "source_commit": "e1b2126b4f9bdc5c08959354d944c674f35d9c38"
+  },
+  "ru/yandex-market/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/yandex-market/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/shopee/malaysia/": {
+    "modified": "2026-10-26",
+    "source_commit": "3122bdd6e41aa4558caf383bd0393b45b110e4a1"
+  },
+  "zh/shopee/malaysia/": {
+    "modified": "2026-11-14",
+    "source_commit": "2772c122f092dba73de0896cbd0ff90bb56583a5"
+  },
+  "ru/shopee/malaysia/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/shopee/malaysia/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/shopee/singapore/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "zh/shopee/singapore/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "ru/shopee/singapore/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "ms/shopee/singapore/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "en/lazada/malaysia/": {
+    "modified": "2026-10-26",
+    "source_commit": "3122bdd6e41aa4558caf383bd0393b45b110e4a1"
+  },
+  "zh/lazada/malaysia/": {
+    "modified": "2026-10-26",
+    "source_commit": "e1b2126b4f9bdc5c08959354d944c674f35d9c38"
+  },
+  "ru/lazada/malaysia/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/lazada/malaysia/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "en/walmart/united-states/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "zh/walmart/united-states/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "ru/walmart/united-states/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "ms/walmart/united-states/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "en/shopee/philippines/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "zh/shopee/philippines/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "ru/shopee/philippines/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "ms/shopee/philippines/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "en/shopee/thailand/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "zh/shopee/thailand/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "ru/shopee/thailand/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "ms/shopee/thailand/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "en/guides/shopee-indonesia-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "16557977805fa06f161ada37aae92444587b0351"
+  },
+  "en/guides/shopee-vietnam-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "en/guides/tiktok-shop-vietnam-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "3b341e6c67902f6627ba606274c3dd70e16c383d"
+  },
+  "en/guides/tiktok-shop-indonesia-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "en/guides/amazon-fbm-prepaid-return-label-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "b63d57653fd288fc58a61fde0810fe8104a4bb6c"
+  },
+  "en/guides/seller-growth-fee-tiktok-shopee-lazada/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "en/guides/tiktok-shop-malaysia-commission-changes-october-2026/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "en/guides/tiktok-shop-philippines-seller-growth-fee/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "en/guides/tiktok-shop-pricing-target-margin/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "en/guides/read-tiktok-shop-settlement-check-fees/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "en/guides/ozon-fbo-fbs-realfbs-2026/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "en/guides/wildberries-logistics-commission-2026/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "en/guides/yandex-market-42-percent-low-price-2026/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "en/guides/shopee-malaysia-fees-august-2026/": {
+    "modified": "2026-10-26",
+    "source_commit": "3122bdd6e41aa4558caf383bd0393b45b110e4a1"
+  },
+  "en/guides/shopee-singapore-commission-gst/": {
+    "modified": "2026-10-26",
+    "source_commit": "3122bdd6e41aa4558caf383bd0393b45b110e4a1"
+  },
+  "en/guides/tiktok-shop-singapore-commission-september-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "en/guides/tiktok-shop-thailand-seller-fees-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "en/guides/etsy-uk-fees-vat-regulatory-fee/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "en/guides/walmart-new-seller-savings-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "zh/guides/shopee-indonesia-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "16557977805fa06f161ada37aae92444587b0351"
+  },
+  "zh/guides/shopee-vietnam-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "zh/guides/tiktok-shop-vietnam-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "3b341e6c67902f6627ba606274c3dd70e16c383d"
+  },
+  "zh/guides/tiktok-shop-indonesia-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "zh/guides/amazon-fbm-prepaid-return-label-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "b63d57653fd288fc58a61fde0810fe8104a4bb6c"
+  },
+  "zh/guides/seller-growth-fee-tiktok-shopee-lazada/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/": {
+    "modified": "2026-10-26",
+    "source_commit": "e1b2126b4f9bdc5c08959354d944c674f35d9c38"
+  },
+  "zh/guides/tiktok-shop-philippines-seller-growth-fee/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "zh/guides/tiktok-shop-pricing-target-margin/": {
+    "modified": "2026-10-26",
+    "source_commit": "e1b2126b4f9bdc5c08959354d944c674f35d9c38"
+  },
+  "zh/guides/read-tiktok-shop-settlement-check-fees/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "zh/guides/ozon-fbo-fbs-realfbs-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "zh/guides/wildberries-logistics-commission-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "zh/guides/yandex-market-42-percent-low-price-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "zh/guides/shopee-malaysia-fees-august-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "zh/guides/shopee-singapore-commission-gst/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "zh/guides/tiktok-shop-singapore-commission-september-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "zh/guides/tiktok-shop-thailand-seller-fees-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "zh/guides/etsy-uk-fees-vat-regulatory-fee/": {
+    "modified": "2026-10-27",
+    "source_commit": "8e7f490f923ab06b006fa9a9f13b23e33f3ac189"
+  },
+  "zh/guides/walmart-new-seller-savings-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "ru/guides/shopee-indonesia-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "16557977805fa06f161ada37aae92444587b0351"
+  },
+  "ru/guides/shopee-vietnam-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ru/guides/tiktok-shop-vietnam-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "3b341e6c67902f6627ba606274c3dd70e16c383d"
+  },
+  "ru/guides/tiktok-shop-indonesia-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "ru/guides/amazon-fbm-prepaid-return-label-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "b63d57653fd288fc58a61fde0810fe8104a4bb6c"
+  },
+  "ru/guides/seller-growth-fee-tiktok-shopee-lazada/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "ru/guides/tiktok-shop-malaysia-commission-changes-october-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/tiktok-shop-philippines-seller-growth-fee/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "ru/guides/tiktok-shop-pricing-target-margin/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/read-tiktok-shop-settlement-check-fees/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/ozon-fbo-fbs-realfbs-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/wildberries-logistics-commission-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/yandex-market-42-percent-low-price-2026/": {
+    "modified": "2026-10-26",
+    "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
+  },
+  "ru/guides/shopee-malaysia-fees-august-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/shopee-singapore-commission-gst/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/tiktok-shop-singapore-commission-september-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/tiktok-shop-thailand-seller-fees-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/etsy-uk-fees-vat-regulatory-fee/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ru/guides/walmart-new-seller-savings-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "ms/guides/shopee-indonesia-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "16557977805fa06f161ada37aae92444587b0351"
+  },
+  "ms/guides/shopee-vietnam-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
+  },
+  "ms/guides/tiktok-shop-vietnam-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "3b341e6c67902f6627ba606274c3dd70e16c383d"
+  },
+  "ms/guides/tiktok-shop-indonesia-fees-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "cf913fcd06c5dc4f4a038edcbe48426e869cebd3"
+  },
+  "ms/guides/amazon-fbm-prepaid-return-label-2026/": {
+    "modified": "2026-10-28",
+    "source_commit": "b63d57653fd288fc58a61fde0810fe8104a4bb6c"
+  },
+  "ms/guides/seller-growth-fee-tiktok-shopee-lazada/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "ms/guides/tiktok-shop-malaysia-commission-changes-october-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/tiktok-shop-philippines-seller-growth-fee/": {
+    "modified": "2026-10-28",
+    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+  },
+  "ms/guides/tiktok-shop-pricing-target-margin/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/read-tiktok-shop-settlement-check-fees/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/ozon-fbo-fbs-realfbs-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/wildberries-logistics-commission-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/yandex-market-42-percent-low-price-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/shopee-malaysia-fees-august-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/shopee-singapore-commission-gst/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/tiktok-shop-singapore-commission-september-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/tiktok-shop-thailand-seller-fees-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/etsy-uk-fees-vat-regulatory-fee/": {
+    "modified": "2026-10-27",
+    "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
+  },
+  "ms/guides/walmart-new-seller-savings-2026/": {
+    "modified": "2026-10-27",
+    "source_commit": "e19b214a5435c9d78a284052959ba6b86bfe07a8"
+  },
+  "en/embed/": {
+    "modified": "2026-10-28",
+    "source_commit": "0c53da0f65a4354bf4c04fe238ca47adf3f6174f"
+  },
+  "zh/embed/": {
+    "modified": "2026-10-28",
+    "source_commit": "0c53da0f65a4354bf4c04fe238ca47adf3f6174f"
+  },
+  "ru/embed/": {
+    "modified": "2026-10-28",
+    "source_commit": "0c53da0f65a4354bf4c04fe238ca47adf3f6174f"
+  },
+  "ms/embed/": {
+    "modified": "2026-10-28",
+    "source_commit": "0c53da0f65a4354bf4c04fe238ca47adf3f6174f"
+  }
+}

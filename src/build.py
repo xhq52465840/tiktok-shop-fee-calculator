@@ -13,6 +13,7 @@ import l10n, sf_site
 from sf_site import market_name
 from zh_pages import home_zh
 import embed as EMB
+import content_dates as D
 ALL = ['en', 'zh', 'ru', 'ms']
 def ALT(suffix): return {l: f'{l}/{suffix}' for l in LANGS}          # every page exists in every language
 def LZ(lang, s): return l10n.text(lang, s)
@@ -61,7 +62,7 @@ def gcard(path, g, lang):
 <div class="cov {cov}"><div class="fig">{esc(fig)}</div><div class="cap">{esc(g["short"])}</div></div>
 <div class="body"><span class="badge b-brand sm">{esc(tr(lang,"guide"))}</span>
 <h3>{esc(g["title"])}</h3><p>{esc(g["desc"])}</p>
-<div class="gmeta"><span>{ic("clock",13)}{max(3, round(words/220))} {esc(tr(lang,"min_read"))}</span><span>{ic("cal",13)}{VDATE[lang]}</span></div></div></a>'''
+<div class="gmeta"><span>{ic("clock",13)}{max(3, round(words/220))} {esc(tr(lang,"min_read"))}</span><span>{ic("cal",13)}{D.time_html(href, lang)}</span></div></div></a>'''
 
 # ---------------------------------------------------------------- calculators
 def calc_page(mid, lang):
@@ -87,6 +88,7 @@ def calc_page(mid, lang):
     body_html = re.sub(r'<h2 id="faq"\s*>\s*</h2>', '', d['body'])
     live = badge(tr(lang, 'live'), 'live')
     verified = badge(f'{tr(lang, "verified")} {VDATE[lang]}', 'verified', 'shield')
+    updated = f'<span class="small muted">{D.time_html(path, lang)}</span>' if D.modified(path) else ''
     src_lbl = {'en': 'official sources', 'ms': 'sumber rasmi', 'ru': 'офиц. источника', 'zh': '个官方来源'}.get(lang, 'official sources')
     srcs = badge(f'{len(m["sources"])} {src_lbl}', 'brand')
     langseg = ''
@@ -96,7 +98,7 @@ def calc_page(mid, lang):
     head = f'''<div class="phead"><div class="wrap">{ch}
 <div class="titlerow">{ptile(m["platform"], 56)}<div style="flex:1;min-width:0"><h1 class="h-display">{esc(d["h1"])}</h1>
 <p class="lead" style="margin-top:10px">{esc(d["lede"])}</p>
-<div class="metarow">{live}{verified}{srcs}{langseg}</div></div></div></div></div>'''
+<div class="metarow">{live}{verified}{updated}{srcs}{langseg}</div></div></div></div></div>'''
     # related guides
     rel_g = [g for g in sf_site.GUIDES_ALL if g.get('market') == mid and g.get('lang') == lang][:3]
     guides_h = ''
@@ -110,8 +112,9 @@ def calc_page(mid, lang):
 {guides_h}'''
     app = {"@context": "https://schema.org", "@type": "WebApplication", "name": d['h1'], "url": BASE + path,
            "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "inLanguage": LANGS[lang]['html'],
-           "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "dateModified": VERIFIED,
+           "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
            "publisher": {"@type": "Organization", "name": "SellerFee", "url": BASE}}
+    if D.modified(path): app["dateModified"] = D.modified(path)
     w(path, page(path, lang, d['title'], d['desc'], body, [app, fld, cld], alt=alt,
                  scripts=f'<script src="{rel_(path)}assets/engine.js" defer></script>'))
 
@@ -133,7 +136,7 @@ def guide_page(g):
         calcs = [(f'{l}/{m["slug"]}/', calc_name(m, lang), '')]
     more = [x for x in sf_site.GUIDES_ALL if x.get('lang') == lang and x['slug'] != g['slug']][:3]
     byline = f'''<div class="byline"><span class="who"><b>SellerFee</b></span><span class="sep"></span>
-<span>{ic("cal",14)}<time datetime="{VERIFIED}">{VFULL[lang]}</time></span>
+<span>{ic("cal",14)}{D.time_html(path, lang)}</span>
 <span>{ic("clock",14)}{max(3, round(words/220))} {esc(tr(lang,"min_read"))}</span>
 <span class="act"><button type="button" class="btn btn-secondary btn-sm" data-copy-link="{esc(tr(lang,"link_copied"))}">{ic("link",14)}{esc(tr(lang,"share_calc"))}</button></span></div>'''
     aff = affiliate_rail(lang)
@@ -154,9 +157,10 @@ def guide_page(g):
 {('<section class="blk"><div class="sh"><h2 class="h2">' + esc(tr(lang,"related")) + '</h2></div><div class="cards">' + ''.join(gcard(path,x,lang) for x in more) + '</div></section>') if more else ''}
 </div>'''
     art = {"@context": "https://schema.org", "@type": "Article", "headline": g['title'], "description": g['desc'],
-           "datePublished": VERIFIED, "dateModified": VERIFIED, "inLanguage": LANGS[lang]['html'], "mainEntityOfPage": BASE + path,
+           "inLanguage": LANGS[lang]['html'], "mainEntityOfPage": BASE + path,
            "image": BASE + "assets/og.png", "author": {"@type": "Organization", "name": "SellerFee", "url": BASE},
            "publisher": {"@type": "Organization", "name": "SellerFee", "logo": {"@type": "ImageObject", "url": BASE + "assets/favicon.svg"}}}
+    if D.modified(path): art["dateModified"] = D.modified(path)
     w(path, page(path, lang, g['title'] + ' | SellerFee', g['desc'], body, [art, cld], og_type='article', alt=ALT(f'guides/{g["slug"]}/')))
 
 def guides_index(lang='en'):
@@ -688,7 +692,8 @@ def plumbing():
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for path, alt in PAGES:
-        sm.append(f'  <url><loc>{BASE}{path}</loc><lastmod>{VERIFIED}</lastmod>')
+        lastmod = f'<lastmod>{D.modified(path)}</lastmod>' if D.modified(path) else ''
+        sm.append(f'  <url><loc>{BASE}{path}</loc>{lastmod}')
         if alt:
             for l, p in alt.items(): sm.append(f'    <xhtml:link rel="alternate" hreflang="{LANGS[l]["html"]}" href="{BASE}{p}"/>')
             sm.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}{alt.get("en", list(alt.values())[0])}"/>')
