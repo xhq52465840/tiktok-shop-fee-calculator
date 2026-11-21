@@ -60,12 +60,12 @@
     "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
   },
   "zh/about/": {
-    "modified": "2026-11-04",
-    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "zh/privacy/": {
-    "modified": "2026-11-04",
-    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "zh/terms/": {
     "modified": "2026-10-27",
@@ -92,12 +92,12 @@
     "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
   },
   "ru/about/": {
-    "modified": "2026-11-04",
-    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ru/privacy/": {
-    "modified": "2026-11-04",
-    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ru/terms/": {
     "modified": "2026-10-27",
@@ -124,12 +124,12 @@
     "source_commit": "1f7f58c99667e972f9273be81eda5e063135f8d0"
   },
   "ms/about/": {
-    "modified": "2026-11-04",
-    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ms/privacy/": {
-    "modified": "2026-11-04",
-    "source_commit": "2c27ced028e33359573a15cc64d57030be1f4763"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ms/terms/": {
     "modified": "2026-10-27",
@@ -160,20 +160,20 @@
     "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
   },
   "en/tiktok-shop/philippines/": {
-    "modified": "2026-10-28",
-    "source_commit": "ab6c17a61fb2d8ac3cb15d3fd8e3459321037f7b"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "zh/tiktok-shop/philippines/": {
-    "modified": "2026-10-28",
-    "source_commit": "ab6c17a61fb2d8ac3cb15d3fd8e3459321037f7b"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ru/tiktok-shop/philippines/": {
-    "modified": "2026-10-28",
-    "source_commit": "ab6c17a61fb2d8ac3cb15d3fd8e3459321037f7b"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ms/tiktok-shop/philippines/": {
-    "modified": "2026-10-28",
-    "source_commit": "ab6c17a61fb2d8ac3cb15d3fd8e3459321037f7b"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "en/tiktok-shop/united-states/": {
     "modified": "2026-10-26",
@@ -500,16 +500,16 @@
     "source_commit": "b63d57653fd288fc58a61fde0810fe8104a4bb6c"
   },
   "en/guides/seller-growth-fee-tiktok-shopee-lazada/": {
-    "modified": "2026-10-28",
-    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "en/guides/tiktok-shop-malaysia-commission-changes-october-2026/": {
     "modified": "2026-10-26",
     "source_commit": "85786701aae48b7ab8c79471d32e06deafd299f0"
   },
   "en/guides/tiktok-shop-philippines-seller-growth-fee/": {
-    "modified": "2026-10-28",
-    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "en/guides/tiktok-shop-pricing-target-margin/": {
     "modified": "2026-10-26",
@@ -576,16 +576,16 @@
     "source_commit": "b63d57653fd288fc58a61fde0810fe8104a4bb6c"
   },
   "zh/guides/seller-growth-fee-tiktok-shopee-lazada/": {
-    "modified": "2026-10-28",
-    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "zh/guides/tiktok-shop-malaysia-commission-changes-october-2026/": {
     "modified": "2026-10-26",
     "source_commit": "e1b2126b4f9bdc5c08959354d944c674f35d9c38"
   },
   "zh/guides/tiktok-shop-philippines-seller-growth-fee/": {
-    "modified": "2026-10-28",
-    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "zh/guides/tiktok-shop-pricing-target-margin/": {
     "modified": "2026-10-26",
@@ -652,16 +652,16 @@
     "source_commit": "b63d57653fd288fc58a61fde0810fe8104a4bb6c"
   },
   "ru/guides/seller-growth-fee-tiktok-shopee-lazada/": {
-    "modified": "2026-10-28",
-    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ru/guides/tiktok-shop-malaysia-commission-changes-october-2026/": {
     "modified": "2026-10-27",
     "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
   },
   "ru/guides/tiktok-shop-philippines-seller-growth-fee/": {
-    "modified": "2026-10-28",
-    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ru/guides/tiktok-shop-pricing-target-margin/": {
     "modified": "2026-10-27",
@@ -728,16 +728,16 @@
     "source_commit": "b63d57653fd288fc58a61fde0810fe8104a4bb6c"
   },
   "ms/guides/seller-growth-fee-tiktok-shopee-lazada/": {
-    "modified": "2026-10-28",
-    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ms/guides/tiktok-shop-malaysia-commission-changes-october-2026/": {
     "modified": "2026-10-27",
     "source_commit": "2e917fb2d0ff68688e832552b62809c26ddc9c69"
   },
   "ms/guides/tiktok-shop-philippines-seller-growth-fee/": {
-    "modified": "2026-10-28",
-    "source_commit": "ada62ea8e41fbf98785a1e8ef27f4eb3cd0ab05e"
+    "modified": "2026-11-21",
+    "source_commit": "243058f7a14b0ccfea6ca82d1648a8aa02823bff"
   },
   "ms/guides/tiktok-shop-pricing-target-margin/": {
     "modified": "2026-10-27",

@@ -84,7 +84,7 @@ MARKETS = {
      dict(id='growth', type='pct', rate='opt:growth', base='net', color=C[4])],
    compare=dict(vary=[], a={'label': 'cmp_ph_a', 'rates': {'opf': 3, 'growth': 0}}, b={'label': 'cmp_ph_b'}, note='cmp_ph_note'),
    sources=[
-     ('Introduction to Seller Fees — TikTok Shop PH Seller University (updated 13 Oct 2026)', 'https://seller-ph.tiktok.com/university/essay?knowledge_id=2675772847064834&lang=en'),
+     ('Introduction to Seller Fees — TikTok Shop PH Seller University (updated 13 Oct 2026; overview figures rechecked 21 Nov 2026, unchanged)', 'https://seller-ph.tiktok.com/university/essay?knowledge_id=2675772847064834&lang=en'),
      ('Platform Commission Fee — TikTok Shop PH Seller University', 'https://seller-ph.tiktok.com/university/essay?knowledge_id=3157977859229442&lang=en'),
      ('[Philippines] Order Processing Fee — TikTok Shop Academy (18 Aug 2026)', 'https://seller.tiktokglobalshop.com/university/essay?knowledge_id=6361124523788048'),
      ('Seller Growth Fee start date (27 Apr 2026) — Baijing report, secondary source', 'https://www.baijing.cn/article/55291'),
@@ -307,7 +307,7 @@ MARKETS = {
    sources=[
      ('Полный список комиссий и тарифов — Ozon Seller Edu (edition printed 7 Oct 2026; sections 1, 2.1, 2.4, 2.8, 2.10, 2.23)', 'https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions'),
      ('Таблица категорий и типов для расчёта вознаграждения, in force from 28 Aug 2026 — Ozon (XLSX)', 'https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0_%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8%CC%86_%D0%B4%D0%BB%D1%8F_%D1%80%D0%B0%D1%81%D1%87%D0%B5%CC%88%D1%82%D0%B0_%D0%B2%D0%BE%D0%B7%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F_28082026-3_1787574038.xlsx'),
-     ('Логистика FBO и FBS, tariffs in force from 30 Oct 2026 — Ozon (XLSX)', 'https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/logistika-fbo-fbs-30102026_1789376537.xlsx')]),
+     ('Логистика FBO и FBS, tariffs in force from 30 Oct 2026 — Ozon (XLSX; rechecked 21 Nov 2026, unchanged)', 'https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/logistika-fbo-fbs-30102026_1789376537.xlsx')]),
  'wildberries': dict(
    platform='wildberries', platformName='Wildberries', market='RU', marketName='Russia', slug='wildberries', flag='🇷🇺', **RUB, langs=['en', 'ru', 'zh'],
    inputs=['price', 'qty', 'sellerDisc', 'cost', 'vol', 'coef', 'shipCost', 'taxPct', 'other'],
