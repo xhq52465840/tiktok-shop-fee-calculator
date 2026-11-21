@@ -1,0 +1,50 @@
+@@ c4f303e2c0
+en: SellerFee is not affiliated with TikTok, Shopee, Lazada, Walmart, Etsy, Ozon, Wildberries, Yandex or any other marketplace. Marketplace fee estimates are never paid placements: we don’t take listing fees or kickbacks that change calculator results. Separately, we may earn a commission from disclosed affiliate links to third-party seller tools; those links never alter the maths.
+zh: SellerFee 与 TikTok、Shopee、Lazada、Walmart、Etsy、Ozon、Wildberries、Yandex 或任何其他电商平台均无隶属关系。市场费率估算从来不是付费推广：我们不收取会改变计算结果的上架费或回扣。另外，我们可能通过已披露的第三方卖家工具联盟链接获得佣金；这些链接不会改变任何计算。
+ru: SellerFee не аффилирован с TikTok, Shopee, Lazada, Walmart, Etsy, Ozon, Wildberries, Яндексом или другими маркетплейсами. Оценки комиссий площадок никогда не являются платными размещениями: мы не берём листинговые сборы и откаты, которые меняли бы результаты калькулятора. Отдельно мы можем получать комиссию по раскрытым партнёрским ссылкам на сторонние инструменты для продавцов; эти ссылки никогда не влияют на расчёты.
+ms: SellerFee tidak berafiliasi dengan TikTok, Shopee, Lazada, Walmart, Etsy, Ozon, Wildberries, Yandex atau mana-mana marketplace lain. Anggaran yuran marketplace bukanlah penempatan berbayar: kami tidak mengambil yuran penyenaraian atau komisen tersembunyi yang mengubah keputusan kalkulator. Secara berasingan, kami mungkin memperoleh komisen daripada pautan afiliasi yang didedahkan kepada alat penjual pihak ketiga; pautan itu tidak pernah mengubah pengiraan.
+@@ 793cd07c2d
+en: Last updated {0} November {1}.
+zh: 最近更新日期：{1} 年 11 月 {0} 日。
+ru: Последнее обновление: {0} ноября {1} г.
+ms: Kemaskini terakhir {0} November {1}.
+@@ 7a2e4a031b
+en: SellerFee calculators run entirely in your browser. The prices, costs and rates you enter are not sent to our servers. We don’t run an account system and we don’t sell the numbers you type.
+zh: SellerFee 计算器完全在你的浏览器里运行。你输入的价格、成本和费率不会发送到我们的服务器。我们没有账户系统，也不会出售你输入的数字。
+ru: Калькуляторы SellerFee работают полностью в вашем браузере. Цены, себестоимость и тарифы, которые вы вводите, не отправляются на наши серверы. У нас нет системы аккаунтов, и мы не продаём введённые вами цифры.
+ms: Kalkulator SellerFee berjalan sepenuhnya dalam pelayar anda. Harga, kos dan kadar yang anda masukkan tidak dihantar ke pelayan kami. Kami tidak mempunyai sistem akaun dan tidak menjual nombor yang anda taip.
+@@ 38b5b5f67e
+en: Advertising
+zh: 广告
+ru: Реклама
+ms: Pengiklanan
+@@ 6ec713df98
+en: We use Google AdSense to show ads on some pages. Google and its partners may use cookies or similar technologies to serve and measure ads, including personalised ads where allowed by your region and settings. You can learn more and manage ad personalisation in <a1>Google Ads Settings</a1> and read Google’s partner practices at <a2>How Google uses data when you use our partners’ sites</a2>.
+zh: 我们在部分页面使用 Google AdSense 展示广告。Google 及其合作伙伴可能使用 Cookie 或类似技术投放和衡量广告，并在你所在地区和设置允许时提供个性化广告。你可以在<a1>Google 广告设置</a1>中了解并管理广告个性化，也可以在<a2>Google 如何在你使用我们合作伙伴的网站时使用数据</a2>阅读其合作伙伴做法。
+ru: На некоторых страницах мы показываем рекламу через Google AdSense. Google и его партнёры могут использовать файлы cookie и похожие технологии для показа и измерения рекламы, в том числе персонализированной — там, где это допускают ваш регион и настройки. Узнать больше и управлять персонализацией можно в <a1>настройках рекламы Google</a1>, а о практике партнёров — на странице <a2>Как Google использует данные, когда вы посещаете сайты партнёров</a2>.
+ms: Kami menggunakan Google AdSense untuk memaparkan iklan di sesetengah halaman. Google dan rakan kongsinya mungkin menggunakan kuki atau teknologi serupa untuk menayangkan dan mengukur iklan, termasuk iklan diperibadikan jika dibenarkan oleh wilayah dan tetapan anda. Anda boleh ketahui lebih lanjut dan urus penyesuaian iklan di <a1>Tetapan Iklan Google</a1> serta membaca amalan rakan kongsi Google di <a2>Cara Google menggunakan data apabila anda menggunakan laman rakan kongsi kami</a2>.
+@@ ff46e77b82
+en: Ad code is only loaded after our AdSense account is approved and enabled on this site. Until then, empty ad placeholders stay hidden and set no cookies.
+zh: 只有在我们的 AdSense 账号获批并在本站启用后，才会加载广告代码。在此之前，空白广告占位不会显示，也不会设置 Cookie。
+ru: Код рекламы подключается только после одобрения и включения нашего аккаунта AdSense на этом сайте. До тех пор пустые рекламные блоки скрыты и не устанавливают cookie.
+ms: Kod iklan hanya dimuatkan selepas akaun AdSense kami diluluskan dan diaktifkan di laman ini. Sehingga itu, ruang letak iklan kosong kekal tersembunyi dan tidak menetapkan kuki.
+@@ 85b3a5c4dc
+en: Affiliate links
+zh: 联盟链接
+ru: Партнёрские ссылки
+ms: Pautan afiliasi
+@@ 72a84e203d
+en: Some pages may recommend third-party seller tools (for example product-research software). If you buy through those links we may earn a commission. Affiliate links never change calculator maths or fee estimates. Sponsored links are marked with <code1>rel="sponsored"</code1>.
+zh: 部分页面可能会推荐第三方卖家工具（例如选品软件）。如果你通过这些链接购买，我们可能获得佣金。联盟链接不会改变计算器的算法或费率估算。付费推广链接会标上 <code1>rel="sponsored"</code1>。
+ru: На некоторых страницах могут быть рекомендации сторонних инструментов для продавцов (например, сервисов подбора товаров). Если вы покупаете по этим ссылкам, мы можем получить комиссию. Партнёрские ссылки никогда не меняют расчёты калькулятора и оценки комиссий. Рекламные ссылки помечены атрибутом <code1>rel="sponsored"</code1>.
+ms: Sesetengah halaman mungkin mengesyorkan alat penjual pihak ketiga (contohnya perisian penyelidikan produk). Jika anda membeli melalui pautan tersebut, kami mungkin memperoleh komisen. Pautan afiliasi tidak pernah mengubah pengiraan kalkulator atau anggaran yuran. Pautan tajaan ditandai dengan <code1>rel="sponsored"</code1>.
+@@ d8f6588277
+en: We do not set our own analytics cookies. The language you pick is not stored as a tracking cookie. When ads are enabled, Google AdSense and its partners may set advertising cookies as described above. Essential hosting cookies, if any, are limited to keeping the site working.
+zh: 我们不会设置自己的分析 Cookie。你选择的语言不会作为跟踪 Cookie 存储。启用广告后，Google AdSense 及其合作伙伴可能会按上文所述设置广告 Cookie。如有必要的托管 Cookie，也仅用于维持网站运行。
+ru: Мы не устанавливаем собственные аналитические cookie. Выбранный язык не сохраняется как трекинговый cookie. Когда реклама включена, Google AdSense и его партнёры могут устанавливать рекламные cookie, как описано выше. Необходимые cookie хостинга, если они есть, используются только для работы сайта.
+ms: Kami tidak menetapkan kuki analitik sendiri. Bahasa yang anda pilih tidak disimpan sebagai kuki penjejakan. Apabila iklan diaktifkan, Google AdSense dan rakan kongsinya mungkin menetapkan kuki pengiklanan seperti yang diterangkan di atas. Kuki hos yang perlu, jika ada, hanya terhad untuk mengekalkan laman ini berfungsi.
+@@ 51e66507db
+en: SellerFee privacy notice: calculators run in your browser; ads and affiliate links explained.
+zh: SellerFee 隐私说明：计算器在浏览器中运行，并说明广告与联盟链接。
+ru: Уведомление о конфиденциальности SellerFee: калькуляторы работают в браузере; о рекламе и партнёрских ссылках.
+ms: Notis privasi SellerFee: kalkulator berjalan dalam pelayar; iklan dan pautan afiliasi dijelaskan.
